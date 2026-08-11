@@ -38,7 +38,7 @@
     "shopee ร่วมกับ meta": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "50582251fb",
       "lastSignal": "Major product launch"
     },
@@ -143,7 +143,7 @@
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "4fdfc81662",
       "lastSignal": "Thailand market entry"
     },
@@ -157,7 +157,7 @@
     "luxeed": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "d986247261",
       "lastSignal": "Thailand market entry"
     },
@@ -178,21 +178,21 @@
     "ไหตี่เลา ไม่ได้มาเล่นๆ เร่งเปิดเกมรุก": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "bce5a4dd49",
       "lastSignal": "Expansion / new branches"
     },
     "ห้างเซ็นทรัล": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "605af92167",
       "lastSignal": "Thailand market entry"
     },
     "กรุงเทพธุรกิจ. . ออมสินปล่อย soft": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "9b95240b2a",
       "lastSignal": "Major product launch"
     },
@@ -279,6 +279,104 @@
       "timesDetected": 1,
       "lastSignalHash": "387fae8598",
       "lastSignal": "Major product launch"
+    },
+    "honda super-one": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "d4bf2a4798",
+      "lastSignal": "Thailand market entry"
+    },
+    "human made": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "b2f212e374",
+      "lastSignal": "Expansion / new branches"
+    },
+    "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "c057e231d6",
+      "lastSignal": "Major product launch"
+    },
+    "maguro group รุกตลาดอาหารไทย": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "3438e356ca",
+      "lastSignal": "Major product launch"
+    },
+    "คาเฟ่ อเมซอน": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "87cfc3975f",
+      "lastSignal": "Expansion / new branches"
+    },
+    "prudential thailand": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "fc23910662",
+      "lastSignal": "Major product launch"
+    },
+    "shokz": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "cfbfd4894b",
+      "lastSignal": "Thailand market entry"
+    },
+    "จากสาขาแรกที่เซ็นทรัลเวิลด์": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "fcf67cd2d1",
+      "lastSignal": "Expansion / new branches"
+    },
+    "แมคโดนัลด์ไทย": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "2c5947b384",
+      "lastSignal": "Expansion / new branches"
+    },
+    "the row": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "4b0ec91bce",
+      "lastSignal": "Expansion / new branches"
+    },
+    "mk": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "515a441890",
+      "lastSignal": "Expansion / new branches"
+    },
+    "ch": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "c75c20c82b",
+      "lastSignal": "Major product launch"
+    },
+    "instagram ชน tiktok เล็ง": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "80c30c2784",
+      "lastSignal": "Major product launch"
+    },
+    "found & found รุก": {
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-08-11",
+      "timesDetected": 1,
+      "lastSignalHash": "7de361cc36",
+      "lastSignal": "Expansion / new branches"
     }
   }
 }
