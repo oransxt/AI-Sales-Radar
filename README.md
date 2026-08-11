@@ -1,18 +1,31 @@
 # AI Sales Radar
 
-Thailand-first AI sales opportunity radar for OOH/DOOH.
+Thailand-first sales opportunity radar for OOH/DOOH.
 
-Current implementation checkpoint: **Version 1.9.2 — GitHub Online Edition**.
+Current implementation checkpoint: **Version 1.9.3.2 — 100% Free Online Edition**.
 
 ## V1 flow
 
-1. Daily Thailand-first brand discovery
+1. Daily Thailand-first brand discovery from public online sources
 2. Rank top 20 by commercial opportunity
 3. Manual Salesforce ownership check
-4. Internal credential library (Google Drive links)
+4. Internal credential library using Google Drive links
 5. Multiple credential selection per brand
 6. Daily automation via GitHub Actions
 7. Static online dashboard via GitHub Pages
+
+## Free runtime architecture
+
+- GitHub repository: free
+- GitHub Pages: free
+- GitHub Actions: free for this public repository within GitHub's included limits
+- Discovery: public Google News RSS searches focused on Thailand
+- Scoring: local JavaScript commercial scoring rules
+- History / duplicate detection: repository JSON data
+- Credential recommendation: industry + tag matching in the browser
+- Salesforce ownership check: manual human-in-the-loop
+
+There is **no paid OpenAI API dependency in Version 1 runtime**.
 
 ## Internal credential types
 
@@ -20,10 +33,6 @@ Current implementation checkpoint: **Version 1.9.2 — GitHub Online Edition**.
 - Case Study
 - New Launches
 - Media Credentials
-
-## Security
-
-Never commit `OPENAI_API_KEY` to this repository. Store it as a GitHub Actions repository secret named `OPENAI_API_KEY`.
 
 ## Version history
 
@@ -39,3 +48,6 @@ Never commit `OPENAI_API_KEY` to this repository. Store it as a GitHub Actions r
 - 1.9 Final Data Structure
 - 1.9.1 First local working implementation
 - 1.9.2 GitHub Online Edition
+- 1.9.3 Replace paid API runtime with free public-source discovery
+- 1.9.3.1 Improve recency and brand extraction
+- 1.9.3.2 Refine narrative headline brand detection
