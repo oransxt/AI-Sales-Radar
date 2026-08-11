@@ -36,11 +36,12 @@ const stopStarts = new Set([
 ]);
 const genericLatin = new Set([
   'Thailand','Bangkok','EV','AI','CEO','CMO','PR','CSR','ESG','JV','IPO','QSR','OTT','B2B','B2C','FMCG',
-  'Meta','Instagram','Facebook','Google','YouTube','LINE','SET','BOI'
+  'Meta','Instagram','Facebook','Google','YouTube','LINE','SET','BOI','CBU','SUV'
 ]);
 const invalidBrandPatterns = [
   /^ศูนย์วิจัย/i,/^สมาคม/i,/^กระทรวง/i,/^กรม/i,/^รัฐบาล/i,/^ตลาด\s/i,/^เทรนด์/i,/^นักวิเคราะห์/i,/^ผู้บริโภค/i,
-  /เผย\s/i,/ทุนต่างชาติ/i,/ธุรกิจไทย/i,/ตลาดไทย/i,/อุตสาหกรรม/i
+  /^ปีที่แล้ว/i,/^ปีนี้/i,/^สเป็ค/i,/^สเปก/i,/^ราคา/i,/^รู้จัก/i,/^ทำไม/i,/^เมื่อ/i,/^หลัง/i,/^ก่อน/i,/^ครั้งแรก/i,
+  /เผย\s/i,/ทุนต่างชาติ/i,/ธุรกิจไทย/i,/ตลาดไทย/i,/อุตสาหกรรม/i,/คนไทยราว/i
 ];
 
 const signalRules = [
@@ -101,15 +102,16 @@ function isInvalidBrand(name='') {
   if(!n || n.length<2 || n.length>45 || genericLatin.has(n)) return true;
   return invalidBrandPatterns.some(re=>re.test(n));
 }
+function bestLatinBrand(h='') {
+  const matches=[...h.matchAll(/\b[A-Z][A-Za-z0-9&.+_-]*(?:\s+[A-Z][A-Za-z0-9&.+_-]*){0,2}\b/g)].map(m=>m[0].trim());
+  const bannedWords=/(Regional|Fashion|Lifestyle|House|Brands|Magazine|Money|News|Group$|Official|Review|Specs?|Motor Show)/i;
+  return matches.find(x=>!genericLatin.has(x)&&!/^(The|New|Thai|A)$/i.test(x)&&!bannedWords.test(x))||'';
+}
 function candidateBrand(headline) {
   let h=cleanHeadline(headline).replace(/^['“"‘]+|['”"’]+$/g,'').trim();
   h=h.replace(/^แบรนด์\s+/i,'').replace(/^บริษัท\s+/i,'');
+  const latin=bestLatinBrand(h);
 
-  // Prefer proper Latin brand names anywhere in the headline, but reject generic business terms.
-  const latinMatches=[...h.matchAll(/\b[A-Z][A-Za-z0-9&.+_-]*(?:\s+[A-Z][A-Za-z0-9&.+_-]*){0,2}\b/g)].map(m=>m[0].trim());
-  const latin=latinMatches.find(x=>!genericLatin.has(x) && !/^(The|New|Thai)$/i.test(x));
-
-  // Thai/local names are usually placed before the commercial action verb.
   const signalIndex=h.search(/เปิดตัว|เปิดสาขา|ขยาย|จับมือ|ร่วมมือ|ประกาศ|เปิดร้าน|บุกไทย|รุกไทย|รีแบรนด์|คว้า|ดึง|ส่ง|ลุย|เตรียม|เดินหน้า|ทุ่ม|launch|expansion|campaign/i);
   if(signalIndex>0){
     let prefix=h.slice(0,signalIndex).replace(/[,:;|–—!].*$/,'').trim();
@@ -117,14 +119,14 @@ function candidateBrand(headline) {
     let words=prefix.split(/\s+/).filter(Boolean);
     while(words.length && stopStarts.has(words[0])) words.shift();
     const thaiCandidate=words.slice(0,4).join(' ').replace(/[“”"'()\[\]]/g,'').trim();
-    if(!isInvalidBrand(thaiCandidate) && !/^(ร้านจีน|ห้างกลางเมือง|ทุนต่างชาติ)$/i.test(thaiCandidate)) return thaiCandidate;
+    const prefixNoisy=isInvalidBrand(thaiCandidate)||/^(ร้านจีน|ห้างกลางเมือง|ทุนต่างชาติ)$/i.test(thaiCandidate);
+    if(!prefixNoisy) return thaiCandidate;
+    if(latin&&!isInvalidBrand(latin)) return latin;
   }
 
-  if(latin && !isInvalidBrand(latin)) return latin;
-
+  if(latin&&!isInvalidBrand(latin)) return latin;
   const quoted=[...h.matchAll(/[“"']([^”"']{2,40})[”"']/g)].map(m=>m[1].trim());
-  const q=quoted.find(x=>!isInvalidBrand(x));
-  return q||'';
+  return quoted.find(x=>!isInvalidBrand(x))||'';
 }
 function industryFor(text) { for(const [name,re] of industryRules) if(re.test(text)) return name; return 'Consumer / Other'; }
 function strongestSignal(text) { let best={name:'Brand activity',score:7}; for(const r of signalRules) if(r.re.test(text)&&r.score>best.score) best=r; return best; }
@@ -143,7 +145,7 @@ const all=[];
 for(const q of queries){
   const url=`https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=th&gl=TH&ceid=TH:th`;
   try{
-    const r=await fetch(url,{headers:{'User-Agent':'Mozilla/5.0 AI-Sales-Radar-Free/1.9.3.1'}});
+    const r=await fetch(url,{headers:{'User-Agent':'Mozilla/5.0 AI-Sales-Radar-Free/1.9.3.2'}});
     if(!r.ok) continue;
     for(const item of parseItems(await r.text()).slice(0,30)) if(!tooOld(item.pubDate)) all.push({...item,query:q});
   }catch(e){console.warn('Feed failed:',q,e.message);}
@@ -186,6 +188,6 @@ if(selected.length<20) for(const l of leads){if(selected.some(x=>x.id===l.id))co
 for(const l of selected){const k=l.brandName.toLowerCase(),p=history.brands[k]||{};history.brands[k]={firstSeen:p.firstSeen||today,lastSeen:today,timesDetected:(p.timesDetected||0)+1,lastSignalHash:l.signalHash,lastSignal:l.buyingSignal};delete l.signalHash;}
 
 await fs.mkdir(new URL('../docs/data/',import.meta.url),{recursive:true});
-await fs.writeFile(DAILY_OUT,JSON.stringify({date:today,generatedAt:new Date().toISOString(),engine:'FREE-RSS-RULES-1.9.3.1',leads:selected},null,2));
+await fs.writeFile(DAILY_OUT,JSON.stringify({date:today,generatedAt:new Date().toISOString(),engine:'FREE-RSS-RULES-1.9.3.2',leads:selected},null,2));
 await fs.writeFile(HISTORY_OUT,JSON.stringify(history,null,2));
 console.log(`Free Thailand Radar wrote ${selected.length} leads for ${today} from ${all.length} recent articles / ${grouped.size} candidate brands.`);
