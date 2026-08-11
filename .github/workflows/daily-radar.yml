@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 1 * * *' # 08:00 Asia/Bangkok
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/discover.mjs'
+      - '.github/workflows/daily-radar.yml'
 
 permissions:
   contents: write
