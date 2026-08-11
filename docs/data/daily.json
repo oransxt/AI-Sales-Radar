@@ -1,5 +1,703 @@
 {
-  "generatedAt": null,
-  "date": null,
-  "leads": []
+  "date": "2026-08-11",
+  "generatedAt": "2026-08-11T08:59:51.650Z",
+  "engine": "FREE-RSS-RULES-1.9.3",
+  "leads": [
+    {
+      "id": "2f82c20c7fde",
+      "brandName": "โบนัส สุกี้",
+      "companyName": "โบนัส สุกี้",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "MK เร่งทวงบัลลังก์ตลาดสุกี้ ดัน “โบนัส สุกี้” โต 38 สาขาใน 1 ปี",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-06-09",
+      "whyNow": "MK เร่งทวงบัลลังก์ตลาดสุกี้ ดัน “โบนัส สุกี้” โต 38 สาขาใน 1 ปี",
+      "momentum": "Exploding",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 91,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 10,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBWcmV5czZfVmRIZGVzdkdxRVRFbXMyZERGOUJWTzltbHFKdGxqWWRvQTlWeTM4bEEtVzV4bzVQVlFuQ2R1bzRwV3hxSEpqSW9MUVF6amJKaGpXcnptRm9wX3Z5dWgtajNoemJrMU00T0lVVzYz?oc=5",
+          "label": "Thairath.co.th"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfWXlhOGVkbVhfSDFITk5jSk94N01uY0l2azVFckt3S0dydXEzZmxBMmRrZENNQV9IRWhDTDg5UENaWS12UFhuTnUtSzNDSGhraDVWZkxHUVAyU3V0VlJoUW55eURFOHJXR19TTV9kTU0?oc=5",
+          "label": "Brand Buffet"
+        }
+      ]
+    },
+    {
+      "id": "f83fcedc4ea2",
+      "brandName": "BYD",
+      "companyName": "BYD",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "BYD เปิดตัว 4 รุ่นใหม่ครั้งแรกในไทย จัดทัพกว่า 40 คัน ตอกย้ำผู้นำรถไฟฟ้า ภายในงาน Motor Show 2026",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-03-24",
+      "whyNow": "BYD เปิดตัว 4 รุ่นใหม่ครั้งแรกในไทย จัดทัพกว่า 40 คัน ตอกย้ำผู้นำรถไฟฟ้า ภายในงาน Motor Show 2026",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQU0VpTGlJTkZ1eHBTV01IZFVvS1dIdWJITWNaWm1jWUpKQmxRSE1Vb2lySHJYSjVvUGhMYlNUVWxJN3A2LWg0Q3JHVkVPcGgyYjFXbk9ZUmF3TlU5d2Z6Yl9jckRDcEI5dkw2NVFTc3FTbXVvamhkYjAyaHVDdXpuaFBJMk1KSUlDSHNvV0lacldaVWJOQTU0WmhuRms4Zm10?oc=5",
+          "label": "grandprix.co.th"
+        }
+      ]
+    },
+    {
+      "id": "828e64e13e3f",
+      "brandName": "EV",
+      "companyName": "EV",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ฉางอานบุกไทยเต็มสูบ ปักหมุดศูนย์ผลิตรถ EV เอเชีย",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2025-10-21",
+      "whyNow": "ฉางอานบุกไทยเต็มสูบ ปักหมุดศูนย์ผลิตรถ EV เอเชีย",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQX2pLSUxKT2NpVzd3MmNfQzRKVVNHR2RyZUs3dEJCRVY5WXRxSzdxTndjWFZoZTNXbWhObVI0TFNqenpaZ1hXb0pDLWxWYWhkNFQ5UFpHTThKV0pwa0puYmJCeDVpRk1NX1hNNmZscjNieGEycTV4bENOU19Nc0pXX2E0NHh1aDRzWmI1ckJMNENOdw?oc=5",
+          "label": "spacebar.th"
+        }
+      ]
+    },
+    {
+      "id": "eea49eb4925b",
+      "brandName": "CRG",
+      "companyName": "CRG",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เทรนด์ปีนี้ร้านจีนยังบุกไทย! ห้างกลางเมืองก็อยากได้อะไรใหม่ๆ CRG ทุ่ม 900 ล้าน เปิดใหม่ 140-160 สาขา ดึงแบรนด์ใหม่เสริมทัพ ผนึก JV ต่อยอดเติบโต",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-04-03",
+      "whyNow": "เทรนด์ปีนี้ร้านจีนยังบุกไทย! ห้างกลางเมืองก็อยากได้อะไรใหม่ๆ CRG ทุ่ม 900 ล้าน เปิดใหม่ 140-160 สาขา ดึงแบรนด์ใหม่เสริมทัพ ผนึก JV ต่อยอดเติบโต",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQem1oZ1YxVnFzdFZCVC0tNFdtM1gwTVlrTlZQdFcyZ1YtVHBia3Y1aFBmZXBNLVlha3VPUnhsMGl5SzZTNThJcTh4eVB6b215RWs1anpwaXJwT2hfSHVjd2doZjlBdlBTdUZFOTVCUGpFVllNT1pVRFRScXhvUFR5ZVZUWXZha1JETEV3NzhuNkplNUxZTkdrT1RiYUlyWGk0MTliVnpn?oc=5",
+          "label": "Forbes Thailand"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQem1oZ1YxVnFzdFZCVC0tNFdtM1gwTVlrTlZQdFcyZ1YtVHBia3Y1aFBmZXBNLVlha3VPUnhsMGl5SzZTNThJcTh4eVB6b215RWs1anpwaXJwT2hfSHVjd2doZjlBdlBTdUZFOTVCUGpFVllNT1pVRFRScXhvUFR5ZVZUWXZha1JETEV3NzhuNkplNUxZTkdrT1RiYUlyWGk0MTliVnpn?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    },
+    {
+      "id": "3c366e8e73da",
+      "brandName": "ศูนย์วิจัยกสิกรไทย เผย ทุนต่างชาติ",
+      "companyName": "ศูนย์วิจัยกสิกรไทย เผย ทุนต่างชาติ",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ศูนย์วิจัยกสิกรไทย เผย ทุนต่างชาติบุกไทย จีน-เกาหลีใต้ แห่ลงทุนร้านเครื่องดื่ม มูลค่าพุ่ง 9% ปี 68",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2025-10-15",
+      "whyNow": "ศูนย์วิจัยกสิกรไทย เผย ทุนต่างชาติบุกไทย จีน-เกาหลีใต้ แห่ลงทุนร้านเครื่องดื่ม มูลค่าพุ่ง 9% ปี 68",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tUjYwSHo3LTNLRGs5TE40TzZjVmYxdGN6cjV5Q3BxaUdsaUNza1RtRXlwamRxUFVxR0MzSEI3cTVGVDZCOVI5dlBEVHU4QnV2dXdnMk1n?oc=5",
+          "label": "LINE TODAY"
+        }
+      ]
+    },
+    {
+      "id": "bb20f1c8a689",
+      "brandName": "Shopee ร่วมกับ Meta",
+      "companyName": "Shopee ร่วมกับ Meta",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "Shopee ร่วมกับ Meta เปิดตัว Affiliate Partnership บน Instagram ในไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-01",
+      "whyNow": "Shopee ร่วมกับ Meta เปิดตัว Affiliate Partnership บน Instagram ในไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 86,
+      "scores": {
+        "thailand_relevance": 20,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVWwwVkdtM3hXakFSMjItUTB1U3V4TmNRUGNFZl80V1MxSk5Db2JxWU8xTVlvZFh0MjhSekdlRVJtTzBQc0dOTnU5eUwtYlhSMkh4anBCbXlVS0ZkWG9ZV3RZMTJtT0Yzb0J0UUZQSGtPN216aTlxTVNqM3ZTaWQ0Uk5BVWwxT2pZUkFz?oc=5",
+          "label": "iMoD"
+        }
+      ]
+    },
+    {
+      "id": "b1bebbf89c7a",
+      "brandName": "EVEANDBOY",
+      "companyName": "EVEANDBOY",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เป้าหมื่นล้านของ EVEANDBOY กับสูตรขยายสาขา ที่ยอมหั่นพื้นที่มาทำ ‘คาเฟ่’ เอาใจกลุ่ม Gen Z",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-08-04",
+      "whyNow": "เป้าหมื่นล้านของ EVEANDBOY กับสูตรขยายสาขา ที่ยอมหั่นพื้นที่มาทำ ‘คาเฟ่’ เอาใจกลุ่ม Gen Z",
+      "momentum": "Rising",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 85,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXZ1h3bkxBTWJaSUJpdjdKVHd6SlBfM25UZC1JbC1jNjRLZDJ1Uk9LclM4VnlSdkVWdmtXb2h5YXpVanVLMVVIWlZKN2xmdHpzVVNZWQ?oc=5",
+          "label": "Marketeer Online"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE10bHR6bnZWQW1pNXBPX2trWUVUczc5S1FaeENsa2hRY1hFYnFQME51b2RIaVZEVm1PU3dNdXdETHBsUERMeWtvQ2l3RHE4Uk9wVzdMYWxuRHc?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "c3cbedb3a143",
+      "brandName": "เคเอฟซี ฉลอง",
+      "companyName": "เคเอฟซี ฉลอง",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เคเอฟซี ฉลองเปิดสาขาครบ 77 จังหวัดทั่วไทย ยืน 1 ตลาดไก่ทอด",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-03-05",
+      "whyNow": "เคเอฟซี ฉลองเปิดสาขาครบ 77 จังหวัดทั่วไทย ยืน 1 ตลาดไก่ทอด",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 85,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5hMXZTd0ZfQVVqc0NGOVN3dlJjU19UazdVODR3eDQ3QnA2WjdzQmhHbUZRNldZM2M4VHVQOGdmVnpSYlA1aVdSUDRMTzJYcGsxbFVWcGhrWmwzbXNKaFE?oc=5",
+          "label": "ข่าวสด"
+        }
+      ]
+    },
+    {
+      "id": "35ddcc437fef",
+      "brandName": "เตรียมขายทิ้ง",
+      "companyName": "เตรียมขายทิ้ง",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "กรุงเทพธุรกิจ. . Blue Bottle กำลังบุกไทย ทำไมเนสท์เล่ดันลือ “เตรียมขายทิ้ง”? | The Unlock . 'เนสท์เล่' ขายทิ้ง ร้านกาแฟดัง บลู บอทเทิ่ล ที่ยังไม่ทันมาเปิดในไทย ก็มีข่าวลือว่าเจ้าของจะขายกิจการแล้ว . ติดตามได้ใน The Unlock ถอดรหัสคนสร้างแบรนด์ ปลดล็อกเคล็ดลับ จับกระแสธุรกิจ . .",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2025-12-19",
+      "whyNow": "กรุงเทพธุรกิจ. . Blue Bottle กำลังบุกไทย ทำไมเนสท์เล่ดันลือ “เตรียมขายทิ้ง”? | The Unlock . 'เนสท์เล่' ขายทิ้ง ร้านกาแฟดัง บลู บอทเทิ่ล ที่ยังไม่ทันมาเปิดในไทย ก็มีข่าวลือว่าเจ้าของจะขายกิจการแล้ว . ติดตามได้ใน The Unlock ถอดรหัสคนสร้างแบรนด์ ปลดล็อกเคล็ดลับ จับกระแสธุรกิจ . .",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 85,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMijAVBVV95cUxPb0VZaXk1M01BOHJqdnNXNXhCeWR4ODZPVjRmV0RwQjBsYzRKRUdobXNkV180aWdfbktQZEJ3MTVHbzhzNUc2SzdFQ2RfY0haemJNdkhaNFpybm5tbVFmV3BkRFp0a3JXY2ZCNXp2RG1nNnBKYlpLc2RtNzg3bnFkeVA0RzZmMTQ4bXcwdGJSdlRiLTFTN0NwamFPOTFXMEJSalpQaVRtWWJZUDd5bkhWWTUzbnNiUHMxM29QSWNrNXUwNTRHQTNZLWtpMmZvcWUxVkhMbkhJT0d3dW9VNENaV1htX29jSVg1VHF1Y2d5X2wyd2dvLWVNWEpRYW5ZR0ZzbDVsUjlYRFRvN3Vxa09CdXNjQU83V0J0dnNfT1A2OEtOTm5yOUVxZ0JBNkEwNkE0aXVCQTUta00zWm5YYTZfNjlyeXIwT0s1NFhuQ3JUYkhoR2l2cEVKeXgzVjNlaDhobE05NDVsYjcyQTNsNnFfbXM2dFJhVklvcXpYbkU0RGtjdDNmaHRrc3I3U21WdEVnWWt5WUREaFZYZzhiR1FnWUdyTHpPX2RDek5uS0tqNXNINUpSeWk5RGJXTzVDay0xSGtyZXFXTndDNkRJTXQyNmQ3MU9YQkJyOWVJSlI5YXdITnFuZE1GbXdJNXIweGpGbTNNVC1SWHdRZE9RLVZJa3RNVW1FQVBxWWtEcGRmYUxDVUYzNHZsLXd2YTBuUC01NUgyNUxjamZSUGdCcGlLUEZNdEVsSVRTMHRZNUY2b3dUV3NwWlVfajhsUVRPT2xUU2VZRG41aTI3VFNycFo5MWRseFp0SjZIYzVxamFLcXJndHRQZXEyT2JsR2JjQUFUOWVHamlSbWwxZ2lT?oc=5",
+          "label": "facebook.com"
+        }
+      ]
+    },
+    {
+      "id": "0bafd372b59e",
+      "brandName": "เช็กอินด่วน! niko and …",
+      "companyName": "เช็กอินด่วน! niko and …",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เช็กอินด่วน! niko and … เปิดสาขาใหม่ใหญ่เป็นอันดับ 2 ในไทย รวมแฟชั่น คาเฟ่ และของแต่งบ้านไว้ที่เดียว",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-19",
+      "whyNow": "เช็กอินด่วน! niko and … เปิดสาขาใหม่ใหญ่เป็นอันดับ 2 ในไทย รวมแฟชั่น คาเฟ่ และของแต่งบ้านไว้ที่เดียว",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 85,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kNWs2R2tYR29hYzhTZVBhQ19qelVpUnVHSmVQTzRlVHEtZExVWkhkOWRIU2dVSW1XUHU5LU1KdUhJMUNxUzhZU2ZLSmY?oc=5",
+          "label": "Sanook.com"
+        }
+      ]
+    },
+    {
+      "id": "3dcdb0aefa74",
+      "brandName": "T-Beauty",
+      "companyName": "T-Beauty",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "เปิดตัว “T-Beauty” ดัน 3 สมุนไพรไทยสู่เวทีโลก ปั้น Soft Power เขย่าอุตสาหกรรมความงาม",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-05-11",
+      "whyNow": "เปิดตัว “T-Beauty” ดัน 3 สมุนไพรไทยสู่เวทีโลก ปั้น Soft Power เขย่าอุตสาหกรรมความงาม",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 84,
+      "scores": {
+        "thailand_relevance": 16,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBxLXdmZFdFOUcyYW8wZU9HdEtkZVlYeTNndG1tYkQyVG1XYVhoc0d4SElyNVd2N1JicDRRbDFRLWIyWUkzMzFfQ0lMUmp6MzdxdlJGbUwwdw?oc=5",
+          "label": "Hfocus.org"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9PNkxIUkliWGhiMm8wYjRRWFZmblN2blYzU0dFcmxLNlZhTTIwVUl6cTR0aEVTbmo2V2RNRDB6R2kxLXRBWEVEdjRUWHFRZTR0T3NpbHY5ZHlXaEU3c21RcEJwUjlCZTduVGFZ?oc=5",
+          "label": "Marketing Oops!"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBrcng5Vm1xTmlqMmF6TnJpbTYzc3Q4eDFTa0NEVG00TWYxOWN6RGY2TDd2ZVpNVWRmZVpRbHQ5OTc1Z0IwUEdnNnZPX2dHMVJB?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "c4438fbb328f",
+      "brandName": "YouTrip",
+      "companyName": "YouTrip",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "YouTrip ยกระดับความปลอดภัยสูงสุด เปิดตัว In-App 3DS เวอร์ชัน 2.0 เจ้าแรกในไทย ที่มาพร้อมประสบการณ์การใช้งานที่เหนือกว่า",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2023-07-17",
+      "whyNow": "YouTrip ยกระดับความปลอดภัยสูงสุด เปิดตัว In-App 3DS เวอร์ชัน 2.0 เจ้าแรกในไทย ที่มาพร้อมประสบการณ์การใช้งานที่เหนือกว่า",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 84,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxOeERDM00wLUt0aGtQTHNuekotOVNzRXZoV2RwRFpTWldOb2dZU05YV2FTYTV3cjRaNm0weFlOQ2ZPUUh0dW1lM0FtekhzVXdIc0JzSUJVSjZmUTd1MEE0UzM5N25lZUtHVUE5LUNtR0JKUXlBajFvVWV3OEJrUS1TcWJJZWU2Z2FjQTlEcDZMLXNzZmpEVGVjbUJRVFhHMEhQNDlUVzFhOGppNUVRdVR2ejRKdmIwSUp6VVctM0ViRFhvTjJiWmhGVC1GZTB6TFJPTWJxenNvbmJHeHVoT1JaLWo3bHJ5Tnk3SWk4Zks0T1BNcTc3MEw5eWU3TFE4djZFUkkxeXpiV1lDX1VfWWMtNTJjejd0SDZPT1FzcXBySEhGa3hFOENVbVBVMDlxcE1FTkFyZEhUclRFeXVpWE5HUFBrTWpwVHFXR2k4TzFtQVZua0gySldBSkpkUW9XdXNDbW1leFowRzlIZkNBcWdkalZndldBcUs5?oc=5",
+          "label": "Media OutReach Newswire"
+        }
+      ]
+    },
+    {
+      "id": "315926cf9bb2",
+      "brandName": "CRC",
+      "companyName": "CRC",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "CRC กางแผนลงทุนปี 69 วงเงิน 1.6-1.8 หมื่นล้าน ขยายสาขาไทย–เวียดนาม ดันรายได้โต 4–5% | การเงินธนาคาร",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-03-12",
+      "whyNow": "CRC กางแผนลงทุนปี 69 วงเงิน 1.6-1.8 หมื่นล้าน ขยายสาขาไทย–เวียดนาม ดันรายได้โต 4–5% | การเงินธนาคาร",
+      "momentum": "Rising",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1bnhXY0hlUFZWV3ZtVWRkT1VzcHlhN05Zc3Bmd3ZzR0VaMU5CcF9zaDZjYi1FTGtmbjVVMXVlSEEwU2c3WGRlczk1dGlxV3pYUFpaWHNn?oc=5",
+          "label": "LINE TODAY"
+        }
+      ]
+    },
+    {
+      "id": "4dc7c9ec434e",
+      "brandName": "R",
+      "companyName": "R",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Rêver Automotive ผู้แทนจำหน่าย BYD ในประเทศไทย คาดเตรียมเปิดตัว Atto 3 และ Dolphin ภายในปี 2022 - 2023 นี้ - HeadLight Magazine -",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2022-08-08",
+      "whyNow": "Rêver Automotive ผู้แทนจำหน่าย BYD ในประเทศไทย คาดเตรียมเปิดตัว Atto 3 และ Dolphin ภายในปี 2022 - 2023 นี้ - HeadLight Magazine -",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 20,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE03bDVqazhCcWMwMzdjblo3U05FVzA0cE9hTzVab3RCbVZrUy01RlFzMktBYTNXMGhJeGluLTZlY1labFF1aVNYWTRzaGwtbHJ1Yml4TmI4dkRTNF9lT1FkYUF1eWtjZw?oc=5",
+          "label": "HeadLight Magazine -"
+        }
+      ]
+    },
+    {
+      "id": "1758356db217",
+      "brandName": "OR",
+      "companyName": "OR",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "OR ผนึก Minor Food ขยาย 4 แบรนด์ร้านอาหารใน PTT Station ตั้งเป้ากว่า 150 สาขาในปี 73",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-20",
+      "whyNow": "OR ผนึก Minor Food ขยาย 4 แบรนด์ร้านอาหารใน PTT Station ตั้งเป้ากว่า 150 สาขาในปี 73",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14Slpld1czYk5SNDVEajJBblJhcWVHMHdQT3ZxaEJieDhxTDRiaElPQURNY3pPQ3Jyc3pUblpRLVBkdExRWndVOVQtelZqQXZtYmwyMDZIVWI?oc=5",
+          "label": "Thairath.co.th"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE14Slpld1czYk5SNDVEajJBblJhcWVHMHdQT3ZxaEJieDhxTDRiaElPQURNY3pPQ3Jyc3pUblpRLVBkdExRWndVOVQtelZqQXZtYmwyMDZIVWI?oc=5",
+          "label": "Thairath.co.th"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBmY3ZUNzAzd003aVJDTFhmZHFMaXJkYWhlZkdTdVM1bWJ5bnNhMnM3ZEptYkFjMWNuelpsTTU1NWtSbDgtSWtRZTNjWHYxelNRUktrenNfQWE?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "62affc40db9c",
+      "brandName": "The New Beautiful",
+      "companyName": "The New Beautiful",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "วัตสัน ประเทศไทย เปิดวิสัยทัศน์ครึ่งปีหลัง 2022 เดินหน้ากลยุทธ์ O+O Platform พิชิตใจขาชอปแบบไร้รอยต่อ ปักธงมุ่งสู่ผู้นำด้าน E-Commerce พร้อมชูแนวคิด 'The New Beautiful' ความงามรูปแบบใหม่ - มติชนสุดสัปดาห์",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2025-06-08",
+      "whyNow": "วัตสัน ประเทศไทย เปิดวิสัยทัศน์ครึ่งปีหลัง 2022 เดินหน้ากลยุทธ์ O+O Platform พิชิตใจขาชอปแบบไร้รอยต่อ ปักธงมุ่งสู่ผู้นำด้าน E-Commerce พร้อมชูแนวคิด 'The New Beautiful' ความงามรูปแบบใหม่ - มติชนสุดสัปดาห์",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ZZVh4YVIxTHBSejZVNXBOcHA3ZEtVT1h0ekNvclpUVTIyNVFXWFF0NndHX3NmeDdsYS10S1FNZUczd2NmMi1neTFKMGdxdDdEc0FWWFc2U0xxOVRDaGdXbmN3?oc=5",
+          "label": "มติชนออนไลน์"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lRHNvcnJJYTJYNDZuNzUxVHU5RGJLd3liMElfS1ltNnlxbnZVWHdGd21SVE8td0xxX1pkVnRKTUgwS3lYbnZ5U1pPLXIzNks2cFZrNXkxT0s?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "7d98b1c7eb16",
+      "brandName": "Instagram Shopping",
+      "companyName": "Instagram Shopping",
+      "industry": "Consumer / Other",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "‘ชม-ช้อป’ จบในแอปเดียว Instagram Shopping เปิดให้ไทยใช้งานได้แล้ว แบรนด์ยืนยันตอบโจทย์ธุรกิจช่วยยอดขายโต",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2020-11-09",
+      "whyNow": "‘ชม-ช้อป’ จบในแอปเดียว Instagram Shopping เปิดให้ไทยใช้งานได้แล้ว แบรนด์ยืนยันตอบโจทย์ธุรกิจช่วยยอดขายโต",
+      "momentum": "Exploding",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 8,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBmQmFseEJRWTg1NlJzdUt5bGtVeTd2SjU3WHJ0dloyY3V3ZzJWNXN5YUxzeEtvczQ0Qmp1c2hLTDRpcGZGQ2NTdmR4dGl6bVlia19GQW9MWHpfTEZ0V2ZqS3A3MjltMXBKRHBNRG0xTFRsQQ?oc=5",
+          "label": "Marketing Oops!"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5UElHTjdsdl9MY0NMaHpYR25hYkp4MG1ZWDBYQkk5WHJ5RkgwNG5vSHhoMWdMQlMxV1ctbmtkOHpibmxUMWJpaGxRWTRsUlk?oc=5",
+          "label": "Sanook.com"
+        }
+      ]
+    },
+    {
+      "id": "8d8b59775383",
+      "brandName": "HERE. NOW.",
+      "companyName": "HERE. NOW.",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เจนเนอราลี่ ไทยแลนด์ เปิดตัวแคมเปญระดับโลก “HERE. NOW.” ปลุกภาพจำใหม่แห่งการอยู่เคียงข้างลูกค้า...ทุกที่ ทุกเวลา | Global Standard Insurance Company in Thailand",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2025-12-01",
+      "whyNow": "เจนเนอราลี่ ไทยแลนด์ เปิดตัวแคมเปญระดับโลก “HERE. NOW.” ปลุกภาพจำใหม่แห่งการอยู่เคียงข้างลูกค้า...ทุกที่ ทุกเวลา | Global Standard Insurance Company in Thailand",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBaWGVPMWkzcXQ3ak9iaTNWUzB4ekYxXzRLdy0zZlcwLUh1VE8wT2VKVjFsem80dU1mSm1ORGtTMmVjbi12c2JWc2hObDMybUdzOUl2Y2ZKMGFZTWIwQjhlTDdNaDdfRDVqcU9rOWVwc0Q?oc=5",
+          "label": "GENERALI"
+        }
+      ]
+    },
+    {
+      "id": "59249d002a05",
+      "brandName": "กรุงเทพประกันชีวิต",
+      "companyName": "กรุงเทพประกันชีวิต",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "กรุงเทพประกันชีวิต เปิดตัวแบรนด์แคมเปญใหม่ ก้าวสู่บริษัทประกันชีวิตอันดับหนึ่งด้านความ “ใส่ใจ”",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2024-11-06",
+      "whyNow": "กรุงเทพประกันชีวิต เปิดตัวแบรนด์แคมเปญใหม่ ก้าวสู่บริษัทประกันชีวิตอันดับหนึ่งด้านความ “ใส่ใจ”",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xazd5ZWpIZDZhR05QVzg1NHZFSW90aXhpTTBka2U3RU9DV2pHREdxSjZuY1VTNVVVX3c3aTVOczNORldoLWxWUFFkaXJoU2Q3SWthZzlDS2s?oc=5",
+          "label": "Thairath.co.th"
+        }
+      ]
+    },
+    {
+      "id": "1c26ccf63246",
+      "brandName": "เศรษฐกิจชะลอตัว! ปีนี้ เฟรเซอร์สฯ",
+      "companyName": "เศรษฐกิจชะลอตัว! ปีนี้ เฟรเซอร์สฯ",
+      "industry": "Property",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เศรษฐกิจชะลอตัว! ปีนี้ เฟรเซอร์สฯ เปิดตัวอสังหาฯ แค่ 6 โครงการ มูลค่ารวม 9,803 ล้าน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2025-03-18",
+      "whyNow": "เศรษฐกิจชะลอตัว! ปีนี้ เฟรเซอร์สฯ เปิดตัวอสังหาฯ แค่ 6 โครงการ มูลค่ารวม 9,803 ล้าน",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdzNXSXAtaVdNUDJFblYwbURaT1JmZ3BaMTVOWW9iV0Ryc3hpWE53clR3WFA3cjJUXzBtbHVJUEg0UXhtUFhkYmFSck5ZVnFOa2lRSFpnSng1eFBsV1gzYkhNZDZoWkdtVWhobFdSRUZhNjhscm1OWlVLVE5jZElOZ05PU05NanhiY2JDWWRoNC1VQjNETU9LQzRxS0p3TnJSZlZKNA?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    }
+  ]
 }
