@@ -1,0 +1,36 @@
+name: Daily Thailand Brand Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * *' # 08:00 Asia/Bangkok
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Discover Thailand Top 20
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5-mini
+        run: node scripts/discover.mjs
+
+      - name: Commit updated radar data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/daily.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh Thailand daily brand radar"
+          git push
