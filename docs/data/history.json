@@ -37,8 +37,8 @@
     },
     "shopee ร่วมกับ meta": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 3,
       "lastSignalHash": "50582251fb",
       "lastSignal": "Major product launch"
     },
@@ -142,8 +142,8 @@
     },
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 3,
       "lastSignalHash": "4fdfc81662",
       "lastSignal": "Thailand market entry"
     },
@@ -156,15 +156,15 @@
     },
     "luxeed": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 3,
       "lastSignalHash": "d986247261",
       "lastSignal": "Thailand market entry"
     },
     "subway": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 2,
       "lastSignalHash": "7ce8e27c67",
       "lastSignal": "Thailand market entry"
     },
@@ -184,22 +184,22 @@
     },
     "ห้างเซ็นทรัล": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 3,
       "lastSignalHash": "605af92167",
       "lastSignal": "Thailand market entry"
     },
     "กรุงเทพธุรกิจ. . ออมสินปล่อย soft": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 3,
       "lastSignalHash": "9b95240b2a",
       "lastSignal": "Major product launch"
     },
     "อัพเดท": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 2,
       "lastSignalHash": "d21ce6f26e",
       "lastSignal": "Major product launch"
     },
@@ -289,8 +289,8 @@
     },
     "human made": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-11",
-      "timesDetected": 1,
+      "lastSeen": "2026-08-12",
+      "timesDetected": 2,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
@@ -377,6 +377,90 @@
       "timesDetected": 1,
       "lastSignalHash": "7de361cc36",
       "lastSignal": "Expansion / new branches"
+    },
+    "good goods ฉลอง 7": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "94a26e4283",
+      "lastSignal": "Expansion / new branches"
+    },
+    "lotteria ร้านเบอร์เกอร์เกาหลี โดน mcdonald’s": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "27e6a8c333",
+      "lastSignal": "Expansion / new branches"
+    },
+    "เซียงเพียว": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "f21fa69f84",
+      "lastSignal": "Major product launch"
+    },
+    "chagee": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "d9b3114e43",
+      "lastSignal": "Thailand market entry"
+    },
+    "yakiniku like ปิ้งย่างคอนเซ็ปต์ solo-dining": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "20af2124bd",
+      "lastSignal": "Expansion / new branches"
+    },
+    "no brand": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "a0914b6c38",
+      "lastSignal": "Thailand market entry"
+    },
+    "byd dolphin g": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "8d1c1f784c",
+      "lastSignal": "Thailand market entry"
+    },
+    "ลาซาด้า ตอกย้ำผู้นำอีคอมเมิร์ซพรีเมียม": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "87d4dd397a",
+      "lastSignal": "Major product launch"
+    },
+    "แมคโดนัลด์ โชว์ฟอร์มแกร่ง": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "0c59c12586",
+      "lastSignal": "Expansion / new branches"
+    },
+    "เป้าหมื่นล้านของ eveandboy กับสูตร": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "3acebfdad3",
+      "lastSignal": "Expansion / new branches"
+    },
+    "scb protect": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "7cc4d540e8",
+      "lastSignal": "Rebrand"
+    },
+    "ศรีจันทร์ รุกตลาดสกินแคร์เต็มสูบ": {
+      "firstSeen": "2026-08-12",
+      "lastSeen": "2026-08-12",
+      "timesDetected": 1,
+      "lastSignalHash": "3fcfa005c7",
+      "lastSignal": "New presenter / ambassador"
     }
   }
 }
