@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-16",
-  "generatedAt": "2026-08-16T03:35:56.664Z",
+  "date": "2026-08-17",
+  "generatedAt": "2026-08-17T03:36:52.948Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
@@ -16,7 +16,7 @@
       "momentum": "Active",
       "revenueMinM": 5,
       "revenueMaxM": 10,
-      "score": 88,
+      "score": 78,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 19,
@@ -26,13 +26,13 @@
         "timing": 10,
         "evidence_quality": 5
       },
-      "priority": "HOT",
-      "isNew": true,
+      "priority": "HIGH",
+      "isNew": false,
       "isUpdated": false,
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBRZDFnU1QyR3kxcjBkS3VPaFJBRHNZNVZ6VU5GMUx2TVNrTEo4MEw1VXBkYTdvMHVfR1FkbFpuRVVDZnkzQ3FsWDd5cDgyRzQ2R2JOOURrZFVHam9uQmRfLTdsa2dCT1MxRi1Ra2UtVkVybUhkUWdGNkhR?oc=5",
-          "label": "autolifethailand.tv"
+          "label": "Autolifethailand.tv"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaEdfRlJQd3N2V2tBV05rSVdXVUlocFgyd19XRnVRdS01M1MyVkNWQXhJanJ4MXdka3EzMkc1bnRlRTdDZnhpYlFvYkt6V1FKQzZPc2I1TjV3WUlOcFNhbVZ2ME1VcmJiZ2ZoaDdkc2FQWVVKSzFwajZtcUoyZkJVVUk2VlF2SnhfMkVERlVYWQ?oc=5",
@@ -41,81 +41,48 @@
       ]
     },
     {
-      "id": "2ae89f14b8b7",
-      "brandName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
-      "companyName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
-      "industry": "Food / QSR",
+      "id": "249085d95c74",
+      "brandName": "แมคโดนัลด์ ประเทศไทย’",
+      "companyName": "แมคโดนัลด์ ประเทศไทย’",
+      "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-26",
-      "whyNow": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "thailandEvidence": "‘แมคโดนัลด์ ประเทศไทย’เปิดสาขาอีก 'เท่าตัว' ใน 7 ปี หลังต่อสัญญาแฟรนไชส์อีก 20 ปี",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-09",
+      "whyNow": "‘แมคโดนัลด์ ประเทศไทย’เปิดสาขาอีก 'เท่าตัว' ใน 7 ปี หลังต่อสัญญาแฟรนไชส์อีก 20 ปี",
       "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 82,
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 78,
       "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
         "momentum": 6,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxVG5lSXNUVUJyazNLR3JiM0dpUVpYNG9mcmtLZWNRTkdmWk9mZURGcm51alFZSEJwQlpjVmlBdGlVZDVfNk54RHkyNGVCUWR5V1p2MERB?oc=5",
-          "label": "มิติหุ้น"
-        }
-      ]
-    },
-    {
-      "id": "ccb700525b66",
-      "brandName": "ยัสปาล กรุ๊ป",
-      "companyName": "ยัสปาล กรุ๊ป",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ยัสปาล กรุ๊ป เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-13",
-      "whyNow": "ยัสปาล กรุ๊ป เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
-      "momentum": "Exploding",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 79,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 8,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQcHZfTTVMT3E3Tnc3WENUVUd6ZHlhYWROWU1fYWtESkljeUpNdllPZ2cwQW1TRFh4SV9KMlA4dVNhSkNfWTZqOXJXdUY2R3pnNGRR?oc=5",
-          "label": "เดลินิวส์"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oQW81dXRldVZuVHhnOEZLX1F1YlI4RXV0dDV2bWJHdVZ4aXlKRF9naHlGYVRvRkw0VlBxOUFCWENCb2dMa2VEMFFacVdHQjk0UzVqTEtxcE1KTm8?oc=5",
+          "label": "bangkokbiznews"
         }
       ]
     },
     {
-      "id": "1b5814d0755e",
-      "brandName": "ถอดรหัสซูชิสายพาน Ginza Onodera",
-      "companyName": "ถอดรหัสซูชิสายพาน Ginza Onodera",
+      "id": "ffc5e878569e",
+      "brandName": "JAECOO 6T REEV",
+      "companyName": "JAECOO 6T REEV",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ถอดรหัสซูชิสายพาน Ginza Onodera บุกไทย พร้อมวิเคราะห์ SWOT",
+      "thailandEvidence": "JAECOO 6T REEV เปิดตัวในไทย เอสยูวีขับเคลื่อน 4 ล้อ เทคโนโลยี REEV เคาะราคาเริ่ม 8.79 แสนบาท",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-07",
-      "whyNow": "ถอดรหัสซูชิสายพาน Ginza Onodera บุกไทย พร้อมวิเคราะห์ SWOT",
+      "signalDate": "2026-06-29",
+      "whyNow": "JAECOO 6T REEV เปิดตัวในไทย เอสยูวีขับเคลื่อน 4 ล้อ เทคโนโลยี REEV เคาะราคาเริ่ม 8.79 แสนบาท",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -134,41 +101,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOTRpc1BHRWgtQ015VFdmZ0UtX1ZkWFNBenV2UFpJM2FCaUNVTVVaNk01M18zRjNJZ3NnQnlDdmgyWXNSQ3hzRDByT0t0dW5KTmhfcnBsNGN3UHBKal9zNWlmZjZTS0hVMzNidTFYSG5BcGhId0xndnB4NFAzbVZucTRn?oc=5",
-          "label": "การตลาดวันละตอน"
-        }
-      ]
-    },
-    {
-      "id": "5c7622e5b4bf",
-      "brandName": "All NEW Lexus",
-      "companyName": "All NEW Lexus",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เผยข้อมูล All NEW Lexus ES เวอร์ชั่นญี่ปุ่น 3 รหัส 350h / 350e และ 500e ลุ้นนำเข้าไทยปลายปีนี้ ! - HeadLight Magazine -",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-06-12",
-      "whyNow": "เผยข้อมูล All NEW Lexus ES เวอร์ชั่นญี่ปุ่น 3 รหัส 350h / 350e และ 500e ลุ้นนำเข้าไทยปลายปีนี้ ! - HeadLight Magazine -",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 78,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKVGV3QU0yX2RDR29hdzlrSlpVWlRaREd1R3laa1BSRnhJckNPY3VsQVVJTlRwRjU5OFFIYnZmYy1NVTZYZGFSOVIzUklwOHRyUmthelAzSkEtT05kUEpfN1Z5VXFRMFN2c2tKSUs3Ykg?oc=5",
-          "label": "HeadLight Magazine -"
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1vOWxfSk5nY0VaamlubWxOUFFBNGFYWXI5V3NuSHozY1lBanB4YVNXVFRaZVc3dTdwT0F4eUhIZ3JkU2VWZHY2MERiSnozSEdfbDF2YkJERms4RkF0TTA0YU1pTlJJVmFLa05sTXVLYzE2VTVVNzR6Njd3?oc=5",
+          "label": "biztalknews.com"
         }
       ]
     },
@@ -206,6 +140,72 @@
       ]
     },
     {
+      "id": "0e7a4bb51d12",
+      "brandName": "BIZ",
+      "companyName": "BIZ",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "BIZ เปิดตัว BIZGENES สู่ Precision Health & Longevity Solutions ในไทย ชู The Vitality Collection ผลิตภัณฑ์ตอบโจทย์ไลฟ์สไตล์เฉพาะบุคคล",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-24",
+      "whyNow": "BIZ เปิดตัว BIZGENES สู่ Precision Health & Longevity Solutions ในไทย ชู The Vitality Collection ผลิตภัณฑ์ตอบโจทย์ไลฟ์สไตล์เฉพาะบุคคล",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 77,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiugZBVV95cUxQN0RsNGVkY0FXV1hfMFMwXzRZTmhCbGx4cjVUZlVrcGg5M1c3U0ZtbGplaXNNVWJsQm8zbFZyVDlid3VYMHN1eU5tMV8yTzBxeXhHd0ZINW90OElYdVlNeXFCeEpsWVFjZERIVmlpdjlkbEkzM3ZVWjVNY2RNWGRGZ2oxaDZOLVBUVWpfWURsR2xPYmhsRGEzdzNCc3VwRzJJUkg5STB3Qk5TQmRXZ3dsa1U5c3BmbGNUcTg2aFZSRk04aGRUbEJDMU9RWVpUUTFueVZMT2dfVDc2VS1JT3l4TUE3TkJYQjVoNU8yVUhnTXNsTVlBeXZocHJNRThaQ0pXSTluaHczVXhteFg2ZEc3cjY3Z1NocUxYbXNUdWZrc2dmMnBOZ2hRM1k4N3JHVThYWnE4OGN6MG1Gcmt6Q01qM1Z4OU5JRldpc2lmRWJJWXpWSVA0RUNlS2lkc0ZQTWNmUzlwZW50bGNoS1RYalZQeURVNG5RWFNUVkpLZnFGcHo5TFY4aGpXMzIzUXpkekVNMExkTnd5WmNKck9ZZnRzUE5JOVM1VWp3YUROWFBBVkVOV1ZpMEVwRDFQb0xJRkV1LVR1RnpJcDNDTHlHOHpodTlIdVhTbVF4amkwZHhmUkIzSUlyU2RNcGwzdGZtT2djOHdiQUQtUnR2Rm5MVUMtcDh2aWt0YmhudHBsLXV3cVdwY0thU3ZuSFBIbUJVTXVGWmxZS2VPNlRwSGF2bFl2VkpLdE9LMWFFOThjTUZvbTRjUU80OHB4SnJtMFBKWG85NFV1b1JJWlk1dnd2Q2VVczJ3VDN1TnJDZTV2YXJSVTM5LUducVRkZmFZVUxBUE9ySF8wajR4SU1rckJkamVUNTRMVjVDMG04RkhnN09LXzgyT0tTLV8yd1c5NmV0OFZxNXFqSENHN0F2Q180MDZnQmNSbWVFeFMyanNOdlVXUUNYMEU1X2FaOWRpN0pWeU01TzFvdTB4T1N2TXpvR3ZrMmlqbFQxeFk0OFdITE45R25Tc3hCUmhEUGdlaFd3SElVTVR4TDNaVEEtSjZPRUVHa2dRSVZWdnRRSlJfbjRQdzBVZWszMHh1WVVR?oc=5",
+          "label": "Share2Trade"
+        }
+      ]
+    },
+    {
+      "id": "169673203949",
+      "brandName": "LUXEED แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery",
+      "companyName": "LUXEED แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“LUXEED” แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery Group พร้อมเปิดตัวอย่างเป็นทางการในไทยไตรมาส 4 ปีนี้",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-11",
+      "whyNow": "“LUXEED” แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery Group พร้อมเปิดตัวอย่างเป็นทางการในไทยไตรมาส 4 ปีนี้",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 76,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WampNQnVBbDNITm1FSXVpSnBrTGlqWUV1RGRFenRQWjZjMkd4SzRSU2FEbThxSU83UGh6UnlxU2FIekV2dHYtbFo5ZWNhc0xUSHVLSU0yaGtWM3ZtQ01WOEw4dWFld0txNWc4?oc=5",
+          "label": "GQThailand"
+        }
+      ]
+    },
+    {
       "id": "612b0715b7ce",
       "brandName": "THAIFEX",
       "companyName": "THAIFEX",
@@ -213,7 +213,7 @@
       "brandType": "Established / Growing",
       "thailandEvidence": "ส่องแบรนด์ไทย อร่อยต่างประเทศ THAIFEX – Anuga Asia 2026",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-11",
+      "signalDate": "2026-08-04",
       "whyNow": "ส่องแบรนด์ไทย อร่อยต่างประเทศ THAIFEX – Anuga Asia 2026",
       "momentum": "Active",
       "revenueMinM": 3,
@@ -271,7 +271,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVWwwVkdtM3hXakFSMjItUTB1U3V4TmNRUGNFZl80V1MxSk5Db2JxWU8xTVlvZFh0MjhSekdlRVJtTzBQc0dOTnU5eUwtYlhSMkh4anBCbXlVS0ZkWG9ZV3RZMTJtT0Yzb0J0UUZQSGtPN216aTlxTVNqM3ZTaWQ0Uk5BVWwxT2pZUkFz?oc=5",
-          "label": "iMoD"
+          "label": "iphonemod.net"
         }
       ]
     },
@@ -337,7 +337,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kNWs2R2tYR29hYzhTZVBhQ19qelVpUnVHSmVQTzRlVHEtZExVWkhkOWRIU2dVSW1XUHU5LU1KdUhJMUNxUzhZU2ZLSmY?oc=5",
-          "label": "Sanook"
+          "label": "sanook.com"
         }
       ]
     },
@@ -370,7 +370,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1walZHZTJlUVRxemNOZjdieHJndHJBS1pleHVtalc2NDlreURNNXIzVmZYUTcweTkwLUFxd0stbk5BTE1TS3ZXaGxuVGdCU21WZ19LelJ3?oc=5",
-          "label": "LINE TODAY"
+          "label": "today.line.me"
         }
       ]
     },
@@ -441,6 +441,39 @@
       ]
     },
     {
+      "id": "f9cc8b406ccf",
+      "brandName": "JOE WINGS บุกเชียงใหม่",
+      "companyName": "JOE WINGS บุกเชียงใหม่",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "JOE WINGS บุกเชียงใหม่! OKJ Group ปักหมุดขยายสาขาปูพรมทั่วไทย ภายในปี 2573",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-13",
+      "whyNow": "JOE WINGS บุกเชียงใหม่! OKJ Group ปักหมุดขยายสาขาปูพรมทั่วไทย ภายในปี 2573",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 74,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE16SWRmbjk5R2FzRDFrYnhnQ1Y5WG5ONmxsMDlLM2VfOXFSaDJ0akwxbE5ldzhBWEt6RnFTRmpOSFNfcEhBS3FvakJOdHM?oc=5",
+          "label": "sanook.com"
+        }
+      ]
+    },
+    {
       "id": "a91dcbb4df49",
       "brandName": "MK",
       "companyName": "MK",
@@ -482,81 +515,15 @@
       ]
     },
     {
-      "id": "2c791194cd43",
-      "brandName": "มิสเตอร์. ดี.ไอ.วาย. ฉลองครบ 600",
-      "companyName": "มิสเตอร์. ดี.ไอ.วาย. ฉลองครบ 600",
-      "industry": "Consumer / Other",
+      "id": "29c349765d23",
+      "brandName": "ไทยประกันชีวิต",
+      "companyName": "ไทยประกันชีวิต",
+      "industry": "Banking / Finance",
       "brandType": "Established / Growing",
-      "thailandEvidence": "มิสเตอร์. ดี.ไอ.วาย. ฉลองครบ 600 สาขาในประเทศไทย ณ ไอซีเอส พร้อมเปิดตัวดีไซน์ร้านรูปแบบพิเศษ",
+      "thailandEvidence": "ไทยประกันชีวิตเปิดตัวแคมเปญโฆษณาชุด “เชื่อในความดี”",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-07",
-      "whyNow": "มิสเตอร์. ดี.ไอ.วาย. ฉลองครบ 600 สาขาในประเทศไทย ณ ไอซีเอส พร้อมเปิดตัวดีไซน์ร้านรูปแบบพิเศษ",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MTzk0M2VxM1NHV2o0YjUwRVJla2xtX1Z1d0E2YVdrbFRYQkI1YU1sUmJzN2NXanB3VGhtMlB1REhleGotbk5yLXJHUVpqVHBGa053WA?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
-      "id": "8c704797d9e7",
-      "brandName": "เอพี ไทยแลนด์",
-      "companyName": "เอพี ไทยแลนด์",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เอพี ไทยแลนด์ เปิดตัวแคมเปญ #HUGEHOME โปรยักษ์ บ้านใหญ่ แจกคลั่ง 4 แพ็กเกจ สูงสุด 4 แสน ลดใหญ่ สูงสุด 5 ล้านบาท",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-05",
-      "whyNow": "เอพี ไทยแลนด์ เปิดตัวแคมเปญ #HUGEHOME โปรยักษ์ บ้านใหญ่ แจกคลั่ง 4 แพ็กเกจ สูงสุด 4 แสน ลดใหญ่ สูงสุด 5 ล้านบาท",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE85OVllaTY2UkJaMVdnVDA3ZVRuVnhhYXZQTVJEWHR1ekxUV0NfVm1vRXpPb0NLSkQwRjlLLXlBdlFfS0x4M2djMmVBQllCT0VLdk9fRw?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
-      "id": "b14ea4779670",
-      "brandName": "CHANGAN and NING SERVICE",
-      "companyName": "CHANGAN and NING SERVICE",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand’s First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-14",
-      "whyNow": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand’s First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "signalDate": "2026-08-13",
+      "whyNow": "ไทยประกันชีวิตเปิดตัวแคมเปญโฆษณาชุด “เชื่อในความดี”",
       "momentum": "Active",
       "revenueMinM": 5,
       "revenueMaxM": 10,
@@ -575,8 +542,41 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jSldTamd4cWJ1Vk1QQlFmUTFqazNha2Q2d29mb0JwV3o3VHlfMTFjVjl1U0x6U3JZc3hwQ2VmczVESEJZZnBQVWxZcDQ5Q3J6NFNV?oc=5",
-          "label": "ThaiPR.NET"
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1kV2MwYlRzbzNhVDBQdmtFcjY4UXluOE96YnZxd0k1WHhNZk9WZHNoRmNPWmgxREtzbjZUbllVUHB1RGstVW5zZVlLMFc0UmxObDVlTQ?oc=5",
+          "label": "Marketeer Online"
+        }
+      ]
+    },
+    {
+      "id": "2ae89f14b8b7",
+      "brandName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
+      "companyName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-05-26",
+      "whyNow": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxVG5lSXNUVUJyazNLR3JiM0dpUVpYNG9mcmtLZWNRTkdmWk9mZURGcm51alFZSEJwQlpjVmlBdGlVZDVfNk54RHkyNGVCUWR5V1p2MERB?oc=5",
+          "label": "มิติหุ้น"
         }
       ]
     },
