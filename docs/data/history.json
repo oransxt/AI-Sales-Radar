@@ -37,8 +37,8 @@
     },
     "shopee ร่วมกับ meta": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 8,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 9,
       "lastSignalHash": "50582251fb",
       "lastSignal": "Major product launch"
     },
@@ -142,8 +142,8 @@
     },
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-16",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 7,
       "lastSignalHash": "389a700ad0",
       "lastSignal": "Thailand market entry"
     },
@@ -191,8 +191,8 @@
     },
     "กรุงเทพธุรกิจ. . ออมสินปล่อย soft": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 7,
       "lastSignalHash": "9b95240b2a",
       "lastSignal": "Major product launch"
     },
@@ -205,9 +205,9 @@
     },
     "thaifex": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 6,
-      "lastSignalHash": "5f1c196ee6",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 7,
+      "lastSignalHash": "26a9e49736",
       "lastSignal": "Major product launch"
     },
     "fashion island": {
@@ -219,8 +219,8 @@
     },
     "ไทยประกันชีวิต": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 3,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 4,
       "lastSignalHash": "04cbbfc538",
       "lastSignal": "Major product launch"
     },
@@ -247,8 +247,8 @@
     },
     "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ saboten": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 5,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 6,
       "lastSignalHash": "426e8127ea",
       "lastSignal": "Major product launch"
     },
@@ -289,8 +289,8 @@
     },
     "human made": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 7,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 8,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
@@ -352,8 +352,8 @@
     },
     "mk": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 7,
       "lastSignalHash": "bcc489e5c1",
       "lastSignal": "Expansion / new branches"
     },
@@ -464,8 +464,8 @@
     },
     "เช็กอินด่วน": {
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 3,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 4,
       "lastSignalHash": "2356c86cb1",
       "lastSignal": "Expansion / new branches"
     },
@@ -534,9 +534,9 @@
     },
     "changan and ning service": {
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-16",
-      "timesDetected": 2,
-      "lastSignalHash": "41f8990061",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 3,
+      "lastSignalHash": "4351e5f0cf",
       "lastSignal": "Major product launch"
     },
     "hongqi": {
@@ -639,8 +639,8 @@
     },
     "cp foton": {
       "firstSeen": "2026-08-16",
-      "lastSeen": "2026-08-17",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-18",
+      "timesDetected": 3,
       "lastSignalHash": "815b40e0d9",
       "lastSignal": "Major product launch"
     },
@@ -692,6 +692,69 @@
       "timesDetected": 1,
       "lastSignalHash": "042bbbb92d",
       "lastSignal": "Expansion / new branches"
+    },
+    "ไทยมาแรง rally movement ประเดิมคอลแลบฯ": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "8e46e3794b",
+      "lastSignal": "Major product launch"
+    },
+    "12 แบรนด์แฟชั่นไทยโกอินเตอร์": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "a8068561e6",
+      "lastSignal": "Expansion / new branches"
+    },
+    "ฮุนได เขย่าตลาด ev": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "c466c55b77",
+      "lastSignal": "Major product launch"
+    },
+    "ก้าวใหม่ของวงการแฟชั่นและบิวตี้": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "89619db6b0",
+      "lastSignal": "Major product launch"
+    },
+    "เอาใจคอกาแฟ monkey three coffee": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "a93e16117b",
+      "lastSignal": "Expansion / new branches"
+    },
+    "honda": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "07900507a9",
+      "lastSignal": "Thailand market entry"
+    },
+    "mtl ตอกย้ำความแรง เมืองไทยสไมล์คลับ": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "fd2a7ff91c",
+      "lastSignal": "Major product launch"
+    },
+    "ไทยกูลิโกะ ฉลองครบรอบ 60 ปีของ": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "23385a7a57",
+      "lastSignal": "Major product launch"
+    },
+    "ยูนิลีเวอร์": {
+      "firstSeen": "2026-08-18",
+      "lastSeen": "2026-08-18",
+      "timesDetected": 1,
+      "lastSignalHash": "8e426376d1",
+      "lastSignal": "Major product launch"
     }
   }
 }
