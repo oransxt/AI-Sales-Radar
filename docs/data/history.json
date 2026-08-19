@@ -38,7 +38,7 @@
     "shopee ร่วมกับ meta": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 11,
+      "timesDetected": 12,
       "lastSignalHash": "50582251fb",
       "lastSignal": "Major product launch"
     },
@@ -143,7 +143,7 @@
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 9,
+      "timesDetected": 10,
       "lastSignalHash": "4fdfc81662",
       "lastSignal": "Thailand market entry"
     },
@@ -157,7 +157,7 @@
     "luxeed": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 10,
+      "timesDetected": 11,
       "lastSignalHash": "d986247261",
       "lastSignal": "Thailand market entry"
     },
@@ -199,14 +199,14 @@
     "อัพเดท": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 9,
+      "timesDetected": 10,
       "lastSignalHash": "d21ce6f26e",
       "lastSignal": "Major product launch"
     },
     "thaifex": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 9,
+      "timesDetected": 10,
       "lastSignalHash": "26a9e49736",
       "lastSignal": "Major product launch"
     },
@@ -220,7 +220,7 @@
     "ไทยประกันชีวิต": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 6,
+      "timesDetected": 7,
       "lastSignalHash": "04cbbfc538",
       "lastSignal": "Major product launch"
     },
@@ -234,7 +234,7 @@
     "food": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 4,
+      "timesDetected": 5,
       "lastSignalHash": "72c2ba5382",
       "lastSignal": "Major product launch"
     },
@@ -248,21 +248,21 @@
     "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ saboten": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 8,
+      "timesDetected": 9,
       "lastSignalHash": "426e8127ea",
       "lastSignal": "Major product launch"
     },
     "sappe บุกงาน thaifex 2026": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 6,
+      "timesDetected": 7,
       "lastSignalHash": "f46515bd59",
       "lastSignal": "Major product launch"
     },
     "นอท พันธ์ธวัช พลิกบทเรียน 20": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 4,
+      "timesDetected": 5,
       "lastSignalHash": "7aeec4348a",
       "lastSignal": "Major product launch"
     },
@@ -290,14 +290,14 @@
     "human made": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 10,
+      "timesDetected": 11,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
     "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-08-19",
-      "timesDetected": 4,
+      "timesDetected": 5,
       "lastSignalHash": "016e2b6af4",
       "lastSignal": "Major product launch"
     },
@@ -465,7 +465,7 @@
     "เช็กอินด่วน": {
       "firstSeen": "2026-08-13",
       "lastSeen": "2026-08-19",
-      "timesDetected": 6,
+      "timesDetected": 7,
       "lastSignalHash": "2356c86cb1",
       "lastSignal": "Expansion / new branches"
     },
@@ -640,7 +640,7 @@
     "cp foton": {
       "firstSeen": "2026-08-16",
       "lastSeen": "2026-08-19",
-      "timesDetected": 5,
+      "timesDetected": 6,
       "lastSignalHash": "815b40e0d9",
       "lastSignal": "Major product launch"
     },
@@ -696,14 +696,14 @@
     "ไทยมาแรง rally movement ประเดิมคอลแลบฯ": {
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-19",
-      "timesDetected": 3,
+      "timesDetected": 4,
       "lastSignalHash": "8e46e3794b",
       "lastSignal": "Major product launch"
     },
     "12 แบรนด์แฟชั่นไทยโกอินเตอร์": {
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-19",
-      "timesDetected": 3,
+      "timesDetected": 4,
       "lastSignalHash": "a8068561e6",
       "lastSignal": "Expansion / new branches"
     },
@@ -717,7 +717,7 @@
     "ก้าวใหม่ของวงการแฟชั่นและบิวตี้": {
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-08-19",
-      "timesDetected": 2,
+      "timesDetected": 3,
       "lastSignalHash": "6d96d32fbe",
       "lastSignal": "Major product launch"
     },
@@ -818,6 +818,27 @@
       "timesDetected": 1,
       "lastSignalHash": "3b804adcca",
       "lastSignal": "Major product launch"
+    },
+    "ap thailand partners with": {
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19",
+      "timesDetected": 1,
+      "lastSignalHash": "8db0db772e",
+      "lastSignal": "Major product launch"
+    },
+    "fanta’ debuts fanta fantasies": {
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19",
+      "timesDetected": 1,
+      "lastSignalHash": "b0afd83cc9",
+      "lastSignal": "Major product launch"
+    },
+    "sewa": {
+      "firstSeen": "2026-08-19",
+      "lastSeen": "2026-08-19",
+      "timesDetected": 1,
+      "lastSignalHash": "5586fd98f7",
+      "lastSignal": "New presenter / ambassador"
     }
   }
 }

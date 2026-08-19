@@ -1,6 +1,6 @@
 {
   "date": "2026-08-19",
-  "generatedAt": "2026-08-19T04:35:58.611Z",
+  "generatedAt": "2026-08-19T04:44:52.378Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
@@ -65,44 +65,11 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBRZDFnU1QyR3kxcjBkS3VPaFJBRHNZNVZ6VU5GMUx2TVNrTEo4MEw1VXBkYTdvMHVfR1FkbFpuRVVDZnkzQ3FsWDd5cDgyRzQ2R2JOOURrZFVHam9uQmRfLTdsa2dCT1MxRi1Ra2UtVkVybUhkUWdGNkhR?oc=5",
-          "label": "Autolifethailand.tv"
+          "label": "autolifethailand.tv"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaEdfRlJQd3N2V2tBV05rSVdXVUlocFgyd19XRnVRdS01M1MyVkNWQXhJanJ4MXdka3EzMkc1bnRlRTdDZnhpYlFvYkt6V1FKQzZPc2I1TjV3WUlOcFNhbVZ2ME1VcmJiZ2ZoaDdkc2FQWVVKSzFwajZtcUoyZkJVVUk2VlF2SnhfMkVERlVYWQ?oc=5",
           "label": "PR Newswire"
-        }
-      ]
-    },
-    {
-      "id": "1613cacd0a49",
-      "brandName": "มีลุ้นเข้าไทย",
-      "companyName": "มีลุ้นเข้าไทย",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "มีลุ้นเข้าไทย! REDMI Note 17 อาจรีแบรนด์เป็น POCO M8 Power ในตลาด Global - iPhone-Droid",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-07-15",
-      "whyNow": "มีลุ้นเข้าไทย! REDMI Note 17 อาจรีแบรนด์เป็น POCO M8 Power ในตลาด Global - iPhone-Droid",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 78,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWk9RMmRQSUtQMTVUbHRrVzZkRGY4UVhabUFEeHBWejN0dnNmOEw4aF9lQktvTW5NdTAtaWRLQmJvMzlCQmpNX3FKb29WOEFGZ1JQTFJmcTVHUlVQbjA1N1JkQTlURlN6NlZ5bDlnZllUSm8tTHhOeUxUQ21wUkRqdVNn?oc=5",
-          "label": "iPhone-Droid"
         }
       ]
     },
@@ -147,7 +114,7 @@
       "brandType": "Established / Growing",
       "thailandEvidence": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-14",
+      "signalDate": "2026-08-18",
       "whyNow": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
       "momentum": "Exploding",
       "revenueMinM": 5,
@@ -375,15 +342,15 @@
       ]
     },
     {
-      "id": "4ecaff051a28",
-      "brandName": "Subaru ยืนหยัด",
-      "companyName": "Subaru ยืนหยัด",
+      "id": "6b2d5b06eecc",
+      "brandName": "AP Thailand Partners with",
+      "companyName": "AP Thailand Partners with",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Subaru ยืนหยัด เตรียมเปิดตัวรถเกียร์ธรรมดา M/T 3 รุ่นใหม่ มีทั้ง WRX / BRZ รุ่นพิเศษ และ Hot HATCH ปริศนา",
+      "thailandEvidence": "AP Thailand Partners with Mahidol University to Launch 'Toward a Sustainable Future' Concept for Urban Biodiversity Enhancement",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-10",
-      "whyNow": "Subaru ยืนหยัด เตรียมเปิดตัวรถเกียร์ธรรมดา M/T 3 รุ่นใหม่ มีทั้ง WRX / BRZ รุ่นพิเศษ และ Hot HATCH ปริศนา",
+      "signalDate": "2026-05-21",
+      "whyNow": "AP Thailand Partners with Mahidol University to Launch 'Toward a Sustainable Future' Concept for Urban Biodiversity Enhancement",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -402,21 +369,21 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MaXU1QmpVeExJcFFMNk1TZjc5V1lheTdsMVlRWGVYZGh0Qm1GMndpLTgyb3hjaVNDSTdxUXREcm5LYjNZbTVQSUwxc1JxZWdZdW5NemtQVDlLV3dwZ3Q0V2N1WFJIbFZFWjJOWHZMMl81T0JI?oc=5",
-          "label": "Autolifethailand.tv"
+          "url": "https://news.google.com/rss/articles/CBMi1gNBVV95cUxNOExYXzJSR0t2N21HeGRjbFMza0lNQkJNTkhPOFJpWEZUZGtGYU1MY0txSHZKMDZON2JtS0RKR0h6RjZTdC1JNDRJb2VNS3dfeUF5ZGVMeGxaNENXaWpGUlpOT2FGM3l5V1BJc1hRM2tRd2pzbDQwOFdxSnZrVDRzZi05ekk0eUQ5aVlXOC00S1dkclRHTU9CRXlTRE1WRkc0bjRhOXRPMkdyZjBmZTY2RENEckZia1BDU01Cclo4djdweTlpV0FHdXl0U3plbF9rT3U4d1M1LUpBQ0N4ZzFpelZHMmNlVE1ycnUxc29LbjhmT2RDY2pNZ2dJdXM3SDVDRTVUT0p1MVhRb3V3eHV0TVRMUW80MkpEbGxtS1AwLW9PX0V1Q1c2S09DMDBCZjRHRVpBR0xrRVNPclhHNDRxdjFaVVh3a0U4WnRqbjhIMGh1cmphd1NMY0NQbDZQS1UxYjlmdlBYTXdKVWNvSjgyZ2FnZGZPbFEyUUZSNGVSSFlJMDFhOFFjMjgtemlZbUZYbTdWeTN2SUtYSkhCd3FFYWJMclBmT2pnNGRZM1hVMUxESE5mMWV3QWNWYUpwZ2FGVmppbGhqcjkwQVdpbUFYRDcxQWVndw?oc=5",
+          "label": "TerraBKK"
         }
       ]
     },
     {
-      "id": "6e2cd6f24f48",
-      "brandName": "ธนบุรีนอยสเติน",
-      "companyName": "ธนบุรีนอยสเติน",
+      "id": "8bf07f1ffaa2",
+      "brandName": "Fanta’ Debuts FANTA FANTASIES",
+      "companyName": "Fanta’ Debuts FANTA FANTASIES",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ธนบุรีนอยสเติน เปิดตัว GEELY STARRAY EM-R ครั้งแรกของโลก พร้อมปักหมุด GEELY Flagship Showroom แห่งแรกในประเทศไทย",
+      "thailandEvidence": "‘Fanta’ Debuts “FANTA FANTASIES” In Thailand, Inviting Gen Z To Drift into a World of Unexpected Flavors Thailand becomes the first market globally to launch Fanta’s new imagination-led flavor platform",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-13",
-      "whyNow": "ธนบุรีนอยสเติน เปิดตัว GEELY STARRAY EM-R ครั้งแรกของโลก พร้อมปักหมุด GEELY Flagship Showroom แห่งแรกในประเทศไทย",
+      "signalDate": "2026-07-13",
+      "whyNow": "‘Fanta’ Debuts “FANTA FANTASIES” In Thailand, Inviting Gen Z To Drift into a World of Unexpected Flavors Thailand becomes the first market globally to launch Fanta’s new imagination-led flavor platform",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -435,41 +402,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4VVdSM0dWTXZlWXl3b3RlVmJBSm9taFlHS1dKTU1pMDMtVEhDbXBPX0k3UjNpbFlheXByMjNMTWd0S1pJSVdpMEEzNlRaODBZb3BtaDZhZi1kTnRpQ2ZUWDcyQjVVUmZEMXZjUEplMmQ1QVFpM2drOQ?oc=5",
-          "label": "iMoD"
-        }
-      ]
-    },
-    {
-      "id": "832bf2f80644",
-      "brandName": "NEW MG URBAN",
-      "companyName": "NEW MG URBAN",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เปิดสเปก NEW MG URBAN 2026 เวอร์ชันขายไทย - รถเปิดตัวใหม่ |",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-10",
-      "whyNow": "เปิดสเปก NEW MG URBAN 2026 เวอร์ชันขายไทย - รถเปิดตัวใหม่ |",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kSk5HRVJNa3FpZ0J5WDZvTmVJZmFpZWFjSk9EdVl3WDRhUHNCM1pjdU11N01iV1ZJWmhZVXZWWTItLVZmMElKS1BtdVNjZEkwUjRpWmg3RDRXNXhsUkJEdi1tc1FkS3ZoTHdTZUh3?oc=5",
-          "label": "Autospinn.com"
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xNTBmcUEtODNLb0RDTktUdnZvU1R2cWt4TUxGdm1icnhLOExweVVTMFBlaWdielF4UzRMT0ZzVHU0aTJpNkRFcFVVdkFnZ3pkX2R1d2dibzQ?oc=5",
+          "label": "ThaiPR.NET"
         }
       ]
     },
@@ -573,6 +507,39 @@
       ]
     },
     {
+      "id": "48fb2a3b7b13",
+      "brandName": "Sewa",
+      "companyName": "Sewa",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Sewa ดึง “กลัฟ คณาวุฒิ” นั่งแท่นพรีเซนเตอร์เจาะกลุ่มลูกค้า Early Gen Z มั่นใจยอดขายปี 69 โตตามเป้าแตะ 200 ล้าน",
+      "buyingSignal": "New presenter / ambassador",
+      "signalDate": "2026-06-04",
+      "whyNow": "Sewa ดึง “กลัฟ คณาวุฒิ” นั่งแท่นพรีเซนเตอร์เจาะกลุ่มลูกค้า Early Gen Z มั่นใจยอดขายปี 69 โตตามเป้าแตะ 200 ล้าน",
+      "momentum": "Exploding",
+      "revenueMinM": 0.8,
+      "revenueMaxM": 2.5,
+      "score": 71,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 17,
+        "revenue_potential": 11,
+        "ooh_fit": 10,
+        "momentum": 8,
+        "timing": 8,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMXpmSUpzbzhRV1NXWVZTLWI5dDlIUXBpRGF2TnIzaXpCdFU0b09oWHpWWS1zV1NVc1hOMm5OSEcxdHlQZzB5ZG1JYzQ2N0tGQnIyaURwdXV6RUlNOXNORmtnVTl1Z2ZFNkRLTnFrcjRHd2F5azdCeVlNck5qNlQ3eXdKNEY2ZV8zSVNMZWFNcjhfWHdCd3lqVk5VV3JRQWRBWWNPbA?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    },
+    {
       "id": "34a044ea0884",
       "brandName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
       "companyName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
@@ -668,6 +635,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ZjRYNHBJUFZlWXNyM2dpSlBoZ0JsbGdWZUF0VzRRLXBxRnRoNzFqMkpzcXhMY3BaR1dQb2x3NlZOeDRuUlVSNVhxOTNkamJiOG5CdXRCLWdzWjA?oc=5",
           "label": "มติชนออนไลน์"
+        }
+      ]
+    },
+    {
+      "id": "cf518af6e557",
+      "brandName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
+      "companyName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-17",
+      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
+          "label": "แนวหน้า"
         }
       ]
     }
