@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover.mjs'
+      - 'scripts/sync-sheet.mjs'
       - '.github/workflows/daily-radar.yml'
 
 permissions:
@@ -43,3 +44,9 @@ jobs:
           git commit -m "chore: refresh free Thailand daily brand radar"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Sync Daily Radar to Google Sheets
+        env:
+          RADAR_WEB_APP_URL: https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec
+          RADAR_API_KEY: ${{ secrets.RADAR_API_KEY }}
+        run: node scripts/sync-sheet.mjs
