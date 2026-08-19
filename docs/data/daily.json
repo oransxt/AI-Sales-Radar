@@ -1,6 +1,6 @@
 {
   "date": "2026-08-19",
-  "generatedAt": "2026-08-19T03:33:19.080Z",
+  "generatedAt": "2026-08-19T04:35:58.611Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
@@ -16,7 +16,7 @@
       "momentum": "Exploding",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 89,
+      "score": 79,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
@@ -26,79 +26,13 @@
         "timing": 10,
         "evidence_quality": 3
       },
-      "priority": "HOT",
+      "priority": "HIGH",
       "isNew": false,
-      "isUpdated": true,
+      "isUpdated": false,
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94dGh1ajBQNmhlaC05eGU1ZTNBX3lJWjVQNlpPZDlkLUpPYjdRMGVTaUpnMUlTSUc2dlFVX0xYYmhfRnBFYUVNX011aEVKQkNI?oc=5",
           "label": "ThaiPR.NET"
-        }
-      ]
-    },
-    {
-      "id": "3b9e8e270357",
-      "brandName": "Seafresh Gourmet",
-      "companyName": "Seafresh Gourmet",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Seafresh Gourmet ตอกย้ำผู้นำมาตรฐานใหม่อาหารทะเลไทย เปิดตัวไลน์สินค้าใหม่ในงาน THAIFEX – Anuga Asia 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-27",
-      "whyNow": "Seafresh Gourmet ตอกย้ำผู้นำมาตรฐานใหม่อาหารทะเลไทย เปิดตัวไลน์สินค้าใหม่ในงาน THAIFEX – Anuga Asia 2026",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 80,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5nSHFzUHAwX1lKTHVSWW1rNXFheHRnOFZNcWF3djhKc1NsTnNYei1MTWJCNEpZZ3lVaEtLamNldm9QdE1tczN4dmhfZTFKcHhUSjBz?oc=5",
-          "label": "positioningmag.com"
-        }
-      ]
-    },
-    {
-      "id": "cf518af6e557",
-      "brandName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "companyName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-17",
-      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 80,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
-          "label": "แนวหน้า"
         }
       ]
     },
@@ -140,15 +74,15 @@
       ]
     },
     {
-      "id": "ab7fb2e2ee7b",
-      "brandName": "Nothing Ear open Blue",
-      "companyName": "Nothing Ear open Blue",
+      "id": "1613cacd0a49",
+      "brandName": "มีลุ้นเข้าไทย",
+      "companyName": "มีลุ้นเข้าไทย",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Nothing Ear (open) Blue Edition เปิดตัวในไทย หูฟัง Open-Ear สีใหม่ ใส่สบายไม่หลุด ราคา 4,499 บาท",
+      "thailandEvidence": "มีลุ้นเข้าไทย! REDMI Note 17 อาจรีแบรนด์เป็น POCO M8 Power ในตลาด Global - iPhone-Droid",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-06-05",
-      "whyNow": "Nothing Ear (open) Blue Edition เปิดตัวในไทย หูฟัง Open-Ear สีใหม่ ใส่สบายไม่หลุด ราคา 4,499 บาท",
+      "signalDate": "2026-07-15",
+      "whyNow": "มีลุ้นเข้าไทย! REDMI Note 17 อาจรีแบรนด์เป็น POCO M8 Power ในตลาด Global - iPhone-Droid",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -167,8 +101,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNTJ1alQwdEZka3dySzd3cjlvRGQ0QzVZbzZ1WDhVdzNCNnBZa2VpRjhSVXRYUkRlczBHdWgzeU9kd2U2a0tyYjJkMFJCeVVUYkk5WXI4NGVRU29uTnRMNmJxREswbV9oLVVFQ1p5VGkxRDFrTUdXUGptZ0M0T3BYUVg3aTJaNXRORDllTFBYa18yUGM?oc=5",
-          "label": "thaimobilecenter.com"
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWk9RMmRQSUtQMTVUbHRrVzZkRGY4UVhabUFEeHBWejN0dnNmOEw4aF9lQktvTW5NdTAtaWRLQmJvMzlCQmpNX3FKb29WOEFGZ1JQTFJmcTVHUlVQbjA1N1JkQTlURlN6NlZ5bDlnZllUSm8tTHhOeUxUQ21wUkRqdVNn?oc=5",
+          "label": "iPhone-Droid"
         }
       ]
     },
@@ -206,43 +140,6 @@
       ]
     },
     {
-      "id": "a91dcbb4df49",
-      "brandName": "MK",
-      "companyName": "MK",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แผน MK ปี ’69 ตั้งเป้าโต 12% เปิด ‘โบนัสสุกี้’ สาขาใหม่ ทุกสัปดาห์ จับตา ปีนี้มีอีก 2 แบรนด์ใหม่",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-06-04",
-      "whyNow": "แผน MK ปี ’69 ตั้งเป้าโต 12% เปิด ‘โบนัสสุกี้’ สาขาใหม่ ทุกสัปดาห์ จับตา ปีนี้มีอีก 2 แบรนด์ใหม่",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 77,
-      "scores": {
-        "thailand_relevance": 8,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjcHV2ZUFva0RzNFVpOWR0eDd0NnB6ODZhWTBiOXhQZkxJYjBGLTZTb3hJbldtQUloWGpZaDJaZGRrZklDUG9QS3plTExDNzIyc1haTWNyNkhKOW9CbWpuNjdSSm1pZw?oc=5",
-          "label": "Brand Buffet"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fRXVHV1ZPZURxRUJpX3V6SVYtSUZ4cUFfV3QwOGhmVVdrVVk5TzR2b1k2aW55U2thLTc4TE9GNHlicnU2cmNGUXI3WW03N2FDUDJ5eEJoaHZQZVNXREkyWWJhYW9rNjItbWJhNFVxLVpkTlNJVExr?oc=5",
-          "label": "Brand Buffet"
-        }
-      ]
-    },
-    {
       "id": "1d563f587009",
       "brandName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
       "companyName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
@@ -271,7 +168,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpY2tQeVQtajY5aUZoc2w5RXVGRzBfV1FrazhjWXNEMGNqcEhJMk9SV3FBcGtWaFBhVDVrQVlORGxmcXhQZDlKdU9hbjFoSGpUalFxMg?oc=5",
-          "label": "marketeeronline.co"
+          "label": "Marketeer Online"
         }
       ]
     },
@@ -478,15 +375,15 @@
       ]
     },
     {
-      "id": "9f3b4af60937",
-      "brandName": "เมืองไทยสไมล์คลับ",
-      "companyName": "เมืองไทยสไมล์คลับ",
+      "id": "4ecaff051a28",
+      "brandName": "Subaru ยืนหยัด",
+      "companyName": "Subaru ยืนหยัด",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“เมืองไทยสไมล์คลับ” เปิดตัวโฆษณา ดึง“บิวกิ้น-พีพี\"พรีเซ็นเตอร์",
+      "thailandEvidence": "Subaru ยืนหยัด เตรียมเปิดตัวรถเกียร์ธรรมดา M/T 3 รุ่นใหม่ มีทั้ง WRX / BRZ รุ่นพิเศษ และ Hot HATCH ปริศนา",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-27",
-      "whyNow": "“เมืองไทยสไมล์คลับ” เปิดตัวโฆษณา ดึง“บิวกิ้น-พีพี\"พรีเซ็นเตอร์",
+      "signalDate": "2026-06-10",
+      "whyNow": "Subaru ยืนหยัด เตรียมเปิดตัวรถเกียร์ธรรมดา M/T 3 รุ่นใหม่ มีทั้ง WRX / BRZ รุ่นพิเศษ และ Hot HATCH ปริศนา",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -505,21 +402,21 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMi6wVBVV95cUxOY0ZhR1M3M2piaDRXbklnbmptTmRWQzJ1YVljZGxBV00tdGc1anV5UXhBTFAtcm1UdUlhZ3A5UHRzcktIbG94UFhWdWlaTEdNN0x6WS1HX2xEYzR2eUJYQ2NoSjExa1RuN0VPY254NUxUamZlRy11enZqS0p5RkdpejhQSnB0RGZoS092Sy1ucEt1aTEtM1ZfaDJCa1pDS1l2SHFrVFBDWkhtTGMtWDFjYXVyOFlaRndZbFloMUJ0UW5jZUlFX1YxblZoQzRtd3dyNFRyOWR1T1JUcE1IR3VWaGhOMjZsTGRUUDdsRUp6Q1g3ZTY4dGxDNjlIdHNPNVhLZjh1eFJrQm9udWVsSlliVHNrbUlYNEswazNJdHZTMWx6MkVycWV5RXd6ZnhiUnpGa2NQakE3cWtoRG9aTTk2VXRqTHliVFVVRXlGUkRLbDVOTU05cFpsc0xiSURmLWNSdU5Pa2ZQTkQ4NXdMTW5DYXlwbU9YbVZTTUhocFA3Tk1EZ01jeEliOGJTR3lkaGI4R2x0LW4xMFZZeGpkdlllOHF2emI1WU04VkVTc0JwQnppOW1zcVdVb0ZmejBTTzlqcDZVRjFvR2dpclVNNFpZZEVRUE10UnBNRFpXNS1yYXJhZW9tZFhHSV9iU1A5NHBtWnF5LXk2Q0lWUnE5dzN6d2poQTNvamxxRG9qaVlDZ2pQRm0zcWtHTDc1cVVwa01FbHNmVUVhVlJyaUM2bzF3c003Qk14VDlXdHRzNkVCcWdCcmF5Z1hPdkpGLWFSaUVtaWp6bDd5bkMzVTBlQWFacjJFSS1DbzJBUHdoSzg3NzJ0eUkzU1pzcFhPQVh2X0pEZUNqcVJGcG9JcDNvU3d2NjM2eUxOS1U2XzFOajE3VDFOWmxEd0FieW84UUE4dVA3ODdMd1BJRmN6VmVlTWQ5dHNFWVRjMGJYTS1Qd2IwaDFFa1g2UDVwcHE0NGstNV9haldtTVBVSEhSb0k?oc=5",
-          "label": "Share2Trade"
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MaXU1QmpVeExJcFFMNk1TZjc5V1lheTdsMVlRWGVYZGh0Qm1GMndpLTgyb3hjaVNDSTdxUXREcm5LYjNZbTVQSUwxc1JxZWdZdW5NemtQVDlLV3dwZ3Q0V2N1WFJIbFZFWjJOWHZMMl81T0JI?oc=5",
+          "label": "Autolifethailand.tv"
         }
       ]
     },
     {
-      "id": "8160da75e831",
-      "brandName": "ไวท์ ไลออนส์ ผนึกแอร์ฟอร์ซ",
-      "companyName": "ไวท์ ไลออนส์ ผนึกแอร์ฟอร์ซ",
+      "id": "6e2cd6f24f48",
+      "brandName": "ธนบุรีนอยสเติน",
+      "companyName": "ธนบุรีนอยสเติน",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ไวท์ ไลออนส์ ผนึกแอร์ฟอร์ซ รีแบรนด์สู่ WLAF เปิดตัวทีมสู้ศึกบาสไทยแลนด์ลีก 2026",
+      "thailandEvidence": "ธนบุรีนอยสเติน เปิดตัว GEELY STARRAY EM-R ครั้งแรกของโลก พร้อมปักหมุด GEELY Flagship Showroom แห่งแรกในประเทศไทย",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-24",
-      "whyNow": "ไวท์ ไลออนส์ ผนึกแอร์ฟอร์ซ รีแบรนด์สู่ WLAF เปิดตัวทีมสู้ศึกบาสไทยแลนด์ลีก 2026",
+      "signalDate": "2026-08-13",
+      "whyNow": "ธนบุรีนอยสเติน เปิดตัว GEELY STARRAY EM-R ครั้งแรกของโลก พร้อมปักหมุด GEELY Flagship Showroom แห่งแรกในประเทศไทย",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -538,21 +435,21 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qaW5LMFVERFRQNXVnbmt3bWwwclpOblFKSVI4U0F4Mm9ybnJvaDFNQVVkZmo3MS1wXzZSSkV6UWtFbGxLTHFBRXhyY21IZTZhWnd5RndtV28?oc=5",
-          "label": "มติชนออนไลน์"
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4VVdSM0dWTXZlWXl3b3RlVmJBSm9taFlHS1dKTU1pMDMtVEhDbXBPX0k3UjNpbFlheXByMjNMTWd0S1pJSVdpMEEzNlRaODBZb3BtaDZhZi1kTnRpQ2ZUWDcyQjVVUmZEMXZjUEplMmQ1QVFpM2drOQ?oc=5",
+          "label": "iMoD"
         }
       ]
     },
     {
-      "id": "03362c2be9df",
-      "brandName": "ล็อควันเจอ",
-      "companyName": "ล็อควันเจอ",
+      "id": "832bf2f80644",
+      "brandName": "NEW MG URBAN",
+      "companyName": "NEW MG URBAN",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ล็อควันเจอ! Song Yuqi บินลัดฟ้ามาไทย นำทีม ‘เก่ง-ลีน่า’ เตรียมร่วมเปิดตัวบูติก Tory Burch ณ ICONSIAM",
+      "thailandEvidence": "เปิดสเปก NEW MG URBAN 2026 เวอร์ชันขายไทย - รถเปิดตัวใหม่ |",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-28",
-      "whyNow": "ล็อควันเจอ! Song Yuqi บินลัดฟ้ามาไทย นำทีม ‘เก่ง-ลีน่า’ เตรียมร่วมเปิดตัวบูติก Tory Burch ณ ICONSIAM",
+      "signalDate": "2026-06-10",
+      "whyNow": "เปิดสเปก NEW MG URBAN 2026 เวอร์ชันขายไทย - รถเปิดตัวใหม่ |",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -571,8 +468,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd2JpQk5pMlNSZW1ZTWdKSmlienIzVV9jTVc4Mk9JUmwwWlZ3ZHd3MzN3MU45emxxbTAzNFJ0ajc3YjM4Y0swQ2IzNEN1V052VUFtTzJGX3VxN0Q3T2FBRkNVWFh4c1h4M3dTLU9ucmNpZTdTY3lkYlVTMFF6ZjBMV3N3?oc=5",
-          "label": "Mint Magazine Thailand"
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kSk5HRVJNa3FpZ0J5WDZvTmVJZmFpZWFjSk9EdVl3WDRhUHNCM1pjdU11N01iV1ZJWmhZVXZWWTItLVZmMElKS1BtdVNjZEkwUjRpWmg3RDRXNXhsUkJEdi1tc1FkS3ZoTHdTZUh3?oc=5",
+          "label": "Autospinn.com"
         }
       ]
     },
@@ -605,7 +502,73 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1kV2MwYlRzbzNhVDBQdmtFcjY4UXluOE96YnZxd0k1WHhNZk9WZHNoRmNPWmgxREtzbjZUbllVUHB1RGstVW5zZVlLMFc0UmxObDVlTQ?oc=5",
-          "label": "marketeeronline.co"
+          "label": "Marketeer Online"
+        }
+      ]
+    },
+    {
+      "id": "2ae89f14b8b7",
+      "brandName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
+      "companyName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-05-26",
+      "whyNow": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxVG5lSXNUVUJyazNLR3JiM0dpUVpYNG9mcmtLZWNRTkdmWk9mZURGcm51alFZSEJwQlpjVmlBdGlVZDVfNk54RHkyNGVCUWR5V1p2MERB?oc=5",
+          "label": "มิติหุ้น"
+        }
+      ]
+    },
+    {
+      "id": "39ccb32d95ed",
+      "brandName": "FOOD",
+      "companyName": "FOOD",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "FOOD: ‘ส.ขอนแก่น’ เดินเกมอาหารไทยสู่ไลฟ์สไตล์ระดับโลก ดันผลิตภัณฑ์เรือธงรางวัล-นวัตกรรมระดับโลก ‘ไส้กรอกไทย’ และ ‘แหนม’ สู่สากล พร้อมขยายกลุ่มเป้าหมาย เข้าถึงใจคนรุ่นใหม่ผ่านผลิตภัณฑ์ที่เหมาะกับไลฟ์สไตล์ และการใช้พรีเซนเตอร์ เมื่อวันที่ 27 พ.ค. 69 บริษัท ส.ขอนแก่นฟู้ดส์ จ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-05-26",
+      "whyNow": "FOOD: ‘ส.ขอนแก่น’ เดินเกมอาหารไทยสู่ไลฟ์สไตล์ระดับโลก ดันผลิตภัณฑ์เรือธงรางวัล-นวัตกรรมระดับโลก ‘ไส้กรอกไทย’ และ ‘แหนม’ สู่สากล พร้อมขยายกลุ่มเป้าหมาย เข้าถึงใจคนรุ่นใหม่ผ่านผลิตภัณฑ์ที่เหมาะกับไลฟ์สไตล์ และการใช้พรีเซนเตอร์ เมื่อวันที่ 27 พ.ค. 69 บริษัท ส.ขอนแก่นฟู้ดส์ จ",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi3AdBVV95cUxNUEo4R0FHb05hblRNZ2x0RGRzVUd4S2Y4eU1xVGlTS210eklsNnU0N0hhN21EUV9fckFxR2lyck02RU5ZRGdXak9VbHRzOHRVSGctdXJjbll2MXd6akZIVmZzSmZJNzRTVEZvd2o1TzJuM1hMRU0yMENFcEFRZXNGc0JsdVBrSi1KZjJlbm95M21YUmRwMHR5VGtQMmkzS2N3SUd5TGoyN0VseVVoTjYzX1NlamNsMXBFTXEteTRSRk1MMTEySll4UmNxRVhaSkxoNkhFdUZyaVdXaFVra01Fc2M3QU1zYUZmUmllQkZEOHNrUndQR2lQM2QzSWRaTzA3V05YVWNmSlYzVjRoZG9jSkxibVk2ckVxaGRRaU9IVmQyWWZ2Rzk2eVYzaUN1S3RaU3V1QmpjaU51aDIwYko5bUJYTUZiNWQxQktUSUJvRGxicG5CWG5rR2V1ZnB4WC1WaTBEQWlmeHhjSGpNOTJTOXNCY0UtX3lrYlJSUFJSay1KNS1mU0pUVXVwSGNfMHVUVVo4ZFluNmtSMEhaUkxlT2x5LXBnOUxfNkVrbkJwWGhjLXlJV2VQSVZSQ0RuU3BsVU05MHVHSUYyOWdZSjZ4UjExUTh2bjlaWkdTSnBQczBFWENhakVKcGlxUzEtcU9fMjdyOFF1RDZRUkp2aFJLb3JmQ3VwQUR4bW1aUTJKa2VVZ2Rnb2FJU2RmcmNYakFjRnRFX3IydzFUdlljWXgwUjNTbHlwN0RPUUxzeHVOay1vRzdPeTRveTlaQmJIS3RFX3NmVHdqcDV6NGZCMFp4WTQ1Ti1ybE9lZkRiTko0VVVuU3JPMDItOTlBaGg3eGwwSWpkUENsc055VXg4NzVhZ3FCNHJYTHRNbkFZZU54d2VxUngySUNZYllvMjZMUy1TREpzb3BaWGZkMWJWcTFqLU9hUDhvT1o1N19va3VxQjdVUDdXNEt1RkQ2ZG9YbnJNLUhvVjZUamQzYTNIMkJKZGR3bUNrYzNNdTdFc1drM3lGMUtDTW1tM3h2Sms2WGhFX0syLTByRFc0b1lrclVEUU1vNWJNS2s2SFF0dUY5VW8xaTA3b2RIRlR3OVRRZzh2eUZkR3ZKX3h1TS1VUmR4RFJNNHp0Nnk1RkpIVkh4UEVUZ2NiY2dNSnBLd3U2ei1zX2pBS2tDVGhJZkd0SGJlaXdIZklsd0twcDZ4dnpxaENiYS1iUEx1NXlodGFlVExDdGkxTE00Tjk1Q2JDQ0g2c0JUR2MtQ0dfOXRVVnFxR3NUR2ZlYWZlbUlSakFab1M2eTYxS3VfTkdtQ2tX?oc=5",
+          "label": "facebook.com"
         }
       ]
     },
@@ -672,6 +635,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03VzRDcVJNOE0yQ0ZNLU9pV2pYODJsUHc4WkZrMTNoT2pEZWJSSHV5X3g3NUZPZGQ5ZVVrcVk1Y3dnS2xZLXFqRVk5bzFQVUpmclplaUpOVTQ?oc=5",
           "label": "workpointtoday.com"
+        }
+      ]
+    },
+    {
+      "id": "ae7184a8e0bf",
+      "brandName": "นอท พันธ์ธวัช พลิกบทเรียน 20",
+      "companyName": "นอท พันธ์ธวัช พลิกบทเรียน 20",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "นอท พันธ์ธวัช พลิกบทเรียน 20 ปี เปิดตัว 'ไทยมาร์ท' อีคอมเมิร์ซสัญชาติไทย เว้นค่าธรรมเนียมแพลตฟอร์มปีแรก",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-07",
+      "whyNow": "นอท พันธ์ธวัช พลิกบทเรียน 20 ปี เปิดตัว 'ไทยมาร์ท' อีคอมเมิร์ซสัญชาติไทย เว้นค่าธรรมเนียมแพลตฟอร์มปีแรก",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ZjRYNHBJUFZlWXNyM2dpSlBoZ0JsbGdWZUF0VzRRLXBxRnRoNzFqMkpzcXhMY3BaR1dQb2x3NlZOeDRuUlVSNVhxOTNkamJiOG5CdXRCLWdzWjA?oc=5",
+          "label": "มติชนออนไลน์"
         }
       ]
     }
