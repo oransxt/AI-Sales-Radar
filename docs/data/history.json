@@ -37,8 +37,8 @@
     },
     "shopee ร่วมกับ meta": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 13,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 14,
       "lastSignalHash": "50582251fb",
       "lastSignal": "Major product launch"
     },
@@ -198,15 +198,15 @@
     },
     "อัพเดท": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 11,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 12,
       "lastSignalHash": "d21ce6f26e",
       "lastSignal": "Major product launch"
     },
     "thaifex": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 11,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 12,
       "lastSignalHash": "26a9e49736",
       "lastSignal": "Major product launch"
     },
@@ -219,8 +219,8 @@
     },
     "ไทยประกันชีวิต": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 8,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 9,
       "lastSignalHash": "04cbbfc538",
       "lastSignal": "Major product launch"
     },
@@ -233,8 +233,8 @@
     },
     "food": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 7,
       "lastSignalHash": "72c2ba5382",
       "lastSignal": "Major product launch"
     },
@@ -247,22 +247,22 @@
     },
     "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ saboten": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 10,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 11,
       "lastSignalHash": "426e8127ea",
       "lastSignal": "Major product launch"
     },
     "sappe บุกงาน thaifex 2026": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 8,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 9,
       "lastSignalHash": "f46515bd59",
       "lastSignal": "Major product launch"
     },
     "นอท พันธ์ธวัช พลิกบทเรียน 20": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 7,
       "lastSignalHash": "7aeec4348a",
       "lastSignal": "Major product launch"
     },
@@ -289,15 +289,15 @@
     },
     "human made": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 12,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 13,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
     "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 7,
       "lastSignalHash": "016e2b6af4",
       "lastSignal": "Major product launch"
     },
@@ -534,8 +534,8 @@
     },
     "changan and ning service": {
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 4,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 5,
       "lastSignalHash": "4351e5f0cf",
       "lastSignal": "Major product launch"
     },
@@ -639,8 +639,8 @@
     },
     "cp foton": {
       "firstSeen": "2026-08-16",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 7,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 8,
       "lastSignalHash": "815b40e0d9",
       "lastSignal": "Major product launch"
     },
@@ -702,8 +702,8 @@
     },
     "12 แบรนด์แฟชั่นไทยโกอินเตอร์": {
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-19",
-      "timesDetected": 4,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 5,
       "lastSignalHash": "a8068561e6",
       "lastSignal": "Expansion / new branches"
     },
@@ -842,8 +842,8 @@
     },
     "exim bank ร่วมยินดี awc": {
       "firstSeen": "2026-08-20",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 1,
+      "lastSeen": "2026-08-21",
+      "timesDetected": 2,
       "lastSignalHash": "2b802b6b0c",
       "lastSignal": "Major product launch"
     },
@@ -860,6 +860,48 @@
       "timesDetected": 1,
       "lastSignalHash": "d857341671",
       "lastSignal": "New campaign"
+    },
+    "มังกรหยก มาแล้ว": {
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "timesDetected": 1,
+      "lastSignalHash": "a31ac232ea",
+      "lastSignal": "Major product launch"
+    },
+    "world gym แบรนด์ฟิตเนสระดับโลก": {
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "timesDetected": 1,
+      "lastSignalHash": "813a080efd",
+      "lastSignal": "Major product launch"
+    },
+    "sc ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย": {
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "timesDetected": 1,
+      "lastSignalHash": "241960a7e6",
+      "lastSignal": "Major product launch"
+    },
+    "lg subscribe ฉลอง 1": {
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "timesDetected": 1,
+      "lastSignalHash": "72599c9164",
+      "lastSignal": "Major product launch"
+    },
+    "อควาฟลาสก์ ประเทศไทย": {
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "timesDetected": 1,
+      "lastSignalHash": "da48d00fbe",
+      "lastSignal": "Major product launch"
+    },
+    "ปักตะกร้าบน ig ได้แล้ว": {
+      "firstSeen": "2026-08-21",
+      "lastSeen": "2026-08-21",
+      "timesDetected": 1,
+      "lastSignalHash": "24fa1abf9e",
+      "lastSignal": "Partnership"
     }
   }
 }
