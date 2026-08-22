@@ -1,18 +1,96 @@
 {
-  "date": "2026-08-21",
-  "generatedAt": "2026-08-21T03:38:24.381Z",
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-22T03:25:08.860Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
-      "id": "b736b125df0f",
-      "brandName": "มังกรหยก มาแล้ว",
-      "companyName": "มังกรหยก มาแล้ว",
+      "id": "f2ba48c87141",
+      "brandName": "Blue Bottle Coffee",
+      "companyName": "Blue Bottle Coffee",
       "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“มังกรหยก” มาแล้ว! ซีพีแรมเตรียมเปิดตัวตำนานแบรนด์อาหารจีน เจาะตลาดอาหารจีน ชูรสชาติที่คุ้นเคยพร้อมเสิร์ฟความอร่อยที่โลตัสทั่วไทย",
+      "thailandEvidence": "การมาไทยของBlue Bottle Coffee จะเขย่าตลาดSpecialty แค่ไหน? กาแฟสายคราฟต์ที่กลายเป็นธุรกิจระดับโลก",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-21",
+      "whyNow": "การมาไทยของBlue Bottle Coffee จะเขย่าตลาดSpecialty แค่ไหน? กาแฟสายคราฟต์ที่กลายเป็นธุรกิจระดับโลก",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
+          "label": "Thairath.co.th"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
+          "label": "Brand Inside"
+        }
+      ]
+    },
+    {
+      "id": "a91dcbb4df49",
+      "brandName": "MK",
+      "companyName": "MK",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "\"MK\" เตรียมเปิด 2 แบรนด์ใหม่ สู้ศึกร้านอาหารเดือด",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-06-05",
+      "whyNow": "\"MK\" เตรียมเปิด 2 แบรนด์ใหม่ สู้ศึกร้านอาหารเดือด",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1kbTExNjkzdWoxaUQydDZhYjBJdnNnMnQ0bTNmZ1pQSDRxLTFrR0sxeFJYMEhxbnYzLVVSdHdKQUJzSU95V21UUXU1bFZkQU5HaERvSHBuZV9UbzA3NlpB?oc=5",
+          "label": "TNN Thailand"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjcHV2ZUFva0RzNFVpOWR0eDd0NnB6ODZhWTBiOXhQZkxJYjBGLTZTb3hJbldtQUloWGpZaDJaZGRrZklDUG9QS3plTExDNzIyc1haTWNyNkhKOW9CbWpuNjdSSm1pZw?oc=5",
+          "label": "Brand Buffet"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fRXVHV1ZPZURxRUJpX3V6SVYtSUZ4cUFfV3QwOGhmVVdrVVk5TzR2b1k2aW55U2thLTc4TE9GNHlicnU2cmNGUXI3WW03N2FDUDJ5eEJoaHZQZVNXREkyWWJhYW9rNjItbWJhNFVxLVpkTlNJVExr?oc=5",
+          "label": "Brand Buffet"
+        }
+      ]
+    },
+    {
+      "id": "eca5217e6e84",
+      "brandName": "NAREE เดินเกมรุกตลาด Color Cosmetic",
+      "companyName": "NAREE เดินเกมรุกตลาด Color Cosmetic",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "NAREE เดินเกมรุกตลาด Color Cosmetic เปิดตัว \"Perfect Touch Blush\" 18 เฉดสี ดึง 7 สาว 4EVE นั่งแท่น Face of Naree ตอกย้ำแบรนด์เครื่องสำอางไทยอันดับหนึ่ง",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-20",
-      "whyNow": "“มังกรหยก” มาแล้ว! ซีพีแรมเตรียมเปิดตัวตำนานแบรนด์อาหารจีน เจาะตลาดอาหารจีน ชูรสชาติที่คุ้นเคยพร้อมเสิร์ฟความอร่อยที่โลตัสทั่วไทย",
+      "signalDate": "2026-07-15",
+      "whyNow": "NAREE เดินเกมรุกตลาด Color Cosmetic เปิดตัว \"Perfect Touch Blush\" 18 เฉดสี ดึง 7 สาว 4EVE นั่งแท่น Face of Naree ตอกย้ำแบรนด์เครื่องสำอางไทยอันดับหนึ่ง",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -31,8 +109,41 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rWEF6aXhaVXNiMnlpRzhYQlh4WTU1blNPcDNtTzZQSmNGSjM0TjAyNG1IRnNvb1h0TlF3blo1ZmRNNEFWdUx5NUZUYkNvbDVaNnFRRzBn?oc=5",
-          "label": "TrueID Food"
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NYzh5OHoyd19GcE5BZktlQ1l1d2lRRm5ZR0w4c2M2cnVJNUE5ZHBqbl92SWR4dkNsempNLUtSNEI5LUM1UDcxZjVyYVZWa2ZFUXZN?oc=5",
+          "label": "Positioningmag"
+        }
+      ]
+    },
+    {
+      "id": "ccb700525b66",
+      "brandName": "ยัสปาล กรุ๊ป",
+      "companyName": "ยัสปาล กรุ๊ป",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-13",
+      "whyNow": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
+      "momentum": "Exploding",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 79,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 8,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94dGh1ajBQNmhlaC05eGU1ZTNBX3lJWjVQNlpPZDlkLUpPYjdRMGVTaUpnMUlTSUc2dlFVX0xYYmhfRnBFYUVNX011aEVKQkNI?oc=5",
+          "label": "ThaiPR.NET"
         }
       ]
     },
@@ -74,34 +185,34 @@
       ]
     },
     {
-      "id": "605cef595868",
-      "brandName": "World Gym แบรนด์ฟิตเนสระดับโลก",
-      "companyName": "World Gym แบรนด์ฟิตเนสระดับโลก",
-      "industry": "Consumer / Other",
+      "id": "1d563f587009",
+      "brandName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
+      "companyName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
+      "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "World Gym แบรนด์ฟิตเนสระดับโลก เตรียมเปิดตัวสาขาแรกในไทย พร้อมเปิดรอบพรีเซล มอบสิทธิพิเศษการสมัครสมาชิกก่อนใคร",
+      "thailandEvidence": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-20",
-      "whyNow": "World Gym แบรนด์ฟิตเนสระดับโลก เตรียมเปิดตัวสาขาแรกในไทย พร้อมเปิดรอบพรีเซล มอบสิทธิพิเศษการสมัครสมาชิกก่อนใคร",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 77,
+      "signalDate": "2026-05-28",
+      "whyNow": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
+      "momentum": "Exploding",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 76,
       "scores": {
-        "thailand_relevance": 18,
+        "thailand_relevance": 14,
         "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 8,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": true,
+      "isNew": false,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAxdTNHQzBWMmdrNjFEeExkZ0FESFZhZ29CeHdHYUc0LWNBQmUyR2ViTk5nRTVFOGxWSUVGcmVpS2pCV3ljQ0NkREdvajZwdUUyOUl2Mg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpY2tQeVQtajY5aUZoc2w5RXVGRzBfV1FrazhjWXNEMGNqcEhJMk9SV3FBcGtWaFBhVDVrQVlORGxmcXhQZDlKdU9hbjFoSGpUalFxMg?oc=5",
           "label": "Marketeer Online"
         }
       ]
@@ -140,39 +251,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA0NWVaZl95M1pWNHYyY3M4X1BCTjNJbXJ0dmVzem5sd08zUEI0V0Mya2NacVpaYWMzTFNfc09iWXpaYnFTNDFYOHJFRS1NX0kzVXRzLVJQSHFINkVp?oc=5",
           "label": "WeAreCP"
-        }
-      ]
-    },
-    {
-      "id": "bb20f1c8a689",
-      "brandName": "Shopee ร่วมกับ Meta",
-      "companyName": "Shopee ร่วมกับ Meta",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "Shopee ร่วมกับ Meta เปิดตัว Affiliate Partnership บน Instagram ในไทย",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-01",
-      "whyNow": "Shopee ร่วมกับ Meta เปิดตัว Affiliate Partnership บน Instagram ในไทย",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 76,
-      "scores": {
-        "thailand_relevance": 20,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVWwwVkdtM3hXakFSMjItUTB1U3V4TmNRUGNFZl80V1MxSk5Db2JxWU8xTVlvZFh0MjhSekdlRVJtTzBQc0dOTnU5eUwtYlhSMkh4anBCbXlVS0ZkWG9ZV3RZMTJtT0Yzb0J0UUZQSGtPN216aTlxTVNqM3ZTaWQ0Uk5BVWwxT2pZUkFz?oc=5",
-          "label": "iMoD"
         }
       ]
     },
@@ -243,6 +321,39 @@
       ]
     },
     {
+      "id": "e36055588ab5",
+      "brandName": "แมคไทย กางแผนระยะยาว",
+      "companyName": "แมคไทย กางแผนระยะยาว",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“แมคไทย” กางแผนระยะยาวคว้าสิทธิ์แฟรนไชส์ “แมคโดนัลด์” เพิ่ม 20 ปี ลุยขยายสาขาเท่าตัวในปี 2033",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-09",
+      "whyNow": "“แมคไทย” กางแผนระยะยาวคว้าสิทธิ์แฟรนไชส์ “แมคโดนัลด์” เพิ่ม 20 ปี ลุยขยายสาขาเท่าตัวในปี 2033",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 74,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWGZ0N1dLM3V2MWc4U3dVZkpSVDY0aGpXVHNmZEpZOENzVk9FUDdMZXZZcGVkYnhQNDBLUk5ndGVma2RNRlRpMWVLdVhkV1NFU29HQTBENWppR3o0ZWRzQk4zSUNDcl91eUUybjlpM1BTR0doeTJGcWpkU2lIY3FXS3JneHdlamlpMm1QN2RxVlBocmhDRFJjSF9BSHBndHFjbnc?oc=5",
+          "label": "Brand Buffet"
+        }
+      ]
+    },
+    {
       "id": "ab4694707f47",
       "brandName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
       "companyName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
@@ -276,15 +387,15 @@
       ]
     },
     {
-      "id": "51430def0952",
-      "brandName": "SC ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย",
-      "companyName": "SC ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย",
+      "id": "69e765fedbc2",
+      "brandName": "คนแบกกุ้ง",
+      "companyName": "คนแบกกุ้ง",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "SC ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย เปิดตัวแคมเปญ “Inside the Signature Life” ถ่ายทอดเรื่องจริงจาก 5 ครอบครัวแห่ง ‘บางกอก บูเลอวาร์ด ซิกเนเจอร์’ สะท้อนนิยามความสำเร็จ...ที่มีเอกลักษณ์เฉพาะตัว [PR]",
+      "thailandEvidence": "“คนแบกกุ้ง” เปิดตัว “เก่ง–น้ำปิง” Friend of Brand ครั้งแรกของแบรนด์ ส่งต่อภาพลักษณ์แบรนด์น้ำปลาไทยสู่คนรุ่นใหม่ ภายใต้แคมเปญ “รสชาติที่แบกทุกโมเมนต์”",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-06",
-      "whyNow": "SC ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย เปิดตัวแคมเปญ “Inside the Signature Life” ถ่ายทอดเรื่องจริงจาก 5 ครอบครัวแห่ง ‘บางกอก บูเลอวาร์ด ซิกเนเจอร์’ สะท้อนนิยามความสำเร็จ...ที่มีเอกลักษณ์เฉพาะตัว [PR]",
+      "signalDate": "2026-07-20",
+      "whyNow": "“คนแบกกุ้ง” เปิดตัว “เก่ง–น้ำปิง” Friend of Brand ครั้งแรกของแบรนด์ ส่งต่อภาพลักษณ์แบรนด์น้ำปลาไทยสู่คนรุ่นใหม่ ภายใต้แคมเปญ “รสชาติที่แบกทุกโมเมนต์”",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -303,21 +414,21 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYmlOT1ZVTWlTVWR1bmpOSjZVbUh5VG1FQzdVQlp3SXppckgzOVY2endKWFFyNWpoa3NRMWpzTTNkODhNWW02TmE3UnlQYmV1MFFGVTJaY1M4MTJwbnRhYU5FeTJfOC1SZDMwcWJlMEJRYjBWT0oxWkYwckVnZkx6TUZWVzI?oc=5",
-          "label": "Brand Buffet"
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9wbjYzYUswN3dhQi1SUjA5THBZUXlVOHN2UWxOWm1OclEtRjRwbHJGLTlSQmRsZHhIQWxET0QxMXJTS0JTb1hmQkRuMWJoZGprWFRv?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
     {
-      "id": "54cc601ee9cb",
-      "brandName": "LG Subscribe ฉลอง 1",
-      "companyName": "LG Subscribe ฉลอง 1",
+      "id": "b0392d2df28d",
+      "brandName": "นอท-พันธ์ธวัชเปิดใจ",
+      "companyName": "นอท-พันธ์ธวัชเปิดใจ",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "LG Subscribe ฉลอง 1 ปีแห่งความสำเร็จในการยกระดับบ้านของคนไทย ตอกย้ำผู้นำบริการ Subscription สำหรับเครื่องใช้ไฟฟ้าภายในบ้าน พร้อมเปิดตัวแคมเปญใหม่ ‘LG Subscribe Friends’",
+      "thailandEvidence": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-18",
-      "whyNow": "LG Subscribe ฉลอง 1 ปีแห่งความสำเร็จในการยกระดับบ้านของคนไทย ตอกย้ำผู้นำบริการ Subscription สำหรับเครื่องใช้ไฟฟ้าภายในบ้าน พร้อมเปิดตัวแคมเปญใหม่ ‘LG Subscribe Friends’",
+      "signalDate": "2026-08-21",
+      "whyNow": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -336,21 +447,21 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2b1BFd1Nma2pkdmhTWVpVUGpMMUxMS2xrQUlpUy1lemJYVG5XcWZJcDY1NEVlR2RuY3JYNU04WmplaXQyTXU3VkFXbFlPd0xYcVJwSg?oc=5",
-          "label": "Marketeer Online"
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YeGs2Ul9TMjFrNl9JTERkcHlsSnJZbHFseFRuTnpGMHhKNHFndW15TEFYeUdVdWlMME1ldHNjVU9mMlM2M2pDZHFxT1ljN1ZJMkl3elRvYkx2bGNLV2wzc3E5QWhfZw?oc=5",
+          "label": "ข่าวสด"
         }
       ]
     },
     {
-      "id": "50fc80e66e8f",
-      "brandName": "อควาฟลาสก์ ประเทศไทย",
-      "companyName": "อควาฟลาสก์ ประเทศไทย",
+      "id": "c7b94b6d4315",
+      "brandName": "SIRIVANNAVARI",
+      "companyName": "SIRIVANNAVARI",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "อควาฟลาสก์ ประเทศไทย คว้าปอนด์-ภูวินทร์ขึ้นแทนแบรนด์พรีเซนเตอร์ พร้อมเปิดตัว AquaFlask x Pond-Phuwin สเปเชียลคอลเลคชันสุดปัง ขึ้นแท่นขวัญใจวัยรุ่น Gen Z",
+      "thailandEvidence": "แบรนด์ SIRIVANNAVARI เปิดตัวผลงานออกแบบชุดพิธีการนักกีฬาไทย Asian Games 2026",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-20",
-      "whyNow": "อควาฟลาสก์ ประเทศไทย คว้าปอนด์-ภูวินทร์ขึ้นแทนแบรนด์พรีเซนเตอร์ พร้อมเปิดตัว AquaFlask x Pond-Phuwin สเปเชียลคอลเลคชันสุดปัง ขึ้นแท่นขวัญใจวัยรุ่น Gen Z",
+      "signalDate": "2026-08-21",
+      "whyNow": "แบรนด์ SIRIVANNAVARI เปิดตัวผลงานออกแบบชุดพิธีการนักกีฬาไทย Asian Games 2026",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -369,8 +480,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vVW5qMDJ3Y2hvb2ZWRU1UWmNEajhvemRqSTB4UHdfYVE3dkZ2RFFsZTBSSjQyMC1YUVRqNWhFeF9nVkxrci0yUDgzZWwwRlhZaktVMndUbEs5Q1E2MG1nTVAxczlQYVVBMVhiM0hyYw?oc=5",
-          "label": "Brand Buffet"
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqNmtkdk1zQTFqN0RGRUpBN3ExS3JfSzlvdWh1VlJEZzF6UV9iSDNiNndPclRCSHFNLUhldEwtSjRyd3BjOXhhdjJYeUhEX2xNNFY1WkdEeENsMHd2VERqbHFoTE5QQWp2LTcxQ0pB?oc=5",
+          "label": "GQThailand"
         }
       ]
     },
@@ -507,39 +618,6 @@
       ]
     },
     {
-      "id": "39ccb32d95ed",
-      "brandName": "FOOD",
-      "companyName": "FOOD",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "FOOD: ‘ส.ขอนแก่น’ เดินเกมอาหารไทยสู่ไลฟ์สไตล์ระดับโลก ดันผลิตภัณฑ์เรือธงรางวัล-นวัตกรรมระดับโลก ‘ไส้กรอกไทย’ และ ‘แหนม’ สู่สากล พร้อมขยายกลุ่มเป้าหมาย เข้าถึงใจคนรุ่นใหม่ผ่านผลิตภัณฑ์ที่เหมาะกับไลฟ์สไตล์ และการใช้พรีเซนเตอร์ เมื่อวันที่ 27 พ.ค. 69 บริษัท ส.ขอนแก่นฟู้ดส์ จ",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-26",
-      "whyNow": "FOOD: ‘ส.ขอนแก่น’ เดินเกมอาหารไทยสู่ไลฟ์สไตล์ระดับโลก ดันผลิตภัณฑ์เรือธงรางวัล-นวัตกรรมระดับโลก ‘ไส้กรอกไทย’ และ ‘แหนม’ สู่สากล พร้อมขยายกลุ่มเป้าหมาย เข้าถึงใจคนรุ่นใหม่ผ่านผลิตภัณฑ์ที่เหมาะกับไลฟ์สไตล์ และการใช้พรีเซนเตอร์ เมื่อวันที่ 27 พ.ค. 69 บริษัท ส.ขอนแก่นฟู้ดส์ จ",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMi3AdBVV95cUxNUEo4R0FHb05hblRNZ2x0RGRzVUd4S2Y4eU1xVGlTS210eklsNnU0N0hhN21EUV9fckFxR2lyck02RU5ZRGdXak9VbHRzOHRVSGctdXJjbll2MXd6akZIVmZzSmZJNzRTVEZvd2o1TzJuM1hMRU0yMENFcEFRZXNGc0JsdVBrSi1KZjJlbm95M21YUmRwMHR5VGtQMmkzS2N3SUd5TGoyN0VseVVoTjYzX1NlamNsMXBFTXEteTRSRk1MMTEySll4UmNxRVhaSkxoNkhFdUZyaVdXaFVra01Fc2M3QU1zYUZmUmllQkZEOHNrUndQR2lQM2QzSWRaTzA3V05YVWNmSlYzVjRoZG9jSkxibVk2ckVxaGRRaU9IVmQyWWZ2Rzk2eVYzaUN1S3RaU3V1QmpjaU51aDIwYko5bUJYTUZiNWQxQktUSUJvRGxicG5CWG5rR2V1ZnB4WC1WaTBEQWlmeHhjSGpNOTJTOXNCY0UtX3lrYlJSUFJSay1KNS1mU0pUVXVwSGNfMHVUVVo4ZFluNmtSMEhaUkxlT2x5LXBnOUxfNkVrbkJwWGhjLXlJV2VQSVZSQ0RuU3BsVU05MHVHSUYyOWdZSjZ4UjExUTh2bjlaWkdTSnBQczBFWENhakVKcGlxUzEtcU9fMjdyOFF1RDZRUkp2aFJLb3JmQ3VwQUR4bW1aUTJKa2VVZ2Rnb2FJU2RmcmNYakFjRnRFX3IydzFUdlljWXgwUjNTbHlwN0RPUUxzeHVOay1vRzdPeTRveTlaQmJIS3RFX3NmVHdqcDV6NGZCMFp4WTQ1Ti1ybE9lZkRiTko0VVVuU3JPMDItOTlBaGg3eGwwSWpkUENsc055VXg4NzVhZ3FCNHJYTHRNbkFZZU54d2VxUngySUNZYllvMjZMUy1TREpzb3BaWGZkMWJWcTFqLU9hUDhvT1o1N19va3VxQjdVUDdXNEt1RkQ2ZG9YbnJNLUhvVjZUamQzYTNIMkJKZGR3bUNrYzNNdTdFc1drM3lGMUtDTW1tM3h2Sms2WGhFX0syLTByRFc0b1lrclVEUU1vNWJNS2s2SFF0dUY5VW8xaTA3b2RIRlR3OVRRZzh2eUZkR3ZKX3h1TS1VUmR4RFJNNHp0Nnk1RkpIVkh4UEVUZ2NiY2dNSnBLd3U2ei1zX2pBS2tDVGhJZkd0SGJlaXdIZklsd0twcDZ4dnpxaENiYS1iUEx1NXlodGFlVExDdGkxTE00Tjk1Q2JDQ0g2c0JUR2MtQ0dfOXRVVnFxR3NUR2ZlYWZlbUlSakFab1M2eTYxS3VfTkdtQ2tX?oc=5",
-          "label": "facebook.com"
-        }
-      ]
-    },
-    {
       "id": "34a044ea0884",
       "brandName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
       "companyName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
@@ -602,72 +680,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03VzRDcVJNOE0yQ0ZNLU9pV2pYODJsUHc4WkZrMTNoT2pEZWJSSHV5X3g3NUZPZGQ5ZVVrcVk1Y3dnS2xZLXFqRVk5bzFQVUpmclplaUpOVTQ?oc=5",
           "label": "workpointtoday.com"
-        }
-      ]
-    },
-    {
-      "id": "ae7184a8e0bf",
-      "brandName": "นอท พันธ์ธวัช พลิกบทเรียน 20",
-      "companyName": "นอท พันธ์ธวัช พลิกบทเรียน 20",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "นอท พันธ์ธวัช พลิกบทเรียน 20 ปี เปิดตัว 'ไทยมาร์ท' อีคอมเมิร์ซสัญชาติไทย เว้นค่าธรรมเนียมแพลตฟอร์มปีแรก",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-07",
-      "whyNow": "นอท พันธ์ธวัช พลิกบทเรียน 20 ปี เปิดตัว 'ไทยมาร์ท' อีคอมเมิร์ซสัญชาติไทย เว้นค่าธรรมเนียมแพลตฟอร์มปีแรก",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ZjRYNHBJUFZlWXNyM2dpSlBoZ0JsbGdWZUF0VzRRLXBxRnRoNzFqMkpzcXhMY3BaR1dQb2x3NlZOeDRuUlVSNVhxOTNkamJiOG5CdXRCLWdzWjA?oc=5",
-          "label": "มติชนออนไลน์"
-        }
-      ]
-    },
-    {
-      "id": "539a4584bf5f",
-      "brandName": "ปักตะกร้าบน IG ได้แล้ว",
-      "companyName": "ปักตะกร้าบน IG ได้แล้ว",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "ปักตะกร้าบน IG ได้แล้ว! Shopee จับมือ Meta ดัน Affiliate บนอินสตาแกรม เปิดช่องครีเอเตอร์ไทยสร้างรายได้จาก Reels",
-      "buyingSignal": "Partnership",
-      "signalDate": "2026-07-02",
-      "whyNow": "ปักตะกร้าบน IG ได้แล้ว! Shopee จับมือ Meta ดัน Affiliate บนอินสตาแกรม เปิดช่องครีเอเตอร์ไทยสร้างรายได้จาก Reels",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 69,
-      "scores": {
-        "thailand_relevance": 16,
-        "buying_signal_strength": 13,
-        "revenue_potential": 12,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 7,
-        "evidence_quality": 3
-      },
-      "priority": "MEDIUM",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVkY0ZUd1ZmlGZ3NvczBLQlpzRVRFa05qZHowMjBoVmczMWxUUWp4YU9rZV95Tk5CLWlvajQyMFNSakZhc2hrNnl6cGZsWkhuYW1rTkMxX0EwR3lOSThsM2dGT2k5VDBzNThSeW1OZWdiUkR2Q0liQ2lHTTM3RWxYYlZJZFBMaFplQjFrMHZVUQ?oc=5",
-          "label": "Forbes Thailand"
         }
       ]
     }
