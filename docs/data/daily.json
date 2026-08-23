@@ -1,65 +1,98 @@
 {
-  "date": "2026-08-22",
-  "generatedAt": "2026-08-22T03:25:08.860Z",
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-23T03:38:07.041Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
-      "id": "f2ba48c87141",
-      "brandName": "Blue Bottle Coffee",
-      "companyName": "Blue Bottle Coffee",
+      "id": "b26e5ebda152",
+      "brandName": "Subway",
+      "companyName": "Subway",
       "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "การมาไทยของBlue Bottle Coffee จะเขย่าตลาดSpecialty แค่ไหน? กาแฟสายคราฟต์ที่กลายเป็นธุรกิจระดับโลก",
+      "thailandEvidence": "Subway เร่งเครื่องตลาดไทย รับ QSR โต 8% ปรับเกม “สั่งง่าย” ดันเมนูใหม่-ขยายสาขา",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-21",
-      "whyNow": "การมาไทยของBlue Bottle Coffee จะเขย่าตลาดSpecialty แค่ไหน? กาแฟสายคราฟต์ที่กลายเป็นธุรกิจระดับโลก",
-      "momentum": "Active",
+      "signalDate": "2026-07-09",
+      "whyNow": "Subway เร่งเครื่องตลาดไทย รับ QSR โต 8% ปรับเกม “สั่งง่าย” ดันเมนูใหม่-ขยายสาขา",
+      "momentum": "Rising",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 87,
+      "score": 89,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
         "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 4,
+        "momentum": 6,
         "timing": 10,
         "evidence_quality": 5
       },
       "priority": "HOT",
-      "isNew": true,
-      "isUpdated": false,
+      "isNew": false,
+      "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGF6TjhKWGhQNEhwVUlmZVMyTENlaEVZLVZzM1B5MURRNXp6SlpfRmhWcDk5ZVNfN2N5cmpVV2RGSWlrbWdyQXI0Z0hIaV9va1VQR01xVHBHOHNJRXo3MWJhY21uaWpxVF9pei1TVnAzcDRx?oc=5",
           "label": "Thairath.co.th"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
-          "label": "Brand Inside"
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96TEd4SHVWZlhWR1lER05WVUxiOU80UGJqbXpSSjQ3VGlnRnRpVWdMcVZzZDk2Q1BpVXVaN1d3M2J0R2xSRENVV2VMWU5XTzU0VmlXbm9R?oc=5",
+          "label": "LINE TODAY"
         }
       ]
     },
     {
-      "id": "a91dcbb4df49",
-      "brandName": "MK",
-      "companyName": "MK",
-      "industry": "Food / QSR",
+      "id": "b14ea4779670",
+      "brandName": "CHANGAN and NING SERVICE",
+      "companyName": "CHANGAN and NING SERVICE",
+      "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "\"MK\" เตรียมเปิด 2 แบรนด์ใหม่ สู้ศึกร้านอาหารเดือด",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-06-05",
-      "whyNow": "\"MK\" เตรียมเปิด 2 แบรนด์ใหม่ สู้ศึกร้านอาหารเดือด",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 83,
+      "thailandEvidence": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand’s First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-14",
+      "whyNow": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand’s First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
       "scores": {
         "thailand_relevance": 14,
-        "buying_signal_strength": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jSldTamd4cWJ1Vk1QQlFmUTFqazNha2Q2d29mb0JwV3o3VHlfMTFjVjl1U0x6U3JZc3hwQ2VmczVESEJZZnBQVWxZcDQ5Q3J6NFNV?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "3b9e8e270357",
+      "brandName": "Seafresh Gourmet",
+      "companyName": "Seafresh Gourmet",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Seafresh Gourmet ตอกย้ำผู้นำมาตรฐานใหม่อาหารทะเลไทย เปิดตัวไลน์สินค้าใหม่ในงาน THAIFEX – Anuga Asia 2026 พร้อมเปิดตัวผลิตภัณฑ์ใหม่ ภายใต้แบรนด์ Seafresh และ Bless ตอบรับผู้บริโภคยุคใหม่ที่มองหาคุณภาพ ความสะดวก และความหลากหลาย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-05-28",
+      "whyNow": "Seafresh Gourmet ตอกย้ำผู้นำมาตรฐานใหม่อาหารทะเลไทย เปิดตัวไลน์สินค้าใหม่ในงาน THAIFEX – Anuga Asia 2026 พร้อมเปิดตัวผลิตภัณฑ์ใหม่ ภายใต้แบรนด์ Seafresh และ Bless ตอบรับผู้บริโภคยุคใหม่ที่มองหาคุณภาพ ความสะดวก และความหลากหลาย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
         "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 6,
+        "momentum": 4,
         "timing": 10,
         "evidence_quality": 5
       },
@@ -68,29 +101,25 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1kbTExNjkzdWoxaUQydDZhYjBJdnNnMnQ0bTNmZ1pQSDRxLTFrR0sxeFJYMEhxbnYzLVVSdHdKQUJzSU95V21UUXU1bFZkQU5HaERvSHBuZV9UbzA3NlpB?oc=5",
-          "label": "TNN Thailand"
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2LXJvMkFoVVdsNEdIT0FvZ0lCUWlCcVBGakJET0kzazN3NUU1LVJ5NV9KaENJTXpFTk9oMVhYQXctU2RERmQ2enJ4ajBHdlMxeGhtU3ZGcWxUbEU3cUdMelZVRU5xR1U?oc=5",
+          "label": "ผู้จัดการออนไลน์"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjcHV2ZUFva0RzNFVpOWR0eDd0NnB6ODZhWTBiOXhQZkxJYjBGLTZTb3hJbldtQUloWGpZaDJaZGRrZklDUG9QS3plTExDNzIyc1haTWNyNkhKOW9CbWpuNjdSSm1pZw?oc=5",
-          "label": "Brand Buffet"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fRXVHV1ZPZURxRUJpX3V6SVYtSUZ4cUFfV3QwOGhmVVdrVVk5TzR2b1k2aW55U2thLTc4TE9GNHlicnU2cmNGUXI3WW03N2FDUDJ5eEJoaHZQZVNXREkyWWJhYW9rNjItbWJhNFVxLVpkTlNJVExr?oc=5",
-          "label": "Brand Buffet"
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5nSHFzUHAwX1lKTHVSWW1rNXFheHRnOFZNcWF3djhKc1NsTnNYei1MTWJCNEpZZ3lVaEtLamNldm9QdE1tczN4dmhfZTFKcHhUSjBz?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
     {
-      "id": "eca5217e6e84",
-      "brandName": "NAREE เดินเกมรุกตลาด Color Cosmetic",
-      "companyName": "NAREE เดินเกมรุกตลาด Color Cosmetic",
+      "id": "2ba4d8910995",
+      "brandName": "EVE’S",
+      "companyName": "EVE’S",
       "industry": "Beauty / Personal Care",
       "brandType": "Established / Growing",
-      "thailandEvidence": "NAREE เดินเกมรุกตลาด Color Cosmetic เปิดตัว \"Perfect Touch Blush\" 18 เฉดสี ดึง 7 สาว 4EVE นั่งแท่น Face of Naree ตอกย้ำแบรนด์เครื่องสำอางไทยอันดับหนึ่ง",
+      "thailandEvidence": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-15",
-      "whyNow": "NAREE เดินเกมรุกตลาด Color Cosmetic เปิดตัว \"Perfect Touch Blush\" 18 เฉดสี ดึง 7 สาว 4EVE นั่งแท่น Face of Naree ตอกย้ำแบรนด์เครื่องสำอางไทยอันดับหนึ่ง",
+      "signalDate": "2026-06-22",
+      "whyNow": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -109,40 +138,40 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NYzh5OHoyd19GcE5BZktlQ1l1d2lRRm5ZR0w4c2M2cnVJNUE5ZHBqbl92SWR4dkNsempNLUtSNEI5LUM1UDcxZjVyYVZWa2ZFUXZN?oc=5",
-          "label": "Positioningmag"
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81WG1tZXQ1TXVQUzVpYlgxeTJHNTdJSDZjblU1VHQ3eUpJRkUwNVRlUDktVS0yRDhwREZVdUlUY3hNVnF6cWhpbTBGR29veGQ4VTdKNzh1dVE1YldQRjlwZg?oc=5",
+          "label": "ผู้จัดการออนไลน์"
         }
       ]
     },
     {
-      "id": "ccb700525b66",
-      "brandName": "ยัสปาล กรุ๊ป",
-      "companyName": "ยัสปาล กรุ๊ป",
-      "industry": "Retail / Fashion",
+      "id": "76a262eb26f3",
+      "brandName": "CEA",
+      "companyName": "CEA",
+      "industry": "E-Commerce / Platform",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-13",
-      "whyNow": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
-      "momentum": "Exploding",
+      "thailandEvidence": "CEA Launches Thailand’s First International Marketplace for Film and Series at Bangkok International Content Market 2026",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-22",
+      "whyNow": "CEA Launches Thailand’s First International Marketplace for Film and Series at Bangkok International Content Market 2026",
+      "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 79,
+      "score": 80,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
         "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 8,
+        "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94dGh1ajBQNmhlaC05eGU1ZTNBX3lJWjVQNlpPZDlkLUpPYjdRMGVTaUpnMUlTSUc2dlFVX0xYYmhfRnBFYUVNX011aEVKQkNI?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9DMWpEUlVIaTlacDZzZ0FYM1VjWXZrQk1xbG5TSVM4QnYzR3I4SkZ4ZXJxNDFoa2thendVX3ZKTjBKeU5YMGZpSm5tY183QkZMb0M0VEZPbw?oc=5",
           "label": "ThaiPR.NET"
         }
       ]
@@ -185,55 +214,59 @@
       ]
     },
     {
-      "id": "1d563f587009",
-      "brandName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
-      "companyName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
-      "industry": "Automotive",
+      "id": "a91dcbb4df49",
+      "brandName": "MK",
+      "companyName": "MK",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-28",
-      "whyNow": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
-      "momentum": "Exploding",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 76,
+      "thailandEvidence": "แผน MK ปี ’69 ตั้งเป้าโต 12% เปิด ‘โบนัสสุกี้’ สาขาใหม่ ทุกสัปดาห์ จับตา ปีนี้มีอีก 2 แบรนด์ใหม่",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-06-04",
+      "whyNow": "แผน MK ปี ’69 ตั้งเป้าโต 12% เปิด ‘โบนัสสุกี้’ สาขาใหม่ ทุกสัปดาห์ จับตา ปีนี้มีอีก 2 แบรนด์ใหม่",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 77,
       "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
+        "thailand_relevance": 8,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 8,
+        "momentum": 6,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HIGH",
       "isNew": false,
-      "isUpdated": false,
+      "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpY2tQeVQtajY5aUZoc2w5RXVGRzBfV1FrazhjWXNEMGNqcEhJMk9SV3FBcGtWaFBhVDVrQVlORGxmcXhQZDlKdU9hbjFoSGpUalFxMg?oc=5",
-          "label": "Marketeer Online"
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjcHV2ZUFva0RzNFVpOWR0eDd0NnB6ODZhWTBiOXhQZkxJYjBGLTZTb3hJbldtQUloWGpZaDJaZGRrZklDUG9QS3plTExDNzIyc1haTWNyNkhKOW9CbWpuNjdSSm1pZw?oc=5",
+          "label": "Brand Buffet"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fRXVHV1ZPZURxRUJpX3V6SVYtSUZ4cUFfV3QwOGhmVVdrVVk5TzR2b1k2aW55U2thLTc4TE9GNHlicnU2cmNGUXI3WW03N2FDUDJ5eEJoaHZQZVNXREkyWWJhYW9rNjItbWJhNFVxLVpkTlNJVExr?oc=5",
+          "label": "Brand Buffet"
         }
       ]
     },
     {
-      "id": "612b0715b7ce",
-      "brandName": "THAIFEX",
-      "companyName": "THAIFEX",
+      "id": "f2ba48c87141",
+      "brandName": "Blue Bottle Coffee",
+      "companyName": "Blue Bottle Coffee",
       "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "แม้ต้นทุนวัตถุดิบพุ่ง แต่ “อาหารญี่ปุ่น” ในไทยยังมีแนวโน้มโต! “ฟู้ดส์ คลาสสิค” จัดเต็ม เปิดตัวสินค้าใหม่ในงาน THAIFEX – ANUGA ASIA 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-12",
-      "whyNow": "แม้ต้นทุนวัตถุดิบพุ่ง แต่ “อาหารญี่ปุ่น” ในไทยยังมีแนวโน้มโต! “ฟู้ดส์ คลาสสิค” จัดเต็ม เปิดตัวสินค้าใหม่ในงาน THAIFEX – ANUGA ASIA 2026",
+      "thailandEvidence": "การมาไทยของBlue Bottle Coffee จะเขย่าตลาดSpecialty แค่ไหน? กาแฟสายคราฟต์ที่กลายเป็นธุรกิจระดับโลก",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-21",
+      "whyNow": "การมาไทยของBlue Bottle Coffee จะเขย่าตลาดSpecialty แค่ไหน? กาแฟสายคราฟต์ที่กลายเป็นธุรกิจระดับโลก",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 76,
+      "score": 77,
       "scores": {
         "thailand_relevance": 18,
-        "buying_signal_strength": 19,
+        "buying_signal_strength": 20,
         "revenue_potential": 16,
         "ooh_fit": 14,
         "momentum": 4,
@@ -245,12 +278,12 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUpFTGw2OTZxbEx6TGJyV25Bc1hjUVpGSlZ1TVN4TUZuNkhjYUVMLVVvUWJyTUY4SDdjLVhPVWpCSHA3blFzQ3JSUVdWOGZyS3YzRUNUb2xXdEw1cmpTMWU1Q1AyQzhOdTBiV3JxdUxmTHQyd0RWWFBjTHZwbklnN0VvMnB6Mm92T3c?oc=5",
-          "label": "Forbes Thailand"
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
+          "label": "Thairath.co.th"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA0NWVaZl95M1pWNHYyY3M4X1BCTjNJbXJ0dmVzem5sd08zUEI0V0Mya2NacVpaYWMzTFNfc09iWXpaYnFTNDFYOHJFRS1NX0kzVXRzLVJQSHFINkVp?oc=5",
-          "label": "WeAreCP"
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
+          "label": "Brand Inside"
         }
       ]
     },
@@ -321,39 +354,6 @@
       ]
     },
     {
-      "id": "e36055588ab5",
-      "brandName": "แมคไทย กางแผนระยะยาว",
-      "companyName": "แมคไทย กางแผนระยะยาว",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "“แมคไทย” กางแผนระยะยาวคว้าสิทธิ์แฟรนไชส์ “แมคโดนัลด์” เพิ่ม 20 ปี ลุยขยายสาขาเท่าตัวในปี 2033",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-07-09",
-      "whyNow": "“แมคไทย” กางแผนระยะยาวคว้าสิทธิ์แฟรนไชส์ “แมคโดนัลด์” เพิ่ม 20 ปี ลุยขยายสาขาเท่าตัวในปี 2033",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 74,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 18,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWGZ0N1dLM3V2MWc4U3dVZkpSVDY0aGpXVHNmZEpZOENzVk9FUDdMZXZZcGVkYnhQNDBLUk5ndGVma2RNRlRpMWVLdVhkV1NFU29HQTBENWppR3o0ZWRzQk4zSUNDcl91eUUybjlpM1BTR0doeTJGcWpkU2lIY3FXS3JneHdlamlpMm1QN2RxVlBocmhDRFJjSF9BSHBndHFjbnc?oc=5",
-          "label": "Brand Buffet"
-        }
-      ]
-    },
-    {
       "id": "ab4694707f47",
       "brandName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
       "companyName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
@@ -387,15 +387,15 @@
       ]
     },
     {
-      "id": "69e765fedbc2",
-      "brandName": "คนแบกกุ้ง",
-      "companyName": "คนแบกกุ้ง",
+      "id": "7a89000e680a",
+      "brandName": "All New Honda Click",
+      "companyName": "All New Honda Click",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“คนแบกกุ้ง” เปิดตัว “เก่ง–น้ำปิง” Friend of Brand ครั้งแรกของแบรนด์ ส่งต่อภาพลักษณ์แบรนด์น้ำปลาไทยสู่คนรุ่นใหม่ ภายใต้แคมเปญ “รสชาติที่แบกทุกโมเมนต์”",
+      "thailandEvidence": "All New Honda Click 125 โฉมใหม่ ฟีเจอร์ครบ ลุ้นเปิดตัวไทยต้นเดือน ส.ค. นี้",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-20",
-      "whyNow": "“คนแบกกุ้ง” เปิดตัว “เก่ง–น้ำปิง” Friend of Brand ครั้งแรกของแบรนด์ ส่งต่อภาพลักษณ์แบรนด์น้ำปลาไทยสู่คนรุ่นใหม่ ภายใต้แคมเปญ “รสชาติที่แบกทุกโมเมนต์”",
+      "signalDate": "2026-07-21",
+      "whyNow": "All New Honda Click 125 โฉมใหม่ ฟีเจอร์ครบ ลุ้นเปิดตัวไทยต้นเดือน ส.ค. นี้",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -414,107 +414,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9wbjYzYUswN3dhQi1SUjA5THBZUXlVOHN2UWxOWm1OclEtRjRwbHJGLTlSQmRsZHhIQWxET0QxMXJTS0JTb1hmQkRuMWJoZGprWFRv?oc=5",
-          "label": "Positioningmag"
-        }
-      ]
-    },
-    {
-      "id": "b0392d2df28d",
-      "brandName": "นอท-พันธ์ธวัชเปิดใจ",
-      "companyName": "นอท-พันธ์ธวัชเปิดใจ",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-21",
-      "whyNow": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YeGs2Ul9TMjFrNl9JTERkcHlsSnJZbHFseFRuTnpGMHhKNHFndW15TEFYeUdVdWlMME1ldHNjVU9mMlM2M2pDZHFxT1ljN1ZJMkl3elRvYkx2bGNLV2wzc3E5QWhfZw?oc=5",
-          "label": "ข่าวสด"
-        }
-      ]
-    },
-    {
-      "id": "c7b94b6d4315",
-      "brandName": "SIRIVANNAVARI",
-      "companyName": "SIRIVANNAVARI",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แบรนด์ SIRIVANNAVARI เปิดตัวผลงานออกแบบชุดพิธีการนักกีฬาไทย Asian Games 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-21",
-      "whyNow": "แบรนด์ SIRIVANNAVARI เปิดตัวผลงานออกแบบชุดพิธีการนักกีฬาไทย Asian Games 2026",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqNmtkdk1zQTFqN0RGRUpBN3ExS3JfSzlvdWh1VlJEZzF6UV9iSDNiNndPclRCSHFNLUhldEwtSjRyd3BjOXhhdjJYeUhEX2xNNFY1WkdEeENsMHd2VERqbHFoTE5QQWp2LTcxQ0pB?oc=5",
-          "label": "GQThailand"
-        }
-      ]
-    },
-    {
-      "id": "29c349765d23",
-      "brandName": "ไทยประกันชีวิต",
-      "companyName": "ไทยประกันชีวิต",
-      "industry": "Banking / Finance",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ไทยประกันชีวิตเปิดตัวแคมเปญโฆษณาชุด “เชื่อในความดี”",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-13",
-      "whyNow": "ไทยประกันชีวิตเปิดตัวแคมเปญโฆษณาชุด “เชื่อในความดี”",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1kV2MwYlRzbzNhVDBQdmtFcjY4UXluOE96YnZxd0k1WHhNZk9WZHNoRmNPWmgxREtzbjZUbllVUHB1RGstVW5zZVlLMFc0UmxObDVlTQ?oc=5",
-          "label": "Marketeer Online"
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE12YlJkRXR3SzR1R011Sjl0bHVTaV84RjlLaVFJZWc3d2J1ZWNhVmd4TEh1NVQwTjlCYjBJNVEzamtkejdmOWJWVU9kTDFhbmgtTk1qVUpTLVA2RDg2OG5VUTRYWmR4Z19ZLW9IM2ZQMnQzVWo5SUJzTkU4SG8?oc=5",
+          "label": "Car2Day"
         }
       ]
     },
@@ -552,23 +453,23 @@
       ]
     },
     {
-      "id": "b14ea4779670",
-      "brandName": "CHANGAN and NING SERVICE",
-      "companyName": "CHANGAN and NING SERVICE",
-      "industry": "Automotive",
+      "id": "2b1bf06566a2",
+      "brandName": "SAPPE บุกงาน THAIFEX 2026",
+      "companyName": "SAPPE บุกงาน THAIFEX 2026",
+      "industry": "E-Commerce / Platform",
       "brandType": "Established / Growing",
-      "thailandEvidence": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand's First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "thailandEvidence": "“SAPPE” บุกงาน THAIFEX 2026 ขนทัพนวัตกรรมขับเคลื่อนแนวคิด ‘FUNNIVERSE’ เปิดตัว Global Campaign ‘Mogu Mogu’ และ‘Sappe Beauti’ โฉมใหม่ พร้อมชูกลยุทธ์ 3 แกนหลัก ปักหมุดแบรนด์ไทยสู่ Global Brand อย่างยั่งยืน",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-14",
-      "whyNow": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand's First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "signalDate": "2026-05-27",
+      "whyNow": "“SAPPE” บุกงาน THAIFEX 2026 ขนทัพนวัตกรรมขับเคลื่อนแนวคิด ‘FUNNIVERSE’ เปิดตัว Global Campaign ‘Mogu Mogu’ และ‘Sappe Beauti’ โฉมใหม่ พร้อมชูกลยุทธ์ 3 แกนหลัก ปักหมุดแบรนด์ไทยสู่ Global Brand อย่างยั่งยืน",
       "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
       "scores": {
         "thailand_relevance": 14,
         "buying_signal_strength": 19,
-        "revenue_potential": 18,
+        "revenue_potential": 16,
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
@@ -579,41 +480,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCN2VNRnBPN1o1RDB3RUZRbHc3Ul94czJpXzNSRTBGV3hLcjFVTXRBSl9tYnB6UW9RLWRrbU5WTlRKMlJHWFNtaXl0TDFZc2Q2RXZkMlZnaEpHMHpKWlhvQjF6MTVoQjkyaERR?oc=5",
-          "label": "newswit"
-        }
-      ]
-    },
-    {
-      "id": "2ae89f14b8b7",
-      "brandName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
-      "companyName": "ไทยเทพรส เขย่าตลาดซอสครั้งใหญ่",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-26",
-      "whyNow": "“ไทยเทพรส” เขย่าตลาดซอสครั้งใหญ่ เปิดตัว 16 สินค้าใหม่ รับเทรนด์ Home Cooking – Fusion Food โตแรง ชูแนวคิด “ใครๆก็ทำอาหารได้” - มิติหุ้น | ชี้ชัดทุกการลงทุน",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxVG5lSXNUVUJyazNLR3JiM0dpUVpYNG9mcmtLZWNRTkdmWk9mZURGcm51alFZSEJwQlpjVmlBdGlVZDVfNk54RHkyNGVCUWR5V1p2MERB?oc=5",
-          "label": "มิติหุ้น"
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03VzRDcVJNOE0yQ0ZNLU9pV2pYODJsUHc4WkZrMTNoT2pEZWJSSHV5X3g3NUZPZGQ5ZVVrcVk1Y3dnS2xZLXFqRVk5bzFQVUpmclplaUpOVTQ?oc=5",
+          "label": "workpointtoday.com"
         }
       ]
     },
@@ -651,15 +519,15 @@
       ]
     },
     {
-      "id": "2b1bf06566a2",
-      "brandName": "SAPPE บุกงาน THAIFEX 2026",
-      "companyName": "SAPPE บุกงาน THAIFEX 2026",
+      "id": "ae7184a8e0bf",
+      "brandName": "นอท พันธ์ธวัช พลิกบทเรียน 20",
+      "companyName": "นอท พันธ์ธวัช พลิกบทเรียน 20",
       "industry": "E-Commerce / Platform",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“SAPPE” บุกงาน THAIFEX 2026 ขนทัพนวัตกรรมขับเคลื่อนแนวคิด ‘FUNNIVERSE’ เปิดตัว Global Campaign ‘Mogu Mogu’ และ‘Sappe Beauti’ โฉมใหม่ พร้อมชูกลยุทธ์ 3 แกนหลัก ปักหมุดแบรนด์ไทยสู่ Global Brand อย่างยั่งยืน",
+      "thailandEvidence": "นอท พันธ์ธวัช พลิกบทเรียน 20 ปี เปิดตัว 'ไทยมาร์ท' อีคอมเมิร์ซสัญชาติไทย เว้นค่าธรรมเนียมแพลตฟอร์มปีแรก",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-05-27",
-      "whyNow": "“SAPPE” บุกงาน THAIFEX 2026 ขนทัพนวัตกรรมขับเคลื่อนแนวคิด ‘FUNNIVERSE’ เปิดตัว Global Campaign ‘Mogu Mogu’ และ‘Sappe Beauti’ โฉมใหม่ พร้อมชูกลยุทธ์ 3 แกนหลัก ปักหมุดแบรนด์ไทยสู่ Global Brand อย่างยั่งยืน",
+      "signalDate": "2026-07-07",
+      "whyNow": "นอท พันธ์ธวัช พลิกบทเรียน 20 ปี เปิดตัว 'ไทยมาร์ท' อีคอมเมิร์ซสัญชาติไทย เว้นค่าธรรมเนียมแพลตฟอร์มปีแรก",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -678,8 +546,140 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE03VzRDcVJNOE0yQ0ZNLU9pV2pYODJsUHc4WkZrMTNoT2pEZWJSSHV5X3g3NUZPZGQ5ZVVrcVk1Y3dnS2xZLXFqRVk5bzFQVUpmclplaUpOVTQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ZjRYNHBJUFZlWXNyM2dpSlBoZ0JsbGdWZUF0VzRRLXBxRnRoNzFqMkpzcXhMY3BaR1dQb2x3NlZOeDRuUlVSNVhxOTNkamJiOG5CdXRCLWdzWjA?oc=5",
+          "label": "มติชนออนไลน์"
+        }
+      ]
+    },
+    {
+      "id": "70781841ee63",
+      "brandName": "TikTok Shop",
+      "companyName": "TikTok Shop",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "‘ทุเรียนฟีเวอร์’ บน TikTok Shop พลังครีเอเตอร์ไทย 1.8 ล้านคน ดันยอดขายสินค้าเกษตรเติบโต 15-20%",
+      "buyingSignal": "Social / commerce momentum",
+      "signalDate": "2026-05-27",
+      "whyNow": "‘ทุเรียนฟีเวอร์’ บน TikTok Shop พลังครีเอเตอร์ไทย 1.8 ล้านคน ดันยอดขายสินค้าเกษตรเติบโต 15-20%",
+      "momentum": "Exploding",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 69,
+      "scores": {
+        "thailand_relevance": 16,
+        "buying_signal_strength": 11,
+        "revenue_potential": 12,
+        "ooh_fit": 14,
+        "momentum": 8,
+        "timing": 5,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1WY2lUYjFrS1RldU1lOFZZZUZ3UnVSMVNnRXJoTzdPckgyVWN4d1pxaTBKS3pkd3A3d3RKWmV0T2NQZVpoaGNQTTJyeElVX081ek1DVmlwM3h2YUFhT0JpTWF2Rl9VMmtYZUZxYzlVd3pIb1FpT29hTE90SUg?oc=5",
           "label": "workpointtoday.com"
+        }
+      ]
+    },
+    {
+      "id": "034a8294029c",
+      "brandName": "มาด้วย",
+      "companyName": "มาด้วย",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "มาด้วย ! POCO X8 ผ่านรับรองในไทยแล้ว ลุ้นรีแบรนด์จาก REDMI Note 17 Pro 5G - iPhone-Droid",
+      "buyingSignal": "Rebrand",
+      "signalDate": "2026-07-22",
+      "whyNow": "มาด้วย ! POCO X8 ผ่านรับรองในไทยแล้ว ลุ้นรีแบรนด์จาก REDMI Note 17 Pro 5G - iPhone-Droid",
+      "momentum": "Active",
+      "revenueMinM": 0.8,
+      "revenueMaxM": 2.5,
+      "score": 69,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 15,
+        "revenue_potential": 11,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9na0FPVHNFQ2pGZDdJczhTbEtaNkNfcHB6TGNPWjRSSHBSdmpfVkdvYjkyVVhDY2FrRDhLeWFxN2w1Z0ljcno2a3ZWejl2SXRHQ0w3YVJMU3paaG9SWGYtRnRMeHRpUmpnZEgtV3M4a0NoVnp1d1dqOGJn?oc=5",
+          "label": "iPhone-Droid"
+        }
+      ]
+    },
+    {
+      "id": "bbc74032a6e6",
+      "brandName": "แมคโดนัลด์ไทย",
+      "companyName": "แมคโดนัลด์ไทย",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "แมคโดนัลด์ไทย คว้าสิทธิ์ยาว 20 ปี บริหารแฟรนไชส์ในไทยเพียงผู้เดียว เตรียมขยายสาขาเท่าตัว สร้างงานใหม่ 6,000 อัตรา ภายในปี 2033",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-09",
+      "whyNow": "แมคโดนัลด์ไทย คว้าสิทธิ์ยาว 20 ปี บริหารแฟรนไชส์ในไทยเพียงผู้เดียว เตรียมขยายสาขาเท่าตัว สร้างงานใหม่ 6,000 อัตรา ภายในปี 2033",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 68,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NdDA2VWNZMHJla1dzcXZzMm81N0lyN3JMd0tnZ1dKQURHS3ZCM09MWXI2Mko4MklNdFRLSElSc1dLWW5kYUFsNm8zWEZVV1J1ZE5Pc0gwcDhmQnlCWnM3dQ?oc=5",
+          "label": "Brand Inside"
+        }
+      ]
+    },
+    {
+      "id": "62f7cbe56ab3",
+      "brandName": "เปิดมาแล้ว 3 ปี KANORI",
+      "companyName": "เปิดมาแล้ว 3 ปี KANORI",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เปิดมาแล้ว 3 ปี “KANORI Hand roll bar” ยืนหนึ่งวงการแฮนด์โรล กวาดรายได้ 116 ล้าน โตแรง 132% พร้อมขยายสาขาเพิ่ม",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-06-11",
+      "whyNow": "เปิดมาแล้ว 3 ปี “KANORI Hand roll bar” ยืนหนึ่งวงการแฮนด์โรล กวาดรายได้ 116 ล้าน โตแรง 132% พร้อมขยายสาขาเพิ่ม",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 68,
+      "scores": {
+        "thailand_relevance": 8,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAzd2ZfakdvN2xBM0ZNc0RkYmxzZEkyblVSLUtaNUoyUVJiT0JHVnNVd2xvS3Q3OEYwcG9MT1E3RnVCa0luMjJsX25XN2UteE9HSGdNa0ljTDFMQjIxazdBLWdYTW13VlE3aVpKYjZqVWI2ejgtb0E?oc=5",
+          "label": "Brand Buffet"
         }
       ]
     }
