@@ -163,8 +163,8 @@
     },
     "subway": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 7,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 8,
       "lastSignalHash": "55a5ad9eeb",
       "lastSignal": "Thailand market entry"
     },
@@ -205,8 +205,8 @@
     },
     "thaifex": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 15,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 16,
       "lastSignalHash": "26a9e49736",
       "lastSignal": "Major product launch"
     },
@@ -219,8 +219,8 @@
     },
     "ไทยประกันชีวิต": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 11,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 12,
       "lastSignalHash": "04cbbfc538",
       "lastSignal": "Major product launch"
     },
@@ -247,8 +247,8 @@
     },
     "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ saboten": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 16,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 17,
       "lastSignalHash": "426e8127ea",
       "lastSignal": "Major product launch"
     },
@@ -352,9 +352,9 @@
     },
     "mk": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-23",
-      "timesDetected": 10,
-      "lastSignalHash": "515a441890",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 11,
+      "lastSignalHash": "d2f7c392b9",
       "lastSignal": "Expansion / new branches"
     },
     "ch": {
@@ -534,9 +534,9 @@
     },
     "changan and ning service": {
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 10,
-      "lastSignalHash": "41f8990061",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 11,
+      "lastSignalHash": "4351e5f0cf",
       "lastSignal": "Major product launch"
     },
     "hongqi": {
@@ -639,8 +639,8 @@
     },
     "cp foton": {
       "firstSeen": "2026-08-16",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 13,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 14,
       "lastSignalHash": "815b40e0d9",
       "lastSignal": "Major product launch"
     },
@@ -695,8 +695,8 @@
     },
     "ไทยมาแรง rally movement ประเดิมคอลแลบฯ": {
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-22",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 7,
       "lastSignalHash": "8e46e3794b",
       "lastSignal": "Major product launch"
     },
@@ -842,8 +842,8 @@
     },
     "exim bank ร่วมยินดี awc": {
       "firstSeen": "2026-08-20",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 7,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 8,
       "lastSignalHash": "2b802b6b0c",
       "lastSignal": "Major product launch"
     },
@@ -905,8 +905,8 @@
     },
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 5,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 6,
       "lastSignalHash": "917248c294",
       "lastSignal": "Thailand market entry"
     },
@@ -947,8 +947,8 @@
     },
     "eve’s": {
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-08-24",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 3,
       "lastSignalHash": "e74ad63beb",
       "lastSignal": "Major product launch"
     },
@@ -989,15 +989,15 @@
     },
     "ผู้ค้าปลีกสหรัฐฯ แห่": {
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 3,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 4,
       "lastSignalHash": "f6e4ba07ad",
       "lastSignal": "Major product launch"
     },
     "ไทยมาร์ท": {
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 3,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 4,
       "lastSignalHash": "67b85c7d74",
       "lastSignal": "Major product launch"
     },
@@ -1017,8 +1017,8 @@
     },
     "แสนสิริ": {
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-08-26",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-28",
+      "timesDetected": 3,
       "lastSignalHash": "7e031623c3",
       "lastSignal": "Major product launch"
     },
@@ -1045,10 +1045,10 @@
     },
     "shopee": {
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-08-25",
-      "timesDetected": 1,
-      "lastSignalHash": "e5b89d895a",
-      "lastSignal": "Partnership"
+      "lastSeen": "2026-08-28",
+      "timesDetected": 2,
+      "lastSignalHash": "fed7904a9d",
+      "lastSignal": "Major product launch"
     },
     "ชายสี่รุกตลาดโลก": {
       "firstSeen": "2026-08-26",
@@ -1069,6 +1069,41 @@
       "lastSeen": "2026-08-26",
       "timesDetected": 1,
       "lastSignalHash": "f0336f4135",
+      "lastSignal": "Major product launch"
+    },
+    "labella กระเป๋าแบรนด์ไทยกับก้าวใหม่ครั้งสำคัญ": {
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 1,
+      "lastSignalHash": "e5ef58b08c",
+      "lastSignal": "New presenter / ambassador"
+    },
+    "logeski ต่อยอดการเติบโตบน tiktok shop": {
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 1,
+      "lastSignalHash": "3519761069",
+      "lastSignal": "Event / sponsorship"
+    },
+    "nct dream": {
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 1,
+      "lastSignalHash": "3d7080e11d",
+      "lastSignal": "Major product launch"
+    },
+    "bmw f 450 gs": {
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 1,
+      "lastSignalHash": "544adc9a62",
+      "lastSignal": "Major product launch"
+    },
+    "angel": {
+      "firstSeen": "2026-08-28",
+      "lastSeen": "2026-08-28",
+      "timesDetected": 1,
+      "lastSignalHash": "e80041d880",
       "lastSignal": "Major product launch"
     }
   }
