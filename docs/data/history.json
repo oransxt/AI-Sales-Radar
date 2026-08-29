@@ -163,8 +163,8 @@
     },
     "subway": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 8,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 9,
       "lastSignalHash": "55a5ad9eeb",
       "lastSignal": "Thailand market entry"
     },
@@ -205,8 +205,8 @@
     },
     "thaifex": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 16,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 17,
       "lastSignalHash": "26a9e49736",
       "lastSignal": "Major product launch"
     },
@@ -219,8 +219,8 @@
     },
     "ไทยประกันชีวิต": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 12,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 13,
       "lastSignalHash": "04cbbfc538",
       "lastSignal": "Major product launch"
     },
@@ -387,8 +387,8 @@
     },
     "lotteria ร้านเบอร์เกอร์เกาหลี โดน mcdonald’s": {
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 3,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 4,
       "lastSignalHash": "27e6a8c333",
       "lastSignal": "Expansion / new branches"
     },
@@ -527,8 +527,8 @@
     },
     "เปิดสเป็ค lepas l6 ev": {
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-08-15",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 3,
       "lastSignalHash": "0503a66430",
       "lastSignal": "Major product launch"
     },
@@ -639,8 +639,8 @@
     },
     "cp foton": {
       "firstSeen": "2026-08-16",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 14,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 15,
       "lastSignalHash": "815b40e0d9",
       "lastSignal": "Major product launch"
     },
@@ -695,8 +695,8 @@
     },
     "ไทยมาแรง rally movement ประเดิมคอลแลบฯ": {
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 7,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 8,
       "lastSignalHash": "8e46e3794b",
       "lastSignal": "Major product launch"
     },
@@ -716,9 +716,9 @@
     },
     "ก้าวใหม่ของวงการแฟชั่นและบิวตี้": {
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-08-20",
-      "timesDetected": 4,
-      "lastSignalHash": "6d96d32fbe",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 5,
+      "lastSignalHash": "89619db6b0",
       "lastSignal": "Major product launch"
     },
     "เอาใจคอกาแฟ monkey three coffee": {
@@ -842,8 +842,8 @@
     },
     "exim bank ร่วมยินดี awc": {
       "firstSeen": "2026-08-20",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 8,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 9,
       "lastSignalHash": "2b802b6b0c",
       "lastSignal": "Major product launch"
     },
@@ -905,8 +905,8 @@
     },
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 6,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 7,
       "lastSignalHash": "917248c294",
       "lastSignal": "Thailand market entry"
     },
@@ -989,8 +989,8 @@
     },
     "ผู้ค้าปลีกสหรัฐฯ แห่": {
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 4,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 5,
       "lastSignalHash": "f6e4ba07ad",
       "lastSignal": "Major product launch"
     },
@@ -1017,9 +1017,9 @@
     },
     "แสนสิริ": {
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 3,
-      "lastSignalHash": "7e031623c3",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 4,
+      "lastSignalHash": "9cdbaa341a",
       "lastSignal": "Major product launch"
     },
     "zara duplex concept": {
@@ -1045,8 +1045,8 @@
     },
     "shopee": {
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-08-28",
-      "timesDetected": 2,
+      "lastSeen": "2026-08-29",
+      "timesDetected": 3,
       "lastSignalHash": "fed7904a9d",
       "lastSignal": "Major product launch"
     },
@@ -1105,6 +1105,55 @@
       "timesDetected": 1,
       "lastSignalHash": "e80041d880",
       "lastSignal": "Major product launch"
+    },
+    "hrc": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "58e607559b",
+      "lastSignal": "Thailand market entry"
+    },
+    "standard products": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "354b02f218",
+      "lastSignal": "Expansion / new branches"
+    },
+    "วิเคราะห์ sme ไทยทำไมถึง ขายดี": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "be9d8a49ff",
+      "lastSignal": "Major product launch"
+    },
+    "visa": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "9b43634ffc",
+      "lastSignal": "Major product launch"
+    },
+    "ditp ผนึกกำลัง cea": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "8f31410fd5",
+      "lastSignal": "Major product launch"
+    },
+    "ปังอ้วมมาเอง": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "936dce626d",
+      "lastSignal": "Major product launch"
+    },
+    "ฮามะ ซูชิ": {
+      "firstSeen": "2026-08-29",
+      "lastSeen": "2026-08-29",
+      "timesDetected": 1,
+      "lastSignalHash": "0bebbb53fe",
+      "lastSignal": "Expansion / new branches"
     }
   }
 }
