@@ -1,8 +1,45 @@
 {
-  "date": "2026-08-30",
-  "generatedAt": "2026-08-30T01:07:05.853Z",
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T01:07:10.785Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
+    {
+      "id": "612b0715b7ce",
+      "brandName": "THAIFEX",
+      "companyName": "THAIFEX",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ส่องแบรนด์ไทย อร่อยต่างประเทศ THAIFEX – Anuga Asia 2026",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-29",
+      "whyNow": "ส่องแบรนด์ไทย อร่อยต่างประเทศ THAIFEX – Anuga Asia 2026",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 86,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5MMEtONHhDdUx0THZSYjlTa05tZ1pKTmN0a3IwbHpJUVRqQkh0THlzRjZqTXlaV0cybE9kN2J5LS13ckpXcDVVbTJoZGxfUjJKSi1mMA?oc=5",
+          "label": "Marketeer Online"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUpFTGw2OTZxbEx6TGJyV25Bc1hjUVpGSlZ1TVN4TUZuNkhjYUVMLVVvUWJyTUY4SDdjLVhPVWpCSHA3blFzQ3JSUVdWOGZyS3YzRUNUb2xXdEw1cmpTMWU1Q1AyQzhOdTBiV3JxdUxmTHQyd0RWWFBjTHZwbklnN0VvMnB6Mm92T3c?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    },
     {
       "id": "b26e5ebda152",
       "brandName": "Subway",
@@ -78,6 +115,39 @@
       ]
     },
     {
+      "id": "cec4cff77be0",
+      "brandName": "ZXMOTO 500RR และ 500F",
+      "companyName": "ZXMOTO 500RR และ 500F",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ZXMOTO 500RR และ 500F เตรียมเปิดตัวครั้งแรกในไทย ราคาพิเศษ 199,000 บาท",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-16",
+      "whyNow": "ZXMOTO 500RR และ 500F เตรียมเปิดตัวครั้งแรกในไทย ราคาพิเศษ 199,000 บาท",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 78,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHMDJ4aWlvcUdoSXVHUGJVeHZFRk5hQVB2V19IdzlIcFVkbjJaY1R3NzFVYU53TFFsMjlqMHJ4bmxhczhSa3IzY2pRSnBZd0VCOVFubGwySmd0S0lvMnFsdFoxbFhzdw?oc=5",
+          "label": "Car2Day"
+        }
+      ]
+    },
+    {
       "id": "a99f1a3e5a3e",
       "brandName": "HRC",
       "companyName": "HRC",
@@ -148,39 +218,6 @@
       ]
     },
     {
-      "id": "1d563f587009",
-      "brandName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
-      "companyName": "ไทยมาแรง Rally Movement ประเดิมคอลแลบฯ",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-27",
-      "whyNow": "แบรนด์ไทยมาแรง \"Rally Movement\" ประเดิมคอลแลบฯ รถยนต์ระดับตำนาน เปิดตัวคอลเลกชันสุดลิมิเต็ดบนลาซาด้า พร้อมสิทธิ์ลุ้นรับรถ MINI Electric SE",
-      "momentum": "Exploding",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 76,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 8,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpY2tQeVQtajY5aUZoc2w5RXVGRzBfV1FrazhjWXNEMGNqcEhJMk9SV3FBcGtWaFBhVDVrQVlORGxmcXhQZDlKdU9hbjFoSGpUalFxMg?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
       "id": "ab318ccf8f53",
       "brandName": "เช็กอินด่วน",
       "companyName": "เช็กอินด่วน",
@@ -247,39 +284,6 @@
       ]
     },
     {
-      "id": "fbf5b31583d5",
-      "brandName": "Standard Products",
-      "companyName": "Standard Products",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Standard Products แบรนด์สินค้าไลฟ์สไตล์ญี่ปุ่น คู่แข่ง MUJI มาเปิดสาขาแรกในไทยแล้ว ปักหมุด KINGSQUAREห้างใหม่เครือสหพัฒน์",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-08-26",
-      "whyNow": "Standard Products แบรนด์สินค้าไลฟ์สไตล์ญี่ปุ่น คู่แข่ง MUJI มาเปิดสาขาแรกในไทยแล้ว ปักหมุด KINGSQUAREห้างใหม่เครือสหพัฒน์",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 75,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9lRXpXaE0xcTlIU1V0WG1XZjVqVFBLcHE1LVFrVzM0N2VmUHR0VWZQdUN3aUY4Y2htLXhKS01Vb0I0d1dHemtpa000VWFxNFM4YjFyQg?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
       "id": "aac347e89d35",
       "brandName": "แสนสิริ",
       "companyName": "แสนสิริ",
@@ -317,81 +321,15 @@
       ]
     },
     {
-      "id": "612b0715b7ce",
-      "brandName": "THAIFEX",
-      "companyName": "THAIFEX",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แม้ต้นทุนวัตถุดิบพุ่ง แต่ “อาหารญี่ปุ่น” ในไทยยังมีแนวโน้มโต! “ฟู้ดส์ คลาสสิค” จัดเต็ม เปิดตัวสินค้าใหม่ในงาน THAIFEX – ANUGA ASIA 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-12",
-      "whyNow": "แม้ต้นทุนวัตถุดิบพุ่ง แต่ “อาหารญี่ปุ่น” ในไทยยังมีแนวโน้มโต! “ฟู้ดส์ คลาสสิค” จัดเต็ม เปิดตัวสินค้าใหม่ในงาน THAIFEX – ANUGA ASIA 2026",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 74,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUpFTGw2OTZxbEx6TGJyV25Bc1hjUVpGSlZ1TVN4TUZuNkhjYUVMLVVvUWJyTUY4SDdjLVhPVWpCSHA3blFzQ3JSUVdWOGZyS3YzRUNUb2xXdEw1cmpTMWU1Q1AyQzhOdTBiV3JxdUxmTHQyd0RWWFBjTHZwbklnN0VvMnB6Mm92T3c?oc=5",
-          "label": "Forbes Thailand"
-        }
-      ]
-    },
-    {
-      "id": "be79021719fe",
-      "brandName": "ผู้ค้าปลีกสหรัฐฯ แห่",
-      "companyName": "ผู้ค้าปลีกสหรัฐฯ แห่",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "ผู้ค้าปลีกสหรัฐฯ แห่เปิดร้านบน TikTok Shop หวังเข้าถึงผู้บริโภครุ่นใหม่และกระตุ้นยอดขาย",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-01",
-      "whyNow": "ผู้ค้าปลีกสหรัฐฯ แห่เปิดร้านบน TikTok Shop หวังเข้าถึงผู้บริโภครุ่นใหม่และกระตุ้นยอดขาย",
-      "momentum": "Exploding",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 74,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 8,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4zYTQxNV9sMmpSdWpDMzd0cmhJNjlFVHc2b044N3BqTE1POUI5d3F2LXVtc0taeG9SVXRYaDFUZDFmQjdkdVBJclVuTUtiRFlwWUY5SnF6TFV0d2Jvb2F0T25R?oc=5",
-          "label": "ditp.go.th"
-        }
-      ]
-    },
-    {
-      "id": "b0392d2df28d",
-      "brandName": "นอท-พันธ์ธวัชเปิดใจ",
-      "companyName": "นอท-พันธ์ธวัชเปิดใจ",
+      "id": "12794ff2c48f",
+      "brandName": "เนสท์เล่ ประเทศไทย",
+      "companyName": "เนสท์เล่ ประเทศไทย",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์ | Khaosod",
+      "thailandEvidence": "เนสท์เล่ ประเทศไทย เปิดตัว LINE OA ช่วยคนไทยให้ ชีวิตดีเป็นเรื่องง่าย สนุก และได้รางวัล รับเทรนด์ผู้บริโภคไทยมองหาชีวิตดีแบบที่เอื้อมถึง",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-21",
-      "whyNow": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์ | Khaosod",
+      "signalDate": "2026-07-21",
+      "whyNow": "เนสท์เล่ ประเทศไทย เปิดตัว LINE OA ช่วยคนไทยให้ ชีวิตดีเป็นเรื่องง่าย สนุก และได้รางวัล รับเทรนด์ผู้บริโภคไทยมองหาชีวิตดีแบบที่เอื้อมถึง",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -406,12 +344,12 @@
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
+      "isNew": true,
+      "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5BUFYwVVI4alRqS1U2eFNCNmdXYWVJdXNnQmZEWjRoNk1DNGwzYkZmUTNVUndSUGwxbjF2cTJJYThsaUV0MG5KWHhlZG1sNEVfYmdxMGdR?oc=5",
-          "label": "LINE TODAY"
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EM0lEdjczT0t3ZXFHU3N4azhSTmZlMm5sSnY5dHlyRFI4TU5mUmtxVkNIZTllck53UFpvR2libHVKRVFFOFR2YWU3d2dITGdFZ2RVYmhjZ3hKZm9vcGc?oc=5",
+          "label": "Brand Inside"
         }
       ]
     },
@@ -482,6 +420,72 @@
       ]
     },
     {
+      "id": "ddbb94d1498e",
+      "brandName": "EXIM BANK ร่วมยินดี AWC",
+      "companyName": "EXIM BANK ร่วมยินดี AWC",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "EXIM BANK ร่วมยินดี AWC เปิดตัวโรงแรมแฟร์มอนท์ กรุงเทพ สุขุมวิท | The Bangkok Insight",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-18",
+      "whyNow": "EXIM BANK ร่วมยินดี AWC เปิดตัวโรงแรมแฟร์มอนท์ กรุงเทพ สุขุมวิท | The Bangkok Insight",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5fVWZTSmlUQnFLNURSYi1QNlJPTmFTYmxzZWRGYzVpTWN3bGZwOGdPa3lrY2FQNDk4MkpOMmdPU1dCZzVFVFhFWHhsRGhDdmRKd1RlR29R?oc=5",
+          "label": "LINE TODAY"
+        }
+      ]
+    },
+    {
+      "id": "b14ea4779670",
+      "brandName": "CHANGAN and NING SERVICE",
+      "companyName": "CHANGAN and NING SERVICE",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand's First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-14",
+      "whyNow": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand's First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCN2VNRnBPN1o1RDB3RUZRbHc3Ul94czJpXzNSRTBGV3hLcjFVTXRBSl9tYnB6UW9RLWRrbU5WTlRKMlJHWFNtaXl0TDFZc2Q2RXZkMlZnaEpHMHpKWlhvQjF6MTVoQjkyaERR?oc=5",
+          "label": "newswit"
+        }
+      ]
+    },
+    {
       "id": "8deca5059bc2",
       "brandName": "Shopee",
       "companyName": "Shopee",
@@ -519,39 +523,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TN25DNXdQYkg2c3BBd200TjBCRW1QeXlzc1dIaFQ5UUVjSHJrZXI3dUtiVmQ5UXRiczVOa1NFYXJkLUxEZDR0MV9uX25YU1E5aFJZ?oc=5",
           "label": "เดลินิวส์"
-        }
-      ]
-    },
-    {
-      "id": "a7d3c2397012",
-      "brandName": "MAGURO Group โตสวนกระแส รายได้ครึ่งปีแรก",
-      "companyName": "MAGURO Group โตสวนกระแส รายได้ครึ่งปีแรก",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "MAGURO Group โตสวนกระแส รายได้ครึ่งปีแรก 1,139 ล้านบาท เติบโต 32% มุ่งเปิดสาขา-แบรนด์ใหม่ครึ่งปีหลัง",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-08-14",
-      "whyNow": "MAGURO Group โตสวนกระแส รายได้ครึ่งปีแรก 1,139 ล้านบาท เติบโต 32% มุ่งเปิดสาขา-แบรนด์ใหม่ครึ่งปีหลัง",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 12,
-        "buying_signal_strength": 18,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGZDNwQW5HY3IwYjY5WUFrYjd2UG40WVhYekMtRTFJSUh2V1JCQlEzTjNZWGMzZ25BZkFWeDIteEFRNWxfMUZrSzlHUXIyODF6ZmU0bDAyS3V6clhoMFJlY1ZoZXlSYmtuTU5Xcmp1MDc1S2twX2c?oc=5",
-          "label": "ข่าวสด"
         }
       ]
     },
@@ -622,39 +593,6 @@
       ]
     },
     {
-      "id": "cf518af6e557",
-      "brandName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "companyName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว “C PROJECT” เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำมากกว่า 50 แบรนด์ ที่ผ่านการคัดสรรจาก Curator ชื่อดัง สู่คอมมูนิตี้รูปแบบใหม่อย่างมีสไตล์",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-17",
-      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว “C PROJECT” เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำมากกว่า 50 แบรนด์ ที่ผ่านการคัดสรรจาก Curator ชื่อดัง สู่คอมมูนิตี้รูปแบบใหม่อย่างมีสไตล์",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaU211TnpLWGZmMy1OTGVQS2FaZWtnRzlOeDZ6NnRzbGcxQVdISDIxZnRvYnN6SUExLW1sNV9aYV8wNzlmVkU3TUVCZFNaLVJSb2xEVEhoWDlVWkxnZ29iT3JILXBHclU?oc=5",
-          "label": "ผู้จัดการออนไลน์"
-        }
-      ]
-    },
-    {
       "id": "34a044ea0884",
       "brandName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
       "companyName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
@@ -684,6 +622,72 @@
         {
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTlpOc3IxUTZQM0pfQ2tlSl9wYWJDSVV3cXUtYWtGN2Y0a0VMemdld05Jdjh4QTZXeW5tTlBoTmpyandicVEwOThoTUdRNnM2d09LNDczWmc3dzJDUmRtY0dhQlo1N1hFbzFqWVdMOVRESGRRcXA2S2N4OG0xSVo2N0prVUM2VWVpZFBqMkhWM05HUQ?oc=5",
           "label": "Forbes Thailand"
+        }
+      ]
+    },
+    {
+      "id": "fb20f5cb8da3",
+      "brandName": "ไทยมาร์ท",
+      "companyName": "ไทยมาร์ท",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ไทยมาร์ท เปิดตัว “ Seller App ” ครั้งแรก จัดงาน “สร้างแบรนด์ สร้างชาติ” ติดอาวุธผู้ประกอบการไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-23",
+      "whyNow": "ไทยมาร์ท เปิดตัว “ Seller App ” ครั้งแรก จัดงาน “สร้างแบรนด์ สร้างชาติ” ติดอาวุธผู้ประกอบการไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WYkg5OEtsM19uRmgwdjZpYTJQSURRb2xEUUVCTS0wYU0yZjFScEFkM1gybm9haVVoeXFFWXN0VWhDZS1wQ0p6MXJRZklyR01JM3pzQ2dJbDQyVjVD?oc=5",
+          "label": "workpointtoday.com"
+        }
+      ]
+    },
+    {
+      "id": "c1866e670ba6",
+      "brandName": "Hybrid Workout",
+      "companyName": "Hybrid Workout",
+      "industry": "Hospital / Healthcare",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ดีเคเอสเอช เจ้าของแบรนด์ ฮีรูดอยด์ พลิกโฉมสู่ตลาด Active Lifestyle ตอบเทรนด์ Hybrid Workout รับกระแสคนไทยใช้จ่ายเพื่อสุขภาพและการออกกำลังกายพุ่ง ส่งแคมเปญ “Road to Winning with the MPS Science”",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-08-07",
+      "whyNow": "ดีเคเอสเอช เจ้าของแบรนด์ ฮีรูดอยด์ พลิกโฉมสู่ตลาด Active Lifestyle ตอบเทรนด์ Hybrid Workout รับกระแสคนไทยใช้จ่ายเพื่อสุขภาพและการออกกำลังกายพุ่ง ส่งแคมเปญ “Road to Winning with the MPS Science”",
+      "momentum": "Active",
+      "revenueMinM": 0.8,
+      "revenueMaxM": 2.5,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 16,
+        "revenue_potential": 11,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Bdk90cy1WUXlhX0xacmMzelZJclFTeGFCZ0dPQW5mZE94bHZMOUpQcGY3ZG9pUGxGMFFhbmtTY1NpNHQ0Sk0tVl83cjBjLTBKbnRZbWdPOVFrdTNX?oc=5",
+          "label": "workpointtoday.com"
         }
       ]
     }
