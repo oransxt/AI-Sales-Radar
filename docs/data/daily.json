@@ -1,8 +1,78 @@
 {
-  "date": "2026-09-09",
-  "generatedAt": "2026-09-09T01:12:48.749Z",
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-10T01:12:58.384Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
+    {
+      "id": "f2ba48c87141",
+      "brandName": "Blue Bottle Coffee",
+      "companyName": "Blue Bottle Coffee",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-21",
+      "whyNow": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
+          "label": "Brand Inside"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
+          "label": "Thairath.co.th"
+        }
+      ]
+    },
+    {
+      "id": "5e5e2d2beb25",
+      "brandName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
+      "companyName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-09",
+      "whyNow": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG8wLTBTczVkdHVudE91UDhuTFFhNzQ0ZWhmcFRoNlRoY0hGTWVMeXVXdTQydmYtcWU0WmJsNzBnb2FDMTRwNTN5MXk1OHdtck1NV3NmbW1rUkZpQjJ4bmVVSFRqRGN3WEI4NVR0dGwyTHNUSFRoSWdEV1VDMGY2UVVlTXZLTHVvR09tZ2wzdDYtZGJRejBN?oc=5",
+          "label": "iMoD"
+        }
+      ]
+    },
     {
       "id": "20a0404e0fef",
       "brandName": "Webull",
@@ -16,7 +86,7 @@
       "momentum": "Rising",
       "revenueMinM": 5,
       "revenueMaxM": 10,
-      "score": 91,
+      "score": 81,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
@@ -26,8 +96,8 @@
         "timing": 10,
         "evidence_quality": 5
       },
-      "priority": "HOT",
-      "isNew": true,
+      "priority": "HIGH",
+      "isNew": false,
       "isUpdated": false,
       "sources": [
         {
@@ -40,40 +110,40 @@
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pbzRxV01UTENGcWRXXzYydDkwV0trQ0pVUlNuNUdwMjRyZW5tZy04d1Jpb2I5clh3aWYyTlBvUUxFVlQyVzdPV0dpUTlPNUNaVFpQX21peHpHWFU4bXhKSkVwQ0toTmJOTlE?oc=5",
-          "label": "thairath.co.th"
+          "label": "Thairath.co.th"
         }
       ]
     },
     {
-      "id": "612b0715b7ce",
-      "brandName": "THAIFEX",
-      "companyName": "THAIFEX",
-      "industry": "Food / QSR",
+      "id": "b89f3871add0",
+      "brandName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "companyName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "แม้ต้นทุนวัตถุดิบพุ่ง แต่ “อาหารญี่ปุ่น” ในไทยยังมีแนวโน้มโต! “ฟู้ดส์ คลาสสิค” จัดเต็ม เปิดตัวสินค้าใหม่ในงาน THAIFEX – ANUGA ASIA 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-12",
-      "whyNow": "แม้ต้นทุนวัตถุดิบพุ่ง แต่ “อาหารญี่ปุ่น” ในไทยยังมีแนวโน้มโต! “ฟู้ดส์ คลาสสิค” จัดเต็ม เปิดตัวสินค้าใหม่ในงาน THAIFEX – ANUGA ASIA 2026",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 84,
+      "thailandEvidence": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-08",
+      "whyNow": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
+      "momentum": "Exploding",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 80,
       "scores": {
         "thailand_relevance": 18,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 8,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
+      "isNew": true,
+      "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUpFTGw2OTZxbEx6TGJyV25Bc1hjUVpGSlZ1TVN4TUZuNkhjYUVMLVVvUWJyTUY4SDdjLVhPVWpCSHA3blFzQ3JSUVdWOGZyS3YzRUNUb2xXdEw1cmpTMWU1Q1AyQzhOdTBiV3JxdUxmTHQyd0RWWFBjTHZwbklnN0VvMnB6Mm92T3c?oc=5",
-          "label": "Forbes Thailand"
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MSXlodjlMNDhna0p4UDBKVFZTc1d6bXJ4c3FkcXA4dUUtTkQ5YU85TFVvV0lmcVh2eWVCNFZaRDBWMERfNkJZX1B0LXFGdVI2dTNLd3lNSmhNRk1KQWc?oc=5",
+          "label": "ข่าวสด"
         }
       ]
     },
@@ -106,7 +176,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGF6TjhKWGhQNEhwVUlmZVMyTENlaEVZLVZzM1B5MURRNXp6SlpfRmhWcDk5ZVNfN2N5cmpVV2RGSWlrbWdyQXI0Z0hIaV9va1VQR01xVHBHOHNJRXo3MWJhY21uaWpxVF9pei1TVnAzcDRx?oc=5",
-          "label": "thairath.co.th"
+          "label": "Thairath.co.th"
         }
       ]
     },
@@ -248,10 +318,10 @@
       "companyName": "Thaimart",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ถอดรหัสการตลาด Thaimart แบรนด์ไทยที่ท้าชิงตลาดอีคอมเมิร์ซด้วยการไม่สู้ด้วยสงครามราคา",
+      "thailandEvidence": "เปิดเงื่อนไข ‘Thaimart’ มาร์เก็ตเพลสสัญชาติไทย มีอะไรที่ผู้ขายและผู้ซื้อควรรู้? [Advertorial]",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-11",
-      "whyNow": "ถอดรหัสการตลาด Thaimart แบรนด์ไทยที่ท้าชิงตลาดอีคอมเมิร์ซด้วยการไม่สู้ด้วยสงครามราคา",
+      "signalDate": "2026-07-15",
+      "whyNow": "เปิดเงื่อนไข ‘Thaimart’ มาร์เก็ตเพลสสัญชาติไทย มีอะไรที่ผู้ขายและผู้ซื้อควรรู้? [Advertorial]",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -270,8 +340,8 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YRFNuek1IZFJyNXA3MGprdFpRclQ1T1E5a3RNZkhzWTQ0dTVVUC1ETDE1M1hHZnhwQkFBS01oSThfeUFBRk1NVHBhRktDTlhKaEJORUpIWUt2U2tJdktVTzAzMTQySTdkdC1JS0JzNThNV1FfN0Zyd2ZXOA?oc=5",
-          "label": "การตลาดวันละตอน"
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ENWJwTThyUjA2ck1vQWhKa1Q1a1JqUnRMLVRsRkxacDJIS04yanZiVHY0bWpTNDZWTkdkYktXU3drYzFzSkxnS0MtVEJCRnM5LVhQTmJhNDNVWUJJQWc1TlhUa2VNZw?oc=5",
+          "label": "thestandard.co"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4aldIN2FHSFRVa3cza0xzbklIdEZCdklsd2c0Ym1oSEItOVVwRHd6MlV5YjdnQ2xwTDFPYlh4V3V0ZFhJMDZZa1BLMDF6VFJHUnJMUWdqSDJnZnh0cThsajNxZExjSlFldFE5VUtvRXRCMktBbFR5MmVpMGpKYTA?oc=5",
@@ -280,6 +350,43 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqOFR6T2pfZTNqaHZzQWJuZHJ4aWpCc2o2NWxoMUlkOE4zSVdDYXpfbW1RSGRISEpfbFJ0ZC0ybnZKS29HRjc0UEZjMEFtZlByeGQ2M1BveTNkZw?oc=5",
           "label": "Brand Inside"
+        }
+      ]
+    },
+    {
+      "id": "8d7624972d21",
+      "brandName": "TikTok",
+      "companyName": "TikTok",
+      "industry": "Entertainment",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "TikTok เปิดอินไซต์นักช้อปไทย ‘เสิร์ช-ค้นพบ-ช้อป’ ตลอดปี พลิกเกม Mega Sales ที่ไม่ได้เริ่มแค่วันโปร",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-09-10",
+      "whyNow": "TikTok เปิดอินไซต์นักช้อปไทย ‘เสิร์ช-ค้นพบ-ช้อป’ ตลอดปี พลิกเกม Mega Sales ที่ไม่ได้เริ่มแค่วันโปร",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 16,
+        "revenue_potential": 14,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbEdPNWdkc1gybXBUOWVIX0tOenprNmc2NHZrRmdYMzFUSUJkcTNLVGx1WmJIaHdwckdCZjBtMU5hcUIxeXQ3ZkktWXBSckE1d1pj?oc=5",
+          "label": "Positioningmag"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jVzI0WkVnaGlGakdKeGFrQXV4UWJMbVp2ejZKaUQzMmxCYzA5MUlkbkR1YmoyYzBJU2hLdkRKZlZOSmNTTGNKb0lwaWhzY1pETXZvQVJNNk82dw?oc=5",
+          "label": "bangkokbiznews"
         }
       ]
     },
@@ -350,48 +457,48 @@
       ]
     },
     {
-      "id": "ab4694707f47",
-      "brandName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
-      "companyName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
-      "industry": "Retail / Fashion",
+      "id": "1eb0bf9501f7",
+      "brandName": "น้ำดื่มสิงห์",
+      "companyName": "น้ำดื่มสิงห์",
+      "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "12 แบรนด์แฟชั่นไทยโกอินเตอร์ เปิดร้าน T-Style Shop บน Tmall Global บุกตลาดออนไลน์จีน",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-06-25",
-      "whyNow": "12 แบรนด์แฟชั่นไทยโกอินเตอร์ เปิดร้าน T-Style Shop บน Tmall Global บุกตลาดออนไลน์จีน",
+      "thailandEvidence": "เมื่อซานริโอหลงรักเมืองไทย! \"น้ำดื่มสิงห์\" เปิดตัวขวดคอลเลกชันใหม่ 16 ลาย เติมความน่ารักรับซัมเมอร์",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-09",
+      "whyNow": "เมื่อซานริโอหลงรักเมืองไทย! \"น้ำดื่มสิงห์\" เปิดตัวขวดคอลเลกชันใหม่ 16 ลาย เติมความน่ารักรับซัมเมอร์",
       "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
       "score": 73,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
         "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kZDlLVF9BLVJPTUppU0Nsbzk3SmgyUERzYnNEamRmeGE5c1NGcFA5MTRlc3F5LTkxNlgxRk1KMDFScTVnLUxQa0tuZmpiRnFIbmtIWVMxSXdYeUZ5dDdRV1RKTTM1MEU?oc=5",
-          "label": "thairath.co.th"
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tWTJ6QnFrZHNiZlhfMDdQbHFQbkd3VkQ2bDhSQWxJOU5oUkxoa2x4c1dvSXVXX1M5bGZ5dGhaUUxfUzRjT1VyekJpb291UlMzeTNVcA?oc=5",
+          "label": "Marketeer Online"
         }
       ]
     },
     {
-      "id": "4f5480496791",
-      "brandName": "ยูนิลีเวอร์",
-      "companyName": "ยูนิลีเวอร์",
+      "id": "b0392d2df28d",
+      "brandName": "นอท-พันธ์ธวัชเปิดใจ",
+      "companyName": "นอท-พันธ์ธวัชเปิดใจ",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ยูนิลีเวอร์ เปิดตัวแคมเปญทุก ๆ U ทำสิ่งดี ๆ ในประเทศไทย วิธีง่าย ๆ ในการทำสิ่งดี ๆ เพื่อโลกของเรา ประเทศชาติ สังคมและชุมชน",
+      "thailandEvidence": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-04",
-      "whyNow": "ยูนิลีเวอร์ เปิดตัวแคมเปญทุก ๆ U ทำสิ่งดี ๆ ในประเทศไทย วิธีง่าย ๆ ในการทำสิ่งดี ๆ เพื่อโลกของเรา ประเทศชาติ สังคมและชุมชน",
+      "signalDate": "2026-08-21",
+      "whyNow": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -410,107 +517,8 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Yenh1a0pYenhCNl9NYjhJcTZxTk5DcW56Z2dxcHdMek9YNnEtU2VRelF2NnljbHFnSlAwc3ZvSVg4ZjhyZTh1OG9RQWw3VVBGSGJVZw?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
-      "id": "1b2853b1ed4b",
-      "brandName": "วอนเทค เอเชีย",
-      "companyName": "วอนเทค เอเชีย",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "วอนเทค เอเชีย เปิดตัว “Oligio X The X-MODE” ยกระดับกรอบหน้า พร้อมเปิดตัว “พีพี–กฤษฏ์” เป็นพรีเซนเตอร์",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-01",
-      "whyNow": "วอนเทค เอเชีย เปิดตัว “Oligio X The X-MODE” ยกระดับกรอบหน้า พร้อมเปิดตัว “พีพี–กฤษฏ์” เป็นพรีเซนเตอร์",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWGNQYlUyUmZWM3FydmRVcjk2Y1ZZNENxb0kwdDhwU3ZtUS13TmtGTmpac0dKYzFPdFB3Ynh0bFhsVnJxMWhFMElEUmM3Ml9obGdCR0JGaTc3TmplMXlrLXFISW51SVQxbDAwMUxsUWtveV9odTV0eURIdFVNdGtmWU41Mlk3eGYwdVBN?oc=5",
-          "label": "L'Officiel Thailand"
-        }
-      ]
-    },
-    {
-      "id": "24689a8c4ef0",
-      "brandName": "MATTER MAKERS",
-      "companyName": "MATTER MAKERS",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "MATTER MAKERS เปิดตัวโฟร์ท-ณัฐวรรธน์ ในฐานะ Muse คนล่าสุดผ่านคอลเลกชั่น PURRR",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-08",
-      "whyNow": "MATTER MAKERS เปิดตัวโฟร์ท-ณัฐวรรธน์ ในฐานะ Muse คนล่าสุดผ่านคอลเลกชั่น PURRR",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1HT0pzcjU0cDFWYURrd1BaUUNWQjUwZ0lGMm1DVTB6d2dtSDRRbFJhWlJqTm1lTExOcUVLQ3dIQTFuUHlwRVpsQ01KU09abVQtcEEyVGpWUzloaFgxU3RGY0hQQzRhT2g3czl5LTRaV3ptQQ?oc=5",
-          "label": "L'Officiel Thailand"
-        }
-      ]
-    },
-    {
-      "id": "0718e24ba705",
-      "brandName": "เปิดสเป็ค LEPAS L6 EV",
-      "companyName": "เปิดสเป็ค LEPAS L6 EV",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เปิดสเป็ค LEPAS L6 EV รถไฟฟ้า100% เวอร์ชั่นไทย ราคา 7xx,000 บาท เปิดตัว-ประกาศราคา 24 กรกฎาคม นี้",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-03",
-      "whyNow": "เปิดสเป็ค LEPAS L6 EV รถไฟฟ้า100% เวอร์ชั่นไทย ราคา 7xx,000 บาท เปิดตัว-ประกาศราคา 24 กรกฎาคม นี้",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBIXzJVYl9jamMtWm5nRVhnckJYbDFDV2QybTE0U2R4RHVVOG9pTmRXeDVXUy03Z2ZBb3NFS3NUeDNzajBBYlJ0ZjVkWmpRQTRJbXM5MUJjcVNYck80YkJYYXhXR1l1WWN3Vi1UNzVBdW5TcV8zY1E?oc=5",
-          "label": "Autolifethailand.tv"
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YeGs2Ul9TMjFrNl9JTERkcHlsSnJZbHFseFRuTnpGMHhKNHFndW15TEFYeUdVdWlMME1ldHNjVU9mMlM2M2pDZHFxT1ljN1ZJMkl3elRvYkx2bGNLV2wzc3E5QWhfZw?oc=5",
+          "label": "ข่าวสด"
         }
       ]
     },
@@ -544,39 +552,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCN2VNRnBPN1o1RDB3RUZRbHc3Ul94czJpXzNSRTBGV3hLcjFVTXRBSl9tYnB6UW9RLWRrbU5WTlRKMlJHWFNtaXl0TDFZc2Q2RXZkMlZnaEpHMHpKWlhvQjF6MTVoQjkyaERR?oc=5",
           "label": "newswit"
-        }
-      ]
-    },
-    {
-      "id": "2ba4d8910995",
-      "brandName": "EVE’S",
-      "companyName": "EVE’S",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-22",
-      "whyNow": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81WG1tZXQ1TXVQUzVpYlgxeTJHNTdJSDZjblU1VHQ3eUpJRkUwNVRlUDktVS0yRDhwREZVdUlUY3hNVnF6cWhpbTBGR29veGQ4VTdKNzh1dVE1YldQRjlwZg?oc=5",
-          "label": "ผู้จัดการออนไลน์"
         }
       ]
     },
@@ -621,7 +596,7 @@
       "brandType": "Established / Growing",
       "thailandEvidence": "Gucci กำลังค้นหาอะไร? จากการรวมตัวศิลปิน และแฟชั่นไอคอนชาวไทยรุ่นใหม่ทั้ง 11 คน!",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-02",
+      "signalDate": "2026-09-07",
       "whyNow": "Gucci กำลังค้นหาอะไร? จากการรวมตัวศิลปิน และแฟชั่นไอคอนชาวไทยรุ่นใหม่ทั้ง 11 คน!",
       "momentum": "Active",
       "revenueMinM": 3,
@@ -654,7 +629,7 @@
       "brandType": "Established / Growing",
       "thailandEvidence": "Labella แบรนด์กระเป๋าไทย ดึง ‘ณิชา ณัฏฐณิชา’ ขึ้นแท่นพรีเซนเตอร์คนแรก พร้อมเปิดตัว SOLEIL Collection [PR NEWS]",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-08",
+      "signalDate": "2026-09-07",
       "whyNow": "Labella แบรนด์กระเป๋าไทย ดึง ‘ณิชา ณัฏฐณิชา’ ขึ้นแท่นพรีเซนเตอร์คนแรก พร้อมเปิดตัว SOLEIL Collection [PR NEWS]",
       "momentum": "Active",
       "revenueMinM": 3,
@@ -676,6 +651,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaFpoVk9CeWdXSloxck8tZ0pWUnA0RVpJQzFLaTgtU1lwdzNqbUFFalFNb3NUQWYyTmFGYV8xTTctaWZ4Nm1OLTVEMi1fRUpibFNaTVZSZG1SZkxKeEItdXNjNldCdw?oc=5",
           "label": "thestandard.co"
+        }
+      ]
+    },
+    {
+      "id": "b358b5339264",
+      "brandName": "เดอะมอลล์ กรุ๊ป",
+      "companyName": "เดอะมอลล์ กรุ๊ป",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เดอะมอลล์ กรุ๊ป จับมือ ธนาคารแห่งประเทศไทย เปิดตัว “Cross-Border QR Payment” เอาใจนักท่องเที่ยวต่างชาติ สามารถชำระเงินผ่าน QR Code ในกลุ่มห้างสรรพสินค้าในประเทศไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-01",
+      "whyNow": "เดอะมอลล์ กรุ๊ป จับมือ ธนาคารแห่งประเทศไทย เปิดตัว “Cross-Border QR Payment” เอาใจนักท่องเที่ยวต่างชาติ สามารถชำระเงินผ่าน QR Code ในกลุ่มห้างสรรพสินค้าในประเทศไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBleWhtQXNrU202SG5Db1R6ZDVDcko5U3EwaWtBS253cW9FMkttd191RTRSTkJKM2NvNGVHdjZydjZvTFU0cjhEU2ZyQmlHZEs0TzY0eQ?oc=5",
+          "label": "Marketeer Online"
         }
       ]
     }
