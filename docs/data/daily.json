@@ -1,26 +1,26 @@
 {
-  "date": "2026-09-10",
-  "generatedAt": "2026-09-10T01:12:58.384Z",
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-11T01:12:03.608Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
-      "id": "f2ba48c87141",
-      "brandName": "Blue Bottle Coffee",
-      "companyName": "Blue Bottle Coffee",
-      "industry": "Food / QSR",
+      "id": "20a0404e0fef",
+      "brandName": "Webull",
+      "companyName": "Webull",
+      "industry": "Banking / Finance",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "thailandEvidence": "Webull ปิดดีลถือ บล.พาย 99.36% รุกตลาดไทย ตั้งเป้า AUM 2 แสนล้านบาท",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-21",
-      "whyNow": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "signalDate": "2026-09-08",
+      "whyNow": "Webull ปิดดีลถือ บล.พาย 99.36% รุกตลาดไทย ตั้งเป้า AUM 2 แสนล้านบาท",
       "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 87,
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 89,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
-        "revenue_potential": 16,
+        "revenue_potential": 18,
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
@@ -30,80 +30,6 @@
       "isNew": false,
       "isUpdated": true,
       "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
-          "label": "Brand Inside"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
-          "label": "Thairath.co.th"
-        }
-      ]
-    },
-    {
-      "id": "5e5e2d2beb25",
-      "brandName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
-      "companyName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-09",
-      "whyNow": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 82,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG8wLTBTczVkdHVudE91UDhuTFFhNzQ0ZWhmcFRoNlRoY0hGTWVMeXVXdTQydmYtcWU0WmJsNzBnb2FDMTRwNTN5MXk1OHdtck1NV3NmbW1rUkZpQjJ4bmVVSFRqRGN3WEI4NVR0dGwyTHNUSFRoSWdEV1VDMGY2UVVlTXZLTHVvR09tZ2wzdDYtZGJRejBN?oc=5",
-          "label": "iMoD"
-        }
-      ]
-    },
-    {
-      "id": "20a0404e0fef",
-      "brandName": "Webull",
-      "companyName": "Webull",
-      "industry": "Banking / Finance",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Webull เดินหน้าขยายการเติบโตในไทย หลังเข้าถือหุ้น Pi Securities ตั้งเป้า AUM แตะ 2.0 แสนล้านบาท",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-09-08",
-      "whyNow": "Webull เดินหน้าขยายการเติบโตในไทย หลังเข้าถือหุ้น Pi Securities ตั้งเป้า AUM แตะ 2.0 แสนล้านบาท",
-      "momentum": "Rising",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 81,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yaDZLYkZKOEw5NjZ6OGtHMFJlV0JNVkJOU3d1ZENqcnFmR1FkY09oLTY5eDZtOHhuYWotVnBuNFRSRXdnMTlnSFgwOW1ucnZ5aWFCdUV5b2ZnbERSZmR4eXJQOHo?oc=5",
-          "label": "wealthythai.com"
-        },
         {
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE10RmpWLVZtTnh6b3RCSEJnZkM1MVFzTXlMQ2owSkkyQi1PdVoxQXljMU1FWHdQay1YTjdrVVlnOGtMQmxjYVpaQy1KSlRjM252T05NNw?oc=5",
           "label": "วารสารการเงินธนาคาร"
@@ -115,25 +41,25 @@
       ]
     },
     {
-      "id": "b89f3871add0",
-      "brandName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
-      "companyName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "id": "c251898e0f89",
+      "brandName": "The New STARIA",
+      "companyName": "The New STARIA",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-08",
-      "whyNow": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
-      "momentum": "Exploding",
+      "thailandEvidence": "เปิดตัว The New STARIA Hybrid ครั้งแรกในไทย! รถตู้ MPV 11 ที่นั่ง ขุมพลัง 242 แรงม้า เคาะราคาเริ่ม 2.09 ล้านบาท",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-09-10",
+      "whyNow": "เปิดตัว The New STARIA Hybrid ครั้งแรกในไทย! รถตู้ MPV 11 ที่นั่ง ขุมพลัง 242 แรงม้า เคาะราคาเริ่ม 2.09 ล้านบาท",
+      "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
-      "score": 80,
+      "score": 78,
       "scores": {
         "thailand_relevance": 18,
-        "buying_signal_strength": 18,
+        "buying_signal_strength": 20,
         "revenue_potential": 13,
         "ooh_fit": 10,
-        "momentum": 8,
+        "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
@@ -142,8 +68,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MSXlodjlMNDhna0p4UDBKVFZTc1d6bXJ4c3FkcXA4dUUtTkQ5YU85TFVvV0lmcVh2eWVCNFZaRDBWMERfNkJZX1B0LXFGdVI2dTNLd3lNSmhNRk1KQWc?oc=5",
-          "label": "ข่าวสด"
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5rVjJZcXlRa0laWUhoWTRfSGE0eUREV2NCVWlJLV9GRi1YRXJmaUNGZWFHOTc2WGVIUDAwWHIxTmdFdUU0TU1lVWFRcXdwb2lYbUFJMW1XTmJPZVd5ZGg1T0hpQ0lRbWpDc3FKVXJaaEVLc0FNZjM3NUx2aw?oc=5",
+          "label": "autostation.com"
         }
       ]
     },
@@ -181,6 +107,43 @@
       ]
     },
     {
+      "id": "f2ba48c87141",
+      "brandName": "Blue Bottle Coffee",
+      "companyName": "Blue Bottle Coffee",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-21",
+      "whyNow": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 77,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
+          "label": "Brand Inside"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
+          "label": "Thairath.co.th"
+        }
+      ]
+    },
+    {
       "id": "9b4af6ad1882",
       "brandName": "Honda Super-ONE EV",
       "companyName": "Honda Super-ONE EV",
@@ -209,6 +172,39 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DU1puNkRCdi1YakJiS1RRVGluWGpwYU1PSXBxWnpyeDdVZXVYSGF2dVFDU21rNjR6ZGNkMUd2NUNNdURJZFhhU2Q4MWp0QzFLREw2QUY5TGxvZkNBeXFqcnJqMXhWSUlwcXN1Mw?oc=5",
+          "label": "iMoD"
+        }
+      ]
+    },
+    {
+      "id": "bb20f1c8a689",
+      "brandName": "Shopee ร่วมกับ Meta",
+      "companyName": "Shopee ร่วมกับ Meta",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "Shopee ร่วมกับ Meta เปิดตัว Affiliate Partnership บน Instagram ในไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-01",
+      "whyNow": "Shopee ร่วมกับ Meta เปิดตัว Affiliate Partnership บน Instagram ในไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 76,
+      "scores": {
+        "thailand_relevance": 20,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVWwwVkdtM3hXakFSMjItUTB1U3V4TmNRUGNFZl80V1MxSk5Db2JxWU8xTVlvZFh0MjhSekdlRVJtTzBQc0dOTnU5eUwtYlhSMkh4anBCbXlVS0ZkWG9ZV3RZMTJtT0Yzb0J0UUZQSGtPN216aTlxTVNqM3ZTaWQ0Uk5BVWwxT2pZUkFz?oc=5",
           "label": "iMoD"
         }
       ]
@@ -313,84 +309,6 @@
       ]
     },
     {
-      "id": "0b3768e5b4cd",
-      "brandName": "Thaimart",
-      "companyName": "Thaimart",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เปิดเงื่อนไข ‘Thaimart’ มาร์เก็ตเพลสสัญชาติไทย มีอะไรที่ผู้ขายและผู้ซื้อควรรู้? [Advertorial]",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-15",
-      "whyNow": "เปิดเงื่อนไข ‘Thaimart’ มาร์เก็ตเพลสสัญชาติไทย มีอะไรที่ผู้ขายและผู้ซื้อควรรู้? [Advertorial]",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 75,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ENWJwTThyUjA2ck1vQWhKa1Q1a1JqUnRMLVRsRkxacDJIS04yanZiVHY0bWpTNDZWTkdkYktXU3drYzFzSkxnS0MtVEJCRnM5LVhQTmJhNDNVWUJJQWc1TlhUa2VNZw?oc=5",
-          "label": "thestandard.co"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4aldIN2FHSFRVa3cza0xzbklIdEZCdklsd2c0Ym1oSEItOVVwRHd6MlV5YjdnQ2xwTDFPYlh4V3V0ZFhJMDZZa1BLMDF6VFJHUnJMUWdqSDJnZnh0cThsajNxZExjSlFldFE5VUtvRXRCMktBbFR5MmVpMGpKYTA?oc=5",
-          "label": "Brand Inside"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqOFR6T2pfZTNqaHZzQWJuZHJ4aWpCc2o2NWxoMUlkOE4zSVdDYXpfbW1RSGRISEpfbFJ0ZC0ybnZKS29HRjc0UEZjMEFtZlByeGQ2M1BveTNkZw?oc=5",
-          "label": "Brand Inside"
-        }
-      ]
-    },
-    {
-      "id": "8d7624972d21",
-      "brandName": "TikTok",
-      "companyName": "TikTok",
-      "industry": "Entertainment",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "TikTok เปิดอินไซต์นักช้อปไทย ‘เสิร์ช-ค้นพบ-ช้อป’ ตลอดปี พลิกเกม Mega Sales ที่ไม่ได้เริ่มแค่วันโปร",
-      "buyingSignal": "New campaign",
-      "signalDate": "2026-09-10",
-      "whyNow": "TikTok เปิดอินไซต์นักช้อปไทย ‘เสิร์ช-ค้นพบ-ช้อป’ ตลอดปี พลิกเกม Mega Sales ที่ไม่ได้เริ่มแค่วันโปร",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 75,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 16,
-        "revenue_potential": 14,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 8,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbEdPNWdkc1gybXBUOWVIX0tOenprNmc2NHZrRmdYMzFUSUJkcTNLVGx1WmJIaHdwckdCZjBtMU5hcUIxeXQ3ZkktWXBSckE1d1pj?oc=5",
-          "label": "Positioningmag"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jVzI0WkVnaGlGakdKeGFrQXV4UWJMbVp2ejZKaUQzMmxCYzA5MUlkbkR1YmoyYzBJU2hLdkRKZlZOSmNTTGNKb0lwaWhzY1pETXZvQVJNNk82dw?oc=5",
-          "label": "bangkokbiznews"
-        }
-      ]
-    },
-    {
       "id": "a34b7e95f993",
       "brandName": "กรุงเทพธุรกิจ. . ออมสินปล่อย Soft",
       "companyName": "กรุงเทพธุรกิจ. . ออมสินปล่อย Soft",
@@ -457,15 +375,81 @@
       ]
     },
     {
-      "id": "1eb0bf9501f7",
-      "brandName": "น้ำดื่มสิงห์",
-      "companyName": "น้ำดื่มสิงห์",
+      "id": "1d8a8364b50b",
+      "brandName": "Labella กระเป๋าแบรนด์ไทย เดินเกม OOH",
+      "companyName": "Labella กระเป๋าแบรนด์ไทย เดินเกม OOH",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Labella กระเป๋าแบรนด์ไทย เดินเกม OOH ครั้งใหญ่ ดึง ‘ณิชา’ พรีเซนเตอร์ SOLEIL Collection ขึ้นบิลบอร์ดทั่วกรุงเทพฯ",
+      "buyingSignal": "New presenter / ambassador",
+      "signalDate": "2026-09-10",
+      "whyNow": "Labella กระเป๋าแบรนด์ไทย เดินเกม OOH ครั้งใหญ่ ดึง ‘ณิชา’ พรีเซนเตอร์ SOLEIL Collection ขึ้นบิลบอร์ดทั่วกรุงเทพฯ",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 74,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 17,
+        "revenue_potential": 14,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FSzh2ZDVyczlaR01yUUNrcVc4S3QyMW4zakJ1d2ZuR0ZaYWtVQUVRZUNaM0hoNmhwNWxBZHdoZ3BReTZVZW9HZ2xreTN6UEJKc095TkN2WS1GWGw0NWsyWWQyVkhGMG9JLUxzU1NwcDN5X3M?oc=5",
+          "label": "workpointtoday.com"
+        }
+      ]
+    },
+    {
+      "id": "623fbce6e014",
+      "brandName": "Wingstop",
+      "companyName": "Wingstop",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "เมื่อซานริโอหลงรักเมืองไทย! \"น้ำดื่มสิงห์\" เปิดตัวขวดคอลเลกชันใหม่ 16 ลาย เติมความน่ารักรับซัมเมอร์",
+      "thailandEvidence": "Wingstop ปักหมุดแฟล็กชิปสโตร์ สาขาใหญ่สุดที่เซ็นทรัลเวิลด์ มั่นใจปีนี้รายได้รวมแตะ 100 ล้าน ปีหน้าลุยขยายสาขาเพิ่มเท่าตัว",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-10",
+      "whyNow": "Wingstop ปักหมุดแฟล็กชิปสโตร์ สาขาใหญ่สุดที่เซ็นทรัลเวิลด์ มั่นใจปีนี้รายได้รวมแตะ 100 ล้าน ปีหน้าลุยขยายสาขาเพิ่มเท่าตัว",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 74,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWWQ3T2kwS1pKZlZ2RFBNbWJwZENURG15bEVZY0VjV3htYzFkVThFckZjTXpfY2d1XzFfUGlaVWpWeXVHNG5XMF9JWkRoSEFpM2lFMlpLSUdqQVNsRzVtNDYxWFAzWjZGX0QxT3JtajRSUGVYZE41SHlqV0lMNWExVU5RbHItUQ?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    },
+    {
+      "id": "f7eeafc6754b",
+      "brandName": "Asian Games",
+      "companyName": "Asian Games",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เปิดตัวชุดพิธีการนักกีฬาไทยใน Asian Games 2026 ออกแบบโดยแบรนด์ SIRIVANNAVARI",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-09",
-      "whyNow": "เมื่อซานริโอหลงรักเมืองไทย! \"น้ำดื่มสิงห์\" เปิดตัวขวดคอลเลกชันใหม่ 16 ลาย เติมความน่ารักรับซัมเมอร์",
+      "signalDate": "2026-08-21",
+      "whyNow": "เปิดตัวชุดพิธีการนักกีฬาไทยใน Asian Games 2026 ออกแบบโดยแบรนด์ SIRIVANNAVARI",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -484,21 +468,21 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tWTJ6QnFrZHNiZlhfMDdQbHFQbkd3VkQ2bDhSQWxJOU5oUkxoa2x4c1dvSXVXX1M5bGZ5dGhaUUxfUzRjT1VyekJpb291UlMzeTNVcA?oc=5",
-          "label": "Marketeer Online"
+          "url": "https://news.google.com/rss/articles/CBMiiAVBVV95cUxQSlgtTHZSaXZBeEVqSk1OSmlyOXhKRE9ueXBTRkg3cjVVaEJyaEZ0Ul9DZmoxZjlHR0hDbEUxUzJxVEpzcVJ1TEVVdGNjWVVTN1JKbkVFZmdEcUNDYkpJNExvMnpiLW14a2d0cUV6LUZtSWRQLVlHLXZQa3MwUjhadUVXdkR2N1Ryc1pNbFg3U0lfbUJ1bTZLVExYbzBYRFZnZ0tRMHBzNVV5NGhtaXFGTWZIeUxNSi1IZV9MVk1pTnBsNTZTWnM3SFgwc0VscEhYbVdxQy1YcHJuZTkzREZXRGJUbTNvaHpXMTRqbXZ0S20yMWQ0dC1OQkhwcEdSZGNId2lFRVlvNll1cjR1Q0hLcmVuVzJlY1BHRVNpczNMSEJjSXBhOUhvRE55NGl6RGpHcFlvc2ZDc0lsbXdPT1QzeFZIbXJRZlp2V0NrRzAyanVFVDJYWTBBcnVCakhGc2lYQXQwQVVGWFFtNDJOMXNBSVR4T0VPejNFRHV0Smg4ZGthMmFxRzcyLThRMXc5UTdSMVp6TmVNelMxbmhHOVZwcGFWUENoREZYMmxNNHI3b0FyWGhDT3JiTkxEUXlHRjhFZ2VSX0xXN2dUdHVfVDRwUlRBTXRPMFZMSW9YR1luMFZfTnJwZXFBOFNUTzJzRHQ2cXFVWjNNRm9BaXIzN3U5TXVhLXB1dTZld3p4emZMWURzdDdwUXdPOGhEbXNsS3h0RG1oRk1MM3FiSDhGcC1PNXh1aXRqc3dleTdvQXJXU1pJTkpwNUtkRVd1UnFhTkUtLTE0U2hsOFFaNk5ycXZoaTUtR3JLS0o3UWdpLUM3WTdLalZ0cldDeXBKd1c0dFJXNjVkZm9OT3o?oc=5",
+          "label": "thaitv5hd.com"
         }
       ]
     },
     {
-      "id": "b0392d2df28d",
-      "brandName": "นอท-พันธ์ธวัชเปิดใจ",
-      "companyName": "นอท-พันธ์ธวัชเปิดใจ",
+      "id": "4e12bf3e74db",
+      "brandName": "New GLC 350e",
+      "companyName": "New GLC 350e",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
+      "thailandEvidence": "New GLC 350e เปิดตัว ครั้งแรกในประเทศไทย 10 ส.ค.นี้",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-21",
-      "whyNow": "\"นอท-พันธ์ธวัช\"เปิดใจเดินหน้าไทยมาร์ท เตรียมเซอร์ไพรส์ใหญ่ เปิดตัวพรีเซ็นเตอร์",
+      "signalDate": "2026-08-10",
+      "whyNow": "New GLC 350e เปิดตัว ครั้งแรกในประเทศไทย 10 ส.ค.นี้",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -513,12 +497,45 @@
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
+      "isNew": true,
+      "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YeGs2Ul9TMjFrNl9JTERkcHlsSnJZbHFseFRuTnpGMHhKNHFndW15TEFYeUdVdWlMME1ldHNjVU9mMlM2M2pDZHFxT1ljN1ZJMkl3elRvYkx2bGNLV2wzc3E5QWhfZw?oc=5",
-          "label": "ข่าวสด"
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNM3pzaGsyalVtTUhDRlc5bHR3UFBFaXlZYVZCUTBUNVZVUlB6QW0yaVhBMWlXQnp6WTNTTEdmdUlTMWtEaGJBQUo1cVRmRC1QSzJITlpjYXNXRzlkRGh0OVFheEtOWmw5eldyRDY1TFFzNEM2eC1VLVNnUVRreHlnaXVrNzE?oc=5",
+          "label": "grandprix.co.th"
+        }
+      ]
+    },
+    {
+      "id": "5e5e2d2beb25",
+      "brandName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
+      "companyName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-09",
+      "whyNow": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG8wLTBTczVkdHVudE91UDhuTFFhNzQ0ZWhmcFRoNlRoY0hGTWVMeXVXdTQydmYtcWU0WmJsNzBnb2FDMTRwNTN5MXk1OHdtck1NV3NmbW1rUkZpQjJ4bmVVSFRqRGN3WEI4NVR0dGwyTHNUSFRoSWdEV1VDMGY2UVVlTXZLTHVvR09tZ2wzdDYtZGJRejBN?oc=5",
+          "label": "iMoD"
         }
       ]
     },
@@ -552,6 +569,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCN2VNRnBPN1o1RDB3RUZRbHc3Ul94czJpXzNSRTBGV3hLcjFVTXRBSl9tYnB6UW9RLWRrbU5WTlRKMlJHWFNtaXl0TDFZc2Q2RXZkMlZnaEpHMHpKWlhvQjF6MTVoQjkyaERR?oc=5",
           "label": "newswit"
+        }
+      ]
+    },
+    {
+      "id": "2ba4d8910995",
+      "brandName": "EVE’S",
+      "companyName": "EVE’S",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-06-22",
+      "whyNow": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81WG1tZXQ1TXVQUzVpYlgxeTJHNTdJSDZjblU1VHQ3eUpJRkUwNVRlUDktVS0yRDhwREZVdUlUY3hNVnF6cWhpbTBGR29veGQ4VTdKNzh1dVE1YldQRjlwZg?oc=5",
+          "label": "ผู้จัดการออนไลน์"
         }
       ]
     },
@@ -596,7 +646,7 @@
       "brandType": "Established / Growing",
       "thailandEvidence": "Gucci กำลังค้นหาอะไร? จากการรวมตัวศิลปิน และแฟชั่นไอคอนชาวไทยรุ่นใหม่ทั้ง 11 คน!",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-07",
+      "signalDate": "2026-09-02",
       "whyNow": "Gucci กำลังค้นหาอะไร? จากการรวมตัวศิลปิน และแฟชั่นไอคอนชาวไทยรุ่นใหม่ทั้ง 11 คน!",
       "momentum": "Active",
       "revenueMinM": 3,
@@ -617,73 +667,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9MQjVuZlNGbS1MRURNS05rVjdiSjRzWl9fLWN5TEd2NzFua1VvV1ZMOFBJU0t0TGV3QXV0anJJWF9vVW42VDJRTDZaOVIzNmgyeXgtQ3lJZmM5bHRUYXNBYUhSLWZKbWRHQm51c011UVEtamVScTN0LQ?oc=5",
-          "label": "Vogue Thailand"
-        }
-      ]
-    },
-    {
-      "id": "af3f0aac00a4",
-      "brandName": "Labella แบรนด์กระเป๋าไทย",
-      "companyName": "Labella แบรนด์กระเป๋าไทย",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Labella แบรนด์กระเป๋าไทย ดึง ‘ณิชา ณัฏฐณิชา’ ขึ้นแท่นพรีเซนเตอร์คนแรก พร้อมเปิดตัว SOLEIL Collection [PR NEWS]",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-07",
-      "whyNow": "Labella แบรนด์กระเป๋าไทย ดึง ‘ณิชา ณัฏฐณิชา’ ขึ้นแท่นพรีเซนเตอร์คนแรก พร้อมเปิดตัว SOLEIL Collection [PR NEWS]",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaFpoVk9CeWdXSloxck8tZ0pWUnA0RVpJQzFLaTgtU1lwdzNqbUFFalFNb3NUQWYyTmFGYV8xTTctaWZ4Nm1OLTVEMi1fRUpibFNaTVZSZG1SZkxKeEItdXNjNldCdw?oc=5",
-          "label": "thestandard.co"
-        }
-      ]
-    },
-    {
-      "id": "b358b5339264",
-      "brandName": "เดอะมอลล์ กรุ๊ป",
-      "companyName": "เดอะมอลล์ กรุ๊ป",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เดอะมอลล์ กรุ๊ป จับมือ ธนาคารแห่งประเทศไทย เปิดตัว “Cross-Border QR Payment” เอาใจนักท่องเที่ยวต่างชาติ สามารถชำระเงินผ่าน QR Code ในกลุ่มห้างสรรพสินค้าในประเทศไทย",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-01",
-      "whyNow": "เดอะมอลล์ กรุ๊ป จับมือ ธนาคารแห่งประเทศไทย เปิดตัว “Cross-Border QR Payment” เอาใจนักท่องเที่ยวต่างชาติ สามารถชำระเงินผ่าน QR Code ในกลุ่มห้างสรรพสินค้าในประเทศไทย",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBleWhtQXNrU202SG5Db1R6ZDVDcko5U3EwaWtBS253cW9FMkttd191RTRSTkJKM2NvNGVHdjZydjZvTFU0cjhEU2ZyQmlHZEs0TzY0eQ?oc=5",
-          "label": "Marketeer Online"
+          "label": "vogue.co.th"
         }
       ]
     }
