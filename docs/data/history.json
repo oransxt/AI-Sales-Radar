@@ -163,8 +163,8 @@
     },
     "subway": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 26,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 27,
       "lastSignalHash": "55a5ad9eeb",
       "lastSignal": "Thailand market entry"
     },
@@ -226,8 +226,8 @@
     },
     "ยืนยันรุ่นนี้": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 7,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 8,
       "lastSignalHash": "60d17af736",
       "lastSignal": "Major product launch"
     },
@@ -247,8 +247,8 @@
     },
     "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ saboten": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 33,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 34,
       "lastSignalHash": "426e8127ea",
       "lastSignal": "Major product launch"
     },
@@ -387,8 +387,8 @@
     },
     "lotteria ร้านเบอร์เกอร์เกาหลี โดน mcdonald’s": {
       "firstSeen": "2026-08-12",
-      "lastSeen": "2026-09-08",
-      "timesDetected": 7,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 8,
       "lastSignalHash": "27e6a8c333",
       "lastSignal": "Expansion / new branches"
     },
@@ -464,8 +464,8 @@
     },
     "เช็กอินด่วน": {
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 23,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 24,
       "lastSignalHash": "2356c86cb1",
       "lastSignal": "Expansion / new branches"
     },
@@ -534,8 +534,8 @@
     },
     "changan and ning service": {
       "firstSeen": "2026-08-14",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 25,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 26,
       "lastSignalHash": "4351e5f0cf",
       "lastSignal": "Major product launch"
     },
@@ -702,8 +702,8 @@
     },
     "12 แบรนด์แฟชั่นไทยโกอินเตอร์": {
       "firstSeen": "2026-08-18",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 14,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 15,
       "lastSignalHash": "a8068561e6",
       "lastSignal": "Expansion / new branches"
     },
@@ -793,9 +793,9 @@
     },
     "มีลุ้นเข้าไทย": {
       "firstSeen": "2026-08-19",
-      "lastSeen": "2026-09-14",
-      "timesDetected": 4,
-      "lastSignalHash": "8c741548df",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 5,
+      "lastSignalHash": "c8c9a84b30",
       "lastSignal": "Thailand market entry"
     },
     "subaru ยืนหยัด": {
@@ -905,8 +905,8 @@
     },
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 16,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 17,
       "lastSignalHash": "2c0961c51c",
       "lastSignal": "Thailand market entry"
     },
@@ -947,8 +947,8 @@
     },
     "eve’s": {
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 19,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 20,
       "lastSignalHash": "e74ad63beb",
       "lastSignal": "Major product launch"
     },
@@ -1227,8 +1227,8 @@
     },
     "gucci": {
       "firstSeen": "2026-09-03",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 12,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 13,
       "lastSignalHash": "b4a627d954",
       "lastSignal": "Major product launch"
     },
@@ -1325,8 +1325,8 @@
     },
     "honda super-one ev": {
       "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 9,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 10,
       "lastSignalHash": "22ef3b1398",
       "lastSignal": "Major product launch"
     },
@@ -1381,9 +1381,9 @@
     },
     "tiktok": {
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 3,
-      "lastSignalHash": "7c95b96a98",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 4,
+      "lastSignalHash": "3fd8c7d091",
       "lastSignal": "New campaign"
     },
     "น้ำดื่มสิงห์": {
@@ -1430,8 +1430,8 @@
     },
     "mpv": {
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-09-15",
-      "timesDetected": 4,
+      "lastSeen": "2026-09-16",
+      "timesDetected": 5,
       "lastSignalHash": "2cc4d1b8cb",
       "lastSignal": "Thailand market entry"
     },
@@ -1490,6 +1490,48 @@
       "timesDetected": 1,
       "lastSignalHash": "4ab9d9ecef",
       "lastSignal": "Thailand market entry"
+    },
+    "ทำความรู้จัก tsutaya bookstore ก่อน": {
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 1,
+      "lastSignalHash": "62516397cc",
+      "lastSignal": "Expansion / new branches"
+    },
+    "hashtag b": {
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 1,
+      "lastSignalHash": "fb16df81f7",
+      "lastSignal": "Expansion / new branches"
+    },
+    "kaneko hannosuke ปักหมุดสาขาใหม่ เซ็นทรัล": {
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 1,
+      "lastSignalHash": "2bc64b80d3",
+      "lastSignal": "Major product launch"
+    },
+    "คอลเกต เขย่าวงการ oral beauty": {
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 1,
+      "lastSignalHash": "99c3e9bb91",
+      "lastSignal": "Major product launch"
+    },
+    "อัลไลแอนซ์ ลอนดรี้ เผยปี’ 66": {
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 1,
+      "lastSignalHash": "959eb86dfb",
+      "lastSignal": "Thailand market entry"
+    },
+    "tsutaya bookstore": {
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-09-16",
+      "timesDetected": 1,
+      "lastSignalHash": "ead858e91d",
+      "lastSignal": "Expansion / new branches"
     }
   }
 }
