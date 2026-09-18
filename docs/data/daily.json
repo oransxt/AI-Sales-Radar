@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-17",
-  "generatedAt": "2026-09-17T05:53:08.160Z",
+  "date": "2026-09-18",
+  "generatedAt": "2026-09-18T05:38:32.300Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
@@ -9,14 +9,14 @@
       "companyName": "Meta One",
       "industry": "E-Commerce / Platform",
       "brandType": "Emerging / Social-first",
-      "thailandEvidence": "Meta One เปิดตัวในไทยแล้ว Facebook, Instagram, WhatsApp เริ่มต้น 27 บาท/เดือน อัปเกรดฟีเจอร์ AI แบบจุใจ",
+      "thailandEvidence": "Meta One เปิดตัวในไทย พร้อม 50+ ฟีเจอร์บน Instagram, Facebook และ WhatsApp เริ่มต้น 27 บาท/เดือน ปลดล็อก AI และฟีเจอร์พิเศษแบบจุใจ",
       "buyingSignal": "Thailand market entry",
       "signalDate": "2026-09-16",
-      "whyNow": "Meta One เปิดตัวในไทยแล้ว Facebook, Instagram, WhatsApp เริ่มต้น 27 บาท/เดือน อัปเกรดฟีเจอร์ AI แบบจุใจ",
+      "whyNow": "Meta One เปิดตัวในไทย พร้อม 50+ ฟีเจอร์บน Instagram, Facebook และ WhatsApp เริ่มต้น 27 บาท/เดือน ปลดล็อก AI และฟีเจอร์พิเศษแบบจุใจ",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 85,
+      "score": 87,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
@@ -24,12 +24,16 @@
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HOT",
-      "isNew": true,
-      "isUpdated": false,
+      "isNew": false,
+      "isUpdated": true,
       "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcXg1c1ZvZmZZSUFjZ3pnWEl0bzNkNGV5Z1FraEtCQ2NmbWVPbkd3SnZlOFdCZmd6VEZxek9uX2MzV0l0aUozaS1fR01oME9WN2VFWEluTlVpeHVMcEl6Tk9KcVJwY3c2TTlYWlZQSFY1RnVKTHdMVXlTbkVidkhCTVAzTzN1ajYtcUNYOWlWczR5RDRqWko3T3hnZVdDeGZNeUF5OGhqdw?oc=5",
+          "label": "การตลาดวันละตอน"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FZ3A4TFBGWm5Ma0U4OHkxYWtseklFT2tUamVTU3A0VmdmQ2FmSy1HMEIzY1NnTlN4ZVI4UGFoc2dYRUtGd0dlNldoY1JJMTNrb0JTeHBfOEdEYlJlVEM5d3NIZWtDNXIwUVZ4OHE2VQ?oc=5",
           "label": "DroidSans"
@@ -37,85 +41,15 @@
       ]
     },
     {
-      "id": "623fbce6e014",
-      "brandName": "Wingstop",
-      "companyName": "Wingstop",
+      "id": "bee85012cb41",
+      "brandName": "ซีพีแรม",
+      "companyName": "ซีพีแรม",
       "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Wingstop ภายใต้ “เนม-ปราการ” ผู้บริหารที่คลั่งไก่ทอด ปีแรกขอมี 7 สาขา รายได้ 100 ล้าน อยากเป็น Top of Mind ไก่ทอดของชาว Gen Z",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-16",
-      "whyNow": "Wingstop ภายใต้ “เนม-ปราการ” ผู้บริหารที่คลั่งไก่ทอด ปีแรกขอมี 7 สาขา รายได้ 100 ล้าน อยากเป็น Top of Mind ไก่ทอดของชาว Gen Z",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 83,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5EMjMxbV9WNlhZb0djdFliOEJDVEdNOVJTTGJZRFl2M1VLVDdVeUIyTVhUOGRjbWU5NnNJMkdMWm84T3hHeHUxR1dnNjJBeXZteWJVd1JYcl9ZUzFZ?oc=5",
-          "label": "positioningmag.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWWQ3T2kwS1pKZlZ2RFBNbWJwZENURG15bEVZY0VjV3htYzFkVThFckZjTXpfY2d1XzFfUGlaVWpWeXVHNG5XMF9JWkRoSEFpM2lFMlpLSUdqQVNsRzVtNDYxWFAzWjZGX0QxT3JtajRSUGVYZE41SHlqV0lMNWExVU5RbHItUQ?oc=5",
-          "label": "Forbes Thailand"
-        }
-      ]
-    },
-    {
-      "id": "ddbb94d1498e",
-      "brandName": "EXIM BANK ร่วมยินดี AWC",
-      "companyName": "EXIM BANK ร่วมยินดี AWC",
-      "industry": "Banking / Finance",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "EXIM BANK ร่วมยินดี AWC เปิดตัวโรงแรมแฟร์มอนท์ กรุงเทพ สุขุมวิท",
+      "thailandEvidence": "ซีพีแรมเตรียมเปิดตัวตำนานแบรนด์อาหารจีน เจาะตลาดอาหารจีน พร้อมเสิร์ฟความอร่อยที่โลตัสทั่วไทย เดือน ส.ค. 69",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-19",
-      "whyNow": "EXIM BANK ร่วมยินดี AWC เปิดตัวโรงแรมแฟร์มอนท์ กรุงเทพ สุขุมวิท",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 82,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4zY2ZINjM4ZnVRTndDSGttU1lmUkxKcWpXd09QaktTOG9DQUlBeWVKZkNXZlZCWG1EblVYT1FWcE5BeDVqQ3BoVUlkNFg2a1VNX2J2d2pHQkU4cnZPSk5fXzBtcFkxZw?oc=5",
-          "label": "The Bangkok Insight"
-        }
-      ]
-    },
-    {
-      "id": "834b34f16f45",
-      "brandName": "Health",
-      "companyName": "Health",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "บู๊ทส์ ตอกย้ำ Health & Beauty Destination ขนทัพแบรนด์ใหม่และสินค้าใหม่จากทั้งไทยและต่างประเทศกว่า 30 แบรนด์ ชวนค้นพบไอเทมห้ามพลาด ให้คุณมารักตัวเองในทุกวัน ที่บู๊ทส์",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-16",
-      "whyNow": "บู๊ทส์ ตอกย้ำ Health & Beauty Destination ขนทัพแบรนด์ใหม่และสินค้าใหม่จากทั้งไทยและต่างประเทศกว่า 30 แบรนด์ ชวนค้นพบไอเทมห้ามพลาด ให้คุณมารักตัวเองในทุกวัน ที่บู๊ทส์",
+      "signalDate": "2026-08-20",
+      "whyNow": "ซีพีแรมเตรียมเปิดตัวตำนานแบรนด์อาหารจีน เจาะตลาดอาหารจีน พร้อมเสิร์ฟความอร่อยที่โลตัสทั่วไทย เดือน ส.ค. 69",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -134,41 +68,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tajV4enRiZS1KZEJpXy10OUMyZVpSYjl6WlNTd0E4VUdOYWVRMEhJZ3N2dG9jVFlKWU1veXJXVUoxTXhvcW1Fd0lucjB5TGVId0VN?oc=5",
-          "label": "positioningmag.com"
-        }
-      ]
-    },
-    {
-      "id": "7125e4396d9e",
-      "brandName": "เย็นเย็น x Thai Coco",
-      "companyName": "เย็นเย็น x Thai Coco",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เย็นเย็น x Thai Coco ผนึกกำลังสองแบรนด์ไทยเปิดตัว เย็นเย็นจับเลี้ยง ที่หวานละมุนจากมะพร้าวน้ำหอมจากธรรมชาติ",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-09",
-      "whyNow": "เย็นเย็น x Thai Coco ผนึกกำลังสองแบรนด์ไทยเปิดตัว เย็นเย็นจับเลี้ยง ที่หวานละมุนจากมะพร้าวน้ำหอมจากธรรมชาติ",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 80,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82OVpzLVVWS3BNMWVmaDl6VGlEa2p2XzZzeFJqZFozTDAzYUplcFRJNWRVNFVLcXVhMHBnY0NoYmcwNTNsSkxxZHVhRTZSV056Ylhj?oc=5",
-          "label": "positioningmag.com"
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE02RjhBM3BoX2dMMWxxR044aUZCNS15dTNCTnV6RVNnR3ZGbWtOQTRSSFI1LWR2bFFhdlB2RHBkNVlDTnF2bXAyczVCZWE?oc=5",
+          "label": "Sanook.com"
         }
       ]
     },
@@ -201,118 +102,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGF6TjhKWGhQNEhwVUlmZVMyTENlaEVZLVZzM1B5MURRNXp6SlpfRmhWcDk5ZVNfN2N5cmpVV2RGSWlrbWdyQXI0Z0hIaV9va1VQR01xVHBHOHNJRXo3MWJhY21uaWpxVF9pei1TVnAzcDRx?oc=5",
-          "label": "Thairath.co.th"
-        }
-      ]
-    },
-    {
-      "id": "f2ba48c87141",
-      "brandName": "Blue Bottle Coffee",
-      "companyName": "Blue Bottle Coffee",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-21",
-      "whyNow": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 77,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
-          "label": "Brand Inside"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ0dvSzRYZTFNRXdMNmxwYnpOQjYxTVJ2ZW5SMmpjU3NrOG5MNml0WTZkcGh1Nkp4a1Juc1VZNWw2MTd6V0d4X3BlUjhkU2VPUGxGUi1IRDFqU1VnM1dVcFNSSVZMbk9nY3BUbHZXNXVWUS1jdi1xc3dLcFF6RlM0REoyaw?oc=5",
-          "label": "Thairath.co.th"
-        }
-      ]
-    },
-    {
-      "id": "8d7624972d21",
-      "brandName": "TikTok",
-      "companyName": "TikTok",
-      "industry": "Banking / Finance",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "อินไซต์TikTok จี้จุดนักช้อปไทย ไม่รอแล้ว Mega Sales แต่ “เสิร์ช-ค้นพบ-กดตระกร้า” ทั้งปี | การเงินธนาคาร",
-      "buyingSignal": "New campaign",
-      "signalDate": "2026-09-12",
-      "whyNow": "อินไซต์TikTok จี้จุดนักช้อปไทย ไม่รอแล้ว Mega Sales แต่ “เสิร์ช-ค้นพบ-กดตระกร้า” ทั้งปี | การเงินธนาคาร",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 77,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 16,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 8,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1udnBOTERVVE9HcEx5QTgyQTN2SmVkTUQzdnlidFFVOGdJR1l2Zk5yVlkycDBKTlJxTU40SC1vdlN0Y2dvUmtSVlA3RFY2UFdJcnVZSUNn?oc=5",
-          "label": "LINE TODAY"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbEdPNWdkc1gybXBUOWVIX0tOenprNmc2NHZrRmdYMzFUSUJkcTNLVGx1WmJIaHdwckdCZjBtMU5hcUIxeXQ3ZkktWXBSckE1d1pj?oc=5",
-          "label": "positioningmag.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jVzI0WkVnaGlGakdKeGFrQXV4UWJMbVp2ejZKaUQzMmxCYzA5MUlkbkR1YmoyYzBJU2hLdkRKZlZOSmNTTGNKb0lwaWhzY1pETXZvQVJNNk82dw?oc=5",
-          "label": "bangkokbiznews"
-        }
-      ]
-    },
-    {
-      "id": "24da079badfd",
-      "brandName": "Spyshot",
-      "companyName": "Spyshot",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027 - HeadLight Magazine -",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-15",
-      "whyNow": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027 - HeadLight Magazine -",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 77,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndpNUV1UUt3S1BsWDd6ckR3enMtcmZuN2x2cmJzUEtRc1dFZGRMVWN4aEpVaVZWMDFEdG1FZUNhc0E5TkUzMDlGVXFucEVjZ0o1WnphTWxoSXhmTGprMm1jQWxBQXJ0LXhKWWlrbW55bVVpNmNJOERyTmdabXpCU1duYkctV2Jy?oc=5",
-          "label": "HeadLight Magazine -"
+          "label": "Thairath"
         }
       ]
     },
@@ -350,39 +140,6 @@
       ]
     },
     {
-      "id": "1396cc40dc38",
-      "brandName": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อน",
-      "companyName": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อน",
-      "industry": "Entertainment",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-16",
-      "whyNow": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 75,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tdUdEMWFyZTgzMGQ0cFh2S0t2VlhtNlhoaFZueE50SVNjQjBhUVJDeER5RzliYUhnMHZHMU0wWklIWFRLeEw1LXp1eWEyS25EYVk3VDVXd0FuM1p2ZHJn?oc=5",
-          "label": "The Momentum"
-        }
-      ]
-    },
-    {
       "id": "ab318ccf8f53",
       "brandName": "เช็กอินด่วน",
       "companyName": "เช็กอินด่วน",
@@ -412,6 +169,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kNWs2R2tYR29hYzhTZVBhQ19qelVpUnVHSmVQTzRlVHEtZExVWkhkOWRIU2dVSW1XUHU5LU1KdUhJMUNxUzhZU2ZLSmY?oc=5",
           "label": "Sanook.com"
+        }
+      ]
+    },
+    {
+      "id": "1396cc40dc38",
+      "brandName": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อน",
+      "companyName": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อน",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-16",
+      "whyNow": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tdUdEMWFyZTgzMGQ0cFh2S0t2VlhtNlhoaFZueE50SVNjQjBhUVJDeER5RzliYUhnMHZHMU0wWklIWFRLeEw1LXp1eWEyS25EYVk3VDVXd0FuM1p2ZHJn?oc=5",
+          "label": "The Momentum"
         }
       ]
     },
@@ -449,118 +239,85 @@
       ]
     },
     {
-      "id": "0b3768e5b4cd",
-      "brandName": "Thaimart",
-      "companyName": "Thaimart",
-      "industry": "Consumer / Other",
+      "id": "623fbce6e014",
+      "brandName": "Wingstop",
+      "companyName": "Wingstop",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Thaimart จะไหวมั้ย? เปิดส่วนแบ่งตลาด ‘อีคอมเมิร์ซ’ ไทยตอนนี้ มูลค่าทะลุ 1.14 ล้านล้านบาท",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-09",
-      "whyNow": "Thaimart จะไหวมั้ย? เปิดส่วนแบ่งตลาด ‘อีคอมเมิร์ซ’ ไทยตอนนี้ มูลค่าทะลุ 1.14 ล้านล้านบาท",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 75,
+      "thailandEvidence": "Wingstop ภายใต้ “เนม-ปราการ” ผู้บริหารที่คลั่งไก่ทอด ปีแรกขอมี 7 สาขา รายได้ 100 ล้าน อยากเป็น Top of Mind ไก่ทอดของชาว Gen Z",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-16",
+      "whyNow": "Wingstop ภายใต้ “เนม-ปราการ” ผู้บริหารที่คลั่งไก่ทอด ปีแรกขอมี 7 สาขา รายได้ 100 ล้าน อยากเป็น Top of Mind ไก่ทอดของชาว Gen Z",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 73,
       "scores": {
         "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
         "timing": 10,
         "evidence_quality": 5
       },
       "priority": "HIGH",
       "isNew": false,
-      "isUpdated": true,
+      "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4aldIN2FHSFRVa3cza0xzbklIdEZCdklsd2c0Ym1oSEItOVVwRHd6MlV5YjdnQ2xwTDFPYlh4V3V0ZFhJMDZZa1BLMDF6VFJHUnJMUWdqSDJnZnh0cThsajNxZExjSlFldFE5VUtvRXRCMktBbFR5MmVpMGpKYTA?oc=5",
-          "label": "Brand Inside"
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5EMjMxbV9WNlhZb0djdFliOEJDVEdNOVJTTGJZRFl2M1VLVDdVeUIyTVhUOGRjbWU5NnNJMkdMWm84T3hHeHUxR1dnNjJBeXZteWJVd1JYcl9ZUzFZ?oc=5",
+          "label": "Positioningmag"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqOFR6T2pfZTNqaHZzQWJuZHJ4aWpCc2o2NWxoMUlkOE4zSVdDYXpfbW1RSGRISEpfbFJ0ZC0ybnZKS29HRjc0UEZjMEFtZlByeGQ2M1BveTNkZw?oc=5",
-          "label": "Brand Inside"
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWWQ3T2kwS1pKZlZ2RFBNbWJwZENURG15bEVZY0VjV3htYzFkVThFckZjTXpfY2d1XzFfUGlaVWpWeXVHNG5XMF9JWkRoSEFpM2lFMlpLSUdqQVNsRzVtNDYxWFAzWjZGX0QxT3JtajRSUGVYZE41SHlqV0lMNWExVU5RbHItUQ?oc=5",
+          "label": "Forbes Thailand"
         }
       ]
     },
     {
-      "id": "a34b7e95f993",
-      "brandName": "กรุงเทพธุรกิจ. . ออมสินปล่อย Soft",
-      "companyName": "กรุงเทพธุรกิจ. . ออมสินปล่อย Soft",
-      "industry": "Banking / Finance",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "กรุงเทพธุรกิจ. . ออมสินปล่อย Soft Loan เสริมสภาพคล่องธุรกิจไทย วงเงินรวม 1 แสนล้าน | Money Teller . โอกาสสำหรับรายย่อยและผู้ประกอบการ SMEs ที่กำลังขาดสภาพคล่อง หรืออยากขยายธุรกิจ ธนาคารออมสินเปิดตัวโครงการสินเชื่อ “GSB พลิกฟื้นธุรกิจไทย” วงเงินแสนล้าน ดอกเบี้ยต่ำ",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-29",
-      "whyNow": "กรุงเทพธุรกิจ. . ออมสินปล่อย Soft Loan เสริมสภาพคล่องธุรกิจไทย วงเงินรวม 1 แสนล้าน | Money Teller . โอกาสสำหรับรายย่อยและผู้ประกอบการ SMEs ที่กำลังขาดสภาพคล่อง หรืออยากขยายธุรกิจ ธนาคารออมสินเปิดตัวโครงการสินเชื่อ “GSB พลิกฟื้นธุรกิจไทย” วงเงินแสนล้าน ดอกเบี้ยต่ำ",
-      "momentum": "Rising",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 74,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiiAZBVV95cUxPb1J4X2tIZjgza0xYSV9HVnFKbk9BSzZyeV9MRkcyb2t1RVJieWhzWTB6Q2hVZWFwaVQyRUN0Y3EzbTdJM3hCc0s5cWVvOW5TU1BXTEJNWk1JZXpTTmUwcHJlMEdkNFk2NkI3QXloN1dCeHNNV3kxSUJEcXpBTUc0a2pMZ01paVN1QkRYbGlhMFE3MFRxOG1SaGNIbGZPekJLTnpFVW5kWjdzOUlNSTlSQWE5d2lvb2tCOEstQ25sQWNZWjR6bmM2WEw2dEJhcllRdWdQamxaOUY4UG91Mi1fcUlFV0FhdXhlaUU4d0xGOWNXa3IyZFVPYmF4ZEl3WmpGUDIxNng4LUxqV2U2UXVwWDdVM1p1R1l5MDFJR2d2V2FzSnRtUWVXeUlkMTJfVmN6enFzOGxZczcwUmI1emxna1FTdW5ObG01R242Wm5CUGdwWXZwd29oVTdSVlBDVXNhal9PdjZJOUhnZWRNZXNyVHlBSHpNTjVkZ0pETmpoZ2FETHdHQmk3bHZ6OWl6a0JmbEJGRFo1V0o0MXlQaURqWTJ6eWg1NUtVdGVPQzk0akUxWmtxeWZHNzdsZlVtSVJlWC1Vc2Y5YjZod0RMM1JGaEdDOUNmMGp4c2p4dWpSOHZ4eDRfY0tTU3piTHVwNnFWYy1LN3RsUnlFQWlBYkNtZHJqa1NQak1neUFwYl85UjlfYmkwbVMwcU5YUWxvYV93VDEzZUcwd3JFamUxajQ3Q1JlcVdEeE5mOWNhUmJ2d1pwRnlqdDJYRy14MC0ycWt2QVk0eVEzUGVPbGFuZUlOOTkwMUdmU3dQUWtzM0xEZWhuTXREYlB1YXlsNTJiZ2Q1NUhWdWY2d2JOQkNobHNKcWQ2Y05WVGNoS1Bab2prMWE4TlM0VGZzLXdkMERuUktMME80Vng1MDA0d2ZqaEJicWV5amVwMUFSVTlGVmQzendFVnNsbC0tWjVXbkcxLWJfLUJ5WUgtQmxHSHg1U2tRMEJ1Y3dvdWhFYnRpVTQxT04yTEFoZzNUbA?oc=5",
-          "label": "facebook.com"
-        }
-      ]
-    },
-    {
-      "id": "ab4694707f47",
-      "brandName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
-      "companyName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
+      "id": "694be05d48ef",
+      "brandName": "Vogue",
+      "companyName": "Vogue",
       "industry": "Retail / Fashion",
       "brandType": "Established / Growing",
-      "thailandEvidence": "12 แบรนด์แฟชั่นไทยโกอินเตอร์ เปิดร้าน T-Style Shop บน Tmall Global บุกตลาดออนไลน์จีน",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-06-25",
-      "whyNow": "12 แบรนด์แฟชั่นไทยโกอินเตอร์ เปิดร้าน T-Style Shop บน Tmall Global บุกตลาดออนไลน์จีน",
+      "thailandEvidence": "ลาซาด้า ผนึก Vogue ประเทศไทย ยกระดับแบรนด์แฟชั่น ผ่านแคมเปญ 9.9 | The Reporters",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-09-17",
+      "whyNow": "ลาซาด้า ผนึก Vogue ประเทศไทย ยกระดับแบรนด์แฟชั่น ผ่านแคมเปญ 9.9 | The Reporters",
       "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
       "score": 73,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 16,
+        "revenue_potential": 14,
         "ooh_fit": 14,
         "momentum": 4,
-        "timing": 10,
+        "timing": 8,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kZDlLVF9BLVJPTUppU0Nsbzk3SmgyUERzYnNEamRmeGE5c1NGcFA5MTRlc3F5LTkxNlgxRk1KMDFScTVnLUxQa0tuZmpiRnFIbmtIWVMxSXdYeUZ5dDdRV1RKTTM1MEU?oc=5",
-          "label": "Thairath.co.th"
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYd0hfVjAyazVVd2xpRTVjTGFLcjh0cVQ0a0UtWk12ck1EeHlLTTdMbldubmtDQ3B4ZHlGVi1GWDBsQTJrNGZOYXBJd2VJbS1MX0Q2aGdR?oc=5",
+          "label": "LINE TODAY"
         }
       ]
     },
     {
-      "id": "5e5e2d2beb25",
-      "brandName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
-      "companyName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
+      "id": "1640c583da85",
+      "brandName": "Alibaba",
+      "companyName": "Alibaba",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้",
+      "thailandEvidence": "Alibaba เปิดตัว Wan3.0 สะเทือนวงการ Generative AI | The Bangkok Insight",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-11",
-      "whyNow": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้",
+      "signalDate": "2026-08-26",
+      "whyNow": "Alibaba เปิดตัว Wan3.0 สะเทือนวงการ Generative AI | The Bangkok Insight",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -575,12 +332,45 @@
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
+      "isNew": true,
+      "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNS0xpamJJaWp2Y0g3SVFTNWdBMlhDSTR0OERwNW9LbWpHdTNFenUzX25SbTJiVTdpRjROV1EycnZkS0thbEFUTmNnVjJMNEREY2tBX1Zqc244dHZTa1pVRXpESTlzM1lrcVgySUFIX2hORzhEeWxiUnA5Zk9DTl9tWHZCaWdoeTZCZE1UcXpBZkFQb0NjXzcxZm0wUGtfM1ZNV3dESnY2NF9SQUg5alZkbW42Um9ES0E3VVJOZ0JDSmtNbG5XSFhDOGhtVnJfN2xoek1jZUxFekRiTC1BUEQ0MWpCMzJ5aWd0OTJ2eGVFRFBNeGc5anNEdC1EUlRjZTAxdVhr?oc=5",
-          "label": "autodeft.com"
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DUnBTRkNmR3ZULWVTMERuSnRfMHJhSTJxUDVkLS1uenVFbTFzVVVoblRxbWF1VjlUblJjdElaT29Qalk0cW1vd2RNbWltQm0xeWU3a0d3?oc=5",
+          "label": "LINE TODAY"
+        }
+      ]
+    },
+    {
+      "id": "ddbb94d1498e",
+      "brandName": "EXIM BANK ร่วมยินดี AWC",
+      "companyName": "EXIM BANK ร่วมยินดี AWC",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "EXIM BANK ร่วมยินดี AWC เปิดตัวโรงแรมแฟร์มอนท์ กรุงเทพ สุขุมวิท",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-19",
+      "whyNow": "EXIM BANK ร่วมยินดี AWC เปิดตัวโรงแรมแฟร์มอนท์ กรุงเทพ สุขุมวิท",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4zY2ZINjM4ZnVRTndDSGttU1lmUkxKcWpXd09QaktTOG9DQUlBeWVKZkNXZlZCWG1EblVYT1FWcE5BeDVqQ3BoVUlkNFg2a1VNX2J2d2pHQkU4cnZPSk5fXzBtcFkxZw?oc=5",
+          "label": "The Bangkok Insight"
         }
       ]
     },
@@ -646,7 +436,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hLUpaa1hnekZBU3BIQm5TRFl5N2R6Nlc4WHhISWs3QjZjS0FQblJGN3c0VEF5Z05TOXRIQktUWW5ZUklWVFZKLXlEc21nSk15VFNIbXFSUV82NnVnSHhLakVDVmpkVXMtSEF0SjV3?oc=5",
-          "label": "CAR250"
+          "label": "car250.com"
         }
       ]
     },
@@ -679,11 +469,209 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQOEo3U216Vmo5d3pGN0tFaURqZE5CTXhud2ZpdzUyMzF3OVB5WTBOOXFuMFExM3hvVFlWRFhwcGZnYm9KWFZ0TERtbTRORENJT09j?oc=5",
-          "label": "positioningmag.com"
+          "label": "Positioningmag"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFc1NTRRTmVXTmVPak90RDNyQUQtZUJ1d2d3R2hfclFSV1NUX0pMaF8yZ0poNUlkb056c0pJdFNiN3lVMGFnaGh5ZWJQWkJ6Ukw4UXdvS2E1aFRPTEN0MXMyV3EzN1Y0OFFuYjJJN2xXV0w0SjJUSnBNblVQRF9kSXZWMA?oc=5",
           "label": "Brand Buffet"
+        }
+      ]
+    },
+    {
+      "id": "7125e4396d9e",
+      "brandName": "เย็นเย็น x Thai Coco",
+      "companyName": "เย็นเย็น x Thai Coco",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เย็นเย็น x Thai Coco ผนึกกำลังสองแบรนด์ไทยเปิดตัว เย็นเย็นจับเลี้ยง ที่หวานละมุนจากมะพร้าวน้ำหอมจากธรรมชาติ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-09",
+      "whyNow": "เย็นเย็น x Thai Coco ผนึกกำลังสองแบรนด์ไทยเปิดตัว เย็นเย็นจับเลี้ยง ที่หวานละมุนจากมะพร้าวน้ำหอมจากธรรมชาติ",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82OVpzLVVWS3BNMWVmaDl6VGlEa2p2XzZzeFJqZFozTDAzYUplcFRJNWRVNFVLcXVhMHBnY0NoYmcwNTNsSkxxZHVhRTZSV056Ylhj?oc=5",
+          "label": "Positioningmag"
+        }
+      ]
+    },
+    {
+      "id": "34a044ea0884",
+      "brandName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
+      "companyName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ “Saboten” พลิกเกมใหญ่ในรอบ 18 ปี รีโนเวตร้าน-ดึงลูกค้ารุ่นใหม่ ทวงบัลลังก์ตลาดทงคัตสึเมืองไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-08",
+      "whyNow": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ “Saboten” พลิกเกมใหญ่ในรอบ 18 ปี รีโนเวตร้าน-ดึงลูกค้ารุ่นใหม่ ทวงบัลลังก์ตลาดทงคัตสึเมืองไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTlpOc3IxUTZQM0pfQ2tlSl9wYWJDSVV3cXUtYWtGN2Y0a0VMemdld05Jdjh4QTZXeW5tTlBoTmpyandicVEwOThoTUdRNnM2d09LNDczWmc3dzJDUmRtY0dhQlo1N1hFbzFqWVdMOVRESGRRcXA2S2N4OG0xSVo2N0prVUM2VWVpZFBqMkhWM05HUQ?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    },
+    {
+      "id": "f7c91fefc9c3",
+      "brandName": "Launch",
+      "companyName": "Launch",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-03",
+      "whyNow": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZXUtbmdEWHE5MzVDT2ZQLTRyRi0yeE1ETE9DWC1GTDNQbWg4REJVOGxrLVhuTzZxTm1FOG9SeFRFTEh3ekgyZTZrUXplR0dSYnR5Qlln?oc=5",
+          "label": "มิติหุ้น"
+        }
+      ]
+    },
+    {
+      "id": "76a262eb26f3",
+      "brandName": "CEA",
+      "companyName": "CEA",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "CEA Launches Thailand’s First International Marketplace for Film and Series at Bangkok International Content Market 2026",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-22",
+      "whyNow": "CEA Launches Thailand’s First International Marketplace for Film and Series at Bangkok International Content Market 2026",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9DMWpEUlVIaTlacDZzZ0FYM1VjWXZrQk1xbG5TSVM4QnYzR3I4SkZ4ZXJxNDFoa2thendVX3ZKTjBKeU5YMGZpSm5tY183QkZMb0M0VEZPbw?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "b89f3871add0",
+      "brandName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "companyName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-08",
+      "whyNow": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
+      "momentum": "Exploding",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 8,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MSXlodjlMNDhna0p4UDBKVFZTc1d6bXJ4c3FkcXA4dUUtTkQ5YU85TFVvV0lmcVh2eWVCNFZaRDBWMERfNkJZX1B0LXFGdVI2dTNLd3lNSmhNRk1KQWc?oc=5",
+          "label": "ข่าวสด"
+        }
+      ]
+    },
+    {
+      "id": "accb53287ed6",
+      "brandName": "Lazada",
+      "companyName": "Lazada",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "ถอดรหัสแคมเปญ Lazada x Vogue การตลาด Beyond Commerce 9.9",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-09-17",
+      "whyNow": "ถอดรหัสแคมเปญ Lazada x Vogue การตลาด Beyond Commerce 9.9",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 69,
+      "scores": {
+        "thailand_relevance": 10,
+        "buying_signal_strength": 16,
+        "revenue_potential": 14,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcmdRZXptbmJxbmQwZUp1VHdsOURUaHN2LXc5Mm00R1hidDdHVXczdXI1b1NuWk5BaHdpZ1ozN3I4QlN1WW5KWWJqdmtWLURzWUhJWlM4RWdTMHFYajhxYWFERDFwOEM5dmJMSkdlN1duaHhYWVRtS2UxVl94bVpwLW91LUQ?oc=5",
+          "label": "การตลาดวันละตอน"
         }
       ]
     }
