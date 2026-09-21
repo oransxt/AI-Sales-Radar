@@ -1,51 +1,88 @@
 {
-  "date": "2026-09-20",
-  "generatedAt": "2026-09-20T05:52:33.961Z",
+  "date": "2026-09-21",
+  "generatedAt": "2026-09-21T05:59:39.839Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
-      "id": "645522f0742e",
-      "brandName": "Li Auto VOYAH",
-      "companyName": "Li Auto VOYAH",
-      "industry": "Automotive",
+      "id": "09f59ec4bb80",
+      "brandName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "companyName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "รถจีนไม่หวั่นขึ้นภาษี EV 3 แบรนด์ใหม่จ่อเข้าไทย Li Auto VOYAH LUXEED",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-09-18",
-      "whyNow": "รถจีนไม่หวั่นขึ้นภาษี EV 3 แบรนด์ใหม่จ่อเข้าไทย Li Auto VOYAH LUXEED",
+      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-21",
+      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’",
       "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 87,
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 80,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 18,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
-      "priority": "HOT",
+      "priority": "HIGH",
       "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92RHhDbGpUR2RiUDVPeEc1ZGN6bGV5Q3BZOGdCWFVoeFdVZFVtbmpDMVF1TEtteGRmc0FQeHNXcy1sQkRnMkVZT3FmdVJnejlhMVZ4VnAwQQ?oc=5",
-          "label": "Thansettakij"
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9sTFpZSWtoODhObTVNQVVsMXZvY1hBeF9Qb2tDZnFsRTYwUDAydFQ3WWRNekF0ZXNwb1VlQjROYWVFTUJLRkdHOVFiWmFsWE9zRGNN?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
     {
-      "id": "57e2c58c49f5",
-      "brandName": "Chery V27",
-      "companyName": "Chery V27",
+      "id": "b26e5ebda152",
+      "brandName": "Subway",
+      "companyName": "Subway",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Subway เร่งเครื่องตลาดไทย รับ QSR โต 8% ปรับเกม “สั่งง่าย” ดันเมนูใหม่-ขยายสาขา",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-07-09",
+      "whyNow": "Subway เร่งเครื่องตลาดไทย รับ QSR โต 8% ปรับเกม “สั่งง่าย” ดันเมนูใหม่-ขยายสาขา",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 79,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGF6TjhKWGhQNEhwVUlmZVMyTENlaEVZLVZzM1B5MURRNXp6SlpfRmhWcDk5ZVNfN2N5cmpVV2RGSWlrbWdyQXI0Z0hIaV9va1VQR01xVHBHOHNJRXo3MWJhY21uaWpxVF9pei1TVnAzcDRx?oc=5",
+          "label": "Thairath.co.th"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96TEd4SHVWZlhWR1lER05WVUxiOU80UGJqbXpSSjQ3VGlnRnRpVWdMcVZzZDk2Q1BpVXVaN1d3M2J0R2xSRENVV2VMWU5XTzU0VmlXbm9R?oc=5",
+          "label": "today.line.me"
+        }
+      ]
+    },
+    {
+      "id": "045c156ea9f2",
+      "brandName": "iCAUR V27 REEV เอสยูวี",
+      "companyName": "iCAUR V27 REEV เอสยูวี",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "เปิดตัวในไทย เร็วๆนี้ Chery V27 พี่ใหญ่ทรงกล่อง พลัง REEV ท้าชน GWM Tank 300",
+      "thailandEvidence": "iCAUR V27 REEV เอสยูวี 455 แรงม้า วิ่งไกล 1,000 กม. จ่อเปิดตัวในไทย",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-07-25",
-      "whyNow": "เปิดตัวในไทย เร็วๆนี้ Chery V27 พี่ใหญ่ทรงกล่อง พลัง REEV ท้าชน GWM Tank 300",
+      "signalDate": "2026-09-20",
+      "whyNow": "iCAUR V27 REEV เอสยูวี 455 แรงม้า วิ่งไกล 1,000 กม. จ่อเปิดตัวในไทย",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -64,31 +101,31 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE94bWVaeGlqSnVTUjc2YW1KRlloeUd1WmNxNTVfckJmR1J4RjhDS0ZNOTBKUEkwZl9lS1dFbi15cExsRWNUWjBrTk9ZMm5OMkxHcjJBc2JjSHAxUjY0TlFN?oc=5",
-          "label": "thairath.co.th"
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9jcnFjWWVfZkxZVHhuTXdwT3JwLU5mUVJEekZNQ3Rwa2RzQ1lxTXZORFdSSHg2WjNaUmlUcklYU2VIR09pYUF4bG5CNTdSR0JQMUUwSWV3S0tEaEVISmZxaWcyOGlyRFlLaWx1cXZ3Skk2N2F5bU9wSnNDM1FsY3M?oc=5",
+          "label": "biztalknews.com"
         }
       ]
     },
     {
-      "id": "b26e5ebda152",
-      "brandName": "Subway",
-      "companyName": "Subway",
-      "industry": "Food / QSR",
+      "id": "645522f0742e",
+      "brandName": "Li Auto VOYAH",
+      "companyName": "Li Auto VOYAH",
+      "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Subway เร่งเครื่องตลาดไทย รับ QSR โต 8% ปรับเกม “สั่งง่าย” ดันเมนูใหม่-ขยายสาขา",
+      "thailandEvidence": "รถจีนไม่หวั่นขึ้นภาษี EV 3 แบรนด์ใหม่จ่อเข้าไทย Li Auto VOYAH LUXEED",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-07-09",
-      "whyNow": "Subway เร่งเครื่องตลาดไทย รับ QSR โต 8% ปรับเกม “สั่งง่าย” ดันเมนูใหม่-ขยายสาขา",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
+      "signalDate": "2026-09-18",
+      "whyNow": "รถจีนไม่หวั่นขึ้นภาษี EV 3 แบรนด์ใหม่จ่อเข้าไทย Li Auto VOYAH LUXEED",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
       "score": 77,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
-        "revenue_potential": 16,
+        "revenue_potential": 18,
         "ooh_fit": 14,
-        "momentum": 6,
+        "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
@@ -97,8 +134,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGF6TjhKWGhQNEhwVUlmZVMyTENlaEVZLVZzM1B5MURRNXp6SlpfRmhWcDk5ZVNfN2N5cmpVV2RGSWlrbWdyQXI0Z0hIaV9va1VQR01xVHBHOHNJRXo3MWJhY21uaWpxVF9pei1TVnAzcDRx?oc=5",
-          "label": "thairath.co.th"
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE92RHhDbGpUR2RiUDVPeEc1ZGN6bGV5Q3BZOGdCWFVoeFdVZFVtbmpDMVF1TEtteGRmc0FQeHNXcy1sQkRnMkVZT3FmdVJnejlhMVZ4VnAwQQ?oc=5",
+          "label": "thansettakij.com"
         }
       ]
     },
@@ -206,6 +243,39 @@
       ]
     },
     {
+      "id": "0c98d1511f16",
+      "brandName": "Hashtag B",
+      "companyName": "Hashtag B",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Hashtag B เดินเกมรุกตลาดเบเกอรี่พรีเมียมไทย เปิด New Concept Store แห่งแรกในไทย ณ เซ็นทรัลเวิลด์ ยกครัวเบเกอรี่ฮ่องกงมาไว้ใจกลางกรุงเทพฯ พร้อมเร่งขยายสาขาใหม่ในทำเลสำคัญทั่วเมือง",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-15",
+      "whyNow": "Hashtag B เดินเกมรุกตลาดเบเกอรี่พรีเมียมไทย เปิด New Concept Store แห่งแรกในไทย ณ เซ็นทรัลเวิลด์ ยกครัวเบเกอรี่ฮ่องกงมาไว้ใจกลางกรุงเทพฯ พร้อมเร่งขยายสาขาใหม่ในทำเลสำคัญทั่วเมือง",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDc21FMlU5c1hqQlhpNmpaQ1dBRk1MYjd5dWVsMmlnU2ptR2tIaFZON0daZ1RtaDVMYWx5a3dwZ2dqVnBRWk1UOHNabDZNeTh4?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
       "id": "8e2a5663d8d3",
       "brandName": "Berwick",
       "companyName": "Berwick",
@@ -235,39 +305,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
           "label": "Brand Inside"
-        }
-      ]
-    },
-    {
-      "id": "15ee2ecffff5",
-      "brandName": "MPV",
-      "companyName": "MPV",
-      "industry": "Entertainment",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ฮุนได เสริมแกร่งจุดแข็ง-เปิดเกมเขย่าตลาด MPV ด้วย Hybrid 11 ที่นั่ง ครั้งแรกในไทย เปิดตัว “Hyundai new STARIA Hybrid” คันเดียวครบ เพื่อครอบครัว-ธุรกิจ-เดินทางไกล ราคาเริ่มต้น 2.099 ล้านบาท",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-09-11",
-      "whyNow": "ฮุนได เสริมแกร่งจุดแข็ง-เปิดเกมเขย่าตลาด MPV ด้วย Hybrid 11 ที่นั่ง ครั้งแรกในไทย เปิดตัว “Hyundai new STARIA Hybrid” คันเดียวครบ เพื่อครอบครัว-ธุรกิจ-เดินทางไกล ราคาเริ่มต้น 2.099 ล้านบาท",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 75,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9zc1ZCeE5TRnlCUFBNbUJOQVZ5aHJfaE9ZMzIteV9FemJ4NDNRYWhYQjFNNEc2WEFVemVVT0dyY1pvUmdRTXVlNG1OLUlrQTRPVWNGdEVhcUlfUHNralhtUVZVS0FSWEk2UHpHVjA4XzF4eU1BNFhmdWdB?oc=5",
-          "label": "iMoD"
         }
       ]
     },
@@ -313,6 +350,72 @@
       ]
     },
     {
+      "id": "ab4694707f47",
+      "brandName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
+      "companyName": "12 แบรนด์แฟชั่นไทยโกอินเตอร์",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "12 แบรนด์แฟชั่นไทยโกอินเตอร์ เปิดร้าน T-Style Shop บน Tmall Global บุกตลาดออนไลน์จีน",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-06-25",
+      "whyNow": "12 แบรนด์แฟชั่นไทยโกอินเตอร์ เปิดร้าน T-Style Shop บน Tmall Global บุกตลาดออนไลน์จีน",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 73,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kZDlLVF9BLVJPTUppU0Nsbzk3SmgyUERzYnNEamRmeGE5c1NGcFA5MTRlc3F5LTkxNlgxRk1KMDFScTVnLUxQa0tuZmpiRnFIbmtIWVMxSXdYeUZ5dDdRV1RKTTM1MEU?oc=5",
+          "label": "Thairath.co.th"
+        }
+      ]
+    },
+    {
+      "id": "b9db72bfc1fa",
+      "brandName": "WARRIX",
+      "companyName": "WARRIX",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "WARRIX เปิดตัวชุดแข่งขันฟุตบอลทีมชาติไทย ฤดูกาล 2026/27 คอนเซปต์ \"ไทยนี้รักสงบ แต่ถึงรบไม่ขลาด\" ประเดิมใช้ อาเซียน คัพ บริษัท วอริกซ์ สปอร์ต จำกัด (มหาชน) หรือ WARRIX จัดงานเปิดตัว ชุดการแข่งขันของฟุตบอลทีมชาติไทย ที่จะใช้ในฤดูกาล 2026/27 โดยจะประเดิมใช้ในการแ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-08",
+      "whyNow": "WARRIX เปิดตัวชุดแข่งขันฟุตบอลทีมชาติไทย ฤดูกาล 2026/27 คอนเซปต์ \"ไทยนี้รักสงบ แต่ถึงรบไม่ขลาด\" ประเดิมใช้ อาเซียน คัพ บริษัท วอริกซ์ สปอร์ต จำกัด (มหาชน) หรือ WARRIX จัดงานเปิดตัว ชุดการแข่งขันของฟุตบอลทีมชาติไทย ที่จะใช้ในฤดูกาล 2026/27 โดยจะประเดิมใช้ในการแ",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 73,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi9wZBVV95cUxQNkZYVEtJeXBORFVnODgwb1ZyOGQ4TXhtWlg2SXpacDFVQVZTVnZ1THlXQUN4RDdmUXlhOWpRTncxbmpxTmhILXFFMlpYNlBiTDJaTk9SZFZleVQ5ZTBKYkRETTNGZDc2cGcyZlBCZzdfYzk3U09vRWwtT2RMWVRVa0oyaDh1YnVxY3p4NDBuTHNJRWVQU1pKSHh4dTFPVllyN1RMWmdHejlJbnZ3LWFIb1YySGU2RjI5OEdUX1ZqZ3pxQ1BUcW1JUGlzS25rQjF5Z1hXWDVqWkZsSGh5WVh6Ni0wRGZrTGVZYUpuQ2xiVnBWclBDU2hQMGlpWGVPTE12amE3VXJOSG5iMEQ2TmtrYkNQSnN1Z0dDc3d4YW44UHBOYzY2SnV2elJPcWozLUJLSHlyREJpWGxSSi1VZkJhemhvb2I1OVk1TWg0SXhyU3lrbDJGVFhkeHphR0N1OENfVWpCZkw1RXU1T0dUMmhiaE1iLWRoSVVoM0hjNkFudk8zM1M5dGI4SXh4MjNqRkVjQ2xuOXJMd1VndDV6VHNkUGhTT1czX2lrMEg2NVlCaHV4UEhkdGI0dnhIZG5hLVI5MV9sR1ZMMlpqMEF4Q1JyNlQ1c3NfU2dxUjFwT2tabHI1aDFmaHczcnNaRjN2ODQwSUR4cGVoQ2lCa3FrS3EzV0lBcFM2R3JxOHB0MEhGTnd3NTNVOWtMRl9XS25lUy0yQzRmQ1N5RElKYjRIZDRVc2JMaHBvU2NBbUk2RUtLMlhqd29tVzVrSjBfSFhUWHBKRGl3UXBzMFgzZGhscS1RVFRGN0J2WjBUbl9iRWFuRVc2TUNNZDBmZzVwaGZHdmhvS09pd0VHak5KdGJtM2FkYkJ5eUVGQ1VQekFaTGpFNkRKc2ZtbjB1MjFzWHd4R25ua3F2VHd5V2kxaWxZNUhtcVJoVExYVmVvb3RyWDA5TzdIam1hM1hjaDlBcXp4bVR0NnVvNm1hXzJoZlpFNjB0Y0UwN3lTcEtVN1dOYlNZLXFsRTRLekN1RVJNbllCNHJDd0JOR1pGT2JDZndaUU1zWDJtSHc3bTFqUUJ6Y2x1QlFSNW9feTg5RG9KMktBemhTczhuVVVUQjJWTG9FUjdJUkd3LWtPRERLWnRXRTVSMFczdmVwWl9qa0tpZTZuUlpLSTZYZVF2WQ?oc=5",
+          "label": "facebook.com"
+        }
+      ]
+    },
+    {
       "id": "0718e24ba705",
       "brandName": "เปิดสเป็ค LEPAS L6 EV",
       "companyName": "เปิดสเป็ค LEPAS L6 EV",
@@ -342,39 +445,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBIXzJVYl9jamMtWm5nRVhnckJYbDFDV2QybTE0U2R4RHVVOG9pTmRXeDVXUy03Z2ZBb3NFS3NUeDNzajBBYlJ0ZjVkWmpRQTRJbXM5MUJjcVNYck80YkJYYXhXR1l1WWN3Vi1UNzVBdW5TcV8zY1E?oc=5",
           "label": "Autolifethailand.tv"
-        }
-      ]
-    },
-    {
-      "id": "b14ea4779670",
-      "brandName": "CHANGAN and NING SERVICE",
-      "companyName": "CHANGAN and NING SERVICE",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand's First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-14",
-      "whyNow": "CHANGAN and NING SERVICE Forge Strategic Partnershipto Launch Thailand's First Comprehensive Battery & E-Drive Service CenterStrengthening Long-Term Customer Confidence Through World-Class EV After-Sales Service",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCN2VNRnBPN1o1RDB3RUZRbHc3Ul94czJpXzNSRTBGV3hLcjFVTXRBSl9tYnB6UW9RLWRrbU5WTlRKMlJHWFNtaXl0TDFZc2Q2RXZkMlZnaEpHMHpKWlhvQjF6MTVoQjkyaERR?oc=5",
-          "label": "newswit"
         }
       ]
     },
@@ -448,7 +518,40 @@
         },
         {
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFc1NTRRTmVXTmVPak90RDNyQUQtZUJ1d2d3R2hfclFSV1NUX0pMaF8yZ0poNUlkb056c0pJdFNiN3lVMGFnaGh5ZWJQWkJ6Ukw4UXdvS2E1aFRPTEN0MXMyV3EzN1Y0OFFuYjJJN2xXV0w0SjJUSnBNblVQRF9kSXZWMA?oc=5",
-          "label": "brandbuffet.in.th"
+          "label": "Brand Buffet"
+        }
+      ]
+    },
+    {
+      "id": "7125e4396d9e",
+      "brandName": "เย็นเย็น x Thai Coco",
+      "companyName": "เย็นเย็น x Thai Coco",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เย็นเย็น x Thai Coco ผนึกกำลังสองแบรนด์ไทยเปิดตัว เย็นเย็นจับเลี้ยง ที่หวานละมุนจากมะพร้าวน้ำหอมจากธรรมชาติ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-09",
+      "whyNow": "เย็นเย็น x Thai Coco ผนึกกำลังสองแบรนด์ไทยเปิดตัว เย็นเย็นจับเลี้ยง ที่หวานละมุนจากมะพร้าวน้ำหอมจากธรรมชาติ",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82OVpzLVVWS3BNMWVmaDl6VGlEa2p2XzZzeFJqZFozTDAzYUplcFRJNWRVNFVLcXVhMHBnY0NoYmcwNTNsSkxxZHVhRTZSV056Ylhj?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
@@ -481,40 +584,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
-          "label": "แนวหน้า"
-        }
-      ]
-    },
-    {
-      "id": "2ba4d8910995",
-      "brandName": "EVE’S",
-      "companyName": "EVE’S",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-06-22",
-      "whyNow": "EVE’S ทุ่มงบเปิดโรงงานแห่งที่ 3 ชูโมเดล “NO MARKETING, MORE SKIN” ดัน R&D ยกระดับสกินแคร์ไทยสู่เวทีโลก เปิดตัว 2 นวัตกรรมใหม่เอกสิทธิ์เฉพาะแบรนด์",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81WG1tZXQ1TXVQUzVpYlgxeTJHNTdJSDZjblU1VHQ3eUpJRkUwNVRlUDktVS0yRDhwREZVdUlUY3hNVnF6cWhpbTBGR29veGQ4VTdKNzh1dVE1YldQRjlwZg?oc=5",
-          "label": "ผู้จัดการออนไลน์"
+          "label": "naewna.com"
         }
       ]
     },
@@ -552,39 +622,6 @@
       ]
     },
     {
-      "id": "af3f0aac00a4",
-      "brandName": "Labella แบรนด์กระเป๋าไทย",
-      "companyName": "Labella แบรนด์กระเป๋าไทย",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Labella แบรนด์กระเป๋าไทย ดึง ‘ณิชา ณัฏฐณิชา’ ขึ้นแท่นพรีเซนเตอร์คนแรก พร้อมเปิดตัว SOLEIL Collection [PR NEWS]",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-12",
-      "whyNow": "Labella แบรนด์กระเป๋าไทย ดึง ‘ณิชา ณัฏฐณิชา’ ขึ้นแท่นพรีเซนเตอร์คนแรก พร้อมเปิดตัว SOLEIL Collection [PR NEWS]",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaFpoVk9CeWdXSloxck8tZ0pWUnA0RVpJQzFLaTgtU1lwdzNqbUFFalFNb3NUQWYyTmFGYV8xTTctaWZ4Nm1OLTVEMi1fRUpibFNaTVZSZG1SZkxKeEItdXNjNldCdw?oc=5",
-          "label": "thestandard.co"
-        }
-      ]
-    },
-    {
       "id": "ea4990e48dfd",
       "brandName": "คอลเกต เขย่าวงการ Oral Beauty",
       "companyName": "คอลเกต เขย่าวงการ Oral Beauty",
@@ -613,7 +650,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rV3ZBdXVSMFQxSkJ1SDdXWl94QTBRZ0RjZFNLenZTWWRVZDd3SHVCVEEwOFNpWDE5OUlrbEd4QlJhbjl1RjdQc3pYMW5aVnc2VG4wSTZPMF9qc1JUWjRFcVVDNnRvVHNBdk1jSWdiaGtRWkVKUElJ?oc=5",
-          "label": "brandbuffet.in.th"
+          "label": "Brand Buffet"
         }
       ]
     },
@@ -646,40 +683,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZXUtbmdEWHE5MzVDT2ZQLTRyRi0yeE1ETE9DWC1GTDNQbWg4REJVOGxrLVhuTzZxTm1FOG9SeFRFTEh3ekgyZTZrUXplR0dSYnR5Qlln?oc=5",
-          "label": "mitihoon.com"
-        }
-      ]
-    },
-    {
-      "id": "76a262eb26f3",
-      "brandName": "CEA",
-      "companyName": "CEA",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "CEA Launches Thailand’s First International Marketplace for Film and Series at Bangkok International Content Market 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-22",
-      "whyNow": "CEA Launches Thailand’s First International Marketplace for Film and Series at Bangkok International Content Market 2026",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9DMWpEUlVIaTlacDZzZ0FYM1VjWXZrQk1xbG5TSVM4QnYzR3I4SkZ4ZXJxNDFoa2thendVX3ZKTjBKeU5YMGZpSm5tY183QkZMb0M0VEZPbw?oc=5",
-          "label": "ThaiPR.NET"
+          "label": "มิติหุ้น"
         }
       ]
     }
