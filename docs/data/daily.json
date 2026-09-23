@@ -1,42 +1,38 @@
 {
-  "date": "2026-09-22",
-  "generatedAt": "2026-09-22T05:56:15.323Z",
+  "date": "2026-09-23",
+  "generatedAt": "2026-09-23T05:38:46.367Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
-      "id": "eb9de94be9d9",
-      "brandName": "KANEKO HANNOSUKE ปักหมุดสาขาใหม่ เซ็นทรัล",
-      "companyName": "KANEKO HANNOSUKE ปักหมุดสาขาใหม่ เซ็นทรัล",
-      "industry": "Consumer / Other",
+      "id": "09f59ec4bb80",
+      "brandName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "companyName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ - เทคโนโลยีชาวบ้าน",
+      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-16",
-      "whyNow": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ - เทคโนโลยีชาวบ้าน",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 81,
+      "signalDate": "2026-09-21",
+      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 80,
       "scores": {
-        "thailand_relevance": 18,
+        "thailand_relevance": 14,
         "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
         "timing": 10,
-        "evidence_quality": 5
+        "evidence_quality": 3
       },
       "priority": "HIGH",
       "isNew": false,
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5uYlNEMTFFWnVqamltXzVCVlI3OW1ib0JsS0toNmU1QUNlSWV2akZha3FMa2hmcGpXQUV4dkNIVjh2QkpJY0J5OXNLYWFOZTEwVDlqeWRjMmwxWTJzUGtoeFB1TEVGVTJ6UEg1OVF0aUdrYUZMbG9teUdn?oc=5",
-          "label": "khaosod.co.th"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQOEo3U216Vmo5d3pGN0tFaURqZE5CTXhud2ZpdzUyMzF3OVB5WTBOOXFuMFExM3hvVFlWRFhwcGZnYm9KWFZ0TERtbTRORENJT09j?oc=5",
-          "label": "Positioningmag"
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPY3J5U0pBZXk2dzhvd3h2MDkxREFBQ0owR0lURDBneGZvRnVfR3RzOVpwWGtlSVJkT2ZNVThsSWNEUHJUMHhKRzhiUXZZMWQtMDl3bDJGZWpEcV9BclNjVFpaNVR0V2U5TTkzc2gwamhwakY4dUZUOUs3a3FpUFhJZm4wVF93YWZKY2duMXVxbUVBajd2N2ZaendFWE52VDhjYmhYM3hJS3A3OTAtX0lHMVU1dV9BOERFSkhjRG11RWh6Y0REb2hicXcyVGE1ZTliZU5QNmVTcFJMT2stZWxTeGVQRlVrRVdobEIwVGFqeTc5VUI3SnVGLWplcGZ3bzFnemJjQkpJSFVsWUlMakpLVF9ObW8wVzdwX1VZRi00QmFQY1FTRGdkTU5pbzk?oc=5",
+          "label": "Smart SME"
         }
       ]
     },
@@ -116,10 +112,10 @@
       "companyName": "TikTok",
       "industry": "Banking / Finance",
       "brandType": "Emerging / Social-first",
-      "thailandEvidence": "ถ้ารสชาติในฝันของคุณ... กลายเป็นเลย์รสใหม่ที่ขายจริงล่ะ? “เลย์” จับมือ TikTok เปิดแคมเปญ “Do Us a Flavor” ชวนครีเอเตอร์ชาวไทยครีเอตรสชาติเลย์ในฝัน ชิงเงินรางวัลรวม 1.5 ล้านบาท พร้อมโอกาสพัฒนาเป็นรสชาติที่วางขายจริง!",
+      "thailandEvidence": "อินไซต์TikTok จี้จุดนักช้อปไทย ไม่รอแล้ว Mega Sales แต่ “เสิร์ช-ค้นพบ-กดตระกร้า” ทั้งปี | การเงินธนาคาร",
       "buyingSignal": "New campaign",
-      "signalDate": "2026-09-21",
-      "whyNow": "ถ้ารสชาติในฝันของคุณ... กลายเป็นเลย์รสใหม่ที่ขายจริงล่ะ? “เลย์” จับมือ TikTok เปิดแคมเปญ “Do Us a Flavor” ชวนครีเอเตอร์ชาวไทยครีเอตรสชาติเลย์ในฝัน ชิงเงินรางวัลรวม 1.5 ล้านบาท พร้อมโอกาสพัฒนาเป็นรสชาติที่วางขายจริง!",
+      "signalDate": "2026-09-12",
+      "whyNow": "อินไซต์TikTok จี้จุดนักช้อปไทย ไม่รอแล้ว Mega Sales แต่ “เสิร์ช-ค้นพบ-กดตระกร้า” ทั้งปี | การเงินธนาคาร",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -138,16 +134,16 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04LWJFeVZfcGpMMzFlV040TVZocHZIcEFuR2Vuam53RGFBUUNFR0tyRl8wU3ZUdHo0d0lVSU9hTE5Bdjd1ZHR4OHl3eEFkUlB4RThLU3lMbzNOYWMzVlZnZnFPN3BLVHNkd1c1MlJpdnV4Zk0?oc=5",
-          "label": "Marketing Oops!"
-        },
-        {
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1udnBOTERVVE9HcEx5QTgyQTN2SmVkTUQzdnlidFFVOGdJR1l2Zk5yVlkycDBKTlJxTU40SC1vdlN0Y2dvUmtSVlA3RFY2UFdJcnVZSUNn?oc=5",
           "label": "LINE TODAY"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbEdPNWdkc1gybXBUOWVIX0tOenprNmc2NHZrRmdYMzFUSUJkcTNLVGx1WmJIaHdwckdCZjBtMU5hcUIxeXQ3ZkktWXBSckE1d1pj?oc=5",
           "label": "Positioningmag"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jVzI0WkVnaGlGakdKeGFrQXV4UWJMbVp2ejZKaUQzMmxCYzA5MUlkbkR1YmoyYzBJU2hLdkRKZlZOSmNTTGNKb0lwaWhzY1pETXZvQVJNNk82dw?oc=5",
+          "label": "bangkokbiznews"
         }
       ]
     },
@@ -255,6 +251,39 @@
       ]
     },
     {
+      "id": "86fa9fbbafb5",
+      "brandName": "Human Made",
+      "companyName": "Human Made",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ปีที่แล้วมีคนไทยราว 56,000 คนเดินเข้าร้าน Human Made ที่ญี่ปุ่น คิดเป็นราว 5% ของนักท่องเที่ยวไทยทั้งหมดที่ไปเที่ยวญี่ปุ่น . ปลายเดือนมีนาคมที่ผ่านมา แบรนด์นี้ก็ตามคนไทยกลับมา ด้วยการเปิดสาขาแรกในเอเชียตะวันออกเฉียงใต้ที่ห้างกลางกรุงเทพฯ โดยมีคนต่อคิวรอตั้งแต่ก่อนร้านเปิดก",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-30",
+      "whyNow": "ปีที่แล้วมีคนไทยราว 56,000 คนเดินเข้าร้าน Human Made ที่ญี่ปุ่น คิดเป็นราว 5% ของนักท่องเที่ยวไทยทั้งหมดที่ไปเที่ยวญี่ปุ่น . ปลายเดือนมีนาคมที่ผ่านมา แบรนด์นี้ก็ตามคนไทยกลับมา ด้วยการเปิดสาขาแรกในเอเชียตะวันออกเฉียงใต้ที่ห้างกลางกรุงเทพฯ โดยมีคนต่อคิวรอตั้งแต่ก่อนร้านเปิดก",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiwAZBVV95cUxNeUpieHk5X2tGcmo2dXZGSnd6TTdMX1JBalJkTWtBN1JfWXpFZmUyWjdMTm84cml1VzBUampZWU4wT05zRVhlZXVqZ2padWl6ZEw4S3JNWDRwbGZoRXoybDEzMzhGTWFQcU9VMkw2YS1KU21LZEtOa2Q4SDVST2pvVGNoUlpPYng2ZFMwcGpaenF0ZmpBYU1KajVwSkhxd3pGa1l0OTUwX2pGXzlvbnpDcmlHMU1JZGtpN0lJSHVkQ3NnY3o4MUlNdnhfM1dLcnhDSlNfa0xYSVlVWmo0U1h6MWxNd2VyV2I5akh2ai1SYU9RUmJ0aTdWR3BfSHhmX0dyRmJpdW5ldE4zZEQ0TUk2SzJqWXFLZ3JCVjhwcWt1dFE1RG9aSTRla0pjeHVPdU5jREV4VmxVd3F5YVJDcWlCT29FZ1BBMXFXLWJ1c2FWaVdBRjduSmZGRkFudDFsR1RSZlNPdUpuaVR3VGVhNXp2aGR5aGZFT01FcFFJYmtWVnk0S3A1NExGY2M3WVl4SGd3elp6WFljdlB5RWNqbE8zWHJCR1haZmdkaExwcHlicER2ZGVhZUxqTk1rbFE3LUt6U1JlakZWd1dvenhIOFJzNnBSbWx2aV91UHNvM3djNUh3ZlgtQkIySFNPQVZxcU80a1BjdmwyVWRtWHFwSXVWazBCblNXU1V5VkRQV0R4cExsQVBMNm5fYVV4NDc4REFrZm4tcGpVTTItQ2Z0OFFndDR4c2ZhaHV4VUpvUVV2OUlPS1NTNzFsdG9mZDcxbFVxN0tRbDFQcUxWeXlNLXA5TEk3eTI0WVR4RjNOX3NpejJla1lLWHNyNjQ2c2QxRktnLWVxNjF4WXNZZU9MQWpkdWVMQWpRT3RGaldyOTNCVnp4SlNzMm1HVUhYVW5QOFpRR1BuUllHRXdoTi1CYndYVEQ3VW12cGRjUkNEN1I4M19BenNCb0ZrRTBhWFJWbjNJajNvaF8yVTZ2WktEeEg4ektPT25fcGpxMW0zcmpWVjc4RWZkOGdWaVVRTFA3VjlMSnNmV19LZXUzV01jcWZZdTdMZTFjSXNpYmI3WU1aSThyUFdIZUNwaDBHdjBXVkNN?oc=5",
+          "label": "facebook.com"
+        }
+      ]
+    },
+    {
       "id": "0c98d1511f16",
       "brandName": "Hashtag B",
       "companyName": "Hashtag B",
@@ -284,6 +313,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDc21FMlU5c1hqQlhpNmpaQ1dBRk1MYjd5dWVsMmlnU2ptR2tIaFZON0daZ1RtaDVMYWx5a3dwZ2dqVnBRWk1UOHNabDZNeTh4?oc=5",
           "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "8e2a5663d8d3",
+      "brandName": "Berwick",
+      "companyName": "Berwick",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "รองเท้าหนัง ไม่ได้ใส่แค่ออกงาน แต่ยังใช้ได้ในชีวิตประจำวัน ‘Berwick 1707’ แบรนด์รองเท้าสัญชาติสเปน เปิดสาขาแรกในไทยแล้ว ที่ Central Embassy",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-12",
+      "whyNow": "รองเท้าหนัง ไม่ได้ใส่แค่ออกงาน แต่ยังใช้ได้ในชีวิตประจำวัน ‘Berwick 1707’ แบรนด์รองเท้าสัญชาติสเปน เปิดสาขาแรกในไทยแล้ว ที่ Central Embassy",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
+          "label": "Brand Inside"
         }
       ]
     },
@@ -362,15 +424,15 @@
       ]
     },
     {
-      "id": "1a424c458206",
-      "brandName": "เส้นสาย",
-      "companyName": "เส้นสาย",
+      "id": "b434817c7d6e",
+      "brandName": "โลกธุรกิจ - S-Pure",
+      "companyName": "โลกธุรกิจ - S-Pure",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "“เส้นสาย” เปิดตัว บาล์มสมุนไพรอโรม่า ต่อยอดตำรับแพทย์แผนโบราณกว่า 90 ปี สู่ไลฟ์สไตล์คนทำงานยุคใหม่ การันตีคุณภาพด้วยรางวัล Bangkok Brand 2026 ระดับ Platinum",
+      "thailandEvidence": "โลกธุรกิจ - S-Pure เปิดตัวแคมเปญ “So You, So Great” ชวนคนไทยเริ่มต้นคุณภาพชีวิตที่ดี",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-09",
-      "whyNow": "“เส้นสาย” เปิดตัว บาล์มสมุนไพรอโรม่า ต่อยอดตำรับแพทย์แผนโบราณกว่า 90 ปี สู่ไลฟ์สไตล์คนทำงานยุคใหม่ การันตีคุณภาพด้วยรางวัล Bangkok Brand 2026 ระดับ Platinum",
+      "signalDate": "2026-07-10",
+      "whyNow": "โลกธุรกิจ - S-Pure เปิดตัวแคมเปญ “So You, So Great” ชวนคนไทยเริ่มต้นคุณภาพชีวิตที่ดี",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -389,8 +451,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tcGxqTWxTMUxncDV1OENkTlRBNnZtdFo3b25PUFJQeTIza1pFZWpNZHBxUTRXYmxNNGhZMWVVemhrMUN3a2NyczdTU3FERnJUU3ZV?oc=5",
-          "label": "Positioningmag"
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5xbnZzOS1NTkJIZDZWNU0wVlZJSWNDdzZIcl9qZFhVY3dTV1VBSHlzYWo2a1JOX0lZTV9wVVVYcWVVMmVlQm5QN3lXRnozZjA?oc=5",
+          "label": "แนวหน้า"
         }
       ]
     },
@@ -423,7 +485,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBIXzJVYl9jamMtWm5nRVhnckJYbDFDV2QybTE0U2R4RHVVOG9pTmRXeDVXUy03Z2ZBb3NFS3NUeDNzajBBYlJ0ZjVkWmpRQTRJbXM5MUJjcVNYck80YkJYYXhXR1l1WWN3Vi1UNzVBdW5TcV8zY1E?oc=5",
-          "label": "Autolifethailand.tv"
+          "label": "autolifethailand.tv"
         }
       ]
     },
@@ -498,58 +560,25 @@
       ]
     },
     {
-      "id": "58911dfe37ba",
-      "brandName": "Funding Societies",
-      "companyName": "Funding Societies",
-      "industry": "Banking / Finance",
+      "id": "cf518af6e557",
+      "brandName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
+      "companyName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
+      "industry": "Retail / Fashion",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Funding Societies เร่งสินเชื่อธุรกิจสีเขียว หนุน SME ไทยขยายกิจการ รับโอกาสเศรษฐกิจใหม่",
-      "buyingSignal": "Funding / investment",
-      "signalDate": "2026-09-22",
-      "whyNow": "Funding Societies เร่งสินเชื่อธุรกิจสีเขียว หนุน SME ไทยขยายกิจการ รับโอกาสเศรษฐกิจใหม่",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 14,
-        "revenue_potential": 14,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 7,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1kQnp3czRwSk92bDJzOWYwdFc3ZWNramdyNUNGcklqSmhTX08tdHRQZXBxWDdXM3JnNXI5b0JyM0Ffa1BTY0l5aG9HRFFfOWs?oc=5",
-          "label": "ThaiPR.NET"
-        }
-      ]
-    },
-    {
-      "id": "cf0cbd79c901",
-      "brandName": "Lotteria ร้านเบอร์เกอร์เกาหลี โดน McDonald’s",
-      "companyName": "Lotteria ร้านเบอร์เกอร์เกาหลี โดน McDonald’s",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Lotteria ร้านเบอร์เกอร์เกาหลี โดน McDonald’s แย่งลูกค้า เลยเร่งขยายสาขาออกต่างประเทศ หนึ่งในนั้นคือไทย",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-06-25",
-      "whyNow": "Lotteria ร้านเบอร์เกอร์เกาหลี โดน McDonald’s แย่งลูกค้า เลยเร่งขยายสาขาออกต่างประเทศ หนึ่งในนั้นคือไทย",
-      "momentum": "Rising",
+      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-17",
+      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 71,
+      "score": 70,
       "scores": {
         "thailand_relevance": 14,
-        "buying_signal_strength": 18,
+        "buying_signal_strength": 19,
         "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 6,
+        "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
@@ -558,8 +587,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5rUU5LYll2cElKclFURmE0Rm9NdHowWVBzVVdUZktYekJMWWZMX3dlS3JPdkJjbHY1UWY1WGpVdDhGSmNwb1Z1REFyZDYzQ2xmbVhjLXdvT3JQNVpERG9NdF9zUTU3LXluVUdOOEktSTdBWUU?oc=5",
-          "label": "khaosod.co.th"
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
+          "label": "แนวหน้า"
         }
       ]
     },
@@ -593,39 +622,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82OVpzLVVWS3BNMWVmaDl6VGlEa2p2XzZzeFJqZFozTDAzYUplcFRJNWRVNFVLcXVhMHBnY0NoYmcwNTNsSkxxZHVhRTZSV056Ylhj?oc=5",
           "label": "Positioningmag"
-        }
-      ]
-    },
-    {
-      "id": "cf518af6e557",
-      "brandName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "companyName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-17",
-      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
-          "label": "แนวหน้า"
         }
       ]
     },
