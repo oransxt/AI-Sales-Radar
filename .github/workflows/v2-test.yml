@@ -1,0 +1,27 @@
+name: V2 Smoke Test
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          node --check docs/app.js
+          node --check docs/v2.js
+          cp apps-script/Code.gs /tmp/Code.js
+          node --check /tmp/Code.js
+      - name: Check V2 contract
+        run: |
+          grep -q "Credential_Library" apps-script/Code.gs
+          grep -q "Brand_Credential_Match" apps-script/Code.gs
+          grep -q "credential-selection" apps-script/Code.gs
+          grep -q "credential-upsert" apps-script/Code.gs
+          grep -q "Opportunity Prep" docs/v2.js
+          grep -q "Credential Library" docs/v2.js
+          grep -q "Available brands" docs/v2.js
