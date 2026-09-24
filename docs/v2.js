@@ -1,6 +1,7 @@
 // AI Sales Radar V2.0 extension — Opportunity Prep + Credential Library
 app.credentials = app.credentials || [];
 app.credentialMatches = app.credentialMatches || [];
+app.availableBrands = app.availableBrands || [];
 
 function v2CredentialTags(c){
   return String(c.Tags||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);
@@ -19,6 +20,38 @@ function v2CredentialScore(l,c){
   if(type==='Media Credentials') s+=7;
   return Math.min(100,s);
 }
+function v2BrandFromMaster(r){
+  return {
+    id:String(r.Brand_ID||''),
+    brandName:r.Brand_Name||'',
+    companyName:r.Company_Name||'',
+    industry:r.Industry||'',
+    brandType:r.Brand_Type||'',
+    buyingSignal:r.Last_Buying_Signal||'',
+    signalDate:r.Last_Signal_Date||'',
+    whyNow:r.Why_Now||'',
+    score:Number(r.Opportunity_Score||0),
+    priority:r.Priority||'',
+    revenueMinM:Number(r.Revenue_Min_M_THB||0),
+    revenueMaxM:Number(r.Revenue_Max_M_THB||0),
+    salesforceStatus:r.Salesforce_Status||'Available',
+    sources:[r.Primary_Source_URL].filter(Boolean)
+  };
+}
+async function v2LoadAvailableBrands(redraw){
+  if(redraw===undefined) redraw=true;
+  if(!apiKey()){ app.availableBrands=[]; if(redraw) render(); return; }
+  try{
+    const d=await apiGet('brands',{status:'Available',limit:500});
+    app.availableBrands=(d.data||[]).map(v2BrandFromMaster);
+    setConnection(true);
+  }catch(err){
+    app.availableBrands=[];
+    setConnection(false,err.message);
+  }
+  if(redraw) render();
+}
+
 function v2RecommendedCredentials(l){
   return (app.credentials||[])
     .filter(c=>String(c.Active).toLowerCase()!=='false')
@@ -49,7 +82,7 @@ async function v2LoadMatches(brandId){
   }
 }
 function v2OpportunityPrep(){
-  const avail=filtered(true);
+  const avail=(app.availableBrands||[]).slice().sort((a,b)=>(b.score||0)-(a.score||0));
   if(!app.selected||!avail.find(x=>x.id===app.selected)) app.selected=avail[0]?avail[0].id:null;
   const l=avail.find(x=>x.id===app.selected);
   $('#title').textContent='V2 OPPORTUNITY PREP';
@@ -183,7 +216,9 @@ document.addEventListener('click',async e=>{
   if(!b) return;
   app.view=b.dataset.view;
   if(app.view==='prep'){
+    await v2LoadAvailableBrands(false);
     await v2LoadCredentials(false);
+    if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected)) app.selected=app.availableBrands[0]?.id||null;
     await v2LoadMatches(app.selected);
   }else{
     await v2LoadCredentials(false);
