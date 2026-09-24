@@ -24,7 +24,7 @@
     "crg": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-09-24",
-      "timesDetected": 2,
+      "timesDetected": 3,
       "lastSignalHash": "9344aa9917",
       "lastSignal": "Major product launch"
     },
@@ -164,7 +164,7 @@
     "subway": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-09-24",
-      "timesDetected": 35,
+      "timesDetected": 36,
       "lastSignalHash": "55a5ad9eeb",
       "lastSignal": "Thailand market entry"
     },
@@ -227,7 +227,7 @@
     "ยืนยันรุ่นนี้": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-09-24",
-      "timesDetected": 14,
+      "timesDetected": 15,
       "lastSignalHash": "60d17af736",
       "lastSignal": "Major product launch"
     },
@@ -247,8 +247,8 @@
     },
     "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ saboten": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-23",
-      "timesDetected": 40,
+      "lastSeen": "2026-09-24",
+      "timesDetected": 41,
       "lastSignalHash": "426e8127ea",
       "lastSignal": "Major product launch"
     },
@@ -275,8 +275,8 @@
     },
     "launch": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-21",
-      "timesDetected": 6,
+      "lastSeen": "2026-09-24",
+      "timesDetected": 7,
       "lastSignalHash": "387fae8598",
       "lastSignal": "Major product launch"
     },
@@ -290,7 +290,7 @@
     "human made": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-09-24",
-      "timesDetected": 30,
+      "timesDetected": 31,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
@@ -465,7 +465,7 @@
     "เช็กอินด่วน": {
       "firstSeen": "2026-08-13",
       "lastSeen": "2026-09-24",
-      "timesDetected": 32,
+      "timesDetected": 33,
       "lastSignalHash": "2356c86cb1",
       "lastSignal": "Expansion / new branches"
     },
@@ -717,7 +717,7 @@
     "ก้าวใหม่ของวงการแฟชั่นและบิวตี้": {
       "firstSeen": "2026-08-18",
       "lastSeen": "2026-09-24",
-      "timesDetected": 12,
+      "timesDetected": 13,
       "lastSignalHash": "6d96d32fbe",
       "lastSignal": "Major product launch"
     },
@@ -1046,7 +1046,7 @@
     "shopee": {
       "firstSeen": "2026-08-25",
       "lastSeen": "2026-09-24",
-      "timesDetected": 17,
+      "timesDetected": 18,
       "lastSignalHash": "fed7904a9d",
       "lastSignal": "Major product launch"
     },
@@ -1326,7 +1326,7 @@
     "honda super-one ev": {
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-09-24",
-      "timesDetected": 18,
+      "timesDetected": 19,
       "lastSignalHash": "22ef3b1398",
       "lastSignal": "Major product launch"
     },
@@ -1459,7 +1459,7 @@
     "lepas": {
       "firstSeen": "2026-09-13",
       "lastSeen": "2026-09-24",
-      "timesDetected": 2,
+      "timesDetected": 3,
       "lastSignalHash": "3293142288",
       "lastSignal": "Major product launch"
     },
@@ -1514,8 +1514,8 @@
     },
     "คอลเกต เขย่าวงการ oral beauty": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-09-23",
-      "timesDetected": 6,
+      "lastSeen": "2026-09-24",
+      "timesDetected": 7,
       "lastSignalHash": "ecfc97e7a4",
       "lastSignal": "Major product launch"
     },
@@ -1536,7 +1536,7 @@
     "meta one": {
       "firstSeen": "2026-09-17",
       "lastSeen": "2026-09-24",
-      "timesDetected": 8,
+      "timesDetected": 9,
       "lastSignalHash": "40c88f836b",
       "lastSignal": "Thailand market entry"
     },
@@ -1550,21 +1550,21 @@
     "เย็นเย็น x thai coco": {
       "firstSeen": "2026-09-17",
       "lastSeen": "2026-09-24",
-      "timesDetected": 6,
+      "timesDetected": 7,
       "lastSignalHash": "8823195916",
       "lastSignal": "Major product launch"
     },
     "spyshot": {
       "firstSeen": "2026-09-17",
       "lastSeen": "2026-09-24",
-      "timesDetected": 2,
-      "lastSignalHash": "6f92c6d30b",
+      "timesDetected": 3,
+      "lastSignalHash": "0caebbed69",
       "lastSignal": "Major product launch"
     },
     "ซีพีแรม": {
       "firstSeen": "2026-09-18",
       "lastSeen": "2026-09-24",
-      "timesDetected": 2,
+      "timesDetected": 3,
       "lastSignalHash": "15dd008099",
       "lastSignal": "Major product launch"
     },
@@ -1592,7 +1592,7 @@
     "berwick": {
       "firstSeen": "2026-09-19",
       "lastSeen": "2026-09-24",
-      "timesDetected": 5,
+      "timesDetected": 6,
       "lastSignalHash": "f232e6058a",
       "lastSignal": "Expansion / new branches"
     },
@@ -1613,7 +1613,7 @@
     "li auto voyah": {
       "firstSeen": "2026-09-20",
       "lastSeen": "2026-09-24",
-      "timesDetected": 5,
+      "timesDetected": 6,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1627,8 +1627,8 @@
     "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ qsr": {
       "firstSeen": "2026-09-21",
       "lastSeen": "2026-09-24",
-      "timesDetected": 3,
-      "lastSignalHash": "6c1ec5632c",
+      "timesDetected": 4,
+      "lastSignalHash": "f134fbd02a",
       "lastSignal": "Major product launch"
     },
     "icaur v27 reev เอสยูวี": {
@@ -1669,7 +1669,7 @@
     "gnite": {
       "firstSeen": "2026-09-24",
       "lastSeen": "2026-09-24",
-      "timesDetected": 1,
+      "timesDetected": 2,
       "lastSignalHash": "6b30e0ee53",
       "lastSignal": "Expansion / new branches"
     },

@@ -1,59 +1,26 @@
 {
   "date": "2026-09-24",
-  "generatedAt": "2026-09-24T05:56:12.206Z",
+  "generatedAt": "2026-09-24T07:52:56.649Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
     {
-      "id": "3cf638e5bf29",
-      "brandName": "ห้างเซ็นทรัล",
-      "companyName": "ห้างเซ็นทรัล",
-      "industry": "Retail / Fashion",
+      "id": "09f59ec4bb80",
+      "brandName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "companyName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ห้างเซ็นทรัลจับมือ ชินเซเก ดันแบรนด์เกาหลีบุกไทย รับกระแส K-Culture",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-07-05",
-      "whyNow": "ห้างเซ็นทรัลจับมือ ชินเซเก ดันแบรนด์เกาหลีบุกไทย รับกระแส K-Culture",
+      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’ เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-21",
+      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’ เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 85,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HOT",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3ZWk0U2pMbm4yaThRelNfbk9KZnNtUnpvYWNGSUJjdW1BSWk3OW13WXh0TTdFNF93eHl4X2hfTXNnRHRSRU5Ud2xjT3dLd2NZTTNReEd3ZnhidERaZTBrQmVtVVQ5cGgxdFprWnFoSUs0R0g5?oc=5",
-          "label": "Thairath.co.th"
-        }
-      ]
-    },
-    {
-      "id": "2eea5f2edf64",
-      "brandName": "LEPAS",
-      "companyName": "LEPAS",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-27",
-      "whyNow": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 84,
+      "score": 82,
       "scores": {
         "thailand_relevance": 14,
         "buying_signal_strength": 19,
-        "revenue_potential": 18,
+        "revenue_potential": 16,
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
@@ -64,108 +31,9 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVTJOWHowOXItY3ptdWIzZU1iSlZiNWVRRzVSeF9OXzFFRG9FOF8yTUhTNFFTNy1QR19ZOXpIR2REdUVDY2NFR1M4NHA0aXNOZ0NyemcxTEM?oc=5",
-          "label": "workpointtoday.com"
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZSVZHLVVkN2ptOWM3dkJmdVowY2VaZFhoRndxcUhRUC0zM1BUdDZJUElpc2ZmaElNcVA0YU1Uam9HUmRaeTBSckUxUzBRcS1SeFZuZFVn?oc=5",
+          "label": "สยามรัฐ"
         },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EN3hlTGFQbExicnl6NVFTcnJMeTY3TUdkMmxLNVpic2tJZmtneE45X0dldEI5X3NXUmhxS2Fhb2o2MGVOakNSWTNNclFwa3NmNnZmMkJPaGt2QQ?oc=5",
-          "label": "Autospinn.com"
-        }
-      ]
-    },
-    {
-      "id": "a5168587ae7f",
-      "brandName": "Gnite",
-      "companyName": "Gnite",
-      "industry": "Travel / Airline",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "G'nite จับมือ Big C ดึงนักท่องเที่ยวทั่วโลก จากย่านราชดำริ ขยายสาขาสู่ทุกพื้นที่ท่องเที่ยวของไทย ภายใต้แนวคิด \"การพักที่ดีที่สุดคือการนอน\"",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-22",
-      "whyNow": "G'nite จับมือ Big C ดึงนักท่องเที่ยวทั่วโลก จากย่านราชดำริ ขยายสาขาสู่ทุกพื้นที่ท่องเที่ยวของไทย ภายใต้แนวคิด \"การพักที่ดีที่สุดคือการนอน\"",
-      "momentum": "Rising",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 83,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 18,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0RjVibUY4ZS0tNlVlV0FxZ0NSMmI0NzVWakd5d2hyaUluQmRoQkZyVlhtVktTRVdaTGZ2MjVTSXF1c1hJSWN2MFQzOVhIWXhiRzNFOU82MmFwdFRhYks4NlB1Zw?oc=5",
-          "label": "แนวหน้า"
-        }
-      ]
-    },
-    {
-      "id": "eea49eb4925b",
-      "brandName": "CRG",
-      "companyName": "CRG",
-      "industry": "Entertainment",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "'จากกระแส สู่สนามของธุรกิจเชน?' อ่านเกมตลาดมัตจะไทย เมื่อ CRG เปิดตัว 'I'M MATCHA' เริ่ม 95 บาท กับโอกาส ‘ขยายฐานคนดื่ม-เพิ่มตัวเลือกราคา’",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-23",
-      "whyNow": "'จากกระแส สู่สนามของธุรกิจเชน?' อ่านเกมตลาดมัตจะไทย เมื่อ CRG เปิดตัว 'I'M MATCHA' เริ่ม 95 บาท กับโอกาส ‘ขยายฐานคนดื่ม-เพิ่มตัวเลือกราคา’",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 82,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3RSR3E2NUtnaHVDVHBiRTY3dWRrbUI0Nkl2N3I2bmdYRkh0NTFpZ2pleDlISmwwckFKZVFCa0VjYk5ZdW1UX0MyWnBWbFkzel9DUmdiY3VjQ05fZVllS1hGYjJjMnJXOHBsaU1rVjRGT0dkcEJnTlpnR2hNQTFVR2dKVXRYNjlU?oc=5",
-          "label": "Marketing Oops!"
-        }
-      ]
-    },
-    {
-      "id": "09f59ec4bb80",
-      "brandName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
-      "companyName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-21",
-      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 80,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFME9IMkJ2OUs1Y2thUFJrejlEdWZtZzJwRWlocVhMRlNqT2VlQlhWTDNfeEVsUzVnWlZmV3N1VXJxYzkzRVhZeFVIV3E4VGp1?oc=5",
           "label": "ThaiPR.NET"
@@ -285,10 +153,10 @@
       "companyName": "Spyshot",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027",
+      "thailandEvidence": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027 - HeadLight Magazine -",
       "buyingSignal": "Major product launch",
       "signalDate": "2026-09-15",
-      "whyNow": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027",
+      "whyNow": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027 - HeadLight Magazine -",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -308,7 +176,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndpNUV1UUt3S1BsWDd6ckR3enMtcmZuN2x2cmJzUEtRc1dFZGRMVWN4aEpVaVZWMDFEdG1FZUNhc0E5TkUzMDlGVXFucEVjZ0o1WnphTWxoSXhmTGprMm1jQWxBQXJ0LXhKWWlrbW55bVVpNmNJOERyTmdabXpCU1duYkctV2Jy?oc=5",
-          "label": "headlightmag.com"
+          "label": "HeadLight Magazine -"
         }
       ]
     },
@@ -374,7 +242,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kNWs2R2tYR29hYzhTZVBhQ19qelVpUnVHSmVQTzRlVHEtZExVWkhkOWRIU2dVSW1XUHU5LU1KdUhJMUNxUzhZU2ZLSmY?oc=5",
-          "label": "Sanook.com"
+          "label": "Sanook"
         }
       ]
     },
@@ -445,35 +313,72 @@
       ]
     },
     {
-      "id": "93593e8fac94",
-      "brandName": "All-New Electric GLC",
-      "companyName": "All-New Electric GLC",
-      "industry": "Consumer / Other",
+      "id": "2eea5f2edf64",
+      "brandName": "LEPAS",
+      "companyName": "LEPAS",
+      "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "เปิดตัว All-New Electric GLC ขุมกำลังไฟฟ้าครั้งแรกในประเทศไทย- ราคา รอลุ้นปลายปีนี้",
+      "thailandEvidence": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-23",
-      "whyNow": "เปิดตัว All-New Electric GLC ขุมกำลังไฟฟ้าครั้งแรกในประเทศไทย- ราคา รอลุ้นปลายปีนี้",
+      "signalDate": "2026-07-27",
+      "whyNow": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
       "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 74,
       "scores": {
         "thailand_relevance": 14,
         "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
         "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVTJOWHowOXItY3ptdWIzZU1iSlZiNWVRRzVSeF9OXzFFRG9FOF8yTUhTNFFTNy1QR19ZOXpIR2REdUVDY2NFR1M4NHA0aXNOZ0NyemcxTEM?oc=5",
+          "label": "workpointtoday.com"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EN3hlTGFQbExicnl6NVFTcnJMeTY3TUdkMmxLNVpic2tJZmtneE45X0dldEI5X3NXUmhxS2Fhb2o2MGVOakNSWTNNclFwa3NmNnZmMkJPaGt2QQ?oc=5",
+          "label": "Autospinn.com"
+        }
+      ]
+    },
+    {
+      "id": "a5168587ae7f",
+      "brandName": "Gnite",
+      "companyName": "Gnite",
+      "industry": "Travel / Airline",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "G'nite จับมือ Big C ดึงนักท่องเที่ยวทั่วโลก จากย่านราชดำริ ขยายสาขาสู่ทุกพื้นที่ท่องเที่ยวของไทย ภายใต้แนวคิด \"การพักที่ดีที่สุดคือการนอน\"",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-22",
+      "whyNow": "G'nite จับมือ Big C ดึงนักท่องเที่ยวทั่วโลก จากย่านราชดำริ ขยายสาขาสู่ทุกพื้นที่ท่องเที่ยวของไทย ภายใต้แนวคิด \"การพักที่ดีที่สุดคือการนอน\"",
+      "momentum": "Rising",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 73,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 6,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": true,
+      "isNew": false,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNmZYdWtUanRQanhSM2s5dFlIc05FcGhrdmVLaVNMUHYzVXg5VTdKeTg1a0w5ZFduc2dYYUNHdGV0cmJUOVFtazRuSWoxS1ZRWEZ1QnhYV1VhZ25mdjRBSG13TEp3czMxY2hEOFF5a0VobEs4M0NaQm1ub0RaQTdGTEF0WFpENjlqTm8tc2RiZFVsOFBTLXQ2ZlpMSHNBX3JmTThj?oc=5",
-          "label": "grandprix.co.th"
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0RjVibUY4ZS0tNlVlV0FxZ0NSMmI0NzVWakd5d2hyaUluQmRoQkZyVlhtVktTRVdaTGZ2MjVTSXF1c1hJSWN2MFQzOVhIWXhiRzNFOU82MmFwdFRhYks4NlB1Zw?oc=5",
+          "label": "แนวหน้า"
         }
       ]
     },
@@ -507,6 +412,39 @@
         {
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hLUpaa1hnekZBU3BIQm5TRFl5N2R6Nlc4WHhISWs3QjZjS0FQblJGN3c0VEF5Z05TOXRIQktUWW5ZUklWVFZKLXlEc21nSk15VFNIbXFSUV82NnVnSHhLakVDVmpkVXMtSEF0SjV3?oc=5",
           "label": "CAR250"
+        }
+      ]
+    },
+    {
+      "id": "eea49eb4925b",
+      "brandName": "CRG",
+      "companyName": "CRG",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "'จากกระแส สู่สนามของธุรกิจเชน?' อ่านเกมตลาดมัตจะไทย เมื่อ CRG เปิดตัว 'I'M MATCHA' เริ่ม 95 บาท กับโอกาส ‘ขยายฐานคนดื่ม-เพิ่มตัวเลือกราคา’",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-23",
+      "whyNow": "'จากกระแส สู่สนามของธุรกิจเชน?' อ่านเกมตลาดมัตจะไทย เมื่อ CRG เปิดตัว 'I'M MATCHA' เริ่ม 95 บาท กับโอกาส ‘ขยายฐานคนดื่ม-เพิ่มตัวเลือกราคา’",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3RSR3E2NUtnaHVDVHBiRTY3dWRrbUI0Nkl2N3I2bmdYRkh0NTFpZ2pleDlISmwwckFKZVFCa0VjYk5ZdW1UX0MyWnBWbFkzel9DUmdiY3VjQ05fZVllS1hGYjJjMnJXOHBsaU1rVjRGT0dkcEJnTlpnR2hNQTFVR2dKVXRYNjlU?oc=5",
+          "label": "Marketing Oops!"
         }
       ]
     },
@@ -548,39 +486,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TN25DNXdQYkg2c3BBd200TjBCRW1QeXlzc1dIaFQ5UUVjSHJrZXI3dUtiVmQ5UXRiczVOa1NFYXJkLUxEZDR0MV9uX25YU1E5aFJZ?oc=5",
           "label": "เดลินิวส์"
-        }
-      ]
-    },
-    {
-      "id": "58911dfe37ba",
-      "brandName": "Funding Societies",
-      "companyName": "Funding Societies",
-      "industry": "Banking / Finance",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Funding Societies เร่งสินเชื่อธุรกิจสีเขียว หนุน SME ไทยขยายกิจการ",
-      "buyingSignal": "Funding / investment",
-      "signalDate": "2026-09-22",
-      "whyNow": "Funding Societies เร่งสินเชื่อธุรกิจสีเขียว หนุน SME ไทยขยายกิจการ",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 14,
-        "revenue_potential": 14,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 7,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iQUxiWEhETEFTTDdzWkZacUx4WkxOSmFiVHJyQ2ZqMzNFTTRIQjdic3JDenZDWVNETFFNMGE2dUdZTHUya0dBQzFkRnRaSWJlRzhjUw?oc=5",
-          "label": "posttoday"
         }
       ]
     },
@@ -679,7 +584,106 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE02RjhBM3BoX2dMMWxxR044aUZCNS15dTNCTnV6RVNnR3ZGbWtOQTRSSFI1LWR2bFFhdlB2RHBkNVlDTnF2bXAyczVCZWE?oc=5",
-          "label": "Sanook.com"
+          "label": "Sanook"
+        }
+      ]
+    },
+    {
+      "id": "34a044ea0884",
+      "brandName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
+      "companyName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ “Saboten” พลิกเกมใหญ่ในรอบ 18 ปี รีโนเวตร้าน-ดึงลูกค้ารุ่นใหม่ ทวงบัลลังก์ตลาดทงคัตสึเมืองไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-08",
+      "whyNow": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ “Saboten” พลิกเกมใหญ่ในรอบ 18 ปี รีโนเวตร้าน-ดึงลูกค้ารุ่นใหม่ ทวงบัลลังก์ตลาดทงคัตสึเมืองไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTlpOc3IxUTZQM0pfQ2tlSl9wYWJDSVV3cXUtYWtGN2Y0a0VMemdld05Jdjh4QTZXeW5tTlBoTmpyandicVEwOThoTUdRNnM2d09LNDczWmc3dzJDUmRtY0dhQlo1N1hFbzFqWVdMOVRESGRRcXA2S2N4OG0xSVo2N0prVUM2VWVpZFBqMkhWM05HUQ?oc=5",
+          "label": "Forbes Thailand"
+        }
+      ]
+    },
+    {
+      "id": "ea4990e48dfd",
+      "brandName": "คอลเกต เขย่าวงการ Oral Beauty",
+      "companyName": "คอลเกต เขย่าวงการ Oral Beauty",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "คอลเกต เขย่าวงการ Oral Beauty! เปิดตัวยาสีฟัน “Optic White™ Vitamin C” คว้า “j-hope แห่ง BTS” นั่งแท่นแอมบาสเดอร์เอเชียแปซิฟิกและประเทศไทย เสริมทัพด้วยเซเล็บรับเชิญ ‘ต้าอู๋ - นัท นิสามณี’ ในงาน Experiential Launch [PR]",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-18",
+      "whyNow": "คอลเกต เขย่าวงการ Oral Beauty! เปิดตัวยาสีฟัน “Optic White™ Vitamin C” คว้า “j-hope แห่ง BTS” นั่งแท่นแอมบาสเดอร์เอเชียแปซิฟิกและประเทศไทย เสริมทัพด้วยเซเล็บรับเชิญ ‘ต้าอู๋ - นัท นิสามณี’ ในงาน Experiential Launch [PR]",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rV3ZBdXVSMFQxSkJ1SDdXWl94QTBRZ0RjZFNLenZTWWRVZDd3SHVCVEEwOFNpWDE5OUlrbEd4QlJhbjl1RjdQc3pYMW5aVnc2VG4wSTZPMF9qc1JUWjRFcVVDNnRvVHNBdk1jSWdiaGtRWkVKUElJ?oc=5",
+          "label": "Brand Buffet"
+        }
+      ]
+    },
+    {
+      "id": "f7c91fefc9c3",
+      "brandName": "Launch",
+      "companyName": "Launch",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-03",
+      "whyNow": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZXUtbmdEWHE5MzVDT2ZQLTRyRi0yeE1ETE9DWC1GTDNQbWg4REJVOGxrLVhuTzZxTm1FOG9SeFRFTEh3ekgyZTZrUXplR0dSYnR5Qlln?oc=5",
+          "label": "มิติหุ้น"
         }
       ]
     }
