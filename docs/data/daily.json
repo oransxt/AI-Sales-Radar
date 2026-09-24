@@ -1,45 +1,8 @@
 {
   "date": "2026-09-24",
-  "generatedAt": "2026-09-24T07:52:56.649Z",
+  "generatedAt": "2026-09-24T07:54:24.053Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
-    {
-      "id": "09f59ec4bb80",
-      "brandName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
-      "companyName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’ เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-21",
-      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’ เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 82,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZSVZHLVVkN2ptOWM3dkJmdVowY2VaZFhoRndxcUhRUC0zM1BUdDZJUElpc2ZmaElNcVA0YU1Uam9HUmRaeTBSckUxUzBRcS1SeFZuZFVn?oc=5",
-          "label": "สยามรัฐ"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFME9IMkJ2OUs1Y2thUFJrejlEdWZtZzJwRWlocVhMRlNqT2VlQlhWTDNfeEVsUzVnWlZmV3N1VXJxYzkzRVhZeFVIV3E4VGp1?oc=5",
-          "label": "ThaiPR.NET"
-        }
-      ]
-    },
     {
       "id": "b26e5ebda152",
       "brandName": "Subway",
@@ -148,15 +111,15 @@
       ]
     },
     {
-      "id": "24da079badfd",
-      "brandName": "Spyshot",
-      "companyName": "Spyshot",
+      "id": "5059d640c770",
+      "brandName": "STRiPS",
+      "companyName": "STRiPS",
       "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027 - HeadLight Magazine -",
+      "thailandEvidence": "STRiPS วิตามินอัปเกรดชีวิตชาวเมือง แค่ฟอร์มเปลี่ยน ผลลัพธ์ก็เปลี่ยน ชวนคนรุ่นใหม่มารู้จัก STRiPS วิตามินรูปแบบออกฤทธิ์ไว แบรนด์แรกในไทย เอาใจไลฟ์สไตล์คนเมือง",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-15",
-      "whyNow": "Spyshot : Toyota bZ3X ทดสอบในไทย เตรียมเปิดตัวช่วงต้นปีหน้า 2027 - HeadLight Magazine -",
+      "signalDate": "2026-09-23",
+      "whyNow": "STRiPS วิตามินอัปเกรดชีวิตชาวเมือง แค่ฟอร์มเปลี่ยน ผลลัพธ์ก็เปลี่ยน ชวนคนรุ่นใหม่มารู้จัก STRiPS วิตามินรูปแบบออกฤทธิ์ไว แบรนด์แรกในไทย เอาใจไลฟ์สไตล์คนเมือง",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
@@ -171,12 +134,12 @@
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
+      "isNew": true,
+      "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMndpNUV1UUt3S1BsWDd6ckR3enMtcmZuN2x2cmJzUEtRc1dFZGRMVWN4aEpVaVZWMDFEdG1FZUNhc0E5TkUzMDlGVXFucEVjZ0o1WnphTWxoSXhmTGprMm1jQWxBQXJ0LXhKWWlrbW55bVVpNmNJOERyTmdabXpCU1duYkctV2Jy?oc=5",
-          "label": "HeadLight Magazine -"
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XZ0ozSWZlRmNRR3MxbFRXbU9CTTBZamRhaV9VQTgwdnFidUd5Rk8xY0tMc0xUYXJnc2o5d2c4WEpzUGZFdVJJMXhHbVVrSWp2b2pYT2VFX0g3WWFqc0pSYTJubEt0MUk?oc=5",
+          "label": "mgronline.com"
         }
       ]
     },
@@ -308,7 +271,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
-          "label": "Brand Inside"
+          "label": "brandinside.asia"
         }
       ]
     },
@@ -383,6 +346,39 @@
       ]
     },
     {
+      "id": "33652359b31f",
+      "brandName": "GAC AION Thailand เปิดจำหน่าย",
+      "companyName": "GAC AION Thailand เปิดจำหน่าย",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "GAC AION Thailand เปิดจำหน่าย GAC GN8 PHEV ราคาเริ่มต้น 2.199 ล้านบาท พร้อมแคมเปญพิเศษช่วงเปิดตัว และบริการหลังการขายระดับพรีเมียม",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-03",
+      "whyNow": "GAC AION Thailand เปิดจำหน่าย GAC GN8 PHEV ราคาเริ่มต้น 2.199 ล้านบาท พร้อมแคมเปญพิเศษช่วงเปิดตัว และบริการหลังการขายระดับพรีเมียม",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 73,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pUWFkM0Q3ZzhQUlQ0Tnh4OE1BR0ZQVEhiMUs5NktwR3dBSDJINmVKc0xVRmJ0NEhDRkdMTmctak9zN2JnOTk4ZlFFQXUwX2prMHllNjlDTWJWM3ZYR25MRlpIYXZxR3dSM3BjRg?oc=5",
+          "label": "iMoD"
+        }
+      ]
+    },
+    {
       "id": "4b626815afcd",
       "brandName": "ยืนยันรุ่นนี้",
       "companyName": "ยืนยันรุ่นนี้",
@@ -444,7 +440,44 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3RSR3E2NUtnaHVDVHBiRTY3dWRrbUI0Nkl2N3I2bmdYRkh0NTFpZ2pleDlISmwwckFKZVFCa0VjYk5ZdW1UX0MyWnBWbFkzel9DUmdiY3VjQ05fZVllS1hGYjJjMnJXOHBsaU1rVjRGT0dkcEJnTlpnR2hNQTFVR2dKVXRYNjlU?oc=5",
-          "label": "Marketing Oops!"
+          "label": "marketingoops.com"
+        }
+      ]
+    },
+    {
+      "id": "09f59ec4bb80",
+      "brandName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "companyName": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’ เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-21",
+      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’ เดินเกม ‘ICON x ICON’ ผสานพลัง Global Brand กับ K-Culture",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZSVZHLVVkN2ptOWM3dkJmdVowY2VaZFhoRndxcUhRUC0zM1BUdDZJUElpc2ZmaElNcVA0YU1Uam9HUmRaeTBSckUxUzBRcS1SeFZuZFVn?oc=5",
+          "label": "สยามรัฐ"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFME9IMkJ2OUs1Y2thUFJrejlEdWZtZzJwRWlocVhMRlNqT2VlQlhWTDNfeEVsUzVnWlZmV3N1VXJxYzkzRVhZeFVIV3E4VGp1?oc=5",
+          "label": "ThaiPR.NET"
         }
       ]
     },
@@ -481,7 +514,7 @@
         },
         {
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE95QjhaaW9pZllINXVzRzVQTWxoRzkyNFZCYVY4cWRLZGhGV1V0aFR0elh4c0QzRVl2NEdSUEx1UHEzeGdnVDFiMkl3OVM2RDRsTVZTWllZcVotX29BREdoZFZUTnVHSG9QLWlKUXo1S3lxQ2g1VFRtdUdDaFI?oc=5",
-          "label": "Brand Inside"
+          "label": "brandinside.asia"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TN25DNXdQYkg2c3BBd200TjBCRW1QeXlzc1dIaFQ5UUVjSHJrZXI3dUtiVmQ5UXRiczVOa1NFYXJkLUxEZDR0MV9uX25YU1E5aFJZ?oc=5",
@@ -651,39 +684,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rV3ZBdXVSMFQxSkJ1SDdXWl94QTBRZ0RjZFNLenZTWWRVZDd3SHVCVEEwOFNpWDE5OUlrbEd4QlJhbjl1RjdQc3pYMW5aVnc2VG4wSTZPMF9qc1JUWjRFcVVDNnRvVHNBdk1jSWdiaGtRWkVKUElJ?oc=5",
           "label": "Brand Buffet"
-        }
-      ]
-    },
-    {
-      "id": "f7c91fefc9c3",
-      "brandName": "Launch",
-      "companyName": "Launch",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-03",
-      "whyNow": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZXUtbmdEWHE5MzVDT2ZQLTRyRi0yeE1ETE9DWC1GTDNQbWg4REJVOGxrLVhuTzZxTm1FOG9SeFRFTEh3ekgyZTZrUXplR0dSYnR5Qlln?oc=5",
-          "label": "มิติหุ้น"
         }
       ]
     }
