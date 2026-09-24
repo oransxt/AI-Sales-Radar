@@ -1,11 +1,13 @@
 const RADAR = {
-  version: '1.9.5',
+  version: '2.0',
   spreadsheetId: '1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo',
   sheets: {
     brands: 'Brand_Master',
     activity: 'Activity_Log',
     radar: 'Daily_Radar',
-    config: 'Config'
+    config: 'Config',
+    credentials: 'Credential_Library',
+    credentialMatches: 'Brand_Credential_Match'
   },
   statuses: ['Not Checked', 'Available', 'Has Owner', 'Existing Client', 'Skip'],
   activityTypes: ['MASTER_IMPORT', 'RADAR_DETECTED', 'SIGNAL_UPDATED', 'STATUS_CHANGED', 'CREDENTIAL_SELECTED', 'NOTE_ADDED', 'QUALIFIED', 'PROPOSAL', 'WON', 'LOST']
@@ -17,6 +19,8 @@ function onOpen() {
     .addItem('Setup API Bridge', 'setupBridge')
     .addItem('Rotate API Key', 'rotateApiKey')
     .addItem('Show Web App URL', 'showWebAppUrl')
+    .addSeparator()
+    .addItem('Setup V2 Credential Sheets', 'setupV2Sheets')
     .addToUi();
 }
 
@@ -31,6 +35,7 @@ function setupBridge() {
   upsertConfig_('Data Layer Version', RADAR.version);
   upsertConfig_('API Bridge', 'Google Apps Script');
   upsertConfig_('API Bridge Status', 'Configured - deploy as Web App');
+  ensureV2Sheets_();
   Logger.log('RADAR_API_KEY: ' + key);
   Logger.log('Web App URL after deployment: ' + (ScriptApp.getService().getUrl() || 'Not deployed yet'));
   return { ok: true, version: RADAR.version, apiKey: key, webAppUrl: ScriptApp.getService().getUrl() || '' };
@@ -66,6 +71,12 @@ function doGet(e) {
     if (action === 'activities') {
       return json_({ ok: true, data: getActivities_(p.brandId || '', Number(p.limit || 200)) });
     }
+    if (action === 'credentials') {
+      return json_({ ok: true, data: getCredentials_(p.type || '', p.industry || '', p.active || 'true') });
+    }
+    if (action === 'credential-matches') {
+      return json_({ ok: true, data: getCredentialMatches_(p.brandId || '') });
+    }
     return json_({ ok: false, error: 'Unknown action: ' + action }, 400);
   } catch (err) {
     return json_({ ok: false, error: err.message }, 500);
@@ -87,10 +98,212 @@ function doPost(e) {
     if (action === 'sync-radar') {
       return json_({ ok: true, data: syncRadar_(body) });
     }
+    if (action === 'credential-upsert') {
+      return json_({ ok: true, data: upsertCredential_(body) });
+    }
+    if (action === 'credential-selection') {
+      return json_({ ok: true, data: saveCredentialSelection_(body) });
+    }
     return json_({ ok: false, error: 'Unknown action: ' + action }, 400);
   } catch (err) {
     return json_({ ok: false, error: err.message }, 500);
   }
+}
+
+
+function setupV2Sheets() {
+  ensureV2Sheets_();
+  upsertConfig_('V2 Data Layer', 'Credential_Library + Brand_Credential_Match');
+  upsertConfig_('V2 Version', RADAR.version);
+  SpreadsheetApp.getUi().alert(
+    'AI Sales Radar V2',
+    'Credential_Library and Brand_Credential_Match are ready.',
+    SpreadsheetApp.getUi().ButtonSet.OK
+  );
+}
+
+function ensureV2Sheets_() {
+  ensureSheet_(RADAR.sheets.credentials, [
+    'Credential_ID','Credential_Name','Credential_Type','Industry','Tags',
+    'Google_Drive_URL','Active','Date_Added','Last_Updated'
+  ]);
+  ensureSheet_(RADAR.sheets.credentialMatches, [
+    'Match_ID','Brand_ID','Brand_Name','Credential_ID','Credential_Name',
+    'Match_Score','AI_Recommended','Selected_By_User','Selected_At','Notes'
+  ]);
+}
+
+function ensureSheet_(name, headers) {
+  const ss = getSpreadsheet_();
+  let sheet = ss.getSheetByName(name);
+  if (!sheet) sheet = ss.insertSheet(name);
+  const lastCol = Math.max(sheet.getLastColumn(), headers.length);
+  if (sheet.getLastRow() === 0) {
+    sheet.getRange(1,1,1,headers.length).setValues([headers]);
+    sheet.setFrozenRows(1);
+    return sheet;
+  }
+  const existing = sheet.getRange(1,1,1,lastCol).getDisplayValues()[0];
+  headers.forEach((h,i) => {
+    if (String(existing[i] || '').trim() !== h) sheet.getRange(1,i+1).setValue(h);
+  });
+  sheet.setFrozenRows(1);
+  return sheet;
+}
+
+function getCredentials_(typeFilter, industryFilter, activeFilter) {
+  ensureV2Sheets_();
+  let rows = readObjects_(RADAR.sheets.credentials);
+  if (String(activeFilter).toLowerCase() !== 'all') {
+    const wantActive = String(activeFilter).toLowerCase() !== 'false';
+    rows = rows.filter(r => truthyValue_(r.Active) === wantActive);
+  }
+  if (typeFilter) rows = rows.filter(r => normalize_(r.Credential_Type) === normalize_(typeFilter));
+  if (industryFilter) {
+    const ind = normalize_(industryFilter);
+    rows = rows.filter(r => {
+      const ci = normalize_(r.Industry);
+      return !ci || ci === 'all' || ci === ind || ci.includes(ind) || ind.includes(ci);
+    });
+  }
+  return rows;
+}
+
+function getCredentialMatches_(brandId) {
+  ensureV2Sheets_();
+  let rows = readObjects_(RADAR.sheets.credentialMatches);
+  if (brandId) rows = rows.filter(r => String(r.Brand_ID) === String(brandId));
+  rows.reverse();
+  return rows;
+}
+
+function upsertCredential_(body) {
+  ensureV2Sheets_();
+  const sheet = getSpreadsheet_().getSheetByName(RADAR.sheets.credentials);
+  const data = valuesWithHeaders_(sheet);
+  const name = String(body.name || body.credentialName || '').trim();
+  const type = String(body.type || body.credentialType || '').trim();
+  const allowedTypes = ['Industry Overview','Case Study','New Launches','Media Credentials'];
+  if (!name) throw new Error('Credential name is required');
+  if (!allowedTypes.includes(type)) throw new Error('Invalid credential type');
+  const url = String(body.driveUrl || body.googleDriveUrl || '').trim();
+  if (!url) throw new Error('Google Drive URL is required');
+
+  let rowIndex = -1;
+  let id = String(body.credentialId || '').trim();
+  if (id && data.map.Credential_ID !== undefined) {
+    rowIndex = findRowByValue_(data.values, data.map.Credential_ID, id);
+  }
+  if (rowIndex < 2) {
+    id = nextCredentialId_(data.values, data.map.Credential_ID);
+    const row = new Array(data.headers.length).fill('');
+    setByHeader_(row,data.map,'Credential_ID',id);
+    setByHeader_(row,data.map,'Credential_Name',name);
+    setByHeader_(row,data.map,'Credential_Type',type);
+    setByHeader_(row,data.map,'Industry',body.industry || '');
+    setByHeader_(row,data.map,'Tags',body.tags || '');
+    setByHeader_(row,data.map,'Google_Drive_URL',url);
+    setByHeader_(row,data.map,'Active',body.active === false ? false : true);
+    setByHeader_(row,data.map,'Date_Added',now_());
+    setByHeader_(row,data.map,'Last_Updated',now_());
+    sheet.appendRow(row);
+  } else {
+    setCellByHeader_(sheet,rowIndex,data.map,'Credential_Name',name);
+    setCellByHeader_(sheet,rowIndex,data.map,'Credential_Type',type);
+    setCellByHeader_(sheet,rowIndex,data.map,'Industry',body.industry || '');
+    setCellByHeader_(sheet,rowIndex,data.map,'Tags',body.tags || '');
+    setCellByHeader_(sheet,rowIndex,data.map,'Google_Drive_URL',url);
+    setCellByHeader_(sheet,rowIndex,data.map,'Active',body.active === false ? false : true);
+    setCellByHeader_(sheet,rowIndex,data.map,'Last_Updated',now_());
+  }
+  return { credentialId:id, credentialName:name, credentialType:type };
+}
+
+function saveCredentialSelection_(body) {
+  ensureV2Sheets_();
+  const brandId = String(body.brandId || '').trim();
+  if (!brandId) throw new Error('brandId is required');
+  const brand = findBrand_(brandId);
+  if (!brand) throw new Error('Brand not found: ' + brandId);
+  if (String(brand.Salesforce_Status || '') !== 'Available') {
+    throw new Error('Credential selection is allowed only for Available brands');
+  }
+
+  const selectedIds = Array.isArray(body.credentialIds) ? body.credentialIds.map(String) : [];
+  const scores = body.matchScores || {};
+  const recommended = new Set((body.recommendedIds || []).map(String));
+  const credentials = getCredentials_('', '', 'all');
+  const credById = {};
+  credentials.forEach(c => credById[String(c.Credential_ID)] = c);
+
+  const sheet = getSpreadsheet_().getSheetByName(RADAR.sheets.credentialMatches);
+  const data = valuesWithHeaders_(sheet);
+  const existingByCredential = {};
+  for (let r=1; r<data.values.length; r++) {
+    if (String(data.values[r][data.map.Brand_ID]) === brandId) {
+      existingByCredential[String(data.values[r][data.map.Credential_ID])] = r + 1;
+    }
+  }
+
+  Object.keys(existingByCredential).forEach(cid => {
+    const row = existingByCredential[cid];
+    setCellByHeader_(sheet,row,data.map,'Selected_By_User',selectedIds.includes(cid));
+    if (selectedIds.includes(cid)) setCellByHeader_(sheet,row,data.map,'Selected_At',now_());
+  });
+
+  selectedIds.forEach(cid => {
+    const cred = credById[cid];
+    if (!cred) return;
+    const existingRow = existingByCredential[cid];
+    if (existingRow) {
+      setCellByHeader_(sheet,existingRow,data.map,'Credential_Name',cred.Credential_Name || '');
+      setCellByHeader_(sheet,existingRow,data.map,'Match_Score',Number(scores[cid] || 0));
+      setCellByHeader_(sheet,existingRow,data.map,'AI_Recommended',recommended.has(cid));
+      setCellByHeader_(sheet,existingRow,data.map,'Selected_By_User',true);
+      setCellByHeader_(sheet,existingRow,data.map,'Selected_At',now_());
+    } else {
+      const row = new Array(data.headers.length).fill('');
+      setByHeader_(row,data.map,'Match_ID','M-' + Utilities.getUuid().slice(0,8));
+      setByHeader_(row,data.map,'Brand_ID',brandId);
+      setByHeader_(row,data.map,'Brand_Name',brand.Brand_Name || '');
+      setByHeader_(row,data.map,'Credential_ID',cid);
+      setByHeader_(row,data.map,'Credential_Name',cred.Credential_Name || '');
+      setByHeader_(row,data.map,'Match_Score',Number(scores[cid] || 0));
+      setByHeader_(row,data.map,'AI_Recommended',recommended.has(cid));
+      setByHeader_(row,data.map,'Selected_By_User',true);
+      setByHeader_(row,data.map,'Selected_At',now_());
+      setByHeader_(row,data.map,'Notes',body.notes || '');
+      sheet.appendRow(row);
+    }
+  });
+
+  const names = selectedIds.map(id => credById[id]?.Credential_Name).filter(Boolean);
+  appendActivity_({
+    brandId,
+    brandName: brand.Brand_Name || brandId,
+    type: 'CREDENTIAL_SELECTED',
+    newStatus: brand.Salesforce_Status || 'Available',
+    details: names.length ? ('Selected credentials: ' + names.join(' | ')) : 'Credential selection cleared',
+    origin: body.origin || 'V2 Opportunity Prep',
+    createdBy: body.createdBy || 'AI Sales Radar V2'
+  });
+
+  return { brandId, selectedCount:selectedIds.length, selectedCredentialIds:selectedIds };
+}
+
+function nextCredentialId_(values, idCol) {
+  let max = 0;
+  if (idCol === undefined) return 'CRD0001';
+  for (let r=1; r<values.length; r++) {
+    const m = String(values[r][idCol] || '').match(/CRD(\d+)/i);
+    if (m) max = Math.max(max, Number(m[1]));
+  }
+  return 'CRD' + String(max + 1).padStart(4,'0');
+}
+
+function truthyValue_(v) {
+  const s = String(v ?? '').toLowerCase().trim();
+  return v === true || ['true','yes','1','active'].includes(s);
 }
 
 function getDailyRadar_(dateFilter, statusFilter) {
