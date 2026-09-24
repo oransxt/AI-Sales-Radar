@@ -2,6 +2,7 @@
 app.credentials = app.credentials || [];
 app.credentialMatches = app.credentialMatches || [];
 app.availableBrands = app.availableBrands || [];
+app.credentialPreview = app.credentialPreview || null;
 
 function v2CredentialTags(c){
   return String(c.Tags||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);
@@ -166,40 +167,101 @@ function v2OpportunityPrep(){
 }
 function v2CredentialLibrary(){
   $('#title').textContent='CREDENTIAL LIBRARY';
-  $('#subtitle').textContent='Google Drive links for V2 matching';
+  $('#subtitle').textContent='Paste one Google Drive link → analyze → review → save';
+
+  const p=app.credentialPreview;
+  const typeOptions=['Industry Overview','Case Study','New Launches','Media Credentials'];
+  const preview=p ? (
+    '<div class="smart-preview">'+
+      '<div class="smart-preview-head"><div><span class="badge">ANALYZED</span><h3>'+esc(p.fileName||p.credentialName||'Credential')+'</h3>'+
+      '<div class="sub">'+esc(p.analysisSource||'')+' · Confidence '+esc(p.confidence||0)+'/100</div></div>'+
+      '<div class="smart-status '+(p.active?'active':'inactive')+'">'+(p.active?'ACTIVE':'INACTIVE')+'</div></div>'+
+      '<div class="smart-grid">'+
+        '<label>Credential Name<input id="previewName" value="'+esc(p.credentialName||p.fileName||'')+'"></label>'+
+        '<label>Credential Type<select id="previewType">'+typeOptions.map(t=>'<option '+(p.credentialType===t?'selected':'')+'>'+t+'</option>').join('')+'</select></label>'+
+        '<label>Industry<input id="previewIndustry" value="'+esc(p.industry||'')+'"></label>'+
+        '<label class="wide">Tags<input id="previewTags" value="'+esc(p.tags||'')+'"></label>'+
+      '</div>'+
+      '<div class="smart-meta">'+
+        '<div><span>Source modified</span><strong>'+esc(p.sourceLastModified||'—')+'</strong></div>'+
+        '<div><span>Date added</span><strong>Auto on save</strong></div>'+
+        '<div><span>Record updated</span><strong>Auto on save</strong></div>'+
+        '<div><span>File type</span><strong>'+esc(p.mimeType||'—')+'</strong></div>'+
+      '</div>'+
+      '<div class="settings-actions"><button class="btn primary" id="confirmCredential">Confirm & Add</button><button class="btn" id="reanalyzeCredential">Re-analyze</button><button class="btn" id="cancelCredentialPreview">Cancel</button></div>'+
+    '</div>'
+  ) : '';
+
   const body=(app.credentials||[]).map(c=>
-    '<tr><td><div class="brand-name">'+esc(c.Credential_Name)+'</div></td>'+
+    '<tr><td><div class="brand-name">'+esc(c.Credential_Name)+'</div><div class="sub">'+esc(c.Analysis_Source||'')+'</div></td>'+
     '<td>'+esc(c.Credential_Type)+'</td>'+
     '<td>'+esc(c.Industry)+'</td>'+
     '<td>'+esc(c.Tags)+'</td>'+
+    '<td><span class="smart-status '+(String(c.Active).toLowerCase()==='true'?'active':'inactive')+'">'+(String(c.Active).toLowerCase()==='true'?'ACTIVE':'INACTIVE')+'</span></td>'+
+    '<td>'+esc(c.Source_Last_Modified||'—')+'</td>'+
+    '<td>'+esc(c.Last_Updated||'—')+'</td>'+
     '<td>'+(c.Google_Drive_URL?'<a class="link" target="_blank" rel="noopener" href="'+esc(c.Google_Drive_URL)+'">Open ↗</a>':'')+'</td></tr>'
   ).join('');
+
   $('#content').innerHTML=
-    '<div class="full-panel"><div class="notice good">4 types: Industry Overview · Case Study · New Launches · Media Credentials</div>'+
-    '<div class="credential-form">'+
-      '<select id="credType"><option>Industry Overview</option><option>Case Study</option><option>New Launches</option><option>Media Credentials</option></select>'+
-      '<input id="credName" placeholder="Credential name">'+
-      '<input id="credIndustry" placeholder="Industry e.g. Automotive">'+
-      '<input id="credTags" placeholder="Tags comma-separated">'+
-      '<input id="credUrl" placeholder="Google Drive URL">'+
-      '<button class="btn primary" id="addCredential">Add Credential</button>'+
-    '</div>'+
-    '<div class="table-wrap v2-table"><table><thead><tr><th>Name</th><th>Type</th><th>Industry</th><th>Tags</th><th>Drive</th></tr></thead><tbody>'+body+'</tbody></table></div></div>';
-  $('#addCredential').onclick=async()=>{
+    '<div class="full-panel">'+
+      '<div class="smart-intake">'+
+        '<div><span class="next-stage-badge">V2.0.1 · SMART INTAKE</span><h3>Paste Google Drive Link</h3>'+
+        '<div class="sub">System reads Drive metadata and, for native Google Docs / Slides / Sheets, available text content. You review before saving.</div></div>'+
+        '<div class="smart-url-row"><input id="smartDriveUrl" placeholder="https://drive.google.com/..."><button class="btn primary" id="analyzeCredential">Analyze Link</button></div>'+
+      '</div>'+
+      preview+
+      '<div class="section"><div class="filters"><strong>Credential Library</strong><div class="spacer"></div><span class="sub">'+(app.credentials||[]).length+' active credentials</span></div>'+
+      '<div class="table-wrap v2-table"><table><thead><tr><th>Name</th><th>Type</th><th>Industry</th><th>Tags</th><th>Active</th><th>Source Modified</th><th>Record Updated</th><th>Drive</th></tr></thead><tbody>'+body+'</tbody></table></div></div>'+
+    '</div>';
+
+  const analyze=async(url)=>{
+    const driveUrl=String(url||'').trim();
+    if(!driveUrl){ alert('Paste a Google Drive file URL first.'); return; }
+    const btn=$('#analyzeCredential');
+    if(btn){ btn.disabled=true; btn.textContent='Analyzing…'; }
+    try{
+      const d=await apiPost('credential-analyze',{driveUrl:driveUrl});
+      app.credentialPreview=d.data||null;
+      v2CredentialLibrary();
+    }catch(err){
+      alert('Analyze failed: '+err.message);
+      if(btn){ btn.disabled=false; btn.textContent='Analyze Link'; }
+    }
+  };
+
+  $('#analyzeCredential').onclick=()=>analyze($('#smartDriveUrl').value);
+  const re=$('#reanalyzeCredential');
+  if(re) re.onclick=()=>analyze(app.credentialPreview?.driveUrl||'');
+  const cancel=$('#cancelCredentialPreview');
+  if(cancel) cancel.onclick=()=>{app.credentialPreview=null;v2CredentialLibrary();};
+
+  const confirm=$('#confirmCredential');
+  if(confirm) confirm.onclick=async()=>{
     const payload={
-      type:$('#credType').value,
-      name:$('#credName').value.trim(),
-      industry:$('#credIndustry').value.trim(),
-      tags:$('#credTags').value.trim(),
-      driveUrl:$('#credUrl').value.trim(),
-      active:true
+      type:$('#previewType').value,
+      name:$('#previewName').value.trim(),
+      industry:$('#previewIndustry').value.trim(),
+      tags:$('#previewTags').value.trim(),
+      driveUrl:p.driveUrl,
+      sourceLastModified:p.sourceLastModified||'',
+      analysisSource:p.analysisSource||'',
+      mimeType:p.mimeType||'',
+      fileId:p.fileId||''
     };
-    if(!payload.name||!payload.driveUrl){ alert('Credential name and Google Drive URL are required.'); return; }
+    if(!payload.name||!payload.driveUrl){alert('Credential name and Drive URL are required.');return;}
+    confirm.disabled=true;
+    confirm.textContent='Saving…';
     try{
       await apiPost('credential-upsert',payload);
+      app.credentialPreview=null;
       await v2LoadCredentials(false);
       v2CredentialLibrary();
-    }catch(err){ alert('Save failed: '+err.message); }
+    }catch(err){
+      confirm.disabled=false;
+      confirm.textContent='Confirm & Add';
+      alert('Save failed: '+err.message);
+    }
   };
 }
 
