@@ -92,8 +92,10 @@ function v2OpportunityPrep(){
     return;
   }
 
+  const savedMatches=(app.credentialMatches||[]);
+  const hasSavedSelection=savedMatches.length>0;
   const priorSelected=new Set(
-    (app.credentialMatches||[])
+    savedMatches
       .filter(x=>String(x.Selected_By_User).toLowerCase()==='true')
       .map(x=>String(x.Credential_ID))
   );
@@ -110,7 +112,7 @@ function v2OpportunityPrep(){
 
   const credRows=recs.length ? recs.map(c=>{
     const id=String(c.Credential_ID||'');
-    const checked=priorSelected.has(id)||topIds.has(id);
+    const checked=hasSavedSelection ? priorSelected.has(id) : topIds.has(id);
     return '<label class="credential-item">'+
       '<input type="checkbox" data-cred="'+esc(id)+'" '+(checked?'checked':'')+'>'+
       '<div><div class="credential-name">'+esc(c.Credential_Name)+'</div>'+
