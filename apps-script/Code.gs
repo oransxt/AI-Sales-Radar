@@ -258,27 +258,58 @@ function extractDriveCredentialText_(fileId, mimeType) {
   return { text: '', source: 'Google Drive metadata + file name' };
 }
 
+function containsKeyword_(normalizedText, keyword) {
+  const s = String(normalizedText || '');
+  const k = normalize_(keyword);
+  if (!k) return false;
+  const hasThai = /[\u0E00-\u0E7F]/.test(k);
+  if (hasThai || /[\s\/-]/.test(k) || k.length > 4) return s.includes(k);
+  const escaped = k.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
+  return new RegExp('(^|[^a-z0-9])' + escaped + '([^a-z0-9]|$)', 'i').test(s);
+}
+
+function scoreKeywords_(s, weightedWords) {
+  return weightedWords.reduce((sum, pair) => sum + (containsKeyword_(s, pair[0]) ? pair[1] : 0), 0);
+}
+
 function classifyCredential_(text) {
   const raw = String(text || '');
   const s = normalize_(raw);
 
   const typeRules = [
-    { type: 'Case Study', words: ['case study','case-study','campaign result','campaign results','result','results','effectiveness','success story','กรณีศึกษา','ผลลัพธ์'] },
-    { type: 'New Launches', words: ['new launch','launch','new product','new media','new format','new site','opening','เปิดตัว','สินค้าใหม่','สื่อใหม่'] },
-    { type: 'Industry Overview', words: ['industry overview','market overview','market trend','trend report','consumer insight','category overview','industry','market','overview','insight','ภาพรวมอุตสาหกรรม','เทรนด์','อินไซต์'] },
-    { type: 'Media Credentials', words: ['media credential','media credentials','credential','media kit','rate card','ratecard','inventory','network','billboard','dooh','ooh','plan b tv','signature max','the 20','cookies','bts','transit','airport','ข้อมูลสื่อ','เรทการ์ด'] }
+    { type:'Case Study', words:[
+      ['case study',6],['case-study',6],['กรณีศึกษา',6],
+      ['campaign result',4],['campaign results',4],['effectiveness',3],
+      ['success story',3],['ผลลัพธ์',3],['campaign',1],['results',2],['result',2]
+    ]},
+    { type:'New Launches', words:[
+      ['new launch',6],['new product',5],['สินค้าใหม่',5],['เปิดตัว',4],
+      ['new media',4],['new format',4],['new site',3],['opening',2],['launch',2]
+    ]},
+    { type:'Industry Overview', words:[
+      ['industry overview',6],['market overview',6],['category overview',5],
+      ['trend report',4],['consumer insight',4],['ภาพรวมอุตสาหกรรม',6],
+      ['เทรนด์',3],['อินไซต์',3],['overview',2],['insight',2],['trend',2]
+    ]},
+    { type:'Media Credentials', words:[
+      ['media credential',7],['media credentials',7],['credential',5],
+      ['media kit',5],['rate card',6],['ratecard',6],['ข้อมูลสื่อ',5],['เรทการ์ด',6],
+      ['inventory',3],['screen network',3],['media network',3],['network',1],
+      ['billboard',1],['dooh',1],['ooh',1],['plan b tv',2],['signature max',2],
+      ['the 20',2],['cookies',2],['bts',1],['transit',1],['airport',1]
+    ]}
   ];
 
   let credentialType = 'Media Credentials';
-  let bestTypeScore = 0;
+  let bestTypeScore = -1;
   typeRules.forEach(rule => {
-    let score = 0;
-    rule.words.forEach(w => { if (s.includes(normalize_(w))) score += 1; });
+    const score = scoreKeywords_(s, rule.words);
     if (score > bestTypeScore) {
       bestTypeScore = score;
       credentialType = rule.type;
     }
   });
+  if (bestTypeScore <= 0) credentialType = 'Media Credentials';
 
   const industries = [
     { name:'Automotive', words:['automotive','auto','car','cars','vehicle','ev','electric vehicle','รถยนต์','รถไฟฟ้า'] },
@@ -300,7 +331,7 @@ function classifyCredential_(text) {
   let bestIndustryScore = 0;
   industries.forEach(rule => {
     let score = 0;
-    rule.words.forEach(w => { if (s.includes(normalize_(w))) score += 1; });
+    rule.words.forEach(w => { if (containsKeyword_(s, w)) score += 1; });
     if (score > bestIndustryScore) {
       bestIndustryScore = score;
       industry = rule.name;
@@ -335,13 +366,13 @@ function classifyCredential_(text) {
 
   const tags = [];
   tagRules.forEach(rule => {
-    if (rule[1].some(w => s.includes(normalize_(w)))) tags.push(rule[0]);
+    if (rule[1].some(w => containsKeyword_(s, w))) tags.push(rule[0]);
   });
 
   if (!tags.includes(credentialType)) tags.unshift(credentialType);
   if (industry !== 'General / Multi-Industry' && !tags.includes(industry)) tags.unshift(industry);
 
-  const confidence = Math.min(100, 35 + bestTypeScore * 12 + bestIndustryScore * 10 + Math.min(tags.length, 6) * 4);
+  const confidence = Math.min(100, 30 + Math.min(bestTypeScore, 10) * 5 + Math.min(bestIndustryScore, 5) * 8 + Math.min(tags.length, 6) * 3);
   return { credentialType, industry, tags: tags.slice(0, 12), confidence };
 }
 
