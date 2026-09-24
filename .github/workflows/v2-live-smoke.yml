@@ -1,0 +1,91 @@
+name: V2 Live Smoke Test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v2-live-smoke.yml'
+
+jobs:
+  live-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test deployed Apps Script V2 API
+        env:
+          RADAR_WEB_APP_URL: https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec
+          RADAR_API_KEY: ${{ secrets.RADAR_API_KEY }}
+        run: |
+          node <<'NODE'
+          const base = process.env.RADAR_WEB_APP_URL;
+          const key = process.env.RADAR_API_KEY;
+          if (!key) throw new Error('RADAR_API_KEY secret missing');
+
+          async function get(action, params={}) {
+            const u = new URL(base);
+            u.searchParams.set('action', action);
+            u.searchParams.set('key', key);
+            for (const [k,v] of Object.entries(params)) u.searchParams.set(k, v);
+            const r = await fetch(u, { redirect:'follow' });
+            const t = await r.text();
+            let j; try { j=JSON.parse(t); } catch { throw new Error(action+' non-JSON: '+t.slice(0,200)); }
+            if (!j.ok) throw new Error(action+': '+(j.error||'failed'));
+            return j;
+          }
+
+          async function post(action, payload={}) {
+            const r = await fetch(base, {
+              method:'POST',
+              headers:{'Content-Type':'text/plain;charset=utf-8'},
+              body:JSON.stringify({action,key,...payload}),
+              redirect:'follow'
+            });
+            const t = await r.text();
+            let j; try { j=JSON.parse(t); } catch { throw new Error(action+' non-JSON: '+t.slice(0,200)); }
+            if (!j.ok) throw new Error(action+': '+(j.error||'failed'));
+            return j;
+          }
+
+          const health = await get('health');
+          console.log('HEALTH_OK version='+health.version);
+
+          const brands = await get('brands',{status:'Available',limit:'10'});
+          if (!brands.data?.length) throw new Error('No Available brand for test');
+          const brand = brands.data[0];
+          console.log('AVAILABLE_OK brand='+brand.Brand_Name+' id='+brand.Brand_ID);
+
+          const before = await get('credentials',{active:'true'});
+          console.log('CREDENTIAL_GET_OK count='+before.data.length);
+
+          const testName = '[TEST] V2 Live Smoke';
+          const up = await post('credential-upsert',{
+            name:testName,
+            type:'Media Credentials',
+            industry:brand.Industry || 'All',
+            tags:'v2-smoke-test',
+            driveUrl:'https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit',
+            active:true
+          });
+          const cid=up.data.credentialId;
+          if (!cid) throw new Error('credential-upsert returned no id');
+          console.log('CREDENTIAL_WRITE_OK id='+cid);
+
+          const sel = await post('credential-selection',{
+            brandId:brand.Brand_ID,
+            credentialIds:[cid],
+            recommendedIds:[cid],
+            matchScores:{[cid]:99},
+            origin:'V2 Live Smoke Test',
+            createdBy:'GitHub Actions'
+          });
+          if (sel.data?.selectedCount !== 1) throw new Error('selection count mismatch');
+          console.log('SELECTION_WRITE_OK');
+
+          const matches = await get('credential-matches',{brandId:brand.Brand_ID});
+          const found = matches.data?.find(x => String(x.Credential_ID)===String(cid) && String(x.Selected_By_User).toLowerCase()==='true');
+          if (!found) throw new Error('selected credential not found on read-back');
+          console.log('READ_BACK_OK match='+found.Match_ID);
+
+          console.log('SMOKE_TEST_PASS');
+          console.log('CLEANUP_CREDENTIAL_ID='+cid);
+          console.log('CLEANUP_BRAND_ID='+brand.Brand_ID);
+          NODE
