@@ -1,5 +1,5 @@
 const RADAR = {
-  version: '2.0',
+  version: '2.0.1',
   spreadsheetId: '1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo',
   sheets: {
     brands: 'Brand_Master',
@@ -104,6 +104,9 @@ function doPost(e) {
     if (action === 'credential-selection') {
       return json_({ ok: true, data: saveCredentialSelection_(body) });
     }
+    if (action === 'credential-analyze') {
+      return json_({ ok: true, data: analyzeDriveCredential_(body) });
+    }
     return json_({ ok: false, error: 'Unknown action: ' + action }, 400);
   } catch (err) {
     return json_({ ok: false, error: err.message }, 500);
@@ -125,7 +128,8 @@ function setupV2Sheets() {
 function ensureV2Sheets_() {
   ensureSheet_(RADAR.sheets.credentials, [
     'Credential_ID','Credential_Name','Credential_Type','Industry','Tags',
-    'Google_Drive_URL','Active','Date_Added','Last_Updated'
+    'Google_Drive_URL','Active','Date_Added','Last_Updated',
+    'Source_Last_Modified','Analysis_Source','File_Mime_Type','Source_File_ID'
   ]);
   ensureSheet_(RADAR.sheets.credentialMatches, [
     'Match_ID','Brand_ID','Brand_Name','Credential_ID','Credential_Name',
@@ -149,6 +153,201 @@ function ensureSheet_(name, headers) {
   });
   sheet.setFrozenRows(1);
   return sheet;
+}
+
+
+function analyzeDriveCredential_(body) {
+  const url = String(body.driveUrl || body.googleDriveUrl || '').trim();
+  if (!url) throw new Error('Google Drive URL is required');
+
+  const meta = getDriveCredentialMeta_(url);
+  const extracted = extractDriveCredentialText_(meta.fileId, meta.mimeType);
+  const basis = [meta.name, extracted.text].filter(Boolean).join('\n').slice(0, 30000);
+  const classified = classifyCredential_(basis);
+
+  return {
+    driveUrl: meta.url,
+    fileId: meta.fileId,
+    fileName: meta.name,
+    mimeType: meta.mimeType,
+    active: meta.active,
+    dateAdded: now_(),
+    sourceLastModified: meta.lastModified,
+    analysisSource: extracted.source,
+    extractedTextAvailable: !!extracted.text,
+    credentialName: meta.name,
+    credentialType: classified.credentialType,
+    industry: classified.industry,
+    tags: classified.tags.join(', '),
+    confidence: classified.confidence
+  };
+}
+
+function getDriveCredentialMeta_(url) {
+  const fileId = extractDriveFileId_(url);
+  if (!fileId) throw new Error('Could not detect Google Drive file ID from URL');
+
+  let file;
+  try {
+    file = DriveApp.getFileById(fileId);
+  } catch (err) {
+    throw new Error('Cannot access this Google Drive file. Check the link and permissions.');
+  }
+
+  return {
+    fileId: fileId,
+    name: file.getName(),
+    mimeType: file.getMimeType(),
+    active: !file.isTrashed(),
+    dateCreated: formatDateTime_(file.getDateCreated()),
+    lastModified: formatDateTime_(file.getLastUpdated()),
+    url: file.getUrl() || url
+  };
+}
+
+function extractDriveFileId_(value) {
+  const s = String(value || '').trim();
+  if (!s) return '';
+  const patterns = [
+    /\/d\/([A-Za-z0-9_-]{20,})/,
+    /[?&]id=([A-Za-z0-9_-]{20,})/,
+    /^([A-Za-z0-9_-]{20,})$/
+  ];
+  for (let i = 0; i < patterns.length; i++) {
+    const m = s.match(patterns[i]);
+    if (m) return m[1];
+  }
+  return '';
+}
+
+function extractDriveCredentialText_(fileId, mimeType) {
+  const limit = 25000;
+  try {
+    if (mimeType === 'application/vnd.google-apps.document') {
+      const text = DocumentApp.openById(fileId).getBody().getText();
+      return { text: String(text || '').slice(0, limit), source: 'Google Drive metadata + Google Docs text' };
+    }
+
+    if (mimeType === 'application/vnd.google-apps.presentation') {
+      const presentation = SlidesApp.openById(fileId);
+      const chunks = [];
+      presentation.getSlides().slice(0, 40).forEach(slide => {
+        slide.getShapes().forEach(shape => {
+          try {
+            const t = shape.getText().asString();
+            if (t) chunks.push(t);
+          } catch (_) {}
+        });
+      });
+      return { text: chunks.join('\n').slice(0, limit), source: 'Google Drive metadata + Google Slides text' };
+    }
+
+    if (mimeType === 'application/vnd.google-apps.spreadsheet') {
+      const ss = SpreadsheetApp.openById(fileId);
+      const chunks = [];
+      ss.getSheets().slice(0, 5).forEach(sh => {
+        const values = sh.getDataRange().getDisplayValues().slice(0, 60);
+        values.forEach(row => chunks.push(row.slice(0, 20).join(' ')));
+      });
+      return { text: chunks.join('\n').slice(0, limit), source: 'Google Drive metadata + Google Sheets text' };
+    }
+  } catch (_) {
+    // Fall back to metadata + filename if native text extraction is unavailable.
+  }
+
+  return { text: '', source: 'Google Drive metadata + file name' };
+}
+
+function classifyCredential_(text) {
+  const raw = String(text || '');
+  const s = normalize_(raw);
+
+  const typeRules = [
+    { type: 'Case Study', words: ['case study','case-study','campaign result','campaign results','result','results','effectiveness','success story','กรณีศึกษา','ผลลัพธ์'] },
+    { type: 'New Launches', words: ['new launch','launch','new product','new media','new format','new site','opening','เปิดตัว','สินค้าใหม่','สื่อใหม่'] },
+    { type: 'Industry Overview', words: ['industry overview','market overview','market trend','trend report','consumer insight','category overview','industry','market','overview','insight','ภาพรวมอุตสาหกรรม','เทรนด์','อินไซต์'] },
+    { type: 'Media Credentials', words: ['media credential','media credentials','credential','media kit','rate card','ratecard','inventory','network','billboard','dooh','ooh','plan b tv','signature max','the 20','cookies','bts','transit','airport','ข้อมูลสื่อ','เรทการ์ด'] }
+  ];
+
+  let credentialType = 'Media Credentials';
+  let bestTypeScore = 0;
+  typeRules.forEach(rule => {
+    let score = 0;
+    rule.words.forEach(w => { if (s.includes(normalize_(w))) score += 1; });
+    if (score > bestTypeScore) {
+      bestTypeScore = score;
+      credentialType = rule.type;
+    }
+  });
+
+  const industries = [
+    { name:'Automotive', words:['automotive','auto','car','cars','vehicle','ev','electric vehicle','รถยนต์','รถไฟฟ้า'] },
+    { name:'Retail / Fashion', words:['retail','fashion','apparel','shoes','shoe','clothing','luxury','department store','store opening','แฟชั่น','เสื้อผ้า','รองเท้า','ค้าปลีก'] },
+    { name:'Beauty / Personal Care', words:['beauty','cosmetic','cosmetics','skincare','personal care','makeup','ความงาม','เครื่องสำอาง','สกินแคร์'] },
+    { name:'Banking / Finance', words:['bank','banking','finance','financial','credit card','wealth','fund','insurance','fintech','ธนาคาร','การเงิน','บัตรเครดิต','กองทุน','ประกัน'] },
+    { name:'Food / Beverage', words:['food','beverage','restaurant','qsr','coffee','cafe','drink','snack','อาหาร','เครื่องดื่ม','ร้านอาหาร','กาแฟ'] },
+    { name:'Healthcare / Medical', words:['healthcare','hospital','medical','clinic','pharma','pharmaceutical','medicine','health','โรงพยาบาล','คลินิก','ยา','สุขภาพ'] },
+    { name:'Travel / Airline / Tourism', words:['airline','aviation','travel','tourism','hotel','airport','flight','สายการบิน','ท่องเที่ยว','โรงแรม','สนามบิน'] },
+    { name:'Technology / App / Platform', words:['technology','tech','app','application','platform','digital service','software','saas','ecommerce','e-commerce','เทคโนโลยี','แอป','แพลตฟอร์ม'] },
+    { name:'Real Estate', words:['real estate','property','residence','residential','condo','condominium','housing','บ้าน','คอนโด','อสังหาริมทรัพย์'] },
+    { name:'Entertainment / Streaming', words:['entertainment','streaming','movie','film','series','music','cinema','disney','netflix','บันเทิง','ภาพยนตร์','ซีรีส์'] },
+    { name:'Education', words:['education','school','university','college','course','เรียน','โรงเรียน','มหาวิทยาลัย','การศึกษา'] },
+    { name:'B2B / Industrial', words:['industrial','industry equipment','machinery','manufacturing','logistics','construction','factory','b2b','อุตสาหกรรม','เครื่องจักร','โลจิสติกส์','โรงงาน'] },
+    { name:'Sports / Apparel', words:['sports','sport','football','running','fitness','sportswear','athlete','กีฬา','ฟุตบอล','วิ่ง','ฟิตเนส'] }
+  ];
+
+  let industry = 'General / Multi-Industry';
+  let bestIndustryScore = 0;
+  industries.forEach(rule => {
+    let score = 0;
+    rule.words.forEach(w => { if (s.includes(normalize_(w))) score += 1; });
+    if (score > bestIndustryScore) {
+      bestIndustryScore = score;
+      industry = rule.name;
+    }
+  });
+
+  const tagRules = [
+    ['Product Launch',['launch','new product','เปิดตัว','สินค้าใหม่']],
+    ['Expansion',['expansion','new branch','new store','opening','ขยายสาขา','สาขาใหม่']],
+    ['Brand Awareness',['brand awareness','awareness','สร้างการรับรู้']],
+    ['Consideration',['consideration','consider','พิจารณา']],
+    ['Conversion',['conversion','sales','purchase','ยอดขาย','ซื้อ']],
+    ['Gen Z',['gen z','gen-z','เจน z']],
+    ['First Jobber',['first jobber','young professional','วัยเริ่มทำงาน']],
+    ['Premium',['premium','luxury','affluent','high net worth']],
+    ['Mass',['mass market','mass audience','mass']],
+    ['Bangkok',['bangkok','bkk','กรุงเทพ']],
+    ['Nationwide',['nationwide','national','ทั่วประเทศ']],
+    ['CBD',['cbd','central business district','สุขุมวิท','สีลม','สาทร','อโศก']],
+    ['OOH',['ooh','out of home','out-of-home']],
+    ['DOOH',['dooh','digital out of home','digital-out-of-home']],
+    ['Billboard',['billboard']],
+    ['Transit',['transit','bts','mrt','bus','train body']],
+    ['Airport',['airport','suvarnabhumi','don mueang','สนามบิน','สุวรรณภูมิ']],
+    ['Retail Media',['retail media','mall','shopping mall','department store']],
+    ['Long-term',['long term','long-term','always on','always-on']],
+    ['Tactical',['tactical','burst','short term','short-term']],
+    ['Case Study',['case study','กรณีศึกษา']],
+    ['Insight',['insight','consumer insight','อินไซต์']],
+    ['Media Network',['media network','inventory','screen network','network']]
+  ];
+
+  const tags = [];
+  tagRules.forEach(rule => {
+    if (rule[1].some(w => s.includes(normalize_(w)))) tags.push(rule[0]);
+  });
+
+  if (!tags.includes(credentialType)) tags.unshift(credentialType);
+  if (industry !== 'General / Multi-Industry' && !tags.includes(industry)) tags.unshift(industry);
+
+  const confidence = Math.min(100, 35 + bestTypeScore * 12 + bestIndustryScore * 10 + Math.min(tags.length, 6) * 4);
+  return { credentialType, industry, tags: tags.slice(0, 12), confidence };
+}
+
+function formatDateTime_(date) {
+  if (!date) return '';
+  return Utilities.formatDate(new Date(date), 'Asia/Bangkok', 'yyyy-MM-dd HH:mm:ss');
 }
 
 function getCredentials_(typeFilter, industryFilter, activeFilter) {
@@ -189,6 +388,17 @@ function upsertCredential_(body) {
   const url = String(body.driveUrl || body.googleDriveUrl || '').trim();
   if (!url) throw new Error('Google Drive URL is required');
 
+  let meta;
+  try {
+    meta = getDriveCredentialMeta_(url);
+  } catch (err) {
+    if (body.allowInaccessible === true) {
+      meta = { fileId:'', name:name, mimeType:'', active:false, lastModified:'', url:url };
+    } else {
+      throw err;
+    }
+  }
+
   let rowIndex = -1;
   let id = String(body.credentialId || '').trim();
   if (id && data.map.Credential_ID !== undefined) {
@@ -202,19 +412,27 @@ function upsertCredential_(body) {
     setByHeader_(row,data.map,'Credential_Type',type);
     setByHeader_(row,data.map,'Industry',body.industry || '');
     setByHeader_(row,data.map,'Tags',body.tags || '');
-    setByHeader_(row,data.map,'Google_Drive_URL',url);
-    setByHeader_(row,data.map,'Active',body.active === false ? false : true);
+    setByHeader_(row,data.map,'Google_Drive_URL',meta.url || url);
+    setByHeader_(row,data.map,'Active',meta.active);
     setByHeader_(row,data.map,'Date_Added',now_());
     setByHeader_(row,data.map,'Last_Updated',now_());
+    setByHeader_(row,data.map,'Source_Last_Modified',body.sourceLastModified || meta.lastModified || '');
+    setByHeader_(row,data.map,'Analysis_Source',body.analysisSource || '');
+    setByHeader_(row,data.map,'File_Mime_Type',body.mimeType || meta.mimeType || '');
+    setByHeader_(row,data.map,'Source_File_ID',body.fileId || meta.fileId || '');
     sheet.appendRow(row);
   } else {
     setCellByHeader_(sheet,rowIndex,data.map,'Credential_Name',name);
     setCellByHeader_(sheet,rowIndex,data.map,'Credential_Type',type);
     setCellByHeader_(sheet,rowIndex,data.map,'Industry',body.industry || '');
     setCellByHeader_(sheet,rowIndex,data.map,'Tags',body.tags || '');
-    setCellByHeader_(sheet,rowIndex,data.map,'Google_Drive_URL',url);
-    setCellByHeader_(sheet,rowIndex,data.map,'Active',body.active === false ? false : true);
+    setCellByHeader_(sheet,rowIndex,data.map,'Google_Drive_URL',meta.url || url);
+    setCellByHeader_(sheet,rowIndex,data.map,'Active',meta.active);
     setCellByHeader_(sheet,rowIndex,data.map,'Last_Updated',now_());
+    setCellByHeader_(sheet,rowIndex,data.map,'Source_Last_Modified',body.sourceLastModified || meta.lastModified || '');
+    setCellByHeader_(sheet,rowIndex,data.map,'Analysis_Source',body.analysisSource || '');
+    setCellByHeader_(sheet,rowIndex,data.map,'File_Mime_Type',body.mimeType || meta.mimeType || '');
+    setCellByHeader_(sheet,rowIndex,data.map,'Source_File_ID',body.fileId || meta.fileId || '');
   }
   return { credentialId:id, credentialName:name, credentialType:type };
 }
