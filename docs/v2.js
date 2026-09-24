@@ -1,8 +1,11 @@
-// AI Sales Radar V2.0 extension — Opportunity Prep + Credential Library
+// AI Sales Radar V2.0.2 extension — Opportunity Prep + Credential Library
 app.credentials = app.credentials || [];
 app.credentialMatches = app.credentialMatches || [];
 app.availableBrands = app.availableBrands || [];
 app.credentialPreview = app.credentialPreview || null;
+app.v2Cache = app.v2Cache || {availableAt:0,credentialsAt:0,matches:{}};
+const V2_CACHE_MS={available:60000,credentials:300000,matches:60000};
+const v2Fresh=(ts,ttl)=>!!ts&&(Date.now()-ts)<ttl;
 
 function v2CredentialTags(c){
   return String(c.Tags||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);
@@ -39,18 +42,17 @@ function v2BrandFromMaster(r){
     sources:[r.Primary_Source_URL].filter(Boolean)
   };
 }
-async function v2LoadAvailableBrands(redraw){
-  if(redraw===undefined) redraw=true;
-  if(!apiKey()){ app.availableBrands=[]; if(redraw) render(); return; }
+async function v2LoadAvailableBrands(redraw,force){
+  if(redraw===undefined) redraw=true;if(force===undefined) force=false;
+  if(!apiKey()){if(redraw)render();return}
+  if(!force&&app.availableBrands.length&&v2Fresh(app.v2Cache.availableAt,V2_CACHE_MS.available)){if(redraw)render();return}
   try{
     const d=await apiGet('brands',{status:'Available',limit:500});
     app.availableBrands=(d.data||[]).map(v2BrandFromMaster);
+    app.v2Cache.availableAt=Date.now();
     setConnection(true);
-  }catch(err){
-    app.availableBrands=[];
-    setConnection(false,err.message);
-  }
-  if(redraw) render();
+  }catch(err){setConnection(false,err.message)}
+  if(redraw)render()
 }
 
 function v2RecommendedCredentials(l){
@@ -59,27 +61,31 @@ function v2RecommendedCredentials(l){
     .map(c=>Object.assign({},c,{_score:v2CredentialScore(l,c)}))
     .sort((a,b)=>b._score-a._score);
 }
-async function v2LoadCredentials(redraw){
-  if(redraw===undefined) redraw=true;
-  if(!apiKey()){ app.credentials=[]; if(redraw) render(); return; }
+async function v2LoadCredentials(redraw,force){
+  if(redraw===undefined) redraw=true;if(force===undefined) force=false;
+  if(!apiKey()){if(redraw)render();return}
+  if(!force&&app.credentials.length&&v2Fresh(app.v2Cache.credentialsAt,V2_CACHE_MS.credentials)){if(redraw)render();return}
   try{
     const d=await apiGet('credentials',{active:'true'});
     app.credentials=d.data||[];
+    app.v2Cache.credentialsAt=Date.now();
     setConnection(true);
-  }catch(err){
-    app.credentials=[];
-    setConnection(false,err.message);
-  }
-  if(redraw) render();
+  }catch(err){setConnection(false,err.message)}
+  if(redraw)render()
 }
-async function v2LoadMatches(brandId){
-  if(!apiKey()||!brandId){ app.credentialMatches=[]; return; }
+async function v2LoadMatches(brandId,force){
+  if(force===undefined) force=false;
+  if(!apiKey()||!brandId){app.credentialMatches=[];return}
+  const cached=app.v2Cache.matches[brandId];
+  if(!force&&cached&&v2Fresh(cached.at,V2_CACHE_MS.matches)){app.credentialMatches=cached.data||[];return}
   try{
     const d=await apiGet('credential-matches',{brandId:brandId});
     app.credentialMatches=d.data||[];
+    app.v2Cache.matches[brandId]={at:Date.now(),data:app.credentialMatches};
+    setConnection(true);
   }catch(err){
-    app.credentialMatches=[];
-    setConnection(false,err.message);
+    app.credentialMatches=cached?.data||[];
+    setConnection(false,err.message)
   }
 }
 function v2OpportunityPrep(){
@@ -157,7 +163,7 @@ function v2OpportunityPrep(){
         origin:'V2 Opportunity Prep',
         createdBy:'AI Sales Radar V2'
       });
-      await v2LoadMatches(l.id);
+      await v2LoadMatches(l.id,true);
       alert('Credential Pack saved.');
       v2OpportunityPrep();
     }catch(err){
@@ -255,7 +261,7 @@ function v2CredentialLibrary(){
     try{
       await apiPost('credential-upsert',payload);
       app.credentialPreview=null;
-      await v2LoadCredentials(false);
+      await v2LoadCredentials(false,true);
       v2CredentialLibrary();
     }catch(err){
       confirm.disabled=false;
@@ -277,15 +283,29 @@ render=function(){
 
 document.addEventListener('click',async e=>{
   const b=e.target.closest('#nav [data-view="prep"],#nav [data-view="credentials"]');
-  if(!b) return;
+  if(!b)return;
   app.view=b.dataset.view;
   if(app.view==='prep'){
-    await v2LoadAvailableBrands(false);
-    await v2LoadCredentials(false);
-    if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected)) app.selected=app.availableBrands[0]?.id||null;
-    await v2LoadMatches(app.selected);
+    await Promise.all([v2LoadAvailableBrands(false),v2LoadCredentials(false)]);
+    if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected))app.selected=app.availableBrands[0]?.id||null;
+    await v2LoadMatches(app.selected)
   }else{
-    await v2LoadCredentials(false);
+    await v2LoadCredentials(false)
   }
-  render();
+  render()
 },true);
+
+const v2BaseReload=$('#reloadBtn').onclick;
+$('#reloadBtn').onclick=async()=>{
+  if(app.view==='prep'){
+    await Promise.all([v2LoadAvailableBrands(false,true),v2LoadCredentials(false,true)]);
+    if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected))app.selected=app.availableBrands[0]?.id||null;
+    await v2LoadMatches(app.selected,true);
+    render();return
+  }
+  if(app.view==='credentials'){
+    await v2LoadCredentials(false,true);
+    render();return
+  }
+  return v2BaseReload()
+};
