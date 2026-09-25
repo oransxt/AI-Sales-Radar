@@ -3,6 +3,8 @@ app.credentials = app.credentials || [];
 app.credentialMatches = app.credentialMatches || [];
 app.availableBrands = app.availableBrands || [];
 app.credentialPreview = app.credentialPreview || null;
+app.emailDraft = app.emailDraft || null;
+app.emailDraftBrandId = app.emailDraftBrandId || null;
 app.v2Cache = app.v2Cache || {availableAt:0,credentialsAt:0,matches:{}};
 const V2_CACHE_MS={available:60000,credentials:300000,matches:60000};
 const v2Fresh=(ts,ttl)=>!!ts&&(Date.now()-ts)<ttl;
@@ -137,7 +139,7 @@ function v2OpportunityPrep(){
       '<div class="section"><strong>Why Now</strong><div class="sub v2-copy">'+esc(l.whyNow)+'</div></div>'+
       '<div class="section"><strong>Recommended Credential Pack</strong><div class="sub">Rule-based match by Industry + Signal + Tags. Multi-select allowed.</div>'+
       '<div class="credential-list">'+credRows+'</div></div>'+
-      '<div class="section"><button class="btn primary" id="saveCredentialPack">Save Credential Pack</button> <button class="btn" id="selectRecommended">Select Recommended</button></div>'+      '<div class="next-stage-card"><div><span class="next-stage-badge">V2.1 · COMING NEXT</span><strong>Generate Sales Approach & Email Draft</strong><div class="sub">Why Now · Campaign Objective · Media Direction · Revenue Potential · Next Best Action → Gmail Draft</div></div><button class="btn" disabled>Coming Next</button></div>'+
+      '<div class="section"><button class="btn primary" id="saveCredentialPack">Save Credential Pack</button> <button class="btn" id="selectRecommended">Select Recommended</button></div>'+      '<div class="next-stage-card"><div><span class="next-stage-badge">EMAIL DRAFTING</span><strong>Continue from Opportunity Prep to Email Draft</strong><div class="sub">Uses the saved Brand context + Buying Signal + selected Credential Pack. Draft only — Sales reviews and sends.</div></div><button class="btn primary" id="openEmailDrafting">Open Email Drafting →</button></div>'+
       '</div></div></div>';
 
   document.querySelectorAll('[data-prep-brand]').forEach(r=>{
@@ -149,6 +151,14 @@ function v2OpportunityPrep(){
   });
   const sr=$('#selectRecommended');
   if(sr) sr.onclick=()=>document.querySelectorAll('[data-cred]').forEach(cb=>{cb.checked=topIds.has(cb.dataset.cred);});
+  const openEmail=$('#openEmailDrafting');
+  if(openEmail) openEmail.onclick=async()=>{
+    app.view='email';
+    app.emailDraft=null;
+    app.emailDraftBrandId=l.id;
+    await v2LoadMatches(l.id);
+    v2EmailDrafting();
+  };
   const save=$('#saveCredentialPack');
   if(save) save.onclick=async()=>{
     const ids=[...document.querySelectorAll('[data-cred]:checked')].map(x=>x.dataset.cred);
@@ -271,6 +281,157 @@ function v2CredentialLibrary(){
   };
 }
 
+
+function v2SelectedCredentialRows(){
+  const selected=(app.credentialMatches||[]).filter(x=>String(x.Selected_By_User).toLowerCase()==='true');
+  const seen=new Set();
+  return selected.filter(x=>{
+    const id=String(x.Credential_ID||'');
+    if(!id||seen.has(id))return false;
+    seen.add(id);return true;
+  });
+}
+
+function v2EmailDrafting(){
+  const avail=(app.availableBrands||[]).slice().sort((a,b)=>(b.score||0)-(a.score||0));
+  if(!app.selected||!avail.find(x=>x.id===app.selected))app.selected=avail[0]?.id||null;
+  const l=avail.find(x=>x.id===app.selected);
+
+  $('#title').textContent='EMAIL DRAFTING';
+  $('#subtitle').textContent='Available Brand → Sales Context → Draft → Human Review → Gmail Draft';
+
+  if(!l){
+    $('#content').innerHTML='<div class="full-panel"><div class="empty">No Available brands yet. Mark a brand Available first.</div></div>';
+    return;
+  }
+
+  const selected=v2SelectedCredentialRows();
+  const draft=(app.emailDraftBrandId===l.id)?app.emailDraft:null;
+  const savedCreds=selected.length
+    ? selected.map(x=>'<div class="email-cred-chip">✓ '+esc(x.Credential_Name||x.Credential_ID)+'</div>').join('')
+    : '<div class="notice">No saved Credential Pack yet. You can still draft, but saving relevant credentials first will give the email better context.</div>';
+
+  const brandRows=avail.map(x=>
+    '<tr data-email-brand="'+esc(x.id)+'" class="'+(x.id===l.id?'selected':'')+'">'+
+    '<td><div class="brand-name">'+esc(x.brandName)+'</div><div class="sub">'+esc(x.industry)+'</div></td>'+
+    '<td>'+esc(x.buyingSignal)+'</td>'+
+    '<td><span class="priority">'+esc(x.priority||'—')+'</span></td></tr>'
+  ).join('');
+
+  const draftPanel=draft ? (
+    '<div class="email-draft-card">'+
+      '<div class="email-draft-head"><div><span class="badge">DRAFT READY</span><h3>'+esc(l.brandName)+'</h3>'+
+      '<div class="sub">'+esc(draft.engine||'Draft engine')+' · Human review required</div></div>'+
+      '<div class="smart-status active">NOT SENT</div></div>'+
+      '<div class="email-insight-grid">'+
+        '<div><span>Sales Angle</span><strong>'+esc(draft.salesAngle||'—')+'</strong></div>'+
+        '<div><span>Media Direction</span><strong>'+esc(draft.mediaDirection||'—')+'</strong></div>'+
+        '<div><span>Next Best Action</span><strong>'+esc(draft.nextBestAction||'—')+'</strong></div>'+
+      '</div>'+
+      '<div class="email-fields">'+
+        '<label>Recipient<input id="emailRecipient" type="email" placeholder="name@company.com" value="'+esc(draft.recipient||'')+'"></label>'+
+        '<label>Subject<input id="emailSubject" value="'+esc(draft.subject||'')+'"></label>'+
+        '<label class="wide">Email Body<textarea id="emailBody" rows="16">'+esc(draft.body||'')+'</textarea></label>'+
+      '</div>'+
+      '<div class="human-control-note"><strong>Human Control:</strong> Creating a Gmail Draft does not send the email. Sales must open Gmail, review and press Send manually.</div>'+
+      '<div class="settings-actions">'+
+        '<button class="btn primary" id="createGmailDraft">Create Gmail Draft</button>'+
+        '<button class="btn" id="regenerateEmailDraft">Regenerate</button>'+
+        (draft.gmailUrl?'<a class="btn" target="_blank" rel="noopener" href="'+esc(draft.gmailUrl)+'">Open Gmail Drafts ↗</a>':'')+
+      '</div>'+
+    '</div>'
+  ) : (
+    '<div class="email-empty-state">'+
+      '<div class="email-empty-icon">✦</div>'+
+      '<h3>Ready to draft for '+esc(l.brandName)+'</h3>'+
+      '<div class="sub">The draft will use the latest Buying Signal, Why Now and saved Credential Pack. It will not invent client budget, campaign timing or media availability.</div>'+
+      '<button class="btn primary" id="generateEmailDraft">Generate Email Draft</button>'+
+    '</div>'
+  );
+
+  $('#content').innerHTML=
+    '<div class="workspace email-workspace">'+
+      '<div class="panel"><div class="filters"><strong>Available Brands</strong><div class="spacer"></div><span class="sub">'+avail.length+' brands</span></div>'+
+      '<div class="table-wrap"><table><thead><tr><th>Brand</th><th>Signal</th><th>Priority</th></tr></thead><tbody>'+brandRows+'</tbody></table></div></div>'+
+      '<div class="panel email-panel">'+
+        '<div class="detail"><span class="badge">AVAILABLE</span><h3>'+esc(l.brandName)+'</h3><div class="sub">'+esc(l.industry)+' · '+esc(l.buyingSignal)+'</div>'+
+        '<div class="section"><strong>Why Now</strong><div class="sub v2-copy">'+esc(l.whyNow||'—')+'</div></div>'+
+        '<div class="section"><strong>Saved Credential Pack</strong><div class="email-credential-pack">'+savedCreds+'</div></div>'+
+        '<div class="section email-controls"><div class="email-control-grid">'+
+          '<label>Language<select id="draftLanguage"><option>Thai</option><option>English</option></select></label>'+
+          '<label>Tone<select id="draftTone"><option>Professional / Consultative</option><option>Warm / Relationship-led</option><option>Concise / Executive</option></select></label>'+
+          '<label class="wide">Preferred CTA<input id="draftCta" placeholder="ขอนัดพูดคุยสั้น ๆ เพื่อแชร์แนวทางสื่อที่เหมาะกับช่วงนี้"></label>'+
+        '</div></div>'+
+        draftPanel+
+        '</div></div>'+
+    '</div>';
+
+  document.querySelectorAll('[data-email-brand]').forEach(r=>{
+    r.onclick=async()=>{
+      app.selected=r.dataset.emailBrand;
+      app.emailDraft=null;
+      app.emailDraftBrandId=app.selected;
+      await v2LoadMatches(app.selected);
+      v2EmailDrafting();
+    };
+  });
+
+  const generate=async()=>{
+    const language=$('#draftLanguage')?.value||'Thai';
+    const tone=$('#draftTone')?.value||'Professional / Consultative';
+    const cta=$('#draftCta')?.value?.trim()||'';
+    const btn=$('#generateEmailDraft')||$('#regenerateEmailDraft');
+    if(btn){btn.disabled=true;btn.textContent='Generating…';}
+    try{
+      const d=await apiPost('email-draft-generate',{
+        brandId:l.id,
+        language,
+        tone,
+        cta,
+        origin:'Dashboard Email Drafting',
+        createdBy:'AI Sales Radar'
+      });
+      app.emailDraft=d.data||null;
+      app.emailDraftBrandId=l.id;
+      v2EmailDrafting();
+    }catch(err){
+      if(btn){btn.disabled=false;btn.textContent=btn.id==='regenerateEmailDraft'?'Regenerate':'Generate Email Draft';}
+      alert('Draft failed: '+err.message);
+    }
+  };
+
+  const gen=$('#generateEmailDraft');
+  if(gen)gen.onclick=generate;
+  const regen=$('#regenerateEmailDraft');
+  if(regen)regen.onclick=generate;
+
+  const create=$('#createGmailDraft');
+  if(create)create.onclick=async()=>{
+    const recipient=$('#emailRecipient').value.trim();
+    const subject=$('#emailSubject').value.trim();
+    const body=$('#emailBody').value.trim();
+    if(!recipient){alert('Please enter the recipient email before creating a Gmail Draft.');return;}
+    create.disabled=true;create.textContent='Creating Gmail Draft…';
+    try{
+      const d=await apiPost('gmail-draft-create',{
+        draftId:draft.draftId,
+        brandId:l.id,
+        recipient,
+        subject,
+        body,
+        origin:'Dashboard Email Drafting',
+        createdBy:'AI Sales Radar'
+      });
+      app.emailDraft={...draft,recipient,subject,body,...(d.data||{})};
+      alert('Gmail Draft created. Nothing has been sent.');
+      v2EmailDrafting();
+    }catch(err){
+      create.disabled=false;create.textContent='Create Gmail Draft';
+      alert('Gmail Draft failed: '+err.message);
+    }
+  };
+}
+
 const v2BaseRender=render;
 render=function(){
   document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===app.view));
@@ -278,19 +439,25 @@ render=function(){
   setConnection(app.connected,app.lastError);
   if(app.view==='prep') return v2OpportunityPrep();
   if(app.view==='credentials') return v2CredentialLibrary();
+  if(app.view==='email') return v2EmailDrafting();
   return v2BaseRender();
 };
 
 document.addEventListener('click',async e=>{
-  const b=e.target.closest('#nav [data-view="prep"],#nav [data-view="credentials"]');
+  const b=e.target.closest('#nav [data-view="prep"],#nav [data-view="credentials"],#nav [data-view="email"]');
   if(!b)return;
   app.view=b.dataset.view;
   if(app.view==='prep'){
     await Promise.all([v2LoadAvailableBrands(false),v2LoadCredentials(false)]);
     if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected))app.selected=app.availableBrands[0]?.id||null;
     await v2LoadMatches(app.selected)
-  }else{
+  }else if(app.view==='credentials'){
     await v2LoadCredentials(false)
+  }else if(app.view==='email'){
+    await Promise.all([v2LoadAvailableBrands(false),v2LoadCredentials(false)]);
+    if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected))app.selected=app.availableBrands[0]?.id||null;
+    app.emailDraft=null;app.emailDraftBrandId=app.selected;
+    await v2LoadMatches(app.selected)
   }
   render()
 },true);
@@ -305,6 +472,13 @@ $('#reloadBtn').onclick=async()=>{
   }
   if(app.view==='credentials'){
     await v2LoadCredentials(false,true);
+    render();return
+  }
+  if(app.view==='email'){
+    await Promise.all([v2LoadAvailableBrands(false,true),v2LoadCredentials(false,true)]);
+    if(!app.selected||!app.availableBrands.find(x=>x.id===app.selected))app.selected=app.availableBrands[0]?.id||null;
+    await v2LoadMatches(app.selected,true);
+    app.emailDraft=null;app.emailDraftBrandId=app.selected;
     render();return
   }
   return v2BaseReload()
