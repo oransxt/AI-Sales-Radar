@@ -1,4 +1,4 @@
-const VERSION='2.0.2';
+const VERSION='2.1.0';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const STATUSES=['Not Checked','Available','Has Owner','Existing Client','Skip'];
@@ -46,7 +46,7 @@ async function apiRequest(method,action,payload={},retries=0){
         Object.entries(payload).forEach(([k,v])=>v!==''&&u.searchParams.set(k,v));
         r=await fetchWithTimeout(u,{cache:'no-store',redirect:'follow'})
       }else{
-        r=await fetchWithTimeout(apiUrl(),{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,key:apiKey(),...payload}),redirect:'follow'},25000)
+        r=await fetchWithTimeout(apiUrl(),{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,key:apiKey(),...payload}),redirect:'follow'},action==='email-draft-generate'?45000:25000)
       }
       return parseApiResponse(action,r,await r.text())
     }catch(err){
