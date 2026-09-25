@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Sales Radar — Email Drafting Demo</title>
+<style>
+:root{--ink:#17203a;--muted:#69728a;--line:#e6e9f2;--bg:#f7f8fc;--blue:#4d5cff;--purple:#6d4cff;--green:#18a966}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial;background:var(--bg);color:var(--ink)}
+.shell{max-width:1180px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-bottom:18px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.08em;color:#4d5cff}.top h1{margin:5px 0 4px;font-size:32px}.sub{color:var(--muted);font-size:12px}
+.demo-badge{background:#eceeff;color:#3c49c9;border-radius:999px;padding:7px 10px;font-size:11px;font-weight:800}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:16px 0 18px}.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;font-size:11px}.step b{display:block;font-size:12px;margin-bottom:3px}.step.active{border-color:#bfc6ff;background:#f4f5ff}
+.grid{display:grid;grid-template-columns:300px 1fr;gap:14px}.panel{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}.head{padding:14px;border-bottom:1px solid var(--line)}.head h3{margin:0}
+.brand{padding:12px;border-bottom:1px solid #eef0f5;cursor:pointer}.brand:hover,.brand.active{background:#f5f6ff}.brand .name{font-weight:800}.signal{font-size:11px;color:var(--muted);margin-top:3px}
+.detail{padding:16px}.badge{display:inline-block;background:#e9fbf1;color:#158350;border-radius:999px;padding:4px 7px;font-size:9px;font-weight:800}.detail h2{margin:6px 0 4px;font-size:23px}
+.section{border-top:1px solid var(--line);margin-top:14px;padding-top:13px}.section-title{font-size:12px;font-weight:800;margin-bottom:8px}.cred{display:inline-block;background:#eef1ff;color:#3f4bc9;border:1px solid #dce1ff;border-radius:999px;padding:6px 8px;font-size:10px;margin:0 5px 5px 0}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}.controls label,.form label{display:grid;gap:5px;font-size:10px;color:var(--muted)}input,select,textarea{border:1px solid #dfe3ed;border-radius:9px;padding:9px;font:inherit;width:100%;background:#fff;color:var(--ink)}textarea{min-height:260px;line-height:1.55;resize:vertical}
+.btn{border:1px solid var(--line);background:#fff;padding:10px 13px;border-radius:9px;cursor:pointer;font-weight:700}.btn.primary{border:0;color:#fff;background:linear-gradient(90deg,var(--blue),var(--purple))}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.draft{display:none;margin-top:14px;border:1px solid #dce1f0;border-radius:12px;padding:13px}.draft.show{display:block}.draft-top{display:flex;justify-content:space-between;gap:10px}.not-sent{background:#fff6e8;color:#8d5a00;border-radius:999px;padding:4px 8px;font-size:9px;font-weight:800;height:max-content}
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.insights div{border:1px solid var(--line);background:#fbfbfd;border-radius:9px;padding:9px}.insights span{display:block;font-size:9px;color:var(--muted);text-transform:uppercase}.insights strong{display:block;font-size:10px;margin-top:4px;line-height:1.45}
+.note{background:#ecfbf3;border:1px solid #bcebd0;color:#17633d;padding:9px 10px;border-radius:9px;font-size:10px;margin-top:10px}.toast{position:fixed;right:20px;bottom:20px;background:#17203a;color:#fff;padding:12px 14px;border-radius:10px;display:none;font-size:12px}.toast.show{display:block}
+@media(max-width:800px){.shell{padding:12px}.flow{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.controls,.insights{grid-template-columns:1fr}.top{display:block}.top h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top">
+    <div><div class="eyebrow">AI SALES RADAR</div><h1>Email Drafting Demo</h1><div class="sub">Available Brand → Credential Pack → Draft → Human Review → Gmail Draft</div></div>
+    <div class="demo-badge">STATIC DEMO · NOTHING WILL BE SENT</div>
+  </div>
+  <div class="flow">
+    <div class="step"><b>1. Available Brand</b>Salesforce-cleared</div>
+    <div class="step"><b>2. Credential Pack</b>Relevant materials</div>
+    <div class="step active"><b>3. Generate Draft</b>Signal + Why Now</div>
+    <div class="step"><b>4. Human Review</b>Edit message</div>
+    <div class="step"><b>5. Gmail Draft</b>Create only</div>
+    <div class="step"><b>6. Send</b>Sales decides</div>
+  </div>
+  <div class="grid">
+    <div class="panel">
+      <div class="head"><h3>Available Brands</h3><div class="sub">Demo records</div></div>
+      <div class="brand active" data-brand="Berwick"><div class="name">Berwick</div><div class="signal">Retail / Fashion · Expansion</div></div>
+      <div class="brand" data-brand="Dermatix Ultra"><div class="name">Dermatix Ultra</div><div class="signal">Healthcare · Product Launch</div></div>
+      <div class="brand" data-brand="Lalamove"><div class="name">Lalamove</div><div class="signal">Technology / App · Expansion</div></div>
+    </div>
+    <div class="panel">
+      <div class="detail">
+        <span class="badge">AVAILABLE</span><h2 id="brandName">Berwick</h2><div class="sub" id="brandMeta">Retail / Fashion · Expansion / new branches</div>
+        <div class="section"><div class="section-title">Why Now</div><div class="sub" id="whyNow">Spanish footwear brand Berwick opened its first Thailand store at Central Embassy, creating a timely visibility opportunity around market entry and premium retail presence.</div></div>
+        <div class="section"><div class="section-title">Saved Credential Pack</div><div id="creds"><span class="cred">Retail / Fashion Overview</span><span class="cred">Premium Audience Case Study</span><span class="cred">CBD Media Credentials</span></div></div>
+        <div class="section">
+          <div class="controls">
+            <label>Language<select id="lang"><option>Thai</option><option>English</option></select></label>
+            <label>Tone<select id="tone"><option>Professional / Consultative</option><option>Warm / Relationship-led</option><option>Concise / Executive</option></select></label>
+            <label style="grid-column:1/-1">Preferred CTA<input id="cta" value="ขอนัดพูดคุยสั้น ๆ เพื่อแชร์แนวทางสื่อที่เหมาะกับช่วงนี้"></label>
+          </div>
+          <div class="actions"><button class="btn primary" id="generate">Generate Email Draft</button></div>
+        </div>
+        <div class="draft" id="draft">
+          <div class="draft-top"><div><span class="badge">DRAFT READY</span><h3 style="margin:6px 0 2px">Sales Email Preview</h3><div class="sub">Human review required</div></div><div class="not-sent">NOT SENT</div></div>
+          <div class="insights">
+            <div><span>Sales Angle</span><strong>Use the latest buying signal as the reason to engage now.</strong></div>
+            <div><span>Media Direction</span><strong>Start from objective, audience and geography before recommending OOH/DOOH formats.</strong></div>
+            <div><span>Next Best Action</span><strong>Request a short meeting and validate campaign timing.</strong></div>
+          </div>
+          <div class="form">
+            <label>Recipient<input id="recipient" type="email" placeholder="name@company.com"></label>
+            <label style="margin-top:8px">Subject<input id="subject"></label>
+            <label style="margin-top:8px">Email Body<textarea id="body"></textarea></label>
+          </div>
+          <div class="note"><b>Human Control:</b> Create Gmail Draft only. Sales must review and press Send manually.</div>
+          <div class="actions"><button class="btn primary" id="gmail">Create Gmail Draft</button><button class="btn" id="regen">Regenerate</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+var data={
+ "Berwick":{meta:"Retail / Fashion · Expansion / new branches",why:"Spanish footwear brand Berwick opened its first Thailand store at Central Embassy, creating a timely visibility opportunity around market entry and premium retail presence.",creds:["Retail / Fashion Overview","Premium Audience Case Study","CBD Media Credentials"]},
+ "Dermatix Ultra":{meta:"Healthcare / Medical · Major product launch",why:"A new product push creates a timely opportunity to explore OOH/DOOH around clinic and healthcare-relevant touchpoints.",creds:["Healthcare Overview","Clinic Audience Case Study","Bangkok DOOH Credentials"]},
+ "Lalamove":{meta:"Technology / App · Expansion",why:"Expansion across Bangkok and key upcountry cities creates a natural reason to discuss city-level OOH support and sustained brand visibility.",creds:["Tech / App Overview","City Expansion Case Study","Nationwide Billboard Credentials"]}
+};
+function toast(msg){var t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(function(){t.classList.remove("show")},2200)}
+function current(){return document.getElementById("brandName").textContent}
+function setBrand(name){var d=data[name];document.getElementById("brandName").textContent=name;document.getElementById("brandMeta").textContent=d.meta;document.getElementById("whyNow").textContent=d.why;document.getElementById("creds").innerHTML=d.creds.map(function(x){return '<span class="cred">'+x+'</span>'}).join("");document.getElementById("draft").classList.remove("show");document.querySelectorAll(".brand").forEach(function(x){x.classList.toggle("active",x.dataset.brand===name)})}
+document.querySelectorAll(".brand").forEach(function(x){x.onclick=function(){setBrand(x.dataset.brand)}});
+function generate(){
+ var brand=current(),lang=document.getElementById("lang").value,cta=document.getElementById("cta").value,why=document.getElementById("whyNow").textContent;
+ if(lang==="Thai"){
+  document.getElementById("subject").value="ขอแชร์แนวทาง OOH/DOOH สำหรับ "+brand;
+  document.getElementById("body").value=[
+   "เรียน ทีม "+brand+" ครับ","",
+   "ผมจาก Plan B Media ครับ เห็นความเคลื่อนไหวล่าสุดของ "+brand+" และมองว่าเป็นจังหวะที่น่าสนใจสำหรับการต่อยอดการสื่อสารผ่าน OOH/DOOH","",
+   "จากข้อมูลที่พบ: "+why,"",
+   "เบื้องต้น Plan B สามารถช่วยวาง Media Direction ให้สอดคล้องกับกลุ่มเป้าหมาย พื้นที่ และจังหวะของแคมเปญ โดยผมได้คัด Credential ที่เกี่ยวข้องไว้ประกอบการพูดคุยแล้ว","",
+   cta,"","หากสะดวก ผมยินดีเตรียมแนวทางให้กระชับตาม Objective และพื้นที่ที่แบรนด์ให้ความสำคัญครับ","","ขอบคุณครับ"
+  ].join("\\n");
+ }else{
+  document.getElementById("subject").value="OOH/DOOH opportunity for "+brand;
+  document.getElementById("body").value=[
+   "Dear "+brand+" Team,","",
+   "I’m reaching out from Plan B Media after seeing the brand’s recent activity. It looks like a timely opportunity to explore how OOH/DOOH could support visibility and campaign momentum.","",
+   "What caught our attention: "+why,"",
+   "We can shape the recommendation around your objective, target audience and priority geography. I have also shortlisted relevant credentials for the discussion.","",
+   cta,"","Happy to tailor the direction once we understand the campaign objective and timing.","","Best regards"
+  ].join("\\n");
+ }
+ document.getElementById("draft").classList.add("show");document.getElementById("draft").scrollIntoView({behavior:"smooth",block:"start"});
+}
+document.getElementById("generate").onclick=generate;document.getElementById("regen").onclick=generate;
+document.getElementById("gmail").onclick=function(){var to=document.getElementById("recipient").value.trim();if(!to){toast("ใส่ Recipient ก่อนสร้าง Gmail Draft");return}toast("Demo: Gmail Draft created — nothing sent")};
+</script>
+</body></html>
