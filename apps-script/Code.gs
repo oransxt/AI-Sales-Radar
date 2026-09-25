@@ -1,5 +1,5 @@
 const RADAR = {
-  version: '2.0.1',
+  version: '2.1.0',
   spreadsheetId: '1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo',
   sheets: {
     brands: 'Brand_Master',
@@ -7,10 +7,11 @@ const RADAR = {
     radar: 'Daily_Radar',
     config: 'Config',
     credentials: 'Credential_Library',
-    credentialMatches: 'Brand_Credential_Match'
+    credentialMatches: 'Brand_Credential_Match',
+    emailDrafts: 'Email_Draft_Log'
   },
   statuses: ['Not Checked', 'Available', 'Has Owner', 'Existing Client', 'Skip'],
-  activityTypes: ['MASTER_IMPORT', 'RADAR_DETECTED', 'SIGNAL_UPDATED', 'STATUS_CHANGED', 'CREDENTIAL_SELECTED', 'NOTE_ADDED', 'QUALIFIED', 'PROPOSAL', 'WON', 'LOST']
+  activityTypes: ['MASTER_IMPORT', 'RADAR_DETECTED', 'SIGNAL_UPDATED', 'STATUS_CHANGED', 'CREDENTIAL_SELECTED', 'EMAIL_DRAFT_GENERATED', 'GMAIL_DRAFT_CREATED', 'NOTE_ADDED', 'QUALIFIED', 'PROPOSAL', 'WON', 'LOST']
 };
 
 function onOpen() {
@@ -20,7 +21,8 @@ function onOpen() {
     .addItem('Rotate API Key', 'rotateApiKey')
     .addItem('Show Web App URL', 'showWebAppUrl')
     .addSeparator()
-    .addItem('Setup V2 Credential Sheets', 'setupV2Sheets')
+    .addItem('Setup Sales Flow Sheets', 'setupV2Sheets')
+    .addItem('Configure OpenAI Drafting', 'setupOpenAIDrafting')
     .addToUi();
 }
 
@@ -77,6 +79,9 @@ function doGet(e) {
     if (action === 'credential-matches') {
       return json_({ ok: true, data: getCredentialMatches_(p.brandId || '') });
     }
+    if (action === 'email-drafts') {
+      return json_({ ok: true, data: getEmailDrafts_(p.brandId || '', Number(p.limit || 50)) });
+    }
     return json_({ ok: false, error: 'Unknown action: ' + action }, 400);
   } catch (err) {
     return json_({ ok: false, error: err.message }, 500);
@@ -107,6 +112,12 @@ function doPost(e) {
     if (action === 'credential-analyze') {
       return json_({ ok: true, data: analyzeDriveCredential_(body) });
     }
+    if (action === 'email-draft-generate') {
+      return json_({ ok: true, data: generateEmailDraft_(body) });
+    }
+    if (action === 'gmail-draft-create') {
+      return json_({ ok: true, data: createGmailDraft_(body) });
+    }
     return json_({ ok: false, error: 'Unknown action: ' + action }, 400);
   } catch (err) {
     return json_({ ok: false, error: err.message }, 500);
@@ -116,11 +127,11 @@ function doPost(e) {
 
 function setupV2Sheets() {
   ensureV2Sheets_();
-  upsertConfig_('V2 Data Layer', 'Credential_Library + Brand_Credential_Match');
-  upsertConfig_('V2 Version', RADAR.version);
+  upsertConfig_('Sales Flow Data Layer', 'Credential_Library + Brand_Credential_Match + Email_Draft_Log');
+  upsertConfig_('System Version', RADAR.version);
   SpreadsheetApp.getUi().alert(
-    'AI Sales Radar V2',
-    'Credential_Library and Brand_Credential_Match are ready.',
+    'AI Sales Radar',
+    'Credential and Email Drafting data layers are ready.',
     SpreadsheetApp.getUi().ButtonSet.OK
   );
 }
@@ -134,6 +145,11 @@ function ensureV2Sheets_() {
   ensureSheet_(RADAR.sheets.credentialMatches, [
     'Match_ID','Brand_ID','Brand_Name','Credential_ID','Credential_Name',
     'Match_Score','AI_Recommended','Selected_By_User','Selected_At','Notes'
+  ]);
+  ensureSheet_(RADAR.sheets.emailDrafts, [
+    'Draft_ID','Brand_ID','Brand_Name','Recipient','Language','Tone','Subject','Body',
+    'Sales_Angle','Media_Direction','Next_Best_Action','Selected_Credentials','Engine',
+    'Status','Gmail_Draft_ID','Created_At','Last_Updated'
   ]);
 }
 
@@ -553,6 +569,403 @@ function nextCredentialId_(values, idCol) {
 function truthyValue_(v) {
   const s = String(v ?? '').toLowerCase().trim();
   return v === true || ['true','yes','1','active'].includes(s);
+}
+
+
+function setupOpenAIDrafting() {
+  const ui = SpreadsheetApp.getUi();
+  const props = PropertiesService.getScriptProperties();
+  const currentModel = props.getProperty('OPENAI_MODEL') || 'gpt-6-astra';
+  const response = ui.prompt(
+    'AI Sales Radar — OpenAI Drafting',
+    'Paste OPENAI_API_KEY. The key is stored only in Apps Script Properties, not in GitHub or Google Sheets.\n\nLeave blank and press OK to keep template fallback only.',
+    ui.ButtonSet.OK_CANCEL
+  );
+  if (response.getSelectedButton() !== ui.Button.OK) return;
+
+  const key = String(response.getResponseText() || '').trim();
+  if (key) props.setProperty('OPENAI_API_KEY', key);
+  props.setProperty('OPENAI_MODEL', currentModel);
+  upsertConfig_('Email Draft Engine', key ? ('OpenAI Responses API / ' + currentModel) : 'Template fallback');
+  upsertConfig_('Email Draft Human Control', 'Draft only - Sales reviews and sends');
+  ui.alert(
+    'Email Drafting',
+    key ? ('OpenAI drafting configured with model ' + currentModel + '.') : 'Template fallback remains enabled. No OpenAI key was stored.',
+    ui.ButtonSet.OK
+  );
+}
+
+function getEmailDrafts_(brandId, limit) {
+  ensureV2Sheets_();
+  let rows = readObjects_(RADAR.sheets.emailDrafts);
+  if (brandId) rows = rows.filter(r => String(r.Brand_ID) === String(brandId));
+  rows.reverse();
+  return rows.slice(0, Math.max(1, Math.min(limit || 50, 500)));
+}
+
+function getSelectedCredentialPack_(brandId) {
+  const matches = getCredentialMatches_(brandId).filter(r => truthyValue_(r.Selected_By_User));
+  if (!matches.length) return [];
+
+  const credentials = readObjects_(RADAR.sheets.credentials);
+  const byId = {};
+  credentials.forEach(c => byId[String(c.Credential_ID)] = c);
+
+  const seen = {};
+  return matches.filter(m => {
+    const id = String(m.Credential_ID || '');
+    if (!id || seen[id]) return false;
+    seen[id] = true;
+    return true;
+  }).map(m => {
+    const c = byId[String(m.Credential_ID)] || {};
+    return {
+      id: String(m.Credential_ID || ''),
+      name: String(c.Credential_Name || m.Credential_Name || ''),
+      type: String(c.Credential_Type || ''),
+      industry: String(c.Industry || ''),
+      tags: String(c.Tags || ''),
+      url: String(c.Google_Drive_URL || '')
+    };
+  });
+}
+
+function generateEmailDraft_(body) {
+  ensureV2Sheets_();
+  const brandId = String(body.brandId || '').trim();
+  if (!brandId) throw new Error('brandId is required');
+
+  const brand = findBrand_(brandId);
+  if (!brand) throw new Error('Brand not found: ' + brandId);
+  if (String(brand.Salesforce_Status || '') !== 'Available') {
+    throw new Error('Email drafting is available only for Salesforce_Status = Available');
+  }
+
+  const language = String(body.language || 'Thai').trim();
+  const tone = String(body.tone || 'Professional / Consultative').trim();
+  const cta = String(body.cta || '').trim();
+  const credentials = getSelectedCredentialPack_(brandId);
+  const context = buildEmailDraftContext_(brand, credentials, language, tone, cta);
+
+  let draft;
+  let engine = 'Template fallback';
+  const props = PropertiesService.getScriptProperties();
+  const openAIKey = String(props.getProperty('OPENAI_API_KEY') || '').trim();
+
+  if (openAIKey) {
+    try {
+      draft = callOpenAIEmailDraft_(context, openAIKey, props.getProperty('OPENAI_MODEL') || 'gpt-6-astra');
+      engine = 'OpenAI Responses API';
+    } catch (err) {
+      draft = buildFallbackEmailDraft_(context);
+      engine = 'Template fallback after AI error';
+      draft.engineNote = 'AI generation failed; fallback used: ' + err.message;
+    }
+  } else {
+    draft = buildFallbackEmailDraft_(context);
+  }
+
+  draft.brandId = brandId;
+  draft.brandName = brand.Brand_Name || brandId;
+  draft.language = language;
+  draft.tone = tone;
+  draft.credentials = credentials;
+  draft.engine = engine;
+  draft.recipient = String(body.recipient || '').trim();
+
+  const saved = saveEmailDraftLog_(draft);
+  draft.draftId = saved.draftId;
+
+  appendActivity_({
+    brandId,
+    brandName: draft.brandName,
+    type: 'EMAIL_DRAFT_GENERATED',
+    newStatus: brand.Salesforce_Status || 'Available',
+    buyingSignal: brand.Last_Buying_Signal || '',
+    signalDate: brand.Last_Signal_Date || '',
+    details: 'Email draft generated · ' + engine + ' · ' + language + ' · ' + credentials.length + ' credential(s)',
+    origin: body.origin || 'Email Drafting',
+    createdBy: body.createdBy || 'AI Sales Radar'
+  });
+
+  return draft;
+}
+
+function buildEmailDraftContext_(brand, credentials, language, tone, cta) {
+  return {
+    brandName: String(brand.Brand_Name || ''),
+    companyName: String(brand.Company_Name || brand.Brand_Name || ''),
+    industry: String(brand.Industry || ''),
+    buyingSignal: String(brand.Last_Buying_Signal || ''),
+    signalDate: String(brand.Last_Signal_Date || ''),
+    whyNow: String(brand.Why_Now || brand.Thailand_Evidence || ''),
+    priority: String(brand.Priority || ''),
+    opportunityScore: Number(brand.Opportunity_Score || 0),
+    revenueMinM: Number(brand.Revenue_Min_M_THB || 0),
+    revenueMaxM: Number(brand.Revenue_Max_M_THB || 0),
+    language: language,
+    tone: tone,
+    cta: cta || (normalize_(language).includes('thai')
+      ? 'ขอนัดพูดคุยสั้น ๆ เพื่อแชร์แนวทางสื่อที่เหมาะกับช่วงนี้'
+      : 'Request a short meeting to share media directions relevant to this opportunity'),
+    credentials: credentials
+  };
+}
+
+function buildFallbackEmailDraft_(ctx) {
+  const thai = normalize_(ctx.language).includes('thai');
+  const links = ctx.credentials.filter(c => c.url).map(c => (c.name + ': ' + c.url));
+  const credentialText = links.length
+    ? (thai ? '\n\nข้อมูลประกอบที่เกี่ยวข้อง:\n- ' : '\n\nRelevant credentials:\n- ') + links.join('\n- ')
+    : '';
+
+  if (thai) {
+    const subject = 'ขอแชร์แนวทาง OOH/DOOH สำหรับ ' + ctx.brandName;
+    const body = [
+      'เรียน ทีม ' + ctx.brandName + ' ครับ',
+      '',
+      'ผมจาก Plan B Media ครับ เห็นความเคลื่อนไหวล่าสุดของ ' + ctx.brandName + (ctx.buyingSignal ? ' ในเรื่อง ' + ctx.buyingSignal : '') + ' และมองว่าเป็นจังหวะที่น่าสนใจสำหรับการต่อยอดการสื่อสารผ่าน OOH/DOOH',
+      '',
+      ctx.whyNow ? 'จากข้อมูลที่พบ: ' + ctx.whyNow : 'ผมจึงอยากขอแชร์แนวทางสื่อที่สามารถช่วยสร้างการมองเห็นและต่อยอดช่วงเวลาของแบรนด์ได้',
+      '',
+      'เบื้องต้น Plan B สามารถช่วยวาง Media Direction ให้สอดคล้องกับกลุ่มเป้าหมาย พื้นที่ และจังหวะของแคมเปญ โดยผมได้คัด Credential ที่เกี่ยวข้องไว้ประกอบการพูดคุยแล้ว',
+      credentialText,
+      '',
+      ctx.cta,
+      '',
+      'หากสะดวก ผมยินดีเตรียมแนวทางให้กระชับตาม Objective และพื้นที่ที่แบรนด์ให้ความสำคัญครับ',
+      '',
+      'ขอบคุณครับ'
+    ].join('\n');
+    return {
+      subject: subject,
+      body: body,
+      salesAngle: 'ใช้ Buying Signal ล่าสุดเป็นเหตุผลในการเข้าหา และวาง OOH/DOOH เป็นตัวเร่งการมองเห็นในจังหวะที่แบรนด์กำลังเคลื่อนไหว',
+      mediaDirection: 'เริ่มจาก Objective + Audience + Geography แล้วเลือก OOH/DOOH format ที่เหมาะสม โดยยังไม่สมมติ budget หรือ availability',
+      nextBestAction: ctx.cta
+    };
+  }
+
+  const subject = 'OOH/DOOH opportunity for ' + ctx.brandName;
+  const body = [
+    'Dear ' + ctx.brandName + ' Team,',
+    '',
+    'I’m reaching out from Plan B Media after seeing the recent ' + (ctx.buyingSignal || 'brand activity') + ' around ' + ctx.brandName + '. It looks like a timely opportunity to explore how OOH/DOOH could support visibility and campaign momentum.',
+    '',
+    ctx.whyNow ? 'What caught our attention: ' + ctx.whyNow : 'I would like to share a few media directions relevant to the brand’s current momentum.',
+    '',
+    'We can shape the recommendation around your objective, target audience and priority geography. I have also shortlisted relevant credentials for the discussion.',
+    credentialText,
+    '',
+    ctx.cta,
+    '',
+    'Happy to tailor the direction once we understand the campaign objective and timing.',
+    '',
+    'Best regards'
+  ].join('\n');
+  return {
+    subject: subject,
+    body: body,
+    salesAngle: 'Use the latest buying signal as the reason to engage now, with OOH/DOOH positioned as a visibility and momentum driver.',
+    mediaDirection: 'Start from objective, audience and geography, then recommend relevant OOH/DOOH formats without inventing budget or availability.',
+    nextBestAction: ctx.cta
+  };
+}
+
+function callOpenAIEmailDraft_(ctx, apiKey, model) {
+  const schema = {
+    type: 'object',
+    additionalProperties: false,
+    properties: {
+      subject: { type: 'string' },
+      body: { type: 'string' },
+      salesAngle: { type: 'string' },
+      mediaDirection: { type: 'string' },
+      nextBestAction: { type: 'string' }
+    },
+    required: ['subject','body','salesAngle','mediaDirection','nextBestAction']
+  };
+
+  const credentialText = ctx.credentials.map(c =>
+    '- ' + c.name + ' | ' + c.type + ' | ' + c.industry + (c.url ? ' | ' + c.url : '')
+  ).join('\n') || '- None selected';
+
+  const prompt = [
+    'You are drafting a first-contact B2B sales email for Plan B Media, an OOH/DOOH media company in Thailand.',
+    'Use only the facts provided below. Do not invent campaign dates, budget, media availability, contact names, performance results, or client intent.',
+    'The email must sound human, concise and consultative, not like generic AI copy.',
+    'Draft only. The salesperson will review and send manually.',
+    '',
+    'Language: ' + ctx.language,
+    'Tone: ' + ctx.tone,
+    'Brand: ' + ctx.brandName,
+    'Company: ' + ctx.companyName,
+    'Industry: ' + ctx.industry,
+    'Buying Signal: ' + ctx.buyingSignal,
+    'Signal Date: ' + ctx.signalDate,
+    'Why Now / Evidence: ' + ctx.whyNow,
+    'Internal Opportunity Score: ' + ctx.opportunityScore,
+    'Internal Revenue Potential Range (not client budget): THB ' + ctx.revenueMinM + '–' + ctx.revenueMaxM + 'M',
+    'Preferred CTA: ' + ctx.cta,
+    'Selected Credentials:',
+    credentialText,
+    '',
+    'Return a short subject, a ready-to-edit email body, one salesAngle sentence, one mediaDirection sentence, and one nextBestAction sentence.'
+  ].join('\n');
+
+  const payload = {
+    model: model,
+    input: prompt,
+    text: {
+      format: {
+        type: 'json_schema',
+        name: 'sales_email_draft',
+        strict: true,
+        schema: schema
+      }
+    }
+  };
+
+  const response = UrlFetchApp.fetch('https://api.openai.com/v1/responses', {
+    method: 'post',
+    contentType: 'application/json',
+    headers: { Authorization: 'Bearer ' + apiKey },
+    payload: JSON.stringify(payload),
+    muteHttpExceptions: true
+  });
+
+  const status = response.getResponseCode();
+  const raw = response.getContentText();
+  if (status < 200 || status >= 300) {
+    throw new Error('OpenAI API HTTP ' + status + ': ' + raw.slice(0, 220));
+  }
+
+  const parsed = JSON.parse(raw);
+  const outputText = extractOpenAIOutputText_(parsed);
+  if (!outputText) throw new Error('OpenAI response did not contain output text');
+
+  const result = JSON.parse(outputText);
+  return {
+    subject: String(result.subject || ''),
+    body: String(result.body || ''),
+    salesAngle: String(result.salesAngle || ''),
+    mediaDirection: String(result.mediaDirection || ''),
+    nextBestAction: String(result.nextBestAction || '')
+  };
+}
+
+function extractOpenAIOutputText_(response) {
+  const chunks = [];
+  (response.output || []).forEach(item => {
+    (item.content || []).forEach(content => {
+      if (content && content.type === 'output_text' && content.text) chunks.push(content.text);
+    });
+  });
+  return chunks.join('\n').trim();
+}
+
+function saveEmailDraftLog_(draft) {
+  const sheet = getSpreadsheet_().getSheetByName(RADAR.sheets.emailDrafts);
+  const data = valuesWithHeaders_(sheet);
+  const draftId = 'ED-' + Utilities.formatDate(new Date(), 'Asia/Bangkok', 'yyyyMMdd-HHmmss') + '-' + Utilities.getUuid().slice(0,6);
+  const row = new Array(data.headers.length).fill('');
+
+  setByHeader_(row,data.map,'Draft_ID',draftId);
+  setByHeader_(row,data.map,'Brand_ID',draft.brandId || '');
+  setByHeader_(row,data.map,'Brand_Name',draft.brandName || '');
+  setByHeader_(row,data.map,'Recipient',draft.recipient || '');
+  setByHeader_(row,data.map,'Language',draft.language || '');
+  setByHeader_(row,data.map,'Tone',draft.tone || '');
+  setByHeader_(row,data.map,'Subject',draft.subject || '');
+  setByHeader_(row,data.map,'Body',draft.body || '');
+  setByHeader_(row,data.map,'Sales_Angle',draft.salesAngle || '');
+  setByHeader_(row,data.map,'Media_Direction',draft.mediaDirection || '');
+  setByHeader_(row,data.map,'Next_Best_Action',draft.nextBestAction || '');
+  setByHeader_(row,data.map,'Selected_Credentials',(draft.credentials || []).map(c => c.name).join(' | '));
+  setByHeader_(row,data.map,'Engine',draft.engine || '');
+  setByHeader_(row,data.map,'Status','Preview');
+  setByHeader_(row,data.map,'Created_At',now_());
+  setByHeader_(row,data.map,'Last_Updated',now_());
+  sheet.appendRow(row);
+  return { draftId: draftId };
+}
+
+function createGmailDraft_(body) {
+  ensureV2Sheets_();
+  const draftId = String(body.draftId || '').trim();
+  const brandId = String(body.brandId || '').trim();
+  const to = String(body.to || body.recipient || '').trim();
+  const subject = String(body.subject || '').trim();
+  const emailBody = String(body.body || '').trim();
+
+  if (!brandId) throw new Error('brandId is required');
+  if (!to || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)) throw new Error('A valid recipient email is required');
+  if (!subject) throw new Error('Email subject is required');
+  if (!emailBody) throw new Error('Email body is required');
+
+  const brand = findBrand_(brandId);
+  if (!brand) throw new Error('Brand not found: ' + brandId);
+  if (String(brand.Salesforce_Status || '') !== 'Available') {
+    throw new Error('Gmail draft creation is available only for Salesforce_Status = Available');
+  }
+
+  const gmailDraft = GmailApp.createDraft(to, subject, emailBody, {
+    htmlBody: textToHtmlEmail_(emailBody),
+    name: 'Plan B Media'
+  });
+
+  updateEmailDraftLog_(draftId, {
+    recipient: to,
+    subject: subject,
+    body: emailBody,
+    status: 'Gmail Draft',
+    gmailDraftId: gmailDraft.getId()
+  });
+
+  appendActivity_({
+    brandId,
+    brandName: brand.Brand_Name || brandId,
+    type: 'GMAIL_DRAFT_CREATED',
+    newStatus: brand.Salesforce_Status || 'Available',
+    buyingSignal: brand.Last_Buying_Signal || '',
+    signalDate: brand.Last_Signal_Date || '',
+    details: 'Gmail draft created for ' + to + ' · Draft ID ' + gmailDraft.getId(),
+    origin: body.origin || 'Email Drafting',
+    createdBy: body.createdBy || 'AI Sales Radar'
+  });
+
+  return {
+    draftId: draftId,
+    gmailDraftId: gmailDraft.getId(),
+    gmailUrl: 'https://mail.google.com/mail/u/0/#drafts',
+    recipient: to,
+    subject: subject,
+    sent: false
+  };
+}
+
+function updateEmailDraftLog_(draftId, patch) {
+  if (!draftId) return;
+  const sheet = getSpreadsheet_().getSheetByName(RADAR.sheets.emailDrafts);
+  const data = valuesWithHeaders_(sheet);
+  const rowIndex = findRowByValue_(data.values, data.map.Draft_ID, draftId);
+  if (rowIndex < 2) return;
+
+  setCellByHeader_(sheet,rowIndex,data.map,'Recipient',patch.recipient);
+  setCellByHeader_(sheet,rowIndex,data.map,'Subject',patch.subject);
+  setCellByHeader_(sheet,rowIndex,data.map,'Body',patch.body);
+  setCellByHeader_(sheet,rowIndex,data.map,'Status',patch.status);
+  setCellByHeader_(sheet,rowIndex,data.map,'Gmail_Draft_ID',patch.gmailDraftId);
+  setCellByHeader_(sheet,rowIndex,data.map,'Last_Updated',now_());
+}
+
+function textToHtmlEmail_(text) {
+  const escaped = String(text || '')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;');
+  const linked = escaped.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>');
+  return '<div style="font-family:Arial,sans-serif;line-height:1.55;color:#222">' + linked.replace(/\n/g,'<br>') + '</div>';
 }
 
 function getDailyRadar_(dateFilter, statusFilter) {
