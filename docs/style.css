@@ -35,3 +35,29 @@
 .smart-status.inactive{background:#fff0f0;color:#9a3333}
 @media(max-width:1100px){.smart-grid{grid-template-columns:1fr 1fr}.smart-meta{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.smart-url-row,.smart-grid,.smart-meta{grid-template-columns:1fr}.smart-preview-head{display:block}.smart-status{margin-top:8px}}
+
+.email-workspace{grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr)}
+.email-panel{overflow:visible}
+.email-credential-pack{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.email-cred-chip{font-size:10px;padding:6px 8px;border-radius:20px;background:#eef1ff;color:#3948c7;border:1px solid #dce1ff}
+.email-controls{background:#fbfbfe;margin-left:-14px;margin-right:-14px;padding:13px 14px}
+.email-control-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.email-control-grid label,.email-fields label{display:grid;gap:5px;font-size:10px;color:var(--muted)}
+.email-control-grid .wide,.email-fields .wide{grid-column:1/-1}
+.email-control-grid input,.email-control-grid select,.email-fields input,.email-fields textarea{width:100%;color:var(--ink)}
+.email-empty-state{text-align:center;padding:30px 16px;border:1px dashed #cfd5ef;border-radius:12px;margin-top:14px;background:linear-gradient(135deg,#fbfcff,#f5f3ff)}
+.email-empty-state h3{margin:7px 0 7px}
+.email-empty-state .btn{margin-top:14px}
+.email-empty-icon{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;display:grid;place-items:center;margin:auto;font-size:20px}
+.email-draft-card{margin-top:14px;border:1px solid #dce1f0;border-radius:12px;padding:13px;background:#fff}
+.email-draft-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.email-draft-head h3{margin:5px 0 2px}
+.email-insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.email-insight-grid div{border:1px solid var(--line);border-radius:9px;padding:9px;background:#fbfbfd}
+.email-insight-grid span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:4px}
+.email-insight-grid strong{font-size:10px;line-height:1.45}
+.email-fields{display:grid;grid-template-columns:1fr;gap:9px;margin-top:12px}
+.email-fields textarea{resize:vertical;min-height:260px;line-height:1.55}
+.human-control-note{margin-top:10px;background:#ecfbf3;border:1px solid #bcebd0;color:#17633d;padding:9px 10px;border-radius:9px;font-size:10px}
+@media(max-width:1100px){.email-workspace{grid-template-columns:1fr}.email-insight-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.email-control-grid{grid-template-columns:1fr}.email-control-grid .wide{grid-column:auto}.email-draft-head{display:block}}
