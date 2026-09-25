@@ -23,8 +23,8 @@
     },
     "crg": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 4,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 5,
       "lastSignalHash": "9344aa9917",
       "lastSignal": "Major product launch"
     },
@@ -163,8 +163,8 @@
     },
     "subway": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 37,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 38,
       "lastSignalHash": "55a5ad9eeb",
       "lastSignal": "Thailand market entry"
     },
@@ -289,8 +289,8 @@
     },
     "human made": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 32,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 33,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
@@ -464,8 +464,8 @@
     },
     "เช็กอินด่วน": {
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 34,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 35,
       "lastSignalHash": "2356c86cb1",
       "lastSignal": "Expansion / new branches"
     },
@@ -611,9 +611,9 @@
     },
     "thaimart": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-09-17",
-      "timesDetected": 6,
-      "lastSignalHash": "6050b0279c",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 7,
+      "lastSignalHash": "a40fdf64a8",
       "lastSignal": "Major product launch"
     },
     "คนละครึ่ง พลัส": {
@@ -1045,8 +1045,8 @@
     },
     "shopee": {
       "firstSeen": "2026-08-25",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 19,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 20,
       "lastSignalHash": "fed7904a9d",
       "lastSignal": "Major product launch"
     },
@@ -1325,8 +1325,8 @@
     },
     "honda super-one ev": {
       "firstSeen": "2026-09-07",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 20,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 21,
       "lastSignalHash": "22ef3b1398",
       "lastSignal": "Major product launch"
     },
@@ -1458,8 +1458,8 @@
     },
     "lepas": {
       "firstSeen": "2026-09-13",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 4,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 5,
       "lastSignalHash": "3293142288",
       "lastSignal": "Major product launch"
     },
@@ -1500,8 +1500,8 @@
     },
     "hashtag b": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-09-23",
-      "timesDetected": 4,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 5,
       "lastSignalHash": "fb16df81f7",
       "lastSignal": "Expansion / new branches"
     },
@@ -1535,9 +1535,9 @@
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 10,
-      "lastSignalHash": "40c88f836b",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 11,
+      "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
     "health": {
@@ -1563,8 +1563,8 @@
     },
     "ซีพีแรม": {
       "firstSeen": "2026-09-18",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 4,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 5,
       "lastSignalHash": "15dd008099",
       "lastSignal": "Major product launch"
     },
@@ -1591,8 +1591,8 @@
     },
     "berwick": {
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 7,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 8,
       "lastSignalHash": "f232e6058a",
       "lastSignal": "Expansion / new branches"
     },
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 7,
+      "lastSeen": "2026-09-25",
+      "timesDetected": 8,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1626,9 +1626,9 @@
     },
     "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ qsr": {
       "firstSeen": "2026-09-21",
-      "lastSeen": "2026-09-24",
-      "timesDetected": 5,
-      "lastSignalHash": "f134fbd02a",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 6,
+      "lastSignalHash": "6c1ec5632c",
       "lastSignal": "Major product launch"
     },
     "icaur v27 reev เอสยูวี": {
@@ -1692,6 +1692,48 @@
       "lastSeen": "2026-09-24",
       "timesDetected": 1,
       "lastSignalHash": "6c7b11564f",
+      "lastSignal": "Major product launch"
+    },
+    "กลุ่มธนบุรี": {
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 1,
+      "lastSignalHash": "3f8ce81632",
+      "lastSignal": "Major product launch"
+    },
+    "boots": {
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 1,
+      "lastSignalHash": "ac699e67d5",
+      "lastSignal": "Major product launch"
+    },
+    "boots thailand strengthens its": {
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 1,
+      "lastSignalHash": "e6232e40ce",
+      "lastSignal": "Major product launch"
+    },
+    "logeski": {
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 1,
+      "lastSignalHash": "8125efe796",
+      "lastSignal": "Thailand market entry"
+    },
+    "kidzooona": {
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 1,
+      "lastSignalHash": "6e8003be38",
+      "lastSignal": "Major product launch"
+    },
+    "ari": {
+      "firstSeen": "2026-09-25",
+      "lastSeen": "2026-09-25",
+      "timesDetected": 1,
+      "lastSignalHash": "0ecd38617f",
       "lastSignal": "Major product launch"
     }
   }
