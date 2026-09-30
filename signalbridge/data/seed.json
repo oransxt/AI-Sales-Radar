@@ -1,0 +1,71 @@
+{
+  "accounts": [
+    {
+      "id": "DEMO-A0",
+      "brand": "Demo Finance",
+      "aliases": "",
+      "customer_type": "UNKNOWN",
+      "industry": "FINANCE",
+      "area": "BANGKOK",
+      "owner": "",
+      "contact_name": "",
+      "contact_email": "",
+      "current_media": ""
+    },
+    {
+      "id": "DEMO-A1",
+      "brand": "Demo Retail",
+      "aliases": "",
+      "customer_type": "UNKNOWN",
+      "industry": "RETAIL",
+      "area": "BANGKOK",
+      "owner": "",
+      "contact_name": "",
+      "contact_email": "",
+      "current_media": ""
+    },
+    {
+      "id": "DEMO-A2",
+      "brand": "Demo Health",
+      "aliases": "",
+      "customer_type": "UNKNOWN",
+      "industry": "HOSPITAL",
+      "area": "BANGKOK",
+      "owner": "",
+      "contact_name": "",
+      "contact_email": "",
+      "current_media": ""
+    }
+  ],
+  "media": [],
+  "credentials": [],
+  "config": {
+    "sales_name": "ผู้ดูแลบัญชี / Account Manager",
+    "signature_th": "ชื่อผู้ส่ง\nชื่อบริษัท",
+    "signature_en": "Sender name\nCompany name",
+    "brand_sheet_id": "",
+    "brand_sheet_tab": "Accounts",
+    "credential_root_folder_id": "",
+    "news_enabled": false,
+    "watchlist_news_enabled": false,
+    "news_max_age_days": 14,
+    "news_fetch_interval_minutes": 30,
+    "credential_refresh_minutes": 60,
+    "max_signals_per_run": 60,
+    "watchlist_queries_per_run": 8,
+    "credentials_per_run": 4,
+    "digest_enabled": false,
+    "digest_to": "",
+    "digest_batch_size": 20,
+    "poll_minutes": 5
+  },
+  "sources": [
+    {
+      "id": "NEWS-TH",
+      "active": true,
+      "url": "https://news.google.com/rss/search?q=Thailand%20brand%20launch%20when%3A14d&hl=th&gl=TH&ceid=TH:th",
+      "brand_hint": "",
+      "industry_hint": ""
+    }
+  ]
+}

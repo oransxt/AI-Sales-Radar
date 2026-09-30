@@ -1,53 +1,27 @@
-# AI Sales Radar
+# SignalBridge
 
-Thailand-first sales opportunity radar for OOH/DOOH.
+**News to Client Conversations**
 
-Current implementation checkpoint: **Version 1.9.3.2 — 100% Free Online Edition**.
+โปรเจกต์รุ่นล่าสุดเชื่อมข่าวธุรกิจกับ Research, Case Study และ Industry Insights เพื่อเตรียมอีเมล TH/EN ที่ผู้ขายตรวจได้ก่อนส่ง
 
-## V1 flow
+## Latest source package
 
-1. Daily Thailand-first brand discovery from public online sources
-2. Rank top 20 by commercial opportunity
-3. Manual Salesforce ownership check
-4. Internal credential library using Google Drive links
-5. Multiple credential selection per brand
-6. Daily automation via GitHub Actions
-7. Static online dashboard via GitHub Pages
+| Resource | Link |
+|---|---|
+| Complete source and tests | [signalbridge/](signalbridge/) |
+| Project overview | [SignalBridge README](signalbridge/README.md) |
+| Thai installation guide | [คู่มือติดตั้ง](signalbridge/README-TH.md) |
+| Workflow and duplicate policy | [Workflow](signalbridge/docs/WORKFLOW.md) |
+| Current and proposed AI architecture | [Architecture](signalbridge/docs/ARCHITECTURE.md) |
+| Implemented versus planned features | [Status](signalbridge/docs/STATUS.md) |
+| Offline demo / exact code copy guide | [Preview](signalbridge/Preview.html) / [Install guide](signalbridge/Install-Guide.html) |
 
-## Free runtime architecture
+**Release 2.2.0** contains the knowledge-sharing **Rules + Templates** implementation. Gemini, Ollama, embeddings and semantic event deduplication remain documented design proposals; no LLM service or production Google deployment has been enabled.
 
-- GitHub repository: free
-- GitHub Pages: free
-- GitHub Actions: free for this public repository within GitHub's included limits
-- Discovery: public Google News RSS searches focused on Thailand
-- Scoring: local JavaScript commercial scoring rules
-- History / duplicate detection: repository JSON data
-- Credential recommendation: industry + tag matching in the browser
-- Salesforce ownership check: manual human-in-the-loop
+Public seed uses fictional examples. Connect real account data and private knowledge sources in Google Sheets/Drive rather than committing them here. The source package passed 59 pure-engine and 30 simulated Google integration checks; live account checks are still required.
 
-There is **no paid OpenAI API dependency in Version 1 runtime**.
+## Existing runtime
 
-## Internal credential types
+The earlier repository files at `apps-script/`, `scripts/`, `docs/` and `skills/` and their automation workflows are retained for compatibility. They are separate from the new `signalbridge/apps-script/` package. Install SignalBridge in its own bound Apps Script project; do not mix the two `Code.gs` files.
 
-- Industry Overview
-- Case Study
-- New Launches
-- Media Credentials
-
-## Version history
-
-- 1.0 Daily Brand Discovery
-- 1.1 Salesforce Check
-- 1.2 Internal Knowledge Links
-- 1.3 Multiple Credential Types
-- 1.4 Credential Recommendation
-- 1.5 Thailand Brand Discovery Engine
-- 1.6 Ranking & Scoring
-- 1.7 Duplicate / History Logic
-- 1.8 Daily Review Experience
-- 1.9 Final Data Structure
-- 1.9.1 First local working implementation
-- 1.9.2 GitHub Online Edition
-- 1.9.3 Replace paid API runtime with free public-source discovery
-- 1.9.3.1 Improve recency and brand extraction
-- 1.9.3.2 Refine narrative headline brand detection
+The displayed project name is now SignalBridge. The repository URL retains its previous slug until the repository itself is renamed in GitHub settings.

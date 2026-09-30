@@ -1,0 +1,12 @@
+node_modules/
+tests/ui-output/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.clasp.json
+*credentials*.local.*
+data/private/
+data/local/
+*.log

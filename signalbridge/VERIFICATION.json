@@ -1,0 +1,16 @@
+{
+  "project": "SignalBridge",
+  "version": "2.2.0",
+  "mode": "KNOWLEDGE_SHARING_RULES_TEMPLATES",
+  "checked_at": "2026-09-30",
+  "core_checks_passed": 59,
+  "simulated_integration_checks_passed": 30,
+  "package_validation": "passed; five exact source copy blocks, synchronized Core, portable builds and fictional public seed",
+  "offline_browser_ui": "pending current package run; no Chromium executable available at prior path",
+  "source_documents_or_permissions_modified": false,
+  "customer_mail_automatically_sent": false,
+  "live_google_account_deployed": false,
+  "llm_integration": "design only; not implemented",
+  "semantic_event_deduplication": "design only; not implemented",
+  "one_signal_per_brand_per_batch": "design proposal only; not implemented"
+}
