@@ -3,7 +3,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 adapter=r'''
 const localSeed=__SEED__;
-const storeKey='signalbridge-v22-knowledge-demo';let localState;
+const storeKey='signalbridge-v23-company-gemini-demo';let localState;
 function localInit(){try{localState=JSON.parse(localStorage.getItem(storeKey));}catch{}if(localState)return;
 localState={context:{now:'2026-09-30',config:localSeed.config,accounts:localSeed.accounts,media:localSeed.media,credentials:[]},deals:[],deliveries:[],demo:true,last_run:''};
 const kinds=['RESEARCH','CASE_STUDY','INDUSTRY_OVERVIEW'];

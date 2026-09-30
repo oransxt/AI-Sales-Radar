@@ -1,25 +1,21 @@
 # Implementation status
 
-Release **SignalBridge 2.2.0**, prepared 2026-09-30. This release renames and packages the tested knowledge-sharing baseline for source control. No paid or free LLM API is called by the shipped runtime.
+Release **SignalBridge 2.3.0**, prepared 2026-09-30.
 
 | Capability | Status |
 |---|---|
-| Brand Master classification | Implemented; real statuses must be supplied |
-| Rules-based knowledge matching and content-derived link labels | Implemented with extraction limits |
-| 1–3 distinct knowledge topics | Implemented |
-| Official TH/EN template drafts and independent edits | Implemented |
-| Internal 20-signal weekday digest | Implemented; not activated in a real account |
-| Final review and customer Gmail Draft | Implemented; customer sending is manual |
-| Normalized-headline duplicate detection and delivery history | Implemented |
-| Original article analysis | Proposed; current discovery reads RSS metadata/headlines |
-| Gemini / Ollama / embeddings / RAG | Proposed; not implemented |
-| Semantic event deduplication | Proposed; not implemented |
-| One signal per brand per batch | Proposed; not implemented |
-| Human-feedback prompt memory | Proposed; not implemented |
-| Live Google installation | Not performed |
+| Rules-based discovery, objective inference, Brand Master classification | Implemented |
+| 1–3 knowledge topics and content-derived labels | Implemented, extraction/keyword limits apply |
+| TH/EN templates and independently editable drafts | Implemented |
+| Company Gemini prompt and JSON import | Implemented as a manual browser handoff |
+| ID/headline/source duplicate protection across delivered IDs | Implemented |
+| Internal 20-signal weekday digest and delivery reconciliation | Implemented, live account not activated |
+| Owner-only review and customer Gmail Draft | Implemented, customer sending manual |
+| Read-only production readiness report and activation gate | Implemented |
+| Original article reading / semantic event deduplication | Human review, not automated |
+| LLM API / model worker / embedding service | Not used |
+| Live Google installation, OAuth, corporate Gemini and Gmail validation | Requires account-level installation and live checks |
 
-The public package uses fictional brand examples and contains no actual Drive library IDs or research extracts. Default `news_enabled`, `watchlist_news_enabled` and `digest_enabled` are false. Empty knowledge seed ensures sample research cannot be mistaken for verified live documents.
+The public package contains no real client import, company contact addresses, knowledge extracts or Drive library IDs. News and digest switches remain disabled by default until deployment settings are supplied.
 
-The integration suite uses in-memory Google service mocks and an explicitly injected fictional fixture. Offline browser tests validate editing/export flows only. These checks do not certify Google OCR, OAuth scopes, Gmail delivery or API quotas in the user's account.
-
-The proposed AI design needs model/account eligibility, hardware capacity for private jobs and a representative evidence-grounding evaluation before activation. Software/API fees can be zero within free quota; local computation still uses an existing machine and electricity.
+Tests use fictional fixtures and in-memory Google service mocks. They do not certify real OAuth, Drive OCR, corporate permissions or email deliverability. See PRODUCTION.md for live checks, monitoring and rollback.

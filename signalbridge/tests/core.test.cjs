@@ -46,7 +46,7 @@ test('empty OCR not silently treated as read',()=>assert.equal(C.describeDoc('ti
 test('stale signal blocked at final review',()=>{let d=build();d.published_at='2026-01-01';assert.equal(C.validate(d,ctx).ok,false);});
 const times=[['2026-09-30T01:29:00Z',false],['2026-09-30T01:30:00Z',true],['2026-09-30T10:59:59Z',true],['2026-09-30T11:00:00Z',false],['2026-10-03T01:30:00Z',false],['2026-10-04T05:00:00Z',false],['2026-10-02T10:59:00Z',true],['2026-10-05T01:30:00Z',true]];
 times.forEach(([time,open])=>test('Bangkok work window '+time,()=>assert.equal(C.windowOpen(time),open)));
-test('batch takes exactly 20 new signals',()=>{let a=Array.from({length:43},(_,i)=>({...build(),id:'D'+i})),sent={D0:true};let batch=C.fullBatch(a,sent,'2026-09-30',14);assert.equal(batch.length,20);assert.ok(!batch.some(d=>d.id==='D0'));});
+test('batch takes exactly 20 new signals',()=>{let a=Array.from({length:43},(_,i)=>({...build(),id:'D'+i,title:'Acme เปิดสาขาใหม่ '+i,source_url:'https://example.com/article/'+i})),sent={D0:true};let batch=C.fullBatch(a,sent,'2026-09-30',14);assert.equal(batch.length,20);assert.ok(!batch.some(d=>d.id==='D0'));});
 test('partial queue remains partial, no fake signals',()=>assert.equal(C.fullBatch([build()],{},'2026-09-30',14).length,1));
 test('rejected and stale are excluded from digest',()=>assert.equal(C.fullBatch([{...build(),state:'REJECTED'},{...build(),published_at:'2025-01-01'}],{},'2026-09-30',14).length,0));
 
@@ -59,6 +59,19 @@ test('missing knowledge summaries prevent client draft',()=>{let local={...ctx,c
 
 test('general retail news does not receive unrelated active lifestyle research',()=>{let d={...build(),industry:'RETAIL',title:'Store expansion',target:'GENERAL'},c={...docs[0],topic:'ACTIVE_LIFESTYLE',tags:'RETAIL|EXPANSION'};assert.equal(C.credentials(d,[c]).length,0);d.title='Sports store expansion';assert.equal(C.credentials(d,[c]).length,1);});
 test('QSR news without delivery context does not receive delivery-app research',()=>{let d={...build(),industry:'QSR',title:'New restaurant launch',target:'GENERAL'},c={...docs[0],topic:'ON_DEMAND_JOURNEY',tags:'QSR|LAUNCH'};assert.equal(C.credentials(d,[c]).length,0);d.title='Food delivery campaign';assert.equal(C.credentials(d,[c]).length,1);});
+
+test('company prompt identifies saved signal and includes only selected evidence',()=>{let d=build(),p=C.companyGeminiPrompt(d,ctx);assert.ok(p.includes('"signal_id": "D"'));assert.ok(p.includes(d.title));assert.ok(p.includes(docs[0].summary_en));assert.ok(!p.includes(d.email_to));assert.ok(!p.includes(docs[4].drive_url));assert.ok(p.includes('RSS headline only'));});
+test('company prompt rejects missing readable knowledge',()=>{let d=build();d.credentials=[];assert.throws(()=>C.companyGeminiPrompt(d,ctx));});
+const ai=(d=build())=>({signal_id:d.id,version:d.version,TH:{subject:'แบ่งปันข้อมูล',body:'เรียน ทีมการตลาด ครับ'},EN:{subject:'Relevant research',body:'Dear Marketing Team,'}});
+test('company JSON import accepts matching fenced JSON',()=>{let d=build();assert.equal(C.importCompanyDraft('```json\n'+JSON.stringify(ai(d))+'\n```',d).EN.body,'Dear Marketing Team,');});
+test('company JSON rejects stale version and other signal',()=>{let d=build(),v=ai(d);v.version++;assert.throws(()=>C.importCompanyDraft(JSON.stringify(v),d));v=ai(d);v.signal_id='OTHER';assert.throws(()=>C.importCompanyDraft(JSON.stringify(v),d));});
+test('company JSON rejects missing language and malformed values',()=>{let d=build(),v=ai(d);delete v.EN;assert.throws(()=>C.importCompanyDraft(JSON.stringify(v),d));v=ai(d);v.EN.body=42;assert.throws(()=>C.importCompanyDraft(JSON.stringify(v),d));assert.throws(()=>C.importCompanyDraft('plain response',d));});
+test('company JSON refuses arbitrary URL and header injection',()=>{let d=build(),v=ai(d);v.EN.body+=' https://external.test';assert.throws(()=>C.importCompanyDraft(JSON.stringify(v),d));v=ai(d);v.TH.subject+='\nBcc: attacker@test';assert.throws(()=>C.importCompanyDraft(JSON.stringify(v),d));});
+test('company JSON imports text without changing recipient or knowledge',()=>{let d=build(),v=ai(d);v.credentials=[{id:'EXTERNAL'}];v.email_to='attacker@test';let result=C.importCompanyDraft(JSON.stringify(v),d);assert.deepEqual(Object.keys(result),['TH','EN']);assert.equal(d.email_to,account.contact_email);assert.equal(d.credentials.length,3);});
+test('dedup across IDs removes normalized headline reprints',()=>{let d=build(),copy={...d,id:'COPY',title:d.title+' - Publisher',source_url:'https://another.test'};assert.equal(C.fullBatch([d,copy],{},'2026-09-30',14).length,1);assert.equal(C.fullBatch([d,copy],{D:true},'2026-09-30',14).length,0);});
+test('equivalent URLs with tracking are suppressed across delivered IDs',()=>{let d=build(),copy={...d,id:'COPY',title:'Acme เปิดตัวบริการใหม่',source_url:d.source_url+'?utm_source=email#top'};assert.equal(C.fullBatch([d,copy],{D:true},'2026-09-30',14).length,0);});
+test('same brand with different headline and source remains eligible',()=>{let d=build(),next={...d,id:'NEXT',title:'Acme เปิดตัวผลิตภัณฑ์อีกชุด',source_url:'https://example.com/next'};assert.equal(C.fullBatch([d,next],{D:true},'2026-09-30',14).length,1);});
+test('invalid and future publication dates are excluded',()=>{let d=build();assert.equal(C.fullBatch([{...d,published_at:'invalid'},{...d,id:'F',published_at:'2099-01-01'}],{},'2026-09-30',14).length,0);});
 console.log('TOTAL '+count+' core checks');
 
 

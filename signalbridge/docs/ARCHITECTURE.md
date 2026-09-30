@@ -1,73 +1,35 @@
-# SignalBridge architecture
-
-Design checkpoint: 2026-09-30. The repository contains a working Rules + Templates baseline and a **proposed** Hybrid AI extension. A model name or free quota is not a quality or availability guarantee.
-
-## Current executable baseline
+# Architecture — production implementation package 2.3
 
 ```mermaid
 flowchart TD
-    RSS["RSS2 sources"] --> Script["Bound Apps Script"]
-    Master["Sheets Brand Master"] --> Script
-    Drive["Drive Knowledge Library"] --> Index["Documents metadata and summaries"]
-    Index --> Script
-    Script --> Queue["Sheets Signals and Delivery history"]
-    Queue --> Digest["Internal Gmail digest: 20 unsent signals"]
-    Queue --> Review["Sheet modal: TH / EN review"]
-    Review --> Draft["Approved Gmail Draft"]
+    Sources["RSS and Drive Knowledge"] --> Script["Apps Script"]
+    Script <--> Sheets["Brand Master, Queue, Documents, History"]
+    Script --> Digest["Internal Gmail digest, 20 signals"]
+    Sheets --> Review["Sheet review interface"]
+    Review -->|"Salesperson copies prompt"| Gemini["Company Gemini in browser"]
+    Gemini -->|"Salesperson pastes TH/EN JSON"| Review
+    Review -->|"Validated and saved"| Draft["Gmail Draft"]
 ```
 
-Google Apps Script owns scheduling, source discovery, indexing, deterministic matching, bilingual template generation and delivery reconciliation. The browser UI is not a trust boundary: final validation and Drive revalidation also run server-side.
+Apps Script handles source metadata, deterministic objective inference, content-derived knowledge labels, keyword ranking, templates, state transitions, scheduling and delivery reconciliation. Company Gemini runs only through the salesperson's browser. There is no HTTP call to an LLM service, API key, local model, worker or embedding service.
 
-Work-window checks execute immediately before sending. Delivery intent is persisted and flushed before Gmail send; uncertain outcomes are held for reconciliation. Google time triggers remain approximate and quota-limited.
+The prompt includes one selected signal and summaries of at most three selected documents. It omits the recipient email and the full Brand Master. The salesperson checks the corporate account, reads the original article, and supplies permitted source documents when Gemini cannot read them. Source text is evidence, not instructions. A headline is not proof of detailed campaign plans or budgets.
 
-## Proposed Hybrid AI extension — not implemented
+Returned JSON must identify the same signal and saved version and contain TH/EN subject/body. The app imports only those text fields. Source references, knowledge selection, recipient and permissions remain controlled by the review interface. Imported drafts require a new human confirmation and server-side validation before Gmail Draft creation.
 
-```mermaid
-flowchart TD
-    Sources["Article evidence and Knowledge chunks"] --> Router{"Data eligibility"}
-    Router -->|"Public, non-confidential"| Cloud["Gemini API: eligible Free Tier model"]
-    Router -->|"Internal / confidential"| Jobs["Sheets job queue"]
-    Worker["Local worker polls queue"] --> Jobs
-    Jobs --> Worker
-    Worker --> Local["Ollama: local model"]
-    Local --> Worker
-    Cloud --> Evidence["Structured result with source references"]
-    Worker --> Evidence
-    Evidence --> Check["Deterministic checks and human review"]
-```
+## State and reliability
 
-The local worker pulls authorized jobs using its own Google authentication. Apps Script never assumes it can reach the user's localhost. A local worker and model must be running to process private jobs; otherwise those jobs remain queued.
+Sheets owns durable Signals payloads, InputsV2, Documents, Deliveries, DraftExports and AuditV2. A script lock prevents overlapping writes. Optimistic version checks reject edits based on stale views. Draft exports are idempotent per signal revision.
 
-| Layer | Proposed responsibility |
-|---|---|
-| Article reader | Retain URL, publisher, publication/event dates, excerpt and retrieval status; a headline-only result cannot support detailed claims |
-| Knowledge ingestion | Split content into retrievable chunks; retain file ID, version, page/section and sharing classification |
-| Retrieval | Filter eligible, current documents; combine keyword and semantic retrieval; rerank candidates using actual excerpts |
-| Event memory | Store canonical brand/event entities, dates, locations and all linked sources across batches |
-| Analyst | Separate observed facts from inferred business objectives, with evidence references |
-| Writer | Generate independently editable TH/EN from approved evidence and 1–3 knowledge documents |
-| Reviewer | Check claims, document relevance, translation consistency and missing evidence; AI review never guarantees correctness |
-| Feedback | Reuse human-approved examples and constraints; do not claim automatic model training |
+A full batch contains 20 eligible unsent entries. Headline keys and normalized URLs suppress duplicates across signal IDs and prior delivered entries. This is deterministic deduplication, not semantic event merging. Same brand with a distinct headline and source can recur for a new event; the seller checks ambiguous repeated events.
 
-The public-cloud path must not receive the private Brand Master, contact details, confidential account history or internal documents. Customer recipient and private account status are joined locally after generation. Permission to email a document is not automatically permission to submit it to an unpaid AI service.
+A delivery intent is persisted and flushed before sending. Uncertain outcomes pause new digest sends until Sent/Draft reconciliation establishes the result. Checks run immediately before the send to enforce weekday/hour boundaries. Internal recipients must match the installer's email domain. An administrator must adapt that restriction before supporting additional verified corporate domains.
 
-Use a separate Gemini project with no active paid billing, an allowlist of eligible free models/features, a quota ledger and pause-on-limit behavior. Do not rotate projects or keys to bypass quota. Embeddings follow the same data eligibility rule. Free availability and terms must be checked in the actual account before activation.
+## Deployment boundary
 
-News/Drive text is treated as untrusted evidence, never as instructions to change policy, recipients, permissions or sending behavior. Model output is schema-validated. Cache/index entries invalidate when the underlying article/document version changes.
+Use one bound Google Sheet and one installing corporate account. The review screen is owner-only. This release is not a shared multi-user CRM. No web-app deployment or third-party server is required. Company Gemini usage follows existing entitlement and company policy. No added LLM API charge arises from this implementation; existing subscriptions and Google service quotas still apply.
 
-## Acceptance gates before implementation is enabled
+## Google references
 
-1. Test a representative 20-signal set including Thai headlines, mixed industries, repeated reporting and distinct events from the same brand.
-2. Manually judge source grounding, objective inference, knowledge relevance and TH/EN quality against the template baseline.
-3. Measure actual quota use and retry behavior in the selected account. Never promise unlimited repeated batches.
-4. Validate internal-data routing and local-worker recovery without exposing an unauthenticated model endpoint.
-5. Test live Google permissions, modified-document handling and Gmail draft/digest behavior.
-
-## Provider references
-
-- [Gemini pricing and eligible free models](https://ai.google.dev/gemini-api/docs/pricing)
-- [Gemini project rate limits](https://ai.google.dev/gemini-api/docs/rate-limits)
-- [Gemini unpaid-service data terms](https://ai.google.dev/gemini-api/terms)
-- [Ollama local-only configuration and memory considerations](https://docs.ollama.com/faq)
-- [Apps Script quotas](https://developers.google.com/apps-script/guides/services/quotas)
-- [Apps Script time triggers](https://developers.google.com/apps-script/guides/triggers/installable)
+- https://developers.google.com/apps-script/guides/triggers/installable
+- https://developers.google.com/apps-script/guides/services/quotas
