@@ -1,4 +1,4 @@
-# Production installation and operations — SignalBridge 2.3
+# Production installation and operations — SignalBridge 2.3.1
 
 ## Deployment inputs
 
@@ -27,6 +27,18 @@
 10. Set digest_enabled TRUE and digest_to. Use the menu to inspect production readiness, then activateProduction to install the weekday polling schedule. If readiness fails, fix each listed blocker. The schedule can activate outside hours but sends only in the permitted window.
 
 ## Live acceptance checks
+
+### Existing installation and seller-confirmed master
+
+When the seller confirms that every listed brand is an existing account in their own book, set those rows to `EXISTING`. This represents the account relationship, not proof that every brand has purchased. An explicitly identified brand outside the master is a New Opportunity and starts without an inherited recipient. Verified brand identity takes precedence over another company mentioned as a partner in the same headline. Unidentified or ambiguous brands are held for review; a general RSS feed does not automatically discover every new company. Use `InputsV2.brand` or an approved `Feeds.brand_hint` for outside-master brands.
+
+For a configured Sheet, replace `Code.gs`, `Core.gs` and `Review.html` from the current installation guide. Existing Settings, delivery history and master IDs remain in place. Confirm Advanced Drive v3 is enabled, save, authorize with the installing company account, then run `showProductionStatus` and `runAutomation`. Inspect the review and first real digest before ongoing use. Run `activateProduction` to create the polling trigger. The connected Drive tools can update spreadsheet contents but cannot execute or update the bound Apps Script project in this workflow.
+
+### Reviewed knowledge summaries
+
+An operator may prepare `Documents` rows from a source they have actually read: exact file ID, source URL, `modified_at`, folder path, kind, TH/EN summaries, semantic labels, topic, tags and observed permissions. Use `READY` only after checking those fields against the file. This can seed image-only, large or poorly extracted documents without changing the source PDF or its sharing. The folder scan retains a reviewed summary while the source timestamp, folder and kind match; a change invalidates that review. Large or unreadable changed files require a renewed human read and summary.
+
+Use `HELD` with a reason for a source that contains internal-only pages or is unsuitable for customer sharing. An unchanged held source remains excluded during refresh. Text marked for internal use cannot pass automatic description. An externally suitable edition or reviewed derivative is required before making it eligible.
 
 | Check | Expected outcome |
 |---|---|
@@ -58,7 +70,7 @@ This release has one owner-only review account. Team digest recipients can recei
 
 ## Migration and rollback
 
-Back up the old Sheet and source. Install 2.3 into a separate Sheet. Stop old SignalBridge/legacy digest schedules before activating the new schedule. Carry over verified Brands, Documents, InputsV2, Signals and Deliveries only with matching table headers and source versions, then validate the working copy. Preserve delivery history to prevent resending previously reported news. If no history is migrated, set the freshness range and review initial queues manually; the application cannot infer past deliveries in another system.
+Back up the old Sheet and source. Install 2.3.1 into a separate Sheet. Stop old SignalBridge/legacy digest schedules before activating the new schedule. Carry over verified Brands, Documents, InputsV2, Signals and Deliveries only with matching table headers and source versions, then validate the working copy. Preserve delivery history to prevent resending previously reported news. If no history is migrated, set the freshness range and review initial queues manually; the application cannot infer past deliveries in another system.
 
 For rollback, run stopSchedule, set digest_enabled FALSE and keep Signals/Deliveries/AuditV2. Restore the previous source and Sheet backup in the original project only if needed. Do not run setup during an active sending window: setup stops the project's schedule. Never delete delivery history to clear a queue. Customer drafts already created remain in Gmail for manual review.
 

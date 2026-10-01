@@ -1,4 +1,4 @@
-# Architecture — production implementation package 2.3
+# Architecture — production implementation package 2.3.1
 
 ```mermaid
 flowchart TD

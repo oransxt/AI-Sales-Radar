@@ -1,4 +1,4 @@
-# SignalBridge 2.3 — Knowledge Sharing
+# SignalBridge 2.3.1 — Knowledge Sharing
 
 SignalBridge เชื่อมข่าวกับคลัง Knowledge เพื่อเตรียมอีเมลที่เป็นประโยชน์ต่อธุรกิจลูกค้า ใช้ชื่อเอกสารจากเนื้อหา จำกัด 1–3 รายการ และให้ผู้ขายตรวจขั้นสุดท้าย
 

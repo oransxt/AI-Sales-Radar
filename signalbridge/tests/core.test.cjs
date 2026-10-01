@@ -8,6 +8,12 @@ test('prospect becomes new opportunity',()=>assert.equal(build().category,'NEW_O
 test('existing becomes upsales',()=>{account.customer_type='EXISTING';assert.equal(build().category,'UPSALES');account.customer_type='PROSPECT';});
 test('unknown never assumed existing',()=>{account.customer_type='UNKNOWN';assert.equal(build().category,'NEEDS_CLASSIFICATION');account.customer_type='PROSPECT';});
 test('brand outside master is new',()=>assert.equal(C.build({...trigger,account_id:'',brand:'Unmapped',title:'Unmapped launch product'},ctx).category,'NEW_OPPORTUNITY'));
+test('new brand mentioning an existing partner stays new and has no inherited contact',()=>{const existing={...account,customer_type:'EXISTING'};const d=C.build({...trigger,account_id:'',brand:'FreshBrand',title:'FreshBrand launch with Acme'}, {...ctx,accounts:[existing]});assert.equal(d.category,'NEW_OPPORTUNITY');assert.equal(d.brand,'FreshBrand');assert.equal(d.email_to,'');});
+test('explicit existing brand resolves even when headline includes two accounts',()=>{const d=C.build({...trigger,account_id:'',brand:'Acme',title:'Acme and Other launch'},{...ctx,accounts:[{...account,customer_type:'EXISTING'},{id:'B',brand:'Other',customer_type:'EXISTING'}]});assert.equal(d.account_id,'A');assert.equal(d.category,'UPSALES');});
+test('child brand uses exact identity instead of shared parent text',()=>{const d=C.build({...trigger,account_id:'',brand:'Acme Powder',title:'Acme Powder launches'},{...ctx,accounts:[account,{id:'P',brand:'Acme Powder',customer_type:'EXISTING'}]});assert.equal(d.account_id,'P');});
+test('conflicting provided account ID and brand are held',()=>assert.throws(()=>C.build({...trigger,brand:'FreshBrand'},ctx),/account_id/));
+test('verified alias uses existing master identity',()=>assert.equal(C.resolveAccount({brand:'แอคมี'},[account]).id,'A'));
+test('internal-only content cannot become suggested knowledge',()=>assert.equal(C.describeDoc('Modern trust research for automotive brands. '.repeat(4)+'หน้านี้ไม่โชว์ลูกค้านะคะ เก็บไว้ให้เซลล์ทำความเข้าใจ','RESEARCH','/Research'),null));
 test('ambiguous brand not auto matched',()=>assert.equal(C.detectAccount('Acme and Other launch',[account,{brand:'Other'}]),null));
 test('short token not confused with longer words',()=>assert.equal(C.detectAccount('Corn launch',[{brand:'ORX'}]),null));
 test('case-insensitive English brand',()=>assert.equal(C.detectAccount('ACME launches',[account]).id,'A'));
@@ -73,5 +79,4 @@ test('equivalent URLs with tracking are suppressed across delivered IDs',()=>{le
 test('same brand with different headline and source remains eligible',()=>{let d=build(),next={...d,id:'NEXT',title:'Acme เปิดตัวผลิตภัณฑ์อีกชุด',source_url:'https://example.com/next'};assert.equal(C.fullBatch([d,next],{D:true},'2026-09-30',14).length,1);});
 test('invalid and future publication dates are excluded',()=>{let d=build();assert.equal(C.fullBatch([{...d,published_at:'invalid'},{...d,id:'F',published_at:'2099-01-01'}],{},'2026-09-30',14).length,0);});
 console.log('TOTAL '+count+' core checks');
-
 

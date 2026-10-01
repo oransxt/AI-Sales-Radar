@@ -1,6 +1,6 @@
 # Implementation status
 
-Release **SignalBridge 2.3.0**, prepared 2026-09-30.
+Release **SignalBridge 2.3.1**, prepared 2026-10-01.
 
 | Capability | Status |
 |---|---|

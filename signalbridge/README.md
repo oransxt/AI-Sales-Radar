@@ -1,4 +1,4 @@
-# SignalBridge 2.3 — Company Gemini workflow
+# SignalBridge 2.3.1 — Company Gemini workflow
 
 News to Client Conversations for Plan B Media. Google Apps Script collects RSS signals, classifies brands, ranks 1–3 knowledge documents and sends internal batches of 20. Salespeople use company Gemini in the browser, import independently editable TH/EN drafts, review the evidence and create a Gmail Draft.
 
