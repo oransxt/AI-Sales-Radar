@@ -1,16 +1,43 @@
-const VERSION='2.0.2';
+const VERSION='2.3.0';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
-const STATUSES=['Not Checked','Available','Has Owner','Existing Client','Skip'];
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
-const app={view:'radar',filter:'All',selected:null,daily:{generatedAt:null,leads:[]},activities:[],connected:false,lastError:''};
-const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const apiUrl=()=>localStorage.getItem(LS.url)||DEFAULT_API_URL, apiKey=()=>localStorage.getItem(LS.key)||'';
+const STATUS_META={
+  'Not Checked':{label:'Pending',desc:'ยังไม่ได้ตัดสินใจ',tone:'pending'},
+  'Available':{label:'Available',desc:'แบรนด์ใหม่จริง · สามารถ Approach ได้',tone:'available'},
+  'Existing Client':{label:'Existing',desc:'แบรนด์ของเราอยู่แล้ว · ไป Upsell / New Opportunity',tone:'existing'},
+  'Has Owner':{label:'Has Owner',desc:'เป็น Account ของ Sales คนอื่น · ไม่ส่ง',tone:'owner'},
+  'Skip':{label:'Skip',desc:'ไม่ต้องการ Pursue',tone:'skip'}
+};
+const DECISION_STATUSES=['Available','Existing Client','Has Owner','Skip'];
+const app={
+  view:'decision',
+  filter:'Pending',
+  selected:null,
+  daily:{generatedAt:null,leads:[]},
+  credentials:[],
+  activities:[],
+  prepared:{},
+  connected:false,
+  lastError:''
+};
+const $=s=>document.querySelector(s);
+const $$=s=>Array.from(document.querySelectorAll(s));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nl2br=s=>esc(s).replace(/\n/g,'<br>');
+const apiUrl=()=>localStorage.getItem(LS.url)||DEFAULT_API_URL;
+const apiKey=()=>localStorage.getItem(LS.key)||'';
 const API_TIMEOUT_MS=18000, API_GET_RETRIES=2;
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
-function setConnection(ok,msg=''){app.connected=!!ok;app.lastError=msg||'';const d=$('#syncDot'),l=$('#syncLabel');if(d)d.className='sync-dot '+(ok?'on':'off');if(l)l.textContent=ok?'Google Sheets connected':(msg?'Live sync fallback':'Google Sheets not connected')}
+
+function setConnection(ok,msg=''){
+  app.connected=!!ok; app.lastError=msg||'';
+  const d=$('#syncDot'),l=$('#syncLabel');
+  if(d)d.className='sync-dot '+(ok?'on':'off');
+  if(l)l.textContent=ok?'Google Sheets connected':(msg?'Live sync fallback':'Google Sheets not connected');
+}
 async function fetchWithTimeout(url,options={},timeoutMs=API_TIMEOUT_MS){
-  const controller=new AbortController(), timer=setTimeout(()=>controller.abort(),timeoutMs);
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
   try{return await fetch(url,{...options,signal:controller.signal})}
   catch(err){
     if(err&&err.name==='AbortError'){const e=new Error('Apps Script request timed out. Please retry.');e.retryable=true;throw e}
@@ -24,14 +51,9 @@ function parseApiResponse(action,r,text){
     const html=/<(?:!doctype|html|head|body|script)\b/i.test(clean.slice(0,500));
     let host='Google Apps Script';try{host=new URL(r.url).host}catch(_){}
     const e=new Error((html?'Google returned an HTML page instead of API JSON':'Invalid API response')+' · '+action+' · HTTP '+r.status+' · '+host);
-    e.retryable=html||r.status===429||r.status>=500;
-    throw e
+    e.retryable=html||r.status===429||r.status>=500; throw e
   }
-  if(!j.ok){
-    const e=new Error(j.error||('API failed: '+action));
-    e.retryable=/temporar|timeout|service|quota|too many|internal/i.test(e.message);
-    throw e
-  }
+  if(!j.ok){const e=new Error(j.error||('API failed: '+action));e.retryable=/temporar|timeout|service|quota|too many|internal/i.test(e.message);throw e}
   return j
 }
 async function apiRequest(method,action,payload={},retries=0){
@@ -59,47 +81,436 @@ async function apiRequest(method,action,payload={},retries=0){
   throw lastErr||new Error('API request failed')
 }
 async function apiGet(action,params={}){return apiRequest('GET',action,params,API_GET_RETRIES)}
-async function apiPost(action,payload){return apiRequest('POST',action,payload,action==='credential-analyze'?1:0)}
-function lead(r){return{id:String(r.Brand_ID||''),rank:Number(r.Daily_Rank||999),brandName:r.Brand_Name||'',companyName:r.Company_Name||'',industry:r.Industry||'',brandType:r.Brand_Type||'',buyingSignal:r.Buying_Signal||'',signalDate:r.Signal_Date||'',whyNow:r.Why_Now||'',score:Number(r.Opportunity_Score||0),priority:r.Priority||'',revenueMinM:Number(r.Revenue_Min_M_THB||0),revenueMaxM:Number(r.Revenue_Max_M_THB||0),salesforceStatus:r.Salesforce_Status||'Not Checked',discoveryDate:r.Discovery_Date||'',sources:[r.Source_URL_1,r.Source_URL_2].filter(Boolean)}}
-const leads=()=>app.daily.leads||[], statusOf=l=>l.salesforceStatus||'Not Checked', fmtM=n=>`฿${Number(n||0).toLocaleString(undefined,{maximumFractionDigits:1})}M`;
-function counts(){const c={all:leads().length,available:0,owner:0,existing:0,skip:0};leads().forEach(l=>{const s=statusOf(l);if(s==='Available')c.available++;else if(s==='Has Owner')c.owner++;else if(s==='Existing Client')c.existing++;else if(s==='Skip')c.skip++});return c}
-function pipeline(){return leads().filter(l=>statusOf(l)==='Available').reduce((a,l)=>a+l.revenueMaxM,0)}
-function metrics(){const c=counts();return `<div class="metrics"><div class="metric"><div class="n">${c.all}</div><div class="l">Brands Found</div></div><div class="metric"><div class="n">${leads().filter(x=>['HIGH','HOT'].includes(x.priority)).length}</div><div class="l">High Priority</div></div><div class="metric"><div class="n">${c.available}</div><div class="l">Available</div></div><div class="metric"><div class="n">${c.owner}</div><div class="l">Has Owner</div></div><div class="metric"><div class="n">${c.existing}</div><div class="l">Existing Client</div></div><div class="metric"><div class="n">${c.skip}</div><div class="l">Skip</div></div></div>`}
-function sourceLinks(l){return l.sources.length?l.sources.map((u,i)=>`<a class="link" href="${esc(u)}" target="_blank" rel="noopener">Source ${i+1} ↗</a>`).join('<br>'):'<span class="sub">No source URL stored</span>'}
-function filtered(available=false){let x=leads().slice();if(available)x=x.filter(l=>statusOf(l)==='Available');else if(app.filter!=='All')x=x.filter(l=>statusOf(l)===app.filter);return x.sort((a,b)=>a.rank-b.rank)}
-function rows(ls){return ls.map(l=>`<tr data-id="${esc(l.id)}" class="${app.selected===l.id?'selected':''}"><td>${l.rank}</td><td><div class="brand-name">${esc(l.brandName)}</div><div class="sub">${esc(l.companyName)}</div></td><td>${esc(l.industry)}</td><td>${esc(l.buyingSignal)}</td><td><span class="priority">${esc(l.priority||'—')}</span></td><td>${fmtM(l.revenueMinM)}–${fmtM(l.revenueMaxM)}</td><td><select class="status-select" data-status="${esc(l.id)}">${STATUSES.map(s=>`<option ${statusOf(l)===s?'selected':''}>${s}</option>`).join('')}</select></td></tr>`).join('')}
-function detail(l){if(!l)return '<div class="empty">Select a brand.</div>';return `<div class="detail"><span class="badge">${esc(l.priority||'OPPORTUNITY')}</span><h3>${esc(l.brandName)}</h3><div class="sub">${esc(l.companyName)} · ${esc(l.brandType)}</div><div class="detail-grid"><div class="k">Industry</div><div class="v">${esc(l.industry)}</div><div class="k">Buying Signal</div><div class="v">${esc(l.buyingSignal)}</div><div class="k">Why Now</div><div class="v">${esc(l.whyNow)}</div><div class="k">Signal Date</div><div class="v">${esc(l.signalDate)}</div><div class="k">Potential</div><div class="v">${fmtM(l.revenueMinM)}–${fmtM(l.revenueMaxM)}</div><div class="k">Sources</div><div class="v">${sourceLinks(l)}</div></div><div class="section"><strong>Salesforce Status</strong><br><select class="status-select" style="width:100%;margin-top:8px" data-status="${esc(l.id)}">${STATUSES.map(s=>`<option ${statusOf(l)===s?'selected':''}>${s}</option>`).join('')}</select><div class="sub" style="margin-top:6px">Writes to Brand_Master, Daily_Radar and Activity_Log.</div></div></div>`}
-function radar(available=false){const ls=filtered(available);if(!app.selected||!leads().find(x=>x.id===app.selected))app.selected=ls[0]?.id||null;const sel=leads().find(x=>x.id===app.selected),notice=!apiKey()?'<div class="notice">Web App URL is ready. Open Settings and paste your RADAR_API_KEY once to activate live Google Sheets sync.</div>':(!app.connected&&app.lastError?`<div class="notice bad">${esc(app.lastError)}</div>`:'');$('#title').textContent=available?'AVAILABLE BRANDS':'DAILY 20 BRAND RADAR 🇹🇭';$('#subtitle').textContent=available?'Salesforce-cleared opportunities from Google Sheets':'Live opportunity data from Google Sheets';$('#content').innerHTML=`${notice}${metrics()}<div class="workspace"><div class="panel"><div class="filters">${available?'':`<button class="chip ${app.filter==='All'?'active':''}" data-filter="All">All</button>${STATUSES.map(s=>`<button class="chip ${app.filter===s?'active':''}" data-filter="${s}">${s}</button>`).join('')}`}<div class="spacer"></div><span class="sub">${app.connected?'Live Google Sheets':'Fallback data'} · ${esc(app.daily.generatedAt||'—')}</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Brand</th><th>Industry</th><th>Buying Signal</th><th>Priority</th><th>Potential</th><th>Salesforce</th></tr></thead><tbody>${rows(ls)}</tbody></table></div></div><div class="panel">${detail(sel)}</div></div>`;bindRadar()}
-function bindRadar(){document.querySelectorAll('tr[data-id]').forEach(r=>r.onclick=e=>{if(e.target.matches('select,a'))return;app.selected=r.dataset.id;render()});document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{app.filter=b.dataset.filter;render()});document.querySelectorAll('[data-status]').forEach(s=>s.onchange=async e=>{const l=leads().find(x=>x.id===s.dataset.status);if(!l)return;const old=l.salesforceStatus,next=e.target.value;l.salesforceStatus=next;render();try{await apiPost('status',{brandId:l.id,status:next,origin:'Dashboard v'+VERSION,createdBy:'AI Sales Radar Web'});setConnection(true);await loadActivities(false,false)}catch(err){l.salesforceStatus=old;setConnection(false,err.message);alert('Save failed: '+err.message);render()}})}
-function history(){const x=app.activities;$('#title').textContent='ACTIVITY HISTORY';$('#subtitle').textContent='Activity_Log from Google Sheets';$('#content').innerHTML=`<div class="full-panel">${!apiKey()?'<div class="notice">Add API key in Settings first.</div>':''}${x.length?`<table><thead><tr><th>Date</th><th>Brand</th><th>Activity</th><th>Old</th><th>New</th><th>Details</th></tr></thead><tbody>${x.map(r=>`<tr><td>${esc(r.Activity_DateTime)}</td><td>${esc(r.Brand_Name)}</td><td>${esc(r.Activity_Type)}</td><td>${esc(r.Old_Status)}</td><td>${esc(r.New_Status)}</td><td>${esc(r.Details)}</td></tr>`).join('')}</tbody></table>`:'<div class="empty">No activity loaded.</div>'}</div>`}
-function settings(){const has=!!apiKey();$('#title').textContent='SETTINGS';$('#subtitle').textContent='Google Apps Script API Bridge · v'+VERSION;$('#content').innerHTML=`<div class="full-panel"><div class="notice ${app.connected?'good':''}">${app.connected?'Connected to Google Sheets successfully.':'Paste your RADAR_API_KEY once. It is stored only in this browser, never in public GitHub.'}</div><div class="settings-grid"><label>Apps Script Web App URL</label><input id="url" value="${esc(apiUrl())}"><label>RADAR_API_KEY</label><input id="key" type="password" value="${has?'••••••••••••':''}" placeholder="Paste key from setupBridge"><label>Google Sheet</label><a class="link" href="${SHEET_URL}" target="_blank">Open master database ↗</a></div><div class="settings-actions"><button class="btn primary" id="save">Save & Connect</button><button class="btn" id="test">Test Connection</button><button class="btn" id="clear">Clear Key</button></div></div>`;const saveInputs=()=>{const u=$('#url').value.trim(),k=$('#key').value.trim();if(u)localStorage.setItem(LS.url,u);if(k&&!/^•+$/.test(k))localStorage.setItem(LS.key,k)};$('#save').onclick=async()=>{saveInputs();await loadDaily()};$('#test').onclick=async()=>{saveInputs();try{const d=await apiGet('health');setConnection(true);alert('Connected · Apps Script v'+d.version);render()}catch(err){setConnection(false,err.message);alert('Connection failed: '+err.message);render()}};$('#clear').onclick=()=>{localStorage.removeItem(LS.key);setConnection(false);settings()}}
-function render(){document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===app.view));$('#sidePipeline').textContent=fmtM(pipeline());setConnection(app.connected,app.lastError);if(app.view==='radar')radar(false);else if(app.view==='available')radar(true);else if(app.view==='history')history();else settings()}
-async function loadActivities(redraw=true,affectConnection=true){
-  if(!apiKey()){if(redraw)app.activities=[];if(redraw)render();return}
-  try{const d=await apiGet('activities',{limit:200});app.activities=d.data||[];if(affectConnection)setConnection(true)}
-  catch(err){if(affectConnection)setConnection(false,err.message)}
-  if(redraw)render()
+async function apiPost(action,payload){return apiRequest('POST',action,payload,0)}
+
+function lead(r){
+  return{
+    id:String(r.Brand_ID||''),
+    rank:Number(r.Daily_Rank||999),
+    brandName:r.Brand_Name||'',
+    companyName:r.Company_Name||'',
+    industry:r.Industry||'',
+    brandType:r.Brand_Type||'',
+    buyingSignal:r.Buying_Signal||'',
+    signalDate:r.Signal_Date||'',
+    whyNow:r.Why_Now||'',
+    score:Number(r.Opportunity_Score||0),
+    priority:r.Priority||'',
+    status:r.Salesforce_Status||'Not Checked',
+    discoveryDate:r.Discovery_Date||'',
+    sources:[r.Source_URL_1,r.Source_URL_2].filter(Boolean)
+  }
 }
-async function loadDaily(){
-  try{
-    if(!apiKey())throw new Error('API key not configured');
-    const d=await apiGet('daily-radar'),r=d.data||[];
-    app.daily={generatedAt:r[0]?.Discovery_Date||'',leads:r.map(lead)};
-    setConnection(true);
-    if(!app.selected)app.selected=app.daily.leads[0]?.id||null;
-    await loadActivities(false,false)
-  }catch(err){
-    const msg='Live sync temporarily unavailable. '+err.message;
-    if(app.daily&&app.daily.leads&&app.daily.leads.length){
-      setConnection(false,msg+' Showing last loaded data.')
-    }else{
-      setConnection(false,msg+' Showing fallback radar.');
-      try{
-        const r=await fetch('data/daily.json?t='+Date.now(),{cache:'no-store'}),text=await r.text(),j=JSON.parse(String(text||'').replace(/^\uFEFF/,'').trim());
-        app.daily={generatedAt:j.generatedAt||'',leads:(j.leads||[]).map((l,i)=>({...l,rank:i+1,salesforceStatus:'Not Checked'}))}
-      }catch(_){app.daily={generatedAt:'',leads:[]}}
+function normalize(s){return String(s||'').toLowerCase().replace(/\s+/g,' ').trim()}
+function statusOf(l){return l.status||'Not Checked'}
+function isPending(l){return !statusOf(l)||statusOf(l)==='Not Checked'}
+function isHigh(l){return ['HOT','HIGH'].includes(String(l.priority||'').toUpperCase())}
+function priorityTone(p){p=String(p||'').toUpperCase();return p==='HOT'?'hot':p==='HIGH'?'high':p==='MEDIUM'?'medium':'watch'}
+
+function credentialTags(c){return String(c.Tags||'').split(',').map(x=>normalize(x)).filter(Boolean)}
+function credentialScore(l,c){
+  let s=0;
+  const li=normalize(l.industry),ci=normalize(c.Industry);
+  if(!ci||ci==='all'||ci==='general / multi-industry')s+=18;
+  else if(li===ci||li.includes(ci)||ci.includes(li))s+=45;
+  const hay=normalize([l.buyingSignal,l.whyNow,l.industry].join(' '));
+  credentialTags(c).forEach(t=>{if(t&&hay.includes(t))s+=8});
+  const type=String(c.Credential_Type||'');
+  if(type==='Industry Overview')s+=10;
+  if(type==='Case Study')s+=9;
+  if(type==='New Launches')s+=7;
+  if(type==='Media Credentials')s+=6;
+  return Math.min(100,s)
+}
+function autoPack(l){
+  return (app.credentials||[])
+    .filter(c=>String(c.Active).toLowerCase()!=='false')
+    .map(c=>Object.assign({},c,{_score:credentialScore(l,c)}))
+    .sort((a,b)=>b._score-a._score)
+    .filter((c,i)=>c._score>0||i<3)
+    .slice(0,3)
+}
+function businessContext(l){
+  const parts=[];
+  if(l.industry)parts.push(l.industry);
+  if(l.buyingSignal)parts.push(l.buyingSignal);
+  if(l.signalDate)parts.push('Signal '+l.signalDate);
+  return parts.join(' · ')||'Brand activity detected from public market signals'
+}
+function signalFamily(l){
+  const s=normalize(l.buyingSignal+' '+l.whyNow);
+  if(/market entry|เข้าไทย|บุกไทย|first.*thailand|thailand.*first/.test(s))return'market-entry';
+  if(/launch|เปิดตัว|สินค้าใหม่|new product|new model/.test(s))return'launch';
+  if(/expan|new branch|new store|เปิดสาขา|ขยาย/.test(s))return'expansion';
+  if(/campaign|promotion|โปรโม|แคมเปญ|presenter|ambassador/.test(s))return'campaign';
+  if(/fund|invest|ระดมทุน|ลงทุน/.test(s))return'funding';
+  if(/event|sponsor|งาน|อีเวนต์/.test(s))return'event';
+  return'activity'
+}
+function salesAngle(l,existing){
+  const f=signalFamily(l);
+  const prefix=existing?'ใช้ความเคลื่อนไหวล่าสุดเป็นจังหวะต่อยอดการคุยกับลูกค้าเดิม':'ใช้ความเคลื่อนไหวล่าสุดเป็นเหตุผลในการเริ่มบทสนทนากับแบรนด์';
+  const detail={
+    'market-entry':'โดยโฟกัสที่ช่วงสร้างการรับรู้และวางรากฐานแบรนด์ในตลาดไทย',
+    'launch':'โดยโฟกัสที่ช่วงเปิดตัวและการสร้าง momentum ให้แคมเปญ',
+    'expansion':'โดยโฟกัสที่การขยายตัวและการสื่อสารให้สอดคล้องกับพื้นที่/กลุ่มเป้าหมายใหม่',
+    'campaign':'โดยโฟกัสที่การต่อยอด campaign momentum และการเข้าถึงกลุ่มเป้าหมาย',
+    'funding':'โดยใช้จังหวะการเติบโตของธุรกิจเป็นเหตุผลในการเปิดบทสนทนาเชิงการตลาด',
+    'event':'โดยใช้จังหวะกิจกรรมหรือ sponsorship เป็น entry point ในการเข้าหา',
+    'activity':'โดยเชื่อม Business Context ล่าสุดเข้ากับโอกาสการสื่อสารของแบรนด์'
+  }[f];
+  return prefix+' '+detail
+}
+function nextBestAction(existing){
+  return existing
+    ? 'นัดคุยสั้น ๆ เพื่ออัปเดตทิศทางของแบรนด์และหาโอกาส Upsell / New Opportunity จากความเคลื่อนไหวล่าสุด'
+    : 'ขอนัดคุย 20–30 นาที เพื่อทำความเข้าใจ Objective, Target, Timing และดูว่ามีโจทย์ที่ Plan B สามารถช่วยได้หรือไม่'
+}
+function credentialLines(pack,lang){
+  const links=pack.filter(c=>c.Google_Drive_URL);
+  if(!links.length)return'';
+  const head=lang==='EN'?'Relevant materials:':'ข้อมูลประกอบที่เกี่ยวข้อง:';
+  return '\n\n'+head+'\n'+links.map(c=>'- '+(c.Credential_Name||'Credential')+': '+c.Google_Drive_URL).join('\n')
+}
+function buildEmail(l,status,lang){
+  const existing=status==='Existing Client';
+  const pack=autoPack(l);
+  const why=l.whyNow||('พบความเคลื่อนไหวล่าสุดของ '+l.brandName+' ที่น่าสนใจต่อการเริ่มต้นบทสนทนาทางธุรกิจ');
+  if(lang==='EN'){
+    const subject=(existing?'Opportunity to build on ':'A quick conversation around ')+l.brandName+"'s latest momentum";
+    const body=[
+      'Dear '+l.brandName+' Team,','',
+      existing
+        ? 'I wanted to follow up after seeing the latest activity around '+l.brandName+'. It may be a useful moment to explore whether there is an additional communication opportunity we can build on together.'
+        : "I’m reaching out from Plan B Media after seeing the latest activity around "+l.brandName+". It looks like a timely reason to start a conversation.",
+      '',
+      'What caught our attention: '+why,
+      '',
+      existing
+        ? 'I have pulled together a few relevant materials that may help us frame the next discussion.'
+        : 'I have pulled together a few relevant materials as a starting point for the conversation.',
+      credentialLines(pack,'EN'),
+      '',
+      existing?'Would you be open to a short catch-up to discuss the next opportunity?':'Would you be open to a 20–30 minute introduction call so we can understand your objective, audience and timing?',
+      '',
+      'Best regards'
+    ].join('\n');
+    return{subject,body}
+  }
+  const subject=existing?'ขออัปเดตโอกาสต่อยอดสำหรับ '+l.brandName:'ขอพูดคุยจากความเคลื่อนไหวล่าสุดของ '+l.brandName;
+  const body=[
+    'เรียน ทีม '+l.brandName+' ครับ','',
+    existing
+      ? 'ผมเห็นความเคลื่อนไหวล่าสุดของ '+l.brandName+' และมองว่าน่าจะเป็นจังหวะที่ดีในการกลับมาคุยกันว่า มีโอกาสต่อยอดการสื่อสารหรือโอกาสใหม่เพิ่มเติมจากสิ่งที่ทำอยู่หรือไม่ครับ'
+      : 'ผมจาก Plan B Media ครับ เห็นความเคลื่อนไหวล่าสุดของ '+l.brandName+' และมองว่าเป็นจังหวะที่น่าสนใจในการเริ่มต้นพูดคุยกันครับ',
+    '',
+    'จากข้อมูลที่พบ: '+why,
+    '',
+    existing
+      ? 'เบื้องต้นผมได้รวบรวมข้อมูลและ Credential ที่เกี่ยวข้องไว้เป็น Reference สำหรับการคุยครั้งถัดไปครับ'
+      : 'เบื้องต้นผมได้รวบรวมข้อมูลและ Credential ที่เกี่ยวข้องไว้เป็น Reference เพื่อให้การพูดคุยครั้งแรกกระชับขึ้นครับ',
+    credentialLines(pack,'TH'),
+    '',
+    existing
+      ? 'หากสะดวก ผมอยากขอนัดคุยสั้น ๆ เพื่ออัปเดต Direction และดูว่ามีโอกาส Upsell หรือ New Opportunity ที่เหมาะกับช่วงนี้หรือไม่ครับ'
+      : 'หากสะดวก ผมอยากขอนัดพูดคุยประมาณ 20–30 นาที เพื่อทำความเข้าใจ Objective, Target และ Timing ของแบรนด์เพิ่มเติมครับ',
+    '',
+    'ขอบคุณครับ'
+  ].join('\n');
+  return{subject,body}
+}
+function prepare(l){
+  if(!app.prepared[l.id]){
+    const lang='TH',mail=buildEmail(l,'Available',lang);
+    app.prepared[l.id]={
+      language:lang,recipient:'',subject:mail.subject,body:mail.body,
+      businessContext:businessContext(l),
+      salesAngle:salesAngle(l,false),
+      nextAction:nextBestAction(false),
+      credentials:autoPack(l),
+      emailDirty:false
     }
+  }
+  return app.prepared[l.id]
+}
+function prepareAll(){(app.daily.leads||[]).forEach(prepare)}
+
+function counts(){
+  const ls=app.daily.leads||[];
+  return{
+    found:ls.length,
+    ready:ls.length,
+    pending:ls.filter(isPending).length,
+    high:ls.filter(isHigh).length,
+    decided:ls.filter(l=>!isPending(l)).length
+  }
+}
+function filtered(){
+  const ls=(app.daily.leads||[]).slice();
+  let out=ls;
+  if(app.filter==='Pending')out=ls.filter(isPending);
+  else if(app.filter==='Available')out=ls.filter(l=>statusOf(l)==='Available');
+  else if(app.filter==='Existing')out=ls.filter(l=>statusOf(l)==='Existing Client');
+  else if(app.filter==='Has Owner')out=ls.filter(l=>statusOf(l)==='Has Owner');
+  else if(app.filter==='Skip')out=ls.filter(l=>statusOf(l)==='Skip');
+  return out.sort((a,b)=>a.rank-b.rank)
+}
+function metricsHtml(){
+  const c=counts();
+  return '<div class="metrics decision-metrics">'+
+    '<div class="metric"><div class="n">'+c.found+'</div><div class="l">Signals Found</div></div>'+
+    '<div class="metric"><div class="n">'+c.ready+'</div><div class="l">Auto Prepared</div></div>'+
+    '<div class="metric"><div class="n">'+c.pending+'</div><div class="l">Pending Decision</div></div>'+
+    '<div class="metric"><div class="n">'+c.high+'</div><div class="l">HOT / HIGH</div></div>'+
+    '<div class="metric"><div class="n">'+c.decided+'</div><div class="l">Decided</div></div>'+
+  '</div>'
+}
+function processHtml(){
+  const steps=[
+    ['1','DISCOVER','Market Signal'],
+    ['2','SCORE','Commercial Priority'],
+    ['3','ANALYZE','Why Now + Sales Angle'],
+    ['4','MATCH','Credential Pack'],
+    ['5','DRAFT','Email Ready'],
+    ['6','DECIDE','Human Final Decision']
+  ];
+  return '<div class="auto-process">'+steps.map((x,i)=>
+    '<div class="auto-step '+(i===5?'human':'done')+'"><span>'+x[0]+'</span><div><b>'+x[1]+'</b><small>'+x[2]+'</small></div></div>'
+  ).join('')+'</div>'
+}
+function filterHtml(){
+  const filters=['Pending','Available','Existing','Has Owner','Skip','All'];
+  return '<div class="decision-filters">'+filters.map(f=>'<button class="chip '+(app.filter===f?'active':'')+'" data-filter="'+esc(f)+'">'+esc(f)+'</button>').join('')+'</div>'
+}
+function cardHtml(l){
+  const p=prepare(l),st=STATUS_META[statusOf(l)]||STATUS_META['Not Checked'];
+  return '<button class="op-card '+(app.selected===l.id?'selected':'')+'" data-id="'+esc(l.id)+'">'+
+    '<div class="op-card-top"><span class="priority '+priorityTone(l.priority)+'">'+esc(l.priority||'—')+'</span><span class="score">'+Math.round(l.score||0)+'</span></div>'+
+    '<div class="op-brand">'+esc(l.brandName)+'</div>'+
+    '<div class="op-signal">'+esc(l.buyingSignal||'Brand activity')+'</div>'+
+    '<div class="op-meta">'+esc(l.industry||'—')+'</div>'+
+    '<div class="op-ready"><span>✓</span> Email + '+p.credentials.length+' credentials ready</div>'+
+    '<div class="status-pill '+st.tone+'">'+esc(st.label)+'</div>'+
+  '</button>'
+}
+function sourceLinks(l){
+  if(!l.sources.length)return'<span class="sub">No source URL stored</span>';
+  return l.sources.map((u,i)=>'<a class="link" href="'+esc(u)+'" target="_blank" rel="noopener">Source '+(i+1)+' ↗</a>').join(' · ')
+}
+function credentialHtml(c){
+  return '<div class="auto-cred"><div><strong>'+esc(c.Credential_Name||'Credential')+'</strong><small>'+esc(c.Credential_Type||'')+(c.Industry?' · '+esc(c.Industry):'')+'</small></div>'+
+    (c.Google_Drive_URL?'<a href="'+esc(c.Google_Drive_URL)+'" target="_blank" rel="noopener">Open ↗</a>':'')+'</div>'
+}
+function decisionOption(value,label,desc,l){
+  const checked=statusOf(l)===value?' checked':'';
+  return '<label class="decision-choice"><input type="radio" name="accountStatus" value="'+esc(value)+'"'+checked+'><span><b>'+esc(label)+'</b><small>'+esc(desc)+'</small></span></label>'
+}
+function detailHtml(l){
+  if(!l)return'<div class="panel empty decision-empty">No opportunities in this filter.</div>';
+  const p=prepare(l),st=statusOf(l),stop=st==='Has Owner'||st==='Skip';
+  return '<div class="decision-detail">'+
+    '<div class="detail-hero">'+
+      '<div><span class="badge '+priorityTone(l.priority)+'">'+esc(l.priority||'OPPORTUNITY')+' · '+Math.round(l.score||0)+'</span>'+
+      '<h2>'+esc(l.brandName)+'</h2><div class="sub">'+esc(l.companyName||l.industry||'')+'</div></div>'+
+      '<div class="ready-badge">AUTO PREPARED</div>'+
+    '</div>'+
+    '<div class="decision-grid">'+
+      '<section class="decision-section"><div class="section-label">BUYING SIGNAL</div><div class="section-value">'+esc(l.buyingSignal||'—')+'</div><div class="sub">'+esc(l.signalDate||'')+'</div></section>'+
+      '<section class="decision-section"><div class="section-label">BUSINESS CONTEXT</div><div class="section-value">'+esc(p.businessContext)+'</div></section>'+
+      '<section class="decision-section wide"><div class="section-label">WHY NOW</div><div class="why-box">'+esc(l.whyNow||'Latest public market activity detected.')+'</div><div class="source-row">'+sourceLinks(l)+'</div></section>'+
+      '<section class="decision-section"><div class="section-label">SALES ANGLE</div><div class="section-value">'+esc(p.salesAngle)+'</div></section>'+
+      '<section class="decision-section"><div class="section-label">NEXT BEST ACTION</div><div class="section-value">'+esc(p.nextAction)+'</div></section>'+
+      '<section class="decision-section wide"><div class="section-label">AUTO-MATCHED CREDENTIALS</div><div class="auto-creds">'+(p.credentials.length?p.credentials.map(credentialHtml).join(''):'<div class="sub">No credential matched. Email draft remains ready without attachments.</div>')+'</div></section>'+
+    '</div>'+
+    '<div class="final-gate">'+
+      '<div class="final-gate-head"><div><span class="eyebrow">HUMAN FINAL DECISION</span><h3>Account Status</h3></div><span class="human-only">Only human step</span></div>'+
+      '<div class="decision-options">'+
+        decisionOption('Available','Available','แบรนด์ใหม่จริง · สามารถ Approach ได้',l)+
+        decisionOption('Existing Client','Existing','แบรนด์ของเราอยู่แล้ว · ไป Upsell / New Opportunity',l)+
+        decisionOption('Has Owner','Has Owner','เป็น Account ของ Sales คนอื่น · Stop outreach',l)+
+        decisionOption('Skip','Skip','ไม่ต้องการ Pursue',l)+
+      '</div>'+
+      '<div id="sendArea" class="send-area '+(stop?'stopped':'')+'">'+
+        (stop
+          ? '<div class="stop-note">เลือกสถานะนี้แล้วระบบจะบันทึก Decision และไม่เปิด Email Draft</div>'
+          : '<div class="composer-toolbar"><label>Language<select id="language"><option value="TH" '+(p.language==='TH'?'selected':'')+'>Thai</option><option value="EN" '+(p.language==='EN'?'selected':'')+'>English</option></select></label><div class="spacer"></div><span class="not-sent">NOT SENT</span></div>'+
+            '<div class="mail-row"><label>To</label><input id="recipient" type="email" value="'+esc(p.recipient)+'" placeholder="Sales ใส่ email จริงตรงนี้"></div>'+
+            '<div class="mail-row"><label>Subject</label><input id="subject" value="'+esc(p.subject)+'"></div>'+
+            '<div class="mail-body"><textarea id="emailBody">'+esc(p.body)+'</textarea></div>'+
+            '<div class="send-note">ระบบไม่หา Contact และไม่ส่งอัตโนมัติ · Sales ใส่ Recipient, Review และกด Final Decision เอง</div>'
+        )+
+      '</div>'+
+      '<div class="decision-actions">'+
+        '<button class="btn" id="saveDecision">Save Decision</button>'+
+        (!stop?'<button class="btn primary" id="approveOpen">Approve → Open Gmail Draft</button>':'')+
+      '</div>'+
+    '</div>'+
+  '</div>'
+}
+function decisionView(){
+  const ls=filtered();
+  if(!app.selected||!ls.find(x=>x.id===app.selected))app.selected=ls[0]?.id||null;
+  const l=(app.daily.leads||[]).find(x=>x.id===app.selected);
+  $('#title').textContent="TODAY'S READY OPPORTUNITIES";
+  $('#subtitle').textContent='Discover → Score → Analyze → Match → Draft → Human Final Decision';
+  const notice=!apiKey()
+    ? '<div class="notice">เปิด Settings และใส่ RADAR_API_KEY เพื่อบันทึก Final Decision กลับ Google Sheets. Demo/fallback ยังดูได้แต่บันทึกไม่ได้.</div>'
+    : (!app.connected&&app.lastError?'<div class="notice bad">'+esc(app.lastError)+'</div>':'');
+  $('#content').innerHTML=notice+processHtml()+metricsHtml()+
+    '<div class="decision-shell">'+
+      '<div class="decision-list panel"><div class="decision-list-head"><div><h3>Ready for Decision</h3><p>ทุก Card ถูกเตรียมอัตโนมัติแล้ว</p></div><span>'+ls.length+'</span></div>'+filterHtml()+
+        '<div class="op-list">'+(ls.length?ls.map(cardHtml).join(''):'<div class="empty">No opportunities.</div>')+'</div></div>'+
+      '<div class="panel decision-main">'+detailHtml(l)+'</div>'+
+    '</div>';
+  bindDecision()
+}
+function bindDecision(){
+  $$('[data-filter]').forEach(b=>b.onclick=()=>{app.filter=b.dataset.filter;app.selected=null;render()});
+  $$('.op-card').forEach(b=>b.onclick=()=>{app.selected=b.dataset.id;render()});
+  const l=(app.daily.leads||[]).find(x=>x.id===app.selected); if(!l)return;
+  const p=prepare(l);
+  $$('input[name="accountStatus"]').forEach(r=>r.onchange=()=>handleStatusPreview(l,r.value));
+  const lang=$('#language');
+  if(lang)lang.onchange=()=>{p.language=lang.value;if(!p.emailDirty){const m=buildEmail(l,selectedStatus()||'Available',p.language);p.subject=m.subject;p.body=m.body;render()}};
+  const rec=$('#recipient'),sub=$('#subject'),body=$('#emailBody');
+  if(rec)rec.oninput=()=>p.recipient=rec.value;
+  if(sub)sub.oninput=()=>{p.subject=sub.value;p.emailDirty=true};
+  if(body)body.oninput=()=>{p.body=body.value;p.emailDirty=true};
+  const save=$('#saveDecision'); if(save)save.onclick=()=>finalizeDecision(l,false);
+  const approve=$('#approveOpen'); if(approve)approve.onclick=()=>finalizeDecision(l,true)
+}
+function selectedStatus(){
+  const r=$('input[name="accountStatus"]:checked'); return r?r.value:''
+}
+function handleStatusPreview(l,status){
+  const p=prepare(l),stop=status==='Has Owner'||status==='Skip';
+  if(!p.emailDirty&&!stop){
+    const m=buildEmail(l,status,p.language);p.subject=m.subject;p.body=m.body;
+    p.salesAngle=salesAngle(l,status==='Existing Client');
+    p.nextAction=nextBestAction(status==='Existing Client')
   }
   render()
 }
-$('#nav').onclick=e=>{const b=e.target.closest('[data-view]');if(!b)return;app.view=b.dataset.view;if(app.view==='history')loadActivities();else render()};$('#reloadBtn').onclick=()=>app.view==='history'?loadActivities():loadDaily();$('#today').textContent=new Date().toLocaleDateString('en-GB',{timeZone:'Asia/Bangkok',day:'2-digit',month:'short',year:'numeric'});loadDaily();
+async function finalizeDecision(l,openGmail){
+  const status=selectedStatus();
+  if(!status){alert('เลือก Account Status ก่อน');return}
+  const p=prepare(l);
+  if(openGmail&&(status==='Has Owner'||status==='Skip')){alert('สถานะนี้ไม่เปิด Email Draft');return}
+  if(openGmail){
+    const to=String($('#recipient')?.value||'').trim();
+    const subject=String($('#subject')?.value||'').trim();
+    const body=String($('#emailBody')?.value||'').trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)){alert('ใส่ Recipient email ที่ถูกต้องก่อน');return}
+    if(!subject||!body){alert('Subject และ Email Body ต้องไม่ว่าง');return}
+    p.recipient=to;p.subject=subject;p.body=body;
+  }
+  if(!apiKey()){alert('กรุณาใส่ RADAR_API_KEY ใน Settings ก่อนบันทึก Final Decision');return}
+  try{
+    await apiPost('status',{
+      brandId:l.id,status,
+      details:'Final Decision · '+(STATUS_META[status]?.label||status),
+      origin:'Autonomous Final Decision v'+VERSION,
+      createdBy:'AI Sales Radar'
+    });
+    l.status=status;
+    await apiPost('activity',{
+      brandId:l.id,type:'NOTE_ADDED',newStatus:status,
+      buyingSignal:l.buyingSignal,signalDate:l.signalDate,score:l.score,priority:l.priority,
+      details:openGmail?'Final decision approved; Gmail compose opened for human review/send.':'Final decision saved.',
+      origin:'Autonomous Final Decision v'+VERSION,
+      createdBy:'AI Sales Radar'
+    });
+    setConnection(true);
+    if(openGmail){
+      const url='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(p.recipient)+'&su='+encodeURIComponent(p.subject)+'&body='+encodeURIComponent(p.body);
+      window.open(url,'_blank','noopener');
+    }
+    render()
+  }catch(err){
+    setConnection(false,err.message);
+    alert('Save failed: '+err.message);
+    render()
+  }
+}
+
+function historyView(){
+  $('#title').textContent='ACTIVITY HISTORY';
+  $('#subtitle').textContent='Decisions and activity written back to Google Sheets';
+  const rows=app.activities||[];
+  $('#content').innerHTML='<div class="full-panel">'+
+    (!apiKey()?'<div class="notice">Add API key in Settings first.</div>':'')+
+    (rows.length?'<table><thead><tr><th>Date</th><th>Brand</th><th>Activity</th><th>Old</th><th>New</th><th>Details</th></tr></thead><tbody>'+
+      rows.map(r=>'<tr><td>'+esc(r.Activity_DateTime)+'</td><td>'+esc(r.Brand_Name)+'</td><td>'+esc(r.Activity_Type)+'</td><td>'+esc(r.Old_Status)+'</td><td>'+esc(r.New_Status)+'</td><td>'+esc(r.Details)+'</td></tr>').join('')+
+      '</tbody></table>':'<div class="empty">No activity loaded.</div>')+
+  '</div>'
+}
+function settingsView(){
+  const has=!!apiKey();
+  $('#title').textContent='SETTINGS';
+  $('#subtitle').textContent='Google Apps Script API Bridge · v'+VERSION;
+  $('#content').innerHTML='<div class="full-panel">'+
+    '<div class="notice '+(app.connected?'good':'')+'">'+(app.connected?'Connected to Google Sheets successfully.':'Paste your RADAR_API_KEY once. It is stored only in this browser, never in public GitHub.')+'</div>'+
+    '<div class="settings-grid">'+
+      '<label>Apps Script Web App URL</label><input id="url" value="'+esc(apiUrl())+'">'+
+      '<label>RADAR_API_KEY</label><input id="key" type="password" value="'+(has?'••••••••••••':'')+'" placeholder="Paste key from setupBridge">'+
+      '<label>Google Sheet</label><a class="link" href="'+SHEET_URL+'" target="_blank">Open master database ↗</a>'+
+    '</div>'+
+    '<div class="settings-actions"><button class="btn primary" id="save">Save & Connect</button><button class="btn" id="test">Test Connection</button><button class="btn" id="clear">Clear Key</button></div>'+
+  '</div>';
+  const saveInputs=()=>{const u=$('#url').value.trim(),k=$('#key').value.trim();if(u)localStorage.setItem(LS.url,u);if(k&&!/^•+$/.test(k))localStorage.setItem(LS.key,k)};
+  $('#save').onclick=async()=>{saveInputs();await loadAll()};
+  $('#test').onclick=async()=>{saveInputs();try{const d=await apiGet('health');setConnection(true);alert('Connected · Apps Script v'+d.version);render()}catch(err){setConnection(false,err.message);alert('Connection failed: '+err.message);render()}};
+  $('#clear').onclick=()=>{localStorage.removeItem(LS.key);setConnection(false);settingsView()}
+}
+function render(){
+  $$('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===app.view));
+  const c=counts(),side=$('#sideReady');if(side)side.textContent=c.pending;
+  setConnection(app.connected,app.lastError);
+  if(app.view==='decision')decisionView();
+  else if(app.view==='history')historyView();
+  else settingsView()
+}
+async function loadActivities(redraw=false){
+  if(!apiKey()){app.activities=[];if(redraw)render();return}
+  try{const d=await apiGet('activities',{limit:300});app.activities=d.data||[];setConnection(true)}
+  catch(err){setConnection(false,err.message)}
+  if(redraw)render()
+}
+async function loadAll(){
+  try{
+    if(!apiKey())throw new Error('API key not configured');
+    const results=await Promise.all([
+      apiGet('daily-radar'),
+      apiGet('credentials',{active:'true'}),
+      apiGet('activities',{limit:300})
+    ]);
+    const radar=results[0].data||[];
+    app.daily={generatedAt:radar[0]?.Discovery_Date||'',leads:radar.map(lead)};
+    app.credentials=results[1].data||[];
+    app.activities=results[2].data||[];
+    app.prepared={};
+    prepareAll();
+    setConnection(true)
+  }catch(err){
+    const msg='Live sync temporarily unavailable. '+err.message;
+    if(app.daily.leads&&app.daily.leads.length){setConnection(false,msg+' Showing last loaded data.')}
+    else{
+      setConnection(false,msg+' Showing fallback radar.');
+      try{
+        const r=await fetch('data/daily.json?t='+Date.now(),{cache:'no-store'}),text=await r.text(),j=JSON.parse(String(text||'').replace(/^\uFEFF/,'').trim());
+        app.daily={generatedAt:j.generatedAt||'',leads:(j.leads||[]).map((x,i)=>({
+          id:String(x.id||('FB'+i)),rank:i+1,brandName:x.brandName||x.brand||'',companyName:x.companyName||'',industry:x.industry||'',brandType:x.brandType||'',
+          buyingSignal:x.buyingSignal||'',signalDate:x.signalDate||'',whyNow:x.whyNow||'',score:Number(x.score||x.opportunityScore||0),priority:x.priority||'',status:'Not Checked',
+          discoveryDate:j.generatedAt||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean)
+        }))};
+        app.credentials=[];app.activities=[];app.prepared={};prepareAll()
+      }catch(_){app.daily={generatedAt:'',leads:[]};app.credentials=[];app.activities=[];app.prepared={}}
+    }
+  }
+  if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
+  render()
+}
+$('#nav').onclick=e=>{const b=e.target.closest('[data-view]');if(!b)return;app.view=b.dataset.view;if(app.view==='history')loadActivities(true);else render()};
+$('#reloadBtn').onclick=()=>app.view==='history'?loadActivities(true):loadAll();
+$('#today').textContent=new Date().toLocaleDateString('en-GB',{timeZone:'Asia/Bangkok',day:'2-digit',month:'short',year:'numeric'});
+loadAll();
