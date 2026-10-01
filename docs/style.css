@@ -161,3 +161,6 @@
   .credential-admin-head{display:block}
   .knowledge-note{max-width:none;margin-top:10px}
 }
+
+.demo-notice{background:linear-gradient(135deg,#f0f1ff,#f7f2ff);border-color:#d7dafd;color:#3f46a7}
+.demo-notice strong{font-weight:900;letter-spacing:.04em}
