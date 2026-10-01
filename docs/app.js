@@ -1,4 +1,4 @@
-const VERSION='2.3.2';
+const VERSION='2.3.3';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -230,6 +230,7 @@ function prepare(l){
       salesAngle:salesAngle(l,false),
       nextAction:nextBestAction(false),
       credentials:autoPack(l),
+      decisionStatus:DECISION_STATUSES.includes(statusOf(l))?statusOf(l):'',
       emailDirty:false
     }
   }
@@ -304,12 +305,13 @@ function credentialHtml(c){
     (c.Google_Drive_URL?'<a href="'+esc(c.Google_Drive_URL)+'" target="_blank" rel="noopener">Open ↗</a>':'')+'</div>'
 }
 function decisionOption(value,label,desc,l){
-  const checked=statusOf(l)===value?' checked':'';
+  const p=prepare(l);
+  const checked=p.decisionStatus===value?' checked':'';
   return '<label class="decision-choice"><input type="radio" name="accountStatus" value="'+esc(value)+'"'+checked+'><span><b>'+esc(label)+'</b><small>'+esc(desc)+'</small></span></label>'
 }
 function detailHtml(l){
   if(!l)return'<div class="panel empty decision-empty">No opportunities in this filter.</div>';
-  const p=prepare(l),st=statusOf(l),stop=st==='Has Owner'||st==='Skip';
+  const p=prepare(l),st=p.decisionStatus||statusOf(l),stop=st==='Has Owner'||st==='Skip';
   return '<div class="decision-detail">'+
     '<div class="detail-hero">'+
       '<div><span class="badge '+priorityTone(l.priority)+'">'+esc(l.priority||'OPPORTUNITY')+' · '+Math.round(l.score||0)+'</span>'+
@@ -382,10 +384,14 @@ function bindDecision(){
   const approve=$('#approveOpen'); if(approve)approve.onclick=()=>finalizeDecision(l,true)
 }
 function selectedStatus(){
-  const r=$('input[name="accountStatus"]:checked'); return r?r.value:''
+  const r=$('input[name="accountStatus"]:checked');
+  if(r)return r.value;
+  const l=(app.daily.leads||[]).find(x=>x.id===app.selected);
+  return l?prepare(l).decisionStatus:''
 }
 function handleStatusPreview(l,status){
   const p=prepare(l),stop=status==='Has Owner'||status==='Skip';
+  p.decisionStatus=status;
   if(!p.emailDirty&&!stop){
     const m=buildEmail(l,status,p.language);p.subject=m.subject;p.body=m.body;
     p.salesAngle=salesAngle(l,status==='Existing Client');
@@ -415,6 +421,7 @@ async function finalizeDecision(l,openGmail){
       createdBy:'AI Sales Radar'
     });
     l.status=status;
+    p.decisionStatus=status;
     await apiPost('activity',{
       brandId:l.id,type:'NOTE_ADDED',newStatus:status,
       buyingSignal:l.buyingSignal,signalDate:l.signalDate,score:l.score,priority:l.priority,
