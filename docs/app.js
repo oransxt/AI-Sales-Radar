@@ -1,4 +1,4 @@
-const VERSION='2.3.0';
+const VERSION='2.3.1';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -16,6 +16,8 @@ const app={
   selected:null,
   daily:{generatedAt:null,leads:[]},
   credentials:[],
+  credentialLibrary:[],
+  credentialPreview:null,
   activities:[],
   prepared:{},
   connected:false,
@@ -433,6 +435,171 @@ async function finalizeDecision(l,openGmail){
   }
 }
 
+
+async function refreshCredentialData(){
+  if(!apiKey())throw new Error('API key not configured');
+  const results=await Promise.all([
+    apiGet('credentials',{active:'true'}),
+    apiGet('credentials',{active:'all'})
+  ]);
+  app.credentials=results[0].data||[];
+  app.credentialLibrary=results[1].data||[];
+  app.prepared={};
+  prepareAll();
+  setConnection(true);
+}
+async function loadCredentialLibrary(redraw=true){
+  if(!apiKey()){
+    app.credentialLibrary=[];
+    if(redraw)render();
+    return;
+  }
+  try{
+    await refreshCredentialData();
+  }catch(err){
+    setConnection(false,err.message);
+  }
+  if(redraw)render();
+}
+function smartCredentialLibraryView(){
+  $('#title').textContent='SMART CREDENTIAL LIBRARY';
+  $('#subtitle').textContent='Separate knowledge flow · Add once → AI auto-matches in Final Decision';
+
+  const p=app.credentialPreview;
+  const rows=app.credentialLibrary||[];
+  const activeCount=rows.filter(c=>String(c.Active).toLowerCase()==='true').length;
+  const typeOptions=['Industry Overview','Case Study','New Launches','Media Credentials'];
+
+  const notice=!apiKey()
+    ? '<div class="notice">ใส่ RADAR_API_KEY ใน Settings ก่อน เพื่อ Analyze และ Save Credential เข้า Google Sheets / Drive integration.</div>'
+    : (!app.connected&&app.lastError?'<div class="notice bad">'+esc(app.lastError)+'</div>':'');
+
+  const preview=p ? (
+    '<div class="smart-preview">'+
+      '<div class="smart-preview-head"><div>'+
+        '<span class="badge high">ANALYZED</span>'+
+        '<h3>'+esc(p.fileName||p.credentialName||'Credential')+'</h3>'+
+        '<div class="sub">'+esc(p.analysisSource||'')+' · Confidence '+esc(p.confidence||0)+'/100</div>'+
+      '</div>'+
+      '<div class="smart-status '+(p.active?'active':'inactive')+'">'+(p.active?'ACTIVE':'INACTIVE')+'</div></div>'+
+      '<div class="smart-grid">'+
+        '<label>Credential Name<input id="previewName" value="'+esc(p.credentialName||p.fileName||'')+'"></label>'+
+        '<label>Credential Type<select id="previewType">'+typeOptions.map(t=>'<option '+(p.credentialType===t?'selected':'')+'>'+t+'</option>').join('')+'</select></label>'+
+        '<label>Industry<input id="previewIndustry" value="'+esc(p.industry||'')+'"></label>'+
+        '<label class="wide">Tags<input id="previewTags" value="'+esc(p.tags||'')+'" placeholder="Product Launch, Premium, Bangkok, OOH..."></label>'+
+      '</div>'+
+      '<div class="smart-meta">'+
+        '<div><span>Source Modified</span><strong>'+esc(p.sourceLastModified||'—')+'</strong></div>'+
+        '<div><span>Analysis Source</span><strong>'+esc(p.analysisSource||'—')+'</strong></div>'+
+        '<div><span>File Type</span><strong>'+esc(p.mimeType||'—')+'</strong></div>'+
+        '<div><span>Auto Match</span><strong>After Save</strong></div>'+
+      '</div>'+
+      '<div class="settings-actions">'+
+        '<button class="btn primary" id="confirmCredential">Confirm & Add to Library</button>'+
+        '<button class="btn" id="reanalyzeCredential">Re-analyze</button>'+
+        '<button class="btn" id="cancelCredentialPreview">Cancel</button>'+
+      '</div>'+
+    '</div>'
+  ) : '';
+
+  const tableRows=rows.length ? rows.map(c=>
+    '<tr>'+
+      '<td><div class="brand-name">'+esc(c.Credential_Name)+'</div><div class="sub">'+esc(c.Analysis_Source||'')+'</div></td>'+
+      '<td>'+esc(c.Credential_Type)+'</td>'+
+      '<td>'+esc(c.Industry||'All')+'</td>'+
+      '<td class="credential-tags-cell">'+esc(c.Tags||'')+'</td>'+
+      '<td><span class="smart-status '+(String(c.Active).toLowerCase()==='true'?'active':'inactive')+'">'+(String(c.Active).toLowerCase()==='true'?'ACTIVE':'INACTIVE')+'</span></td>'+
+      '<td>'+esc(c.Source_Last_Modified||'—')+'</td>'+
+      '<td>'+esc(c.Last_Updated||'—')+'</td>'+
+      '<td>'+(c.Google_Drive_URL?'<a class="link" target="_blank" rel="noopener" href="'+esc(c.Google_Drive_URL)+'">Open Drive ↗</a>':'—')+'</td>'+
+    '</tr>'
+  ).join('') : '<tr><td colspan="8"><div class="empty">No credentials in library yet.</div></td></tr>';
+
+  $('#content').innerHTML=notice+
+    '<div class="knowledge-process">'+
+      '<div class="knowledge-step done"><span>1</span><div><b>PASTE</b><small>Google Drive Link</small></div></div>'+
+      '<div class="knowledge-step done"><span>2</span><div><b>ANALYZE</b><small>Metadata + native text</small></div></div>'+
+      '<div class="knowledge-step human"><span>3</span><div><b>REVIEW</b><small>Human confirms classification</small></div></div>'+
+      '<div class="knowledge-step done"><span>4</span><div><b>SAVE</b><small>Credential Library</small></div></div>'+
+      '<div class="knowledge-step done"><span>5</span><div><b>AUTO-MATCH</b><small>Feeds Final Decision</small></div></div>'+
+    '</div>'+
+    '<div class="credential-admin-metrics">'+
+      '<div class="metric"><div class="n">'+rows.length+'</div><div class="l">Library Records</div></div>'+
+      '<div class="metric"><div class="n">'+activeCount+'</div><div class="l">Active for Auto-Match</div></div>'+
+      '<div class="metric"><div class="n">'+new Set(rows.map(c=>c.Credential_Type).filter(Boolean)).size+'</div><div class="l">Credential Types</div></div>'+
+      '<div class="metric"><div class="n">'+new Set(rows.map(c=>c.Industry).filter(Boolean)).size+'</div><div class="l">Industries</div></div>'+
+    '</div>'+
+    '<div class="full-panel">'+
+      '<div class="credential-admin-head">'+
+        '<div><span class="eyebrow">KNOWLEDGE ADMIN FLOW</span><h3>Add Credential to AI Knowledge</h3>'+
+        '<div class="sub">This page is separate from the Sales flow. Sales does not need to visit here during Final Decision.</div></div>'+
+        '<div class="knowledge-note">Saved credentials are used automatically by the matching engine.</div>'+
+      '</div>'+
+      '<div class="smart-intake">'+
+        '<div><span class="next-stage-badge">SMART INTAKE</span><h3>Paste Google Drive Link</h3>'+
+        '<div class="sub">Google Docs / Slides / Sheets: available native text is analyzed. PDF / PPTX / Office files fall back to Drive metadata + filename in the current backend.</div></div>'+
+        '<div class="smart-url-row"><input id="smartDriveUrl" placeholder="https://drive.google.com/..."><button class="btn primary" id="analyzeCredential">Analyze Link</button></div>'+
+      '</div>'+
+      preview+
+      '<div class="section">'+
+        '<div class="filters"><strong>Credential Library</strong><div class="spacer"></div><span class="sub">'+activeCount+' active / '+rows.length+' total</span></div>'+
+        '<div class="table-wrap v2-table"><table><thead><tr><th>Name</th><th>Type</th><th>Industry</th><th>Tags</th><th>Status</th><th>Source Modified</th><th>Record Updated</th><th>Drive</th></tr></thead><tbody>'+tableRows+'</tbody></table></div>'+
+      '</div>'+
+    '</div>';
+
+  const analyze=async(url)=>{
+    const driveUrl=String(url||'').trim();
+    if(!driveUrl){alert('Paste a Google Drive file URL first.');return;}
+    if(!apiKey()){alert('Add RADAR_API_KEY in Settings first.');return;}
+    const btn=$('#analyzeCredential');
+    if(btn){btn.disabled=true;btn.textContent='Analyzing…';}
+    try{
+      const d=await apiPost('credential-analyze',{driveUrl});
+      app.credentialPreview=d.data||null;
+      smartCredentialLibraryView();
+    }catch(err){
+      alert('Analyze failed: '+err.message);
+      if(btn){btn.disabled=false;btn.textContent='Analyze Link';}
+    }
+  };
+
+  const analyzeBtn=$('#analyzeCredential');
+  if(analyzeBtn)analyzeBtn.onclick=()=>analyze($('#smartDriveUrl').value);
+
+  const re=$('#reanalyzeCredential');
+  if(re)re.onclick=()=>analyze(app.credentialPreview?.driveUrl||'');
+
+  const cancel=$('#cancelCredentialPreview');
+  if(cancel)cancel.onclick=()=>{app.credentialPreview=null;smartCredentialLibraryView();};
+
+  const confirm=$('#confirmCredential');
+  if(confirm)confirm.onclick=async()=>{
+    const payload={
+      type:$('#previewType').value,
+      name:$('#previewName').value.trim(),
+      industry:$('#previewIndustry').value.trim(),
+      tags:$('#previewTags').value.trim(),
+      driveUrl:p.driveUrl,
+      sourceLastModified:p.sourceLastModified||'',
+      analysisSource:p.analysisSource||'',
+      mimeType:p.mimeType||'',
+      fileId:p.fileId||''
+    };
+    if(!payload.name||!payload.driveUrl){alert('Credential name and Drive URL are required.');return;}
+    confirm.disabled=true;confirm.textContent='Saving…';
+    try{
+      await apiPost('credential-upsert',payload);
+      app.credentialPreview=null;
+      await refreshCredentialData();
+      alert('Credential added. Final Decision auto-match has been refreshed.');
+      smartCredentialLibraryView();
+    }catch(err){
+      confirm.disabled=false;confirm.textContent='Confirm & Add to Library';
+      alert('Save failed: '+err.message);
+    }
+  };
+}
+
 function historyView(){
   $('#title').textContent='ACTIVITY HISTORY';
   $('#subtitle').textContent='Decisions and activity written back to Google Sheets';
@@ -467,6 +634,7 @@ function render(){
   const c=counts(),side=$('#sideReady');if(side)side.textContent=c.pending;
   setConnection(app.connected,app.lastError);
   if(app.view==='decision')decisionView();
+  else if(app.view==='credentials')smartCredentialLibraryView();
   else if(app.view==='history')historyView();
   else settingsView()
 }
@@ -510,7 +678,7 @@ async function loadAll(){
   if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
   render()
 }
-$('#nav').onclick=e=>{const b=e.target.closest('[data-view]');if(!b)return;app.view=b.dataset.view;if(app.view==='history')loadActivities(true);else render()};
-$('#reloadBtn').onclick=()=>app.view==='history'?loadActivities(true):loadAll();
+$('#nav').onclick=e=>{const b=e.target.closest('[data-view]');if(!b)return;app.view=b.dataset.view;if(app.view==='history')loadActivities(true);else if(app.view==='credentials')loadCredentialLibrary(true);else render()};
+$('#reloadBtn').onclick=()=>app.view==='history'?loadActivities(true):(app.view==='credentials'?loadCredentialLibrary(true):loadAll());
 $('#today').textContent=new Date().toLocaleDateString('en-GB',{timeZone:'Asia/Bangkok',day:'2-digit',month:'short',year:'numeric'});
 loadAll();
