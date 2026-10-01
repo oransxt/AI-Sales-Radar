@@ -1,4 +1,4 @@
-const VERSION='2.3.1';
+const VERSION='2.3.2';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -29,7 +29,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const nl2br=s=>esc(s).replace(/\n/g,'<br>');
 const apiUrl=()=>localStorage.getItem(LS.url)||DEFAULT_API_URL;
 const apiKey=()=>localStorage.getItem(LS.key)||'';
-const API_TIMEOUT_MS=18000, API_GET_RETRIES=2;
+const API_TIMEOUT_MS=25000, API_GET_RETRIES=1;
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 
 function setConnection(ok,msg=''){
@@ -438,12 +438,9 @@ async function finalizeDecision(l,openGmail){
 
 async function refreshCredentialData(){
   if(!apiKey())throw new Error('API key not configured');
-  const results=await Promise.all([
-    apiGet('credentials',{active:'true'}),
-    apiGet('credentials',{active:'all'})
-  ]);
-  app.credentials=results[0].data||[];
-  app.credentialLibrary=results[1].data||[];
+  const d=await apiGet('credentials',{active:'all'});
+  app.credentialLibrary=d.data||[];
+  app.credentials=app.credentialLibrary.filter(c=>String(c.Active).toLowerCase()==='true');
   app.prepared={};
   prepareAll();
   setConnection(true);
@@ -644,39 +641,62 @@ async function loadActivities(redraw=false){
   catch(err){setConnection(false,err.message)}
   if(redraw)render()
 }
-async function loadAll(){
+async function loadDecisionCredentials(){
   try{
-    if(!apiKey())throw new Error('API key not configured');
-    const results=await Promise.all([
-      apiGet('daily-radar'),
-      apiGet('credentials',{active:'true'}),
-      apiGet('activities',{limit:300})
-    ]);
-    const radar=results[0].data||[];
-    app.daily={generatedAt:radar[0]?.Discovery_Date||'',leads:radar.map(lead)};
-    app.credentials=results[1].data||[];
-    app.activities=results[2].data||[];
+    const d=await apiGet('credentials',{active:'true'});
+    app.credentials=d.data||[];
     app.prepared={};
     prepareAll();
-    setConnection(true)
+    if(app.view==='decision')render();
   }catch(err){
-    const msg='Live sync temporarily unavailable. '+err.message;
-    if(app.daily.leads&&app.daily.leads.length){setConnection(false,msg+' Showing last loaded data.')}
-    else{
-      setConnection(false,msg+' Showing fallback radar.');
-      try{
-        const r=await fetch('data/daily.json?t='+Date.now(),{cache:'no-store'}),text=await r.text(),j=JSON.parse(String(text||'').replace(/^\uFEFF/,'').trim());
-        app.daily={generatedAt:j.generatedAt||'',leads:(j.leads||[]).map((x,i)=>({
-          id:String(x.id||('FB'+i)),rank:i+1,brandName:x.brandName||x.brand||'',companyName:x.companyName||'',industry:x.industry||'',brandType:x.brandType||'',
-          buyingSignal:x.buyingSignal||'',signalDate:x.signalDate||'',whyNow:x.whyNow||'',score:Number(x.score||x.opportunityScore||0),priority:x.priority||'',status:'Not Checked',
-          discoveryDate:j.generatedAt||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean)
-        }))};
-        app.credentials=[];app.activities=[];app.prepared={};prepareAll()
-      }catch(_){app.daily={generatedAt:'',leads:[]};app.credentials=[];app.activities=[];app.prepared={}}
-    }
+    console.warn('Credential sync delayed:',err.message);
   }
-  if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
-  render()
+}
+async function loadFallbackRadar(message){
+  const msg='Live radar sync temporarily unavailable. '+message;
+  if(app.daily.leads&&app.daily.leads.length){
+    setConnection(false,msg+' Showing last loaded radar data.');
+    return;
+  }
+  setConnection(false,msg+' Showing fallback radar.');
+  try{
+    const r=await fetch('data/daily.json?t='+Date.now(),{cache:'no-store'}),text=await r.text(),j=JSON.parse(String(text||'').replace(/^\uFEFF/,'').trim());
+    app.daily={generatedAt:j.generatedAt||'',leads:(j.leads||[]).map((x,i)=>({
+      id:String(x.id||('FB'+i)),rank:i+1,brandName:x.brandName||x.brand||'',companyName:x.companyName||'',industry:x.industry||'',brandType:x.brandType||'',
+      buyingSignal:x.buyingSignal||'',signalDate:x.signalDate||'',whyNow:x.whyNow||'',score:Number(x.score||x.opportunityScore||0),priority:x.priority||'',status:'Not Checked',
+      discoveryDate:j.generatedAt||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean)
+    }))};
+    app.credentials=[];app.prepared={};prepareAll();
+  }catch(_){
+    app.daily={generatedAt:'',leads:[]};app.credentials=[];app.prepared={};
+  }
+}
+async function loadAll(){
+  if(!apiKey()){
+    await loadFallbackRadar('API key not configured.');
+    if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
+    render();
+    return;
+  }
+
+  try{
+    const d=await apiGet('daily-radar');
+    const radar=d.data||[];
+    app.daily={generatedAt:radar[0]?.Discovery_Date||'',leads:radar.map(lead)};
+    app.prepared={};
+    prepareAll();
+    setConnection(true);
+    if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
+    render();
+
+    // Non-critical data loads after the live radar is already visible.
+    // A slow Credential_Library call must never force the whole dashboard into fallback mode.
+    loadDecisionCredentials();
+  }catch(err){
+    await loadFallbackRadar(err.message);
+    if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
+    render();
+  }
 }
 $('#nav').onclick=e=>{const b=e.target.closest('[data-view]');if(!b)return;app.view=b.dataset.view;if(app.view==='history')loadActivities(true);else if(app.view==='credentials')loadCredentialLibrary(true);else render()};
 $('#reloadBtn').onclick=()=>app.view==='history'?loadActivities(true):(app.view==='credentials'?loadCredentialLibrary(true):loadAll());
