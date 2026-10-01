@@ -1,7 +1,8 @@
-const VERSION='2.3.4';
+const VERSION='2.3.5';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
+const DEMO_MODE=new URLSearchParams(window.location.search).get('demo')?.toLowerCase()==='elica';
 const STATUS_META={
   'Not Checked':{label:'Pending',desc:'ยังไม่ได้ตัดสินใจ',tone:'pending'},
   'Available':{label:'Available',desc:'แบรนด์ใหม่จริง · สามารถ Approach ได้',tone:'available'},
@@ -21,7 +22,8 @@ const app={
   activities:[],
   prepared:{},
   connected:false,
-  lastError:''
+  lastError:'',
+  demoMode:DEMO_MODE
 };
 const $=s=>document.querySelector(s);
 const $$=s=>Array.from(document.querySelectorAll(s));
@@ -36,7 +38,10 @@ function setConnection(ok,msg=''){
   app.connected=!!ok; app.lastError=msg||'';
   const d=$('#syncDot'),l=$('#syncLabel');
   if(d)d.className='sync-dot '+(ok?'on':'off');
-  if(l)l.textContent=ok?'Google Sheets connected':(msg?'Live sync fallback':'Google Sheets not connected');
+  if(l){
+    if(app.demoMode)l.textContent='DEMO MODE · Live data protected';
+    else l.textContent=ok?'Google Sheets connected':(msg?'Live sync fallback':'Google Sheets not connected');
+  }
 }
 async function fetchWithTimeout(url,options={},timeoutMs=API_TIMEOUT_MS){
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
@@ -84,6 +89,40 @@ async function apiRequest(method,action,payload={},retries=0){
 }
 async function apiGet(action,params={}){return apiRequest('GET',action,params,API_GET_RETRIES)}
 async function apiPost(action,payload){return apiRequest('POST',action,payload,0)}
+
+
+function demoElicaLead(){
+  return{
+    id:'DEMO-ELICA-2026',
+    rank:1,
+    brandName:'Elica',
+    companyName:'Elica / Cucina Galleria',
+    industry:'Premium Kitchen Appliances / Home Living',
+    brandType:'New to Thailand',
+    buyingSignal:'Official Thailand market entry + Elica Lhov launch',
+    signalDate:'2026-07-23',
+    whyNow:'Elica officially entered the Thailand market under Cucina Galleria and introduced Elica Lhov, creating a timely opening for brand-building, product education and premium-home audience engagement.',
+    score:88,
+    priority:'HOT',
+    status:'Not Checked',
+    discoveryDate:'2026-10-01',
+    sources:[
+      'https://www.matichon.co.th/lifestyle/news_5824459',
+      'https://www.elica.com/TH-th'
+    ]
+  }
+}
+function loadElicaDemo(){
+  app.daily={generatedAt:'2026-10-01',leads:[demoElicaLead()]};
+  app.activities=[];
+  app.credentials=[];
+  app.credentialLibrary=[];
+  app.prepared={};
+  app.filter='Pending';
+  app.selected='DEMO-ELICA-2026';
+  prepareAll();
+  setConnection(true);
+}
 
 function lead(r){
   return{
@@ -357,9 +396,11 @@ function decisionView(){
   const l=(app.daily.leads||[]).find(x=>x.id===app.selected);
   $('#title').textContent="TODAY'S READY OPPORTUNITIES";
   $('#subtitle').textContent='Discover → Score → Analyze → Match → Draft → Human Final Decision';
-  const notice=!apiKey()
-    ? '<div class="notice">เปิด Settings และใส่ RADAR_API_KEY เพื่อบันทึก Final Decision กลับ Google Sheets. Demo/fallback ยังดูได้แต่บันทึกไม่ได้.</div>'
-    : (!app.connected&&app.lastError?'<div class="notice bad">'+esc(app.lastError)+'</div>':'');
+  const notice=app.demoMode
+    ? '<div class="notice demo-notice"><strong>ELICA DEMO MODE</strong> · ใช้ข่าวจริงสำหรับ Demo เท่านั้น · ไม่เขียนทับ Google Sheet / Live Database · Reload เพื่อ Reset Demo</div>'
+    : (!apiKey()
+      ? '<div class="notice">เปิด Settings และใส่ RADAR_API_KEY เพื่อบันทึก Final Decision กลับ Google Sheets. Demo/fallback ยังดูได้แต่บันทึกไม่ได้.</div>'
+      : (!app.connected&&app.lastError?'<div class="notice bad">'+esc(app.lastError)+'</div>':''));
   $('#content').innerHTML=notice+processHtml()+metricsHtml()+
     '<div class="decision-shell">'+
       '<div class="decision-list panel"><div class="decision-list-head"><div><h3>Ready for Decision</h3><p>ทุก Card ถูกเตรียมอัตโนมัติแล้ว</p></div><span>'+ls.length+'</span></div>'+filterHtml()+
@@ -427,6 +468,15 @@ async function finalizeDecision(l,openGmail){
       gmailWindow.document.title='Preparing Gmail Draft…';
       gmailWindow.document.body.innerHTML='<div style="font-family:Arial,sans-serif;padding:24px">Preparing Gmail draft…</div>';
     }catch(_){}
+  }
+
+  if(app.demoMode){
+    l.status=status;
+    p.decisionStatus=status;
+    if(openGmail&&gmailWindow)gmailWindow.location.replace(gmailUrl);
+    setConnection(true);
+    render();
+    return;
   }
 
   if(!apiKey()){
@@ -701,6 +751,11 @@ async function loadFallbackRadar(message){
   }
 }
 async function loadAll(){
+  if(app.demoMode){
+    loadElicaDemo();
+    render();
+    return;
+  }
   if(!apiKey()){
     await loadFallbackRadar('API key not configured.');
     if(!app.selected)app.selected=filtered()[0]?.id||app.daily.leads[0]?.id||null;
@@ -728,6 +783,6 @@ async function loadAll(){
   }
 }
 $('#nav').onclick=e=>{const b=e.target.closest('[data-view]');if(!b)return;app.view=b.dataset.view;if(app.view==='history')loadActivities(true);else if(app.view==='credentials')loadCredentialLibrary(true);else render()};
-$('#reloadBtn').onclick=()=>app.view==='history'?loadActivities(true):(app.view==='credentials'?loadCredentialLibrary(true):loadAll());
+$('#reloadBtn').onclick=()=>app.demoMode?loadAll():(app.view==='history'?loadActivities(true):(app.view==='credentials'?loadCredentialLibrary(true):loadAll()));
 $('#today').textContent=new Date().toLocaleDateString('en-GB',{timeZone:'Asia/Bangkok',day:'2-digit',month:'short',year:'numeric'});
 loadAll();
