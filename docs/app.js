@@ -1,4 +1,4 @@
-const VERSION='2.3.3';
+const VERSION='2.3.4';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -404,6 +404,9 @@ async function finalizeDecision(l,openGmail){
   if(!status){alert('เลือก Account Status ก่อน');return}
   const p=prepare(l);
   if(openGmail&&(status==='Has Owner'||status==='Skip')){alert('สถานะนี้ไม่เปิด Email Draft');return}
+
+  let gmailWindow=null;
+  let gmailUrl='';
   if(openGmail){
     const to=String($('#recipient')?.value||'').trim();
     const subject=String($('#subject')?.value||'').trim();
@@ -411,8 +414,27 @@ async function finalizeDecision(l,openGmail){
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(to)){alert('ใส่ Recipient email ที่ถูกต้องก่อน');return}
     if(!subject||!body){alert('Subject และ Email Body ต้องไม่ว่าง');return}
     p.recipient=to;p.subject=subject;p.body=body;
+    gmailUrl='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(p.recipient)+'&su='+encodeURIComponent(p.subject)+'&body='+encodeURIComponent(p.body);
+
+    // Open a placeholder immediately while we are still inside the user's click.
+    // Browsers often block window.open() when it happens only after awaited API calls.
+    gmailWindow=window.open('about:blank','_blank');
+    if(!gmailWindow){
+      alert('Browser blocked the Gmail window. Please allow pop-ups for this site, then try again.');
+      return;
+    }
+    try{
+      gmailWindow.document.title='Preparing Gmail Draft…';
+      gmailWindow.document.body.innerHTML='<div style="font-family:Arial,sans-serif;padding:24px">Preparing Gmail draft…</div>';
+    }catch(_){}
   }
-  if(!apiKey()){alert('กรุณาใส่ RADAR_API_KEY ใน Settings ก่อนบันทึก Final Decision');return}
+
+  if(!apiKey()){
+    if(gmailWindow)gmailWindow.close();
+    alert('กรุณาใส่ RADAR_API_KEY ใน Settings ก่อนบันทึก Final Decision');
+    return
+  }
+
   try{
     await apiPost('status',{
       brandId:l.id,status,
@@ -430,12 +452,12 @@ async function finalizeDecision(l,openGmail){
       createdBy:'AI Sales Radar'
     });
     setConnection(true);
-    if(openGmail){
-      const url='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(p.recipient)+'&su='+encodeURIComponent(p.subject)+'&body='+encodeURIComponent(p.body);
-      window.open(url,'_blank','noopener');
+    if(openGmail&&gmailWindow){
+      gmailWindow.location.replace(gmailUrl);
     }
     render()
   }catch(err){
+    if(gmailWindow)gmailWindow.close();
     setConnection(false,err.message);
     alert('Save failed: '+err.message);
     render()
