@@ -1,0 +1,18 @@
+{
+  "project": "SignalBridge",
+  "version": "2.3.1",
+  "mode": "COMPANY_GEMINI_MANUAL_BROWSER",
+  "checked_at": "2026-10-01",
+  "core_checks_passed": 76,
+  "simulated_integration_checks_passed": 40,
+  "package_validation": "passed; five exact source copy blocks, synchronized Core, portable builds and fictional public seed",
+  "offline_browser_ui": "pending current package run; no Chromium executable available at prior path",
+  "source_documents_or_permissions_modified": false,
+  "customer_mail_automatically_sent": false,
+  "live_google_account_deployed": false,
+  "llm_integration": "manual company browser prompt and TH/EN JSON import; no LLM API",
+  "semantic_event_deduplication": "human review; IDs, normalized headline and source URL dedup implemented",
+  "explicit_brand_identity": "verified brand takes precedence over a mentioned partner; outside-master identity never inherits a customer email",
+  "reviewed_knowledge": "unchanged READY summaries and HELD sources survive folder refresh; changed sources are re-read",
+  "live_acceptance": "Drive source inventory and permissions inspected through connector; Apps Script patch, trigger, RSS and Gmail acceptance pending installing account"
+}

@@ -1,0 +1,4 @@
+id,brand,aliases,customer_type,industry,area,owner,contact_name,contact_email,current_media
+DEMO-A0,Demo Finance,,UNKNOWN,FINANCE,BANGKOK,,,,
+DEMO-A1,Demo Retail,,UNKNOWN,RETAIL,BANGKOK,,,,
+DEMO-A2,Demo Health,,UNKNOWN,HOSPITAL,BANGKOK,,,,

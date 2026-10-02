@@ -1,53 +1,24 @@
-# AI Sales Radar
+# SignalBridge
 
-Thailand-first sales opportunity radar for OOH/DOOH.
+**News to Client Conversations**
 
-Current implementation checkpoint: **Version 1.9.3.2 — 100% Free Online Edition**.
+ระบบรวบรวมข่าวธุรกิจ คัด Research / Case Study / Industry Insights และเตรียมบทสนทนากับลูกค้า
 
-## V1 flow
+## Latest implementation package — 2.3.1
 
-1. Daily Thailand-first brand discovery from public online sources
-2. Rank top 20 by commercial opportunity
-3. Manual Salesforce ownership check
-4. Internal credential library using Google Drive links
-5. Multiple credential selection per brand
-6. Daily automation via GitHub Actions
-7. Static online dashboard via GitHub Pages
+- [Source and tests](signalbridge/)
+- [Thai installation guide](signalbridge/README-TH.md) and [exact code copy guide](signalbridge/Install-Guide.html)
+- [Production installation, acceptance and rollback](signalbridge/docs/PRODUCTION.md)
+- [Workflow](signalbridge/docs/WORKFLOW.md), [Architecture](signalbridge/docs/ARCHITECTURE.md) and [Status](signalbridge/docs/STATUS.md)
 
-## Free runtime architecture
+Apps Script handles rules-based discovery/classification, knowledge matching and internal digests of20 eligible unsent signals on weekdays08:30–17:59 Bangkok. Salespeople use **company Gemini in the browser**, import TH/EN text, inspect evidence and choose a language before creating Gmail Draft. Customer Send is manual. No LLM API or local model is used.
 
-- GitHub repository: free
-- GitHub Pages: free
-- GitHub Actions: free for this public repository within GitHub's included limits
-- Discovery: public Google News RSS searches focused on Thailand
-- Scoring: local JavaScript commercial scoring rules
-- History / duplicate detection: repository JSON data
-- Credential recommendation: industry + tag matching in the browser
-- Salesforce ownership check: manual human-in-the-loop
+Checks:76 pure-engine and40 simulated Google integration checks pass. Live company Google authorization, Drive OCR/access, Gemini account and Gmail delivery remain account-level installation checks. Review is owner-only in this release.
 
-There is **no paid OpenAI API dependency in Version 1 runtime**.
+The public seed uses fictional brands. Real Brand Master imports, contacts, knowledge extracts and live Settings remain in private company Sheets/Drive. Deterministic ID/headline/source URL deduplication is implemented; differently worded same-event news needs human review.
 
-## Internal credential types
+## Existing runtime
 
-- Industry Overview
-- Case Study
-- New Launches
-- Media Credentials
+The older root apps-script/, scripts/, docs/, skills/ and automation files remain for compatibility. Use signalbridge/apps-script/ in a separate bound Sheet project. Stop the old digest schedule and preserve delivery history during migration. This source update does not deploy or activate either Google workflow.
 
-## Version history
-
-- 1.0 Daily Brand Discovery
-- 1.1 Salesforce Check
-- 1.2 Internal Knowledge Links
-- 1.3 Multiple Credential Types
-- 1.4 Credential Recommendation
-- 1.5 Thailand Brand Discovery Engine
-- 1.6 Ranking & Scoring
-- 1.7 Duplicate / History Logic
-- 1.8 Daily Review Experience
-- 1.9 Final Data Structure
-- 1.9.1 First local working implementation
-- 1.9.2 GitHub Online Edition
-- 1.9.3 Replace paid API runtime with free public-source discovery
-- 1.9.3.1 Improve recency and brand extraction
-- 1.9.3.2 Refine narrative headline brand detection
+The project name is SignalBridge. The repository retains its original URL slug.

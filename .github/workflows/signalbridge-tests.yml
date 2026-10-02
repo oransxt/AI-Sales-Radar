@@ -1,0 +1,37 @@
+name: SignalBridge source checks
+
+on:
+  push:
+    paths:
+      - 'signalbridge/**'
+      - '.github/workflows/signalbridge-tests.yml'
+  pull_request:
+    paths:
+      - 'signalbridge/**'
+      - '.github/workflows/signalbridge-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: signalbridge
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rebuild and validate package
+        run: |
+          python3 scripts/build_preview.py
+          python3 scripts/build_guide.py
+          python3 scripts/validate_package.py
+          git diff --exit-code -- apps-script/Review.html Preview.html Install-Guide.html
+      - name: Core and simulated Google integration checks
+        run: |
+          node tests/core.test.cjs
+          node tests/server.test.cjs
