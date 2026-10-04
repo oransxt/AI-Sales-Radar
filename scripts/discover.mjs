@@ -35,12 +35,13 @@ const stopStarts = new Set([
   'พา','ชวน','เจาะ','ส่อง','จับตา','มาแล้ว','ใหม่','พร้อม','ครั้งใหม่','ประกาศ','เตรียม','เดินหน้า','บุก','ลุย','รุก','เทรนด์'
 ]);
 const genericLatin = new Set([
-  'Thailand','Bangkok','EV','AI','CEO','CMO','PR','CSR','ESG','JV','IPO','QSR','OTT','B2B','B2C','FMCG',
+  'Thailand','Bangkok','EV','AI','CEO','CMO','PR','CSR','ESG','JV','IPO','QSR','OTT','B2B','B2C','FMCG','SME','Launch',
   'Meta','Instagram','Facebook','Google','YouTube','LINE','SET','BOI','CBU','SUV'
 ]);
 const invalidBrandPatterns = [
   /^ศูนย์วิจัย/i,/^สมาคม/i,/^กระทรวง/i,/^กรม/i,/^รัฐบาล/i,/^ตลาด\s/i,/^เทรนด์/i,/^นักวิเคราะห์/i,/^ผู้บริโภค/i,
   /^ปีที่แล้ว/i,/^ปีนี้/i,/^สเป็ค/i,/^สเปก/i,/^ราคา/i,/^รู้จัก/i,/^ทำไม/i,/^เมื่อ/i,/^หลัง/i,/^ก่อน/i,/^ครั้งแรก/i,
+  /^คอนเฟิร์ม/i,/^ยืนยัน/i,/^วิเคราะห์/i,/^ก้าวใหม่/i,/^launch$/i,
   /เผย\s/i,/ทุนต่างชาติ/i,/ธุรกิจไทย/i,/ตลาดไทย/i,/อุตสาหกรรม/i,/คนไทยราว/i
 ];
 
@@ -112,7 +113,7 @@ function candidateBrand(headline) {
   h=h.replace(/^แบรนด์\s+/i,'').replace(/^บริษัท\s+/i,'');
   const latin=bestLatinBrand(h);
 
-  const signalIndex=h.search(/เปิดตัว|เปิดสาขา|ขยาย|จับมือ|ร่วมมือ|ประกาศ|เปิดร้าน|บุกไทย|รุกไทย|รีแบรนด์|คว้า|ดึง|ส่ง|ลุย|เตรียม|เดินหน้า|ทุ่ม|launch|expansion|campaign/i);
+  const signalIndex=h.search(/เปิดตัว|เปิดสาขา|สาขาใหม่|ปักหมุด|เปิดจำหน่าย|วางจำหน่าย|ขยาย|จับมือ|ร่วมมือ|ประกาศ|เปิดร้าน|บุกไทย|รุกไทย|รีแบรนด์|คว้า|ดึง|ส่ง|ลุย|เตรียม|เดินหน้า|ทุ่ม|launch|expansion|campaign/i);
   if(signalIndex>0){
     let prefix=h.slice(0,signalIndex).replace(/[,:;|–—!].*$/,'').trim();
     prefix=prefix.replace(/^(เทรนด์ปีนี้|เทรนด์|ข่าว|แบรนด์|บริษัท)\s*/i,'').trim();
@@ -120,8 +121,10 @@ function candidateBrand(headline) {
     while(words.length && stopStarts.has(words[0])) words.shift();
     const thaiCandidate=words.slice(0,4).join(' ').replace(/[“”"'()\[\]]/g,'').trim();
     const prefixNoisy=isInvalidBrand(thaiCandidate)||/^(ร้านจีน|ห้างกลางเมือง|ทุนต่างชาติ)$/i.test(thaiCandidate);
+    const latinClean=latin&&!isInvalidBrand(latin);
+    if(latinClean && thaiCandidate.toLowerCase().startsWith(latin.toLowerCase()) && thaiCandidate.split(/\s+/).length>latin.split(/\s+/).length) return latin;
     if(!prefixNoisy) return thaiCandidate;
-    if(latin&&!isInvalidBrand(latin)) return latin;
+    if(latinClean) return latin;
   }
 
   if(latin&&!isInvalidBrand(latin)) return latin;
