@@ -1,4 +1,4 @@
-const VERSION='2.3.5';
+const VERSION='2.3.6';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -486,21 +486,24 @@ async function finalizeDecision(l,openGmail){
   }
 
   try{
-    await apiPost('status',{
-      brandId:l.id,status,
-      details:'Final Decision · '+(STATUS_META[status]?.label||status),
-      origin:'Autonomous Final Decision v'+VERSION,
-      createdBy:'AI Sales Radar'
-    });
-    l.status=status;
-    p.decisionStatus=status;
-    await apiPost('activity',{
-      brandId:l.id,type:'NOTE_ADDED',newStatus:status,
-      buyingSignal:l.buyingSignal,signalDate:l.signalDate,score:l.score,priority:l.priority,
-      details:openGmail?'Final decision approved; Gmail compose opened for human review/send.':'Final decision saved.',
-      origin:'Autonomous Final Decision v'+VERSION,
-      createdBy:'AI Sales Radar'
-    });
+    // Avoid duplicate writes when the selected status is already saved.
+    // The Apps Script status endpoint already writes STATUS_CHANGED to Activity_Log,
+    // so a second activity POST is unnecessary and can cause duplicate rows/timeouts.
+    if(l.status!==status){
+      const saveBtn=$('#saveDecision'),approveBtn=$('#approveOpen');
+      if(saveBtn){saveBtn.disabled=true;saveBtn.textContent='Saving…'}
+      if(approveBtn){approveBtn.disabled=true;approveBtn.textContent='Saving…'}
+      await apiPost('status',{
+        brandId:l.id,status,
+        details:openGmail
+          ? 'Final Decision · '+(STATUS_META[status]?.label||status)+' · Gmail draft approved'
+          : 'Final Decision · '+(STATUS_META[status]?.label||status),
+        origin:'Autonomous Final Decision v'+VERSION,
+        createdBy:'AI Sales Radar'
+      });
+      l.status=status;
+      p.decisionStatus=status;
+    }
     setConnection(true);
     if(openGmail&&gmailWindow){
       gmailWindow.location.replace(gmailUrl);
