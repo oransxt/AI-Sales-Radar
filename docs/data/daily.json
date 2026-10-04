@@ -1,82 +1,8 @@
 {
   "date": "2026-10-04",
-  "generatedAt": "2026-10-04T06:40:31.724Z",
+  "generatedAt": "2026-10-04T13:56:38.879Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
-    {
-      "id": "f2ba48c87141",
-      "brandName": "Blue Bottle Coffee",
-      "companyName": "Blue Bottle Coffee",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-21",
-      "whyNow": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 87,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HOT",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
-          "label": "Brand Inside"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiywVBVV95cUxNVVVwTHNoX3kwMFdlbEppbFN4Qk5mSjhvTTNrTDZhOURvVHByZ04zdW95OUFUaFJUTGdLQlpRblIwTFNRUmFUbml0NHJLVDRCeDlsVmQ0ZjlFakh5WkExQWtSbjZkOUdTR2xGZXFPZjZ3ektwdVNmbGtVYzB6dEFwc3dSXzltTkVra1Fmeks3Y1NwQ05rREI2UTR3XzVFQ0RNU0xuZmVhNXliMG45bVQ5SGJOS2lzbDF5NE96ZVcxRnU5WGJUZ3J0X1RLbGRtX29YblJEZkw1NndZMW9nZkd6UjJrVHNvUGszbkFDOGg0dEpYWkVtaDRydXVlWnZTX21JcmRBS2Jvc3NKQ0ZPY2VKNmpJUjI5VjVoeVlqcGZONGdTNFVpSzdibW91N184NGZfRFdVajZCUTRjWlRNbERKeVZrSFQtckVKLVp5NzhTQW9TRU81Tk5EYXJuTkprSGNFNzFuMXVMa1h4SVRmVThxcWJqaXNyU1c2TlVETk1kY2M2aUJmZXJoSEVrNUIyYzNwdnFWVXN0TDRrNnZFMXdlUWVtNEJsNDlOMFJyc2FSNnB2bWhmU1NQZlNlZkxWYWM0OFNTeDlMYXRTeGItNDJoWHZBYWhzMG9TMlY4WXhLUUxQb1VkaGRTZndTbnNmbUhMQjJzc2tmRjVoZkpYT1ZKbERpMGxpYkJpMEh0a3B5anJaT0NFUmJJOEF0R200QWVPNFdXbkZSUFlvbmJPdVRHRERCa25zdWY5WWhRY3ZaOTRVOWlrcVczQUN2YTAxelpUcHlrQlI3ZFNEblBFZFFTZlNCOUIxNFNXa3J4TWlJSGxsNVpzSURtMWI0YWU2dWU1S2JiSnFEeGg3SDNMX0MxQm9jODNqUkRqMVJ6dURfcTkxMlZHUFZtX0g5UC16eHZYbTN5cGxpcEJueHhhMXRZa2w4cW5qNGZiXzEw?oc=5",
-          "label": "facebook.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFlETFQwZmRjUVFOc3dvZmQ3SGw3eGJFUEZ2dmNKNGFWQXlQRm5JdDJxS1lHZGNVOVZOQzZPemJuYW9wdnZBTk9HWUduajVZUzdNLWtsX3dPT2Z4M3BrQmxZT00wM29lX0VDY0MwNFh1UHFLNlpmQXZyTmx1NDgxZGpGSnV2SEhwNmlGdFpQMjVtN2V0WW5TWg?oc=5",
-          "label": "การตลาดวันละตอน"
-        }
-      ]
-    },
-    {
-      "id": "9365deeab01a",
-      "brandName": "คอนเฟิร์มแล้ว",
-      "companyName": "คอนเฟิร์มแล้ว",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "คอนเฟิร์มแล้ว! ‘Blue Bottle Coffee’ มาไทย ปักหมุด ‘ดุสิต เซ็นทรัล พาร์ค’ เปิดร้านกลางเดือนสิงหาคมนี้ . สิ้นสุดการรอคอย! “Blue Bottle Coffee” กาแฟสเปเชียลตี้เจ้าดังประเดิมสาขาแรกที่ “ดุสิต เซ็นทรัล พาร์ค” เตรียมเปิดกลางเดือนสิงหาคมนี้ หลังขยายไปแล้ว 6 ประเทศทั่วโลก “ไทย” เป็นประ",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-08-05",
-      "whyNow": "คอนเฟิร์มแล้ว! ‘Blue Bottle Coffee’ มาไทย ปักหมุด ‘ดุสิต เซ็นทรัล พาร์ค’ เปิดร้านกลางเดือนสิงหาคมนี้ . สิ้นสุดการรอคอย! “Blue Bottle Coffee” กาแฟสเปเชียลตี้เจ้าดังประเดิมสาขาแรกที่ “ดุสิต เซ็นทรัล พาร์ค” เตรียมเปิดกลางเดือนสิงหาคมนี้ หลังขยายไปแล้ว 6 ประเทศทั่วโลก “ไทย” เป็นประ",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 85,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HOT",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMipwZBVV95cUxQd0lUVzN5NkxBZzdJSUlCSzhjazZQU0JSNVVveENxQjFNXy12bnpqNVpYb1BPcHdYTzVCRFBBSFJYMDNRdEhhNmhybE9tR2VrSlFnXzVRWDdqUmhtYW82LVpyNzdyNGljU2k5WHdtaXVJcU5SYVBra3U4UVJnbjNhTW8yYUllcU9yQlJubnh3UlhlUXM4aG91MHExOHJwQ09GRGlnUG03cHZfZkphVDJyUzg2b0VyVWV3M3dUOE54Ui1IMFVFZVdmVkdCd1EtMVNXUWE3ek5PMXRqTWlsdmpxWGExU1ludDdtZFo5azNKWDk2UnA1Z0lNUlNRU2t6WHllWHlnSXhIdEtEUUFlTEd0Y01ORDFLa1FIbGxCUGhRLWVWSTNEOU9fVllqeTJPOFgzMW9HRkh5bWN1Z0FYTWV6WTI0Skh3N1ozeEVFc3F5QmVxN2NLZTJWTGhQMmNyNUFoQk9ZMmlyejg0NmlwZmsyOTVtdHZJekpva2ltTjNMd3ViMzBOU2FOenNhV084VVVTUnMwRVUwelU3MS1UOEhmN0FGZ1Z3bmQyWkVOZHBYX2dxbkp5NC1SR3pveHJPUUJjUFJYNU5aU0RUTTFubmV2VnQ1UHc1ZVU5TGJFdVctdG9oOWRvNUpGaTNVUU1DblZDeXVyVkVZZC1VZ3lGVDUzOTNTRnEyQ1dzT0hfUnNxTlJ3MkhVWkZxc1BxUG9sYzJ1LU9YWElSeUxPTHg3QkNvWDQ4cEFidEF1Wkh2WlVXa1FHQzYwa19BT3dBM1hvNzRiT0NrbVBLSk1sdzBUd3J6amhSd2tQTmtJN0d4OTk4X2Q3aW5Gc1o0SHdfQlkzQ004S3Ewbm0zSHh3bjVaQlR1aUxjUEtLX3hkdFN5WC1INnl0S2wwRlRmcVh0QS13N3BPYU5rVWVSLWtyVTdGc3A1TEZ1T2dtcHBpZ3FnQXVuOFZkTUlBeDZmSWhXNXdaLWtsWlVRTHdrTW53Snl3UVlyMjB1bmc4MGFTNE9CbWlUamNnVmZxYUE4RnhJaGlsdW9WX21BUGhoWjVhUTZtaHB2Q3pLbm05bVk?oc=5",
-          "label": "facebook.com"
-        }
-      ]
-    },
     {
       "id": "aabc319a0bf8",
       "brandName": "YONNY",
@@ -115,6 +41,298 @@
       ]
     },
     {
+      "id": "d85d03ee6451",
+      "brandName": "เปิดแล้ววันนี้",
+      "companyName": "เปิดแล้ววันนี้",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เปิดแล้ววันนี้!! niko and … สาขาใหม่ Fashion Island หนึ่ง ในสาขาที่ใหญ่ที่สุดในไทย",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-26",
+      "whyNow": "เปิดแล้ววันนี้!! niko and … สาขาใหม่ Fashion Island หนึ่ง ในสาขาที่ใหญ่ที่สุดในไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 83,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ydE5sLXowOVRpVHNZNVhMd2tBcVZFQUZIRWJYRWZXMnluTFJqRXFLV0ljVkxoQjhOY1ZCMkkyTVdrbmF6ZUF2aGdKWXhwU0o3eHA2eTdBZmRVaXFROVd0MjhlZ3B6ZGM?oc=5",
+          "label": "ผู้จัดการออนไลน์"
+        }
+      ]
+    },
+    {
+      "id": "f40748791594",
+      "brandName": "GAC AION",
+      "companyName": "GAC AION",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ยืนยันรุ่นนี้เปิดตัวไทยปลายปี 2569 GAC AION i60 BEV โฉมใหม่ รวมภาพคันจริงในจีน! จีเอซี ไอออน - รถใหม่วันนี้ ข่าวรถยนต์ EV ราคารถยนต์ไฟฟ้า รถยนต์พลังงานไฟฟ้า",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-12",
+      "whyNow": "ยืนยันรุ่นนี้เปิดตัวไทยปลายปี 2569 GAC AION i60 BEV โฉมใหม่ รวมภาพคันจริงในจีน! จีเอซี ไอออน - รถใหม่วันนี้ ข่าวรถยนต์ EV ราคารถยนต์ไฟฟ้า รถยนต์พลังงานไฟฟ้า",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hLUpaa1hnekZBU3BIQm5TRFl5N2R6Nlc4WHhISWs3QjZjS0FQblJGN3c0VEF5Z05TOXRIQktUWW5ZUklWVFZKLXlEc21nSk15VFNIbXFSUV82NnVnSHhLakVDVmpkVXMtSEF0SjV3?oc=5",
+          "label": "CAR250"
+        }
+      ]
+    },
+    {
+      "id": "0b3768e5b4cd",
+      "brandName": "Thaimart",
+      "companyName": "Thaimart",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-15",
+      "whyNow": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZTZWODMwbzVCTGhrWnVHR2hXdXhTSDRiZU81RlNOWHBDWnFYV09OQkRxaDNpdGFpS0NMcFI3eW5CeGktZlRxYm45c202Rkd4NTFLazdBZk5hb3VzakU1Z1BjaXBVcTVMcUhaVm1HLWRWSDVwcmZMSGt2dHo0RnE1YTZKWEdFTzZzbWdUNk9Ub3F4bXIyRFVEeEdNTlE4cXRZZ29wVEtGZ3NQQlpINWhoc3JlN0VDWVpTY2lYenBCRTBfYU4xcGNxLXgzbXFCS2NoVUt2V2tTbHVZV3dsaU4xXw?oc=5",
+          "label": "everydaymarketing.co"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YRFNuek1IZFJyNXA3MGprdFpRclQ1T1E5a3RNZkhzWTQ0dTVVUC1ETDE1M1hHZnhwQkFBS01oSThfeUFBRk1NVHBhRktDTlhKaEJORUpIWUt2U2tJdktVTzAzMTQySTdkdC1JS0JzNThNV1FfN0Zyd2ZXOA?oc=5",
+          "label": "everydaymarketing.co"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqOFR6T2pfZTNqaHZzQWJuZHJ4aWpCc2o2NWxoMUlkOE4zSVdDYXpfbW1RSGRISEpfbFJ0ZC0ybnZKS29HRjc0UEZjMEFtZlByeGQ2M1BveTNkZw?oc=5",
+          "label": "Brand Inside"
+        }
+      ]
+    },
+    {
+      "id": "d0c51a235f04",
+      "brandName": "C PROJECT",
+      "companyName": "C PROJECT",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-17",
+      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
+          "label": "แนวหน้า"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sYXVqeVB2T3poS2tEV1AtemkyT0VHSzJZdFdNQktCN1NvczFWcnAwNnJKbFJEQ20yMGxxYnZXdC1ETjE1TldjcTFqNWFvaHlvcWQ2NnF3NVJETjNJSEE?oc=5",
+          "label": "workpointtoday.com"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94RVg0OUVzT3lQRWVuV2pVSWJ5NER6dFFLdUFYUWkyTGMwVnJIQmY3akVXQnFOd2hSS3R6VnRFcHFpSEZkX1hvQ3pjVTFhb3JidHJF?oc=5",
+          "label": "Positioningmag"
+        }
+      ]
+    },
+    {
+      "id": "5efcd905e901",
+      "brandName": "Quantum Club Thailand",
+      "companyName": "Quantum Club Thailand",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-03",
+      "whyNow": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications - มิติหุ้น | ชี้ชัดทุกการลงทุน",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZXUtbmdEWHE5MzVDT2ZQLTRyRi0yeE1ETE9DWC1GTDNQbWg4REJVOGxrLVhuTzZxTm1FOG9SeFRFTEh3ekgyZTZrUXplR0dSYnR5Qlln?oc=5",
+          "label": "มิติหุ้น"
+        }
+      ]
+    },
+    {
+      "id": "19ef9f1b23fe",
+      "brandName": "KANEKO HANNOSUKE",
+      "companyName": "KANEKO HANNOSUKE",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ - เทคโนโลยีชาวบ้าน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-16",
+      "whyNow": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ - เทคโนโลยีชาวบ้าน",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 81,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5uYlNEMTFFWnVqamltXzVCVlI3OW1ib0JsS0toNmU1QUNlSWV2akZha3FMa2hmcGpXQUV4dkNIVjh2QkpJY0J5OXNLYWFOZTEwVDlqeWRjMmwxWTJzUGtoeFB1TEVGVTJ6UEg1OVF0aUdrYUZMbG9teUdn?oc=5",
+          "label": "ข่าวสด"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQOEo3U216Vmo5d3pGN0tFaURqZE5CTXhud2ZpdzUyMzF3OVB5WTBOOXFuMFExM3hvVFlWRFhwcGZnYm9KWFZ0TERtbTRORENJT09j?oc=5",
+          "label": "Positioningmag"
+        }
+      ]
+    },
+    {
+      "id": "2a81135fc34f",
+      "brandName": "Boots Thailand",
+      "companyName": "Boots Thailand",
+      "industry": "Beauty / Personal Care",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Boots Thailand strengthens its Skincare Portfolio with ELCA partnership and the launch of The Ordinary brand",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-25",
+      "whyNow": "Boots Thailand strengthens its Skincare Portfolio with ELCA partnership and the launch of The Ordinary brand",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 80,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80aVpKcndkLW85R29CbFBaS0RnM1BzVi1hWXdVbFMzbGhISjFzSXBGQ3RLQ1FNNFllSG50b3NpQWtfdGxfVzFUcTNVcm1PMXNITUd4X0lWYXo?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "f2ba48c87141",
+      "brandName": "Blue Bottle Coffee",
+      "companyName": "Blue Bottle Coffee",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-21",
+      "whyNow": "Blue Bottle Coffee บุกไทยแล้ว! วันนี้วันแรก Central Park ชั้น 1 มีเมนูคอลแลบแบรนด์ไทยที่นี่ที่เดียว สาขาแรกในอาเซียนที่ได้ใช้เครื่องทำกาแฟ 5 หัวเหมือนญี่ปุ่น-เมกา",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 79,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxdjJ4eW9JLWY5bU1oX040WWFocGNLM2NsREZUbzhtN2t1b3lCMFNmUF95anl3NzhzOEhEZS1jNDJnOHZTdElFdXVJOUhWSVpycXdVVWVPMFQtR1Z4Y2RDVEd1NG9JLURwVWpRUkxJTXVkQkE?oc=5",
+          "label": "Brand Inside"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywVBVV95cUxNVVVwTHNoX3kwMFdlbEppbFN4Qk5mSjhvTTNrTDZhOURvVHByZ04zdW95OUFUaFJUTGdLQlpRblIwTFNRUmFUbml0NHJLVDRCeDlsVmQ0ZjlFakh5WkExQWtSbjZkOUdTR2xGZXFPZjZ3ektwdVNmbGtVYzB6dEFwc3dSXzltTkVra1Fmeks3Y1NwQ05rREI2UTR3XzVFQ0RNU0xuZmVhNXliMG45bVQ5SGJOS2lzbDF5NE96ZVcxRnU5WGJUZ3J0X1RLbGRtX29YblJEZkw1NndZMW9nZkd6UjJrVHNvUGszbkFDOGg0dEpYWkVtaDRydXVlWnZTX21JcmRBS2Jvc3NKQ0ZPY2VKNmpJUjI5VjVoeVlqcGZONGdTNFVpSzdibW91N184NGZfRFdVajZCUTRjWlRNbERKeVZrSFQtckVKLVp5NzhTQW9TRU81Tk5EYXJuTkprSGNFNzFuMXVMa1h4SVRmVThxcWJqaXNyU1c2TlVETk1kY2M2aUJmZXJoSEVrNUIyYzNwdnFWVXN0TDRrNnZFMXdlUWVtNEJsNDlOMFJyc2FSNnB2bWhmU1NQZlNlZkxWYWM0OFNTeDlMYXRTeGItNDJoWHZBYWhzMG9TMlY4WXhLUUxQb1VkaGRTZndTbnNmbUhMQjJzc2tmRjVoZkpYT1ZKbERpMGxpYkJpMEh0a3B5anJaT0NFUmJJOEF0R200QWVPNFdXbkZSUFlvbmJPdVRHRERCa25zdWY5WWhRY3ZaOTRVOWlrcVczQUN2YTAxelpUcHlrQlI3ZFNEblBFZFFTZlNCOUIxNFNXa3J4TWlJSGxsNVpzSURtMWI0YWU2dWU1S2JiSnFEeGg3SDNMX0MxQm9jODNqUkRqMVJ6dURfcTkxMlZHUFZtX0g5UC16eHZYbTN5cGxpcEJueHhhMXRZa2w4cW5qNGZiXzEw?oc=5",
+          "label": "facebook.com"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFlETFQwZmRjUVFOc3dvZmQ3SGw3eGJFUEZ2dmNKNGFWQXlQRm5JdDJxS1lHZGNVOVZOQzZPemJuYW9wdnZBTk9HWUduajVZUzdNLWtsX3dPT2Z4M3BrQmxZT00wM29lX0VDY0MwNFh1UHFLNlpmQXZyTmx1NDgxZGpGSnV2SEhwNmlGdFpQMjVtN2V0WW5TWg?oc=5",
+          "label": "everydaymarketing.co"
+        }
+      ]
+    },
+    {
       "id": "ccb700525b66",
       "brandName": "ยัสปาล กรุ๊ป",
       "companyName": "ยัสปาล กรุ๊ป",
@@ -143,7 +361,40 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15VFd3eWRVOFlWZUcyMWFrNzg0MmFuODUzOE90T0RJbk41eDBvMW9qdmtBb1I0aEYtb0liX0I2ZGx6YUxiZUNzMG1USTJ0ci1wOElz?oc=5",
-          "label": "positioningmag.com"
+          "label": "Positioningmag"
+        }
+      ]
+    },
+    {
+      "id": "908dc199b413",
+      "brandName": "สยามพารากอน",
+      "companyName": "สยามพารากอน",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "สยามพารากอน ปักหมุด ‘Bangkok Watch Week 2026’ ดึง 45 แบรนด์นาฬิกาโลกบุกไทย",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-09-24",
+      "whyNow": "สยามพารากอน ปักหมุด ‘Bangkok Watch Week 2026’ ดึง 45 แบรนด์นาฬิกาโลกบุกไทย",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 78,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50aVQxX0hpdTF0ZWROVlEyOXpGZmoxYTd6T2loZ2o1NkFVTzhZZlhKQXFzU2JZWGt1cEJBaXowcExDLVZWUXItQUJPRnlkbG5uaUFLQTdmRmJGdw?oc=5",
+          "label": "Thaipost.net"
         }
       ]
     },
@@ -176,7 +427,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2bGF6TjhKWGhQNEhwVUlmZVMyTENlaEVZLVZzM1B5MURRNXp6SlpfRmhWcDk5ZVNfN2N5cmpVV2RGSWlrbWdyQXI0Z0hIaV9va1VQR01xVHBHOHNJRXo3MWJhY21uaWpxVF9pei1TVnAzcDRx?oc=5",
-          "label": "thairath.co.th"
+          "label": "//www.thairath.co.th/"
         }
       ]
     },
@@ -213,7 +464,40 @@
         },
         {
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcXg1c1ZvZmZZSUFjZ3pnWEl0bzNkNGV5Z1FraEtCQ2NmbWVPbkd3SnZlOFdCZmd6VEZxek9uX2MzV0l0aUozaS1fR01oME9WN2VFWEluTlVpeHVMcEl6Tk9KcVJwY3c2TTlYWlZQSFY1RnVKTHdMVXlTbkVidkhCTVAzTzN1ajYtcUNYOWlWczR5RDRqWko3T3hnZVdDeGZNeUF5OGhqdw?oc=5",
-          "label": "การตลาดวันละตอน"
+          "label": "everydaymarketing.co"
+        }
+      ]
+    },
+    {
+      "id": "2662ef830c28",
+      "brandName": "LUXEED",
+      "companyName": "LUXEED",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เปิดนิยามความลักชัวรี่รูปแบบใหม่ “LUXEED” แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery Group พร้อมเปิดตัวอย่างเป็นทางการในไทยไตรมาส 4 ปีนี้",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-11",
+      "whyNow": "เปิดนิยามความลักชัวรี่รูปแบบใหม่ “LUXEED” แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery Group พร้อมเปิดตัวอย่างเป็นทางการในไทยไตรมาส 4 ปีนี้",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 76,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9VZGh3b2ZZQ0dKbDBqOUR1c2pfYUNaYXBmcXRFVUxmbUZGendmU2h2c0RoSU5zM25PTmVRejdhNFh0eWdwSWZQeA?oc=5",
+          "label": "ThaiPR.NET"
         }
       ]
     },
@@ -246,7 +530,77 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DU1puNkRCdi1YakJiS1RRVGluWGpwYU1PSXBxWnpyeDdVZXVYSGF2dVFDU21rNjR6ZGNkMUd2NUNNdURJZFhhU2Q4MWp0QzFLREw2QUY5TGxvZkNBeXFqcnJqMXhWSUlwcXN1Mw?oc=5",
-          "label": "ev.iphonemod.net"
+          "label": "iMoD"
+        }
+      ]
+    },
+    {
+      "id": "af8a6ef044e7",
+      "brandName": "JOE WINGS",
+      "companyName": "JOE WINGS",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "JOE WINGS ลุยต่างจังหวัดแล้ว สาขาแรกกลับบ้านเกิดของ OKJ ที่ 'เชียงใหม่' ตั้งเป้า 30 สาขาภายในปี 2573",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-14",
+      "whyNow": "JOE WINGS ลุยต่างจังหวัดแล้ว สาขาแรกกลับบ้านเกิดของ OKJ ที่ 'เชียงใหม่' ตั้งเป้า 30 สาขาภายในปี 2573",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 76,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOFVCd2JjZVdrUERGSDFCRTREN1Y0N1N2bmxBN2JVeFNoN3RfOTE0TzNFWHA1ZERUdWpGam1LWkExaWZDXzZKQjNsNEdDQWxWQ0ZNVExQVlM4M2hLM0h0cXNUcEQ0MG8zZGVzNkRxaTRMVWZMMkRIaGgyczI3WC12YXUxOHRZVS1VTUE?oc=5",
+          "label": "Brand Buffet"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE16SWRmbjk5R2FzRDFrYnhnQ1Y5WG5ONmxsMDlLM2VfOXFSaDJ0akwxbE5ldzhBWEt6RnFTRmpOSFNfcEhBS3FvakJOdHM?oc=5",
+          "label": "Sanook"
+        }
+      ]
+    },
+    {
+      "id": "ab318ccf8f53",
+      "brandName": "เช็กอินด่วน",
+      "companyName": "เช็กอินด่วน",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เช็กอินด่วน! niko and … เปิดสาขาใหม่ใหญ่เป็นอันดับ 2 ในไทย รวมแฟชั่น คาเฟ่ และของแต่งบ้านไว้ที่เดียว",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-19",
+      "whyNow": "เช็กอินด่วน! niko and … เปิดสาขาใหม่ใหญ่เป็นอันดับ 2 ในไทย รวมแฟชั่น คาเฟ่ และของแต่งบ้านไว้ที่เดียว",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9kNWs2R2tYR29hYzhTZVBhQ19qelVpUnVHSmVQTzRlVHEtZExVWkhkOWRIU2dVSW1XUHU5LU1KdUhJMUNxUzhZU2ZLSmY?oc=5",
+          "label": "Sanook"
         }
       ]
     },
@@ -284,35 +638,39 @@
       ]
     },
     {
-      "id": "8e2a5663d8d3",
-      "brandName": "Berwick",
-      "companyName": "Berwick",
-      "industry": "Retail / Fashion",
+      "id": "04096ad9c896",
+      "brandName": "SC",
+      "companyName": "SC",
+      "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "รองเท้าหนัง ไม่ได้ใส่แค่ออกงาน แต่ยังใช้ได้ในชีวิตประจำวัน ‘Berwick 1707’ แบรนด์รองเท้าสัญชาติสเปน เปิดสาขาแรกในไทยแล้ว ที่ Central Embassy",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-12",
-      "whyNow": "รองเท้าหนัง ไม่ได้ใส่แค่ออกงาน แต่ยังใช้ได้ในชีวิตประจำวัน ‘Berwick 1707’ แบรนด์รองเท้าสัญชาติสเปน เปิดสาขาแรกในไทยแล้ว ที่ Central Embassy",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
+      "thailandEvidence": "SC ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย เปิดตัวแคมเปญ “Inside the Signature Life” ถ่ายทอดเรื่องจริงจาก 5 ครอบครัวแห่ง ‘บางกอก บูเลอวาร์ด ซิกเนเจอร์’ สะท้อนนิยามความสำเร็จ...ที่มีเอกลักษณ์เฉพาะตัว [PR]",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-06",
+      "whyNow": "SC ผู้นำแบรนด์บ้านลักชัวรีอันดับ 1 ของไทย เปิดตัวแคมเปญ “Inside the Signature Life” ถ่ายทอดเรื่องจริงจาก 5 ครอบครัวแห่ง ‘บางกอก บูเลอวาร์ด ซิกเนเจอร์’ สะท้อนนิยามความสำเร็จ...ที่มีเอกลักษณ์เฉพาะตัว [PR]",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
       "score": 75,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HIGH",
       "isNew": false,
-      "isUpdated": false,
+      "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
-          "label": "Brand Inside"
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYmlOT1ZVTWlTVWR1bmpOSjZVbUh5VG1FQzdVQlp3SXppckgzOVY2endKWFFyNWpoa3NRMWpzTTNkODhNWW02TmE3UnlQYmV1MFFGVTJaY1M4MTJwbnRhYU5FeTJfOC1SZDMwcWJlMEJRYjBWT0oxWkYwckVnZkx6TUZWVzI?oc=5",
+          "label": "Brand Buffet"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMizwNBVV95cUxPSWllZG92TWdYcGtmWE5IWjBXcF9zYzZZSXBFd0hBVlBVVzdOcy1pUnJPbnB0QlBwd2kybkxaRnpPQVFqTEozVzNldDNLQnpyTlBMWFdsaUFRV1B2THZ2MnVqOFNXMDFSN29aeWh2SmtHY3NBTDhhbmVDT3hWSkpSOFE2NGp4dm52bE5FckhwcER6QjhrTDV6bGREcEVCTXJQcXNwMFpsdjJQNzlzcEY3LU1ReFdSMDE2dGdkNWQyUTkzTmY1dy1RZGlib3ZLc1g1QlRNdnBEWjJ0R1lpSFRvUkJjdGRUNW9YN3dfdzBFVm1ZRTNBdkdJdFRDZnFNenpBS3UxSS1TTmVGc2Eza1N4ZHVSYUtXd1dRNElXTGlBaWFVY3NDMkw4cVRWWUxHWFZXLTBaSEtJTTExdFB5WFpOTTZGT0dhUmZMUnp1alJFeE41WWg0TnNGUUxDZzhCVE9FaE53blZqdDY3RlAxelIzaGhXNWRXNURhcDYtLVlTbWlPMHhmQndGNHJyMVlPUU04aE40RHh2UkthdzBNMkNFQWkybkVJR3FZY1BJOGRPdHpJcUxucHlsSEVnSzFReWNjeGJtaGxyTzMtdlI3OHA0?oc=5",
+          "label": "TerraBKK"
         }
       ]
     },
@@ -350,340 +708,6 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EN3hlTGFQbExicnl6NVFTcnJMeTY3TUdkMmxLNVpic2tJZmtneE45X0dldEI5X3NXUmhxS2Fhb2o2MGVOakNSWTNNclFwa3NmNnZmMkJPaGt2QQ?oc=5",
           "label": "Autospinn.com"
-        }
-      ]
-    },
-    {
-      "id": "190c08e5ef00",
-      "brandName": "เอไอเอ ประเทศไทย",
-      "companyName": "เอไอเอ ประเทศไทย",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "เอไอเอ ประเทศไทย เปิดตัว “พลอย เฌอมาลย์” ชวนคนไทยร่วมส่งต่อกำลังใจผ่านแคมเปญ #StrongerThanCancer เปลี่ยนทุกโพสต์เป็นพลังแห่งการให้",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-22",
-      "whyNow": "เอไอเอ ประเทศไทย เปิดตัว “พลอย เฌอมาลย์” ชวนคนไทยร่วมส่งต่อกำลังใจผ่านแคมเปญ #StrongerThanCancer เปลี่ยนทุกโพสต์เป็นพลังแห่งการให้",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14TUh2eWYwOGNpYS13ZGxqN0lvUVd2MGtHSjhQaS1BeFF4QThHTHhnMFNHTENha2dSdmh5WnI5eGw4ZWIweXNGWHc2NnFwRXdiaFJubQ?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
-      "id": "33652359b31f",
-      "brandName": "GAC AION Thailand เปิดจำหน่าย",
-      "companyName": "GAC AION Thailand เปิดจำหน่าย",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "GAC AION Thailand เปิดจำหน่าย GAC GN8 PHEV ราคาเริ่มต้น 2.199 ล้านบาท พร้อมแคมเปญพิเศษช่วงเปิดตัว และบริการหลังการขายระดับพรีเมียม",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-03",
-      "whyNow": "GAC AION Thailand เปิดจำหน่าย GAC GN8 PHEV ราคาเริ่มต้น 2.199 ล้านบาท พร้อมแคมเปญพิเศษช่วงเปิดตัว และบริการหลังการขายระดับพรีเมียม",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pUWFkM0Q3ZzhQUlQ0Tnh4OE1BR0ZQVEhiMUs5NktwR3dBSDJINmVKc0xVRmJ0NEhDRkdMTmctak9zN2JnOTk4ZlFFQXUwX2prMHllNjlDTWJWM3ZYR25MRlpIYXZxR3dSM3BjRg?oc=5",
-          "label": "ev.iphonemod.net"
-        }
-      ]
-    },
-    {
-      "id": "4b626815afcd",
-      "brandName": "ยืนยันรุ่นนี้",
-      "companyName": "ยืนยันรุ่นนี้",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ยืนยันรุ่นนี้เปิดตัวไทยปลายปี 2569 GAC AION i60 BEV โฉมใหม่ รวมภาพคันจริงในจีน! จีเอซี ไอออน - รถใหม่วันนี้ ข่าวรถยนต์ EV ราคารถยนต์ไฟฟ้า รถยนต์พลังงานไฟฟ้า",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-12",
-      "whyNow": "ยืนยันรุ่นนี้เปิดตัวไทยปลายปี 2569 GAC AION i60 BEV โฉมใหม่ รวมภาพคันจริงในจีน! จีเอซี ไอออน - รถใหม่วันนี้ ข่าวรถยนต์ EV ราคารถยนต์ไฟฟ้า รถยนต์พลังงานไฟฟ้า",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hLUpaa1hnekZBU3BIQm5TRFl5N2R6Nlc4WHhISWs3QjZjS0FQblJGN3c0VEF5Z05TOXRIQktUWW5ZUklWVFZKLXlEc21nSk15VFNIbXFSUV82NnVnSHhLakVDVmpkVXMtSEF0SjV3?oc=5",
-          "label": "CAR250"
-        }
-      ]
-    },
-    {
-      "id": "f7c91fefc9c3",
-      "brandName": "Launch",
-      "companyName": "Launch",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications - มิติหุ้น | ชี้ชัดทุกการลงทุน",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-03",
-      "whyNow": "Launch of “Quantum Club Thailand”, Government, Private Sector and Researchers Join Forces to Establish Thailand’s Quantum Ecosystem, Connecting Research with Real-World Industry Applications - มิติหุ้น | ชี้ชัดทุกการลงทุน",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OZXUtbmdEWHE5MzVDT2ZQLTRyRi0yeE1ETE9DWC1GTDNQbWg4REJVOGxrLVhuTzZxTm1FOG9SeFRFTEh3ekgyZTZrUXplR0dSYnR5Qlln?oc=5",
-          "label": "มิติหุ้น"
-        }
-      ]
-    },
-    {
-      "id": "eb9de94be9d9",
-      "brandName": "KANEKO HANNOSUKE ปักหมุดสาขาใหม่ เซ็นทรัล",
-      "companyName": "KANEKO HANNOSUKE ปักหมุดสาขาใหม่ เซ็นทรัล",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ - เทคโนโลยีชาวบ้าน",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-16",
-      "whyNow": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ - เทคโนโลยีชาวบ้าน",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 71,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5uYlNEMTFFWnVqamltXzVCVlI3OW1ib0JsS0toNmU1QUNlSWV2akZha3FMa2hmcGpXQUV4dkNIVjh2QkpJY0J5OXNLYWFOZTEwVDlqeWRjMmwxWTJzUGtoeFB1TEVGVTJ6UEg1OVF0aUdrYUZMbG9teUdn?oc=5",
-          "label": "ข่าวสด"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQOEo3U216Vmo5d3pGN0tFaURqZE5CTXhud2ZpdzUyMzF3OVB5WTBOOXFuMFExM3hvVFlWRFhwcGZnYm9KWFZ0TERtbTRORENJT09j?oc=5",
-          "label": "positioningmag.com"
-        }
-      ]
-    },
-    {
-      "id": "0f229406e39a",
-      "brandName": "วิเคราะห์ SME ไทยทำไมถึง ขายดี",
-      "companyName": "วิเคราะห์ SME ไทยทำไมถึง ขายดี",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-15",
-      "whyNow": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZTZWODMwbzVCTGhrWnVHR2hXdXhTSDRiZU81RlNOWHBDWnFYV09OQkRxaDNpdGFpS0NMcFI3eW5CeGktZlRxYm45c202Rkd4NTFLazdBZk5hb3VzakU1Z1BjaXBVcTVMcUhaVm1HLWRWSDVwcmZMSGt2dHo0RnE1YTZKWEdFTzZzbWdUNk9Ub3F4bXIyRFVEeEdNTlE4cXRZZ29wVEtGZ3NQQlpINWhoc3JlN0VDWVpTY2lYenBCRTBfYU4xcGNxLXgzbXFCS2NoVUt2V2tTbHVZV3dsaU4xXw?oc=5",
-          "label": "การตลาดวันละตอน"
-        }
-      ]
-    },
-    {
-      "id": "cf518af6e557",
-      "brandName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "companyName": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-08-17",
-      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
-          "label": "แนวหน้า"
-        }
-      ]
-    },
-    {
-      "id": "34a044ea0884",
-      "brandName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
-      "companyName": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ Saboten",
-      "industry": "Entertainment",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ “Saboten” พลิกเกมใหญ่ในรอบ 18 ปี รีโนเวตร้าน-ดึงลูกค้ารุ่นใหม่ ทวงบัลลังก์ตลาดทงคัตสึเมืองไทย",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-08",
-      "whyNow": "จากผู้บุกเบิกสู่ศึก 20 แบรนด์ “Saboten” พลิกเกมใหญ่ในรอบ 18 ปี รีโนเวตร้าน-ดึงลูกค้ารุ่นใหม่ ทวงบัลลังก์ตลาดทงคัตสึเมืองไทย",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTlpOc3IxUTZQM0pfQ2tlSl9wYWJDSVV3cXUtYWtGN2Y0a0VMemdld05Jdjh4QTZXeW5tTlBoTmpyandicVEwOThoTUdRNnM2d09LNDczWmc3dzJDUmRtY0dhQlo1N1hFbzFqWVdMOVRESGRRcXA2S2N4OG0xSVo2N0prVUM2VWVpZFBqMkhWM05HUQ?oc=5",
-          "label": "forbesthailand.com"
-        }
-      ]
-    },
-    {
-      "id": "dd1b1392c379",
-      "brandName": "Boots Thailand strengthens its",
-      "companyName": "Boots Thailand strengthens its",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Boots Thailand strengthens its Skincare Portfolio with ELCA partnership and the launch of The Ordinary brand",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-25",
-      "whyNow": "Boots Thailand strengthens its Skincare Portfolio with ELCA partnership and the launch of The Ordinary brand",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80aVpKcndkLW85R29CbFBaS0RnM1BzVi1hWXdVbFMzbGhISjFzSXBGQ3RLQ1FNNFllSG50b3NpQWtfdGxfVzFUcTNVcm1PMXNITUd4X0lWYXo?oc=5",
-          "label": "ThaiPR.NET"
-        }
-      ]
-    },
-    {
-      "id": "b89f3871add0",
-      "brandName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
-      "companyName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-08",
-      "whyNow": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
-      "momentum": "Exploding",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 8,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MSXlodjlMNDhna0p4UDBKVFZTc1d6bXJ4c3FkcXA4dUUtTkQ5YU85TFVvV0lmcVh2eWVCNFZaRDBWMERfNkJZX1B0LXFGdVI2dTNLd3lNSmhNRk1KQWc?oc=5",
-          "label": "ข่าวสด"
         }
       ]
     }

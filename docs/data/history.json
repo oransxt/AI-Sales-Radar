@@ -143,7 +143,7 @@
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-10-04",
-      "timesDetected": 21,
+      "timesDetected": 22,
       "lastSignalHash": "4fdfc81662",
       "lastSignal": "Thailand market entry"
     },
@@ -156,15 +156,15 @@
     },
     "luxeed": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-09-28",
-      "timesDetected": 14,
+      "lastSeen": "2026-10-04",
+      "timesDetected": 15,
       "lastSignalHash": "20ccb39e0d",
       "lastSignal": "Major product launch"
     },
     "subway": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-10-04",
-      "timesDetected": 47,
+      "timesDetected": 48,
       "lastSignalHash": "55a5ad9eeb",
       "lastSignal": "Thailand market entry"
     },
@@ -290,7 +290,7 @@
     "human made": {
       "firstSeen": "2026-08-11",
       "lastSeen": "2026-10-04",
-      "timesDetected": 42,
+      "timesDetected": 43,
       "lastSignalHash": "b2f212e374",
       "lastSignal": "Expansion / new branches"
     },
@@ -464,8 +464,8 @@
     },
     "เช็กอินด่วน": {
       "firstSeen": "2026-08-13",
-      "lastSeen": "2026-10-03",
-      "timesDetected": 43,
+      "lastSeen": "2026-10-04",
+      "timesDetected": 44,
       "lastSignalHash": "2356c86cb1",
       "lastSignal": "Expansion / new branches"
     },
@@ -611,9 +611,9 @@
     },
     "thaimart": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-09-25",
-      "timesDetected": 7,
-      "lastSignalHash": "a40fdf64a8",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 8,
+      "lastSignalHash": "be9d8a49ff",
       "lastSignal": "Major product launch"
     },
     "คนละครึ่ง พลัส": {
@@ -906,7 +906,7 @@
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
       "lastSeen": "2026-10-04",
-      "timesDetected": 20,
+      "timesDetected": 21,
       "lastSignalHash": "2c0961c51c",
       "lastSignal": "Thailand market entry"
     },
@@ -1326,7 +1326,7 @@
     "honda super-one ev": {
       "firstSeen": "2026-09-07",
       "lastSeen": "2026-10-04",
-      "timesDetected": 30,
+      "timesDetected": 31,
       "lastSignalHash": "22ef3b1398",
       "lastSignal": "Major product launch"
     },
@@ -1459,7 +1459,7 @@
     "lepas": {
       "firstSeen": "2026-09-13",
       "lastSeen": "2026-10-04",
-      "timesDetected": 13,
+      "timesDetected": 14,
       "lastSignalHash": "3293142288",
       "lastSignal": "Major product launch"
     },
@@ -1536,7 +1536,7 @@
     "meta one": {
       "firstSeen": "2026-09-17",
       "lastSeen": "2026-10-04",
-      "timesDetected": 20,
+      "timesDetected": 21,
       "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
@@ -1794,9 +1794,9 @@
     },
     "sc": {
       "firstSeen": "2026-09-27",
-      "lastSeen": "2026-09-27",
-      "timesDetected": 1,
-      "lastSignalHash": "628d89407b",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 2,
+      "lastSignalHash": "241960a7e6",
       "lastSignal": "Major product launch"
     },
     "ชาดัง ‘heytea’": {
@@ -1830,7 +1830,7 @@
     "yonny": {
       "firstSeen": "2026-10-01",
       "lastSeen": "2026-10-04",
-      "timesDetected": 4,
+      "timesDetected": 5,
       "lastSignalHash": "2c11c4d13c",
       "lastSignal": "Thailand market entry"
     },
@@ -1843,9 +1843,9 @@
     },
     "c project": {
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-10-02",
-      "timesDetected": 1,
-      "lastSignalHash": "af3cbcc5f3",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 2,
+      "lastSignalHash": "6d96d32fbe",
       "lastSignal": "Major product launch"
     },
     "สยามพารากอน ปักหมุด ‘bangkok watch": {
@@ -1875,6 +1875,55 @@
       "timesDetected": 1,
       "lastSignalHash": "596c6c0e3b",
       "lastSignal": "Major product launch"
+    },
+    "เปิดแล้ววันนี้": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "7dd2ff05fa",
+      "lastSignal": "Expansion / new branches"
+    },
+    "gac aion": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "60d17af736",
+      "lastSignal": "Major product launch"
+    },
+    "quantum club thailand": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "9ebcb708d9",
+      "lastSignal": "Major product launch"
+    },
+    "kaneko hannosuke": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "7b7d735cce",
+      "lastSignal": "Major product launch"
+    },
+    "boots thailand": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "e6232e40ce",
+      "lastSignal": "Major product launch"
+    },
+    "สยามพารากอน": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "f29d769fdd",
+      "lastSignal": "Thailand market entry"
+    },
+    "joe wings": {
+      "firstSeen": "2026-10-04",
+      "lastSeen": "2026-10-04",
+      "timesDetected": 1,
+      "lastSignalHash": "404c8a190a",
+      "lastSignal": "Expansion / new branches"
     }
   }
 }
