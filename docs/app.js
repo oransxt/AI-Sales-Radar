@@ -1,4 +1,4 @@
-const VERSION='2.3.6';
+const VERSION='2.3.7';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -97,7 +97,7 @@ function demoElicaLead(){
     rank:1,
     brandName:'Elica',
     companyName:'Elica / Cucina Galleria',
-    industry:'Premium Kitchen Appliances / Home Living',
+    industry:'Premium Kitchen Appliances / Home Living / Lifestyle',
     brandType:'New to Thailand',
     buyingSignal:'Official Thailand market entry + Elica Lhov launch',
     signalDate:'2026-07-23',
@@ -113,10 +113,21 @@ function demoElicaLead(){
   }
 }
 function loadElicaDemo(){
+  const demoCredentials=[
+    {
+      Credential_ID:'CRD0002',
+      Credential_Name:'Trend_Active Lifestyle (1).pdf',
+      Credential_Type:'Industry Overview',
+      Industry:'General / Multi-Industry',
+      Tags:'Industry Overview, Sports, Lifestyle, Apparel, Activity',
+      Google_Drive_URL:'https://drive.google.com/file/d/1lqeUDn5YnaY8Cayw7RjVpaO9DHLOqdTG/view?usp=drivesdk',
+      Active:'TRUE'
+    }
+  ];
   app.daily={generatedAt:'2026-10-01',leads:[demoElicaLead()]};
   app.activities=[];
-  app.credentials=[];
-  app.credentialLibrary=[];
+  app.credentials=demoCredentials;
+  app.credentialLibrary=demoCredentials;
   app.prepared={};
   app.filter='Pending';
   app.selected='DEMO-ELICA-2026';
@@ -168,7 +179,7 @@ function autoPack(l){
     .filter(c=>String(c.Active).toLowerCase()!=='false')
     .map(c=>Object.assign({},c,{_score:credentialScore(l,c)}))
     .sort((a,b)=>b._score-a._score)
-    .filter((c,i)=>c._score>0||i<3)
+    .filter(c=>c._score>=20)
     .slice(0,3)
 }
 function businessContext(l){
@@ -340,7 +351,8 @@ function sourceLinks(l){
   return l.sources.map((u,i)=>'<a class="link" href="'+esc(u)+'" target="_blank" rel="noopener">Source '+(i+1)+' ↗</a>').join(' · ')
 }
 function credentialHtml(c){
-  return '<div class="auto-cred"><div><strong>'+esc(c.Credential_Name||'Credential')+'</strong><small>'+esc(c.Credential_Type||'')+(c.Industry?' · '+esc(c.Industry):'')+'</small></div>'+
+  const score=Number(c._score||0);
+  return '<div class="auto-cred"><div><strong>'+esc(c.Credential_Name||'Credential')+'</strong><small>'+esc(c.Credential_Type||'')+(c.Industry?' · '+esc(c.Industry):'')+(score?' · Match '+score:'')+'</small></div>'+
     (c.Google_Drive_URL?'<a href="'+esc(c.Google_Drive_URL)+'" target="_blank" rel="noopener">Open ↗</a>':'')+'</div>'
 }
 function decisionOption(value,label,desc,l){
