@@ -1,4 +1,4 @@
-const VERSION='2.3.7';
+const VERSION='2.3.8';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -133,6 +133,20 @@ function loadElicaDemo(){
   app.selected='DEMO-ELICA-2026';
   prepareAll();
   setConnection(true);
+}
+
+function dedupeRadarRows(rows){
+  const byRank=new Map();
+  for(const r of (rows||[])){
+    const rank=String(r.Daily_Rank||'');
+    if(rank)byRank.set(rank,r); // keep the latest row for each expected daily rank
+  }
+  if(byRank.size>=1){
+    return [...byRank.values()].sort((a,b)=>Number(a.Daily_Rank||999)-Number(b.Daily_Rank||999));
+  }
+  const byBrand=new Map();
+  for(const r of (rows||[]))byBrand.set(String(r.Brand_ID||r.Brand_Name||Math.random()),r);
+  return [...byBrand.values()];
 }
 
 function lead(r){
@@ -780,7 +794,7 @@ async function loadAll(){
 
   try{
     const d=await apiGet('daily-radar');
-    const radar=d.data||[];
+    const radar=dedupeRadarRows(d.data||[]);
     app.daily={generatedAt:radar[0]?.Discovery_Date||'',leads:radar.map(lead)};
     app.prepared={};
     prepareAll();
