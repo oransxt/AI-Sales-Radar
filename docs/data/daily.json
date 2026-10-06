@@ -1,8 +1,41 @@
 {
-  "date": "2026-10-05",
-  "generatedAt": "2026-10-05T06:39:40.290Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T07:20:34.031Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
   "leads": [
+    {
+      "id": "7082ceb3393f",
+      "brandName": "กลุ่มธนบุรี",
+      "companyName": "กลุ่มธนบุรี",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "กลุ่มธนบุรี คว้าสิทธิ์ผู้แทนจำหน่าย smart อย่างเป็นทางการ เตรียมเปิดตัว EV พรีเมียม 3 รุ่นรวดในไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-10-05",
+      "whyNow": "กลุ่มธนบุรี คว้าสิทธิ์ผู้แทนจำหน่าย smart อย่างเป็นทางการ เตรียมเปิดตัว EV พรีเมียม 3 รุ่นรวดในไทย",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 86,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rZ1o2NlhlcW4xeGRFZFdpUkZqeDhfeVQwblhvbnk2bndza1ZPTW1iWDN1cGF1VTFYRHBadVQyNDgzZF9PUFNwVEVjS1I3d3VJXzBBdGY5U2FIQWplRUhmdkdfMkUzNkJySFB2YVJoNWlERUhNVDdZMUduWkx5YWM?oc=5",
+          "label": "ev.iphonemod.net"
+        }
+      ]
+    },
     {
       "id": "aabc319a0bf8",
       "brandName": "YONNY",
@@ -31,8 +64,8 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BY2VEOTl5aS1FNm9pdlR5OFZUeV9FbS16MGE5NlhWcm96bXBETWNkdzZnNlVvaUV4WkR1QzNWdWlpQlZpeVdkVC16UjF4VkFZN2k2cg?oc=5",
-          "label": "Marketeer Online"
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBCYTd2ZEkxQW9kRUh6VG1ZN2s1WVpEVDJnT3pqSW1vTjl2N2F1c0Z6RDBIY3RJOGdJbV9NUWhxTFF6OFFDU2NSWGxvcmJ1c3Bj?oc=5",
+          "label": "ThaiPR.NET"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0taUJaSTBsZERnTFpvR3Q3aTNrNFh2N05PcFN6Y0dqVkpKTUlqRGJqUnVXd3NsdzFHRVZyQ1pGY05UMzZzd09vOFNKMlk2ZWx4WkZKekNn?oc=5",
@@ -76,8 +109,8 @@
           "label": "facebook.com"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMipwZBVV95cUxQd0lUVzN5NkxBZzdJSUlCSzhjazZQU0JSNVVveENxQjFNXy12bnpqNVpYb1BPcHdYTzVCRFBBSFJYMDNRdEhhNmhybE9tR2VrSlFnXzVRWDdqUmhtYW82LVpyNzdyNGljU2k5WHdtaXVJcU5SYVBra3U4UVJnbjNhTW8yYUllcU9yQlJubnh3UlhlUXM4aG91MHExOHJwQ09GRGlnUG03cHZfZkphVDJyUzg2b0VyVWV3M3dUOE54Ui1IMFVFZVdmVkdCd1EtMVNXUWE3ek5PMXRqTWlsdmpxWGExU1ludDdtZFo5azNKWDk2UnA1Z0lNUlNRU2t6WHllWHlnSXhIdEtEUUFlTEd0Y01ORDFLa1FIbGxCUGhRLWVWSTNEOU9fVllqeTJPOFgzMW9HRkh5bWN1Z0FYTWV6WTI0Skh3N1ozeEVFc3F5QmVxN2NLZTJWTGhQMmNyNUFoQk9ZMmlyejg0NmlwZmsyOTVtdHZJekpva2ltTjNMd3ViMzBOU2FOenNhV084VVVTUnMwRVUwelU3MS1UOEhmN0FGZ1Z3bmQyWkVOZHBYX2dxbkp5NC1SR3pveHJPUUJjUFJYNU5aU0RUTTFubmV2VnQ1UHc1ZVU5TGJFdVctdG9oOWRvNUpGaTNVUU1DblZDeXVyVkVZZC1VZ3lGVDUzOTNTRnEyQ1dzT0hfUnNxTlJ3MkhVWkZxc1BxUG9sYzJ1LU9YWElSeUxPTHg3QkNvWDQ4cEFidEF1Wkh2WlVXa1FHQzYwa19BT3dBM1hvNzRiT0NrbVBLSk1sdzBUd3J6amhSd2tQTmtJN0d4OTk4X2Q3aW5Gc1o0SHdfQlkzQ004S3Ewbm0zSHh3bjVaQlR1aUxjUEtLX3hkdFN5WC1INnl0S2wwRlRmcVh0QS13N3BPYU5rVWVSLWtyVTdGc3A1TEZ1T2dtcHBpZ3FnQXVuOFZkTUlBeDZmSWhXNXdaLWtsWlVRTHdrTW53Snl3UVlyMjB1bmc4MGFTNE9CbWlUamNnVmZxYUE4RnhJaGlsdW9WX21BUGhoWjVhUTZtaHB2Q3pLbm05bVk?oc=5",
-          "label": "facebook.com"
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZFlETFQwZmRjUVFOc3dvZmQ3SGw3eGJFUEZ2dmNKNGFWQXlQRm5JdDJxS1lHZGNVOVZOQzZPemJuYW9wdnZBTk9HWUduajVZUzdNLWtsX3dPT2Z4M3BrQmxZT00wM29lX0VDY0MwNFh1UHFLNlpmQXZyTmx1NDgxZGpGSnV2SEhwNmlGdFpQMjVtN2V0WW5TWg?oc=5",
+          "label": "everydaymarketing.co"
         }
       ]
     },
@@ -213,40 +246,40 @@
         },
         {
           "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcXg1c1ZvZmZZSUFjZ3pnWEl0bzNkNGV5Z1FraEtCQ2NmbWVPbkd3SnZlOFdCZmd6VEZxek9uX2MzV0l0aUozaS1fR01oME9WN2VFWEluTlVpeHVMcEl6Tk9KcVJwY3c2TTlYWlZQSFY1RnVKTHdMVXlTbkVidkhCTVAzTzN1ajYtcUNYOWlWczR5RDRqWko3T3hnZVdDeGZNeUF5OGhqdw?oc=5",
-          "label": "การตลาดวันละตอน"
+          "label": "everydaymarketing.co"
         }
       ]
     },
     {
-      "id": "66e438a9a9cc",
-      "brandName": "Range Rover Sport",
-      "companyName": "Range Rover Sport",
-      "industry": "Consumer / Other",
+      "id": "2662ef830c28",
+      "brandName": "LUXEED",
+      "companyName": "LUXEED",
+      "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "เปิดตัว Range Rover Sport Electric เอสยูวีไฟฟ้า 100% พกความแรง 550 แรงม้า เปิดรับจองแล้วในไทย",
+      "thailandEvidence": "เปิดนิยามความลักชัวรี่รูปแบบใหม่ “LUXEED” แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery Group พร้อมเปิดตัวอย่างเป็นทางการในไทยไตรมาส 4 ปีนี้",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-10-04",
-      "whyNow": "เปิดตัว Range Rover Sport Electric เอสยูวีไฟฟ้า 100% พกความแรง 550 แรงม้า เปิดรับจองแล้วในไทย",
+      "signalDate": "2026-08-11",
+      "whyNow": "เปิดนิยามความลักชัวรี่รูปแบบใหม่ “LUXEED” แบรนด์รถยนต์ระดับไฮเอนด์ จาก Chery Group พร้อมเปิดตัวอย่างเป็นทางการในไทยไตรมาส 4 ปีนี้",
       "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 77,
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 76,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": true,
+      "isNew": false,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZzRHcEtoMmxZalFvbWxheXdqeU9SWE43UTVZdkd0Y19OR0RGcElyUXhPX0tzQXZlYjA2bE10ZjNJNk5FNXBCOEwwTlk4MF85VkRaTWZYZnpQRVhsZnBHN2NVUWJJQ09Hemgzbng3ZTdfVE90THdJN1RZaUVzYmZBYWtRVkhhejBheUd2U1I4V0lvd0ZObGsw?oc=5",
-          "label": "autostation.com"
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9VZGh3b2ZZQ0dKbDBqOUR1c2pfYUNaYXBmcXRFVUxmbUZGendmU2h2c0RoSU5zM25PTmVRejdhNFh0eWdwSWZQeA?oc=5",
+          "label": "ThaiPR.NET"
         }
       ]
     },
@@ -279,7 +312,44 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DU1puNkRCdi1YakJiS1RRVGluWGpwYU1PSXBxWnpyeDdVZXVYSGF2dVFDU21rNjR6ZGNkMUd2NUNNdURJZFhhU2Q4MWp0QzFLREw2QUY5TGxvZkNBeXFqcnJqMXhWSUlwcXN1Mw?oc=5",
-          "label": "iMoD"
+          "label": "ev.iphonemod.net"
+        }
+      ]
+    },
+    {
+      "id": "3f852f6228d7",
+      "brandName": "มิสเตอร์คุ้มค่า",
+      "companyName": "มิสเตอร์คุ้มค่า",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“มิสเตอร์คุ้มค่า” รีแบรนด์สู่ “คุ้มค่า” เปิดภาพลักษณ์ใหม่และมาสคอตคู่ใจ ยกระดับประสบการณ์การเลือกประกันภัย สำหรับคนไทย",
+      "buyingSignal": "Rebrand",
+      "signalDate": "2026-10-02",
+      "whyNow": "“มิสเตอร์คุ้มค่า” รีแบรนด์สู่ “คุ้มค่า” เปิดภาพลักษณ์ใหม่และมาสคอตคู่ใจ ยกระดับประสบการณ์การเลือกประกันภัย สำหรับคนไทย",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 76,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 15,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1oZ3dDRFlyT1dEOUM2RWVvREVKa2d3R25LVGdZbVhLRGs4T2M4aGNaWnRaOHBqNlQ1ZUF2dG5MOGxGOE84ZjlLRHpqN0QtbDFP?oc=5",
+          "label": "ThaiPR.NET"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1HVFd4azZ2TDV5OG9XcHhQQWh5dFhwNGhjaHhYYUswLURxUmZ5NVRRSURMX21UZzlmZGJ2NUV3dlUzSml6OVZJXzc4MjIwbnpLNUxR?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
@@ -350,216 +420,6 @@
       ]
     },
     {
-      "id": "8d7624972d21",
-      "brandName": "TikTok",
-      "companyName": "TikTok",
-      "industry": "Entertainment",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "TikTok เปิดอินไซต์นักช้อปไทย ‘เสิร์ช-ค้นพบ-ช้อป’ ตลอดปี พลิกเกม Mega Sales ที่ไม่ได้เริ่มแค่วันโปร",
-      "buyingSignal": "New campaign",
-      "signalDate": "2026-09-10",
-      "whyNow": "TikTok เปิดอินไซต์นักช้อปไทย ‘เสิร์ช-ค้นพบ-ช้อป’ ตลอดปี พลิกเกม Mega Sales ที่ไม่ได้เริ่มแค่วันโปร",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 75,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 16,
-        "revenue_potential": 14,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 8,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbEdPNWdkc1gybXBUOWVIX0tOenprNmc2NHZrRmdYMzFUSUJkcTNLVGx1WmJIaHdwckdCZjBtMU5hcUIxeXQ3ZkktWXBSckE1d1pj?oc=5",
-          "label": "Positioningmag"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jVzI0WkVnaGlGakdKeGFrQXV4UWJMbVp2ejZKaUQzMmxCYzA5MUlkbkR1YmoyYzBJU2hLdkRKZlZOSmNTTGNKb0lwaWhzY1pETXZvQVJNNk82dw?oc=5",
-          "label": "bangkokbiznews.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UMkhIWFd3UHlLR1BEMVhlajQ5ai04c01wTFNCSEI2ZTNKd2tZRVhORGhYcFdrSFpaVE1GaTV1ZldGeVdaWkFIQTV0YWVLdTQ4MGswU3JMMm5KZw?oc=5",
-          "label": "thansettakij"
-        }
-      ]
-    },
-    {
-      "id": "2eea5f2edf64",
-      "brandName": "LEPAS",
-      "companyName": "LEPAS",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-27",
-      "whyNow": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 74,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVTJOWHowOXItY3ptdWIzZU1iSlZiNWVRRzVSeF9OXzFFRG9FOF8yTUhTNFFTNy1QR19ZOXpIR2REdUVDY2NFR1M4NHA0aXNOZ0NyemcxTEM?oc=5",
-          "label": "workpointtoday.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EN3hlTGFQbExicnl6NVFTcnJMeTY3TUdkMmxLNVpic2tJZmtneE45X0dldEI5X3NXUmhxS2Fhb2o2MGVOakNSWTNNclFwa3NmNnZmMkJPaGt2QQ?oc=5",
-          "label": "autospinn.com"
-        }
-      ]
-    },
-    {
-      "id": "e05a7efdface",
-      "brandName": "Labella",
-      "companyName": "Labella",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Labella กระเป๋าแบรนด์ไทยกับก้าวใหม่ครั้งสำคัญ ดึงณิชาขึ้นแท่นพรีเซนเตอร์ SOLEIL Collection",
-      "buyingSignal": "New presenter / ambassador",
-      "signalDate": "2026-08-26",
-      "whyNow": "Labella กระเป๋าแบรนด์ไทยกับก้าวใหม่ครั้งสำคัญ ดึงณิชาขึ้นแท่นพรีเซนเตอร์ SOLEIL Collection",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 74,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 17,
-        "revenue_potential": 14,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 8,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Qdk5pMDBiWm9RdndXTUJ1THRrTzRydkRPaGIyWVR0X2dHR2pKQnBrcG9WZTVnUW03aFdWTy1rdV91U2k5T25Rd3Y5TUhFeHNnR0k2N2VieXFzUDQ?oc=5",
-          "label": "workpointtoday.com"
-        }
-      ]
-    },
-    {
-      "id": "11957a475afd",
-      "brandName": "TAOKAENOI X NENE",
-      "companyName": "TAOKAENOI X NENE",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "TAOKAENOI X NENE ROYAL แคมเปญสุดยิ่งใหญ่ ตอกย้ำแบรนด์คนไทยที่พร้อมสนับสนุนคนรุ่นใหม่สู่ระดับโลก",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-10-05",
-      "whyNow": "TAOKAENOI X NENE ROYAL แคมเปญสุดยิ่งใหญ่ ตอกย้ำแบรนด์คนไทยที่พร้อมสนับสนุนคนรุ่นใหม่สู่ระดับโลก",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsR1JDdkVRQVhzZGE4aE9iV24zMjcwYlpnb2FPbWh2QzhwNk5xZnFSY0w4c3g5cGtZcFNNdVE0WjRkNTE3NG5oVXlvRGJ0V0tVbXRnQ3M1OTQ0SU1JOGkxTGFXVXVlRHM?oc=5",
-          "label": "ผู้จัดการออนไลน์"
-        }
-      ]
-    },
-    {
-      "id": "7932c08c39d1",
-      "brandName": "Fanta",
-      "companyName": "Fanta",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "'Fanta' Debuts \"FANTA FANTASIES\" In Thailand, Inviting Gen Z To Drift into a World of Unexpected Flavors Thailand becomes the first market globally to launch Fanta's new imagination-led flavor platform",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-13",
-      "whyNow": "'Fanta' Debuts \"FANTA FANTASIES\" In Thailand, Inviting Gen Z To Drift into a World of Unexpected Flavors Thailand becomes the first market globally to launch Fanta's new imagination-led flavor platform",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1naS0zRTB3SGJabHM5bFpXQTNZOUdwdVBHWm1QTnBiMll0NUJaTGxrSkZRejFNQWRZclhBM0QyQk9nOWktanJTS1VzYUgwa3lYYXhZWENBOGcyMjhMdTNtMDZUOFA2UFRHWWpn?oc=5",
-          "label": "newswit.com"
-        }
-      ]
-    },
-    {
-      "id": "f40748791594",
-      "brandName": "GAC AION",
-      "companyName": "GAC AION",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ยืนยันรุ่นนี้เปิดตัวไทยปลายปี 2569 GAC AION i60 BEV โฉมใหม่ รวมภาพคันจริงในจีน! จีเอซี ไอออน - รถใหม่วันนี้ ข่าวรถยนต์ EV ราคารถยนต์ไฟฟ้า รถยนต์พลังงานไฟฟ้า",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-12",
-      "whyNow": "ยืนยันรุ่นนี้เปิดตัวไทยปลายปี 2569 GAC AION i60 BEV โฉมใหม่ รวมภาพคันจริงในจีน! จีเอซี ไอออน - รถใหม่วันนี้ ข่าวรถยนต์ EV ราคารถยนต์ไฟฟ้า รถยนต์พลังงานไฟฟ้า",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hLUpaa1hnekZBU3BIQm5TRFl5N2R6Nlc4WHhISWs3QjZjS0FQblJGN3c0VEF5Z05TOXRIQktUWW5ZUklWVFZKLXlEc21nSk15VFNIbXFSUV82NnVnSHhLakVDVmpkVXMtSEF0SjV3?oc=5",
-          "label": "CAR250"
-        }
-      ]
-    },
-    {
       "id": "0b3768e5b4cd",
       "brandName": "Thaimart",
       "companyName": "Thaimart",
@@ -588,15 +448,56 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZTZWODMwbzVCTGhrWnVHR2hXdXhTSDRiZU81RlNOWHBDWnFYV09OQkRxaDNpdGFpS0NMcFI3eW5CeGktZlRxYm45c202Rkd4NTFLazdBZk5hb3VzakU1Z1BjaXBVcTVMcUhaVm1HLWRWSDVwcmZMSGt2dHo0RnE1YTZKWEdFTzZzbWdUNk9Ub3F4bXIyRFVEeEdNTlE4cXRZZ29wVEtGZ3NQQlpINWhoc3JlN0VDWVpTY2lYenBCRTBfYU4xcGNxLXgzbXFCS2NoVUt2V2tTbHVZV3dsaU4xXw?oc=5",
-          "label": "การตลาดวันละตอน"
+          "label": "everydaymarketing.co"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YRFNuek1IZFJyNXA3MGprdFpRclQ1T1E5a3RNZkhzWTQ0dTVVUC1ETDE1M1hHZnhwQkFBS01oSThfeUFBRk1NVHBhRktDTlhKaEJORUpIWUt2U2tJdktVTzAzMTQySTdkdC1JS0JzNThNV1FfN0Zyd2ZXOA?oc=5",
-          "label": "การตลาดวันละตอน"
+          "label": "everydaymarketing.co"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB4aldIN2FHSFRVa3cza0xzbklIdEZCdklsd2c0Ym1oSEItOVVwRHd6MlV5YjdnQ2xwTDFPYlh4V3V0ZFhJMDZZa1BLMDF6VFJHUnJMUWdqSDJnZnh0cThsajNxZExjSlFldFE5VUtvRXRCMktBbFR5MmVpMGpKYTA?oc=5",
           "label": "Brand Inside"
+        }
+      ]
+    },
+    {
+      "id": "d0c51a235f04",
+      "brandName": "C PROJECT",
+      "companyName": "C PROJECT",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-08-17",
+      "whyNow": "ก้าวใหม่ของวงการแฟชั่นและบิวตี้ เปิดตัว C PROJECT เดสทิเนชั่นที่รวบรวมแบรนด์ไทยชั้นนำ",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzMFRxRTRaTDRJdm5QVTdvM0ZJSnQ0R05TN1VwM0dlQmZkVkUzVU5peHFYeEdGdWl4c0NrSzlfTnJSbkpaaWVIeE9nWlowMzJmc1YyYUo4S29NYS1VQkE?oc=5",
+          "label": "แนวหน้า"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sYXVqeVB2T3poS2tEV1AtemkyT0VHSzJZdFdNQktCN1NvczFWcnAwNnJKbFJEQ20yMGxxYnZXdC1ETjE1TldjcTFqNWFvaHlvcWQ2NnF3NVJETjNJSEE?oc=5",
+          "label": "workpointtoday.com"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94RVg0OUVzT3lQRWVuV2pVSWJ5NER6dFFLdUFYUWkyTGMwVnJIQmY3akVXQnFOd2hSS3R6VnRFcHFpSEZkX1hvQ3pjVTFhb3JidHJF?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
@@ -629,7 +530,7 @@
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5DaXJCMkdETlZxY1NIWnc1a1pvaFVQVEVYRFMyZFJqSlNsOFJUME9QS3pjMVpwQ0pHbEVjLXlXSlJLQ2szczJpM1c1SkZBYTNVYW1RNDREZ2ZVQjhxNDJjc2J4NA?oc=5",
-          "label": "tnnthailand.com"
+          "label": "TNN Thailand"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2d2JkNXZFLWdKT3hCVmxNa214bWRsM0xBVDFRVDMzRzlMbndyTlJ3T21xVVlfeWszZkZZdFdlYzhtdzBZenFPdGVfNVBLRGJQSlI4Sg?oc=5",
@@ -708,6 +609,105 @@
         {
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9WYkg5OEtsM19uRmgwdjZpYTJQSURRb2xEUUVCTS0wYU0yZjFScEFkM1gybm9haVVoeXFFWXN0VWhDZS1wQ0p6MXJRZklyR01JM3pzQ2dJbDQyVjVD?oc=5",
           "label": "workpointtoday.com"
+        }
+      ]
+    },
+    {
+      "id": "b89f3871add0",
+      "brandName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "companyName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-08",
+      "whyNow": "20 ปี \"BOYY\" แบรนด์ลักชัวรี่ไทย ดันยอดขายปีนี้ 500 ล้าน ลุยเปิดร้าน Pop-Up ตปท. - ปั้น \"BOYYISH\" บุกตลาดแมส",
+      "momentum": "Exploding",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 8,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MSXlodjlMNDhna0p4UDBKVFZTc1d6bXJ4c3FkcXA4dUUtTkQ5YU85TFVvV0lmcVh2eWVCNFZaRDBWMERfNkJZX1B0LXFGdVI2dTNLd3lNSmhNRk1KQWc?oc=5",
+          "label": "ข่าวสด"
+        }
+      ]
+    },
+    {
+      "id": "b43339cc958e",
+      "brandName": "Youthfulnest Club",
+      "companyName": "Youthfulnest Club",
+      "industry": "Hospital / Healthcare",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "'Youthfulnest Club โดยแบรนด์รังนกแท้' เปิดแคมเปญใหม่ ชวนคนไทยเปลี่ยนการดูแลสุขภาพและออกกำลังกายเป็น Daily Mission",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-10-05",
+      "whyNow": "'Youthfulnest Club โดยแบรนด์รังนกแท้' เปิดแคมเปญใหม่ ชวนคนไทยเปลี่ยนการดูแลสุขภาพและออกกำลังกายเป็น Daily Mission",
+      "momentum": "Active",
+      "revenueMinM": 0.8,
+      "revenueMaxM": 2.5,
+      "score": 70,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 16,
+        "revenue_potential": 11,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 8,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE92b055dG9fcC1mOTh5cmR2bGZrT0xlbHZsMUgtOFZoNllFanJzZVZKbEJReENjalJnZlpqNTVQWmpoYkR0V1lYLWVlX09MVGpyZXNJUmRCMWVpX3FmeVZXVkRoYw?oc=5",
+          "label": "แนวหน้า"
+        }
+      ]
+    },
+    {
+      "id": "bbc74032a6e6",
+      "brandName": "แมคโดนัลด์ไทย",
+      "companyName": "แมคโดนัลด์ไทย",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "แมคโดนัลด์ไทย คว้าสิทธิ์ยาว 20 ปี บริหารแฟรนไชส์ในไทยเพียงผู้เดียว เตรียมขยายสาขาเท่าตัว สร้างงานใหม่ 6,000 อัตรา ภายในปี 2033",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-07-09",
+      "whyNow": "แมคโดนัลด์ไทย คว้าสิทธิ์ยาว 20 ปี บริหารแฟรนไชส์ในไทยเพียงผู้เดียว เตรียมขยายสาขาเท่าตัว สร้างงานใหม่ 6,000 อัตรา ภายในปี 2033",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 68,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NdDA2VWNZMHJla1dzcXZzMm81N0lyN3JMd0tnZ1dKQURHS3ZCM09MWXI2Mko4MklNdFRLSElSc1dLWW5kYUFsNm8zWEZVV1J1ZE5Pc0gwcDhmQnlCWnM3dQ?oc=5",
+          "label": "Brand Inside"
         }
       ]
     }
