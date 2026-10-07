@@ -22,7 +22,10 @@ concurrency:
 
 jobs:
   deploy:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    # Always deploy the latest main after the Daily Radar workflow finishes.
+    # The radar data is committed before the external Sheet sync step, so a
+    # transient Sheet/API response issue must not leave Pages on stale data.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.status == 'completed' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
