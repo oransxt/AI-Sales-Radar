@@ -3,7 +3,9 @@ name: Daily Thailand Brand Radar
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *' # 08:00 Asia/Bangkok
+    # Run away from the top-of-hour GitHub Actions load spike.
+    - cron: '17 8 * * *'
+      timezone: "Asia/Bangkok"
   push:
     branches: [main]
     paths:
@@ -21,6 +23,7 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -34,6 +37,26 @@ jobs:
 
       - name: Discover Thailand Top 20 (100% free)
         run: node scripts/discover.mjs
+
+      - name: Validate generated radar
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const daily = JSON.parse(fs.readFileSync('docs/data/daily.json', 'utf8'));
+          const today = new Intl.DateTimeFormat('en-CA', {
+            timeZone: 'Asia/Bangkok',
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+          }).format(new Date());
+          if (daily.date !== today) throw new Error(`daily.json date mismatch: expected ${today}, got ${daily.date}`);
+          if (!Array.isArray(daily.leads) || daily.leads.length !== 20) {
+            throw new Error(`daily.json must contain exactly 20 leads; got ${daily.leads?.length ?? 0}`);
+          }
+          const names = daily.leads.map(x => String(x.brandName || '').trim());
+          if (names.some(x => !x)) throw new Error('daily.json contains a blank brand name');
+          console.log(`Validated 20 leads for ${today}.`);
+          NODE
 
       - name: Commit updated radar data
         run: |
