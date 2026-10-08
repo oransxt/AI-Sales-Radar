@@ -775,7 +775,7 @@ async function loadFallbackRadar(message){
     app.daily={generatedAt:j.generatedAt||'',leads:(j.leads||[]).map((x,i)=>({
       id:String(x.id||('FB'+i)),rank:i+1,brandName:x.brandName||x.brand||'',companyName:x.companyName||'',industry:x.industry||'',brandType:x.brandType||'',
       buyingSignal:x.buyingSignal||'',signalDate:x.signalDate||'',whyNow:x.whyNow||'',score:Number(x.score||x.opportunityScore||0),priority:x.priority||'',status:'Not Checked',
-      discoveryDate:j.generatedAt||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean)
+      discoveryDate:j.date||'',ai:x.ai||null,thailandEvidence:x.thailandEvidence||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean).map(s=>typeof s==='string'?s:s.url).filter(Boolean)
     }))};
     app.credentials=[];app.prepared={};prepareAll();
   }catch(_){
