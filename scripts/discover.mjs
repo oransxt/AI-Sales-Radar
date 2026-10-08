@@ -184,6 +184,23 @@ for(const g of grouped.values()){
   leads.push({id:idFor(g.brand),brandName:g.brand,companyName:g.brand,industry,brandType:/TikTok|Instagram|Shopee|Lazada|ไวรัล|creator|อินฟลูเอนเซอร์/i.test(combined)?'Emerging / Social-first':'Established / Growing',thailandEvidence:primary.headline,buyingSignal:sig.name,signalDate:primary.pubDate?new Date(primary.pubDate).toISOString().slice(0,10):today,whyNow:primary.headline,momentum:mom>=8?'Exploding':mom>=6?'Rising':'Active',revenueMinM:rmin,revenueMaxM:rmax,score:Math.max(0,total),scores,priority:priority(total),isNew,isUpdated,sources:items.slice(0,3).map((x,i)=>({url:x.link,label:x.source.label||`Google News source ${i+1}`})),_headlines:items.slice(0,3).map(x=>x.headline),signalHash});
 }
 
+// Optional AI analysis runs before final deterministic scoring and ranking.
+const aiEnrichment = await enrichLeads(leads);
+const uniqueLeads = new Map();
+for (const lead of leads) {
+  const key = lead.brandName.toLocaleLowerCase().replace(/\s+/g, ' ').trim();
+  const prior = history.brands?.[key];
+  lead.id = idFor(lead.brandName);
+  lead.isNew = !prior;
+  lead.isUpdated = !!prior && prior.lastSignalHash !== lead.signalHash;
+  lead.score = Math.max(0, Object.values(lead.scores).reduce((a,b)=>a+b,0) - (prior && !lead.isUpdated ? 10 : 0));
+  lead.priority = priority(lead.score);
+  const existing = uniqueLeads.get(key);
+  if (!existing || lead.score > existing.score) uniqueLeads.set(key, lead);
+}
+leads.length = 0;
+leads.push(...uniqueLeads.values());
+
 leads.sort((a,b)=>b.score-a.score||b.revenueMaxM-a.revenueMaxM);
 const selected=[], counts={};
 for(const l of leads){counts[l.industry]=counts[l.industry]||0;if(counts[l.industry]>=4)continue;selected.push(l);counts[l.industry]++;if(selected.length===20)break;}
