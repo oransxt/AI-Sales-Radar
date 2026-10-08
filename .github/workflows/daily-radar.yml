@@ -10,6 +10,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/discover.mjs'
+      - 'scripts/gemini-enrich.mjs'
+      - 'tests/gemini-enrich.test.mjs'
       - 'scripts/sync-sheet.mjs'
       - '.github/workflows/daily-radar.yml'
 
@@ -35,7 +37,14 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Discover Thailand Top 20 (100% free)
+      - name: Validate Gemini enrichment safeguards
+        run: node --test tests/gemini-enrich.test.mjs
+
+      - name: Discover Thailand Top 20 (Gemini optional)
+        env:
+          GEMINI_ENABLED: 'true'
+          GEMINI_MODEL: gemini-3.1-flash-lite
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/discover.mjs
 
       - name: Validate generated radar

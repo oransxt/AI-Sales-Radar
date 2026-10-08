@@ -1,0 +1,32 @@
+name: AI Enrichment Tests
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'docs/app.js'
+      - '.github/workflows/daily-radar.yml'
+      - '.github/workflows/ai-enrichment-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax checks
+        run: |
+          node --check scripts/discover.mjs
+          node --check scripts/gemini-enrich.mjs
+          node --check scripts/sync-sheet.mjs
+          node --check docs/app.js
+      - name: Gemini safeguards and fallback tests
+        run: node --test tests/gemini-enrich.test.mjs

@@ -1,4 +1,4 @@
-const VERSION='2.3.8';
+const VERSION='2.4.0';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -197,6 +197,7 @@ function autoPack(l){
     .slice(0,3)
 }
 function businessContext(l){
+  if(l.ai?.status==='validated'&&l.ai.businessContext)return l.ai.businessContext;
   const parts=[];
   if(l.industry)parts.push(l.industry);
   if(l.buyingSignal)parts.push(l.buyingSignal);
@@ -214,6 +215,7 @@ function signalFamily(l){
   return'activity'
 }
 function salesAngle(l,existing){
+  if(l.ai?.status==='validated'&&l.ai.salesAngle)return (existing?'สำหรับลูกค้าเดิม: ':'สำหรับแบรนด์ใหม่: ')+l.ai.salesAngle;
   const f=signalFamily(l);
   const prefix=existing?'ใช้ความเคลื่อนไหวล่าสุดเป็นจังหวะต่อยอดการคุยกับลูกค้าเดิม':'ใช้ความเคลื่อนไหวล่าสุดเป็นเหตุผลในการเริ่มบทสนทนากับแบรนด์';
   const detail={
@@ -227,7 +229,8 @@ function salesAngle(l,existing){
   }[f];
   return prefix+' '+detail
 }
-function nextBestAction(existing){
+function nextBestAction(existing,l){
+  if(l?.ai?.status==='validated'&&l.ai.nextBestAction)return l.ai.nextBestAction;
   return existing
     ? 'นัดคุยสั้น ๆ เพื่ออัปเดตทิศทางของแบรนด์และหาโอกาส Upsell / New Opportunity จากความเคลื่อนไหวล่าสุด'
     : 'ขอนัดคุย 20–30 นาที เพื่อทำความเข้าใจ Objective, Target, Timing และดูว่ามีโจทย์ที่ Plan B สามารถช่วยได้หรือไม่'
@@ -271,6 +274,7 @@ function buildEmail(l,status,lang){
       : 'ผมจาก Plan B Media ครับ เห็นความเคลื่อนไหวล่าสุดของ '+l.brandName+' และมองว่าเป็นจังหวะที่น่าสนใจในการเริ่มต้นพูดคุยกันครับ',
     '',
     'จากข้อมูลที่พบ: '+why,
+    ...(l.ai?.status==='validated'?['','ประเด็นที่อาจใช้เปิดบทสนทนา: '+l.ai.salesAngle]:[]),
     '',
     existing
       ? 'เบื้องต้นผมได้รวบรวมข้อมูลและ Credential ที่เกี่ยวข้องไว้เป็น Reference สำหรับการคุยครั้งถัดไปครับ'
@@ -292,7 +296,7 @@ function prepare(l){
       language:lang,recipient:'',subject:mail.subject,body:mail.body,
       businessContext:businessContext(l),
       salesAngle:salesAngle(l,false),
-      nextAction:nextBestAction(false),
+      nextAction:nextBestAction(false,l),
       credentials:autoPack(l),
       decisionStatus:DECISION_STATUSES.includes(statusOf(l))?statusOf(l):'',
       emailDirty:false
@@ -381,12 +385,12 @@ function detailHtml(l){
     '<div class="detail-hero">'+
       '<div><span class="badge '+priorityTone(l.priority)+'">'+esc(l.priority||'OPPORTUNITY')+' · '+Math.round(l.score||0)+'</span>'+
       '<h2>'+esc(l.brandName)+'</h2><div class="sub">'+esc(l.companyName||l.industry||'')+'</div></div>'+
-      '<div class="ready-badge">AUTO PREPARED</div>'+
+      '<div class="ready-badge">AUTO PREPARED'+(l.ai?.status==='validated'?' · GEMINI '+Math.round(l.ai.confidence*100)+'% CONFIDENCE':' · RULE ENGINE')+'</div>'+
     '</div>'+
     '<div class="decision-grid">'+
       '<section class="decision-section"><div class="section-label">BUYING SIGNAL</div><div class="section-value">'+esc(l.buyingSignal||'—')+'</div><div class="sub">'+esc(l.signalDate||'')+'</div></section>'+
       '<section class="decision-section"><div class="section-label">BUSINESS CONTEXT</div><div class="section-value">'+esc(p.businessContext)+'</div></section>'+
-      '<section class="decision-section wide"><div class="section-label">WHY NOW</div><div class="why-box">'+esc(l.whyNow||'Latest public market activity detected.')+'</div><div class="source-row">'+sourceLinks(l)+'</div></section>'+
+      '<section class="decision-section wide"><div class="section-label">'+(l.ai?.status==='validated'?'WHY NOW · AI HYPOTHESIS':'WHY NOW')+'</div><div class="why-box">'+esc(l.ai?.whyNow||l.whyNow||'Latest public market activity detected.')+'</div><div class="source-row">'+sourceLinks(l)+'</div></section>'+
       '<section class="decision-section"><div class="section-label">SALES ANGLE</div><div class="section-value">'+esc(p.salesAngle)+'</div></section>'+
       '<section class="decision-section"><div class="section-label">NEXT BEST ACTION</div><div class="section-value">'+esc(p.nextAction)+'</div></section>'+
       '<section class="decision-section wide"><div class="section-label">AUTO-MATCHED CREDENTIALS</div><div class="auto-creds">'+(p.credentials.length?p.credentials.map(credentialHtml).join(''):'<div class="sub">No credential matched. Email draft remains ready without attachments.</div>')+'</div></section>'+
@@ -462,7 +466,7 @@ function handleStatusPreview(l,status){
   if(!p.emailDirty&&!stop){
     const m=buildEmail(l,status,p.language);p.subject=m.subject;p.body=m.body;
     p.salesAngle=salesAngle(l,status==='Existing Client');
-    p.nextAction=nextBestAction(status==='Existing Client')
+    p.nextAction=nextBestAction(status==='Existing Client',l)
   }
   render()
 }
@@ -772,13 +776,27 @@ async function loadFallbackRadar(message){
     app.daily={generatedAt:j.generatedAt||'',leads:(j.leads||[]).map((x,i)=>({
       id:String(x.id||('FB'+i)),rank:i+1,brandName:x.brandName||x.brand||'',companyName:x.companyName||'',industry:x.industry||'',brandType:x.brandType||'',
       buyingSignal:x.buyingSignal||'',signalDate:x.signalDate||'',whyNow:x.whyNow||'',score:Number(x.score||x.opportunityScore||0),priority:x.priority||'',status:'Not Checked',
-      discoveryDate:j.generatedAt||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean)
+      discoveryDate:j.date||'',ai:x.ai||null,thailandEvidence:x.thailandEvidence||'',sources:(x.sources||[x.sourceUrl1,x.sourceUrl2]).filter(Boolean).map(s=>typeof s==='string'?s:s.url).filter(Boolean)
     }))};
     app.credentials=[];app.prepared={};prepareAll();
   }catch(_){
     app.daily={generatedAt:'',leads:[]};app.credentials=[];app.prepared={};
   }
 }
+async function attachAiInsights(){
+  try{
+    const response=await fetch('data/daily.json?ai='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(6000)});
+    if(!response.ok)return;
+    const daily=await response.json();
+    if(daily.date!==app.daily.generatedAt)return;
+    const aiByName=new Map((daily.leads||[]).filter(x=>x.ai?.status==='validated').map(x=>[normalize(x.brandName),x]));
+    for(const l of app.daily.leads){
+      const found=aiByName.get(normalize(l.brandName));
+      if(found){l.ai=found.ai;l.thailandEvidence=found.thailandEvidence||'';}
+    }
+  }catch(error){console.warn('AI metadata unavailable; rule-only dashboard remains ready.');}
+}
+
 async function loadAll(){
   if(app.demoMode){
     loadElicaDemo();
@@ -796,6 +814,7 @@ async function loadAll(){
     const d=await apiGet('daily-radar');
     const radar=dedupeRadarRows(d.data||[]);
     app.daily={generatedAt:radar[0]?.Discovery_Date||'',leads:radar.map(lead)};
+    await attachAiInsights();
     app.prepared={};
     prepareAll();
     setConnection(true);

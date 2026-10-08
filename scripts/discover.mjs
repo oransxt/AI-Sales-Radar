@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
+import { enrichLeads } from './gemini-enrich.mjs';
 
 const DAILY_OUT = new URL('../docs/data/daily.json', import.meta.url);
 const HISTORY_OUT = new URL('../docs/data/history.json', import.meta.url);
@@ -180,17 +181,35 @@ for(const g of grouped.values()){
   const isUpdated=!!prior&&prior.lastSignalHash!==signalHash, isNew=!prior;
   if(prior&&!isUpdated) total-=10;
   const [rmin,rmax]=revenueRange(rev);
-  leads.push({id:idFor(g.brand),brandName:g.brand,companyName:g.brand,industry,brandType:/TikTok|Instagram|Shopee|Lazada|ไวรัล|creator|อินฟลูเอนเซอร์/i.test(combined)?'Emerging / Social-first':'Established / Growing',thailandEvidence:primary.headline,buyingSignal:sig.name,signalDate:primary.pubDate?new Date(primary.pubDate).toISOString().slice(0,10):today,whyNow:primary.headline,momentum:mom>=8?'Exploding':mom>=6?'Rising':'Active',revenueMinM:rmin,revenueMaxM:rmax,score:Math.max(0,total),scores,priority:priority(total),isNew,isUpdated,sources:items.slice(0,3).map((x,i)=>({url:x.link,label:x.source.label||`Google News source ${i+1}`})),signalHash});
+  leads.push({id:idFor(g.brand),brandName:g.brand,companyName:g.brand,industry,brandType:/TikTok|Instagram|Shopee|Lazada|ไวรัล|creator|อินฟลูเอนเซอร์/i.test(combined)?'Emerging / Social-first':'Established / Growing',thailandEvidence:primary.headline,buyingSignal:sig.name,signalDate:primary.pubDate?new Date(primary.pubDate).toISOString().slice(0,10):today,whyNow:primary.headline,momentum:mom>=8?'Exploding':mom>=6?'Rising':'Active',revenueMinM:rmin,revenueMaxM:rmax,score:Math.max(0,total),scores,priority:priority(total),isNew,isUpdated,sources:items.slice(0,3).map((x,i)=>({url:x.link,label:x.source.label||`Google News source ${i+1}`})),_headlines:items.slice(0,3).map(x=>x.headline),signalHash});
 }
+
+// Optional AI analysis runs before final deterministic scoring and ranking.
+const aiEnrichment = await enrichLeads(leads);
+const uniqueLeads = new Map();
+for (const lead of leads) {
+  const key = lead.brandName.toLocaleLowerCase().replace(/\s+/g, ' ').trim();
+  const prior = history.brands?.[key];
+  lead.id = idFor(lead.brandName);
+  lead.isNew = !prior;
+  lead.isUpdated = !!prior && prior.lastSignalHash !== lead.signalHash;
+  lead.score = Math.max(0, Object.values(lead.scores).reduce((a,b)=>a+b,0) - (prior && !lead.isUpdated ? 10 : 0));
+  lead.priority = priority(lead.score);
+  const existing = uniqueLeads.get(key);
+  if (!existing || lead.score > existing.score) uniqueLeads.set(key, lead);
+}
+leads.length = 0;
+leads.push(...uniqueLeads.values());
 
 leads.sort((a,b)=>b.score-a.score||b.revenueMaxM-a.revenueMaxM);
 const selected=[], counts={};
 for(const l of leads){counts[l.industry]=counts[l.industry]||0;if(counts[l.industry]>=4)continue;selected.push(l);counts[l.industry]++;if(selected.length===20)break;}
 if(selected.length<20) for(const l of leads){if(selected.some(x=>x.id===l.id))continue;selected.push(l);if(selected.length===20)break;}
 
-for(const l of selected){const k=l.brandName.toLowerCase(),p=history.brands[k]||{};history.brands[k]={firstSeen:p.firstSeen||today,lastSeen:today,timesDetected:(p.timesDetected||0)+1,lastSignalHash:l.signalHash,lastSignal:l.buyingSignal};delete l.signalHash;}
+for(const l of selected){const k=l.brandName.toLowerCase(),p=history.brands[k]||{};history.brands[k]={firstSeen:p.firstSeen||today,lastSeen:today,timesDetected:(p.timesDetected||0)+(p.lastSeen===today?0:1),lastSignalHash:l.signalHash,lastSignal:l.buyingSignal};delete l.signalHash;delete l._headlines;}
 
 await fs.mkdir(new URL('../docs/data/',import.meta.url),{recursive:true});
-await fs.writeFile(DAILY_OUT,JSON.stringify({date:today,generatedAt:new Date().toISOString(),engine:'FREE-RSS-RULES-1.9.3.2',leads:selected},null,2));
+const engine=aiEnrichment.accepted>0?'HYBRID-RSS-GEMINI-1.0':'FREE-RSS-RULES-1.9.3.2';
+await fs.writeFile(DAILY_OUT,JSON.stringify({date:today,generatedAt:new Date().toISOString(),engine,aiEnrichment,leads:selected},null,2));
 await fs.writeFile(HISTORY_OUT,JSON.stringify(history,null,2));
 console.log(`Free Thailand Radar wrote ${selected.length} leads for ${today} from ${all.length} recent articles / ${grouped.size} candidate brands.`);
