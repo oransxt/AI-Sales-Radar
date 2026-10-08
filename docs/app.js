@@ -782,6 +782,20 @@ async function loadFallbackRadar(message){
     app.daily={generatedAt:'',leads:[]};app.credentials=[];app.prepared={};
   }
 }
+async function attachAiInsights(){
+  try{
+    const response=await fetch('data/daily.json?ai='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(6000)});
+    if(!response.ok)return;
+    const daily=await response.json();
+    if(daily.date!==app.daily.generatedAt)return;
+    const aiByName=new Map((daily.leads||[]).filter(x=>x.ai?.status==='validated').map(x=>[normalize(x.brandName),x]));
+    for(const l of app.daily.leads){
+      const found=aiByName.get(normalize(l.brandName));
+      if(found){l.ai=found.ai;l.thailandEvidence=found.thailandEvidence||'';}
+    }
+  }catch(error){console.warn('AI metadata unavailable; rule-only dashboard remains ready.');}
+}
+
 async function loadAll(){
   if(app.demoMode){
     loadElicaDemo();
