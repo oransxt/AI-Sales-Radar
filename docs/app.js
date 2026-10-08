@@ -1,4 +1,4 @@
-const VERSION='2.3.8';
+const VERSION='2.4.0';
 const DEFAULT_API_URL='https://script.google.com/macros/s/AKfycbxpf5J0-61jaF1DF8LNrs3-DtAFNOhWaKlKXb7cHX8-ZsOxTHn35Gs9atalWaxKNuqU/exec';
 const SHEET_URL='https://docs.google.com/spreadsheets/d/1CC6qCo8ThdOiSfmfVdzxSuTArVQ5ZVfmRmw5lUNw6oo/edit';
 const LS={url:'asr-api-url-v1951',key:'asr-api-key-v1951'};
@@ -197,6 +197,7 @@ function autoPack(l){
     .slice(0,3)
 }
 function businessContext(l){
+  if(l.ai?.status==='validated'&&l.ai.businessContext)return l.ai.businessContext;
   const parts=[];
   if(l.industry)parts.push(l.industry);
   if(l.buyingSignal)parts.push(l.buyingSignal);
@@ -214,6 +215,7 @@ function signalFamily(l){
   return'activity'
 }
 function salesAngle(l,existing){
+  if(l.ai?.status==='validated'&&l.ai.salesAngle)return (existing?'สำหรับลูกค้าเดิม: ':'สำหรับแบรนด์ใหม่: ')+l.ai.salesAngle;
   const f=signalFamily(l);
   const prefix=existing?'ใช้ความเคลื่อนไหวล่าสุดเป็นจังหวะต่อยอดการคุยกับลูกค้าเดิม':'ใช้ความเคลื่อนไหวล่าสุดเป็นเหตุผลในการเริ่มบทสนทนากับแบรนด์';
   const detail={
@@ -227,7 +229,8 @@ function salesAngle(l,existing){
   }[f];
   return prefix+' '+detail
 }
-function nextBestAction(existing){
+function nextBestAction(existing,l){
+  if(l?.ai?.status==='validated'&&l.ai.nextBestAction)return l.ai.nextBestAction;
   return existing
     ? 'นัดคุยสั้น ๆ เพื่ออัปเดตทิศทางของแบรนด์และหาโอกาส Upsell / New Opportunity จากความเคลื่อนไหวล่าสุด'
     : 'ขอนัดคุย 20–30 นาที เพื่อทำความเข้าใจ Objective, Target, Timing และดูว่ามีโจทย์ที่ Plan B สามารถช่วยได้หรือไม่'
@@ -292,7 +295,7 @@ function prepare(l){
       language:lang,recipient:'',subject:mail.subject,body:mail.body,
       businessContext:businessContext(l),
       salesAngle:salesAngle(l,false),
-      nextAction:nextBestAction(false),
+      nextAction:nextBestAction(false,l),
       credentials:autoPack(l),
       decisionStatus:DECISION_STATUSES.includes(statusOf(l))?statusOf(l):'',
       emailDirty:false
@@ -462,7 +465,7 @@ function handleStatusPreview(l,status){
   if(!p.emailDirty&&!stop){
     const m=buildEmail(l,status,p.language);p.subject=m.subject;p.body=m.body;
     p.salesAngle=salesAngle(l,status==='Existing Client');
-    p.nextAction=nextBestAction(status==='Existing Client')
+    p.nextAction=nextBestAction(status==='Existing Client',l)
   }
   render()
 }
