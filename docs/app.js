@@ -389,7 +389,7 @@ function detailHtml(l){
     '<div class="decision-grid">'+
       '<section class="decision-section"><div class="section-label">BUYING SIGNAL</div><div class="section-value">'+esc(l.buyingSignal||'—')+'</div><div class="sub">'+esc(l.signalDate||'')+'</div></section>'+
       '<section class="decision-section"><div class="section-label">BUSINESS CONTEXT</div><div class="section-value">'+esc(p.businessContext)+'</div></section>'+
-      '<section class="decision-section wide"><div class="section-label">'+(l.ai?.status==='validated'?'WHY NOW · AI HYPOTHESIS':'WHY NOW')+'</div><div class="why-box">'+esc(l.whyNow||'Latest public market activity detected.')+'</div><div class="source-row">'+sourceLinks(l)+'</div></section>'+
+      '<section class="decision-section wide"><div class="section-label">'+(l.ai?.status==='validated'?'WHY NOW · AI HYPOTHESIS':'WHY NOW')+'</div><div class="why-box">'+esc(l.ai?.whyNow||l.whyNow||'Latest public market activity detected.')+'</div><div class="source-row">'+sourceLinks(l)+'</div></section>'+
       '<section class="decision-section"><div class="section-label">SALES ANGLE</div><div class="section-value">'+esc(p.salesAngle)+'</div></section>'+
       '<section class="decision-section"><div class="section-label">NEXT BEST ACTION</div><div class="section-value">'+esc(p.nextAction)+'</div></section>'+
       '<section class="decision-section wide"><div class="section-label">AUTO-MATCHED CREDENTIALS</div><div class="auto-creds">'+(p.credentials.length?p.credentials.map(credentialHtml).join(''):'<div class="sub">No credential matched. Email draft remains ready without attachments.</div>')+'</div></section>'+
