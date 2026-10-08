@@ -1,28 +1,34 @@
 {
   "date": "2026-10-08",
-  "generatedAt": "2026-10-08T07:26:05.981Z",
+  "generatedAt": "2026-10-08T08:08:28.484Z",
   "engine": "FREE-RSS-RULES-1.9.3.2",
+  "aiEnrichment": {
+    "status": "missing_key",
+    "model": "gemini-3.1-flash-lite",
+    "attempted": 0,
+    "accepted": 0
+  },
   "leads": [
     {
-      "id": "2a2e21d43435",
-      "brandName": "KFC",
-      "companyName": "KFC",
-      "industry": "Food / QSR",
+      "id": "ccb700525b66",
+      "brandName": "ยัสปาล กรุ๊ป",
+      "companyName": "ยัสปาล กรุ๊ป",
+      "industry": "Retail / Fashion",
       "brandType": "Established / Growing",
-      "thailandEvidence": "KFC “New Era” ยกระดับประสบการณ์แบรนด์ พลิกโฉมทุกมิติ เปิดตัวสาขาแรกในไทย @SiamCenter",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-10-07",
-      "whyNow": "KFC “New Era” ยกระดับประสบการณ์แบรนด์ พลิกโฉมทุกมิติ เปิดตัวสาขาแรกในไทย @SiamCenter",
-      "momentum": "Rising",
+      "thailandEvidence": "ยัสปาล กรุ๊ป เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-08-13",
+      "whyNow": "ยัสปาล กรุ๊ป เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
+      "momentum": "Exploding",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 88,
+      "score": 91,
       "scores": {
         "thailand_relevance": 18,
-        "buying_signal_strength": 19,
+        "buying_signal_strength": 20,
         "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 6,
+        "momentum": 8,
         "timing": 10,
         "evidence_quality": 5
       },
@@ -31,16 +37,12 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE51Z3hON3lpNWdUX2NkV04zVFVZbWg3bmNabzZ2dFhYZTNHN2lCeDFpNFJ2Zlhla3V1MW82VUptRE5pVGNHQXFJY0NsZm91Ym9TWEMxMQ?oc=5",
-          "label": "Marketeer Online"
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQcHZfTTVMT3E3Tnc3WENUVUd6ZHlhYWROWU1fYWtESkljeUpNdllPZ2cwQW1TRFh4SV9KMlA4dVNhSkNfWTZqOXJXdUY2R3pnNGRR?oc=5",
+          "label": "เดลินิวส์"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5c1FqaTcwSkNUTFBUNTE3OHVELTJIX3lVVWlzdkJBWmdmYTlOZWRsSjlCV0ZkZW1BMzhrd201SFd4ckRCb1ptZm9UWlloOUFNVG5NTFpobFhVV1ZSZ3RfRQ?oc=5",
-          "label": "ผู้จัดการออนไลน์"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMi_AZBVV95cUxQS2FkbzlRdjkzTkx4aGFyNXZZSDVFUEZVMkxkckdyMTY1OWhzdE13WTBGT01wTGw5Q25XQUdhTmJaUE9ZMkxId3ZadTFGTGFUZktndjRCMndiWFNFdFJjc3pvVXd6MzExalRZYkY1OERpNUFaTmVBbk51N0JIV3dVYkhMajhmaUZSdVhKNmlvd0R6SFAxTDhXUlQ4NEZoZThyblFlWXNTcnZHazN3ZTlUdzltQmxjcXBySTF5c3R4RFoxTGJiblkwMkpFRUY4S1FJaXpwdUlhOG11YXZtZmt0NjN6emVqczd4WHo4d2ctcE5yaGVIQzhONEg1ZXp1dER3TVFjcWMtR3VVTlNjeERNcEpjYmVXSEhBbFBBNnN1Yk5tQW8wZnUtS1lTdXJnVDVpdktKeGtmT3VSNWk1ZnN2VWdGZjRFUnNfRVFmNnJlZUhIbUNNcVhnMWczcVRCSnVlZnp5cC16TEhqTklleWxETTRHb203dDJPMDZtd2FETWRyRVhwVzBxcHFyU0RWYTJ6Ty1qcm1rZFA1VThyejBpU1FsaEx3TmpOdWFHdVNDMXNyMzFUQzdsSG1Eb204ZE1zUXhPb1JNcXZYNmF5QUZzTU5ad1VCVm9pZWJxd2JncE5qN1ZrMl9lWFk1SUFsaU93bTFtVlZNS0k1ZGZ0WUJ2aEJjbkxINFZlZlBuRU1PVEN6VjVSSkptam82MERNSFdBWFYzM092Z3h0SlgxcmtPOUlmWGV3aUFlb0VDODlzdE5XTkZHVGZYMmNyeU5PY2VVbmFDOHhhdDNxVFpBd0huejFac3h5SzgzdmNYT2VjZzR3XzFJS2FmbFV3YWJkS2hCbVFJN0h1SGNtUHF1cHkwYWRvMDduUHM3VkNwLVVqYjRDT3NlVmtzTlVBNDY2TmtvZWc5MDR5QUNCUTJITzFTTmQ0WnJKSHVvWktDLXVqaUJ2UkN2cXJoaWk4bmZmVEtWRjlNcHdPelhiTUJJaG9MZFFRajQxckZyTFhsaVlpV0YxNVFUZGpPWWNHSWQyNzJqYVp5c0NoaVlCZldHLVJvalE2UFBBcWRMTEM0a2o5aEtXQXBJeGh2YWdRNFMwN2FIdWhhYzFpbUZWRGZ4cFctb0dYLXZ5RVdiVHg4a05YbkJQVEFpWjc0ZklvWWRyOGdGZVVYOXZuQ0ZDN3lW?oc=5",
-          "label": "Facebook"
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15VFd3eWRVOFlWZUcyMWFrNzg0MmFuODUzOE90T0RJbk41eDBvMW9qdmtBb1I0aEYtb0liX0I2ZGx6YUxiZUNzMG1USTJ0ci1wOElz?oc=5",
+          "label": "Positioningmag"
         }
       ]
     },
@@ -119,72 +121,43 @@
       ]
     },
     {
-      "id": "ccb700525b66",
-      "brandName": "ยัสปาล กรุ๊ป",
-      "companyName": "ยัสปาล กรุ๊ป",
-      "industry": "Retail / Fashion",
+      "id": "2a2e21d43435",
+      "brandName": "KFC",
+      "companyName": "KFC",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-08-11",
-      "whyNow": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
-      "momentum": "Exploding",
+      "thailandEvidence": "KFC “New Era” ยกระดับประสบการณ์แบรนด์ พลิกโฉมทุกมิติ เปิดตัวสาขาแรกในไทย @SiamCenter",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-10-07",
+      "whyNow": "KFC “New Era” ยกระดับประสบการณ์แบรนด์ พลิกโฉมทุกมิติ เปิดตัวสาขาแรกในไทย @SiamCenter",
+      "momentum": "Rising",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 79,
+      "score": 78,
       "scores": {
         "thailand_relevance": 18,
-        "buying_signal_strength": 20,
+        "buying_signal_strength": 19,
         "revenue_potential": 16,
         "ooh_fit": 14,
-        "momentum": 8,
+        "momentum": 6,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HIGH",
       "isNew": false,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15VFd3eWRVOFlWZUcyMWFrNzg0MmFuODUzOE90T0RJbk41eDBvMW9qdmtBb1I0aEYtb0liX0I2ZGx6YUxiZUNzMG1USTJ0ci1wOElz?oc=5",
-          "label": "Positioningmag"
-        }
-      ]
-    },
-    {
-      "id": "78cf6d681dce",
-      "brandName": "HEYTEA",
-      "companyName": "HEYTEA",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "HEYTEA สาขาแรกในไทย เปิดแล้ว! พาส่อง HEYTEA LAB CentralWorld",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-28",
-      "whyNow": "HEYTEA สาขาแรกในไทย เปิดแล้ว! พาส่อง HEYTEA LAB CentralWorld",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 79,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uQ0NKSWNPb01aVy1JXzNqVTdYMGs3UmxUMGVzY2hUN3Y5cHlERGNBSk9DdG5pd3FLOW5IQ3Y0MW1BQlFFcEFjcjNWU3hFWnNGa016NWtuLWktUUYz?oc=5",
-          "label": "atime"
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE51Z3hON3lpNWdUX2NkV04zVFVZbWg3bmNabzZ2dFhYZTNHN2lCeDFpNFJ2Zlhla3V1MW82VUptRE5pVGNHQXFJY0NsZm91Ym9TWEMxMQ?oc=5",
+          "label": "Marketeer Online"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5oLWtCM1dLcUFQbXdoZEtqTXdkN05Ea0IxZ0hYcHlJWXRmLXBZMjVtN0xSYk1MYXlGaXB1WTlUblM1NjNxVUhodEwtdw?oc=5",
-          "label": "ThaiPR.NET"
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5c1FqaTcwSkNUTFBUNTE3OHVELTJIX3lVVWlzdkJBWmdmYTlOZWRsSjlCV0ZkZW1BMzhrd201SFd4ckRCb1ptZm9UWlloOUFNVG5NTFpobFhVV1ZSZ3RfRQ?oc=5",
+          "label": "ผู้จัดการออนไลน์"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMi_AZBVV95cUxQS2FkbzlRdjkzTkx4aGFyNXZZSDVFUEZVMkxkckdyMTY1OWhzdE13WTBGT01wTGw5Q25XQUdhTmJaUE9ZMkxId3ZadTFGTGFUZktndjRCMndiWFNFdFJjc3pvVXd6MzExalRZYkY1OERpNUFaTmVBbk51N0JIV3dVYkhMajhmaUZSdVhKNmlvd0R6SFAxTDhXUlQ4NEZoZThyblFlWXNTcnZHazN3ZTlUdzltQmxjcXBySTF5c3R4RFoxTGJiblkwMkpFRUY4S1FJaXpwdUlhOG11YXZtZmt0NjN6emVqczd4WHo4d2ctcE5yaGVIQzhONEg1ZXp1dER3TVFjcWMtR3VVTlNjeERNcEpjYmVXSEhBbFBBNnN1Yk5tQW8wZnUtS1lTdXJnVDVpdktKeGtmT3VSNWk1ZnN2VWdGZjRFUnNfRVFmNnJlZUhIbUNNcVhnMWczcVRCSnVlZnp5cC16TEhqTklleWxETTRHb203dDJPMDZtd2FETWRyRVhwVzBxcHFyU0RWYTJ6Ty1qcm1rZFA1VThyejBpU1FsaEx3TmpOdWFHdVNDMXNyMzFUQzdsSG1Eb204ZE1zUXhPb1JNcXZYNmF5QUZzTU5ad1VCVm9pZWJxd2JncE5qN1ZrMl9lWFk1SUFsaU93bTFtVlZNS0k1ZGZ0WUJ2aEJjbkxINFZlZlBuRU1PVEN6VjVSSkptam82MERNSFdBWFYzM092Z3h0SlgxcmtPOUlmWGV3aUFlb0VDODlzdE5XTkZHVGZYMmNyeU5PY2VVbmFDOHhhdDNxVFpBd0huejFac3h5SzgzdmNYT2VjZzR3XzFJS2FmbFV3YWJkS2hCbVFJN0h1SGNtUHF1cHkwYWRvMDduUHM3VkNwLVVqYjRDT3NlVmtzTlVBNDY2TmtvZWc5MDR5QUNCUTJITzFTTmQ0WnJKSHVvWktDLXVqaUJ2UkN2cXJoaWk4bmZmVEtWRjlNcHdPelhiTUJJaG9MZFFRajQxckZyTFhsaVlpV0YxNVFUZGpPWWNHSWQyNzJqYVp5c0NoaVlCZldHLVJvalE2UFBBcWRMTEM0a2o5aEtXQXBJeGh2YWdRNFMwN2FIdWhhYzFpbUZWRGZ4cFctb0dYLXZ5RVdiVHg4a05YbkJQVEFpWjc0ZklvWWRyOGdGZVVYOXZuQ0ZDN3lW?oc=5",
+          "label": "Facebook"
         }
       ]
     },
@@ -362,39 +335,6 @@
       ]
     },
     {
-      "id": "40ed8aeeae70",
-      "brandName": "Climate Action Leadership",
-      "companyName": "Climate Action Leadership",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "นันยาง รับรางวัล “Climate Action Leadership 2026” ระดับเอเชียแปซิฟิก จากแคมเปญ Nanyang REBORN เปลี่ยน “ขยะจากรองเท้า” สู่คุณค่าใหม่ ตอกย้ำผู้นำแนวคิด Circular Economy ของแบรนด์ไทย -",
-      "buyingSignal": "New campaign",
-      "signalDate": "2026-10-07",
-      "whyNow": "นันยาง รับรางวัล “Climate Action Leadership 2026” ระดับเอเชียแปซิฟิก จากแคมเปญ Nanyang REBORN เปลี่ยน “ขยะจากรองเท้า” สู่คุณค่าใหม่ ตอกย้ำผู้นำแนวคิด Circular Economy ของแบรนด์ไทย -",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 16,
-        "revenue_potential": 14,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 8,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jNWZvZzhIQmd3dzJKbEJxX2p1N2NTUEFCaHk5c3REQmtRYVFmNElBRWh3czJtOGVOVUtwQWNiLVpSd1RISmowejNrelRnaDk5Vnh4ZXloVQ?oc=5",
-          "label": "Plewseengern.com"
-        }
-      ]
-    },
-    {
       "id": "f40748791594",
       "brandName": "GAC AION",
       "companyName": "GAC AION",
@@ -469,6 +409,43 @@
       ]
     },
     {
+      "id": "0b3768e5b4cd",
+      "brandName": "Thaimart",
+      "companyName": "Thaimart",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-15",
+      "whyNow": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 72,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZTZWODMwbzVCTGhrWnVHR2hXdXhTSDRiZU81RlNOWHBDWnFYV09OQkRxaDNpdGFpS0NMcFI3eW5CeGktZlRxYm45c202Rkd4NTFLazdBZk5hb3VzakU1Z1BjaXBVcTVMcUhaVm1HLWRWSDVwcmZMSGt2dHo0RnE1YTZKWEdFTzZzbWdUNk9Ub3F4bXIyRFVEeEdNTlE4cXRZZ29wVEtGZ3NQQlpINWhoc3JlN0VDWVpTY2lYenBCRTBfYU4xcGNxLXgzbXFCS2NoVUt2V2tTbHVZV3dsaU4xXw?oc=5",
+          "label": "การตลาดวันละตอน"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5YRFNuek1IZFJyNXA3MGprdFpRclQ1T1E5a3RNZkhzWTQ0dTVVUC1ETDE1M1hHZnhwQkFBS01oSThfeUFBRk1NVHBhRktDTlhKaEJORUpIWUt2U2tJdktVTzAzMTQySTdkdC1JS0JzNThNV1FfN0Zyd2ZXOA?oc=5",
+          "label": "การตลาดวันละตอน"
+        }
+      ]
+    },
+    {
       "id": "cd0b695591f2",
       "brandName": "MAGURO",
       "companyName": "MAGURO",
@@ -505,39 +482,6 @@
         },
         {
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB2d2JkNXZFLWdKT3hCVmxNa214bWRsM0xBVDFRVDMzRzlMbndyTlJ3T21xVVlfeWszZkZZdFdlYzhtdzBZenFPdGVfNVBLRGJQSlI4Sg?oc=5",
-          "label": "Marketeer Online"
-        }
-      ]
-    },
-    {
-      "id": "fe8f56eea616",
-      "brandName": "KEX",
-      "companyName": "KEX",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "KEX เผย Insight คนเมืองดันยอดส่งพัสดุพุ่ง ชูกลยุทธ์ “Urban Lifestyle Touchpoint” เจาะย่าน CBD รุกเปิดสาขา One City Centre",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-10-08",
-      "whyNow": "KEX เผย Insight คนเมืองดันยอดส่งพัสดุพุ่ง ชูกลยุทธ์ “Urban Lifestyle Touchpoint” เจาะย่าน CBD รุกเปิดสาขา One City Centre",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 12,
-        "buying_signal_strength": 18,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1RNnN4Y1U3NFpnTEY4QTJ4VXQyTHBGT1VnbDhTVjNJQUtrbHlIMHVDTVNCQXZLOW9mVy1FajZRMWJJcE5nbkZNQndZYTJfVUN3MmRNNA?oc=5",
           "label": "Marketeer Online"
         }
       ]
@@ -613,39 +557,6 @@
       ]
     },
     {
-      "id": "0b3768e5b4cd",
-      "brandName": "Thaimart",
-      "companyName": "Thaimart",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-07-15",
-      "whyNow": "วิเคราะห์ SME ไทยทำไมถึง “ขายดี แต่ไม่โต” ในงานเปิดตัวแพลตฟอร์ม Thaimart สำหรับ SME ไทย 2026",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZTZWODMwbzVCTGhrWnVHR2hXdXhTSDRiZU81RlNOWHBDWnFYV09OQkRxaDNpdGFpS0NMcFI3eW5CeGktZlRxYm45c202Rkd4NTFLazdBZk5hb3VzakU1Z1BjaXBVcTVMcUhaVm1HLWRWSDVwcmZMSGt2dHo0RnE1YTZKWEdFTzZzbWdUNk9Ub3F4bXIyRFVEeEdNTlE4cXRZZ29wVEtGZ3NQQlpINWhoc3JlN0VDWVpTY2lYenBCRTBfYU4xcGNxLXgzbXFCS2NoVUt2V2tTbHVZV3dsaU4xXw?oc=5",
-          "label": "การตลาดวันละตอน"
-        }
-      ]
-    },
-    {
       "id": "b89f3871add0",
       "brandName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
       "companyName": "20 ปี BOYY แบรนด์ลักชัวรี่ไทย",
@@ -679,39 +590,138 @@
       ]
     },
     {
-      "id": "0a25ba599131",
-      "brandName": "UPDATE",
-      "companyName": "UPDATE",
-      "industry": "Beauty / Personal Care",
+      "id": "78cf6d681dce",
+      "brandName": "HEYTEA",
+      "companyName": "HEYTEA",
+      "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "UPDATE: ออม-สุชาร์ เผยเบื้องหลัง ปลุกปั้นแบรนด์ Fleen Beauty สร้างยอดขาย 100 ล้านในตลาดเครื่องสำอางไทยไม่ง่าย แม้การเป็นดาราจะช่วยเปิดประตูสร้างการรับรู้ให้แบรนด์ได้ในเวลารวดเร็ว แต่การเปลี่ยนจากความนิยมสู่การบริหารธุรกิจที่ยั่งยืนนั้นไม่ใช่เรื่องง่าย โดยเฉพาะในตลาดเครื่องส",
-      "buyingSignal": "Social / commerce momentum",
-      "signalDate": "2026-09-21",
-      "whyNow": "UPDATE: ออม-สุชาร์ เผยเบื้องหลัง ปลุกปั้นแบรนด์ Fleen Beauty สร้างยอดขาย 100 ล้านในตลาดเครื่องสำอางไทยไม่ง่าย แม้การเป็นดาราจะช่วยเปิดประตูสร้างการรับรู้ให้แบรนด์ได้ในเวลารวดเร็ว แต่การเปลี่ยนจากความนิยมสู่การบริหารธุรกิจที่ยั่งยืนนั้นไม่ใช่เรื่องง่าย โดยเฉพาะในตลาดเครื่องส",
-      "momentum": "Exploding",
+      "thailandEvidence": "HEYTEA สาขาแรกในไทย เปิดแล้ว! พาส่อง HEYTEA LAB CentralWorld",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-28",
+      "whyNow": "HEYTEA สาขาแรกในไทย เปิดแล้ว! พาส่อง HEYTEA LAB CentralWorld",
+      "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
       "score": 69,
       "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 11,
-        "revenue_potential": 12,
-        "ooh_fit": 14,
-        "momentum": 8,
-        "timing": 5,
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
+        "timing": 10,
         "evidence_quality": 5
       },
       "priority": "MEDIUM",
-      "isNew": true,
+      "isNew": false,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMigAZBVV95cUxQaHBRSlVzLXVnTjdtOFJ1bnJSX0ZRNThPNEFJUUpRLUNoRjl2b2tER3ZSVDV5SVpmZ3p5UVpVRU5fWHBhRU1ENUlYanBjSE5TSnh1aUxvbjd3NUt5S1ZfbmhZckhVdV9RUUg3X29fNEROUVBoVmZWZ2NYZU9fZEt2Z3V1XzA5UTRjQ09uTmd5RkpCeW9mY09sS0hMWkR6cnVqbGpSRDVNQTZfeDVPZjNWdzdhajJKUXdXdlVvZ0N2dF9rUWdBYWt4TXFCbFpzbHp0TjVSaHd2bmFpZ2JSeXNXbGNQRXVEbDBwMWxvd21mLWhTSDNLaDdlQVBZWC1pbkh4UEZLQTY2TWFrc3RsZXlBWnlmMFhuRVNadlEzVndsY3N0c1ZENWhQQTBtYlQxdjM1LWpoa2t2akh2aVVRRW1jdk50a0VoaHlmdl90RFc1TVgwMGJhbHR4U1A0TEhzMEVwSkVaeU12SFQxRFFnUzRkaXc4Y1pDNlFLU1pYT0ZBSEdFdGo5cHRvQklldWFYYldGamdZek9TODVhZEpnTDVWWF9qRWJobGt1bVhUN3g5ZURUZk5qM3VTRlozdkJlY2VhV1JWVkR0NE8wMnlnenoxREFNYmVTbWlic3k4OW0zTklwZ2VoTmpBd1Vsb2dfMmV5ZWdJV3UyLWNYV3pUM09RbVI3QnVLT2FhX05OYzk0b0FYcFJZNGRTUHZMXzJrZkZzaHhuR0dpemIxdy1PSlhfbm1EdHRZdnRkYU9FcHJ5YUlfU0tOSnppbHZKblNvZlowZTZxTVV1c1BjWFozT3hkaXp6YUtXdXR1WU1senNjUVk1eEE1aF91RW43UkRLVGx5d3Z3el94dVlyWkxTWXVGU0FNNFJJWEs4b0ZiajhZSnVZWDBxaWFaSVNWVm10c29xSEIzaUs2MXpQelFpU1JQV1M2NDNpdmliOWxLcWhsQU9QLXl5TzB0SWJJTUlNWU13cTA3cUVNSHF0ZFFNd1otQXo5RVpQVktETHh5Vjh5anM?oc=5",
-          "label": "Facebook"
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uQ0NKSWNPb01aVy1JXzNqVTdYMGs3UmxUMGVzY2hUN3Y5cHlERGNBSk9DdG5pd3FLOW5IQ3Y0MW1BQlFFcEFjcjNWU3hFWnNGa016NWtuLWktUUYz?oc=5",
+          "label": "atime"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMioAdBVV95cUxNZDlKNS1RclMtRW5JbGd3cFNrNjc1N0w1S0NRU05NUEU5dk9yS19SdVplWV9BNmFqal95aFhJRUtKQmVEb1pqLW83VFBUUUxlbHN3MGgxek9iWmEyUHBMZGRHdWpRcWlXM05uZmpkSURuZlE4MWNyakx5UWdtd3dtOG04cjcwbXVWVzNpNmlJdnhZQTRMOE9fRnB5d3pDOW9vRlBBLUNxc05XYlo2Zm5Pcm1rd3poN0o5VzkzbWhIVHJaNWNiT3R3aVA3bmlFWHVRSWNlVldqXzJLaGxXMERaVEpJNnQyQ29CX2lSOEYzbUFIV09CUTluTGFaVERzbXpiQVBkRXJBYy1OSk1idTZDVk50SW1vWk1OeVBrRU9xMnQ5MW1IaHRZdjlQYUhLUTQwUllqYXdJZ284OC1HMXBfLXV1NXpfZGdQWkxuVXlOU2dTaFVwMGtzRXJrd2VVbmszdDBtZlI3bjBOX1lYeDRhbzY4YjFvRUNKOVlkbFpNdXM5czJ5emhtdnpYX19kVFc1WGh5Vm1NYXNfa21seUVCVEJFR01KY1J6MjNwSzdZM1JIWXRrUVNpbjhldzJpNnZzZkt4NVh4eHdXcDFDN0lETldhUERjbmRzQUN4MzNiSVRtN004S1Q4RkhXZjdsRUVaZXU0NUxiVDJlUTJSRjlnRjNmbTBublo3NGZrWUtkbEp0c0k0NjIwZ3pZUk1admMzVWNab0lFQ3VHc3FXRlVLb3RzcHFzMU0yMi0tNERjemdRWEJqLW5yQVB1MUFQUTFNbU9zXy0wemJkYm1VMHdiQUdVbjZHTDFyd01sSExHYUtpblBSeEU3bXg4UGd6RWEyc09aQ3R3am1ua0hXSmdtVFRCSnoxZUtXZ0E1MG1FLVUxelBGZlBaaURnWkZTV1FRMFhxUWRPM0lVSkVwZ21XRHhJRlh4VUJQRlFpZmtRczZoWE5mMHZrZHA1UGVOV2hwdmNKWWk4VmZpVlhlYklzV3JUM2VNeXFhNWZvSWFTZDFUR0dSTTd3YmZwX0pBUWlkc3ZBaVc4enI1MFFxUU5sRFpjckIyd1RJT1VXZ25rODBSTEFnMnh6WnczZHJWbnIwcVJyX2FRY3JFR1NWUEN4d3ZSVDN6UW1FU0tMU1dCV3EwMUs2dE92aEtRMGVnVmNkU1J2aWc5UHA1X2FxT0R2Zm01MWpkbzZsQi1kVGxhUktLbGVWMGllQkJId3dEUEgw?oc=5",
-          "label": "Facebook"
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5oLWtCM1dLcUFQbXdoZEtqTXdkN05Ea0IxZ0hYcHlJWXRmLXBZMjVtN0xSYk1MYXlGaXB1WTlUblM1NjNxVUhodEwtdw?oc=5",
+          "label": "ThaiPR.NET"
+        }
+      ]
+    },
+    {
+      "id": "e68ce5c6b538",
+      "brandName": "HAMA-SUSHI",
+      "companyName": "HAMA-SUSHI",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "HAMA-SUSHI เปิดสาขาที่ Siam Square One “เสิร์ฟตรง” ถึงผู้บริโภคชาวไทย เดินหน้าขยายอีก 2 สาขาปีนี้",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-08-31",
+      "whyNow": "HAMA-SUSHI เปิดสาขาที่ Siam Square One “เสิร์ฟตรง” ถึงผู้บริโภคชาวไทย เดินหน้าขยายอีก 2 สาขาปีนี้",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 68,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1SU44QWh1OUMyTVBkOTZVMDU3Wno3a1Vma19ZOGJ2QU9kX2dhTVJVU2dtc0s5SExyUFh1SURvZWxiQUtuVDMxSUQ3d2RBanZfQk9vLVJ3?oc=5",
+          "label": "มิติหุ้น"
+        }
+      ]
+    },
+    {
+      "id": "09cd68a2a77b",
+      "brandName": "ES",
+      "companyName": "ES",
+      "industry": "Hospital / Healthcare",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ES เปิดตัวเซรั่มบูสต์ผิว 3 สูตร พร้อมคว้า “บุ๊ค-กษิดิ์เดช ปลูกผล” นั่งแท่นพรีเซ็นเตอร์คนแรกของแบรนด์ เดินหน้าสร้างมาตรฐานใหม่ให้วงการ Medical Skincare ไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-04",
+      "whyNow": "ES เปิดตัวเซรั่มบูสต์ผิว 3 สูตร พร้อมคว้า “บุ๊ค-กษิดิ์เดช ปลูกผล” นั่งแท่นพรีเซ็นเตอร์คนแรกของแบรนด์ เดินหน้าสร้างมาตรฐานใหม่ให้วงการ Medical Skincare ไทย",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 67,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XR2xTYVFjUFFRRkVjV1JMODlZRnVBVGpjV3h3WUVadnlIRHhjQ2dtSlhBT2JBM3N3R1hMMmVoN0xSblM0TXFQSW14SkhiLWZmQTFzTkhJb2VUNXFMNWI1T1U5VTJmMWM?oc=5",
+          "label": "ผู้จัดการออนไลน์"
+        }
+      ]
+    },
+    {
+      "id": "3433fecce600",
+      "brandName": "เซนทรัม",
+      "companyName": "เซนทรัม",
+      "industry": "Hospital / Healthcare",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เซนทรัม เปิดตัว “แอน ทองประสม” พรีเซนเตอร์ใหม่ Centrum Silver 50+ แท็กทีม “เต ตะวัน” ชวนคนไทยดูแลสุขภาพให้พร้อมเต็มที่ในทุกวัน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-01",
+      "whyNow": "เซนทรัม เปิดตัว “แอน ทองประสม” พรีเซนเตอร์ใหม่ Centrum Silver 50+ แท็กทีม “เต ตะวัน” ชวนคนไทยดูแลสุขภาพให้พร้อมเต็มที่ในทุกวัน",
+      "momentum": "Active",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 67,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "MEDIUM",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5obG43aGZENlhvYlJNWU5lbWxhNzFUMGlUSzk4emxKXzFFUTZRckt3WVVDTjBveTJ0NHNjMm9qWkxSVlhlY2hpNmFkWjNZMFVW?oc=5",
+          "label": "ThaiPR.NET"
         }
       ]
     }
