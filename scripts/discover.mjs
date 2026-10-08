@@ -206,9 +206,10 @@ const selected=[], counts={};
 for(const l of leads){counts[l.industry]=counts[l.industry]||0;if(counts[l.industry]>=4)continue;selected.push(l);counts[l.industry]++;if(selected.length===20)break;}
 if(selected.length<20) for(const l of leads){if(selected.some(x=>x.id===l.id))continue;selected.push(l);if(selected.length===20)break;}
 
-for(const l of selected){const k=l.brandName.toLowerCase(),p=history.brands[k]||{};history.brands[k]={firstSeen:p.firstSeen||today,lastSeen:today,timesDetected:(p.timesDetected||0)+1,lastSignalHash:l.signalHash,lastSignal:l.buyingSignal};delete l.signalHash;}
+for(const l of selected){const k=l.brandName.toLowerCase(),p=history.brands[k]||{};history.brands[k]={firstSeen:p.firstSeen||today,lastSeen:today,timesDetected:(p.timesDetected||0)+(p.lastSeen===today?0:1),lastSignalHash:l.signalHash,lastSignal:l.buyingSignal};delete l.signalHash;delete l._headlines;}
 
 await fs.mkdir(new URL('../docs/data/',import.meta.url),{recursive:true});
-await fs.writeFile(DAILY_OUT,JSON.stringify({date:today,generatedAt:new Date().toISOString(),engine:'FREE-RSS-RULES-1.9.3.2',leads:selected},null,2));
+const engine=aiEnrichment.accepted>0?'HYBRID-RSS-GEMINI-1.0':'FREE-RSS-RULES-1.9.3.2';
+await fs.writeFile(DAILY_OUT,JSON.stringify({date:today,generatedAt:new Date().toISOString(),engine,aiEnrichment,leads:selected},null,2));
 await fs.writeFile(HISTORY_OUT,JSON.stringify(history,null,2));
 console.log(`Free Thailand Radar wrote ${selected.length} leads for ${today} from ${all.length} recent articles / ${grouped.size} candidate brands.`);
