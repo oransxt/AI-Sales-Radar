@@ -385,7 +385,7 @@ function detailHtml(l){
     '<div class="detail-hero">'+
       '<div><span class="badge '+priorityTone(l.priority)+'">'+esc(l.priority||'OPPORTUNITY')+' · '+Math.round(l.score||0)+'</span>'+
       '<h2>'+esc(l.brandName)+'</h2><div class="sub">'+esc(l.companyName||l.industry||'')+'</div></div>'+
-      '<div class="ready-badge">AUTO PREPARED</div>'+
+      '<div class="ready-badge">AUTO PREPARED'+(l.ai?.status==='validated'?' · GEMINI '+Math.round(l.ai.confidence*100)+'% CONFIDENCE':' · RULE ENGINE')+'</div>'+
     '</div>'+
     '<div class="decision-grid">'+
       '<section class="decision-section"><div class="section-label">BUYING SIGNAL</div><div class="section-value">'+esc(l.buyingSignal||'—')+'</div><div class="sub">'+esc(l.signalDate||'')+'</div></section>'+
