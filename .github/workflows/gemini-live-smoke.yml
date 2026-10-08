@@ -1,0 +1,14 @@
+name: Gemini Live Smoke Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: echo 'Manual smoke-test workflow scaffold.'
