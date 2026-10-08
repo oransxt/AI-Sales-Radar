@@ -181,7 +181,7 @@ for(const g of grouped.values()){
   const isUpdated=!!prior&&prior.lastSignalHash!==signalHash, isNew=!prior;
   if(prior&&!isUpdated) total-=10;
   const [rmin,rmax]=revenueRange(rev);
-  leads.push({id:idFor(g.brand),brandName:g.brand,companyName:g.brand,industry,brandType:/TikTok|Instagram|Shopee|Lazada|ไวรัล|creator|อินฟลูเอนเซอร์/i.test(combined)?'Emerging / Social-first':'Established / Growing',thailandEvidence:primary.headline,buyingSignal:sig.name,signalDate:primary.pubDate?new Date(primary.pubDate).toISOString().slice(0,10):today,whyNow:primary.headline,momentum:mom>=8?'Exploding':mom>=6?'Rising':'Active',revenueMinM:rmin,revenueMaxM:rmax,score:Math.max(0,total),scores,priority:priority(total),isNew,isUpdated,sources:items.slice(0,3).map((x,i)=>({url:x.link,label:x.source.label||`Google News source ${i+1}`})),signalHash});
+  leads.push({id:idFor(g.brand),brandName:g.brand,companyName:g.brand,industry,brandType:/TikTok|Instagram|Shopee|Lazada|ไวรัล|creator|อินฟลูเอนเซอร์/i.test(combined)?'Emerging / Social-first':'Established / Growing',thailandEvidence:primary.headline,buyingSignal:sig.name,signalDate:primary.pubDate?new Date(primary.pubDate).toISOString().slice(0,10):today,whyNow:primary.headline,momentum:mom>=8?'Exploding':mom>=6?'Rising':'Active',revenueMinM:rmin,revenueMaxM:rmax,score:Math.max(0,total),scores,priority:priority(total),isNew,isUpdated,sources:items.slice(0,3).map((x,i)=>({url:x.link,label:x.source.label||`Google News source ${i+1}`})),_headlines:items.slice(0,3).map(x=>x.headline),signalHash});
 }
 
 leads.sort((a,b)=>b.score-a.score||b.revenueMaxM-a.revenueMaxM);
