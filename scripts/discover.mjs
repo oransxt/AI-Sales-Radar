@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
+import { enrichLeads } from './gemini-enrich.mjs';
 
 const DAILY_OUT = new URL('../docs/data/daily.json', import.meta.url);
 const HISTORY_OUT = new URL('../docs/data/history.json', import.meta.url);
