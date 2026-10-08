@@ -813,6 +813,7 @@ async function loadAll(){
     const d=await apiGet('daily-radar');
     const radar=dedupeRadarRows(d.data||[]);
     app.daily={generatedAt:radar[0]?.Discovery_Date||'',leads:radar.map(lead)};
+    await attachAiInsights();
     app.prepared={};
     prepareAll();
     setConnection(true);
