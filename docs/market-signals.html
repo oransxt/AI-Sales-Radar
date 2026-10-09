@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Market Signals — AI Sales Radar</title>
+  <link rel="stylesheet" href="style.css?v=2380">
+  <style>
+    .ms-navlink{display:block;text-decoration:none;color:#dfe3f3;text-align:left;padding:11px 12px;border-radius:9px;font-size:13px}
+    .ms-navlink.active{background:linear-gradient(90deg,#4655ff,#654cff)}
+    .ms-navlink:hover{background:#2b3457}
+    .ms-subtitle{color:#7a8499;font-size:12px;margin-top:6px}
+    .ms-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+    .ms-metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px}
+    .ms-metric strong{font-size:27px;display:block}.ms-metric span{color:#69728a;font-size:11px}
+    .ms-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0}
+    .ms-status{font-size:11px;color:#69728a;margin-left:auto}
+    .ms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .ms-card{border:1px solid #e2e6f2;background:#fff;border-radius:15px;padding:19px;box-shadow:0 3px 12px #1d2b5210;min-width:0}
+    .ms-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+    .ms-head h3{font-size:23px;margin:5px 0}
+    .ms-signal{font-size:10px;letter-spacing:.055em;font-weight:800;color:#5155d6;text-transform:uppercase}
+    .ms-parent{font-size:11px;color:#69728a;margin:3px 0 8px}
+    .ms-badge{font-size:9px;font-weight:800;border-radius:99px;padding:6px 9px;white-space:nowrap;display:inline-block}
+    .ms-new{background:#e7f8ed;color:#147c44}.ms-existing{background:#edf0ff;color:#3f4dc4}
+    .ms-stop{background:#fff0ed;color:#a43d31}.ms-unknown{background:#f1f2f6;color:#6a7080}
+    .ms-headline{font-size:15px;font-weight:760;line-height:1.45;margin:14px 0 8px}
+    .ms-meta{font-size:10px;color:#7b8497;border-bottom:1px solid #edf0f6;padding-bottom:12px}
+    .ms-block,.ms-hypothesis,.ms-next{font-size:12px;line-height:1.55;margin-top:14px}
+    .ms-block b,.ms-hypothesis b,.ms-next b{font-size:10px;color:#53607a;letter-spacing:.03em}
+    .ms-block ul{padding-left:18px;margin:7px 0 0}.ms-block li{margin:4px 0}
+    .ms-hypothesis{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:#f7f7ff;border:1px solid #e8e7ff;border-radius:11px;padding:12px}
+    .ms-hypothesis p,.ms-next p{margin:5px 0 0}
+    .ms-next{background:#f8fafc;border-radius:9px;padding:11px}
+    .ms-warning{background:#fff3f0;color:#9e392c;border:1px solid #f8d5d0;border-radius:9px;padding:10px;font-size:11px;margin-top:10px;font-weight:700}
+    .ms-sources{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid #eef0f5;font-size:11px}
+    .ms-sources span{font-size:9px;font-weight:800;color:#69728a;margin-right:3px}
+    .ms-sources a{color:#4251cc;text-decoration:none;font-weight:650}
+    .ms-sources a:hover{text-decoration:underline}
+    .ms-small{font-size:10px;color:#69728a}
+    @media(max-width:1100px){.ms-grid{grid-template-columns:1fr}}
+    @media(max-width:700px){.ms-summary{grid-template-columns:1fr 1fr}.ms-hypothesis{grid-template-columns:1fr}.ms-head{display:block}.ms-badge{margin-top:5px}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><h1>AI SALES RADAR</h1><p>Market Intelligence · Live News Examples</p></div>
+      <nav class="nav" aria-label="Radar navigation">
+        <a class="ms-navlink" href="index.html">◎ Final Decision</a>
+        <a class="ms-navlink active" href="market-signals.html">◇ Market Signals</a>
+        <a class="ms-navlink" href="index.html">▣ Smart Credential Library</a>
+      </nav>
+      <div class="side-card">
+        <div class="sub" style="color:#cfd5eb">Public news samples</div>
+        <div class="big" id="msCount">—</div>
+        <div class="sub" style="color:#cfd5eb;margin-top:5px">Read-only · No Sheet writes</div>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div><h2>MARKET SIGNALS</h2><div class="subtitle">Real news → Buying Signal → Why Now → Sales Action</div></div>
+        <div class="spacer"></div>
+        <div class="sub" id="msDate"></div>
+        <button class="btn" id="reloadBtn">↻ Reload</button>
+      </header>
+      <div class="content">
+        <div class="notice demo-notice" id="msNotice"></div>
+        <div class="ms-summary">
+          <div class="ms-metric"><strong id="msExisting">—</strong><span>Found in Brand_Master</span></div>
+          <div class="ms-metric"><strong id="msNew">—</strong><span>Not found · New Lead Candidates</span></div>
+          <div class="ms-metric"><strong>0</strong><span>Auto Emails Sent</span></div>
+        </div>
+        <div class="ms-toolbar">
+          <button class="chip active" data-ms-filter="all">All News</button>
+          <button class="chip" data-ms-filter="new">New Lead Candidates</button>
+          <button class="chip" data-ms-filter="existing">Existing in Master</button>
+          <span class="ms-status" id="msStatus"></span>
+        </div>
+        <div class="notice bad" id="msError" style="display:none"></div>
+        <div class="ms-grid" id="msCards"><div class="empty">Loading…</div></div>
+        <p class="ms-small" style="margin-top:16px">Matched by exact Brand_Name / known aliases. "Not found" does not mean a verified new client; Sales must confirm group ownership and Salesforce status. This is a curated pilot example, not an automated dual discovery feed.</p>
+      </div>
+    </main>
+  </div>
+  <script src="market-signals.js?v=1"></script>
+</body>
+</html>
