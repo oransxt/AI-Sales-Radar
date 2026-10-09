@@ -1,0 +1,46 @@
+name: Market Signals Review Tests
+
+on:
+  pull_request:
+    paths:
+      - 'docs/market-signals.html'
+      - 'docs/market-signals.js'
+      - 'docs/data/market-signal-examples.json'
+      - 'docs/index.html'
+      - '.github/workflows/market-signals-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript syntax
+        run: node --check docs/market-signals.js
+      - name: Validate news source data and page links
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const j=JSON.parse(fs.readFileSync('docs/data/market-signal-examples.json','utf8'));
+          if(!Array.isArray(j.items)||j.items.length<4)throw Error('Need at least four sourced examples');
+          const ids=new Set(),brands=new Set();
+          for(const x of j.items){
+            if(!x.id||ids.has(x.id))throw Error('Duplicate or blank sample ID');
+            if(!x.brandName||brands.has(x.brandName))throw Error('Duplicate or blank brand');
+            ids.add(x.id);brands.add(x.brandName);
+            if(!x.signalDate||!x.signalType||!x.whyNow||!x.salesAngle||!x.nextAction)throw Error('Missing intelligence field: '+x.brandName);
+            if(!Array.isArray(x.facts)||!x.facts.length)throw Error('Missing source facts: '+x.brandName);
+            if(!Array.isArray(x.sources)||!x.sources.length||x.sources.some(s=>!/^https:\/\//.test(s.url)))throw Error('Invalid source: '+x.brandName);
+          }
+          const html=fs.readFileSync('docs/market-signals.html','utf8');
+          const index=fs.readFileSync('docs/index.html','utf8');
+          if(!html.includes('market-signals.js')||!index.includes('market-signals.html'))throw Error('Dashboard navigation missing');
+          console.log('PASS: '+j.items.length+' source-linked examples, unique brands, valid read-only page.');
+          NODE
