@@ -60,6 +60,7 @@ function render(){
   $('#msCards').innerHTML=filtered.length?filtered.map(cardHtml).join(''):'<div class="empty">ไม่พบรายการสำหรับตัวกรองนี้ หรือยังไม่ได้เชื่อม Brand_Master</div>';
   document.querySelectorAll('[data-ms-filter]').forEach(el=>el.classList.toggle('active',el.dataset.msFilter===state.filter));
   $('#msError').textContent=state.error;
+  $('#msError').style.display=state.error?'block':'none';
 }
 async function load(){
   $('#msCards').innerHTML='<div class="empty">Loading market signals…</div>';
