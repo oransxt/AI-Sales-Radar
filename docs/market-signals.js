@@ -77,7 +77,7 @@ async function load(){
   try{
     const u=new URL(localStorage.getItem(LS.url)||API_URL);
     u.searchParams.set('action','brands');u.searchParams.set('key',key);
-    u.searchParams.set('limit','500');u.searchParams.set('_ts',String(Date.now()));
+    u.searchParams.set('limit','2000');u.searchParams.set('_ts',String(Date.now()));
     const controller=new AbortController();
     const timer=setTimeout(()=>controller.abort(),18000);
     let response;
