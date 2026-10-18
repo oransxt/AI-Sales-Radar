@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-17",
-  "generatedAt": "2026-10-17T05:37:56.686Z",
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-18T05:55:30.777Z",
   "engine": "HYBRID-RSS-GEMINI-1.0",
   "aiEnrichment": {
     "status": "success",
@@ -11,149 +11,9 @@
   },
   "leads": [
     {
-      "id": "2eea5f2edf64",
-      "brandName": "LEPAS",
-      "companyName": "LEPAS",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-07-27",
-      "whyNow": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 85,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 20,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HOT",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVTJOWHowOXItY3ptdWIzZU1iSlZiNWVRRzVSeF9OXzFFRG9FOF8yTUhTNFFTNy1QR19ZOXpIR2REdUVDY2NFR1M4NHA0aXNOZ0NyemcxTEM?oc=5",
-          "label": "workpointtoday.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EN3hlTGFQbExicnl6NVFTcnJMeTY3TUdkMmxLNVpic2tJZmtneE45X0dldEI5X3NXUmhxS2Fhb2o2MGVOakNSWTNNclFwa3NmNnZmMkJPaGt2QQ?oc=5",
-          "label": "Autospinn.com"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการในประเทศไทยพร้อมเปิดตัวรถยนต์ไฟฟ้า LEPAS L6 EV",
-        "whyNow": "เป็นการเริ่มต้นทำตลาดในประเทศไทยอย่างเป็นทางการเพื่อสร้างการรับรู้แบรนด์",
-        "salesAngle": "กลยุทธ์การสร้างแบรนด์และการสื่อสารการตลาดสำหรับรถยนต์ไฟฟ้าแบรนด์ใหม่ในไทยเป็นอย่างไร",
-        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารฝ่ายการตลาดเพื่อทำความเข้าใจแผนการสร้างแบรนด์ในระยะยาว",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "b73b1a6e29f3",
-      "brandName": "TSUTAYA BOOKSTORE",
-      "companyName": "TSUTAYA BOOKSTORE",
-      "industry": "Entertainment",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-16",
-      "whyNow": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 85,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HOT",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tdUdEMWFyZTgzMGQ0cFh2S0t2VlhtNlhoaFZueE50SVNjQjBhUVJDeER5RzliYUhnMHZHMU0wWklIWFRLeEw1LXp1eWEyS25EYVk3VDVXd0FuM1p2ZHJn?oc=5",
-          "label": "The Momentum"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "TSUTAYA BOOKSTORE เตรียมเปิดสาขาแรกในไทย",
-        "whyNow": "เป็นการขยายธุรกิจร้านหนังสือไลฟ์สไตล์เข้ามาในตลาดไทย",
-        "salesAngle": "แนวทางการสร้างพื้นที่ไลฟ์สไตล์และประสบการณ์ลูกค้าในร้านหนังสือสาขาแรกในไทยเป็นอย่างไร",
-        "nextBestAction": "ติดต่อฝ่ายสื่อสารองค์กรเพื่อสอบถามกำหนดการเปิดตัวและแนวคิดของสาขา",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "4e8be987c392",
-      "brandName": "BITETO",
-      "companyName": "BITETO",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "จาก “ข้าวหอมมะลิไทย” สู่ Rice Snack ดีไซน์ใหม่เพื่อคนรุ่นใหม่ MultiplyByEight (X8) เปิดตัวแบรนด์ “BITETO (ไบท์โตะ)” ปั้นขนมข้าวอบกรอบผ่าน Character Marketing เจาะ Gen Y – Gen Z",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-10-15",
-      "whyNow": "จาก “ข้าวหอมมะลิไทย” สู่ Rice Snack ดีไซน์ใหม่เพื่อคนรุ่นใหม่ MultiplyByEight (X8) เปิดตัวแบรนด์ “BITETO (ไบท์โตะ)” ปั้นขนมข้าวอบกรอบผ่าน Character Marketing เจาะ Gen Y – Gen Z",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 82,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBZaDJlVFVpcU95Wk84S2o3MVROOGN4cmJVMVJZdVRrMEhaSUdaN1BtVGJMSmlleE1PTWhVSEtDSDNDM1k1SG5ydC1mOFhpdkFrTkZn?oc=5",
-          "label": "Positioningmag"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tTDZhal9xbDR5T1FOc0F6Y0pDX1d2SFRJbHlIU2t5QktEYkRyNHVZVy1xcnk3WWpROVM3OEpwQllNX21QdE9EYmpHN1ZEa1dmMHptc2c4eFpyOVdNMlk4TU5lVWI4YjQ?oc=5",
-          "label": "Brand Buffet"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "MultiplyByEight เปิดตัวแบรนด์ขนมข้าวอบกรอบ BITETO โดยใช้กลยุทธ์ Character Marketing เจาะกลุ่ม Gen Y และ Gen Z",
-        "whyNow": "ต้องการสร้างความแตกต่างในตลาดขนมขบเคี้ยวด้วยการใช้คาแรคเตอร์ดึงดูดคนรุ่นใหม่",
-        "salesAngle": "การใช้ Character Marketing มีบทบาทอย่างไรในการสร้าง Brand Awareness สำหรับสินค้ากลุ่มขนมขบเคี้ยว",
-        "nextBestAction": "ติดต่อฝ่ายการตลาดเพื่อสอบถามถึงแผนการสร้างการรับรู้แบรนด์ผ่านช่องทางดิจิทัล",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "ccb700525b66",
-      "brandName": "ยัสปาล กรุ๊ป",
-      "companyName": "ยัสปาล กรุ๊ป",
+      "id": "326419084faf",
+      "brandName": "SATUR",
+      "companyName": "SATUR",
       "industry": "Retail / Fashion",
       "brandType": "Established / Growing",
       "thailandEvidence": "ยัสปาล กรุ๊ป เดินหน้าสู่การเป็น “A Regional Fashion and Lifestyle House of Brands” เปิดตัว SATUR แบรนด์แฟชั่นมาแรงจากเกาหลี ครั้งแรกในไทยและเอเชียตะวันออกเฉียงใต้",
@@ -163,7 +23,7 @@
       "momentum": "Exploding",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 79,
+      "score": 89,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
@@ -173,9 +33,9 @@
         "timing": 10,
         "evidence_quality": 3
       },
-      "priority": "HIGH",
+      "priority": "HOT",
       "isNew": false,
-      "isUpdated": false,
+      "isUpdated": true,
       "sources": [
         {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15VFd3eWRVOFlWZUcyMWFrNzg0MmFuODUzOE90T0RJbk41eDBvMW9qdmtBb1I0aEYtb0liX0I2ZGx6YUxiZUNzMG1USTJ0ci1wOElz?oc=5",
@@ -186,62 +46,18 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "ยัสปาล กรุ๊ป นำเข้าแบรนด์แฟชั่น SATUR จากเกาหลีเข้ามาทำตลาดในไทยและเอเชียตะวันออกเฉียงใต้",
-        "whyNow": "เป็นการขยายพอร์ตโฟลิโอแบรนด์แฟชั่นเพื่อตอบโจทย์กลุ่มลูกค้าไลฟ์สไตล์ในภูมิภาค",
-        "salesAngle": "แนวทางการทำตลาดและกลุ่มเป้าหมายหลักสำหรับแบรนด์แฟชั่นเกาหลีที่นำเข้ามาใหม่คือกลุ่มใด",
-        "nextBestAction": "ติดต่อฝ่ายบริหารแบรนด์เพื่อสอบถามถึงแผนการเปิดตัวและกิจกรรมส่งเสริมการขาย",
+        "businessContext": "ยัสปาล กรุ๊ป นำเข้าแบรนด์แฟชั่น SATUR จากเกาหลีเข้ามาทำตลาดในไทยและเอเชียตะวันออกเฉียงใต้เป็นครั้งแรก",
+        "whyNow": "เป็นการขยายพอร์ตโฟลิโอแบรนด์แฟชั่นของยัสปาล กรุ๊ป เพื่อตอบโจทย์ตลาดไลฟ์สไตล์",
+        "salesAngle": "ยัสปาล กรุ๊ป มีแนวทางในการสร้างความแตกต่างให้กับแบรนด์ SATUR ในตลาดแฟชั่นไทยอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายบริหารแบรนด์ของยัสปาล กรุ๊ป เพื่อสอบถามทิศทางการทำตลาดของแบรนด์ใหม่",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "78cf6d681dce",
-      "brandName": "heytea",
-      "companyName": "heytea",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "แบรนด์ชาดัง ‘heytea’ บุกไทย เปิด ‘แล็บชา’ ระดับท็อป ชูนวัตกรรม-ประสบการณ์ แห่งแรกในอาเซียน",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-09-28",
-      "whyNow": "แบรนด์ชาดัง ‘heytea’ บุกไทย เปิด ‘แล็บชา’ ระดับท็อป ชูนวัตกรรม-ประสบการณ์ แห่งแรกในอาเซียน",
-      "momentum": "Active",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 78,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SZC1KeTE2em9sUTZfUHQ4WEhucEZYcXBESjFPUWxQdlc5dlU5X25KNGFxd2p1bFJDVnZvOWU5clZIYlpFTHlZZ2NzeVI4VFlMSmZHZUc5OUh0N0Fwd09hVC1UeWNlMVNmbkJCV0ZB?oc=5",
-          "label": "มติชนออนไลน์"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.9,
-        "businessContext": "heytea แบรนด์ชาชื่อดังเปิดสาขาแรกในไทยในรูปแบบแล็บชาเพื่อสร้างประสบการณ์ใหม่",
-        "whyNow": "การขยายตลาดสู่ประเทศไทยเพื่อสร้างฐานลูกค้าใหม่ในภูมิภาคอาเซียน",
-        "salesAngle": "แนวทางการสร้างความแตกต่างในตลาดเครื่องดื่มที่มีการแข่งขันสูงผ่านนวัตกรรมและประสบการณ์ลูกค้าเป็นอย่างไร",
-        "nextBestAction": "นัดหมายกับผู้บริหารแบรนด์เพื่อสอบถามถึงแผนการขยายสาขาและกลยุทธ์การตลาดในไทย",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "645522f0742e",
-      "brandName": "Li Auto VOYAH",
-      "companyName": "Li Auto VOYAH",
+      "id": "2d8e94f5fd77",
+      "brandName": "Li Auto VOYAH LUXEED",
+      "companyName": "Li Auto VOYAH LUXEED",
       "industry": "Automotive",
       "brandType": "Established / Growing",
       "thailandEvidence": "รถจีนไม่หวั่นขึ้นภาษี EV 3 แบรนด์ใหม่จ่อเข้าไทย Li Auto VOYAH LUXEED",
@@ -251,7 +67,7 @@
       "momentum": "Active",
       "revenueMinM": 5,
       "revenueMaxM": 10,
-      "score": 77,
+      "score": 87,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
@@ -261,8 +77,8 @@
         "timing": 10,
         "evidence_quality": 3
       },
-      "priority": "HIGH",
-      "isNew": false,
+      "priority": "HOT",
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
@@ -273,11 +89,147 @@
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.85,
-        "businessContext": "มีรายงานข่าวว่าแบรนด์รถยนต์ไฟฟ้า Li Auto, VOYAH และ LUXEED เตรียมเข้าทำตลาดในไทย",
-        "whyNow": "เป็นกระแสความสนใจในตลาดรถยนต์ไฟฟ้าไทยที่แบรนด์จีนยังคงให้ความสำคัญแม้มีปัจจัยด้านภาษี",
-        "salesAngle": "ความพร้อมและกลยุทธ์การเข้าสู่ตลาดไทยของแบรนด์รถยนต์ไฟฟ้าใหม่เหล่านี้เป็นอย่างไร",
-        "nextBestAction": "ติดตามข่าวสารการจดทะเบียนบริษัทหรือการแต่งตั้งตัวแทนจำหน่ายอย่างเป็นทางการ",
+        "confidence": 0.9,
+        "businessContext": "มีรายงานข่าวว่าแบรนด์รถยนต์ไฟฟ้าจีน 3 แบรนด์ ได้แก่ Li Auto, VOYAH และ LUXEED เตรียมเข้าสู่ตลาดไทย",
+        "whyNow": "เป็นช่วงเวลาที่แบรนด์รถยนต์ไฟฟ้าจีนกำลังพิจารณาขยายตลาดเข้ามาในไทยท่ามกลางการแข่งขันที่สูง",
+        "salesAngle": "แบรนด์มีแผนการสร้างความเชื่อมั่นให้กับผู้บริโภคชาวไทยอย่างไรในสภาวะการแข่งขันของตลาด EV",
+        "nextBestAction": "ติดตามความคืบหน้าการจัดตั้งบริษัทหรือตัวแทนจำหน่ายอย่างเป็นทางการในไทย",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "cba18f76acca",
+      "brandName": "Berwick 1707",
+      "companyName": "Berwick 1707",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Berwick 1707 เปิด Official Store แห่งแรกในไทย ปักหมุด Central Embassy วางเป้าขยาย 7 สาขาภายในปี 2572",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-17",
+      "whyNow": "Berwick 1707 เปิด Official Store แห่งแรกในไทย ปักหมุด Central Embassy วางเป้าขยาย 7 สาขาภายในปี 2572",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MaERFNmttSi11ZExvTnRHVDhqbW03N2M4UEZDcEFvb0ZBWVkwbnNGWU9BOXUzR0pGZld1QWVwUkJOYWMxTGVoTXZKUzJOTm0taHc?oc=5",
+          "label": "workpointtoday.com"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
+          "label": "Brand Inside"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "Berwick 1707 แบรนด์รองเท้าจากสเปนเปิดสาขาแรกที่ Central Embassy และวางแผนขยายรวม 7 สาขาภายในปี 2572",
+        "whyNow": "แบรนด์กำลังอยู่ในช่วงเริ่มต้นของการขยายสาขาอย่างเป็นทางการในประเทศไทย",
+        "salesAngle": "กลยุทธ์การเลือกทำเลที่ตั้งสำหรับสาขาถัดไปของแบรนด์มีเกณฑ์การตัดสินใจอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารแบรนด์เพื่อทำความเข้าใจแผนการขยายสาขาในอนาคต",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "1b510335c719",
+      "brandName": "Hyundai",
+      "companyName": "Hyundai",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ฮุนได เสริมแกร่งจุดแข็ง-เปิดเกมเขย่าตลาด MPV ด้วย Hybrid 11 ที่นั่ง ครั้งแรกในไทย เปิดตัว “Hyundai new STARIA Hybrid” คันเดียวครบ เพื่อครอบครัว-ธุรกิจ-เดินทางไกล ราคาเริ่มต้น 2.099 ล้านบาท",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-09-11",
+      "whyNow": "ฮุนได เสริมแกร่งจุดแข็ง-เปิดเกมเขย่าตลาด MPV ด้วย Hybrid 11 ที่นั่ง ครั้งแรกในไทย เปิดตัว “Hyundai new STARIA Hybrid” คันเดียวครบ เพื่อครอบครัว-ธุรกิจ-เดินทางไกล ราคาเริ่มต้น 2.099 ล้านบาท",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 85,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9zc1ZCeE5TRnlCUFBNbUJOQVZ5aHJfaE9ZMzIteV9FemJ4NDNRYWhYQjFNNEc2WEFVemVVT0dyY1pvUmdRTXVlNG1OLUlrQTRPVWNGdEVhcUlfUHNralhtUVZVS0FSWEk2UHpHVjA4XzF4eU1BNFhmdWdB?oc=5",
+          "label": "iMoD"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "ฮุนไดเปิดตัว Hyundai new STARIA Hybrid รุ่น 11 ที่นั่งในประเทศไทยเป็นครั้งแรก",
+        "whyNow": "เป็นการขยายไลน์อัพผลิตภัณฑ์เพื่อเจาะกลุ่มครอบครัวและธุรกิจในไทย",
+        "salesAngle": "กลยุทธ์การสื่อสารเพื่อสร้างความแตกต่างในตลาดรถยนต์ MPV ของฮุนไดคืออะไร",
+        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารฝ่ายการตลาดเพื่อสอบถามถึงแผนการสร้างการรับรู้สำหรับรุ่นใหม่",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "4e8be987c392",
+      "brandName": "BITETO",
+      "companyName": "BITETO",
+      "industry": "FMCG",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "จาก “ข้าวหอมมะลิไทย” สู่ Rice Snack ดีไซน์ใหม่เพื่อคนรุ่นใหม่ MultiplyByEight (X8) เปิดตัวแบรนด์ “BITETO (ไบท์โตะ)” [PR]",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-10-15",
+      "whyNow": "จาก “ข้าวหอมมะลิไทย” สู่ Rice Snack ดีไซน์ใหม่เพื่อคนรุ่นใหม่ MultiplyByEight (X8) เปิดตัวแบรนด์ “BITETO (ไบท์โตะ)” [PR]",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 80,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tTDZhal9xbDR5T1FOc0F6Y0pDX1d2SFRJbHlIU2t5QktEYkRyNHVZVy1xcnk3WWpROVM3OEpwQllNX21QdE9EYmpHN1ZEa1dmMHptc2c4eFpyOVdNMlk4TU5lVWI4YjQ?oc=5",
+          "label": "Brand Buffet"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "MultiplyByEight (X8) เปิดตัวแบรนด์ขนมขบเคี้ยวใหม่ BITETO ที่ทำจากข้าวหอมมะลิไทยเพื่อเจาะกลุ่มคนรุ่นใหม่",
+        "whyNow": "เป็นการเปิดตัวผลิตภัณฑ์ใหม่เข้าสู่ตลาดเพื่อสร้างการรับรู้แบรนด์ในช่วงเริ่มต้น",
+        "salesAngle": "แบรนด์มีแผนการสร้างการรับรู้หรือกลยุทธ์การเข้าถึงกลุ่มเป้าหมายคนรุ่นใหม่ผ่านช่องทางใดบ้าง",
+        "nextBestAction": "นัดหมายพูดคุยกับทีมการตลาดของ X8 เพื่อทำความเข้าใจแผนการสื่อสารแบรนด์",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -322,58 +274,10 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "Blue Bottle Coffee เปิดสาขาแรกในไทยที่ Central Park พร้อมเมนูคอลแลบพิเศษ",
-        "whyNow": "เป็นการเปิดตัวสาขาแรกในอาเซียนเพื่อรองรับความต้องการของคอกาแฟในไทย",
-        "salesAngle": "กลยุทธ์การสร้างประสบการณ์ลูกค้าและการคอลแลบกับแบรนด์ท้องถิ่นมีผลต่อการสร้างฐานแฟนคลับอย่างไร",
-        "nextBestAction": "เข้าเยี่ยมชมสาขาเพื่อสังเกตการณ์การตอบรับของลูกค้าและกระบวนการดำเนินงาน",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "8e2a5663d8d3",
-      "brandName": "Berwick",
-      "companyName": "Berwick",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Berwick 1707 เปิด Official Store แห่งแรกในไทย ปักหมุด Central Embassy วางเป้าขยาย 7 สาขาภายในปี 2572",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-17",
-      "whyNow": "Berwick 1707 เปิด Official Store แห่งแรกในไทย ปักหมุด Central Embassy วางเป้าขยาย 7 สาขาภายในปี 2572",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 77,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MaERFNmttSi11ZExvTnRHVDhqbW03N2M4UEZDcEFvb0ZBWVkwbnNGWU9BOXUzR0pGZld1QWVwUkJOYWMxTGVoTXZKUzJOTm0taHc?oc=5",
-          "label": "workpointtoday.com"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
-          "label": "Brand Inside"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "Berwick 1707 เปิดสาขาแรกที่ Central Embassy และวางแผนขยายสาขาเพิ่มเป็น 7 แห่งภายในปี 2572",
-        "whyNow": "เป็นการขยายช่องทางการจัดจำหน่ายเพื่อเข้าถึงกลุ่มลูกค้าในไทยอย่างเป็นรูปธรรม",
-        "salesAngle": "แผนการขยายสาขาในอนาคตมีแนวทางในการเลือกทำเลและกลุ่มลูกค้าเป้าหมายอย่างไร",
-        "nextBestAction": "นัดหมายพูดคุยกับผู้จัดการแบรนด์เพื่อสอบถามถึงแผนการขยายสาขาและกลยุทธ์การตลาด",
+        "businessContext": "Blue Bottle Coffee เปิดสาขาแรกในไทยที่ Central Park พร้อมชูจุดเด่นเครื่องชงกาแฟระดับพรีเมียมและเมนูคอลแลบเฉพาะที่ไทย",
+        "whyNow": "เป็นการเปิดตัวสาขาแรกในอาเซียนซึ่งได้รับความสนใจอย่างมากจากผู้บริโภค",
+        "salesAngle": "แบรนด์มีแผนการรักษาฐานลูกค้าและสร้างประสบการณ์ลูกค้าในระยะยาวอย่างไรหลังจากกระแสเปิดตัว",
+        "nextBestAction": "เข้าพบผู้จัดการสาขาหรือตัวแทนแบรนด์เพื่อสอบถามถึงแผนการดำเนินงานในไทย",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -422,10 +326,10 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "Meta One เปิดตัวบริการแบบเสียเงินในไทยเพื่ออัปเกรดฟีเจอร์ AI บน Facebook, Instagram และ WhatsApp",
-        "whyNow": "เป็นการขยายบริการดิจิทัลใหม่เพื่อสร้างรายได้จากผู้ใช้งานในประเทศไทย",
-        "salesAngle": "กลยุทธ์การสื่อสารเพื่อเปลี่ยนผู้ใช้งานฟรีให้เป็นผู้ใช้งานแบบเสียเงินในไทยมีแนวทางอย่างไร",
-        "nextBestAction": "ศึกษาข้อมูลบริการและแนวทางการสื่อสารการตลาดของ Meta One ในประเทศไทย",
+        "businessContext": "Meta เปิดตัวบริการ Meta One ในไทยสำหรับ Facebook, Instagram และ WhatsApp เพื่ออัปเกรดฟีเจอร์ AI และบริการพิเศษ",
+        "whyNow": "เป็นการเปิดตัวบริการใหม่ที่เน้นการสร้างรายได้จากผู้ใช้งานในประเทศไทย",
+        "salesAngle": "แบรนด์มีกลยุทธ์ในการจูงใจผู้ใช้งานชาวไทยให้เปลี่ยนมาใช้บริการแบบเสียค่าสมาชิกอย่างไร",
+        "nextBestAction": "ติดต่อตัวแทนของ Meta ในไทยเพื่อสอบถามถึงกลยุทธ์การตลาดสำหรับบริการใหม่",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -465,32 +369,216 @@
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.8,
-        "businessContext": "มีการเตรียมเปิดตัว Honda Super-ONE EV รุ่นลิมิเต็ด 30 คันในไทย",
-        "whyNow": "เป็นการสร้างกระแสความสนใจผ่านสินค้าจำนวนจำกัด",
-        "salesAngle": "กลยุทธ์การตลาดสำหรับสินค้าลิมิเต็ดเอดิชั่นในกลุ่มยานยนต์มีผลต่อภาพลักษณ์แบรนด์อย่างไร",
-        "nextBestAction": "ติดตามรายละเอียดกิจกรรมการเปิดตัวและกลุ่มลูกค้าเป้าหมาย",
+        "confidence": 0.85,
+        "businessContext": "มีการประกาศเตรียมเปิดตัวรถยนต์ไฟฟ้า Honda Super-ONE EV รุ่นลิมิเต็ดจำนวน 30 คันในไทย",
+        "whyNow": "เป็นการเปิดตัวผลิตภัณฑ์รุ่นพิเศษเพื่อสร้างภาพลักษณ์แบรนด์ในตลาดรถยนต์ไฟฟ้า",
+        "salesAngle": "กลยุทธ์การคัดเลือกกลุ่มลูกค้าเป้าหมายสำหรับรถยนต์รุ่นลิมิเต็ดนี้เป็นอย่างไร",
+        "nextBestAction": "สอบถามข้อมูลเพิ่มเติมจากฝ่ายการตลาดของ Honda เกี่ยวกับกิจกรรมเปิดตัว",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "4ec00c52b56b",
-      "brandName": "คอลเกต",
-      "companyName": "คอลเกต",
-      "industry": "Beauty / Personal Care",
+      "id": "7082ceb3393f",
+      "brandName": "กลุ่มธนบุรี",
+      "companyName": "กลุ่มธนบุรี",
+      "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "คอลเกต เขย่าวงการ Oral Beauty! เปิดตัวยาสีฟัน “Optic White™ Vitamin C” คว้า “j-hope แห่ง BTS” นั่งแท่นแอมบาสเดอร์เอเชียแปซิฟิกและประเทศไทย เสริมทัพด้วยเซเล็บรับเชิญ ‘ต้าอู๋ - นัท นิสามณี’ ในงาน Experiential Launch [PR]",
-      "buyingSignal": "New presenter / ambassador",
-      "signalDate": "2026-09-18",
-      "whyNow": "คอลเกต เขย่าวงการ Oral Beauty! เปิดตัวยาสีฟัน “Optic White™ Vitamin C” คว้า “j-hope แห่ง BTS” นั่งแท่นแอมบาสเดอร์เอเชียแปซิฟิกและประเทศไทย เสริมทัพด้วยเซเล็บรับเชิญ ‘ต้าอู๋ - นัท นิสามณี’ ในงาน Experiential Launch [PR]",
+      "thailandEvidence": "กลุ่มธนบุรี คว้าสิทธิ์ผู้แทนจำหน่าย smart อย่างเป็นทางการ เตรียมเปิดตัว EV พรีเมียม 3 รุ่นรวดในไทย",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-10-05",
+      "whyNow": "กลุ่มธนบุรี คว้าสิทธิ์ผู้แทนจำหน่าย smart อย่างเป็นทางการ เตรียมเปิดตัว EV พรีเมียม 3 รุ่นรวดในไทย",
       "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 76,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9rZ1o2NlhlcW4xeGRFZFdpUkZqeDhfeVQwblhvbnk2bndza1ZPTW1iWDN1cGF1VTFYRHBadVQyNDgzZF9PUFNwVEVjS1I3d3VJXzBBdGY5U2FIQWplRUhmdkdfMkUzNkJySFB2YVJoNWlERUhNVDdZMUduWkx5YWM?oc=5",
+          "label": "iMoD"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "กลุ่มธนบุรีได้รับสิทธิ์เป็นผู้แทนจำหน่ายแบรนด์ smart และเตรียมเปิดตัวรถยนต์ไฟฟ้าพรีเมียม 3 รุ่นในไทย",
+        "whyNow": "เป็นการเริ่มต้นบทบาทใหม่ในฐานะผู้แทนจำหน่ายแบรนด์รถยนต์ไฟฟ้าพรีเมียม",
+        "salesAngle": "กลุ่มธนบุรีมีแผนการสร้างการรับรู้แบรนด์ smart ในตลาดไทยอย่างไรให้แตกต่างจากคู่แข่ง",
+        "nextBestAction": "นัดหมายพูดคุยกับทีมบริหารของกลุ่มธนบุรีเพื่อสอบถามแผนการเปิดตัว",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "0a25ba599131",
+      "brandName": "UPDATE",
+      "companyName": "UPDATE",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "UPDATE: Human Made แบรนด์สตรีทแวร์ญี่ปุ่นที่ขายเต็มราคามาตลอด เร่งบุกตลาดโลก ซีอีโอชี้ไทยนำการเติบโตของลูกค้าในอาเซียน Human Made แบรนด์สตรีทแวร์ระดับพรีเมียมจากญี่ปุ่น กำลังเร่งขยายตลาดทั่วโลกจากความต้องการของลูกค้าต่างประเทศที่แข็งแกร่ง โดยหวังว่าร้านแฟลก",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-10-02",
+      "whyNow": "UPDATE: Human Made แบรนด์สตรีทแวร์ญี่ปุ่นที่ขายเต็มราคามาตลอด เร่งบุกตลาดโลก ซีอีโอชี้ไทยนำการเติบโตของลูกค้าในอาเซียน Human Made แบรนด์สตรีทแวร์ระดับพรีเมียมจากญี่ปุ่น กำลังเร่งขยายตลาดทั่วโลกจากความต้องการของลูกค้าต่างประเทศที่แข็งแกร่ง โดยหวังว่าร้านแฟลก",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
       "score": 76,
       "scores": {
         "thailand_relevance": 14,
-        "buying_signal_strength": 17,
+        "buying_signal_strength": 18,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMi4AZBVV95cUxOYUYwOWxNVEl1cVdzTk9JRmxJdjM1N2dPZ2tfZUhLVXg3SHpHQno1S2ZoM2UwQy1ZejF2djJ4LVZUUUtfOVBPSFRpVG9kTy1wb1FPTHFYTUNLaldfSkZVQmVjNGUtOGljMmZvT3F1dms4a29zcmpPcVl3OVpONm95WmFQYjZFdnhQckh5cmdGOGJXVWx2MjhZaHQyaWphbnJmX21Eam8yTml5dTFmWlNBbUc0VzZKZ0xHV1ZfX3BRVXlJTGpDbVFKZTE2M0dFSzFNQm1HS2s0OWFtQVhrNGdWaU5DRVdQWWdha2NlQWpuOGtwcDJ2SktvSlN4SnM4bUVyZXZnZy1yUi1tT18zaUFsT3J3SXFjemhIeUdVdUVFbVBHby0zU0p3SEF2bWVEWXZmWkI0WDhUU0QxQ2VqMkNJRFlkUnpNQkRNVXA2SHZTb2xfRDRJa29vMUJYenB1OFZHTF8tSjY4TGY3RGpVU05VZjluc21HWUtoa3g1Q3JNOWZZSWR5azZrZ21rU0RaWUxwbC1qcXVWMklVNS1MTEY0VGo5dTdIeGFUTEhEdTBmR3NyWU5admdHTUtXZEZjMEV2b1N5QVlOQkhmdjZndERPbFpYUVVzNENuQVprclZCdGdFbTZCOWFRTGdlblp5OGtjUkJ2RWZVeHRIcXdYX2I1SmF2bllOeFd4d01XRG5rZXNfdzRNeHFHZzNidW9wQkFLODRCZUVSbHF6NDFvbzd5eWlVempUR09PRUo3YlBhQWo2cWM3WVlCRWRhaURpWE5FdDhxTTNCWXVYclRjSERPbXdwYlFYOXVtQTFwMHFOSF9OM3NGbW5iTlpJV1VVNzdYVnRqMUJONzRoUTVTOUFqdUpzZkplUHRQaFZTS1NqVnk2OXcwRmZqUHJQN2dVaEljOVZ4TE9pNFNVc3pxOXQtZkU3NWRtelBMZ3c1eHQyV3R2aDg0ZThjMW1KR2d1OWF1UWZweHBNTld1anFrcm1QNmp1LXVKa2k5VXFSWTFvTXdJT0VFTXppdGdNclNXcTYwdEo4LVRsSU45bHN4OS1ScnFzeHQ0VHJfQWVRN1BsTzV4ck5XNmVxbEFfUk1DeXVDV3l0TUowQU1mVGtuaXMzZTJDRmNEX2tZRVROSGVNUUs?oc=5",
+          "label": "Facebook"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiywVBVV95cUxNbm9LUzBiQldUd1VrMWJ0a0pFRGd6NUFPaTlndVlaOWpVbDBnVXhiQ2JJem9qZGlGTmdnTXVVb1lPc2lIVzVPUmFaQlRDUXpZMTVHV1c2LXJKcjlSRm1GeTdMTV92b2lxWUxlNWZoaThael9XUU8waWoyenU1Rm4xT2RjVXVTZFN3cmgySkdxbGJCWDJuX254bWtEbHVGZzFFSnRCcFpXbXlXQWNoZ3lUbzRONWpsSGo2RGF3b1h0S3lWV2o2RDIycXBVMHR3dmE5enRkYzBCQW9lWXFiOE40R3NXV1h1ekptWVVKSEMyS2NNNEJuVV9hM2JsZ1ktUVEtR2ZRMlhUblBPMWdEdEtXeDJMQjFUTS1PU0VsUDhabmw0VWNjbjN1bDRpQzRScURqcm1VRXNwOTB6alRXejJjNEtPbWtxTVd5eVF3Z1hoWXlhZGc3b2xvblNtek1ucUVGcFpqeDVhQmVuaEpzbVRGUXAzX0xVTDNScV9PdVREX293UzVGWmc4d3NzMnZEUzVPSm5xejZvWnN2VmYwa21ZeUxNblJvejYzb2ttMkh4QjgtLVRHRGJ5TUlfbkRiT2VBelNOVFdUcFNUOGZjTTRXOXdldXVCcHVzOG1MNGFOTFdlV3ExQzczNDZQbFJXYjFaM2RTandPME1YQWxuN25vLUVQWlNzMER4T2hfMk1NZ3JZZlZkb0p6SE9aYmxtZHVyQmZqV3FRY0hQMGUtYUpmbklvUTQ3cmxuX3BUNmcya0lhTlkyTW5NZXRMc1ctaXFaVVBpb29oRXdCbjVuNjNXeTdyN2o4bFd2RnRKRERFRHhEd0pLQ01mMUxpeXB1QXJranB4SGlEMDFpZ2R6RGZtc1hVSFBmUE5ZTmllOGhaaExKeU90bjNRYWtnNGtyNWlQb2VpMmFBOVREdFE0emVDTXhuVUdMenRlaWVz?oc=5",
+          "label": "Facebook"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "EVEANDBOY ยื่นไฟลิ่งขาย IPO เพื่อระดมทุนขยายสาขาให้ครบ 320 แห่งทั่วประเทศภายในปี 2574",
+        "whyNow": "บริษัทกำลังเตรียมความพร้อมด้านเงินทุนเพื่อเร่งการขยายสาขาครั้งใหญ่",
+        "salesAngle": "การขยายสาขาจำนวนมากมีแผนการบริหารจัดการประสบการณ์ลูกค้าให้เป็นมาตรฐานเดียวกันอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับทีมบริหารของ EVEANDBOY เกี่ยวกับแผนการขยายธุรกิจ",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "b73b1a6e29f3",
+      "brandName": "TSUTAYA BOOKSTORE",
+      "companyName": "TSUTAYA BOOKSTORE",
+      "industry": "Entertainment",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-16",
+      "whyNow": "ทำความรู้จัก TSUTAYA BOOKSTORE ก่อนเปิดสาขาแรกในไทย และคุณค่าของร้านหนังสือที่มีต่อคนและพื้นที่",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4tdUdEMWFyZTgzMGQ0cFh2S0t2VlhtNlhoaFZueE50SVNjQjBhUVJDeER5RzliYUhnMHZHMU0wWklIWFRLeEw1LXp1eWEyS25EYVk3VDVXd0FuM1p2ZHJn?oc=5",
+          "label": "The Momentum"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "TSUTAYA BOOKSTORE เตรียมเปิดสาขาแรกในประเทศไทยเพื่อนำเสนอคุณค่าของร้านหนังสือและพื้นที่ไลฟ์สไตล์",
+        "whyNow": "แบรนด์กำลังเตรียมความพร้อมสำหรับการเปิดตัวสาขาแรกในตลาดไทย",
+        "salesAngle": "แบรนด์มีแนวทางในการปรับตัวให้เข้ากับพฤติกรรมการอ่านและไลฟ์สไตล์ของคนไทยอย่างไร",
+        "nextBestAction": "ติดต่อทีมบริหารโครงการเพื่อสอบถามถึงกำหนดการและกลยุทธ์การเปิดตัว",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "2eea5f2edf64",
+      "brandName": "LEPAS",
+      "companyName": "LEPAS",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-07-27",
+      "whyNow": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการครั้งแรกในประเทศไทยอย่างยิ่งใหญ่ พร้อมเผยโฉม LEPAS L6 EV ตอกย้ำวิสัยทัศน์ “Drive Your Elegance”",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 74,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVTJOWHowOXItY3ptdWIzZU1iSlZiNWVRRzVSeF9OXzFFRG9FOF8yTUhTNFFTNy1QR19ZOXpIR2REdUVDY2NFR1M4NHA0aXNOZ0NyemcxTEM?oc=5",
+          "label": "workpointtoday.com"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EN3hlTGFQbExicnl6NVFTcnJMeTY3TUdkMmxLNVpic2tJZmtneE45X0dldEI5X3NXUmhxS2Fhb2o2MGVOakNSWTNNclFwa3NmNnZmMkJPaGt2QQ?oc=5",
+          "label": "Autospinn.com"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "LEPAS เปิดตัวแบรนด์อย่างเป็นทางการในไทยพร้อมเผยโฉมรถยนต์ไฟฟ้า L6 EV",
+        "whyNow": "เป็นการเข้าสู่ตลาดรถยนต์ไฟฟ้าในไทยอย่างเต็มตัว",
+        "salesAngle": "เป้าหมายหลักในการสร้างแบรนด์ LEPAS ในตลาดรถยนต์ไฟฟ้าไทยคืออะไร",
+        "nextBestAction": "ติดต่อทีมงานเพื่อขอข้อมูลเพิ่มเติมเกี่ยวกับกลยุทธ์การเปิดตัวแบรนด์ในไทย",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "dfceb2d131fa",
+      "brandName": "เวที IMF-World Bank",
+      "companyName": "เวที IMF-World Bank",
+      "industry": "Banking / Finance",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เวที IMF-World Bank รีแบรนด์ประเทศไทย กลับมา ‘ยืนเด่น’ บนเวทีโลก . ดร.เอกนิติ นิติทัณฑ์ประภาศ รองนายกรัฐมนตรี และรัฐมนตรีว่าการกระทรวงการคลัง เผยถึงความสำเร็จในการเป็นเจ้าภาพจัดงานประชุมผู้ว่าการธนาคารโลกและกองทุนการเงินระหว่างประเทศ (IMF-World Bank) ว่าเป็นจุดเ",
+      "buyingSignal": "Rebrand",
+      "signalDate": "2026-10-17",
+      "whyNow": "เวที IMF-World Bank รีแบรนด์ประเทศไทย กลับมา ‘ยืนเด่น’ บนเวทีโลก . ดร.เอกนิติ นิติทัณฑ์ประภาศ รองนายกรัฐมนตรี และรัฐมนตรีว่าการกระทรวงการคลัง เผยถึงความสำเร็จในการเป็นเจ้าภาพจัดงานประชุมผู้ว่าการธนาคารโลกและกองทุนการเงินระหว่างประเทศ (IMF-World Bank) ว่าเป็นจุดเ",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 74,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 15,
         "revenue_potential": 16,
         "ooh_fit": 14,
         "momentum": 4,
@@ -502,21 +590,10 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rV3ZBdXVSMFQxSkJ1SDdXWl94QTBRZ0RjZFNLenZTWWRVZDd3SHVCVEEwOFNpWDE5OUlrbEd4QlJhbjl1RjdQc3pYMW5aVnc2VG4wSTZPMF9qc1JUWjRFcVVDNnRvVHNBdk1jSWdiaGtRWkVKUElJ?oc=5",
-          "label": "Brand Buffet"
+          "url": "https://news.google.com/rss/articles/CBMi3AZBVV95cUxOelVVcjJyRFZRSnBHYVJqMm5HVDd1WHJHVnQwaHNSTUlaVS1ISk9XYWY1di1vUU56VjZWWjhSMGxTLWJYS21QT3NRclJOUjhiUjE3MExVMFN3VkJpUFVPX0RHbk1KcE5LTDh3S2RNSkY1MjZ1NERVOVZJNWZQOXpJR0NZdWRjWEpWblFwUkU0T3ltMzVfbU5Cc05PVmRtWVV6bDZtQVBSSjBGZExjMkNULXdHRm5BVlJXMGFkcVpxd0lZd3VxUG9BdTVmTUJ5d3ZqZFBCbTdpSHVCdmVKOHNwTkR6b1dXSy1YeE9SVHhqbWQ1VEY1eUJhcnZiUlZwcld3NmVuNGNsQktURXJHcnFubzAzNG0wYU9oZWM1TUlGUlBzVzJZRTNMYkZCUlk3ZFQwUEl3TDRESnhld3MzcFZnWU00b3NCdEZIdEdicFgweFo1c1c3bEk1SnpwRGxCc2ZXREh6TWJKck5OcHBXaU1obmxjNG1NZEFEWE11c2J6aTNPZlAwUHRUSHZuY0Nydl9BTVFpUG1wM3dQcjZ4NG16b3FTdkVUcXRfVkpOUVJ1OHdlYXhKbXBqTl8xZzQ5a2stWDJDUXRxQnAxUUgtUkhJcFN5TE1MdkNzSHgtaHFvM1ROQkEtcFJyMFBZYVdKZzk5X1F3czRMSHFCSWtuMUdzWEhJdzEwQWxOWE04M3pBNmZlTGIyX24wWXd4QjhWOXNCU25jVm5SSzF0c0lKc21xSHExS2JfeVZtM1dhRVFKd0YtYkdmV1FvVkxrOVhabEx6cGtOWG1tZVdxOC1qMkNiWVdWbkxnaGdGYVM1T3BveWtGaFFzeUVMV0lKU1U2Wi11dkUzUWxJOHhQdXJpMXFzbDEtR3RoSnVRSFI1Wm5Hc1dQYXJJMkJORGVTU01ka2E2VWtfUkRKNExlcGJVYXFuLWNaQXJkRFd0ZTgyakVuWFNVTjNKOEVVZF8yTDRSY1BrNjhfcFNLVHJSQl9fdVZKWjBOT2JXU05QQklzWFh3ZWoxT2tjZGZ2ZEtDeTZGeUlGV3BUb1A1VjNCOHVMVkFSMVp5RWd0YzJRWUhFM2xnRUwwSm43dGlERlUzMWlXWjVDRlFyeFQ2SDIxVmlRaVZ4dE1ic0ROY2VmOHhKdw?oc=5",
+          "label": "Facebook"
         }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "คอลเกตเปิดตัวยาสีฟัน Optic White Vitamin C พร้อมแต่งตั้ง j-hope เป็นแอมบาสเดอร์ระดับภูมิภาค",
-        "whyNow": "เพื่อสร้างกระแสในกลุ่ม Oral Beauty โดยใช้พลังของศิลปินระดับโลก",
-        "salesAngle": "การใช้แอมบาสเดอร์ระดับภูมิภาคมีส่วนช่วยในการสร้างภาพลักษณ์แบรนด์ให้ทันสมัยขึ้นอย่างไร",
-        "nextBestAction": "นัดหมายฝ่ายการตลาดเพื่อสอบถามถึงกลยุทธ์การใช้ Influencer ในการสร้างยอดขาย",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
+      ]
     },
     {
       "id": "623fbce6e014",
@@ -562,150 +639,54 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "Wingstop เปิดแฟล็กชิปสโตร์ที่เซ็นทรัลเวิลด์ และวางแผนขยายสาขาเพิ่มในปีหน้า",
-        "whyNow": "เป็นการเร่งขยายธุรกิจเพื่อสร้างรายได้ให้ถึงเป้าหมายที่วางไว้",
-        "salesAngle": "แผนการขยายสาขาและกลยุทธ์การสร้างแบรนด์ในฐานะร้านอาหารไลฟ์สไตล์มีทิศทางอย่างไร",
-        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารเพื่อสอบถามถึงแผนการขยายสาขาและกลยุทธ์การตลาดในอนาคต",
+        "businessContext": "Wingstop ขยายสาขาและเปิดแฟล็กชิปสโตร์ที่เซ็นทรัลเวิลด์ พร้อมตั้งเป้ารายได้ 100 ล้านบาท",
+        "whyNow": "มีการเติบโตของรายได้และแผนขยายสาขาเพิ่มเท่าตัวในปีหน้า",
+        "salesAngle": "แผนการขยายสาขาและกลยุทธ์การสร้างยอดขายในแต่ละพื้นที่ของ Wingstop เป็นอย่างไร",
+        "nextBestAction": "นัดหมายผู้บริหารเพื่อสอบถามถึงแผนการขยายสาขาและเป้าหมายการเติบโตในอนาคต",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "2a2e21d43435",
-      "brandName": "KFC",
-      "companyName": "KFC",
-      "industry": "Food / QSR",
+      "id": "694be05d48ef",
+      "brandName": "Vogue",
+      "companyName": "Vogue",
+      "industry": "Retail / Fashion",
       "brandType": "Established / Growing",
-      "thailandEvidence": "เริ่มสาขาแรกที่สยาม! “KFC” เปลี่ยนร้านขายไก่ทอด เป็นพื้นที่ “สร้างประสบการณ์” ปรับบริการ-DIY รสชาติเองได้",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-10-07",
-      "whyNow": "เริ่มสาขาแรกที่สยาม! “KFC” เปลี่ยนร้านขายไก่ทอด เป็นพื้นที่ “สร้างประสบการณ์” ปรับบริการ-DIY รสชาติเองได้",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 73,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB6NkF2Ull1b0hRWGJabVN4eTg1T0kwMXFXRFZ2dk9DdlBiMU91TXkzYUtwbmp1aGZRRkNGNUhHcF9ZdFRYZXQ0R3NpSTNCbDBCdU5rMHk4WGRZMnRzOUF4UzFtNG54SVlXX1VmRlBDdGk?oc=5",
-          "label": "ข่าวสด"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5c1FqaTcwSkNUTFBUNTE3OHVELTJIX3lVVWlzdkJBWmdmYTlOZWRsSjlCV0ZkZW1BMzhrd201SFd4ckRCb1ptZm9UWlloOUFNVG5NTFpobFhVV1ZSZ3RfRQ?oc=5",
-          "label": "MGR Online"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMi_AZBVV95cUxQS2FkbzlRdjkzTkx4aGFyNXZZSDVFUEZVMkxkckdyMTY1OWhzdE13WTBGT01wTGw5Q25XQUdhTmJaUE9ZMkxId3ZadTFGTGFUZktndjRCMndiWFNFdFJjc3pvVXd6MzExalRZYkY1OERpNUFaTmVBbk51N0JIV3dVYkhMajhmaUZSdVhKNmlvd0R6SFAxTDhXUlQ4NEZoZThyblFlWXNTcnZHazN3ZTlUdzltQmxjcXBySTF5c3R4RFoxTGJiblkwMkpFRUY4S1FJaXpwdUlhOG11YXZtZmt0NjN6emVqczd4WHo4d2ctcE5yaGVIQzhONEg1ZXp1dER3TVFjcWMtR3VVTlNjeERNcEpjYmVXSEhBbFBBNnN1Yk5tQW8wZnUtS1lTdXJnVDVpdktKeGtmT3VSNWk1ZnN2VWdGZjRFUnNfRVFmNnJlZUhIbUNNcVhnMWczcVRCSnVlZnp5cC16TEhqTklleWxETTRHb203dDJPMDZtd2FETWRyRVhwVzBxcHFyU0RWYTJ6Ty1qcm1rZFA1VThyejBpU1FsaEx3TmpOdWFHdVNDMXNyMzFUQzdsSG1Eb204ZE1zUXhPb1JNcXZYNmF5QUZzTU5ad1VCVm9pZWJxd2JncE5qN1ZrMl9lWFk1SUFsaU93bTFtVlZNS0k1ZGZ0WUJ2aEJjbkxINFZlZlBuRU1PVEN6VjVSSkptam82MERNSFdBWFYzM092Z3h0SlgxcmtPOUlmWGV3aUFlb0VDODlzdE5XTkZHVGZYMmNyeU5PY2VVbmFDOHhhdDNxVFpBd0huejFac3h5SzgzdmNYT2VjZzR3XzFJS2FmbFV3YWJkS2hCbVFJN0h1SGNtUHF1cHkwYWRvMDduUHM3VkNwLVVqYjRDT3NlVmtzTlVBNDY2TmtvZWc5MDR5QUNCUTJITzFTTmQ0WnJKSHVvWktDLXVqaUJ2UkN2cXJoaWk4bmZmVEtWRjlNcHdPelhiTUJJaG9MZFFRajQxckZyTFhsaVlpV0YxNVFUZGpPWWNHSWQyNzJqYVp5c0NoaVlCZldHLVJvalE2UFBBcWRMTEM0a2o5aEtXQXBJeGh2YWdRNFMwN2FIdWhhYzFpbUZWRGZ4cFctb0dYLXZ5RVdiVHg4a05YbkJQVEFpWjc0ZklvWWRyOGdGZVVYOXZuQ0ZDN3lW?oc=5",
-          "label": "Facebook"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "KFC กำลังปรับกลยุทธ์ร้านสู่การสร้างประสบการณ์ลูกค้าและ DIY รสชาติ พร้อมเดินหน้าขยายสาขาและรีแบรนด์ในไทย",
-        "whyNow": "ต้องการสร้างความแตกต่างในตลาดร้านอาหารบริการด่วนและเพิ่มประสิทธิภาพการดำเนินงาน",
-        "salesAngle": "กลยุทธ์การปรับเปลี่ยนรูปแบบร้านเพื่อสร้างประสบการณ์ลูกค้ามีผลต่อการเลือกใช้โซลูชันการจัดการหน้าร้านอย่างไร",
-        "nextBestAction": "นัดหมายผู้บริหารฝ่ายปฏิบัติการเพื่อสอบถามถึงความท้าทายในการปรับเปลี่ยนรูปแบบร้านสาขาใหม่",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "91a851c5915e",
-      "brandName": "Rally x BOYY",
-      "companyName": "Rally x BOYY",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "สานต่อกระแสโซลเอาท์ Rally x BOYY: Vol.2 The Final Chapter การคอลแลบฯ ของสองแบรนด์ไทย ที่เปลี่ยนกระแสดรอปแรก ให้เป็นแรงขับเคลื่อนการเปิดตัวครั้งใหม่ | Brand Inside",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-01",
-      "whyNow": "สานต่อกระแสโซลเอาท์ Rally x BOYY: Vol.2 The Final Chapter การคอลแลบฯ ของสองแบรนด์ไทย ที่เปลี่ยนกระแสดรอปแรก ให้เป็นแรงขับเคลื่อนการเปิดตัวครั้งใหม่ | Brand Inside",
+      "thailandEvidence": "ลาซาด้า ผนึก Vogue ประเทศไทย ยกระดับแบรนด์แฟชั่น ผ่านแคมเปญ 9.9",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-09-17",
+      "whyNow": "ลาซาด้า ผนึก Vogue ประเทศไทย ยกระดับแบรนด์แฟชั่น ผ่านแคมเปญ 9.9",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
       "score": 73,
       "scores": {
         "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": true,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBSmZnRlZSYUpTSzh3RzRMTU1zS2JuTzNsMUtaVHJUU1liLVJMRnpLSkpKYkdIRklWMzNQaVB3N3JCQTQ3OG5XaUVCRjRiR0stWnlQRGpQVUlkY2NOdU9OQnRtZnYzWVctRzhWQzM1RQ?oc=5",
-          "label": "Brand Inside"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "การคอลแลบครั้งที่ 2 ของ Rally x BOYY เพื่อต่อยอดความสำเร็จจากดรอปแรก",
-        "whyNow": "เป็นการใช้กระแสความนิยมเดิมเพื่อสร้างยอดขายในการเปิดตัวคอลเลกชันใหม่",
-        "salesAngle": "กลยุทธ์การรักษาฐานลูกค้าและการสร้างความตื่นเต้นในการคอลแลบครั้งที่สองมีปัจจัยความสำเร็จอย่างไร",
-        "nextBestAction": "วิเคราะห์ผลตอบรับจากแคมเปญการตลาดและการมีส่วนร่วมของลูกค้าบนโซเชียลมีเดีย",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "b829c2dc09ae",
-      "brandName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย",
-      "companyName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-09",
-      "whyNow": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
-      "momentum": "Active",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 18,
+        "buying_signal_strength": 16,
+        "revenue_potential": 14,
         "ooh_fit": 14,
         "momentum": 4,
-        "timing": 10,
+        "timing": 8,
         "evidence_quality": 3
       },
       "priority": "HIGH",
       "isNew": false,
-      "isUpdated": false,
+      "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG8wLTBTczVkdHVudE91UDhuTFFhNzQ0ZWhmcFRoNlRoY0hGTWVMeXVXdTQydmYtcWU0WmJsNzBnb2FDMTRwNTN5MXk1OHdtck1NV3NmbW1rUkZpQjJ4bmVVSFRqRGN3WEI4NVR0dGwyTHNUSFRoSWdEV1VDMGY2UVVlTXZLTHVvR09tZ2wzdDYtZGJRejBN?oc=5",
-          "label": "iMoD"
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sWnpMMkl5QjI4RGJWU190bXlUY19LZVItZk9uZ0JWcWFsRjlPc3U5RTJOSFcwNTdEcVJJMHA3cFQ0emNlRVllN3g0OUhhaU95TTNZM2JHVWlXMUt6?oc=5",
+          "label": "https://www.thereporters.co/"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เตรียมเปิดตัวรถยนต์รุ่นแฟล็กชิป ออล-นิว มิตซูบิชิ ปาเจโร ในวันที่ 19 ตุลาคมนี้",
-        "whyNow": "เป็นการเปิดตัวผลิตภัณฑ์ใหม่ตามรอบการทำตลาดของรถยนต์รุ่นเรือธง",
-        "salesAngle": "กลยุทธ์การสื่อสารการตลาดสำหรับการเปิดตัวรถยนต์รุ่นใหม่ในกลุ่ม SUV มีความสำคัญอย่างไรต่อการรักษาฐานลูกค้าเดิม",
-        "nextBestAction": "นัดหมายทีมสื่อสารองค์กรเพื่อสอบถามถึงแนวทางการสื่อสารในช่วงเปิดตัวผลิตภัณฑ์",
+        "confidence": 0.9,
+        "businessContext": "ลาซาด้าจับมือ Vogue ประเทศไทยจัดแคมเปญ 9.9 เพื่อยกระดับแบรนด์แฟชั่น",
+        "whyNow": "เป็นการใช้ช่วงเวลาแคมเปญใหญ่เพื่อกระตุ้นยอดขายและภาพลักษณ์แฟชั่น",
+        "salesAngle": "การร่วมมือกับแพลตฟอร์ม E-commerce ช่วยยกระดับแบรนด์แฟชั่นในมุมมองของ Vogue อย่างไร",
+        "nextBestAction": "ติดต่อทีมการตลาดของ Vogue เพื่อสอบถามถึงผลลัพธ์และความสำเร็จของแคมเปญ",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -742,10 +723,6 @@
           "label": "แนวหน้า"
         },
         {
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sYXVqeVB2T3poS2tEV1AtemkyT0VHSzJZdFdNQktCN1NvczFWcnAwNnJKbFJEQ20yMGxxYnZXdC1ETjE1TldjcTFqNWFvaHlvcWQ2NnF3NVJETjNJSEE?oc=5",
-          "label": "workpointtoday.com"
-        },
-        {
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94RVg0OUVzT3lQRWVuV2pVSWJ5NER6dFFLdUFYUWkyTGMwVnJIQmY3akVXQnFOd2hSS3R6VnRFcHFpSEZkX1hvQ3pjVTFhb3JidHJF?oc=5",
           "label": "Positioningmag"
         }
@@ -754,10 +731,58 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "ไอ.ซี.ซี. เปิดตัว C PROJECT แพลตฟอร์มธุรกิจแฟชั่นและไลฟ์สไตล์เพื่อเชื่อมโยงแบรนด์ไทยและผู้บริโภค",
-        "whyNow": "เพื่อสร้าง Ecosystem ครบวงจรและผลักดันอุตสาหกรรมแฟชั่นและบิวตี้ไทยให้เติบโต",
-        "salesAngle": "แพลตฟอร์มใหม่นี้มีแผนการขยายฐานผู้ใช้งานและสร้างการมีส่วนร่วมกับแบรนด์พันธมิตรอย่างไร",
-        "nextBestAction": "นัดพบทีมบริหารโครงการเพื่อทำความเข้าใจเป้าหมายการขยายฐานลูกค้าในระยะแรก",
+        "businessContext": "ไอ.ซี.ซี. เปิดตัว C PROJECT แพลตฟอร์มธุรกิจแฟชั่นและบิวตี้ครบวงจร",
+        "whyNow": "เป็นการรุกตลาดแฟชั่นและบิวตี้ด้วยโมเดลธุรกิจใหม่",
+        "salesAngle": "กลยุทธ์การรวมแบรนด์ไทยภายใต้ C PROJECT เพื่อสร้าง Ecosystem คืออะไร",
+        "nextBestAction": "นัดหมายผู้บริหารเพื่อทำความเข้าใจโมเดลธุรกิจและแผนการขยายตลาดของ C PROJECT",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "19ef9f1b23fe",
+      "brandName": "KANEKO HANNOSUKE",
+      "companyName": "KANEKO HANNOSUKE",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ [PR]",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-15",
+      "whyNow": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ [PR]",
+      "momentum": "Rising",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 71,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFc1NTRRTmVXTmVPak90RDNyQUQtZUJ1d2d3R2hfclFSV1NUX0pMaF8yZ0poNUlkb056c0pJdFNiN3lVMGFnaGh5ZWJQWkJ6Ukw4UXdvS2E1aFRPTEN0MXMyV3EzN1Y0OFFuYjJJN2xXV0w0SjJUSnBNblVQRF9kSXZWMA?oc=5",
+          "label": "Brand Buffet"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQOEo3U216Vmo5d3pGN0tFaURqZE5CTXhud2ZpdzUyMzF3OVB5WTBOOXFuMFExM3hvVFlWRFhwcGZnYm9KWFZ0TERtbTRORENJT09j?oc=5",
+          "label": "Positioningmag"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "KANEKO HANNOSUKE เปิดสาขาที่ 4 ที่เซ็นทรัล นอร์ทวิลล์ พร้อมปรับโฉมแบรนด์และเพิ่มเมนูใหม่",
+        "whyNow": "มีการขยายสาขาและปรับภาพลักษณ์แบรนด์เพื่อดึงดูดลูกค้า",
+        "salesAngle": "กลยุทธ์การปรับโฉมแบรนด์และเพิ่มเมนูใหม่เพื่อรองรับการขยายสาขาคืออะไร",
+        "nextBestAction": "นัดหมายผู้บริหารเพื่อสอบถามถึงแผนการขยายสาขาและกลยุทธ์การตลาดในไทย",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -798,24 +823,24 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "ไทยมาร์ทเปิดตัว Seller App เพื่อสนับสนุนผู้ประกอบการไทยภายใต้แนวคิด สร้างแบรนด์ สร้างชาติ",
-        "whyNow": "เพื่อเพิ่มเครื่องมือดิจิทัลให้แก่ผู้ประกอบการในการขยายธุรกิจบนแพลตฟอร์ม",
-        "salesAngle": "การพัฒนาเครื่องมือสำหรับผู้ขายมีส่วนช่วยในการเพิ่มจำนวนร้านค้าบนแพลตฟอร์มอย่างไร",
-        "nextBestAction": "ติดต่อฝ่ายพัฒนาธุรกิจเพื่อสอบถามถึงแผนการขยายฐานผู้ใช้งานแอปพลิเคชัน",
+        "businessContext": "ไทยมาร์ทเปิดตัว Seller App เพื่อสนับสนุนผู้ประกอบการไทยผ่านโครงการสร้างแบรนด์สร้างชาติ",
+        "whyNow": "เป็นการขยายขีดความสามารถด้านดิจิทัลเพื่อรองรับกลุ่มผู้ค้าในระบบนิเวศของบริษัท",
+        "salesAngle": "กลยุทธ์การสร้างการรับรู้และการใช้งานแอปพลิเคชันใหม่ในกลุ่มผู้ประกอบการเป็นอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับฝ่ายพัฒนาธุรกิจเพื่อสอบถามถึงแผนการสนับสนุนผู้ใช้งานแอปพลิเคชัน",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "834b34f16f45",
-      "brandName": "Health",
-      "companyName": "Health",
-      "industry": "Beauty / Personal Care",
+      "id": "1a539c3fcefc",
+      "brandName": "มังกรหยก",
+      "companyName": "มังกรหยก",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "บู๊ทส์ ตอกย้ำ Health & Beauty Destination ขนทัพแบรนด์ใหม่และสินค้าใหม่จากทั้งไทยและต่างประเทศกว่า 30 แบรนด์ ชวนค้นพบไอเทมห้ามพลาด ให้คุณมารักตัวเองในทุกวัน ที่บู๊ทส์",
+      "thailandEvidence": "“มังกรหยก” มาแล้ว! ซีพีแรมเตรียมเปิดตัวตำนานแบรนด์อาหารจีน เจาะตลาดอาหารจีน ชูรสชาติที่คุ้นเคยพร้อมเสิร์ฟความอร่อยที่โลตัสทั่วไทย",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-16",
-      "whyNow": "บู๊ทส์ ตอกย้ำ Health & Beauty Destination ขนทัพแบรนด์ใหม่และสินค้าใหม่จากทั้งไทยและต่างประเทศกว่า 30 แบรนด์ ชวนค้นพบไอเทมห้ามพลาด ให้คุณมารักตัวเองในทุกวัน ที่บู๊ทส์",
+      "signalDate": "2026-08-20",
+      "whyNow": "“มังกรหยก” มาแล้ว! ซีพีแรมเตรียมเปิดตัวตำนานแบรนด์อาหารจีน เจาะตลาดอาหารจีน ชูรสชาติที่คุ้นเคยพร้อมเสิร์ฟความอร่อยที่โลตัสทั่วไทย",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -834,95 +859,62 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tajV4enRiZS1KZEJpXy10OUMyZVpSYjl6WlNTd0E4VUdOYWVRMEhJZ3N2dG9jVFlKWU1veXJXVUoxTXhvcW1Fd0lucjB5TGVId0VN?oc=5",
-          "label": "Positioningmag"
-        }
-      ]
-    },
-    {
-      "id": "19ef9f1b23fe",
-      "brandName": "KANEKO HANNOSUKE",
-      "companyName": "KANEKO HANNOSUKE",
-      "industry": "Consumer / Other",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ [PR]",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-09-15",
-      "whyNow": "“KANEKO HANNOSUKE” ปักหมุดสาขาใหม่ “เซ็นทรัล นอร์ทวิลล์” เปิดสาขาที่ 4 ในไทย พร้อมปรับโฉมแบรนด์ใหม่ เพิ่มเมนูใหม่กว่า 10 รายการ [PR]",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 68,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "MEDIUM",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFc1NTRRTmVXTmVPak90RDNyQUQtZUJ1d2d3R2hfclFSV1NUX0pMaF8yZ0poNUlkb056c0pJdFNiN3lVMGFnaGh5ZWJQWkJ6Ukw4UXdvS2E1aFRPTEN0MXMyV3EzN1Y0OFFuYjJJN2xXV0w0SjJUSnBNblVQRF9kSXZWMA?oc=5",
-          "label": "Brand Buffet"
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5rWEF6aXhaVXNiMnlpRzhYQlh4WTU1blNPcDNtTzZQSmNGSjM0TjAyNG1IRnNvb1h0TlF3blo1ZmRNNEFWdUx5NUZUYkNvbDVaNnFRRzBn?oc=5",
+          "label": "TrueID Food"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "KANEKO HANNOSUKE เปิดสาขาที่ 4 ที่เซ็นทรัล นอร์ทวิลล์ พร้อมปรับโฉมแบรนด์และเพิ่มเมนูใหม่",
-        "whyNow": "เพื่อขยายฐานลูกค้าและสร้างความสดใหม่ให้กับแบรนด์ผ่านเมนูที่หลากหลายขึ้น",
-        "salesAngle": "การปรับโฉมแบรนด์ควบคู่กับการขยายสาขาช่วยเพิ่มความสามารถในการแข่งขันในตลาดร้านอาหารญี่ปุ่นอย่างไร",
-        "nextBestAction": "ติดต่อฝ่ายบริหารแบรนด์เพื่อสอบถามถึงแผนการขยายสาขาในอนาคต",
+        "businessContext": "ซีพีแรมเตรียมเปิดตัวแบรนด์อาหารจีน มังกรหยก วางจำหน่ายที่โลตัสทั่วประเทศ",
+        "whyNow": "เป็นการขยายพอร์ตโฟลิโออาหารพร้อมทานเพื่อเจาะตลาดอาหารจีนในช่องทางค้าปลีก",
+        "salesAngle": "แผนการสื่อสารการตลาดเพื่อสร้างความจดจำให้กับแบรนด์ใหม่ในช่องทางโมเดิร์นเทรดเป็นอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายการตลาดของซีพีแรมเพื่อสอบถามถึงแนวทางการทำตลาดสินค้าใหม่",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "e68ce5c6b538",
-      "brandName": "HAMA-SUSHI",
-      "companyName": "HAMA-SUSHI",
-      "industry": "Consumer / Other",
+      "id": "2a81135fc34f",
+      "brandName": "Boots Thailand",
+      "companyName": "Boots Thailand",
+      "industry": "Beauty / Personal Care",
       "brandType": "Established / Growing",
-      "thailandEvidence": "HAMA-SUSHI เปิดสาขาที่ Siam Square One “เสิร์ฟตรง” ถึงผู้บริโภคชาวไทย เดินหน้าขยายอีก 2 สาขาปีนี้",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-08-31",
-      "whyNow": "HAMA-SUSHI เปิดสาขาที่ Siam Square One “เสิร์ฟตรง” ถึงผู้บริโภคชาวไทย เดินหน้าขยายอีก 2 สาขาปีนี้",
-      "momentum": "Rising",
-      "revenueMinM": 1.5,
-      "revenueMaxM": 4,
-      "score": 68,
+      "thailandEvidence": "Boots Thailand strengthens its Skincare Portfolio with ELCA partnership and the launch of The Ordinary brand",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-09-25",
+      "whyNow": "Boots Thailand strengthens its Skincare Portfolio with ELCA partnership and the launch of The Ordinary brand",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 70,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 13,
-        "ooh_fit": 10,
-        "momentum": 6,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
         "timing": 10,
         "evidence_quality": 3
       },
-      "priority": "MEDIUM",
+      "priority": "HIGH",
       "isNew": false,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1SU44QWh1OUMyTVBkOTZVMDU3Wno3a1Vma19ZOGJ2QU9kX2dhTVJVU2dtc0s5SExyUFh1SURvZWxiQUtuVDMxSUQ3d2RBanZfQk9vLVJ3?oc=5",
-          "label": "มิติหุ้น"
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80aVpKcndkLW85R29CbFBaS0RnM1BzVi1hWXdVbFMzbGhISjFzSXBGQ3RLQ1FNNFllSG50b3NpQWtfdGxfVzFUcTNVcm1PMXNITUd4X0lWYXo?oc=5",
+          "label": "ThaiPR.NET"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "HAMA-SUSHI เปิดสาขาใหม่ที่ Siam Square One และมีแผนขยายเพิ่มอีก 2 สาขาภายในปีนี้",
-        "whyNow": "การขยายสาขาเชิงรุกในทำเลศักยภาพสูงเพื่อเข้าถึงผู้บริโภคในกรุงเทพฯ",
-        "salesAngle": "กลยุทธ์การบริหารจัดการสาขาใหม่และการสร้างประสบการณ์ลูกค้าในพื้นที่ที่มีการแข่งขันสูงเป็นอย่างไร",
-        "nextBestAction": "นัดหมายพูดคุยกับผู้จัดการฝ่ายพัฒนาธุรกิจเพื่อสอบถามถึงแผนการขยายสาขาในอนาคต",
+        "businessContext": "Boots Thailand ร่วมมือกับ ELCA นำแบรนด์ The Ordinary เข้ามาจำหน่ายเพื่อเสริมความแข็งแกร่งกลุ่มสกินแคร์",
+        "whyNow": "เป็นการเพิ่มความหลากหลายของสินค้าในกลุ่มสกินแคร์เพื่อตอบโจทย์ความต้องการของผู้บริโภค",
+        "salesAngle": "กลยุทธ์การสร้างยอดขายสำหรับแบรนด์สกินแคร์ระดับโลกในช่องทางร้าน Boots เป็นอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับฝ่ายบริหารผลิตภัณฑ์เพื่อสอบถามถึงแผนการโปรโมทแบรนด์ใหม่",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
