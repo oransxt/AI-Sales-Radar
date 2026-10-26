@@ -142,8 +142,8 @@
     },
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 42,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 43,
       "lastSignalHash": "4fdfc81662",
       "lastSignal": "Thailand market entry"
     },
@@ -905,8 +905,8 @@
     },
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 43,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 44,
       "lastSignalHash": "2c0961c51c",
       "lastSignal": "Thailand market entry"
     },
@@ -996,8 +996,8 @@
     },
     "ไทยมาร์ท": {
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-10-22",
-      "timesDetected": 23,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 24,
       "lastSignalHash": "67b85c7d74",
       "lastSignal": "Major product launch"
     },
@@ -1325,8 +1325,8 @@
     },
     "honda super-one ev": {
       "firstSeen": "2026-09-07",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 48,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 49,
       "lastSignalHash": "22ef3b1398",
       "lastSignal": "Major product launch"
     },
@@ -1409,8 +1409,8 @@
     },
     "wingstop": {
       "firstSeen": "2026-09-11",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 15,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 16,
       "lastSignalHash": "c2ce9267ec",
       "lastSignal": "Expansion / new branches"
     },
@@ -1486,9 +1486,9 @@
     },
     "kfc": {
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-10-22",
-      "timesDetected": 11,
-      "lastSignalHash": "fb508c75bf",
+      "lastSeen": "2026-10-26",
+      "timesDetected": 12,
+      "lastSignalHash": "c78a144d10",
       "lastSignal": "Expansion / new branches"
     },
     "ทำความรู้จัก tsutaya bookstore ก่อน": {
@@ -1514,8 +1514,8 @@
     },
     "คอลเกต เขย่าวงการ oral beauty": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-10-16",
-      "timesDetected": 10,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 11,
       "lastSignalHash": "ecfc97e7a4",
       "lastSignal": "Major product launch"
     },
@@ -1528,15 +1528,15 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 9,
-      "lastSignalHash": "62516397cc",
-      "lastSignal": "Expansion / new branches"
+      "lastSeen": "2026-10-26",
+      "timesDetected": 10,
+      "lastSignalHash": "8ec06808a1",
+      "lastSignal": "Thailand market entry"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 43,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 44,
       "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 34,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 35,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1696,9 +1696,9 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 16,
-      "lastSignalHash": "48842281a8",
+      "lastSeen": "2026-10-26",
+      "timesDetected": 17,
+      "lastSignalHash": "3693777278",
       "lastSignal": "Thailand market entry"
     },
     "boots": {
@@ -2123,8 +2123,8 @@
     },
     "range rover electric": {
       "firstSeen": "2026-10-16",
-      "lastSeen": "2026-10-22",
-      "timesDetected": 2,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 3,
       "lastSignalHash": "d756cfc2b5",
       "lastSignal": "Major product launch"
     },
@@ -2249,8 +2249,8 @@
     },
     "yo-chi": {
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-10-23",
-      "timesDetected": 3,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 4,
       "lastSignalHash": "0733801c61",
       "lastSignal": "Expansion / new branches"
     },
@@ -2291,8 +2291,8 @@
     },
     "ykko": {
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 3,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 4,
       "lastSignalHash": "3402d0303a",
       "lastSignal": "Thailand market entry"
     },
@@ -2305,15 +2305,15 @@
     },
     "gp": {
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
-      "timesDetected": 1,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 2,
       "lastSignalHash": "f237cc9245",
       "lastSignal": "Major product launch"
     },
     "thematic film": {
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-10-23",
-      "timesDetected": 1,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 2,
       "lastSignalHash": "1098012139",
       "lastSignal": "Major product launch"
     },
@@ -2368,8 +2368,8 @@
     },
     "maguro group": {
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25",
-      "timesDetected": 1,
+      "lastSeen": "2026-10-26",
+      "timesDetected": 2,
       "lastSignalHash": "c626287983",
       "lastSignal": "Major product launch"
     },
@@ -2386,6 +2386,27 @@
       "timesDetected": 1,
       "lastSignalHash": "ba830b2a38",
       "lastSignal": "Major product launch"
+    },
+    "hyundai new staria hybrid": {
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "timesDetected": 1,
+      "lastSignalHash": "2cc4d1b8cb",
+      "lastSignal": "Major product launch"
+    },
+    "biteto (ไบท์โตะ)": {
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "timesDetected": 1,
+      "lastSignalHash": "2671436cfc",
+      "lastSignal": "Major product launch"
+    },
+    "รวมมือถือผ่าน กสทช.": {
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "timesDetected": 1,
+      "lastSignalHash": "7b99990d0f",
+      "lastSignal": "Thailand market entry"
     }
   }
 }
