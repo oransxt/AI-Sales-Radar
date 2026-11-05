@@ -142,8 +142,8 @@
     },
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 51,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 52,
       "lastSignalHash": "389a700ad0",
       "lastSignal": "Thailand market entry"
     },
@@ -604,9 +604,9 @@
     },
     "แมคโดนัลด์ ประเทศไทย": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-11-02",
-      "timesDetected": 3,
-      "lastSignalHash": "2ecced95f4",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 4,
+      "lastSignalHash": "dab37c848f",
       "lastSignal": "Expansion / new branches"
     },
     "thaimart": {
@@ -940,9 +940,9 @@
     },
     "sirivannavari": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-10-28",
-      "timesDetected": 4,
-      "lastSignalHash": "40fb482f9e",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 5,
+      "lastSignalHash": "c2b246374f",
       "lastSignal": "Major product launch"
     },
     "eve’s": {
@@ -996,9 +996,9 @@
     },
     "ไทยมาร์ท": {
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 29,
-      "lastSignalHash": "d8c431b4ae",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 30,
+      "lastSignalHash": "67b85c7d74",
       "lastSignal": "Major product launch"
     },
     "ซีเล็ค x ฉั่วฮะเส็ง บุกตลาด": {
@@ -1528,16 +1528,16 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-02",
-      "timesDetected": 15,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 16,
       "lastSignalHash": "62516397cc",
       "lastSignal": "Expansion / new branches"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 52,
-      "lastSignalHash": "73595823e8",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 53,
+      "lastSignalHash": "5aec34dff5",
       "lastSignal": "Thailand market entry"
     },
     "health": {
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 43,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 44,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1696,8 +1696,8 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-03",
-      "timesDetected": 24,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 25,
       "lastSignalHash": "3693777278",
       "lastSignal": "Major product launch"
     },
@@ -1815,10 +1815,10 @@
     },
     "chery": {
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-11-03",
-      "timesDetected": 3,
-      "lastSignalHash": "bff056b9e3",
-      "lastSignal": "Thailand market entry"
+      "lastSeen": "2026-11-05",
+      "timesDetected": 4,
+      "lastSignalHash": "be6c1c52e3",
+      "lastSignal": "Major product launch"
     },
     "elica": {
       "firstSeen": "2026-09-30",
@@ -1899,9 +1899,9 @@
     },
     "kaneko hannosuke": {
       "firstSeen": "2026-10-04",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 26,
-      "lastSignalHash": "1b3c23ad24",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 27,
+      "lastSignalHash": "2bc64b80d3",
       "lastSignal": "Major product launch"
     },
     "boots thailand": {
@@ -2011,8 +2011,8 @@
     },
     "update": {
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 6,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 7,
       "lastSignalHash": "df8f110604",
       "lastSignal": "Expansion / new branches"
     },
@@ -2088,8 +2088,8 @@
     },
     "มิตซูบิชิ มอเตอร์ส ประเทศไทย": {
       "firstSeen": "2026-10-13",
-      "lastSeen": "2026-11-02",
-      "timesDetected": 3,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 4,
       "lastSignalHash": "b9390b47e5",
       "lastSignal": "Major product launch"
     },
@@ -2137,9 +2137,9 @@
     },
     "biteto": {
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-10-20",
-      "timesDetected": 4,
-      "lastSignalHash": "2671436cfc",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 5,
+      "lastSignalHash": "9a8d48345b",
       "lastSignal": "Major product launch"
     },
     "คอลเกต": {
@@ -2466,8 +2466,8 @@
     },
     "taobao": {
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 6,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 7,
       "lastSignalHash": "9fd4bde42d",
       "lastSignal": "Thailand market entry"
     },
@@ -2480,8 +2480,8 @@
     },
     "ihg": {
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 5,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 6,
       "lastSignalHash": "6e4e63827d",
       "lastSignal": "Major product launch"
     },
@@ -2578,8 +2578,8 @@
     },
     "leapmotor b03x": {
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 2,
+      "lastSeen": "2026-11-05",
+      "timesDetected": 3,
       "lastSignalHash": "1b11207808",
       "lastSignal": "Major product launch"
     },
@@ -2610,6 +2610,34 @@
       "timesDetected": 1,
       "lastSignalHash": "55664d8500",
       "lastSignal": "Major product launch"
+    },
+    "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน": {
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 1,
+      "lastSignalHash": "01ddf7aa5e",
+      "lastSignal": "Major product launch"
+    },
+    "kotra": {
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 1,
+      "lastSignalHash": "3c566a9101",
+      "lastSignal": "Major product launch"
+    },
+    "realme c01": {
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 1,
+      "lastSignalHash": "3da8be22ed",
+      "lastSignal": "Major product launch"
+    },
+    "ซันโทรี่ เบเวอเรจ แอนด์ ฟู้ด": {
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05",
+      "timesDetected": 1,
+      "lastSignalHash": "36a7c1ed4c",
+      "lastSignal": "New campaign"
     }
   }
 }
