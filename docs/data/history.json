@@ -142,8 +142,8 @@
     },
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 52,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 53,
       "lastSignalHash": "389a700ad0",
       "lastSignal": "Thailand market entry"
     },
@@ -156,10 +156,10 @@
     },
     "luxeed": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-10-23",
-      "timesDetected": 19,
-      "lastSignalHash": "68318d1f3e",
-      "lastSignal": "Thailand market entry"
+      "lastSeen": "2026-11-06",
+      "timesDetected": 20,
+      "lastSignalHash": "b6a8753256",
+      "lastSignal": "Major product launch"
     },
     "subway": {
       "firstSeen": "2026-08-11",
@@ -905,8 +905,8 @@
     },
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-11-03",
-      "timesDetected": 47,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 48,
       "lastSignalHash": "2c0961c51c",
       "lastSignal": "Thailand market entry"
     },
@@ -940,8 +940,8 @@
     },
     "sirivannavari": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 5,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 6,
       "lastSignalHash": "c2b246374f",
       "lastSignal": "Major product launch"
     },
@@ -1381,9 +1381,9 @@
     },
     "tiktok": {
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 21,
-      "lastSignalHash": "7360e94d21",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 22,
+      "lastSignalHash": "dd8cf9c48a",
       "lastSignal": "New campaign"
     },
     "น้ำดื่มสิงห์": {
@@ -1486,8 +1486,8 @@
     },
     "kfc": {
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 19,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 20,
       "lastSignalHash": "fb508c75bf",
       "lastSignal": "Expansion / new branches"
     },
@@ -1528,16 +1528,16 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 16,
-      "lastSignalHash": "62516397cc",
-      "lastSignal": "Expansion / new branches"
+      "lastSeen": "2026-11-06",
+      "timesDetected": 17,
+      "lastSignalHash": "d7b9925cac",
+      "lastSignal": "Thailand market entry"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 53,
-      "lastSignalHash": "5aec34dff5",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 54,
+      "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
     "health": {
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 44,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 45,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1696,8 +1696,8 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 25,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 26,
       "lastSignalHash": "3693777278",
       "lastSignal": "Major product launch"
     },
@@ -2011,8 +2011,8 @@
     },
     "update": {
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 7,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 8,
       "lastSignalHash": "df8f110604",
       "lastSignal": "Expansion / new branches"
     },
@@ -2137,9 +2137,9 @@
     },
     "biteto": {
       "firstSeen": "2026-10-17",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 5,
-      "lastSignalHash": "9a8d48345b",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 6,
+      "lastSignalHash": "b8e94c5217",
       "lastSignal": "Major product launch"
     },
     "คอลเกต": {
@@ -2291,8 +2291,8 @@
     },
     "ykko": {
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-03",
-      "timesDetected": 8,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 9,
       "lastSignalHash": "3402d0303a",
       "lastSignal": "Thailand market entry"
     },
@@ -2466,8 +2466,8 @@
     },
     "taobao": {
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 7,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 8,
       "lastSignalHash": "9fd4bde42d",
       "lastSignal": "Thailand market entry"
     },
@@ -2578,16 +2578,16 @@
     },
     "leapmotor b03x": {
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 3,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 4,
       "lastSignalHash": "1b11207808",
       "lastSignal": "Major product launch"
     },
     "friend": {
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 2,
-      "lastSignalHash": "9600274476",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 3,
+      "lastSignalHash": "9bd091a3fd",
       "lastSignal": "Major product launch"
     },
     "แอนิเทค รุก tiktok shop": {
@@ -2613,8 +2613,8 @@
     },
     "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน": {
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 1,
+      "lastSeen": "2026-11-06",
+      "timesDetected": 2,
       "lastSignalHash": "01ddf7aa5e",
       "lastSignal": "Major product launch"
     },
@@ -2638,6 +2638,27 @@
       "timesDetected": 1,
       "lastSignalHash": "36a7c1ed4c",
       "lastSignal": "New campaign"
+    },
+    "moshi": {
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 1,
+      "lastSignalHash": "d08b141b13",
+      "lastSignal": "Major product launch"
+    },
+    "ล่าเมียว’ ร้านจีนของคนไทย": {
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 1,
+      "lastSignalHash": "1272e80bfd",
+      "lastSignal": "Thailand market entry"
+    },
+    "ap thailand": {
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "timesDetected": 1,
+      "lastSignalHash": "db36b42d6f",
+      "lastSignal": "Major product launch"
     }
   }
 }
