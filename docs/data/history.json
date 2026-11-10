@@ -142,8 +142,8 @@
     },
     "ยัสปาล กรุ๊ป": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 56,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 57,
       "lastSignalHash": "389a700ad0",
       "lastSignal": "Thailand market entry"
     },
@@ -604,16 +604,16 @@
     },
     "แมคโดนัลด์ ประเทศไทย": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 7,
-      "lastSignalHash": "6c1ec5632c",
-      "lastSignal": "Major product launch"
+      "lastSeen": "2026-11-10",
+      "timesDetected": 8,
+      "lastSignalHash": "dab37c848f",
+      "lastSignal": "Expansion / new branches"
     },
     "thaimart": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 18,
-      "lastSignalHash": "259f20a9fa",
+      "lastSeen": "2026-11-10",
+      "timesDetected": 19,
+      "lastSignalHash": "b97e2ec740",
       "lastSignal": "Major product launch"
     },
     "คนละครึ่ง พลัส": {
@@ -940,8 +940,8 @@
     },
     "sirivannavari": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 9,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 10,
       "lastSignalHash": "c2b246374f",
       "lastSignal": "Major product launch"
     },
@@ -996,8 +996,8 @@
     },
     "ไทยมาร์ท": {
       "firstSeen": "2026-08-24",
-      "lastSeen": "2026-11-05",
-      "timesDetected": 30,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 31,
       "lastSignalHash": "67b85c7d74",
       "lastSignal": "Major product launch"
     },
@@ -1367,8 +1367,8 @@
     },
     "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก": {
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 12,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 13,
       "lastSignalHash": "b9390b47e5",
       "lastSignal": "Major product launch"
     },
@@ -1486,8 +1486,8 @@
     },
     "kfc": {
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 23,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 24,
       "lastSignalHash": "fb508c75bf",
       "lastSignal": "Expansion / new branches"
     },
@@ -1528,15 +1528,15 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 20,
-      "lastSignalHash": "62516397cc",
-      "lastSignal": "Expansion / new branches"
+      "lastSeen": "2026-11-10",
+      "timesDetected": 21,
+      "lastSignalHash": "d7b9925cac",
+      "lastSignal": "Thailand market entry"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 57,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 58,
       "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 48,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 49,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1696,15 +1696,15 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 29,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 30,
       "lastSignalHash": "3693777278",
       "lastSignal": "Major product launch"
     },
     "boots": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-08",
-      "timesDetected": 5,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 6,
       "lastSignalHash": "ac699e67d5",
       "lastSignal": "Major product launch"
     },
@@ -1815,9 +1815,9 @@
     },
     "chery": {
       "firstSeen": "2026-09-29",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 6,
-      "lastSignalHash": "be6c1c52e3",
+      "lastSeen": "2026-11-10",
+      "timesDetected": 7,
+      "lastSignalHash": "e98dec282a",
       "lastSignal": "Thailand market entry"
     },
     "elica": {
@@ -1843,8 +1843,8 @@
     },
     "c project": {
       "firstSeen": "2026-10-02",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 28,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 29,
       "lastSignalHash": "89619db6b0",
       "lastSignal": "Major product launch"
     },
@@ -2011,8 +2011,8 @@
     },
     "update": {
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-07",
-      "timesDetected": 9,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 10,
       "lastSignalHash": "df8f110604",
       "lastSignal": "Expansion / new branches"
     },
@@ -2466,8 +2466,8 @@
     },
     "taobao": {
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 11,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 12,
       "lastSignalHash": "9fd4bde42d",
       "lastSignal": "Thailand market entry"
     },
@@ -2613,8 +2613,8 @@
     },
     "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน": {
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-06",
-      "timesDetected": 2,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 3,
       "lastSignalHash": "01ddf7aa5e",
       "lastSignal": "Major product launch"
     },
@@ -2697,14 +2697,28 @@
     },
     "mercedes-benz": {
       "firstSeen": "2026-11-09",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 1,
+      "lastSeen": "2026-11-10",
+      "timesDetected": 2,
       "lastSignalHash": "c73d078f33",
       "lastSignal": "Major product launch"
     },
     "ส.อ.ท.": {
       "firstSeen": "2026-11-09",
       "lastSeen": "2026-11-09",
+      "timesDetected": 1,
+      "lastSignalHash": "ef601f3adf",
+      "lastSignal": "Major product launch"
+    },
+    "twpc": {
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
+      "timesDetected": 1,
+      "lastSignalHash": "e6e5a91ff2",
+      "lastSignal": "Major product launch"
+    },
+    "ส.อ.ท. ร่วม": {
+      "firstSeen": "2026-11-10",
+      "lastSeen": "2026-11-10",
       "timesDetected": 1,
       "lastSignalHash": "ef601f3adf",
       "lastSignal": "Major product launch"
