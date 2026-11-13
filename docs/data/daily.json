@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-12",
-  "generatedAt": "2026-11-12T08:20:52.290Z",
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T07:59:03.923Z",
   "engine": "HYBRID-RSS-GEMINI-1.0",
   "aiEnrichment": {
     "status": "success",
@@ -11,19 +11,123 @@
   },
   "leads": [
     {
-      "id": "8dc1dea5392a",
-      "brandName": "เสื้อผ้าจีน",
-      "companyName": "เสื้อผ้าจีน",
-      "industry": "Retail / Fashion",
+      "id": "b0e59f9be845",
+      "brandName": "เซ็นทรัล รีเทล",
+      "companyName": "เซ็นทรัล รีเทล",
+      "industry": "Food / QSR",
       "brandType": "Established / Growing",
-      "thailandEvidence": "แบรนด์เสื้อผ้าจีนบุกไทย รับสมัครพนักงานเงินเดือน 60,000 บาท เปิดคุณสมบัติ ใครตรงไปโลด!",
+      "thailandEvidence": "UPDATE: เซ็นทรัล รีเทล กวาดรายได้ 9 เดือน 1.87 แสนล้าน กำไร Q3 พุ่ง 72% พร้อมลุยขยายสาขาในไทย-เวียดนาม รับโอกาสโต เซ็นทรัล รีเทล คอร์ปอเรชั่น (CRC) เผยผลดำเนินงานไตรมาส 3/2569 รายได้รวม 61,185 ล้านบาท เพิ่มขึ้น 5% จากช่วงเดียวกันปีก่อน ส่วนกำไรสุทธิหลังรายการ",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-11-12",
+      "whyNow": "UPDATE: เซ็นทรัล รีเทล กวาดรายได้ 9 เดือน 1.87 แสนล้าน กำไร Q3 พุ่ง 72% พร้อมลุยขยายสาขาในไทย-เวียดนาม รับโอกาสโต เซ็นทรัล รีเทล คอร์ปอเรชั่น (CRC) เผยผลดำเนินงานไตรมาส 3/2569 รายได้รวม 61,185 ล้านบาท เพิ่มขึ้น 5% จากช่วงเดียวกันปีก่อน ส่วนกำไรสุทธิหลังรายการ",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMioAZBVV95cUxQdWw5Sll3cEhrSEl6eUNlYjJKZWxvMVF0QkdKMlNCTDRWckwzWHg5RFJWUFhmZlVlLUJPV2tzeFlES08yQ0tkd19ldFM5cHkwTDdlSU5mLWEyUzRJU1pXc0V1T0c0cWxOTXhOQ3AwMUxnWldabXJndUtDRlpBaC1RZG1QV1pfdnRHQmJrcHNoZEc3S0FjNWFQZ0NVNGpYYkMycElwSEx5M3lWbV9tbDlDeG1Tb1JxUkl4VHBjV09teG95LVVrM1VJZlhPeGxIamJJYjdKVXRORlJRbWR5YklDSjRsanhoNDBoUVJkT1FyZkNZWm5FNjRGVFQ0VlVkMFFlUjNKVVk3alliRi1RZWl5by10UnZaUktoQVR3NVQwQ0V2LWIzejc5WmVvVFNCb3ZpcGpZbGdUb3FEcnQ1MHFrSm5wb1JEdV9kOTRuT1dMcWh5S0h5QzNZRE5Bd3pRN0RGQkNOODNxWjVZVU5PUzNTWWQ5VmZtc2xIRUlhd3ZWblJEeWE2UFNaYUY3emVobVpNdkJYOWEtS01YeVF0SWlOOUs2ZTIwR0lpWk53UGpoYzNqVnVuYk1SeHg0NmtLQk5uY2RyMU85YjFZRXd0WVVTZ1lqMmxSWk9rM25DMDFoTjJPM2t5VHVLZHI5WVNfcEkzblhZa2h5UU9zc2lTNVgzX2JIc1VBaG55SXlodXBzLU1aWVpEV2h0VmJxeFNUYVpzSGFkTHdmMDNaM1hYcDA4R29zMVhHT09SbjhPeC1DemhpZWE3ZnFYTkRlb2dTWEJNdFdlaVFJdzJ5TXE2eWRrU1Z1alppb3RiT09Qa29rRG9GM2syTUJ0Q3djMkVvQ0JmSkdId3gtazhaVHdNZ0V2anVhZms4Q19KNFZab1hVU2hUS2VvakVpYnc3Rm9LSmp0b3l2S3JMU1VrQ3ZDSWxPMm1SZTZJcHlPRks4YVBabVNHU25ablhFS1hldTVyR2xPTENLbGRhVW5mdl9ENlpieFMweHBXZTRUWHQ2ZjI5cF9heFA4Qkg3SC1Ob0pvTkJHSWRRV09sbTdPajhZNUMtUg?oc=5",
+          "label": "Facebook"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMi1gdBVV95cUxQNEJadlhYUk5yRl9aNDMwcEc5emNDeHZvR0UxTXQ1QnRMVTI4Q1JDTUZZVDNjamFtZDR5V2NLVFQ0Sl9sa21YOTFpcjg4dUxqMzlTUi1mM1NtYzVyTlUxa0V1WG01WlNza3J5Y0pNVlIxVXBsR05uQ3huUWxNelAxVW13d2ZwRFVSTHVIOWtyVUZpQXVkMWtEZnJ0WU5iRUhHOVZpQk9qY281WkFkSnNGX3NxdXN0Smc4UE1mQmJHWU1SNlZVU2p5dmFDVEd3WnNIWkh6d2VubTBZbTlkYjZGbXJTaGxVcjZoREdjdnF2QTVDNWs2dmZKTDNueHVXTEhxZUxPY1ZiSkFVTFQ3bFhfa05ha25QRTNTckFJeml2dVFCdVRPYWpYMkNCa01IQXVRc0dVMDBZc0lOc1IwN3lvUkhwTmpCOEt6RW5iaklhMUVYV0xreDk0RXpiN3BHN3QxTV9vbkhMcUQwOF9wTmxTb1RFY0I0cC0tSTFzT0h3Vk9QS2FyTlJVa0xoSzE5dG1ZWW5CTmUyU0VxZnRVczBTTmhtdlptLXpzeFh3WjE0dW5kMVdJN2p2M1lkQzFZQW9mMUZ1VU5JQWk3U2tVWWR0VzFDMGNRYU9CMjZ5bmtiT2JTMUdiUGFXTW84NE1EemE3YkdaVVpnVEVRMTcwZm5Eck4tQVdNVjFMbXNJbFIwVnJuV25sdTdGcGtDV1pwTks3dlhSQlcwU2hycE9kM0dUVERzSTlKdTBpdm5tUTUxcFZteHRlXzM4NlBfdXF4TldsOVJUWHdfS0JSUHpmajRodzNJV01GYUZIUWdFbUROX01DRUJUeTBsbk1pZE13V3NnOVhINUxMZDN6WWViV3oxWXJNZFBqcHZnNjRyUHo5SnRqMkJpa2Q2aGRINDVnYzNwQkVoRTRhYVYxTTF4RkU0MGhsU2ZaX1NUaHdzVVRodUdlYlZURW5aZnpkTjk3RG5tbzY5NVVMX2dhOTkwUGdrU0FxVEJpRGl4XzVlSEg5QzA4Z21vTHlEakNvbjlxbWR5UC1WQXBJdEhMb2M4UDBsVVNnc2lXNjROTG5mUGxvR0NvQkg5bVdrc1daSGxWMjNubDdtS2xlY1AyY2hwbkRkMzFscWZ2bHBhcWlLdkdyZUFCektRczhhYUpHSWtKM2pGc2RiWmYzaEI0ZjBBM1EzT3I5Z2Q5ODZ2OUs4ZmQzLXcyTnVCekNiNjJnQ1RhWExzNjA4LWZJQ1FZakc5aVQtQzRMaGpGY25Cd05TZnZKVjN4bF9EWlV3b0U1c2VQZENnM24zY0Rn?oc=5",
+          "label": "Facebook"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMi4ARBVV95cUxQOWhXdkdYRkU1LTZSajdCOHZLYXJmaG9xdXBLd0JpMEhwb01abXBzQ0FxekJvYmpDZmRWV1VhTHAwel9mOV9hZ3BYV21OSk1VX2NkTTVTenFZMElwanRBSVVQZjNQNjJoWFNDcW10Zi13c2VQLUptajFlcnhRRkZJTWJRaENnYmxWQzB1Tl9UZXdFTE1NVVAzQjl6SUJRbjVCVGM5UmpiV0ZpX2tMRHdnajlSVFdoam5VRWNialFnVHdwajFnQVJBdHNVUDdEZ2VwQTFWOU5NYmpTOURpaGZmRXo2ZHcybHJQU0VYRmxEZVhOS2dBQkNIb2JuMnREeWdDOGdWU3otMXE5b21CY0NnM0ZWdnpRVUlhSkhTd3Z3R1lWbW5yVG5ROV9hb194bVNjekhRM0NYTkhXTDFKSXVDMmt6Z1lVQ1VUY1l0SVMxYmNkZEtyMnpwOVJVTFBIbUZDRHVOZGRKbnFwczJqOWlUeVQ4NWNnSzdBekp6bUdYdnljOHktZm5aM0pCQlhpSHprQ3BuTG9SRnBBN0duTVJCYWZnN0FOVVJwcUdKcms1XzRTenVaM0syWHdoV0FtQmt3QnI1X3FnSDFmekJITWlfaC14V2RlVmM2RWdoQXVUYnJmN1RpcjA4dGN0M0lNYkZMSzdMWFhDS0xRa01Uak52dUhMLVNhdVNaOFlickpiRkhtRk91M19HNkR5bEV6YUc2SVNiQ0JmWm04Z0RPWU9XeUcxTGFGaU5zejg2TTFKOGxKMHVBTVZiWnBSRG55MkdMME9GaDFPeU0xYjFCVFRWYQ?oc=5",
+          "label": "Facebook"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "เซ็นทรัล รีเทล คอร์ปอเรชั่น (CRC) รายงานผลประกอบการ 9 เดือนแรกมีรายได้ 1.87 แสนล้านบาท และกำไรไตรมาส 3 เติบโต 72% พร้อมเดินหน้าขยายสาขาในไทยและเวียดนาม",
+        "whyNow": "บริษัทมีผลประกอบการที่แข็งแกร่งและต้องการรักษาอัตราการเติบโตผ่านการขยายพื้นที่สาขาในช่วงปลายปี",
+        "salesAngle": "กลยุทธ์การบริหารจัดการพื้นที่สาขาใหม่และการเพิ่มประสิทธิภาพการดำเนินงานในแต่ละทำเลมีแนวทางอย่างไร",
+        "nextBestAction": "นัดหมายเพื่อหารือเกี่ยวกับโซลูชันที่ช่วยสนับสนุนการบริหารจัดการสาขาใหม่ให้มีประสิทธิภาพ",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "2a2e21d43435",
+      "brandName": "KFC",
+      "companyName": "KFC",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "KFC ไทย รีเฟรชแบรนด์-สาขา-เมนู ย้ำผู้นำตลาดไก่ทอด",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-10-07",
+      "whyNow": "KFC ไทย รีเฟรชแบรนด์-สาขา-เมนู ย้ำผู้นำตลาดไก่ทอด",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 87,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 5
+      },
+      "priority": "HOT",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXcy1rYkxteTJyandNanptSEN5Zkx1Ri1BLVhqR3V4d1FUVEYwSjBvLTdMbmtiOWIxSk85bHF2Qk83Yk5pQzh5eVRYU0gtSTlPRDRGSHVVZ3daWHd2?oc=5",
+          "label": "ประชาชาติธุรกิจ"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX1RwVUJSeWZfbHltNEF3V285WnVYOTRnZG1ielJmRTRINmxBQkxXYno2a3JMa0R2U004UU1ESGFfc24tZm5Hbkxwb2FJcHJUUjdmakMwQjd3ZnJPYjFLNF8xT05fOWZfNXJvTGF5eDhXOG85aGxYSkVBT0thOVVPWVZGODJ0WWRNMzNPcktjdl9WSThMS0VmR0RlRFB0QUxoc3BxZmg4RTVieWJZRHc?oc=5",
+          "label": "Forbes Thailand"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5qSkg2dmpTTTNab29UdHVBaVlRbXNhUDhIeXUxWUM4dXNYYmF0bGZrNFZhckd6b3ppMFNZMU9YdzV4MjdiTzllZU9HSnJwUEljSW1n?oc=5",
+          "label": "Positioningmag"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.9,
+        "businessContext": "KFC ประเทศไทยประกาศเข้าสู่ยุคใหม่ (New Era) โดยเน้นการรีเฟรชแบรนด์ ปรับปรุงสาขา และยกระดับเมนูให้ลูกค้าปรับแต่งรสชาติได้เอง",
+        "whyNow": "เป็นการปรับตัวครั้งใหญ่เพื่อรักษาความเป็นผู้นำในตลาดไก่ทอดและสร้างประสบการณ์ใหม่ให้ลูกค้า",
+        "salesAngle": "การนำเทคโนโลยีหรือนวัตกรรมมาใช้เพื่อรองรับการปรับแต่งเมนูตามความต้องการของลูกค้าในแต่ละสาขาเป็นอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายพัฒนาธุรกิจเพื่อสอบถามถึงแนวทางการยกระดับประสบการณ์ลูกค้าในสาขาใหม่",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "da58e5a3538d",
+      "brandName": "Meta One",
+      "companyName": "Meta One",
+      "industry": "E-Commerce / Platform",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "เปิดตัว Meta One ในไทย Facebook, Instagram, WhatsApp โซเซียลฉบับเสียเงินอัปเกรดความสามารถ",
       "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-11-11",
-      "whyNow": "แบรนด์เสื้อผ้าจีนบุกไทย รับสมัครพนักงานเงินเดือน 60,000 บาท เปิดคุณสมบัติ ใครตรงไปโลด!",
+      "signalDate": "2026-09-16",
+      "whyNow": "เปิดตัว Meta One ในไทย Facebook, Instagram, WhatsApp โซเซียลฉบับเสียเงินอัปเกรดความสามารถ",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
-      "score": 85,
+      "score": 87,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 20,
@@ -31,25 +135,33 @@
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HOT",
-      "isNew": true,
-      "isUpdated": false,
+      "isNew": false,
+      "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1mcUprcXh5Wjl5TDRYQVB2U29QazY5aGJpUXQxYmZkOTZyQUpsMjhXYWtkMloyZi0ya1FsQ2ZfcFZBLVFOS3NaQVdlQVQ?oc=5",
-          "label": "Sanook"
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DQkx3SUJnMFEzZDR0RW1nRnEwUXlvYkktOU5IVHZTdWU2N1RxaUVCV1hUa1dWbGpGWTFwUE5GVEZMVFFBY3hlYWozX0Zadw?oc=5",
+          "label": "BT beartai"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcXg1c1ZvZmZZSUFjZ3pnWEl0bzNkNGV5Z1FraEtCQ2NmbWVPbkd3SnZlOFdCZmd6VEZxek9uX2MzV0l0aUozaS1fR01oME9WN2VFWEluTlVpeHVMcEl6Tk9KcVJwY3c2TTlYWlZQSFY1RnVKTHdMVXlTbkVidkhCTVAzTzN1ajYtcUNYOWlWczR5RDRqWko3T3hnZVdDeGZNeUF5OGhqdw?oc=5",
+          "label": "การตลาดวันละตอน"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FZ3A4TFBGWm5Ma0U4OHkxYWtseklFT2tUamVTU3A0VmdmQ2FmSy1HMEIzY1NnTlN4ZVI4UGFoc2dYRUtGd0dlNldoY1JJMTNrb0JTeHBfOEdEYlJlVEM5d3NIZWtDNXIwUVZ4OHE2VQ?oc=5",
+          "label": "DroidSans"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.85,
-        "businessContext": "แบรนด์เสื้อผ้าจากประเทศจีนกำลังขยายธุรกิจเข้าสู่ประเทศไทยและเริ่มประกาศรับสมัครพนักงาน",
-        "whyNow": "อยู่ในช่วงเริ่มต้นของการจัดตั้งทีมงานและเตรียมความพร้อมสำหรับการเปิดตัวในตลาดไทย",
-        "salesAngle": "แบรนด์กำลังอยู่ในช่วงเริ่มต้นของการบุกตลาดไทย มีความต้องการโซลูชันด้านการสร้างแบรนด์หรือการตลาดเพื่อเข้าถึงกลุ่มเป้าหมายในไทยหรือไม่",
-        "nextBestAction": "ติดต่อฝ่ายทรัพยากรบุคคลหรือผู้จัดการโครงการเพื่อสอบถามถึงแผนการดำเนินงานในไทย",
+        "confidence": 0.95,
+        "businessContext": "Meta One เปิดตัวบริการแบบเสียค่าสมาชิกในไทย เพื่อเข้าถึงฟีเจอร์ AI และเครื่องมือพิเศษบน Facebook, Instagram และ WhatsApp",
+        "whyNow": "เป็นการขยายบริการพรีเมียมสู่ตลาดไทยเพื่อเพิ่มรายได้จากผู้ใช้งานที่ต้องการฟีเจอร์ขั้นสูง",
+        "salesAngle": "การนำฟีเจอร์ AI ของ Meta One มาประยุกต์ใช้เพื่อเพิ่มประสิทธิภาพในการทำธุรกิจบนแพลตฟอร์มมีแนวทางอย่างไร",
+        "nextBestAction": "สอบถามข้อมูลเพิ่มเติมเกี่ยวกับสิทธิประโยชน์สำหรับธุรกิจที่สมัครใช้บริการ Meta One",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -60,14 +172,14 @@
       "companyName": "CRC",
       "industry": "Banking / Finance",
       "brandType": "Established / Growing",
-      "thailandEvidence": "CRC เปิดเกมรุกโค้งสุดท้ายอัด AI-ขยายสาขา ไทย-เวียดนาม ปลุกกำลังซื้อปลายปี | การเงินธนาคาร",
+      "thailandEvidence": "CRC เปิดเกมรุกโค้งสุดท้ายอัด AI-ขยายสาขา ไทย-เวียดนาม ปลุกกำลังซื้อปลายปี",
       "buyingSignal": "Expansion / new branches",
       "signalDate": "2026-11-12",
-      "whyNow": "CRC เปิดเกมรุกโค้งสุดท้ายอัด AI-ขยายสาขา ไทย-เวียดนาม ปลุกกำลังซื้อปลายปี | การเงินธนาคาร",
+      "whyNow": "CRC เปิดเกมรุกโค้งสุดท้ายอัด AI-ขยายสาขา ไทย-เวียดนาม ปลุกกำลังซื้อปลายปี",
       "momentum": "Rising",
       "revenueMinM": 5,
       "revenueMaxM": 10,
-      "score": 83,
+      "score": 85,
       "scores": {
         "thailand_relevance": 14,
         "buying_signal_strength": 18,
@@ -75,12 +187,16 @@
         "ooh_fit": 14,
         "momentum": 6,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
-      "priority": "HIGH",
+      "priority": "HOT",
       "isNew": false,
       "isUpdated": true,
       "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91ZVZnTV9Rbi1UczVvUzM0dUNyQzNzc3M4eGpTNFVFV3l5Q0M1eU91YW1CN3cxUzRjbEZUWmVIOS1ZT0tXd3hRb3paLVhFaGRReEFNXw?oc=5",
+          "label": "วารสารการเงินธนาคาร"
+        },
         {
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wd1pGM29iWmlBRy0zVEdRLUE0VXpEb19kYl91YTFmb21iMENsMlVlWnpIT0Q4OV9XSm5lbjUweWdpcG5ONUhwV0YzYUVNMDlpR1RSeGN3?oc=5",
           "label": "LINE TODAY"
@@ -90,10 +206,98 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "CRC เดินหน้าขยายสาขาในไทยและเวียดนาม พร้อมนำเทคโนโลยี AI มาใช้เพื่อกระตุ้นยอดขายช่วงปลายปี",
-        "whyNow": "ต้องการเร่งยอดขายในช่วงโค้งสุดท้ายของปีผ่านการขยายสาขาและการใช้เทคโนโลยี",
-        "salesAngle": "CRC มีการนำ AI มาใช้ในการดำเนินงาน มีความสนใจในการเพิ่มประสิทธิภาพการตลาดด้วยเทคโนโลยีหรือการบริหารจัดการสาขาเพิ่มเติมหรือไม่",
-        "nextBestAction": "นัดหมายทีมงานฝ่ายกลยุทธ์ดิจิทัลเพื่อหารือเกี่ยวกับแนวทางการใช้เทคโนโลยีสนับสนุนการขาย",
+        "businessContext": "CRC เร่งเครื่องช่วงโค้งสุดท้ายของปีด้วยการนำ AI มาใช้และขยายสาขาในไทยและเวียดนามเพื่อกระตุ้นกำลังซื้อ",
+        "whyNow": "ต้องการเร่งยอดขายในช่วงปลายปีซึ่งเป็นช่วงไฮซีซั่นของการจับจ่ายใช้สอย",
+        "salesAngle": "การนำ AI มาใช้ในสาขาใหม่เพื่อวิเคราะห์พฤติกรรมผู้บริโภคมีเป้าหมายหลักอย่างไร",
+        "nextBestAction": "นัดหมายเพื่อพูดคุยเกี่ยวกับเครื่องมือ AI ที่จะช่วยเพิ่มยอดขายในสาขาใหม่",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "cba18f76acca",
+      "brandName": "Berwick 1707",
+      "companyName": "Berwick 1707",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "รองเท้าหนัง ไม่ได้ใส่แค่ออกงาน แต่ยังใช้ได้ในชีวิตประจำวัน ‘Berwick 1707’ แบรนด์รองเท้าสัญชาติสเปน เปิดสาขาแรกในไทยแล้ว ที่ Central Embassy | Brand Inside",
+      "buyingSignal": "Expansion / new branches",
+      "signalDate": "2026-09-12",
+      "whyNow": "รองเท้าหนัง ไม่ได้ใส่แค่ออกงาน แต่ยังใช้ได้ในชีวิตประจำวัน ‘Berwick 1707’ แบรนด์รองเท้าสัญชาติสเปน เปิดสาขาแรกในไทยแล้ว ที่ Central Embassy | Brand Inside",
+      "momentum": "Rising",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 85,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 18,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 6,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HOT",
+      "isNew": false,
+      "isUpdated": true,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1maDRUUGREQWhtOHpSQjhtVU5WeFBBNnVOdXZobXItT1Z6RmNqTjBZNnoxTVpFX0RmQUpadHgzV3o4VjdUcE1QWVYxZmd0WVk?oc=5",
+          "label": "Brand Inside"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.95,
+        "businessContext": "แบรนด์รองเท้าหนังจากสเปน Berwick 1707 เปิดสาขาแรกในไทยอย่างเป็นทางการที่ Central Embassy",
+        "whyNow": "เป็นการขยายตลาดเข้าสู่ประเทศไทยเพื่อตอบรับกลุ่มลูกค้าที่ชื่นชอบสินค้าพรีเมียม",
+        "salesAngle": "การสร้างฐานลูกค้าใหม่ในไทยผ่านสาขาแรกมีกลยุทธ์การสื่อสารอย่างไร",
+        "nextBestAction": "ติดต่อผู้จัดการแบรนด์เพื่อสอบถามถึงแผนการสร้างการรับรู้ในตลาดไทย",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "2cc68c1066b6",
+      "brandName": "เชอรี ประเทศไทย",
+      "companyName": "เชอรี ประเทศไทย",
+      "industry": "Automotive",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "เชอรี ประเทศไทย คว้าแบรนด์ตอบโจทย์คนรุ่นใหม่ พร้อมส่ง Chery Q ทะลุรอบ Finalist “THAILAND EV OF THE YEAR 2026”",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-11-13",
+      "whyNow": "เชอรี ประเทศไทย คว้าแบรนด์ตอบโจทย์คนรุ่นใหม่ พร้อมส่ง Chery Q ทะลุรอบ Finalist “THAILAND EV OF THE YEAR 2026”",
+      "momentum": "Active",
+      "revenueMinM": 5,
+      "revenueMaxM": 10,
+      "score": 82,
+      "scores": {
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 18,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": true,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcXEzZzFJZS16QUpNT2NkSlBkdWtvdFY0MjNENWZ6N3lraTgzOUlhQTZNV21WaXM2dlZQb2NTZi1walU0b1RtdHVpVnhvMWNZeXdheEVoNjEwTFRJV0hkV0hMMXM3NFlJN1hhRkdobHRya0pQdzc1LTdzY0lLaGtJbkxEbjBrUWJaelphSWUyWQ?oc=5",
+          "label": "iMoD"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.9,
+        "businessContext": "เชอรี ประเทศไทย เปิดตัวรถยนต์รุ่น Chery Q ซึ่งผ่านเข้ารอบ Finalist ในงาน THAILAND EV OF THE YEAR 2026",
+        "whyNow": "เป็นการสร้างความเชื่อมั่นในแบรนด์และผลิตภัณฑ์ใหม่ในตลาดรถยนต์ไฟฟ้าไทย",
+        "salesAngle": "จุดเด่นของ Chery Q ที่ตอบโจทย์คนรุ่นใหม่ในตลาด EV ไทยคืออะไร",
+        "nextBestAction": "สอบถามข้อมูลเกี่ยวกับแผนการทำตลาดรถยนต์รุ่นใหม่ในประเทศไทย",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -104,10 +308,10 @@
       "companyName": "JOURNAL",
       "industry": "Beauty / Personal Care",
       "brandType": "Established / Growing",
-      "thailandEvidence": "JOURNAL โตแรงต่อเนื่อง คาดรายได้ปี 69 แตะ 800 ล้านบาท ปักธงน้ำหอมไทยพรีเมียม ท้าชนแบรนด์นอก | Thairath Money",
+      "thailandEvidence": "น้ำหอมไทยไม่จำเป็นต้องราคาถูก JOURNAL ทลายเพดานราคาตั้งแต่ขวดละ 1,900 บาท ปีก่อนขายได้ 575 ล้าน ตั้งเป้าปีนี้ 800 ล้านบาท",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-11-11",
-      "whyNow": "JOURNAL โตแรงต่อเนื่อง คาดรายได้ปี 69 แตะ 800 ล้านบาท ปักธงน้ำหอมไทยพรีเมียม ท้าชนแบรนด์นอก | Thairath Money",
+      "signalDate": "2026-11-12",
+      "whyNow": "น้ำหอมไทยไม่จำเป็นต้องราคาถูก JOURNAL ทลายเพดานราคาตั้งแต่ขวดละ 1,900 บาท ปีก่อนขายได้ 575 ล้าน ตั้งเป้าปีนี้ 800 ล้านบาท",
       "momentum": "Active",
       "revenueMinM": 3,
       "revenueMaxM": 6,
@@ -126,8 +330,8 @@
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Rc0t4N19pUzAwc0Nrb0psLVNMN0ZWSllHSmkzRG9VdHZqdFhxTUhUUHZMSTBNLUp4UzJIbVJTSk9TRkpFR1NCbVVxakI0aUJtZ0xuMXlR?oc=5",
-          "label": "LINE TODAY"
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1RNmxyQWFvS3Z1SGdTZlhhVmx6dUVveHhsS3VvOE1UOHJ5THhXd2Jfc3gxSUZCcmJGNnZWT1g3SXJ1UWpNQTJ3eVFQcWh6M2xUQ3FyOGdQVGlscE5VTjhtVXJyaFRfa2NIQ3V6NC13?oc=5",
+          "label": "Head Topics"
         },
         {
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPajBnUlhmRUx5bGY1LU1NOEdVdGpSLU5falNuWDh4bUE1MGhXTDNwODA4aUVxMks0T2w0VGVTaU04T3g0ZGpmcm1uem93OHdEdEtEUzlnMlZtbG9nTXhDZWUzSVdudUZhMlFPUWl0VW9ZWkI1S283aHE4SDdoakI5OHBDRQ?oc=5",
@@ -141,143 +345,63 @@
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "JOURNAL รุกตลาดน้ำหอมไทยพรีเมียม ดึงพรีเซนเตอร์เจาะกลุ่มคนรุ่นใหม่ ตั้งเป้ารายได้ 800 ล้านบาท",
-        "whyNow": "ต้องการสร้างการเติบโตอย่างก้าวกระโดดและแข่งขันกับแบรนด์ต่างประเทศ",
-        "salesAngle": "แบรนด์กำลังรุกตลาดน้ำหอมพรีเมียมอย่างหนัก มีความต้องการกลยุทธ์การตลาดเพื่อสร้างความแตกต่างและเข้าถึงกลุ่มเป้าหมายใหม่ๆ หรือไม่",
-        "nextBestAction": "นัดหมายผู้จัดการแบรนด์เพื่อพูดคุยเกี่ยวกับแผนการสร้างการรับรู้ผ่านพรีเซนเตอร์",
+        "confidence": 0.9,
+        "businessContext": "JOURNAL แบรนด์น้ำหอมไทยระดับพรีเมียมตั้งเป้ารายได้ 800 ล้านบาทในปีนี้ โดยเน้นการทำตลาดน้ำหอมราคาสูงและดึงพรีเซนเตอร์มาเจาะกลุ่มคนรุ่นใหม่",
+        "whyNow": "ต้องการยกระดับแบรนด์น้ำหอมไทยให้แข่งขันกับแบรนด์ต่างชาติได้และสร้างการเติบโตต่อเนื่อง",
+        "salesAngle": "กลยุทธ์การใช้พรีเซนเตอร์เพื่อเจาะกลุ่มคนรุ่นใหม่มีผลต่อการตัดสินใจซื้ออย่างไร",
+        "nextBestAction": "นัดหมายเพื่อหารือเกี่ยวกับแนวทางการสร้างแบรนด์ให้เป็นที่จดจำในกลุ่มพรีเมียม",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "f6e077fd2c2d",
-      "brandName": "แมคโดนัลด์ ประเทศไทย",
-      "companyName": "แมคโดนัลด์ ประเทศไทย",
-      "industry": "Food / QSR",
+      "id": "a4d74f31c9b8",
+      "brandName": "Omnichannel Collaborative Ads",
+      "companyName": "Omnichannel Collaborative Ads",
+      "industry": "Consumer / Other",
       "brandType": "Established / Growing",
-      "thailandEvidence": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’",
+      "thailandEvidence": "Meta เปิด 2 โซลูชันใหม่เสริมศักยภาพธุรกิจไทย Omnichannel Collaborative Ads และ Dream Render",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-21",
-      "whyNow": "แมคโดนัลด์ ประเทศไทย ผู้นำแบรนด์ QSR ระดับโลก จับมือ G-DRAGON เปิดตัวแคมเปญ ‘Asia Chicken’",
+      "signalDate": "2026-11-12",
+      "whyNow": "Meta เปิด 2 โซลูชันใหม่เสริมศักยภาพธุรกิจไทย Omnichannel Collaborative Ads และ Dream Render",
       "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 80,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9sTFpZSWtoODhObTVNQVVsMXZvY1hBeF9Qb2tDZnFsRTYwUDAydFQ3WWRNekF0ZXNwb1VlQjROYWVFTUJLRkdHOVFiWmFsWE9zRGNN?oc=5",
-          "label": "Positioningmag"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 1,
-        "businessContext": "แมคโดนัลด์ ประเทศไทย ร่วมมือกับ G-DRAGON เปิดตัวแคมเปญ Asia Chicken",
-        "whyNow": "การใช้ศิลปินระดับโลกเป็นกลยุทธ์สำคัญในการสร้างกระแสและดึงดูดกลุ่มลูกค้าคนรุ่นใหม่",
-        "salesAngle": "การวัดผลความสำเร็จของแคมเปญที่ใช้ศิลปินระดับโลกในตลาดไทยมีตัวชี้วัดอย่างไร",
-        "nextBestAction": "ติดต่อทีมการตลาดเพื่อสอบถามถึงแนวทางการต่อยอดแคมเปญระดับภูมิภาคในประเทศไทย",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "e70b3037303d",
-      "brandName": "BITETO (ไบท์โตะ)",
-      "companyName": "BITETO (ไบท์โตะ)",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "จาก “ข้าวหอมมะลิไทย” สู่ Rice Snack ดีไซน์ใหม่เพื่อคนรุ่นใหม่ MultiplyByEight (X8) เปิดตัวแบรนด์ “BITETO (ไบท์โตะ)” ปั้นขนมข้าวอบกรอบผ่าน Character Marketing เจาะ Gen Y – Gen Z",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-10-15",
-      "whyNow": "จาก “ข้าวหอมมะลิไทย” สู่ Rice Snack ดีไซน์ใหม่เพื่อคนรุ่นใหม่ MultiplyByEight (X8) เปิดตัวแบรนด์ “BITETO (ไบท์โตะ)” ปั้นขนมข้าวอบกรอบผ่าน Character Marketing เจาะ Gen Y – Gen Z",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 80,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": true,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBZaDJlVFVpcU95Wk84S2o3MVROOGN4cmJVMVJZdVRrMEhaSUdaN1BtVGJMSmlleE1PTWhVSEtDSDNDM1k1SG5ydC1mOFhpdkFrTkZn?oc=5",
-          "label": "Positioningmag"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 1,
-        "businessContext": "MultiplyByEight เปิดตัวแบรนด์ขนมข้าวอบกรอบ BITETO เน้นกลุ่ม Gen Y และ Gen Z ด้วยกลยุทธ์ Character Marketing",
-        "whyNow": "การใช้ Character Marketing เป็นเครื่องมือสำคัญในการสร้างความผูกพันกับกลุ่มเป้าหมายคนรุ่นใหม่",
-        "salesAngle": "แนวทางการสร้างความแตกต่างของแบรนด์ขนมขบเคี้ยวใหม่ในตลาดที่มีการแข่งขันสูงคืออะไร",
-        "nextBestAction": "นัดหมายพูดคุยกับทีมบริหารแบรนด์เพื่อสอบถามถึงแผนการสร้างการรับรู้ในกลุ่มเป้าหมาย",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "04635a9b6bad",
-      "brandName": "LEAPMOTOR B03X",
-      "companyName": "LEAPMOTOR B03X",
-      "industry": "Automotive",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "LEAPMOTOR B03X เปิดตัวราคาพิเศษ 499,000 บาท เจาะลึกสเปก EV B-SUV และแผนลงทุนในไทย",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-11-03",
-      "whyNow": "LEAPMOTOR B03X เปิดตัวราคาพิเศษ 499,000 บาท เจาะลึกสเปก EV B-SUV และแผนลงทุนในไทย",
-      "momentum": "Rising",
-      "revenueMinM": 5,
-      "revenueMaxM": 10,
-      "score": 78,
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
+      "score": 79,
       "scores": {
         "thailand_relevance": 18,
         "buying_signal_strength": 19,
-        "revenue_potential": 18,
-        "ooh_fit": 14,
-        "momentum": 6,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 4,
         "timing": 10,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HIGH",
-      "isNew": false,
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN2R1N1FxYnZYeS16OTFyRGowMXVKUU9CTXYxMXg0Y2NIc1M0NVlmSHZpMHFfY3I3RjdaYk9jamZXWVV4dlBSRGNkbHBaUFNyNF82aEdIbzNpVTNwUi1hVmI1cGh0dVBYS0d5OUdWRFRnMXpRYWxnQ29NaTBUeUFCQ3NjT19sQ3hTX3ptUGpaSFduOHNJeF84UmtwaG9WWmc?oc=5",
-          "label": "BiztalkNEWS"
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1memtSaG5icVdIU1VRTnltTEt1N25wLWlyRmFJWG9hSUo2S1I3cnBtM0hSNUs4c0JKLVE0SGZleGhJWXp1LVdweWJLdml2LTk4Rzd5OFZraGxfOHk3bkZwVFFfZmV1V0MtUXN3b0JB?oc=5",
+          "label": "Head Topics"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13OHlCVTZzR0RORENGeHFvTEtVckcweFlnUlVKNXJVUTB3ajlhNDM1ZzZGaWZOTFh3dERxMllEQTlMYXVtZUtSOXdPaG1LWDdBa2ZFSTJqMW90alByaUZYV1ZPTmFqelN2bWxJMA?oc=5",
+          "label": "Head Topics"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0tUjU2dUJqU2d5LWZKT01lM2Y4OFRTdThsUjVyaHpXSk5kYkJnVEF5VEFrMVVqZlg3d1BlektCb3FiWjFCX3lmaTl1OUhTOEZ2YUc0?oc=5",
+          "label": "Positioningmag"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "LEAPMOTOR B03X เปิดตัวรถยนต์ไฟฟ้า B-SUV ในไทยด้วยราคาพิเศษ",
-        "whyNow": "เป็นการเปิดตัวผลิตภัณฑ์ใหม่เพื่อสร้างส่วนแบ่งการตลาดในกลุ่มรถยนต์ไฟฟ้า",
-        "salesAngle": "แบรนด์เพิ่งเปิดตัวรถยนต์รุ่นใหม่ มีความต้องการสนับสนุนด้านการตลาดเพื่อสร้างยอดขายและการรับรู้ในกลุ่มผู้บริโภคไทยหรือไม่",
-        "nextBestAction": "ติดต่อฝ่ายการตลาดของแบรนด์เพื่อสอบถามถึงแผนการทำกิจกรรมส่งเสริมการขาย",
+        "confidence": 0.9,
+        "businessContext": "Meta เปิดตัวโซลูชัน Omnichannel Collaborative Ads และ Dream Render เพื่อช่วยธุรกิจไทยเพิ่มประสิทธิภาพการตลาด",
+        "whyNow": "เพื่อสนับสนุนธุรกิจไทยให้สามารถเชื่อมต่อประสบการณ์ออนไลน์และออฟไลน์ได้ดียิ่งขึ้น",
+        "salesAngle": "โซลูชันใหม่นี้จะช่วยให้ธุรกิจไทยวัดผลการขายแบบ Omnichannel ได้แม่นยำขึ้นอย่างไร",
+        "nextBestAction": "ขอข้อมูลเชิงลึกเกี่ยวกับวิธีการใช้งานโซลูชันใหม่เพื่อเพิ่มยอดขาย",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -318,62 +442,10 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.85,
-        "businessContext": "แบรนด์รถยนต์ไฟฟ้าจีน 3 แบรนด์ ได้แก่ Li Auto, VOYAH และ LUXEED เตรียมเข้าสู่ตลาดไทย",
-        "whyNow": "เป็นแผนการขยายธุรกิจของแบรนด์รถยนต์ไฟฟ้าจีนเพื่อรองรับตลาดไทย",
-        "salesAngle": "แบรนด์กำลังเตรียมตัวเข้าสู่ตลาดไทย มีความต้องการคำปรึกษาด้านการวางกลยุทธ์การตลาดเพื่อเปิดตัวแบรนด์หรือไม่",
-        "nextBestAction": "ติดตามข่าวสารการจัดตั้งบริษัทในไทยเพื่อหาโอกาสในการติดต่อประสานงาน",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "f496e490882b",
-      "brandName": "ลัคกี้สุกี้",
-      "companyName": "ลัคกี้สุกี้",
-      "industry": "Food / QSR",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "UPDATE: เศรษฐกิจชะลอ บุฟเฟต์ราคาหลักร้อยเสี่ยงหดตัวน้อยกว่าร้านอาหารแบบอื่น เพราะลูกค้ารู้งบก่อนเข้าร้าน ลัคกี้สุกี้ตั้งเป้าปิดปี 72 สาขา รายได้ 3,500 ล้านบาท ลัคกี้สุกี้เปิดโมเดลใหม่ ลัคกี้ สุกี้ มาร์เช่ แอนด์ ติ่มซำ สาขาแรกที่ยูเนี่ยน มอลล์ ซึ่งเป็นสาขาที่ 58 ของแบรนด์ ต่อจากลัคกี้ สุกี้ 33",
-      "buyingSignal": "Expansion / new branches",
-      "signalDate": "2026-10-27",
-      "whyNow": "UPDATE: เศรษฐกิจชะลอ บุฟเฟต์ราคาหลักร้อยเสี่ยงหดตัวน้อยกว่าร้านอาหารแบบอื่น เพราะลูกค้ารู้งบก่อนเข้าร้าน ลัคกี้สุกี้ตั้งเป้าปิดปี 72 สาขา รายได้ 3,500 ล้านบาท ลัคกี้สุกี้เปิดโมเดลใหม่ ลัคกี้ สุกี้ มาร์เช่ แอนด์ ติ่มซำ สาขาแรกที่ยูเนี่ยน มอลล์ ซึ่งเป็นสาขาที่ 58 ของแบรนด์ ต่อจากลัคกี้ สุกี้ 33",
-      "momentum": "Rising",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 77,
-      "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 18,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 6,
-        "timing": 10,
-        "evidence_quality": 5
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMi1gdBVV95cUxQNEJadlhYUk5yRl9aNDMwcEc5emNDeHZvR0UxTXQ1QnRMVTI4Q1JDTUZZVDNjamFtZDR5V2NLVFQ0Sl9sa21YOTFpcjg4dUxqMzlTUi1mM1NtYzVyTlUxa0V1WG01WlNza3J5Y0pNVlIxVXBsR05uQ3huUWxNelAxVW13d2ZwRFVSTHVIOWtyVUZpQXVkMWtEZnJ0WU5iRUhHOVZpQk9qY281WkFkSnNGX3NxdXN0Smc4UE1mQmJHWU1SNlZVU2p5dmFDVEd3WnNIWkh6d2VubTBZbTlkYjZGbXJTaGxVcjZoREdjdnF2QTVDNWs2dmZKTDNueHVXTEhxZUxPY1ZiSkFVTFQ3bFhfa05ha25QRTNTckFJeml2dVFCdVRPYWpYMkNCa01IQXVRc0dVMDBZc0lOc1IwN3lvUkhwTmpCOEt6RW5iaklhMUVYV0xreDk0RXpiN3BHN3QxTV9vbkhMcUQwOF9wTmxTb1RFY0I0cC0tSTFzT0h3Vk9QS2FyTlJVa0xoSzE5dG1ZWW5CTmUyU0VxZnRVczBTTmhtdlptLXpzeFh3WjE0dW5kMVdJN2p2M1lkQzFZQW9mMUZ1VU5JQWk3U2tVWWR0VzFDMGNRYU9CMjZ5bmtiT2JTMUdiUGFXTW84NE1EemE3YkdaVVpnVEVRMTcwZm5Eck4tQVdNVjFMbXNJbFIwVnJuV25sdTdGcGtDV1pwTks3dlhSQlcwU2hycE9kM0dUVERzSTlKdTBpdm5tUTUxcFZteHRlXzM4NlBfdXF4TldsOVJUWHdfS0JSUHpmajRodzNJV01GYUZIUWdFbUROX01DRUJUeTBsbk1pZE13V3NnOVhINUxMZDN6WWViV3oxWXJNZFBqcHZnNjRyUHo5SnRqMkJpa2Q2aGRINDVnYzNwQkVoRTRhYVYxTTF4RkU0MGhsU2ZaX1NUaHdzVVRodUdlYlZURW5aZnpkTjk3RG5tbzY5NVVMX2dhOTkwUGdrU0FxVEJpRGl4XzVlSEg5QzA4Z21vTHlEakNvbjlxbWR5UC1WQXBJdEhMb2M4UDBsVVNnc2lXNjROTG5mUGxvR0NvQkg5bVdrc1daSGxWMjNubDdtS2xlY1AyY2hwbkRkMzFscWZ2bHBhcWlLdkdyZUFCektRczhhYUpHSWtKM2pGc2RiWmYzaEI0ZjBBM1EzT3I5Z2Q5ODZ2OUs4ZmQzLXcyTnVCekNiNjJnQ1RhWExzNjA4LWZJQ1FZakc5aVQtQzRMaGpGY25Cd05TZnZKVjN4bF9EWlV3b0U1c2VQZENnM24zY0Rn?oc=5",
-          "label": "Facebook"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMi4ARBVV95cUxQOWhXdkdYRkU1LTZSajdCOHZLYXJmaG9xdXBLd0JpMEhwb01abXBzQ0FxekJvYmpDZmRWV1VhTHAwel9mOV9hZ3BYV21OSk1VX2NkTTVTenFZMElwanRBSVVQZjNQNjJoWFNDcW10Zi13c2VQLUptajFlcnhRRkZJTWJRaENnYmxWQzB1Tl9UZXdFTE1NVVAzQjl6SUJRbjVCVGM5UmpiV0ZpX2tMRHdnajlSVFdoam5VRWNialFnVHdwajFnQVJBdHNVUDdEZ2VwQTFWOU5NYmpTOURpaGZmRXo2ZHcybHJQU0VYRmxEZVhOS2dBQkNIb2JuMnREeWdDOGdWU3otMXE5b21CY0NnM0ZWdnpRVUlhSkhTd3Z3R1lWbW5yVG5ROV9hb194bVNjekhRM0NYTkhXTDFKSXVDMmt6Z1lVQ1VUY1l0SVMxYmNkZEtyMnpwOVJVTFBIbUZDRHVOZGRKbnFwczJqOWlUeVQ4NWNnSzdBekp6bUdYdnljOHktZm5aM0pCQlhpSHprQ3BuTG9SRnBBN0duTVJCYWZnN0FOVVJwcUdKcms1XzRTenVaM0syWHdoV0FtQmt3QnI1X3FnSDFmekJITWlfaC14V2RlVmM2RWdoQXVUYnJmN1RpcjA4dGN0M0lNYkZMSzdMWFhDS0xRa01Uak52dUhMLVNhdVNaOFlickpiRkhtRk91M19HNkR5bEV6YUc2SVNiQ0JmWm04Z0RPWU9XeUcxTGFGaU5zejg2TTFKOGxKMHVBTVZiWnBSRG55MkdMME9GaDFPeU0xYjFCVFRWYQ?oc=5",
-          "label": "Facebook"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiywVBVV95cUxNbm9LUzBiQldUd1VrMWJ0a0pFRGd6NUFPaTlndVlaOWpVbDBnVXhiQ2JJem9qZGlGTmdnTXVVb1lPc2lIVzVPUmFaQlRDUXpZMTVHV1c2LXJKcjlSRm1GeTdMTV92b2lxWUxlNWZoaThael9XUU8waWoyenU1Rm4xT2RjVXVTZFN3cmgySkdxbGJCWDJuX254bWtEbHVGZzFFSnRCcFpXbXlXQWNoZ3lUbzRONWpsSGo2RGF3b1h0S3lWV2o2RDIycXBVMHR3dmE5enRkYzBCQW9lWXFiOE40R3NXV1h1ekptWVVKSEMyS2NNNEJuVV9hM2JsZ1ktUVEtR2ZRMlhUblBPMWdEdEtXeDJMQjFUTS1PU0VsUDhabmw0VWNjbjN1bDRpQzRScURqcm1VRXNwOTB6alRXejJjNEtPbWtxTVd5eVF3Z1hoWXlhZGc3b2xvblNtek1ucUVGcFpqeDVhQmVuaEpzbVRGUXAzX0xVTDNScV9PdVREX293UzVGWmc4d3NzMnZEUzVPSm5xejZvWnN2VmYwa21ZeUxNblJvejYzb2ttMkh4QjgtLVRHRGJ5TUlfbkRiT2VBelNOVFdUcFNUOGZjTTRXOXdldXVCcHVzOG1MNGFOTFdlV3ExQzczNDZQbFJXYjFaM2RTandPME1YQWxuN25vLUVQWlNzMER4T2hfMk1NZ3JZZlZkb0p6SE9aYmxtZHVyQmZqV3FRY0hQMGUtYUpmbklvUTQ3cmxuX3BUNmcya0lhTlkyTW5NZXRMc1ctaXFaVVBpb29oRXdCbjVuNjNXeTdyN2o4bFd2RnRKRERFRHhEd0pLQ01mMUxpeXB1QXJranB4SGlEMDFpZ2R6RGZtc1hVSFBmUE5ZTmllOGhaaExKeU90bjNRYWtnNGtyNWlQb2VpMmFBOVREdFE0emVDTXhuVUdMenRlaWVz?oc=5",
-          "label": "Facebook"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "ลัคกี้สุกี้ขยายสาขาต่อเนื่องโดยตั้งเป้าปิดปีที่ 72 สาขา และเปิดโมเดลใหม่ ลัคกี้ สุกี้ มาร์เช่ แอนด์ ติ่มซำ",
-        "whyNow": "ต้องการรักษาฐานลูกค้าในภาวะเศรษฐกิจชะลอตัวด้วยโมเดลร้านอาหารที่ควบคุมงบประมาณได้",
-        "salesAngle": "แบรนด์มีแผนขยายสาขาเชิงรุกและปรับโมเดลร้านใหม่ มีความต้องการสนับสนุนการบริหารจัดการสาขาหรือการตลาดเพื่อสร้างการรับรู้ในโมเดลใหม่หรือไม่",
-        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารฝ่ายการตลาดเพื่อทำความเข้าใจกลยุทธ์การสื่อสารสำหรับโมเดลร้านใหม่",
+        "businessContext": "แบรนด์รถยนต์ไฟฟ้าจีน 3 แบรนด์ ได้แก่ Li Auto, VOYAH และ LUXEED เตรียมเข้าสู่ตลาดประเทศไทย",
+        "whyNow": "ตลาดรถยนต์ไฟฟ้าในไทยมีการเติบโตสูง ทำให้แบรนด์จีนสนใจเข้ามาทำตลาดอย่างต่อเนื่อง",
+        "salesAngle": "กลยุทธ์การวางตำแหน่งแบรนด์ในตลาด EV ไทยที่มีการแข่งขันสูงคืออะไร",
+        "nextBestAction": "ติดตามความคืบหน้าการเปิดตัวอย่างเป็นทางการของแต่ละแบรนด์",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -418,62 +490,54 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "Blue Bottle Coffee เปิดสาขาแรกในไทยที่ Central Park พร้อมเมนูคอลแลบแบรนด์ไทย",
-        "whyNow": "เป็นการเปิดตัวอย่างเป็นทางการเพื่อตอบรับความต้องการของคอกาแฟในไทย",
-        "salesAngle": "แบรนด์เพิ่งเปิดตัวสาขาแรกในไทย มีความต้องการกลยุทธ์การตลาดเพื่อรักษาฐานลูกค้าและสร้างความสัมพันธ์กับแบรนด์ท้องถิ่นเพิ่มเติมหรือไม่",
-        "nextBestAction": "ติดต่อผู้จัดการสาขาหรือฝ่ายการตลาดเพื่อสอบถามถึงแผนการสร้างความสัมพันธ์กับลูกค้าในระยะยาว",
+        "businessContext": "Blue Bottle Coffee เปิดสาขาแรกในไทยที่ Central Park ซึ่งเป็นสาขาแรกในอาเซียนที่ใช้เครื่องชงกาแฟมาตรฐานเดียวกับญี่ปุ่นและสหรัฐฯ",
+        "whyNow": "เป็นการขยายธุรกิจเข้าสู่ตลาดไทยเพื่อตอบรับกระแสความนิยมกาแฟคลื่นลูกที่สาม",
+        "salesAngle": "การรักษามาตรฐานคุณภาพกาแฟในสาขาแรกของไทยมีแนวทางอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายบริหารเพื่อสอบถามถึงแผนการขยายสาขาในอนาคต",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "da58e5a3538d",
-      "brandName": "Meta One",
-      "companyName": "Meta One",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "Meta One เปิดตัวในไทยแล้ว Facebook, Instagram, WhatsApp เริ่มต้น 27 บาท/เดือน อัปเกรดฟีเจอร์ AI แบบจุใจ",
-      "buyingSignal": "Thailand market entry",
-      "signalDate": "2026-09-16",
-      "whyNow": "Meta One เปิดตัวในไทยแล้ว Facebook, Instagram, WhatsApp เริ่มต้น 27 บาท/เดือน อัปเกรดฟีเจอร์ AI แบบจุใจ",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
+      "id": "8c8ed3ea2855",
+      "brandName": "Dream Render",
+      "companyName": "Dream Render",
+      "industry": "Consumer / Other",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "Meta เผย SME ไทย 85% ใช้ AI เปิดตัว Dream Render สร้างวิดีโอด้วย AI พร้อมเครื่องมือวัดยอดขายหน้าร้าน",
+      "buyingSignal": "Major product launch",
+      "signalDate": "2026-11-13",
+      "whyNow": "Meta เผย SME ไทย 85% ใช้ AI เปิดตัว Dream Render สร้างวิดีโอด้วย AI พร้อมเครื่องมือวัดยอดขายหน้าร้าน",
+      "momentum": "Exploding",
+      "revenueMinM": 1.5,
+      "revenueMaxM": 4,
       "score": 77,
       "scores": {
-        "thailand_relevance": 18,
-        "buying_signal_strength": 20,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
+        "thailand_relevance": 14,
+        "buying_signal_strength": 19,
+        "revenue_potential": 13,
+        "ooh_fit": 10,
+        "momentum": 8,
         "timing": 10,
-        "evidence_quality": 5
+        "evidence_quality": 3
       },
       "priority": "HIGH",
-      "isNew": false,
+      "isNew": true,
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FZ3A4TFBGWm5Ma0U4OHkxYWtseklFT2tUamVTU3A0VmdmQ2FmSy1HMEIzY1NnTlN4ZVI4UGFoc2dYRUtGd0dlNldoY1JJMTNrb0JTeHBfOEdEYlJlVEM5d3NIZWtDNXIwUVZ4OHE2VQ?oc=5",
-          "label": "DroidSans"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5DQkx3SUJnMFEzZDR0RW1nRnEwUXlvYkktOU5IVHZTdWU2N1RxaUVCV1hUa1dWbGpGWTFwUE5GVEZMVFFBY3hlYWozX0Zadw?oc=5",
-          "label": "BT beartai"
-        },
-        {
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcXg1c1ZvZmZZSUFjZ3pnWEl0bzNkNGV5Z1FraEtCQ2NmbWVPbkd3SnZlOFdCZmd6VEZxek9uX2MzV0l0aUozaS1fR01oME9WN2VFWEluTlVpeHVMcEl6Tk9KcVJwY3c2TTlYWlZQSFY1RnVKTHdMVXlTbkVidkhCTVAzTzN1ajYtcUNYOWlWczR5RDRqWko3T3hnZVdDeGZNeUF5OGhqdw?oc=5",
-          "label": "การตลาดวันละตอน"
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYW5lYWNNNWxGaE01NGtMM0pFSzRkT0Y4aDlvUVpJX1JKSmJ1RkwzT1F1SDZoclZycFM1M09HY18yemhQbXR0aTdkem5rQlM2c1VDR0RfZTkyUkhjeXFWM1gyNXBqY202aktPMkc2a0RrU0JUU2NQUkszQVZqV0JzUVdIbnh1aGlHUmhhTFZfQnR1UVhNejgwQmZNRGdnNWl2TWpXZk9wTDFWNk9NTlJmenI4NGk?oc=5",
+          "label": "Brand Buffet"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "Meta One เปิดตัวบริการแบบเสียเงินในไทยสำหรับ Facebook, Instagram และ WhatsApp เพื่อเข้าถึงฟีเจอร์ AI",
-        "whyNow": "เป็นการขยายบริการเสริมเพื่อเพิ่มรายได้และมอบประสบการณ์การใช้งานที่เหนือกว่า",
-        "salesAngle": "บริการใหม่มีการเน้นฟีเจอร์ AI มีความต้องการสนับสนุนการสื่อสารเพื่อสร้างความเข้าใจในคุณค่าของบริการแก่ผู้ใช้ชาวไทยหรือไม่",
-        "nextBestAction": "ติดต่อตัวแทนฝ่ายธุรกิจของ Meta เพื่อสอบถามถึงแนวทางการสื่อสารบริการใหม่",
+        "businessContext": "Meta เปิดตัวเครื่องมือ Dream Render เพื่อช่วย SME ไทยสร้างวิดีโอด้วย AI พร้อมระบบวัดผลยอดขายหน้าร้าน",
+        "whyNow": "เพื่อตอบโจทย์ SME ไทยที่หันมาใช้ AI ในการทำตลาดมากขึ้น",
+        "salesAngle": "กลยุทธ์การใช้ AI เพื่อเพิ่มประสิทธิภาพการวัดผลยอดขายหน้าร้านสำหรับ SME เป็นอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับทีมการตลาดของ Meta เพื่อสอบถามแนวทางการสนับสนุน SME ผ่านเครื่องมือใหม่นี้",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -514,10 +578,87 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "กลุ่มธนบุรีได้รับสิทธิ์เป็นผู้แทนจำหน่าย smart และเตรียมเปิดตัวรถยนต์ไฟฟ้าพรีเมียม 3 รุ่นในไทย",
-        "whyNow": "เป็นการรุกตลาดรถยนต์ไฟฟ้าพรีเมียมผ่านการเปิดตัวผลิตภัณฑ์ใหม่",
-        "salesAngle": "แบรนด์กำลังเตรียมเปิดตัวรถยนต์ไฟฟ้าพรีเมียม มีความต้องการกลยุทธ์การตลาดเพื่อสร้างภาพลักษณ์แบรนด์ในกลุ่มลูกค้าเป้าหมายหรือไม่",
-        "nextBestAction": "นัดหมายผู้บริหารฝ่ายการตลาดเพื่อหารือเกี่ยวกับแผนการเปิดตัวรถยนต์รุ่นใหม่",
+        "businessContext": "กลุ่มธนบุรีได้รับสิทธิ์เป็นผู้แทนจำหน่ายรถยนต์ smart อย่างเป็นทางการและเตรียมเปิดตัวรถ EV พรีเมียม 3 รุ่นในไทย",
+        "whyNow": "เพื่อรองรับการขยายตัวของตลาดรถยนต์ไฟฟ้าพรีเมียมในประเทศไทย",
+        "salesAngle": "แผนการสร้างแบรนด์และสื่อสารการตลาดสำหรับรถยนต์ไฟฟ้า smart ในช่วงเปิดตัวเป็นอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายการตลาดของกลุ่มธนบุรีเพื่อสอบถามแผนการเปิดตัวรถยนต์รุ่นใหม่",
+        "sourceBasis": "Public RSS headlines only",
+        "interpretation": "AI analysis / sales hypothesis; verify against source"
+      }
+    },
+    {
+      "id": "8dc1dea5392a",
+      "brandName": "เสื้อผ้าจีน",
+      "companyName": "เสื้อผ้าจีน",
+      "industry": "Retail / Fashion",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "แบรนด์เสื้อผ้าจีนบุกไทย รับสมัครพนักงานเงินเดือน 60,000 บาท เปิดคุณสมบัติ ใครตรงไปโลด!",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-11-11",
+      "whyNow": "แบรนด์เสื้อผ้าจีนบุกไทย รับสมัครพนักงานเงินเดือน 60,000 บาท เปิดคุณสมบัติ ใครตรงไปโลด!",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1mcUprcXh5Wjl5TDRYQVB2U29QazY5aGJpUXQxYmZkOTZyQUpsMjhXYWtkMloyZi0ya1FsQ2ZfcFZBLVFOS3NaQVdlQVQ?oc=5",
+          "label": "Sanook"
+        }
+      ]
+    },
+    {
+      "id": "6f7f5b54f819",
+      "brandName": "YKKO",
+      "companyName": "YKKO",
+      "industry": "Food / QSR",
+      "brandType": "Established / Growing",
+      "thailandEvidence": "YKKO แบรนด์ดังเมียนมา หอบตำนานเจโอ บุกไทย ชิงตลาดร้านอาหาร",
+      "buyingSignal": "Thailand market entry",
+      "signalDate": "2026-10-22",
+      "whyNow": "YKKO แบรนด์ดังเมียนมา หอบตำนานเจโอ บุกไทย ชิงตลาดร้านอาหาร",
+      "momentum": "Active",
+      "revenueMinM": 3,
+      "revenueMaxM": 6,
+      "score": 75,
+      "scores": {
+        "thailand_relevance": 18,
+        "buying_signal_strength": 20,
+        "revenue_potential": 16,
+        "ooh_fit": 14,
+        "momentum": 4,
+        "timing": 10,
+        "evidence_quality": 3
+      },
+      "priority": "HIGH",
+      "isNew": false,
+      "isUpdated": false,
+      "sources": [
+        {
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RLUZfUExXazZJc1VieFJsWnZ0Z25wa3dxSXJ1c0gxZnNCd205aXdQa3pZdmliZUhuU2JqTS1RclJ6cTBLeUVWelJSWFhBNV9sZzRZbw?oc=5",
+          "label": "posttoday"
+        }
+      ],
+      "ai": {
+        "status": "validated",
+        "model": "gemini-3.1-flash-lite",
+        "confidence": 0.9,
+        "businessContext": "YKKO แบรนด์ร้านอาหารชื่อดังจากเมียนมาประกาศแผนขยายธุรกิจเข้าสู่ตลาดไทย",
+        "whyNow": "เพื่อขยายฐานลูกค้าและนำเสนออาหารที่เป็นเอกลักษณ์สู่ตลาดใหม่",
+        "salesAngle": "การปรับตัวของแบรนด์ร้านอาหารต่างชาติเพื่อเข้าถึงพฤติกรรมผู้บริโภคไทยเป็นอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารหรือตัวแทนของ YKKO ในไทยเพื่อสอบถามแผนการเปิดสาขา",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -558,68 +699,76 @@
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.9,
-        "businessContext": "Taobao เร่งกลยุทธ์การทำตลาดในไทยอย่างจริงจังโดยมุ่งเน้นการสร้างความต้องการซื้อในกลุ่มผู้บริโภคชาวไทยมากกว่าแค่การเป็นช่องทางขายสินค้า",
-        "whyNow": "เพื่อเพิ่มขีดความสามารถในการแข่งขันและสร้างความผูกพันกับผู้ใช้งานในไทยให้มากขึ้น",
-        "salesAngle": "แนวทางการปรับเปลี่ยนประสบการณ์ผู้ใช้งานเพื่อตอบโจทย์พฤติกรรมคนไทยมีทิศทางอย่างไร",
-        "nextBestAction": "ติดต่อทีมงานฝ่ายกลยุทธ์เพื่อสอบถามถึงแนวทางการสร้าง Engagement กับผู้บริโภคในไทย",
+        "businessContext": "Taobao กำลังเร่งกลยุทธ์การตลาดในไทยเพื่อสร้างความต้องการซื้อสินค้าจากผู้บริโภคชาวไทยอย่างจริงจัง",
+        "whyNow": "เพื่อเพิ่มส่วนแบ่งการตลาดและเปลี่ยนพฤติกรรมผู้บริโภคไทยให้ซื้อสินค้าผ่านแพลตฟอร์มมากขึ้น",
+        "salesAngle": "กลยุทธ์การสร้างความผูกพันกับผู้บริโภคไทย (Engagement) นอกเหนือจากการขายสินค้าคืออะไร",
+        "nextBestAction": "ติดต่อทีมงาน Taobao ในไทยเพื่อสอบถามทิศทางการตลาดและการสร้างแบรนด์ในระยะยาว",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "e05a7efdface",
-      "brandName": "Labella",
-      "companyName": "Labella",
-      "industry": "Retail / Fashion",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Labella กระเป๋าแบรนด์ไทยกับก้าวใหม่ครั้งสำคัญ ดึงณิชาขึ้นแท่นพรีเซนเตอร์ SOLEIL Collection",
-      "buyingSignal": "New presenter / ambassador",
-      "signalDate": "2026-08-26",
-      "whyNow": "Labella กระเป๋าแบรนด์ไทยกับก้าวใหม่ครั้งสำคัญ ดึงณิชาขึ้นแท่นพรีเซนเตอร์ SOLEIL Collection",
+      "id": "8d7624972d21",
+      "brandName": "TikTok",
+      "companyName": "TikTok",
+      "industry": "Entertainment",
+      "brandType": "Emerging / Social-first",
+      "thailandEvidence": "มีผลทันที Meta แบนโฆษณา TikTok บน Facebook – IG กระทบ 7 ประเทศ รวมไทยด้วย",
+      "buyingSignal": "New campaign",
+      "signalDate": "2026-10-09",
+      "whyNow": "มีผลทันที Meta แบนโฆษณา TikTok บน Facebook – IG กระทบ 7 ประเทศ รวมไทยด้วย",
       "momentum": "Active",
       "revenueMinM": 1.5,
       "revenueMaxM": 4,
-      "score": 74,
+      "score": 75,
       "scores": {
         "thailand_relevance": 14,
-        "buying_signal_strength": 17,
+        "buying_signal_strength": 16,
         "revenue_potential": 14,
         "ooh_fit": 14,
         "momentum": 4,
         "timing": 8,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "priority": "HIGH",
       "isNew": false,
       "isUpdated": true,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Qdk5pMDBiWm9RdndXTUJ1THRrTzRydkRPaGIyWVR0X2dHR2pKQnBrcG9WZTVnUW03aFdWTy1rdV91U2k5T25Rd3Y5TUhFeHNnR0k2N2VieXFzUDQ?oc=5",
-          "label": "workpointtoday.com"
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMDVBd1VUZDU1cDZWQkNJR2F5LW5Ld3VYSTlqOE5pdXRzLTUyWmVodU52eUVHVlRXNGR6eG1DUXFYOHlfb1dzbDBBQ1VCMWsyYjIzVTkxY1RadGdHUXdxQVBaUlhsb0FjTWVvWXZWZXp1NXhJLThWTjJKMzF4X2ota2lkaTlJWnZMLWc4WktFdw?oc=5",
+          "label": "Brand Buffet"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LbEdPNWdkc1gybXBUOWVIX0tOenprNmc2NHZrRmdYMzFUSUJkcTNLVGx1WmJIaHdwckdCZjBtMU5hcUIxeXQ3ZkktWXBSckE1d1pj?oc=5",
+          "label": "Positioningmag"
+        },
+        {
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jVzI0WkVnaGlGakdKeGFrQXV4UWJMbVp2ejZKaUQzMmxCYzA5MUlkbkR1YmoyYzBJU2hLdkRKZlZOSmNTTGNKb0lwaWhzY1pETXZvQVJNNk82dw?oc=5",
+          "label": "bangkokbiznews"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "Labella แบรนด์กระเป๋าไทยเปิดตัวพรีเซนเตอร์คนใหม่คือ ณิชา เพื่อโปรโมทคอลเลกชัน SOLEIL",
-        "whyNow": "เพื่อสร้างภาพลักษณ์ใหม่และกระตุ้นยอดขายผ่านการใช้ Influencer ระดับแถวหน้า",
-        "salesAngle": "กลยุทธ์การสื่อสารผ่านพรีเซนเตอร์คนใหม่จะช่วยขยายฐานลูกค้ากลุ่มเป้าหมายอย่างไร",
-        "nextBestAction": "นัดพบทีมการตลาดเพื่อสอบถามถึงแผนการทำกิจกรรมส่งเสริมการขายร่วมกับพรีเซนเตอร์",
+        "confidence": 0.85,
+        "businessContext": "TikTok เผยอินไซต์นักช้อปไทยเรื่องการค้นหาและตัดสินใจซื้อสินค้าตลอดทั้งปี",
+        "whyNow": "เพื่อผลักดันยอดขายในช่วง Mega Sales และสร้างความเข้าใจพฤติกรรมผู้บริโภคไทย",
+        "salesAngle": "การใช้ข้อมูลเชิงลึก (Insight) ของนักช้อปไทยมาปรับใช้ในแคมเปญการตลาดมีแนวทางอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับทีมงาน TikTok เพื่อเจาะลึกข้อมูลพฤติกรรมผู้บริโภคไทย",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
     },
     {
-      "id": "5e5e2d2beb25",
-      "brandName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
-      "companyName": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก",
+      "id": "dfa4386abf78",
+      "brandName": "MERCEDES-BENZ",
+      "companyName": "MERCEDES-BENZ",
       "industry": "Automotive",
       "brandType": "Established / Growing",
-      "thailandEvidence": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
+      "thailandEvidence": "MERCEDES-BENZ เตรียมเปิดตัวรถยนต์รุ่นใหม่ 40 โมเดล ในปี 2570-2571 ยึดไทยเป็นที่มั่นยานยนต์ไฟฟ้า",
       "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-09",
-      "whyNow": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก “ออล-นิว มิตซูบิชิ ปาเจโร” รถยนต์ครอสคันทรี เอสยูวี รุ่นแฟล็กชิปเจเนอเรชันใหม่ ก่อนเปิดตัวอย่างเป็นทางการในประเทศไทย 19 ตุลาคมนี้!",
+      "signalDate": "2026-11-07",
+      "whyNow": "MERCEDES-BENZ เตรียมเปิดตัวรถยนต์รุ่นใหม่ 40 โมเดล ในปี 2570-2571 ยึดไทยเป็นที่มั่นยานยนต์ไฟฟ้า",
       "momentum": "Active",
       "revenueMinM": 5,
       "revenueMaxM": 10,
@@ -638,18 +787,18 @@
       "isUpdated": false,
       "sources": [
         {
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdG8wLTBTczVkdHVudE91UDhuTFFhNzQ0ZWhmcFRoNlRoY0hGTWVMeXVXdTQydmYtcWU0WmJsNzBnb2FDMTRwNTN5MXk1OHdtck1NV3NmbW1rUkZpQjJ4bmVVSFRqRGN3WEI4NVR0dGwyTHNUSFRoSWdEV1VDMGY2UVVlTXZLTHVvR09tZ2wzdDYtZGJRejBN?oc=5",
-          "label": "iMoD"
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tNTZqUnhuUUNLQ1pyaklDeTFwNGNOZzNNMVlFd2p0bzQwcUtqWVI5RzZaVFZGZ0JDS2c1NW4yOWlEZUF1ajQ0NC1xVjlUUnZTNmprRUFSR1VLTW5aN0E?oc=5",
+          "label": "www.thairath.co.th"
         }
       ],
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
         "confidence": 0.95,
-        "businessContext": "มิตซูบิชิ มอเตอร์ส ประเทศไทย เตรียมเปิดตัวรถยนต์รุ่นใหม่ ออล-นิว มิตซูบิชิ ปาเจโร ในวันที่ 19 ตุลาคมนี้",
-        "whyNow": "เพื่อกระตุ้นตลาดรถยนต์เอสยูวีด้วยผลิตภัณฑ์รุ่นใหม่ล่าสุด",
-        "salesAngle": "แผนการสื่อสารการตลาดในช่วงเปิดตัวรถยนต์รุ่นใหม่นี้เน้นกลุ่มเป้าหมายใดเป็นหลัก",
-        "nextBestAction": "นัดหมายฝ่ายการตลาดเพื่อสอบถามถึงกำหนดการและกลยุทธ์การเปิดตัวผลิตภัณฑ์",
+        "businessContext": "เมอร์เซเดส-เบนซ์ วางแผนเปิดตัวรถยนต์รุ่นใหม่ 40 โมเดลในช่วงปี 2570-2571 โดยเน้นไทยเป็นฐานการผลิตยานยนต์ไฟฟ้า",
+        "whyNow": "เป็นการเตรียมความพร้อมระยะยาวเพื่อยกระดับฐานการผลิตและตลาดรถยนต์ไฟฟ้าในไทย",
+        "salesAngle": "กลยุทธ์การสื่อสารสำหรับรถยนต์รุ่นใหม่ที่จะเปิดตัวในอนาคตมีแนวทางอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายสื่อสารองค์กรเพื่อทำความเข้าใจทิศทางแบรนด์ในระยะยาว",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -697,11 +846,11 @@
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "เปิดตัว C PROJECT แพลตฟอร์มรวบรวมแบรนด์แฟชั่นและบิวตี้ไทยกว่า 50 แบรนด์เพื่อสร้างคอมมูนิตี้และผลักดันแบรนด์ไทยสู่ตลาดสากล",
-        "whyNow": "เพื่อสร้างพื้นที่รวมแบรนด์ไทยที่มีศักยภาพและเพิ่มโอกาสในการเข้าถึงกลุ่มลูกค้า",
-        "salesAngle": "แผนการสร้างการรับรู้ให้กับแบรนด์ในเครือผ่านแพลตฟอร์มใหม่นี้มีขั้นตอนอย่างไร",
-        "nextBestAction": "นัดพบผู้บริหารโครงการเพื่อสอบถามถึงแผนการตลาดและการสนับสนุนแบรนด์ในเครือ",
+        "confidence": 0.9,
+        "businessContext": "เปิดตัว C PROJECT แพลตฟอร์มรวบรวมแบรนด์แฟชั่นและบิวตี้ไทยกว่า 50 แบรนด์",
+        "whyNow": "เพื่อสร้างคอมมูนิตี้และผลักดันแบรนด์ไทยสู่ระดับสากล",
+        "salesAngle": "กลยุทธ์การคัดสรรและสร้างความโดดเด่นให้แบรนด์ไทยในแพลตฟอร์มรวมแบรนด์คืออะไร",
+        "nextBestAction": "นัดหมายพูดคุยกับผู้ดูแล C PROJECT เพื่อสอบถามแผนการตลาดและการสนับสนุนแบรนด์ในเครือ",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -749,11 +898,11 @@
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "SIRIVANNAVARI เปิดตัวสินค้าคอลเลกชันพิเศษและชุดพิธีการสำหรับนักกีฬาไทยในเอเชียนเกมส์ 2026",
-        "whyNow": "เพื่อสนับสนุนทัพนักกีฬาไทยและถ่ายทอดอัตลักษณ์ไทยผ่านงานออกแบบ",
-        "salesAngle": "การต่อยอดจากกระแสความนิยมของชุดนักกีฬาไปสู่สินค้าไลฟ์สไตล์มีแผนอย่างไร",
-        "nextBestAction": "ติดต่อฝ่ายการตลาดเพื่อสอบถามถึงแผนการทำกิจกรรมสื่อสารการตลาดในช่วงการแข่งขัน",
+        "confidence": 0.9,
+        "businessContext": "แบรนด์ SIRIVANNAVARI เปิดตัวสินค้าคอลเลกชันพิเศษสำหรับแฟนชาวไทยและนักกีฬาไทยในเอเชียนเกมส์ 2026",
+        "whyNow": "เพื่อเชื่อมโยงแบรนด์กับกิจกรรมระดับชาติและสร้างความภาคภูมิใจให้ผู้บริโภค",
+        "salesAngle": "การนำอัตลักษณ์ไทยมาผสมผสานในงานออกแบบเพื่อสร้างมูลค่าเพิ่มให้แบรนด์มีแนวทางอย่างไร",
+        "nextBestAction": "ติดต่อฝ่ายประชาสัมพันธ์ของแบรนด์เพื่อสอบถามแผนการตลาดสำหรับคอลเลกชันพิเศษ",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
@@ -797,143 +946,11 @@
       "ai": {
         "status": "validated",
         "model": "gemini-3.1-flash-lite",
-        "confidence": 0.95,
-        "businessContext": "ไทยมาร์ทเปิดตัว Seller App เพื่อสนับสนุนผู้ประกอบการไทยในการทำธุรกิจและสร้างแบรนด์",
-        "whyNow": "เพื่อเพิ่มเครื่องมือดิจิทัลให้แก่ผู้ประกอบการและขยายฐานผู้ใช้งานแอปพลิเคชัน",
-        "salesAngle": "กลยุทธ์การดึงดูดผู้ประกอบการให้มาใช้งานแอปพลิเคชันใหม่มีทิศทางอย่างไร",
-        "nextBestAction": "นัดหมายทีมงานเพื่อสอบถามถึงแผนการขยายฐานผู้ใช้งานและกิจกรรมส่งเสริมการขาย",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "70f42ae5079b",
-      "brandName": "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน",
-      "companyName": "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน",
-      "industry": "E-Commerce / Platform",
-      "brandType": "Emerging / Social-first",
-      "thailandEvidence": "บริษัท ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน O2O Marketing และ E-Commerce เปิดตัวโครงการ \"หมอลำ Creator Camp\" แคมป์ฝึกทักษะ Affiliate Marketing ครั้งแรกของไทยสำหรับวงการหมอลำ จัดขึ้นระหว่างวันที่ 31 สิงหาคม - 2 กันยายน 2569 ที่ Graph Hotel รัชดา รวมศิลปินกว่",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-07",
-      "whyNow": "บริษัท ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน O2O Marketing และ E-Commerce เปิดตัวโครงการ \"หมอลำ Creator Camp\" แคมป์ฝึกทักษะ Affiliate Marketing ครั้งแรกของไทยสำหรับวงการหมอลำ จัดขึ้นระหว่างวันที่ 31 สิงหาคม - 2 กันยายน 2569 ที่ Graph Hotel รัชดา รวมศิลปินกว่",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 72,
-      "scores": {
-        "thailand_relevance": 16,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMi5gVBVV95cUxOcTZPM0dvU3dUQ0VMYk8zMjhfVnNUMG10TXUzQzFqMkNjaWhGZWJsMGR0cTkzUVY4SVkxNkNCTk9sNTFuWEN3TEEwQjBFTm56WHFUQUxuRUlyOTZ3MldxOXFwSk1LRzE3dVdTMUNUZ3VkQjdtOUU4c0FPd0lrelQ2LVowbnRVUmV2dW9jV0x0alVqUUVubzJrc1ZKUDRIT2RnQXpVR2owa0NhakpOUkRGQ1FSZXJ5cUlNMDZFNmo1YVBMOWtaSWlhcnRWQ1h0VDFIc0huRnR6a20yTW9aYnlZTTZQaG5LV0plbW01QlNMNG9VVXdhcFZBNTEtSEpKemdpcEhpN1BZajVaVi1RSkpKMHN0RkJOY3VBWll2bENkS3lpT1NqekRoQkZqcDhRRVZ4bWtGOUEydl9aeDk1cElORE1nXzVKUDhTUExubS1zRGZZZlJXMmFFNHpYV3JuWkNXbWQyUzNSVDd4eWt0azR1bXEydjF5cEFteTd4dVFHUFdFaHRqV0wtQ1BOaFJRaEUtRHF3UXROcmtmWXN5S21TVlpubDZnWkxBYUpZLTQtV2JyRmJMd2drZnpiZ3J0V05JcjZfSVBYWGZpSXIzVEhyMGp2ZENoNTYtcUtHR2xTWlFwZGdGNU1EeVo3cmxIMGJIazlUV0VicDk2TExmTDNjUVJlNkl3X1FOV0VXX0ZJWXo4U0VMZG00WmgtbjhqN3FJODRJTWN4dkhuMEVEU2cwZmhocWFNOThnUzFDU3Q0Xy0wSEdDeXZETHhvZGZKYXNzVVp2SHR1Z3hZTndiV2xZajhSTnBiZWV2bVJDSXlWNS1CQU0wWm8zVi1DNFRvNDhaN3dEOXc2cnM1RlIxYkV4bW9rbjNSdkNNbXFrX0t2Z21CTV82c2F3Yk5YTnNWallaV2hhSGRRVnVtX19MdlNXVk52ZUpqUDYyLUdxazJ4RVNXNkwwc3J0c2ZWMUZFQ1N2UjNtNUV3?oc=5",
-          "label": "Facebook"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 0.85,
-        "businessContext": "บริษัทเปิดตัวโครงการ หมอลำ Creator Camp เพื่อฝึกทักษะ Affiliate Marketing ให้กับศิลปินหมอลำ",
-        "whyNow": "เพื่อสร้างโอกาสทางรายได้ใหม่ผ่านช่องทาง Affiliate ให้กับกลุ่มศิลปิน",
-        "salesAngle": "การขยายผลจากโครงการนี้ไปสู่การร่วมมือกับแบรนด์สินค้าต่างๆ มีความเป็นไปได้เพียงใด",
-        "nextBestAction": "นัดพบผู้บริหารโครงการเพื่อสอบถามถึงแผนการต่อยอดความร่วมมือกับแบรนด์สินค้า",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "bb6edd252117",
-      "brandName": "Boots",
-      "companyName": "Boots",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "Boots ประเทศไทย เสริมความแข็งแกร่งพอร์ตโฟลิโอสกินแคร์ ผ่านความร่วมมือกับ ELCA และการเปิดตัวแบรนด์ The Ordinary",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-24",
-      "whyNow": "Boots ประเทศไทย เสริมความแข็งแกร่งพอร์ตโฟลิโอสกินแคร์ ผ่านความร่วมมือกับ ELCA และการเปิดตัวแบรนด์ The Ordinary",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YTkltTFYyeFlOR19TbEI2MThCRWp3dElYTlFrTV9aR2hKWmoydThyV0pUR3h2YTB0ZFZyenVrY29mcTRuMFNhTF9SSFlaOG9fUWQ4?oc=5",
-          "label": "Positioningmag"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 1,
-        "businessContext": "Boots ประเทศไทย ร่วมมือกับ ELCA นำแบรนด์ The Ordinary เข้ามาจำหน่ายเพื่อเสริมความแข็งแกร่งในกลุ่มสกินแคร์",
-        "whyNow": "การเพิ่มแบรนด์สกินแคร์ระดับโลกเข้ามาในพอร์ตโฟลิโอช่วยยกระดับความสามารถในการแข่งขันในตลาดความงาม",
-        "salesAngle": "แนวทางการทำตลาดร่วมกับแบรนด์ระดับโลกเพื่อดึงดูดกลุ่มลูกค้าสกินแคร์ในไทยมีทิศทางอย่างไร",
-        "nextBestAction": "นัดหมายพูดคุยกับผู้บริหารฝ่ายสินค้าเพื่อสอบถามถึงแผนการโปรโมทแบรนด์ใหม่",
-        "sourceBasis": "Public RSS headlines only",
-        "interpretation": "AI analysis / sales hypothesis; verify against source"
-      }
-    },
-    {
-      "id": "4ec00c52b56b",
-      "brandName": "คอลเกต",
-      "companyName": "คอลเกต",
-      "industry": "Beauty / Personal Care",
-      "brandType": "Established / Growing",
-      "thailandEvidence": "คอลเกต เขย่าวงการ Oral Beauty! เปิดตัวยาสีฟัน “Optic White™ Vitamin C” คว้า “j-hope แห่ง BTS” นั่งแท่นแอมบาสเดอร์เอเชียแปซิฟิกและประเทศไทย เสริมทัพด้วยเซเล็บรับเชิญ ‘ต้าอู๋ - นัท นิสามณี’ ในงาน Experiential Launch [PR]",
-      "buyingSignal": "Major product launch",
-      "signalDate": "2026-09-18",
-      "whyNow": "คอลเกต เขย่าวงการ Oral Beauty! เปิดตัวยาสีฟัน “Optic White™ Vitamin C” คว้า “j-hope แห่ง BTS” นั่งแท่นแอมบาสเดอร์เอเชียแปซิฟิกและประเทศไทย เสริมทัพด้วยเซเล็บรับเชิญ ‘ต้าอู๋ - นัท นิสามณี’ ในงาน Experiential Launch [PR]",
-      "momentum": "Active",
-      "revenueMinM": 3,
-      "revenueMaxM": 6,
-      "score": 70,
-      "scores": {
-        "thailand_relevance": 14,
-        "buying_signal_strength": 19,
-        "revenue_potential": 16,
-        "ooh_fit": 14,
-        "momentum": 4,
-        "timing": 10,
-        "evidence_quality": 3
-      },
-      "priority": "HIGH",
-      "isNew": false,
-      "isUpdated": false,
-      "sources": [
-        {
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rV3ZBdXVSMFQxSkJ1SDdXWl94QTBRZ0RjZFNLenZTWWRVZDd3SHVCVEEwOFNpWDE5OUlrbEd4QlJhbjl1RjdQc3pYMW5aVnc2VG4wSTZPMF9qc1JUWjRFcVVDNnRvVHNBdk1jSWdiaGtRWkVKUElJ?oc=5",
-          "label": "Brand Buffet"
-        }
-      ],
-      "ai": {
-        "status": "validated",
-        "model": "gemini-3.1-flash-lite",
-        "confidence": 1,
-        "businessContext": "คอลเกตเปิดตัวยาสีฟัน Optic White Vitamin C พร้อมแต่งตั้ง j-hope เป็นแอมบาสเดอร์",
-        "whyNow": "การใช้แอมบาสเดอร์ระดับโลกช่วยสร้างภาพลักษณ์ Oral Beauty ให้ชัดเจนและเข้าถึงกลุ่มแฟนคลับ",
-        "salesAngle": "กลยุทธ์การเชื่อมโยงแอมบาสเดอร์ระดับโลกเข้ากับกิจกรรมการตลาดในไทยมีแนวทางอย่างไร",
-        "nextBestAction": "ติดต่อฝ่ายการตลาดเพื่อสอบถามถึงแผนการจัดกิจกรรมส่งเสริมการขายต่อเนื่อง",
+        "confidence": 0.9,
+        "businessContext": "ไทยมาร์ทเปิดตัว Seller App เพื่อสนับสนุนผู้ประกอบการไทยในการสร้างแบรนด์และขับเคลื่อนเศรษฐกิจ",
+        "whyNow": "เพื่อเพิ่มเครื่องมือดิจิทัลให้ผู้ประกอบการไทยเข้าถึงตลาดได้ง่ายขึ้น",
+        "salesAngle": "การสนับสนุนผู้ประกอบการไทยผ่านเครื่องมือดิจิทัลมีเป้าหมายในการขยายฐานผู้ใช้งานอย่างไร",
+        "nextBestAction": "นัดหมายพูดคุยกับทีมงานไทยมาร์ทเพื่อสอบถามแผนการขยายฐานผู้ใช้งาน Seller App",
         "sourceBasis": "Public RSS headlines only",
         "interpretation": "AI analysis / sales hypothesis; verify against source"
       }
