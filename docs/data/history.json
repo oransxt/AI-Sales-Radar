@@ -86,8 +86,8 @@
     },
     "crc": {
       "firstSeen": "2026-08-11",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 6,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 7,
       "lastSignalHash": "5a07625510",
       "lastSignal": "Expansion / new branches"
     },
@@ -905,8 +905,8 @@
     },
     "blue bottle coffee": {
       "firstSeen": "2026-08-22",
-      "lastSeen": "2026-11-14",
-      "timesDetected": 52,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 53,
       "lastSignalHash": "655b10ce59",
       "lastSignal": "Expansion / new branches"
     },
@@ -1528,15 +1528,15 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 25,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 26,
       "lastSignalHash": "94b572e255",
       "lastSignal": "Thailand market entry"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 64,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 65,
       "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
@@ -1591,8 +1591,8 @@
     },
     "berwick": {
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-11-15",
-      "timesDetected": 35,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 36,
       "lastSignalHash": "5e2173848e",
       "lastSignal": "Expansion / new branches"
     },
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 54,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 55,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1696,8 +1696,8 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 36,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 37,
       "lastSignalHash": "3693777278",
       "lastSignal": "Major product launch"
     },
@@ -1829,9 +1829,9 @@
     },
     "yonny": {
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-10-13",
-      "timesDetected": 15,
-      "lastSignalHash": "8aae8f725d",
+      "lastSeen": "2026-11-17",
+      "timesDetected": 16,
+      "lastSignalHash": "83062b1288",
       "lastSignal": "Expansion / new branches"
     },
     "มิสเตอร์คุ้มค่า": {
@@ -1962,9 +1962,9 @@
     },
     "labella": {
       "firstSeen": "2026-10-05",
-      "lastSeen": "2026-11-15",
-      "timesDetected": 5,
-      "lastSignalHash": "8b34145fcc",
+      "lastSeen": "2026-11-17",
+      "timesDetected": 6,
+      "lastSignalHash": "e5ef58b08c",
       "lastSignal": "New presenter / ambassador"
     },
     "taokaenoi x nene": {
@@ -2053,9 +2053,9 @@
     },
     "li auto": {
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 4,
-      "lastSignalHash": "304219b0c3",
+      "lastSeen": "2026-11-17",
+      "timesDetected": 5,
+      "lastSignalHash": "d48c686590",
       "lastSignal": "Thailand market entry"
     },
     "re": {
@@ -2291,8 +2291,8 @@
     },
     "ykko": {
       "firstSeen": "2026-10-23",
-      "lastSeen": "2026-11-15",
-      "timesDetected": 15,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 16,
       "lastSignalHash": "3402d0303a",
       "lastSignal": "Thailand market entry"
     },
@@ -2438,8 +2438,8 @@
     },
     "ลัคกี้สุกี้": {
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-14",
-      "timesDetected": 7,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 8,
       "lastSignalHash": "a46ea4d39f",
       "lastSignal": "Expansion / new branches"
     },
@@ -2466,8 +2466,8 @@
     },
     "taobao": {
       "firstSeen": "2026-10-30",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 18,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 19,
       "lastSignalHash": "9fd4bde42d",
       "lastSignal": "Thailand market entry"
     },
@@ -2655,10 +2655,10 @@
     },
     "ap thailand": {
       "firstSeen": "2026-11-06",
-      "lastSeen": "2026-11-06",
-      "timesDetected": 1,
-      "lastSignalHash": "db36b42d6f",
-      "lastSignal": "Major product launch"
+      "lastSeen": "2026-11-17",
+      "timesDetected": 2,
+      "lastSignalHash": "fe1e7351bb",
+      "lastSignal": "Partnership"
     },
     "usmile": {
       "firstSeen": "2026-11-07",
@@ -2774,9 +2774,9 @@
     },
     "akins": {
       "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 3,
-      "lastSignalHash": "169eb69425",
+      "lastSeen": "2026-11-17",
+      "timesDetected": 4,
+      "lastSignalHash": "a9c2322c5e",
       "lastSignal": "New presenter / ambassador"
     },
     "marith": {
@@ -2809,8 +2809,8 @@
     },
     "the ordinary": {
       "firstSeen": "2026-11-15",
-      "lastSeen": "2026-11-15",
-      "timesDetected": 1,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 2,
       "lastSignalHash": "30a35519e4",
       "lastSignal": "Thailand market entry"
     },
@@ -2823,15 +2823,15 @@
     },
     "one bangkok": {
       "firstSeen": "2026-11-16",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 1,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 2,
       "lastSignalHash": "2e83ccf263",
       "lastSignal": "Expansion / new branches"
     },
     "mixue": {
       "firstSeen": "2026-11-16",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 1,
+      "lastSeen": "2026-11-17",
+      "timesDetected": 2,
       "lastSignalHash": "104eb8aa1d",
       "lastSignal": "Thailand market entry"
     },
@@ -2841,6 +2841,20 @@
       "timesDetected": 1,
       "lastSignalHash": "57cc9d451d",
       "lastSignal": "New campaign"
+    },
+    "fahchak": {
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "timesDetected": 1,
+      "lastSignalHash": "9d7353fc2d",
+      "lastSignal": "Major product launch"
+    },
+    "yas": {
+      "firstSeen": "2026-11-17",
+      "lastSeen": "2026-11-17",
+      "timesDetected": 1,
+      "lastSignalHash": "2df659173d",
+      "lastSignal": "Thailand market entry"
     }
   }
 }
