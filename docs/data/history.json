@@ -604,9 +604,9 @@
     },
     "แมคโดนัลด์ ประเทศไทย": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 10,
-      "lastSignalHash": "dab37c848f",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 11,
+      "lastSignalHash": "b6ec4a7289",
       "lastSignal": "Expansion / new branches"
     },
     "thaimart": {
@@ -1381,9 +1381,9 @@
     },
     "tiktok": {
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 24,
-      "lastSignalHash": "bbc602156e",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 25,
+      "lastSignalHash": "7360e94d21",
       "lastSignal": "New campaign"
     },
     "น้ำดื่มสิงห์": {
@@ -1486,8 +1486,8 @@
     },
     "kfc": {
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 27,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 28,
       "lastSignalHash": "310f497335",
       "lastSignal": "Expansion / new branches"
     },
@@ -1528,16 +1528,16 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 28,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 29,
       "lastSignalHash": "62516397cc",
       "lastSignal": "Expansion / new branches"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 67,
-      "lastSignalHash": "5aec34dff5",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 68,
+      "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
     "health": {
@@ -1696,8 +1696,8 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 39,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 40,
       "lastSignalHash": "3693777278",
       "lastSignal": "Major product launch"
     },
@@ -2158,24 +2158,24 @@
     },
     "li auto voyah luxeed": {
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-11",
-      "timesDetected": 3,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 4,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
     "berwick 1707": {
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-13",
-      "timesDetected": 3,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 4,
       "lastSignalHash": "5e2173848e",
       "lastSignal": "Expansion / new branches"
     },
     "hyundai": {
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-28",
-      "timesDetected": 6,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 7,
       "lastSignalHash": "2cc4d1b8cb",
-      "lastSignal": "Thailand market entry"
+      "lastSignal": "Major product launch"
     },
     "เวที imf-world bank": {
       "firstSeen": "2026-10-18",
@@ -2438,8 +2438,8 @@
     },
     "ลัคกี้สุกี้": {
       "firstSeen": "2026-10-28",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 9,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 10,
       "lastSignalHash": "a46ea4d39f",
       "lastSignal": "Expansion / new branches"
     },
@@ -2515,8 +2515,8 @@
     },
     "voyah": {
       "firstSeen": "2026-10-31",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 4,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 5,
       "lastSignalHash": "ae0ca011c6",
       "lastSignal": "Thailand market entry"
     },
@@ -2732,8 +2732,8 @@
     },
     "เสื้อผ้าจีน": {
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 4,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 5,
       "lastSignalHash": "23b2be8e21",
       "lastSignal": "Thailand market entry"
     },
@@ -2802,9 +2802,9 @@
     },
     "amaze super app": {
       "firstSeen": "2026-11-14",
-      "lastSeen": "2026-11-15",
-      "timesDetected": 2,
-      "lastSignalHash": "ce22d722bd",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 3,
+      "lastSignalHash": "f3fd860db5",
       "lastSignal": "New campaign"
     },
     "the ordinary": {
@@ -2858,8 +2858,8 @@
     },
     "shiseido": {
       "firstSeen": "2026-11-18",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 2,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 3,
       "lastSignalHash": "611c22dbfa",
       "lastSignal": "Major product launch"
     },
@@ -2893,15 +2893,15 @@
     },
     "direct": {
       "firstSeen": "2026-11-18",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 2,
-      "lastSignalHash": "f63a280378",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 3,
+      "lastSignalHash": "417d2dd464",
       "lastSignal": "Major product launch"
     },
     "musinsa standard": {
       "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 1,
+      "lastSeen": "2026-11-20",
+      "timesDetected": 2,
       "lastSignalHash": "de56cdedd1",
       "lastSignal": "Thailand market entry"
     },
@@ -2938,6 +2938,34 @@
       "lastSeen": "2026-11-19",
       "timesDetected": 1,
       "lastSignalHash": "7b4897190c",
+      "lastSignal": "Expansion / new branches"
+    },
+    "nara group": {
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 1,
+      "lastSignalHash": "be73715120",
+      "lastSignal": "Thailand market entry"
+    },
+    "กาแฟ beans": {
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 1,
+      "lastSignalHash": "b11982ee7c",
+      "lastSignal": "Thailand market entry"
+    },
+    "อิเกีย": {
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 1,
+      "lastSignalHash": "59021e49b6",
+      "lastSignal": "Expansion / new branches"
+    },
+    "jellycat": {
+      "firstSeen": "2026-11-20",
+      "lastSeen": "2026-11-20",
+      "timesDetected": 1,
+      "lastSignalHash": "78f174c989",
       "lastSignal": "Expansion / new branches"
     }
   }
