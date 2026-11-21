@@ -611,9 +611,9 @@
     },
     "thaimart": {
       "firstSeen": "2026-08-15",
-      "lastSeen": "2026-11-10",
-      "timesDetected": 19,
-      "lastSignalHash": "b97e2ec740",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 20,
+      "lastSignalHash": "141aa231be",
       "lastSignal": "Major product launch"
     },
     "คนละครึ่ง พลัส": {
@@ -1367,8 +1367,8 @@
     },
     "มิตซูบิชิ มอเตอร์ส ประเทศไทย เผยไฮไลต์สเปก": {
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-11-12",
-      "timesDetected": 14,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 15,
       "lastSignalHash": "b9390b47e5",
       "lastSignal": "Major product launch"
     },
@@ -1528,15 +1528,15 @@
     },
     "tsutaya bookstore": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 29,
-      "lastSignalHash": "62516397cc",
-      "lastSignal": "Expansion / new branches"
+      "lastSeen": "2026-11-21",
+      "timesDetected": 30,
+      "lastSignalHash": "94b572e255",
+      "lastSignal": "Thailand market entry"
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 68,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 69,
       "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
@@ -1591,9 +1591,9 @@
     },
     "berwick": {
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 38,
-      "lastSignalHash": "5e2173848e",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 39,
+      "lastSignalHash": "f232e6058a",
       "lastSignal": "Expansion / new branches"
     },
     "lotus’s go fresh ขับเคลื่อนการเติบโต": {
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 57,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 58,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1696,8 +1696,8 @@
     },
     "กลุ่มธนบุรี": {
       "firstSeen": "2026-09-25",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 40,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 41,
       "lastSignalHash": "3693777278",
       "lastSignal": "Major product launch"
     },
@@ -2011,9 +2011,9 @@
     },
     "update": {
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 12,
-      "lastSignalHash": "a46ea4d39f",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 13,
+      "lastSignalHash": "112d9d866d",
       "lastSignal": "Expansion / new branches"
     },
     "boyy": {
@@ -2172,8 +2172,8 @@
     },
     "hyundai": {
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 7,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 8,
       "lastSignalHash": "2cc4d1b8cb",
       "lastSignal": "Major product launch"
     },
@@ -2249,9 +2249,9 @@
     },
     "yo-chi": {
       "firstSeen": "2026-10-21",
-      "lastSeen": "2026-11-09",
-      "timesDetected": 8,
-      "lastSignalHash": "40ddd5dc8d",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 9,
+      "lastSignalHash": "0733801c61",
       "lastSignal": "Expansion / new branches"
     },
     "sanmai ramen": {
@@ -2347,9 +2347,9 @@
     },
     "ditp": {
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-19",
-      "timesDetected": 3,
-      "lastSignalHash": "8dd3466f0a",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 4,
+      "lastSignalHash": "71042c7310",
       "lastSignal": "Major product launch"
     },
     "กรุงเทพธุรกิจ. . เวที imf-world": {
@@ -2515,8 +2515,8 @@
     },
     "voyah": {
       "firstSeen": "2026-10-31",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 5,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 6,
       "lastSignalHash": "ae0ca011c6",
       "lastSignal": "Thailand market entry"
     },
@@ -2550,8 +2550,8 @@
     },
     "chiho ramen": {
       "firstSeen": "2026-11-02",
-      "lastSeen": "2026-11-18",
-      "timesDetected": 3,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 4,
       "lastSignalHash": "388ae75d95",
       "lastSignal": "Thailand market entry"
     },
@@ -2613,8 +2613,8 @@
     },
     "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน": {
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-16",
-      "timesDetected": 6,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 7,
       "lastSignalHash": "01ddf7aa5e",
       "lastSignal": "Major product launch"
     },
@@ -2732,8 +2732,8 @@
     },
     "เสื้อผ้าจีน": {
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 5,
+      "lastSeen": "2026-11-21",
+      "timesDetected": 6,
       "lastSignalHash": "23b2be8e21",
       "lastSignal": "Thailand market entry"
     },
@@ -2893,17 +2893,17 @@
     },
     "direct": {
       "firstSeen": "2026-11-18",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 3,
-      "lastSignalHash": "417d2dd464",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 4,
+      "lastSignalHash": "930827c486",
       "lastSignal": "Major product launch"
     },
     "musinsa standard": {
       "firstSeen": "2026-11-19",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 2,
-      "lastSignalHash": "de56cdedd1",
-      "lastSignal": "Thailand market entry"
+      "lastSeen": "2026-11-21",
+      "timesDetected": 3,
+      "lastSignalHash": "5aaffedc48",
+      "lastSignal": "Expansion / new branches"
     },
     "กาแฟ beans บุกของหวาน": {
       "firstSeen": "2026-11-19",
@@ -2942,9 +2942,9 @@
     },
     "nara group": {
       "firstSeen": "2026-11-20",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 1,
-      "lastSignalHash": "be73715120",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 2,
+      "lastSignalHash": "44667c28dd",
       "lastSignal": "Thailand market entry"
     },
     "กาแฟ beans": {
@@ -2966,6 +2966,20 @@
       "lastSeen": "2026-11-20",
       "timesDetected": 1,
       "lastSignalHash": "78f174c989",
+      "lastSignal": "Expansion / new branches"
+    },
+    "komeda": {
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 1,
+      "lastSignalHash": "7df65bb8fd",
+      "lastSignal": "Expansion / new branches"
+    },
+    "emily’s": {
+      "firstSeen": "2026-11-21",
+      "lastSeen": "2026-11-21",
+      "timesDetected": 1,
+      "lastSignalHash": "9401661d29",
       "lastSignal": "Expansion / new branches"
     }
   }
