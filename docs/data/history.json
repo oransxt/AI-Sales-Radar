@@ -968,9 +968,9 @@
     },
     "tiktok shop": {
       "firstSeen": "2026-08-23",
-      "lastSeen": "2026-09-01",
-      "timesDetected": 3,
-      "lastSignalHash": "5a66a4d8ef",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 4,
+      "lastSignalHash": "7c2a629164",
       "lastSignal": "Social / commerce momentum"
     },
     "มาด้วย": {
@@ -1381,9 +1381,9 @@
     },
     "tiktok": {
       "firstSeen": "2026-09-10",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 25,
-      "lastSignalHash": "7360e94d21",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 26,
+      "lastSignalHash": "bbc602156e",
       "lastSignal": "New campaign"
     },
     "น้ำดื่มสิงห์": {
@@ -1430,8 +1430,8 @@
     },
     "mpv": {
       "firstSeen": "2026-09-12",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 14,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 15,
       "lastSignalHash": "2cc4d1b8cb",
       "lastSignal": "Thailand market entry"
     },
@@ -1486,15 +1486,15 @@
     },
     "kfc": {
       "firstSeen": "2026-09-15",
-      "lastSeen": "2026-11-20",
-      "timesDetected": 28,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 29,
       "lastSignalHash": "310f497335",
       "lastSignal": "Expansion / new branches"
     },
     "ทำความรู้จัก tsutaya bookstore ก่อน": {
       "firstSeen": "2026-09-16",
-      "lastSeen": "2026-11-04",
-      "timesDetected": 8,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 9,
       "lastSignalHash": "62516397cc",
       "lastSignal": "Expansion / new branches"
     },
@@ -1535,8 +1535,8 @@
     },
     "meta one": {
       "firstSeen": "2026-09-17",
-      "lastSeen": "2026-11-21",
-      "timesDetected": 69,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 70,
       "lastSignalHash": "73595823e8",
       "lastSignal": "Thailand market entry"
     },
@@ -1591,8 +1591,8 @@
     },
     "berwick": {
       "firstSeen": "2026-09-19",
-      "lastSeen": "2026-11-21",
-      "timesDetected": 39,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 40,
       "lastSignalHash": "f232e6058a",
       "lastSignal": "Expansion / new branches"
     },
@@ -1612,8 +1612,8 @@
     },
     "li auto voyah": {
       "firstSeen": "2026-09-20",
-      "lastSeen": "2026-11-21",
-      "timesDetected": 58,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 59,
       "lastSignalHash": "90669786ce",
       "lastSignal": "Thailand market entry"
     },
@@ -1829,9 +1829,9 @@
     },
     "yonny": {
       "firstSeen": "2026-10-01",
-      "lastSeen": "2026-11-17",
-      "timesDetected": 16,
-      "lastSignalHash": "83062b1288",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 17,
+      "lastSignalHash": "b8fa6467c4",
       "lastSignal": "Expansion / new branches"
     },
     "มิสเตอร์คุ้มค่า": {
@@ -2011,8 +2011,8 @@
     },
     "update": {
       "firstSeen": "2026-10-08",
-      "lastSeen": "2026-11-21",
-      "timesDetected": 13,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 14,
       "lastSignalHash": "112d9d866d",
       "lastSignal": "Expansion / new branches"
     },
@@ -2578,8 +2578,8 @@
     },
     "leapmotor b03x": {
       "firstSeen": "2026-11-03",
-      "lastSeen": "2026-11-12",
-      "timesDetected": 7,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 8,
       "lastSignalHash": "1b11207808",
       "lastSignal": "Major product launch"
     },
@@ -2613,8 +2613,8 @@
     },
     "ไวท์ไลน์ แอคทิเวชัน จำกัด ผู้ให้บริการด้าน": {
       "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-21",
-      "timesDetected": 7,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 8,
       "lastSignalHash": "01ddf7aa5e",
       "lastSignal": "Major product launch"
     },
@@ -2732,8 +2732,8 @@
     },
     "เสื้อผ้าจีน": {
       "firstSeen": "2026-11-12",
-      "lastSeen": "2026-11-21",
-      "timesDetected": 6,
+      "lastSeen": "2026-11-22",
+      "timesDetected": 7,
       "lastSignalHash": "23b2be8e21",
       "lastSignal": "Thailand market entry"
     },
@@ -2753,9 +2753,9 @@
     },
     "omnichannel collaborative ads": {
       "firstSeen": "2026-11-13",
-      "lastSeen": "2026-11-13",
-      "timesDetected": 1,
-      "lastSignalHash": "7ac35c2dc2",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 2,
+      "lastSignalHash": "c4bd96e1ca",
       "lastSignal": "Major product launch"
     },
     "dream render": {
@@ -2981,6 +2981,48 @@
       "timesDetected": 1,
       "lastSignalHash": "9401661d29",
       "lastSignal": "Expansion / new branches"
+    },
+    "แฟชั่นเกาหลี musinsa standard": {
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 1,
+      "lastSignalHash": "de56cdedd1",
+      "lastSignal": "Thailand market entry"
+    },
+    "nara group เจ้าของ ‘ร้านอาหารไทย’": {
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 1,
+      "lastSignalHash": "44667c28dd",
+      "lastSignal": "Thailand market entry"
+    },
+    "wuling thailand": {
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 1,
+      "lastSignalHash": "9f2868894c",
+      "lastSignal": "Major product launch"
+    },
+    "all new honda": {
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 1,
+      "lastSignalHash": "14cf8df5ec",
+      "lastSignal": "Major product launch"
+    },
+    "honda avancier": {
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 1,
+      "lastSignalHash": "566b5ec0fe",
+      "lastSignal": "Major product launch"
+    },
+    "the stock exchange": {
+      "firstSeen": "2026-11-22",
+      "lastSeen": "2026-11-22",
+      "timesDetected": 1,
+      "lastSignalHash": "4374555adc",
+      "lastSignal": "Major product launch"
     }
   }
 }
